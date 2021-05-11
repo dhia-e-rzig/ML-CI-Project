@@ -1,0 +1,3 @@
+pandas==1.2.4
+PyDriller==2.0
+PyTravisCI==2.0.2
