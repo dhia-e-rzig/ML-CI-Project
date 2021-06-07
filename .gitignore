@@ -1,4 +1,4 @@
 /venv/
-/CSV Inputs/applied_fs_analysis.csv
-/CSV Inputs/tool_fs_analysis.csv
+/CSV Inputs/fs_listing_all_files/applied_fs_analysis.csv
+/CSV Inputs/fs_listing_all_files/tool_fs_analysis.csv
 /CSV Outputs/*

@@ -9,8 +9,8 @@ listOfTypes=["applied","tool","no-ai-ml"]
 i= 1
 type_travis_ci_pths=["CSV Inputs/applied_travis_fs_or_api.csv",'CSV Inputs/tool_travis_fs_or_api.csv']
 
-applied_repos_local=['E:/PhD Work/repos/applied','F:/PhD Work/repos/applied']
-tool_repos_local=['E:/PhD Work/repos/tool','F:/PhD Work/repos/tool']
+applied_repos_local=['D:/PhD Work/repos/applied','D:/PhD Work/repos/applied']
+tool_repos_local=['D:/PhD Work/repos/tool','D:/PhD Work/repos/tool']
 paths_repos=[applied_repos_local,tool_repos_local]
 
 
