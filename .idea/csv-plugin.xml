@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="C:\Users\dhiarzig\Desktop\Research Projects\ICSE Project files\RQ1\NLP\trigrams.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\CSV Inputs\AppliedProjects_all.csv">
           <value>
             <Attribute>
@@ -66,6 +73,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\CSV Inputs\api2_and_fs_projects_stats\repos_langs_diff-05-28-21-17-41-36-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\api2_and_fs_projects_stats\repos_langs_github-05-27-21-14-35-24-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\api2_and_fs_projects_stats\repos_langs_travis-05-28-21-17-35-57-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\CSV Inputs\applied_travis_api.csv">
           <value>
             <Attribute>
@@ -77,6 +105,20 @@
           <value>
             <Attribute>
               <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\ngrams\bigrams.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\ngrams\trigrams.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
@@ -227,6 +269,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-16-31-47-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-30-09-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-32-53-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-36-01-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-39-14-applied.csv">
           <value>
             <Attribute>
@@ -325,21 +395,14 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\gen.csv">
+        <entry key="\tmp.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\test.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\test2.csv">
+        <entry key="\trigrams_with_stats_and_paths.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

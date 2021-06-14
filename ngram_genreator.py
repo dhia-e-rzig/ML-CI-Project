@@ -56,7 +56,7 @@ def extract_travis_files_paths():
                 else:
                     print(str(e))
 
-# extract_travis_files_paths()
+
 
 def extract_ngrams(data, num):
     n_grams = ngrams(nltk.word_tokenize(data), num)
@@ -112,6 +112,8 @@ def generate_ngrams(n):
                             line_list = ['FILE_PATH_TXT' if x.lower().endswith('.txt') else  x for x in line_list]
                             line_list = ['FILE_PATH_SH' if x.lower().endswith('.sh') else  x for x in line_list]
                             line_list = ['FILE_PATH_PY' if x.lower().endswith('.py') else  x for x in line_list]
+                            # add filter for numbers
+
                                 # filter(lambda word: "URL" if re.findall(r'(http[s]?:\/\/)?([^\/\s]+\/)(.*)',
                                 #                                         word) else word,
                                 #        line_list))
@@ -127,7 +129,8 @@ def generate_ngrams(n):
                             #            line_list))
                             line=' '.join(line_list)
                             exclude = {" , ", ", ", " ,", " .", " .", " . ", ":", ";", " ;", "; ", "=", "[", ']',
-                                       "- ", " - ", "`", "'", "\"", "$", "&", "!", "--", '(', ')', '{', '}'}
+                                       "- ", " - ", "`", "'", "\"", "$", "&", "!", "--", '(', ')', '{', '}','<','>','|','@'
+                                       ,"#","%"}
                             for ch in exclude:
                                 line = line.replace(ch, ' ')
                             ngrams_temp=extract_ngrams(line,n)
@@ -151,7 +154,7 @@ def generate_ngrams(n):
     for key,value in all_tokens_dict.items():
         all_tokens_dict[key]=value/total_number_of_files
     labels = [str(n)+'-gram', 'Frequency']
-    with open('CSV Outputs/Python_'+str(n)+'gram_with_freq.csv', 'w+',newline='',encoding='utf-8') as f:
+    with open('CSV Outputs/Python_'+str(n)+'gram_with_freq_v2.csv', 'w+',newline='',encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(labels)
         for k, v in all_tokens_dict.items():
