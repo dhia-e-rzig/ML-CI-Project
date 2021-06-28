@@ -1,0 +1,675 @@
+RepoName;TravisAndGHMatch;Intersection;TravisOnly;GithubOnly
+duxuhao/Feature-Selection;True;python;;jupyter notebook
+gbnk0/simple-image-classifier;False;;None;python
+kakaobrain/torchgpipe;True;python;;
+hosseinmoein/DataFrame;True;c++;;makefile,python,cmake,shell
+ternaus/robot-surgery-segmentation;True;python;;jupyter notebook,shell
+R-js/blasjs;True;;node_js;makefile,javascript,typescript,fortran
+knorth55/chainer-dense-fusion;True;python;;
+scikit-learn-contrib/mimic;True;python;;
+JesusIslam/tldr;True;go;;
+AllenInstitute/mouse_connectivity_models;True;python;;makefile,shell
+jfilter/split-folders;True;python;;
+tlkh/prowler;True;python;;shell,jupyter notebook,css,html,javascript
+parente/nbestimate;True;python;;jupyter notebook
+apacha/MusicScoreClassifier;True;python;;
+famished-tiger/Rley;True;ruby;;shell
+rednaga/APKiD;True;python;;dockerfile,yara,shell
+src-d/minhashcuda;False;;None;shell,cmake,cuda,c++,python,c
+hoxo-m/densratio_py;True;python;;makefile
+microsoft/frameworkcontroller;True;go;;dockerfile,shell
+CSAILVision/gandissect;True;python;;shell,cuda,jupyter notebook,html,c++,c
+grafit-io/grafit;True;python;;html,javascript,dockerfile,css
+nengo/nengo-dl;True;python;;batchfile
+cjekel/piecewise_linear_fit_py;True;python;;batchfile,makefile,shell
+tasoc/starclass;True;python;;jupyter notebook
+jcmgray/autoray;True;python;;
+spatialaudio/nbsphinx;True;python;;html,shell
+src-d/kmcuda;True;c++;;cmake,jupyter notebook,cuda,python,r
+pandas-profiling/pandas-profiling;True;python;;batchfile,shell,makefile,jupyter notebook,css,html,javascript
+comtravo/ctparse;True;python;;makefile
+fsprojects/IfSharp;True;;csharp;batchfile,shell,dockerfile,f#,jupyter notebook,css,inno setup,javascript
+lalvim/PLSRegressor.jl;True;julia;;
+mirapy-org/mirapy;False;;c;python,tex
+gbolmier/funk-svd;True;python;;jupyter notebook
+volcano-sh/volcano;True;go;;makefile,dockerfile,python,shell
+sparkling-graph/sparkling-graph;True;scala;;
+NCBI-Hackathons/ATACFlow;False;;java;dockerfile,jupyter notebook,html,python,r,nextflow
+jupyterhub/zero-to-jupyterhub-k8s;True;python;;smarty,dockerfile,go,shell
+rocmsys/RET;True;;bash;dockerfile,shell
+sagemathinc/cocalc;True;python;;typescript,sass,shell,stylus,sage,jupyter notebook,css,coffeescript,html,tex,javascript,pug
+qubvel/efficientnet;True;python;;dockerfile,shell
+ml5js/ml5-library;True;;node_js;javascript,shell
+erictleung/review;False;;ruby;r
+HunterMcGushion/hyperparameter_hunter;True;python;;makefile,shell
+DataHaskell/dh-core;False;;c;haskell
+triagemd/model-serving;True;python;;dockerfile,shell
+5hirish/adam_qas;True;python;;dockerfile,shell
+clawpack/riemann_book;True;python;;smarty,fortran,shell,dockerfile,jupyter notebook,css,html,tex
+fnl/syntok;True;python;;makefile
+repetere/modelscript;True;;node_js;javascript
+deepfakes/faceswap;True;shell;;python,nsis
+trappmartin/SumProductNetworks.jl;True;julia;;
+vgrabovets/multi_rake;True;python;;
+rhiever/datacleaner;True;python;;shell
+kfoynt/LocalGraphClustering;True;python;;shell,makefile,matlab,jupyter notebook,html,c++,c
+OpenNMT/OpenNMT;False;;c;perl,shell,lua,dockerfile,forth,python
+JasonKessler/scattertext;True;python;;html,javascript,css,shell
+pyro-ppl/funsor;True;python;;makefile,jupyter notebook
+justusschock/shapenet;True;python;;c++
+miguelmota/sobel;True;;node_js;html,javascript,css
+allwefantasy/streamingpro;True;scala;node_js;batchfile,antlr,roff,shell,dockerfile,css,html,java,python,javascript,less
+rsokl/noggin;True;python;;
+masterdezign/hmep;True;haskell;;
+dbiir/UER-py;True;python;;
+coin-or/Gravity;True;c++;;cmake,matlab,c,shell
+JuliaTPU/XLA.jl;True;julia;;tex
+eyounx/ZOOpt;True;python;;
+msmbuilder/osprey;False;;c;batchfile,python,tex,shell
+CyberZHG/keras-word-char-embd;True;python;;shell
+pillarpond/face-recognizer-android;False;;android;c++,java,cmake,c
+nlpie/biomedicus;True;java;;batchfile,shell,dockerfile,rich text format,kotlin
+php-opencv/php-opencv;False;;None;php,shell,dockerfile,c++,m4,javascript,c
+graphaware/neo4j-nlp;True;java;;
+inukshuk/anystyle;True;ruby;;
+autonomio/wrangle;True;python;;
+dillondaudert/UMAP.jl;True;julia;;jupyter notebook
+chovanecm/sacredboard;False;;None;gherkin,makefile,css,html,python,javascript
+ironmussa/Optimus;True;python;;shell,dockerfile,jupyter notebook,css,html,javascript
+JuliaPOMDP/POMDPGallery.jl;True;julia;;
+jajupmochi/py-graph;True;python;;jupyter notebook,shell
+akoumjian/datefinder;True;python;;html
+LaurentMazare/tch-rs;True;rust;;cmake,ocaml,makefile,c++,python,c
+lanpa/tensorboardX;True;python;;shell
+jveitchmichaelis/deeplabel;True;c++;;python,c,qmake,shell
+samtecspg/articulate;True;;node_js;shell,dockerfile,css,html,javascript
+Erotemic/netharn;True;python;;shell
+keon/3-min-pytorch;True;python;;jupyter notebook
+pandoraboxchain/pyrrha-pynode;True;python;;dockerfile,shell
+marl/openl3;True;python;;
+betterlife/betterlifepsi;True;python;;mako,shell,dockerfile,css,html,javascript
+lyst/lightfm;False;;None;makefile,dockerfile,python
+TuringLang/Turing.jl;True;julia;;dockerfile,tex
+lmcinnes/umap;True;python;;makefile,tex,shell
+Tomotoes/SmartHome;True;;node_js;typescript,shell,dockerfile,css,c++,html,vue,javascript
+ModelChimp/modelchimp;True;;node_js;shell,dockerfile,css,handlebars,html,python,javascript
+jcreinhold/synthtorch;True;python;;singularity,dockerfile,jupyter notebook,shell
+khs1994-php/tencent-ai;True;php;;dockerfile,shell
+miguelvr/dropblock;True;python;;
+raskr/rust-autograd;True;rust;;
+RTradeLtd/Lens;True;go;;makefile,dockerfile,shell
+sbl-sdsc/mmtf-spark;True;java;;
+eellak/gsoc2018-3gm;True;python;;typescript,shell,makefile,jupyter notebook,css,html,tex,javascript
+X-DataInitiative/tick;False;;generic;shell,cmake,dockerfile,c++,python,c,swig
+CyberZHG/keras-pos-embd;True;python;;shell
+pbiecek/breakDown;False;;R;r
+uchicago-cs/deepdish;True;python;;makefile,shell
+ml-libs/mlserve;True;python;;makefile,javascript,html
+almond-sh/almond;True;scala;;java,dockerfile,shell
+messense/fasttext-rs;True;rust;;
+bduggan/p6-jupyter-kernel;False;;perl6;dockerfile,raku,jupyter notebook
+reiinakano/arbitrary-image-stylization-tfjs;True;;node_js;html,javascript
+HaliteChallenge/Halite-II;True;c++,ruby;;julia,slim,rust,elixir,batchfile,swift,makefile,html,java,vue,dart,c,clojure,mako,ocaml,f#,scala,css,python,javascript,go,kotlin,scss,php,c#,sass,common lisp,shell,cmake,haskell,starlark
+LaurentMazare/ocaml-torch;True;c;;makefile,ocaml,jupyter notebook,c++,python
+polyaxon/polyaxon-schemas;True;python;;
+oval-group/mlogger;True;python;;
+FluxML/FluxJS.jl;True;julia;;html,javascript
+IBM/powerai-market-sentiment;False;;generic;jupyter notebook
+WladimirSidorenko/CRFSuite;False;;C;shell,makefile,c++,python,m4,c
+IBM/MAX-Speech-to-Text-Converter;True;python;;dockerfile
+arm61/pylj;True;python;;dockerfile,tex,shell
+feedzai/feedzai-openml;True;java;;
+lopuhin/transformer-lm;True;python;;html,dockerfile,shell
+rajveermalviya/language-modeling;True;;node_js;javascript,python
+poldracklab/mriqc;True;python;;shell,makefile,tcl,dockerfile,css,html,javascript
+philgooch/abbreviation-extraction;True;python;;gherkin
+jupyter/dashboards;True;python;;shell,makefile,jupyter notebook,css,html,javascript
+soaxelbrooke/python-bpe;True;python;;
+niiknow/bayes;True;php;;
+jerrygaoLondon/jgtextrank;True;python;;batchfile,jupyter notebook,shell
+maciejczyzewski/neural-chessboard;False;;None;python
+OpenNMT/OpenNMT-py;True;python;;perl,newlisp,shell,ruby,javascript,slash,systemverilog,emacs lisp,smalltalk
+rgal/gym-2048;True;python;;
+nert-nlp/streusle;True;python;;shell
+HDI-Project/ATM;True;python;;makefile
+DrSleep/DenseTorch;True;python;;
+proycon/foliatools;True;python;;xslt,html,shell
+rivolli/mfe;False;;R;rebol,r
+SimGus/Chatette;True;python;;
+mkearney/textfeatures;False;;R;r
+Mogeng/IOHMM;True;python;;
+amoussawi/recoder;True;python;;
+UGentBiomath/wwdata;True;python;;makefile,jupyter notebook
+skggm/skggm;True;python;;makefile,c
+PrincetonUniversity/ASPIRE-Python;True;python;;jupyter notebook
+anrputina/outlierdenstream;True;python;;makefile
+IBM/MAX-ResNet-50;True;python;;dockerfile,shell
+IBM/MAX-Image-Caption-Generator;True;python;;dockerfile,starlark
+ralfbiedert/ffsvm-rust;True;rust;;python
+winkjs/wink-naive-bayes-text-classifier;True;;node_js;javascript
+drivenbyentropy/aptasuite;True;java;;css
+amosbastian/understat;True;python;;
+gchers/random-world;True;rust;;
+PaddlePaddle/Anakin;True;c++;;shell,cmake,dockerfile,cuda,css,html,python,javascript,c
+kiudee/cs-ranking;True;python;;nix,shell
+asafschers/goscore;True;go;;
+onnx/onnx-r;True;r;;javascript,css
+orktes/go-torch;False;;ruby;c++,dockerfile,makefile,go
+IlyaGusev/summarus;True;python;;gherkin,jsonnet,shell
+msuzen/bristol;True;python;;jupyter notebook,shell
+scikit-learn-contrib/lightning;True;python;;makefile,c,shell
+pyro-ppl/pyro;True;python;;shell,makefile,dockerfile,css,c++,tex
+jkoutsikakis/pytorch-wrapper;True;python;;
+nextcloud/suspicious_login;True;php;;javascript,vue
+docker-science/cookiecutter-docker-science;True;python;;makefile,dockerfile
+rstudio/cloudml;True;r;;python,css,shell
+georgymh/decentralized-ml;True;python;;jupyter notebook
+sbl-sdsc/mmtf-pyspark;True;python;;batchfile,dockerfile,jupyter notebook,shell
+thuijskens/scikit-hyperband;True;python;;shell
+qinwf/jiebaR;True;r;;cmake,c++,rebol,c
+hoxo-m/densratio;False;;R;r
+priyankshah7/hypers;True;python;;
+jungtaekkim/bayeso;True;python;;
+assap-org/assap;True;;node_js;html,javascript,vue,css
+sherpa-ai/sherpa;True;python;;html,javascript,css
+justinshenk/fer;True;python;;jupyter notebook
+go-ego/gse;True;go;;html
+alan-turing-institute/MLJModels.jl;True;julia;;
+Tw1ddle/needs-ai-standalone;True;haxe;;html,css
+MycroftAI/mycroft-core;True;python;;dockerfile,qml,shell
+IBM/MAX-Audio-Sample-Generator;True;python;;dockerfile
+stanfordnlp/python-stanford-corenlp;True;python;;
+stephenhky/PyShortTextCategorization;True;python;;
+IBM/MAX-Image-Caption-Generator-Web-App;True;python;;html,javascript,dockerfile,css
+permfl/dictlearn;True;python;;c
+Kensuke-Mitsuzawa/JapaneseTokenizers;True;python;;makefile,dockerfile,shell
+felixriese/susi;True;python;;javascript,tex
+bio-ontology-research-group/walking-rdf-and-owl;True;python;;batchfile,shell,makefile,c++,groovy,tex
+square/pysurvival;True;python;;html,c++,jupyter notebook
+knorth55/chainer-light-head-rcnn;True;python;;
+jgreener64/Bio3DView.jl;True;julia;;tex
+ikawaha/kagome.ipadic;True;go;;makefile,shell
+jaredhuling/oem;True;r;;c++,c
+thombashi/sqlitebiter;True;python;;batchfile,shell,makefile,jupyter notebook,powershell
+Axelrod-Python/axelrod-dojo;True;python;;
+t-sakai-kure/pywsl;True;python;;
+WMD-group/SMACT;True;python;;batchfile,makefile,tex
+guess-js/guess;True;;node_js;javascript,smarty,typescript
+FluxML/Zygote.jl;True;julia;;tex
+jupyterhub/jupyterhub;True;python;;mako,shell,dockerfile,html,javascript,less
+HealthCatalyst/healthcareai-py;True;python;;batchfile,shell,makefile,dockerfile,powershell
+yulingtianxia/PhotoAssessment;True;swift;;c,ruby,metal,python,objective-c
+rai-project/mlmodelscope;True;;node_js;shell,makefile,css,html,javascript,go
+SeunghunSunmoonLee/React.ai;True;;node_js;html,javascript,css
+1adrianb/pytorch-estimate-flops;True;python;;
+BerkeleyAutomation/gqcnn;True;python;;shell,cmake,dockerfile,dylan,hcl
+triagemd/keras-eval;True;python;;jupyter notebook,shell
+bagasbgy/kerasgenerator;False;;R;r
+tamber/tamber-ruby;True;ruby;;
+theislab/scanpy;True;python;;r
+stan-dev/pystan;False;;c;python,shell
+IBM/MAX-Audio-Classifier;True;python;;dockerfile
+lambdaclass/finance_playground;False;;python;shell,makefile,jupyter notebook,css,html,javascript
+NatLibFi/Annif;True;python;;html,dockerfile,css,shell
+polyaxon/polyaxon-client;True;python;;
+r9y9/deepvoice3_pytorch;True;python;;shell
+glm-tools/pyglmnet;True;python;;makefile,tex
+oceanprotocol/datascience;False;;node_js;
+IBM/kafka-streaming-click-analysis;False;;generic;jupyter notebook
+LanguageMachines/mbt;True;c++;;makefile,m4,shell
+mne-tools/mne-python;False;;generic;makefile,python,csound document,shell
+terrytangyuan/dml;True;r;;tex
+JavaBWAPI/ass;True;java;;kotlin
+jeffkinnison/shadho;True;python;;shell
+deathbeds/importnb;True;python;;jupyter notebook,shell
+vene/sparse-structured-attention;True;python;;
+rosette-api/rosette-elasticsearch-plugin;True;java;;shell
+ubclaunchpad/minutes;True;python;;
+OAID/Tengine;True;c++;;batchfile,shell,cmake,cuda,python,assembly,c
+wala/ML;False;;android;java,html,python,shell
+neuropoly/axondeepseg;False;;None;dockerfile,python,jupyter notebook
+guillaumegenthial/tf_metrics;True;python;;
+makcedward/nlpaug;True;python;;jupyter notebook,shell
+TheMTank/ai-distillery;True;python;;javascript
+amark/gun;True;;node_js;shell,dockerfile,css,html,javascript
+quanteda/spacyr;True;r;;python,css,shell
+ptrefall/fluid-hierarchical-task-network;True;;csharp;c#
+webanno/webanno;True;java;;scss,shell,dockerfile,css,html,javascript
+NickleDave/hybrid-vocal-classifier;True;python;;makefile
+albarji/proxTV;True;python;;matlab,c++,c,shell
+paris-saclay-cds/ramp-board;True;python;;batchfile,shell,makefile,css,html,javascript
+NLPatVCU/medaCy;True;python;;
+ONSdigital/address-index-data;True;scala;;python,r
+abdullahselek/koolsla;True;python;;
+dmlc/dlpack;True;c++;;shell,makefile,cmake,python,c
+jredmondson/madara;True;c++;;perl,batchfile,shell,cmake,java,python,starlark,c,nsis,swig
+takahi-i/pfm;True;python;;makefile
+MaxHalford/tuna;True;go;;
+abdullahselek/spampy;True;python;;shell
+markusdumke/reinforcelearn;False;;R;r
+persephone-tools/persephone;True;python;;dockerfile,shell
+locuslab/qpth;True;python;;jupyter notebook
+sammous/spacy-lefff;True;python;;
+willingc/circuitpython_kernel;True;python;;makefile
+toodef/neural-pipeline;True;python;;
+ehsanmok/tvm-rust;True;rust;;python
+loony-bean/fastapprox-rs;True;rust;;c
+nevillelyh/shapeless-datatype;True;scala;;
+intuit/foremast-brain;True;python;;dockerfile,jupyter notebook,shell
+ErikGartner/hyperdock;True;python;;html,javascript,css,shell
+bencbartlett/Overmind;True;;node_js;javascript,typescript
+customink/lambdipy;True;python;;shell
+ThinkingTransistor/Sigma;True;;csharp;batchfile,c#,cuda
+zvtvz/zvt;True;python;;css,shell
+vi3k6i5/flashtext;True;python;;
+moj-analytical-services/pq-tool;True;r;;javascript,dockerfile,css,shell
+wittawatj/kernel-gof;True;python;;dockerfile,jupyter notebook,shell
+CartoDB/cartoframes;True;python;;makefile,javascript,jinja
+vochicong/datalab-nlp;False;;None;shell
+titu1994/tfdiffeq;True;python;;
+lablup/backend.ai-kernels;True;python;;php,julia,roff,shell,matlab,dockerfile,jupyter notebook,css,html,vue,r,javascript
+ncbi-nlp/NegBio;True;python;;
+atomistic-machine-learning/schnetpack;True;python;;
+nok/sklearn-porter;True;python;;makefile,shell
+benfred/implicit;True;python;;c++,c,cuda
+jupyter/nbdime;True;python;;typescript,jupyter notebook,css,html,javascript
+mila-iqia/babyai;True;python;;dockerfile
+SuperKogito/Voice-based-gender-recognition;True;python;;
+salesforce/decaNLP;True;python;;batchfile,makefile,css,shell
+duketemon/pyuplift;True;python;;jupyter notebook
+luisdamiano/BayesHMM;False;;R;r,stan
+proycon/gecco;True;python;;shell
+pathwayforte/pathway-forte;True;python;;shell
+huggingface/neuralcoref;True;python;;perl,c++,c,shell
+indix/whatthelang;True;python;;
+CognitiveScale/cortex-cli;True;;node_js;shell,makefile,dockerfile,handlebars,javascript
+ParrotPrediction/pyalcs;True;python;;makefile,dockerfile
+IBM/MAX-Image-Resolution-Enhancer;True;python;;dockerfile
+jdestefani/ulb-infof305-1819;False;;python;makefile,jupyter notebook
+rvw-org/rvw;False;;None;c++,c,r,shell
+raamana/graynet;True;python;;makefile,jupyter notebook,shell
+jupyter/nbviewer;True;python;;smarty,shell,dockerfile,jupyter notebook,css,html,less
+favstats/peRspective;False;;R;r
+polyrabbit/WeCron;True;python;;jinja,makefile,dockerfile,css,html,javascript
+xrobin/pROC;True;r;;c++,sourcepawn
+ikegami-yukino/oseti;True;python;;
+Keep-Current/Engine;True;python;;makefile,dockerfile,jupyter notebook
+james-bowman/sparse;True;go;;assembly
+microsoft/pai;True;ruby;;scss,batchfile,typescript,jinja,shell,lua,dockerfile,java,python,ejs,javascript,go
+plasticityai/magnitude;True;python;;shell
+a-slide/pycoQC;True;python;;html,tex,shell
+ShanKeAI/ML2017-Notes;False;;None;tex
+markovmodel/molPX;False;;c;python,jupyter notebook,shell
+samuelstjean/nlsam;True;python;;batchfile,shell,dockerfile,c++,powershell
+LexPredict/lexpredict-lexnlp;True;python;;html,shell
+tlverse/tmle3shift;True;r;;makefile,tex
+Tiiiger/bert_score;True;python;;jupyter notebook,shell
+mcekovic/tennis-crystal-ball;True;java;;shell,dockerfile,css,html,groovy,plpgsql,javascript,kotlin
+dfdx/Yota.jl;True;julia;;
+ibrahimsharaf/doc2vec;True;python;;
+kubernetes-sigs/kube-batch;True;go;;shell,makefile,dockerfile,html,python
+DongjunLee/kino-bot;True;python;;dockerfile
+pplu/aws-sdk-perl;True;perl;;makefile,raku
+biocore/calour;False;;c;html,makefile,python,gherkin
+dlebech/lyrics-generator;True;python;;html,javascript,dockerfile,css
+jupyterhub/binderhub;True;python;;mustache,shell,dockerfile,css,html,javascript
+MaxHalford/starboost;True;python;;
+weld-project/weld;True;python;;batchfile,shell,makefile,rust,c++,c
+DistrictDataLabs/yellowbrick;True;python;;makefile,tex
+Tiramisu-Compiler/tiramisu;True;c++;;c#,shell,cmake,makefile,matlab,jupyter notebook,cuda,python,objective-c,c
+jupyter-incubator/sparkmagic;True;python;;batchfile,javascript,jupyter notebook,shell
+nbortolotti/tensorflow-experiences;True;python;;shell
+nanxstats/msaenet;True;r;;css
+howl-anderson/seq2annotation;True;python;;makefile,dockerfile,shell
+databricks/spark-sklearn;True;python;;scala,shell
+roscisz/TensorHive;True;python;;mako,makefile,html,vue,javascript
+owulveryck/gorgonnx;True;go;;makefile,shell
+mbejda/Node-OpenNLP;True;;node_js;javascript
+astropy/astrowidgets;False;;c;python,jupyter notebook
+beringresearch/ivis;True;python;;r,tex,shell
+oxfordcontrol/osqp;False;;C;batchfile,shell,cmake,c++,python,c
+kendryte/kendryte-standalone-sdk;True;c++;;cmake,c,assembly,shell
+hshindo/Merlin.jl;True;julia;;c++
+trthatcher/MLKernels.jl;True;julia;;
+koshort/pyeunjeon;True;python;;c++,shell
+ugnelis/tensorflow-rnn-ctc;True;python;;
+HuwCampbell/grenade;False;;None;haskell,c,shell
+aldro61/mmit;False;;None;shell,makefile,c++,python,r,c
+ribtoks/yannpp;True;c++;;cmake,shell
+platisd/bad-commit-message-blocker;True;python;;dockerfile,shell
+patrickschur/neural-network;True;php;;
+PPPLDeepLearning/plasma-python;True;python;;shell
+mkearney/tweetbotornot;False;;R;r,css
+MathBunny/strava-wind-analysis-ml;True;python;;shell
+IBM/pytorch-on-watson-studio;False;;node_js;jupyter notebook
+chakki-works/chariot;True;python;;jupyter notebook
+pommedeterresautee/fastrtext;False;;R;c++,c,r,shell
+scikit-learn-contrib/stability-selection;True;python;;batchfile,shell
+HoloClean/holoclean;True;python;;shell
+Bytom/bytom;True;go;;shell,makefile,dockerfile,c++,c
+cjekel/tindetheus;True;python;;batchfile,dockerfile,makefile,shell
+gorgonia/tensor;True;go;;shell,assembly
+repetere/tensorscript;True;;node_js;javascript
+wy1iu/sphereface;True;c++;;shell,cmake,matlab,makefile,dockerfile,jupyter notebook,cuda,css,html,python
+GCE-NEIIST/GCE-NEIIST-webapp;True;;node_js;typescript,shell,dockerfile,css,html,python,javascript
+openvenues/node-postal;True;;node_js;c++,javascript,python
+Acellera/moleculekit;False;;None;shell,makefile,jupyter notebook,python,rich text format
+EmergentOrder/onnx-scala;True;scala;;shell
+mholtzscher/spacy_readability;True;python;;makefile
+domainadaptation/salad;True;python;;shell,makefile,jupyter notebook,css,html,javascript
+bigmlcom/python;True;python;;
+fdavidcl/ruta;True;r;;rebol
+ssydasheng/GPflow-Slim;True;python;;
+IlyaGusev/rnnmorph;True;python;;shell
+aonemd/margopher;True;go;;
+neurodata/knorR;True;r;;shell,dockerfile,c++,m4,c
+tzutalin/labelImg;False;;None;makefile,python,shell
+jupyter4edu/jupyter-edu-book;False;;r;shell,makefile,dockerfile,css,tex,emacs lisp
+majkamichal/naivebayes;True;r;;
+cbg-ethz/pybda;True;python;;
+fdtomasi/regain;True;python;;batchfile,matlab,jupyter notebook,shell
+edublancas/sklearn-evaluation;True;python;;html,css
+snipsco/snips-nlu-parsers;False;;None;rust,python,shell
+NRCan/geo-deep-learning;True;python;;
+jobovy/extreme-deconvolution;True;c;;idl,shell,makefile,python,r
+valtech/ros_hadoop;True;scala;;dockerfile,python
+RandolphVI/Next-Basket-Recommendation;True;python;;
+UBC-Stat-ML/blangSDK;True;java;;xtend,shell
+hanabi1224/tensorflow-batteries;True;;csharp;c#
+akshaynagpal/w2n;True;python;;
+aleju/imgaug;True;python;c++;shell
+proycon/clam;True;python;;shell,css,html,xslt,javascript
+InstitutoDOr/FriendENGINE;True;c++;;postscript,roff,scilab,tcl,dockerfile,pascal,css,ada,m4,python,rich text format,objective-c,webassembly,sas,perl,batchfile,php,c#,shell,makefile,module management system,cmake,matlab,digital command language,html,clips,qmake,assembly,c,smalltalk
+aws/sagemaker-sparkml-serving-container;True;java;;dockerfile,shell
+ELS-RD/anonymisation;True;python;;makefile
+textpipe/textpipe;True;python;;shell
+FluxML/ONNX.jl;True;julia;;
+apachecn/Interview;False;;node_js;java,python,jupyter notebook,shell
+parlance/ctcdecode;True;python;;c++
+Cloud-CV/evalai-cli;True;python;;dockerfile,shell
+wq2012/SpectralCluster;True;python;;shell
+jmschrei/apricot;True;python;;jupyter notebook
+winkjs/wink-regression-tree;True;;node_js;javascript
+raphaelvallat/entropy;True;python;;
+orion-labs/node-red-contrib-orion;True;;node_js;html,javascript,makefile,dockerfile
+vita-epfl/openpifpaf;True;python;;cmake,jupyter notebook,css,c++,tex
+sarifsystems/sarif;True;go;;lua,makefile,shell
+sangwook236/SWDT;False;;generic;qml,scala,cuda,gdb,c++,python,javascript,ampl,m,stan,batchfile,php,c#,shell,makefile,matlab,cmake,java,html,emberscript,qmake,asp.net,assembly,processing,nasl,c,swig
+vecto-ai/vecto;True;python;;perl
+koalanlp/python-support;True;python;;makefile,css,shell
+bmcfee/pumpp;True;python;;shell
+soaxelbrooke/phrase;True;rust;;shell
+theislab/scgen;True;python;;
+kylebarron/stata_kernel;True;python;;shell,javascript,css,html,stata
+winkjs/wink-bm25-text-search;True;;node_js;javascript
+tlverse/origami;True;r;;makefile,tex
+MaxHalford/xam;True;python;;
+brainiak/brainiak;False;;None;roff,shell,dockerfile,c++,python
+namisan/mt-dnn;True;python;;dockerfile,jupyter notebook,shell
+sarahromanes/multiDA;False;;R;r
+sebpuetz/lumberjack;True;rust;;shell
+adhaamehab/arabicnlp;True;python;;
+IBM/powerai-counting-cars;False;;generic;jupyter notebook,shell
+shadaj/scalapy-tensorflow;True;scala;;shell
+alan-turing-institute/MLJBase.jl;True;julia;;
+aichaos/rivescript-go;True;go;;html,makefile,shell
+rstudio/sparkxgb;False;;R;scala,r
+clusterking/clusterking;True;python;;jupyter notebook,shell
+facebookresearch/ELF;True;c++;;shell,cmake,html,python,javascript,c
+datarobot/pic2vec;True;python;;makefile
+abreheret/PixelAnnotationTool;True;c++;;batchfile,shell,cmake,python,c
+koalaverse/vip;True;r;;
+Liebeck/spacy-sentiws;True;python;;shell
+tritemio/FRETBursts;True;python;;batchfile,jupyter notebook,shell
+i3thuan5/tai5-uan5_gian5-gi2_kang1-ku7;True;python;;makefile,dockerfile,batchfile
+insideout10/wordlift-plugin;True;php;;scss,batchfile,sass,shell,ruby,dockerfile,css,coffeescript,html,javascript,less
+pycroscopy/pycroscopy;True;python;;jupyter notebook
+o1lo01ol1o/diffhask;False;;c;haskell
+IBM/MAX-Object-Detector;True;python;;dockerfile,jupyter notebook,shell
+HealthCatalyst/healthcareai-r;True;r;;powershell
+feedzai/feedzai-openml-r;True;java;;r
+deepforge-dev/deepforge;True;;node_js;scss,smarty,svelte,shell,lua,stylus,dockerfile,css,html,python,ejs,javascript,less
+Angel-ML/angel;True;java;;batchfile,shell,dockerfile,scala,jupyter notebook,css,terra
+omnisci/omniscidb;True;c++;;lex,dockerfile,cuda,powershell,python,yacc,c#,shell,cmake,ruby,freemarker,java,llvm,thrift,c
+LearnLib/alex;True;java;;scss,typescript,dockerfile,html,javascript
+dirmeier/greta.lme;True;r;;
+alvarowolfx/gcloud-iot-edge-tensorflow;False;;None;shell,makefile,jupyter notebook,c++,html,python,javascript,c
+winkjs/wink-sentiment;True;;node_js;javascript
+kermitt2/grobid;True;java;;batchfile,xquery,roff,ruby,shell,css,html,python,xslt,javascript,swig
+manorie/textoken;True;ruby;;
+sinhrks/daskperiment;True;python;;html,jupyter notebook,css,shell
+joergen7/cuneiform;True;erlang;;shell
+nature1995/Face-Recognition-System;True;python;;batchfile,roff,shell,makefile,css,powershell
+sorenlind/lemmy;True;python;;jupyter notebook
+winkjs/wink-perceptron;True;;node_js;javascript
+tlverse/sl3;False;;R;makefile,r
+meltwater/ex_lsh;True;elixir;;
+Zenohm/Friday;True;python;;makefile
+okfn-brasil/serenata-de-amor;True;python;;shell,elm,dockerfile,css,html,javascript
+aaguilerav/puzzle_solver;True;java;;shell
+daviddalpiaz/r4sl;True;r;;tex,css,shell
+boost-R/FDboost;False;;r - release - devel;r
+MystikalPooka/Unity-Visual-Behavior-Tree;False;;objective-c;c#,shell
+ParallelDots/ParallelDots-PHP-API;True;php;;
+VSainteuf/izitorch;True;python;;
+CyberZHG/keras-gpt-2;True;python;;shell
+EugeneLoy/coq_jupyter;False;;generic;javascript,python
+terrytangyuan/lfda;True;r;;tex
+NTMC-Community/MatchZoo;True;python;;makefile
+bfelbo/DeepMoji;True;python;;
+datmo/datmo;True;python;;html,javascript,css,shell
+apachecn/AiLearning;True;;node_js;shell,dockerfile,jupyter notebook,css,html,python,javascript
+trevorstephens/gplearn;True;python;;
+sorgerlab/indra;True;python;;html,javascript,css
+rstudio/tfdeploy;True;r;;shell
+timkpaine/dashboard;True;python;;typescript,makefile,jupyter notebook,css,html,javascript
+chewxy/lingo;True;go;;
+ynqa/wego;True;go;;dockerfile,shell
+jsbroks/imantics;True;python;;dockerfile
+pavelkomarov/projection-pursuit;True;python;;
+primitiv/primitiv-python;False;;None;c++,python,shell
+ealcobaca/pymfe;True;python;;makefile
+lucasmaystre/choix;True;python;;jupyter notebook
+viadee/localICE;True;r;;
+Texera/texera;False;;generic;scss,c#,typescript,shell,dockerfile,scala,css,java,html,python,javascript,less
+wittawatj/fsic-test;True;python;;jupyter notebook,shell
+dmbee/seglearn;True;python;;
+psipred/DMPfold;True;;bash;perl,shell,makefile,python,c
+mackelab/delfi;True;python;;
+elitcloud/elit;True;python;;perl
+rock-learning/bolero;True;c++;;shell,cmake,matlab,dockerfile,python,r,c
+undertheseanlp/languageflow;True;python;;makefile,javascript,html,css
+tue-robotics/image_recognition;False;;generic;cmake,c++,python,shell
+jonasrothfuss/fishervector;True;python;;
+kLabUM/rrcf;True;python;;tex
+IBM/MAX-Text-Sentiment-Classifier;True;python;;dockerfile,shell
+kevinykuo/deeptriangle;False;;R;tex,r
+Nth-iteration-labs/contextual;True;r;;
+jawahar273/practNLPTools-lite;True;python;;batchfile,shell,makefile,css,html,c
+akabe/ocaml-jupyter;False;;c;ocaml,jupyter notebook,shell
+triagemd/tensorflow-builds;False;;None;dockerfile,shell
+tensorly/tensorly;True;python;;makefile,shell
+henrysky/astroNN;True;python;;html
+NeuroTechX/moabb;True;python;;
+FertigLab/CoGAPS;False;;None;c++,c,m4,r
+ScottfreeLLC/AlphaPy;True;python;;jupyter notebook
+matthewfeickert/R-in-Jupyter-with-Binder;False;;R;r,python,jupyter notebook,shell
+vkuznet/MLaaS4HEP;True;python;;dockerfile,shell
+hawk31/pyGPGO;True;python;;tex
+themains/rdomains;False;;R;r
+Neno0o/TFLite-Android-Helper;False;;android;kotlin
+chriskonnertz/DeepLy;True;php;;
+tlienart/AnalyticalEngine.jl;True;julia;;
+mir-am/LightTwinSVM;True;python;;c++,powershell,tex,shell
+knorth55/chainer-fcis;True;python;;
+JonathanRaiman/pytreebank;True;python;;javascript,css,shell
+iandanforth/pymuscle;True;python;;
+chainer/onnx-chainer;True;python;;batchfile,dockerfile,shell
+hachmannlab/chemml;True;python;;
+Cloud-CV/EvalAI;True;python;;scss,typescript,shell,dockerfile,css,html,javascript
+Legilibre/legi.py;True;python;;html,tsql,shell
+oseiskar/autosubsync;True;python;;shell
+maxrousseau/pfla;True;python;;tex
+Text-Mining/android-app;False;;android;java
+gerardobort/node-corenlp;True;;node_js;javascript,shell
+cesium-ml/cesium_web;True;python;;shell,makefile,dockerfile,css,html,javascript
+delph-in/pydelphin;True;python;;
+apple/turicreate;True;c++,python;;scss,swift,shell,cmake,c,dockerfile,makefile,css,objective-c++,html,javascript,objective-c
+DrSleep/light-weight-refinenet;True;python;;shell
+mozilla/TTS;True;python;;html,jupyter notebook,shell
+sethah/deeptennis;True;python;;makefile,jsonnet,jupyter notebook
+HaliteChallenge/Halite-III;True;c++,ruby;;julia,mako,slim,rust,ocaml,scala,css,d,plpgsql,python,emacs lisp,webassembly,javascript,go,kotlin,batchfile,scss,php,c#,typescript,swift,sass,makefile,shell,cmake,html,java,vue,clojure
+scikit-garden/scikit-garden;True;python;;shell
+spotify/noether;True;scala;;
+opencog/link-grammar;True;c;;roff,lex,ocaml,dockerfile,tcl,pascal,c++,m4,python,javascript,autoit,perl,batchfile,v,common lisp,makefile,shell,cmake,coffeescript,java,html,tex,assembly,openedge abl,yacc,vala,swig
+netrack/keras-metrics;True;python;;
+google/sling;True;c++,python;;shell,css,html,starlark,javascript,c
+rstudio/sparktf;False;;R;r
+chakki-works/chazutsu;True;python;;jupyter notebook
+nyumaya/nyumaya_audio_recognition;True;c++;;javascript,python
+shunk031/paper-survey;True;ruby;;scss,javascript,html,shell
+src-d/ml-core;True;python;;makefile,dockerfile
+gopherdata/gophernotes;True;go;;dockerfile,tex
+xieguigang/sciBASIC;True;r;;batchfile,perl,typescript,shell,rust,css,visual basic .net,html,python,javascript,codeql
+infinitered/nsfwjs;True;;node_js;typescript,shell,css,html,javascript
+imbrianj/switchBoard;True;;node_js;html,javascript,smarty,css
+ayrna/orca;False;;c;matlab,makefile,shell
+ZeusWPI/MOZAIC;False;;None;perl,typescript,shell,makefile,rust,ruby,css,java,html,python,javascript
+maciejkula/sbr-rs;True;rust;;
+dirty-cat/dirty_cat;True;python;;shell
+sipeed/MaixPy;True;c;;shell,cmake,makefile,dockerfile,c++,python,assembly,objective-c
+Hananel-Hazan/bindsnet;True;python;;dockerfile
+RoboTeamTwente/roboteam_ai;True;c++;;cmake,gnuplot,c,shell
+OFAI/hub-toolbox-python3;True;python;;
+sintefneodroid/agent;True;python;;batchfile,shell
+pescadores/pescador;True;python;;shell
+Epistimio/orion;True;python;;shell
+rylans/getlang;True;go;;
+CyberZHG/wiki-dump-reader;True;python;;hcl,shell
+charlesXu86/Chatbot_CN;False;;python;nan
+BLKSerene/Wordless;True;python;;html
+jbn/IPlantUML;True;python;;
+TwentyBN/GulpIO;True;python;;
+MagNet-DL/magnet;True;python;;jupyter notebook
+daniel-cortez-stevenson/crypto-predict;True;python;;makefile,dockerfile,jupyter notebook,shell
+LanguageMachines/PICCL;False;;generic;groovy,python,shell,nextflow
+awslabs/datawig-sagemaker;True;python;;dockerfile,shell
+heupr/core;True;go;;html,javascript,css,shell
+polyaxon/polyaxon-quick-start;True;python;;dockerfile
+mikgroup/sigpy;True;python;;batchfile,shell
+AdamSpannbauer/lexRankr;True;r;;c++,c
+boyanangelov/sdmbench;False;;R;r,css,tex
+nmap/nmap;True;c++;;roff,lua,lex,pascal,m4,ada,python,objective-c,awk,sas,perl,batchfile,php,c#,c,shell,makefile,module management system,cmake,digital command language,html,java,clean,assembly,yacc,nsis
+nanxstats/RECA;True;r;;css
+skyportal/skyportal;True;python;;mako,shell,makefile,dockerfile,css,javascript
+IBM/cities-from-space;True;;node_js;html,javascript,css
+maximecb/gym-miniworld;True;python;;
+cgre-aachen/bayseg;True;python;;matlab,mathematica,m,jupyter notebook
+saksdirect/tophat;False;;python;
+FabricLabs/doorman;True;;node_js;javascript,pug
+leopepe/GOApy;True;python;;makefile,dockerfile,shell,ruby
+rosette-api/R-Binding;True;r;;
+proycon/LaMachine;False;;generic;shell,ruby,singularity,dockerfile,html,python,javascript
+kororo/excelcy;True;python;;
+AssembleSoftware/IoTPy;True;python;;
+AmeyaWagh/Traffic_sign_detection_YOLO;True;python;;shell
+KotlinNLP/NeuralParser;False;;java;kotlin
+IRkernel/IRkernel;True;r;;shell,makefile,jupyter notebook,python,javascript
+probcomp/metaprob;True;;bash;shell,makefile,dockerfile,javascript,gnuplot,clojure
+darribas/satellite_led_liverpool;False;;c;stata,jupyter notebook
+IBM/ensure-loan-fairness-aif360;False;;generic;jupyter notebook
+SANSA-Stack/SANSA-ML;True;scala;;
+gyurisc/icsharp.kernel;True;;csharp;c#,jupyter notebook,css,html,python,inno setup,javascript
+kynan/nbstripout;True;python;;perl,raku,jupyter notebook,shell
+damien911224/theWorldInSafety;True;c++;;batchfile,roff,shell,cmake,matlab,makefile,jupyter notebook,cuda,css,html,python,qmake,javascript,c
+alvations/sacremoses;True;python;;perl,newlisp,ruby,ocaml,javascript,slash,actionscript,systemverilog,emacs lisp,smalltalk
+tesseract-ocr/tesseract;True;c++;;shell,cmake,makefile,dockerfile,java,m4,python,c
+imgarylai/bert-embedding;True;python;;
+imxieyi/waifu2x-mac;True;objective-c;;metal,swift,shell
+mstksg/backprop;False;;generic;haskell
+braincreators/octconv;True;python;;
+alvations/pywsd;True;python;;perl,jupyter notebook
+Remper/sociallink;True;java;;api blueprint,typescript,css,html,python,javascript
+tradr-project/tensorflow_ros_cpp;False;;generic;cmake,shell
+geomstats/geomstats;True;python;;jupyter notebook
+kariminf/jslingua;True;;node_js;html,javascript,python,shell
+JedS6391/LGP;False;;java;kotlin,tex,shell
+kpe/bert-for-tf2;True;python;;shell
+laactech/foxcross;True;python;;html,shell
+wzpan/wukong-robot;True;python;;html,javascript,dockerfile,css
+kymatio/kymatio;True;python;;dockerfile,shell
+IBM/MAX-Audio-Embedding-Generator;True;python;;dockerfile
+xbwei/machine_learning_in_python;False;;python;jupyter notebook
+zuoxingdong/lagom;True;python;;jupyter notebook,shell
+mapbox/robosat;False;;generic;html,makefile,python,shell
+snipsco/snips-nlu-ontology;False;;None;rust,kotlin,shell
+cshadd/fetch-bot;False;;None;php,shell,makefile,css,java,html,c++,javascript
+pprzetacznik/IElixir;True;elixir;;javascript,dockerfile,jupyter notebook,shell
+esowc/ml_drought;True;python;;dockerfile,jupyter notebook,shell
+maciejkula/spotlight;False;;None;python,shell
+google/tangent;True;python;;
+wesselb/stheno;True;python;;makefile
+pillarpond/image-segmenter-android;False;;android;c++,java,cmake,c
+criteo/tf-yarn;True;python;;
+IBM/MAX-News-Text-Generator;True;python;;dockerfile,starlark
+apachecn/pytorch-doc-zh;True;;node_js;shell,dockerfile,css,html,python,javascript
+qbx2/pscp;True;python;;makefile,jupyter notebook
+nicodv/kmodes;True;python;;
+sipeed/MaixPy_DOC;False;;node_js;css
+src-d/datasets;True;go;;c#,shell,makefile,dockerfile,jupyter notebook,css,html,python
+alvinwan/timefhuman;True;python;;makefile
+ikegami-yukino/pymlask;True;python;;
+jhu-lcsr/costar_plan;False;;generic;shell,cmake,lua,c++,python
+moe-serifu-circle/moe-serifu-agent;True;c++;;batchfile,makefile,python,shell
+StanfordASL/NHumanModeling;True;julia;;cmake,purebasic,python,jupyter notebook
+sintefneodroid/droid;False;;generic;shaderlab,hlsl,c#,shell
+messense/bosonnlp-rs;True;rust;;
+loli/medpy;True;python;;cmake,c++,jupyter notebook,starlark
+maartenbreddels/ipyvolume;False;;c;typescript,shell,jupyter notebook,css,python,glsl,javascript
+microsoft/AirSim;True;c++;;batchfile,c#,shell,cmake,makefile,dockerfile,powershell,python,shaderlab,c
+stefan-m-lenz/BoltzmannMachines.jl;True;julia;;
+alan-turing-institute/sktime;True;shell;;batchfile,makefile,dockerfile,c++,python
+SMTorg/smt;False;;generic;c++,python,jupyter notebook
+maxpumperla/elephas;True;python;;dockerfile,shell
+Benjamin-Lee/deep-rules;False;;generic;html,jupyter notebook,shell
+JoergFranke/ADNC;True;python;;
+nlppln/nlppln;True;python;;dockerfile,common workflow language
+sfleischman105/Pleco;True;rust;;
+eyounx/ZOOclient.jl;True;julia;;
+computationalmodelling/nbval;True;python;;makefile,jupyter notebook
+BloodAxe/pytorch-toolbelt;True;python;;makefile
+ikegami-yukino/neologdn;True;python;;jupyter notebook,shell
+deepchem/deepchem;False;;None;shell,dockerfile,jupyter notebook,powershell,python
+jupyter/nbgrader;True;python;;batchfile,smarty,mako,makefile,jupyter notebook,css,html,tex,javascript
+neka-nat/tensorboard-chainer;True;python;;shell
+vecxoz/vecstack;True;python;;
+innodatalabs/tbert;True;python;;
+sintefneodroid/neo;True;python;;shell
+10up/classifai;True;php;;javascript,dockerfile,css,shell
+EducationalTestingService/rsmtool;True;python;;smarty,powershell,jupyter notebook,tex
+nerox8664/gluon2pytorch;True;python;;
+ziqizhang/chase;True;;node_js;shell,css,html,python,javascript,pug
+pymc-learn/pymc-learn;True;python;;shell
+hakaru-dev/hakaru;False;;c;perl,vim script,shell,makefile,haskell,python,tex,emacs lisp
+ben519/mltools;False;;R;r
+yonkornilov/opus-api;True;python;;makefile
+owlbarn/owl;True;c;;shell,makefile,ocaml,dockerfile,c++,objective-c
+jupyterhub/jupyter-server-proxy;True;python;;html,javascript,robotframework,typescript
+wkentaro/chainer-cyclegan;True;python;;
+GraphIt-DSL/graphit;False;;generic;makefile,cmake,c++,python,emacs lisp,c
+shineware/PyKOMORAN;True;python;;java
+ekinakyurek/KnetLayers.jl;True;julia;;
+snipsco/snips-nlu-metrics;True;python;;
+sharibox/EAD2019;True;python;;dockerfile,shell
+verifid/mocr;True;python;;
+marco-c/autowebcompat;True;python;;javascript,dockerfile,jupyter notebook
+Baidu-AIP/nodejs-sdk;True;;node_js;javascript
+probcomp/bayeslite;True;python;;makefile,yacc,shell
+pandoraboxchain/pyrrha-consensus;True;;node_js;javascript,solidity,shell
+cosanlab/nltools;True;python;;
+scikit-optimize/scikit-optimize;True;python;;makefile,shell
+bigartm/bigartm;True;python;;batchfile,c#,shell,cmake,c++,xslt,c
+fcurella/django-recommends;True;python;;html,makefile
+wagenaartje/neataptic;True;;node_js;html,javascript,css
+astorfi/3D-convolutional-speaker-recognition;True;python;;shell
+scikit-multilearn/scikit-multilearn;False;;None;batchfile,powershell,python,jupyter notebook

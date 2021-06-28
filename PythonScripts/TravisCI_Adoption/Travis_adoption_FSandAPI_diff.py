@@ -1,9 +1,9 @@
 import pandas as pd
 
-travis_applied_api2=pd.read_csv("CSV Inputs/Projects_sets/applied_travis_api_2.csv")
-travis_tool_api2=pd.read_csv("CSV Inputs/Projects_sets/tool_travis_api_2.csv")
-travis_applied_fs=pd.read_csv("CSV Inputs/Projects_sets/Applied_Travis_FS.csv")
-travis_tool_fs=pd.read_csv("CSV Inputs/Projects_sets/Tool_Travis_FS.csv")
+travis_applied_api2=pd.read_csv("../../CSV Inputs/Projects_sets/applied_travis_api_2.csv")
+travis_tool_api2=pd.read_csv("../../CSV Inputs/Projects_sets/tool_travis_api_2.csv")
+travis_applied_fs=pd.read_csv("../../CSV Inputs/Projects_sets/Applied_Travis_FS.csv")
+travis_tool_fs=pd.read_csv("../../CSV Inputs/Projects_sets/Tool_Travis_FS.csv")
 
 applied_api2_projects=list(travis_applied_api2['ProjectName'])
 applied_fs_projects=list(travis_applied_fs['ProjectName'])
@@ -59,11 +59,11 @@ tool_fs_projects=list(travis_tool_fs['ProjectName'])
 #     applied_diff_fs_or_api.write(project)
 #     applied_diff_fs_or_api.write('\n')
 
-tool_diff_fs_and_api=open("CSV Outputs/tool_fs_and_api2.csv", 'w')
+tool_diff_fs_and_api=open("../../CSV Outputs/tool_fs_and_api2.csv", 'w')
 tool_diff_fs_and_api.write("ProjectName")
 tool_diff_fs_and_api.write('\n')
 
-applied_diff_fs_and_api=open("CSV Outputs/applied_fs_and_api2.csv", 'w')
+applied_diff_fs_and_api=open("../../CSV Outputs/applied_fs_and_api2.csv", 'w')
 applied_diff_fs_and_api.write("ProjectName")
 applied_diff_fs_and_api.write('\n')
 

@@ -6,7 +6,7 @@ import os
 import os
 
 
-df = pd.read_csv('.\\CSV Inputs\\travis_commit-history-05-11-21-11-29-19-applied.csv',sep=";")
+df = pd.read_csv('../../CSV Inputs/api2_and_fs_projects_stats/travis_commit-history-05-11-21-11-29-19-applied.csv', sep=";")
 
 old_file_path=''
 
@@ -21,7 +21,6 @@ for row in df.itertuples():
             try:
                 dicta= yaml.safe_load(stream)
                 pprint(dicta['env'])
-
                 # sp=dict['install']
                 # sp=str(sp).replace("'",'')
                 # sp=str(sp).replace("[",'')

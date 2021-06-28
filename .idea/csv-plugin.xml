@@ -3,20 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="C:\Users\dhiarzig\Desktop\Research Projects\ICSE Project files\RQ1\NLP\trigrams.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\AppliedProjects_all.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\CSV Inputs\Projects_sets\Applied_Travis_FS.csv">
           <value>
             <Attribute>
@@ -59,17 +45,17 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\ToolProjects_all.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\Travis_paths.csv">
+        <entry key="\CSV Inputs\all_projects_travis_paths.csv">
           <value>
             <Attribute>
               <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\all_regexes_v1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
@@ -94,17 +80,38 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\applied_travis_api.csv">
+        <entry key="\CSV Inputs\csv_for_eval_devops\ground_truth.csv">
           <value>
             <Attribute>
-              <option name="separator" value=";" />
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\applied_travis_fs_or_api.csv">
+        <entry key="\CSV Inputs\csv_for_eval_devops\ground_truth2.csv">
           <value>
             <Attribute>
-              <option name="separator" value=";" />
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\csv_for_eval_fail\classification_test_v1_regex.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\csv_for_eval_fail\detection_eval\classification_test_v1_regex.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\csv_for_eval_fail\ground_truth_fail_class.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
@@ -122,17 +129,31 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\travis_commit-history-05-11-21-11-29-19-applied.csv">
+        <entry key="\CSV Inputs\ngrams\unigrams.csv">
           <value>
             <Attribute>
-              <option name="separator" value=";" />
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\travis_commit-history-05-11-21-14-52-02-tool.csv">
+        <entry key="\CSV Inputs\ngrams\unigrams_Travis.csv">
           <value>
             <Attribute>
-              <option name="separator" value=";" />
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\old_regexes.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Inputs\python_projects_with_travis_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
@@ -353,6 +374,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\CSV Outputs\tool_api1_only.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\CSV Outputs\tool_fs_and_api2.csv">
           <value>
             <Attribute>
@@ -388,21 +416,56 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\bigrams_with_stats_and_paths.csv">
+        <entry key="\Project Stats Year\Applied\1adrianb_pytorch-estimate-flops.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\tmp.csv">
+        <entry key="\Project Stats Year\Applied\IBM_MAX-ResNet-50.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\trigrams_with_stats_and_paths.csv">
+        <entry key="\Project Stats Year\Applied\betterlife_betterlifepsi.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Year\Applied\jupyter_dashboards.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Year\Applied\maxpumperla_elephas.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Year\Tool\chakki-works_seqeval.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\projects-stats-month.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\projects-stats-year.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

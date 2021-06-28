@@ -2,3 +2,12 @@
 /CSV Inputs/fs_listing_all_files/applied_fs_analysis.csv
 /CSV Inputs/fs_listing_all_files/tool_fs_analysis.csv
 /CSV Outputs/*
+/ConfusionMatrices/
+/ErroredJobs/
+/FailedJobs/
+/FailedLogs-ForAccuracyTesting/
+/FailedLogs-ForDetectionTesting/
+/Project Stats Month/
+/Project Stats Year/
+/Revised Logs/
+/Project Stats Summary/

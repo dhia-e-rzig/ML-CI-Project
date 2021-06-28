@@ -2,11 +2,11 @@ import csv
 
 import pandas
 
-import Github_Utils as GHUtils
+from PythonScripts.Utils import Github_Utils as GHUtils
 from github import Github
 from pprint  import pprint
 
-from Yaml_Utils import find_langs
+from PythonScripts.Utils.Yaml_Utils import find_langs
 
 gh= Github(GHUtils.get_github_token())
 import datetime
@@ -225,7 +225,7 @@ def get_frequency_of_langs():
             if (len(temp_l) > 0):
                 all_langs_list.append(temp_l[0])
     al=Counter(all_langs_list).most_common()
-    with open('CSV Outputs\PrimaryLanguageCount-tool.csv', 'w', newline='') as out:
+    with open('../../CSV Outputs/PrimaryLanguageCount-tool.csv', 'w', newline='') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['Language', 'Frequency'])
         for row in al:

@@ -1,0 +1,40 @@
+﻿Regex,Failure Type,Notes
+"FAILED (failures=[0-9]+, errors=[1-9]+)",Test Error,
+403 Forbidden,Build Error,
+Failed to clone from GitHub,Build Error,
+make: .* Error [1-9]+,Build Error,May also indicate test failure depending on make file
+ModuleNotFoundError: No module named [A-Za-z0-9]+,Build Error,Module Not available
+SyntaxError: invalid syntax,Build Error,From Travis Listener
+pyflakes verktyg  ;  (.+):([0-9]+): (.+),Code Analysis Error,From Travis Listener
+Failed enforcement,Code Analysis Error,"Linting Fail, code does not meet requirments"
+"The command ""python enforcer.py"" exited with [1-9]+",Code Analysis Error,"Linting Fail, code does not meet requirments"
+: Exception,Test Error,Uncaught exception during testing
+=+ [1-9]+ error(s)? in,Test Error,Errors during test execution ( summary of total number of errors)
+(.+):([0-9]+): error: (.+),Test Error,From Travis Listener
+(ERROR): (.+)( \\((.+)\\))?,Test Error,From Travis Listener
+_+ ERROR at setup of,Test Error,Error before test execution (during the test setup phase)
+_+ ERROR collecting,Test Error,"Error during test collection ( Test file not found, import module error)"
+Exception :,Test Error,Uncaught exception during testing
+Failed to load,Test Error,Module Not loaded
+ImportError,Build Error,Exception of import error
+no tests ran in,Test Error,Error halting all test execution 
+TypeError,Test Error,Exception of type error
+"FAILED \\(SKIP=([0-9]+), errors=([1-9]+), failures=([0-9]+)\\)",Test Error,From Travis Listener
+- Failed: [1-9]+,Test Fail,
+" (?<failed>[0-9]+) Fail, (?<passed>[0-9]+) passed(, (?<skipped>[0-9]+) skipped)?(, (?<warning>[0-9]+) warnings) in (?<time>[0-9\.]+)s ",Test Fail,From Travis Listener
+=+ [1-9]+ Fail,Test Fail,
+=+ FAILURES =+,Test Fail,
+" == ([0-9]+) Fail, ([0-9]+) passed, ([0-9]+) skipped, ([0-9]+) pytest-warnings in ([0-9\.]+) seconds === ",Test Fail,From Travis Listener
+(FAIL): (.+)( \\((.+)\\))?,Test Fail,From Travis Listener
+"[1-9]+ xFail,",Test Fail,
+\b(\w+)\b.*FAIL(?=.*\b\1\b),Test Fail,
+^(FAIL): (.+),Test Fail,From Travis Listener
+"FAILED (failures=[1-9]+, errors=0)",Test Fail,
+FAILED (\s)+ \[,Test Fail,
+SUMMARY +([0-9]+)\/([0-9]+) tasks and ([0-9]+)\/([0-9]+) tests Fail,Test Fail,From Travis Listener
+"FAILED (failures=[1-9]+, errors=[0-9]+)",Test Fail,
+"FAILED \\(SKIP=([0-9]+), errors=([0-9]+), failures=([1-9]+)\\)",Test Fail,From Travis Listener
+"command "".*"" exited with 137 ",Travis Error,Time limit exceeded
+Failed to connect to travis-cache-production,Travis Error,Cache access problem
+GPG error,Travis Error,Security error in unix environment
+"The job exceeded the maximum log length, and has been terminated",Travis Error,Max log length exceeded

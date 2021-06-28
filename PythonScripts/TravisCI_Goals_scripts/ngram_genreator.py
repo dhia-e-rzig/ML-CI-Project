@@ -1,31 +1,24 @@
 import csv
-import json
 import re
-import nltk
-from nltk.collocations import BigramCollocationFinder, BigramAssocMeasures
 from nltk.util import ngrams
 import pandas as pd
-from pprint import pprint
 import yaml
-from nltk.tokenize import punkt
-import string
-from Yaml_Utils import find_langs
-import math
+from PythonScripts.Utils.Yaml_Utils import find_langs
 import nltk
-from collections import defaultdict
+
 
 def extract_travis_files_paths():
-    df_applied_projs=pd.read_csv('CSV Inputs/Projects_sets/applied_fs_and_api2.csv')
+    df_applied_projs=pd.read_csv('../../CSV Inputs/Projects_sets/applied_fs_and_api2.csv')
     applied_list=df_applied_projs['ProjectName'].to_list()
-    df_tool_projs=pd.read_csv('CSV Inputs/Projects_sets/tool_fs_and_api2.csv')
+    df_tool_projs=pd.read_csv('../../CSV Inputs/Projects_sets/tool_fs_and_api2.csv')
     tool_list = df_tool_projs['ProjectName'].to_list()
     all_projs=applied_list+tool_list
     old_file_path = ''
-    output= open('CSV Outputs/Travis_paths.csv', 'w+', encoding="utf8")
+    output= open('../../CSV Outputs/Travis_paths.csv', 'w+', encoding="utf8")
     output.write('RepoName;TravisFullPath;TravisFileGitURL')
     output.write('\n')
-    df = pd.read_csv('./CSV Inputs/travis_commit-history-05-11-21-11-29-19-applied.csv', sep=";")
-    df2 = pd.read_csv('./CSV Inputs/travis_commit-history-05-11-21-14-52-02-tool.csv', sep=";")
+    df = pd.read_csv('../../CSV Inputs/api2_and_fs_projects_stats/travis_commit-history-05-11-21-11-29-19-applied.csv', sep=";")
+    df2 = pd.read_csv('../../CSV Inputs/api2_and_fs_projects_stats/travis_commit-history-05-11-21-14-52-02-tool.csv', sep=";")
     df_l=[df,df2]
     previous_s=''
     for df in df_l:
