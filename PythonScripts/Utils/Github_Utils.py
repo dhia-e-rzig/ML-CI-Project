@@ -24,7 +24,7 @@ def sleep_until_core_rate_reset(github):
     central = utc.astimezone(to_zone)
     t = datetime.now()
     t = t.astimezone(to_zone)
-    seconds = min((central - t).seconds, 3600)+30
+    seconds = min((central - t).seconds, 3600)+180
     print('sleeping for ' + str(seconds) + ' seconds starting at' + str(t))
     pause.seconds(seconds)
 
@@ -37,9 +37,9 @@ def sleep_until_search_rate_reset(github):
     central = utc.astimezone(to_zone)
     t = datetime.now()
     t = t.astimezone(to_zone)
-    seconds = min((central - t).seconds, 600)+30
+    seconds = min((central - t).seconds, 600)+180
     print('sleeping for ' + str(seconds) + ' seconds starting at' + str(t))
     pause.seconds(seconds)
 
 def get_github_token():
-    return "" #generate a token from github and add here
+    return "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" #generate a token from github and add here

@@ -3,469 +3,588 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\CSV Inputs\Projects_sets\Applied_Travis_FS.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\Projects_sets\Tool_Travis_FS.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\Projects_sets\applied_fs_and_api2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\Projects_sets\applied_travis_api_2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\Projects_sets\tool_fs_and_api2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\Projects_sets\tool_travis_api_2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\all_projects_travis_paths.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\all_regexes_v1.csv">
+        <entry key="/CSV Archives/CSV Inputs/NonML-classification.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\api2_and_fs_projects_stats\repos_langs_diff-05-28-21-17-41-36-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\api2_and_fs_projects_stats\repos_langs_github-05-27-21-14-35-24-applied.csv">
+        <entry key="/CSV Archives/CSV Inputs/Projects_sets/Applied_Travis_FS.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\api2_and_fs_projects_stats\repos_langs_travis-05-28-21-17-35-57-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Inputs\csv_for_eval_devops\ground_truth.csv">
+        <entry key="/CSV Archives/CSV Inputs/Projects_sets/Tool_Travis_FS.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\csv_for_eval_devops\ground_truth2.csv">
+        <entry key="/CSV Archives/CSV Inputs/Projects_sets/applied_fs_and_api2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\csv_for_eval_fail\classification_test_v1_regex.csv">
+        <entry key="/CSV Archives/CSV Inputs/Projects_sets/tool_fs_and_api2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\csv_for_eval_fail\detection_eval\classification_test_v1_regex.csv">
+        <entry key="/CSV Archives/CSV Inputs/Projects_sets/tool_travis_api_2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\csv_for_eval_fail\ground_truth_fail_class.csv">
+        <entry key="/CSV Archives/CSV Inputs/ngrams/bigrams.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\ngrams\bigrams.csv">
+        <entry key="/CSV Archives/CSV Inputs/ngrams/trigrams.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\ngrams\trigrams.csv">
+        <entry key="/CSV Archives/CSV Inputs/ngrams/unigrams.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\ngrams\unigrams.csv">
+        <entry key="/CSV Archives/CSV Inputs/ngrams/unigrams_TravisListener.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\ngrams\unigrams_Travis.csv">
+        <entry key="/CSV Archives/CSV Inputs/regex_ml.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\old_regexes.csv">
+        <entry key="/CSV Archives/CSV Inputs/repo-metadata.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Inputs\python_projects_with_travis_info.csv">
+        <entry key="/CSV Archives/Fail Labels/fail_labels_dhia.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\PrimaryLanguageCount-All.csv">
+        <entry key="/CSV Archives/Manual Labels for Sets/logs_chosen_rand.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\PrimaryLanguageCount-all.csv">
+        <entry key="/CSV Input - New/NonML-classification.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\PrimaryLanguageCount-applied.csv">
+        <entry key="/CSV Input - New/RQ3-RQ4-new.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\PrimaryLanguageCount-tool.csv">
+        <entry key="/CSV Input - New/RQ3_4_NonML.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\Python_2gram_with_freq.csv">
+        <entry key="/CSV Input - New/Tool_transition_with_problem.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\Python_3gram_with_freq.csv">
+        <entry key="/New Lists/RQ2_new_classification.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\Travis_paths.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\applied_api1_only.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\applied_api2_only.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\applied_fs_and_api2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\applied_travis_api_1_or_more_builds.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\applied_travis_api_2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\errors_travis_api.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-27-21-15-01-13-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-27-21-15-01-13-tool.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-16-23-06-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-16-23-06-tool.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-16-24-07-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-16-24-08-tool.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-16-31-47-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-30-09-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-32-53-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-36-01-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-39-14-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-39-14-tool.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-41-36-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_diff-05-28-21-17-41-36-tool.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_github-05-27-21-14-35-24-applied.csv">
+        <entry key="/Project Stats Summary/projects-stats-year-variable_non_ml_v1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\repos_langs_github-05-27-21-14-38-27-tool.csv">
+        <entry key="/Project Stats Year/NonML/AugurProject_augur-core/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\CSV Outputs\repos_langs_travis-05-28-21-17-35-57-applied.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\repos_langs_travis-05-28-21-17-36-00-tool.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\tool_api1_only.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\tool_fs_and_api2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\tool_travis_active.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\tool_travis_api_1_or_more_builds.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\tool_travis_api_2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CSV Outputs\tool_travis_has_builds.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Project Stats Year\Applied\1adrianb_pytorch-estimate-flops.csv">
+        <entry key="/Project Stats Year/NonML/ansible_ansible-container/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Project Stats Year\Applied\IBM_MAX-ResNet-50.csv">
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2018-08-12.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Project Stats Year\Applied\betterlife_betterlifepsi.csv">
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2019-08-12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2020-08-12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2021-08-12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2018-08-12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2019-08-12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2020-08-12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2021-08-12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/RQ2_new_classification.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/RQ3-RQ4-new-projects.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\All_transition_with_problem.csv">
           <value>
             <Attribute>
               <option name="separator" value=";" />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Project Stats Year\Applied\jupyter_dashboards.csv">
+        <entry key="\CSV Input - New\All_transition_with_problem_Test.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Project Stats Year\Applied\maxpumperla_elephas.csv">
+        <entry key="\CSV Input - New\Applied_transition_with_problem.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\CI Adoption - part 1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Project Stats Year\Tool\chakki-works_seqeval.csv">
+        <entry key="\CSV Input - New\CI Adoption - part 2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\projects-stats-month.csv">
+        <entry key="\CSV Input - New\Classification_JobFail_subtypes_class_1st_sub.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\projects-stats-year.csv">
+        <entry key="\CSV Input - New\Classification_JobFail_subtypes_class_1st_sub_add.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_JobFail_subtypes_class_subss.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_JobFail_subtypes_set1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_JobFail_subtypes_set2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_JobFail_test_subtypes_part_1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_JobFail_test_subtypes_part_2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_JobFail_travis_subtypes_part_1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_JobFail_travis_subtypes_part_2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_joberror_subtypes_set1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Classification_joberror_subtypes_set2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\RQ1_Applied_New.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\RQ1_Tool_New.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\RQ3-RQ4-new.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Tool_Travis_FS._New.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\Tool_transition_with_problem.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\all_travis_api_2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\classification_additional_testerror_only_ml_subtype_08_17_2020_first_subtype_v3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\final_output-10-13-21-10-47-16-applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\final_output-10-13-21-10-47-16-tool.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Input - New\tool_travis_api_2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\All_transition_with_problem_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\CI_Adoption-Applied.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\CI_Adoption-Tool.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_JobFail_subtypes_class_1st_sub_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_JobFail_subtypes_class_1st_sub_add_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_JobFail_subtypes_class_subss_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_joberror_new_all.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_jobfail_new_all.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_jobfail_new_set1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_jobfail_new_set2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_jobfail_subtype_test_fail_part1_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_jobfail_subtype_test_part2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Classification_jobfail_subtype_travis_part1_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\PrimaryLanguageCount-all_new.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\Tool_transition_with_problem_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\applied_fs_and_api2_new.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\classification_additional_testerror_only_ml_subtype_08_17_2020_first_subtype_v3_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\CSV Output - New\tool_fs_and_api2_new.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Summary\failure_fix_nb_duration.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Summary\failure_fix_nb_duration_2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Summary\projects-stats-year-variable.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Summary\projects-stats-year-variable_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Summary\projects-stats-year-variable_v3_08_17_2021.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Project Stats Summary\projects-stats-year-variable_v4_08_20_2021.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\PythonScripts\RQ2_new_classification.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\PythonScripts\RQ3-RQ4-new-projects.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

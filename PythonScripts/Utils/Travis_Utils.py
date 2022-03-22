@@ -10,34 +10,55 @@ def get_travis_org_access():
     travis_access_org = TravisCI(access_token="bYlcgiscf4elZlPEn8zlaQ")
     return travis_access_org
 
-
-def get_travis_repo(repo_name):
+def get_travis_build(buildID):
+    try:
+        travis_build = get_travis_com_access().get_build(buildID)
+        list_of_jobs = travis_build.get_jobs().jobs
+        if list_of_jobs is None or len(list_of_jobs) == 0:
+            raise Exception
+    except Exception as e:
         try:
-            travis_repo = get_travis_com_access().get_repository(repo_name)
+            travis_build = get_travis_org_access().get_build(buildID)
+            list_of_jobs = travis_build.get_jobs().jobs
+            if list_of_jobs is None or len(list_of_jobs) == 0:
+                raise Exception
+        except Exception as e:
+            print(e)
+            raise e
+    return travis_build
+
+
+def get_travis_repo(repo_name,verboseMode=False):
+        try:
+            travis_repo = get_travis_org_access().get_repository(repo_name)
             list_of_builds = travis_repo.get_builds().builds
-            if list_of_builds is None or len(list_of_builds)==0:
-              raise Exception
-        except:
+            if list_of_builds is None or len(list_of_builds) == 0:
+                raise Exception
+        except Exception as e:
             try:
-                travis_repo=get_travis_org_access().get_repository(repo_name)
+                travis_repo = get_travis_com_access().get_repository(repo_name)
                 list_of_builds = travis_repo.get_builds().builds
-                if list_of_builds is None or len(list_of_builds)==0:
+                if list_of_builds is None or len(list_of_builds) == 0:
                     raise Exception
+
             except Exception as e:
+                if(verboseMode):
+                    print('find exception')
+                    print(str(e))
                 raise e
         return travis_repo
 
 
 def get_travis_job_repo(job_id):
         try:
-            travis_job= get_travis_com_access().get_job(job_id)
+            travis_job= get_travis_org_access().get_job(job_id)
             travis_repo = travis_job.repository
             login = str(travis_job.owner.login)
             name = str(travis_repo.name)
             travis_repo_full_name = login + '/' + name
         except:
             try:
-                travis_job = get_travis_org_access().get_job(job_id)
+                travis_job = get_travis_com_access().get_job(job_id)
                 travis_repo = travis_job.repository
                 login = str(travis_job.owner.login)
                 name = str(travis_repo.name)
@@ -50,11 +71,11 @@ def find_repos_in_travis_api_with_1_or_more_builds(travis,set):
     # f_tool = open('CSV Outputs/tool_travis_api.csv', 'w')
     # f_tool.write('ProjectName')
     # f_tool.write('\n')
-    f_errors = open('CSV Outputs/errors_travis_api.csv', 'w')
+    f_errors = open('../../CSV Outputs/errors_travis_api.csv', 'w+')
     f_errors.write('ProjectName,Exception')
     f_errors.write('\n')
     try :
-        df_applied=pd.read_csv("CSV Inputs/AppliedProjects_all.csv")
+        df_applied=pd.read_csv("../../CSV Inputs/repo-metadata.csv")
         # df_tool=pd.read_csv("CSV Inputs/ToolProjects_all.csv")
         # applied_projects=list(df_applied["ProjectName"])
         tool_projects=list(df_applied["ProjectName"])

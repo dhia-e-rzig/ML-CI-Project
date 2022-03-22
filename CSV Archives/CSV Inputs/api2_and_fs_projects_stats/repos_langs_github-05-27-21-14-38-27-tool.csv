@@ -1,0 +1,269 @@
+RepoName;GitHubLanguages
+ysig/GraKeL;Python,C++,Jupyter Notebook,C,Shell,Batchfile
+alan-turing-institute/skpro;Python
+SmartDataAnalytics/BioKEEN;Jupyter Notebook,Python
+tensorflow/tensor2tensor;Python,Jupyter Notebook,JavaScript,HTML,C++,Shell
+wmkouw/libTLDA;Python,MATLAB,Makefile
+CPJKU/madmom;Python
+dmlc/xgboost;C++,Python,Cuda,Scala,R,Java,CMake,Shell,Makefile,Groovy,C,Dockerfile,M4,Batchfile
+rasbt/mlxtend;Python,Shell,TeX
+yasserfarouk/negmas;HTML,Python,Jupyter Notebook,JavaScript,CSS,Makefile,XSLT,Shell
+montanaflynn/stats;Go,Makefile
+nschaetti/EchoTorch;Python,Jupyter Notebook
+mwydmuch/ViZDoom;C++,C,CMake,Assembly,HTML,Roff,Objective-C++,Yacc,Python,Batchfile,Dockerfile,Lex,SWIG,PostScript,Shell,QMake,TeX
+pytorch/tnt;Python,Shell
+snipsco/snips-nlu;Python
+biolab/orange3-educational;Python,JavaScript,HTML
+tiny-dnn/tiny-dnn;C++,CMake,Shell,C,Dockerfile
+linkedin/Avro2TF;Scala
+DigitalSlideArchive/HistomicsTK;Python,Dockerfile,CMake,Shell
+scikit-learn-contrib/polylearn;Python,Batchfile,Shell,PowerShell,Makefile
+datamade/usaddress;Python
+rosette-api/nodejs;JavaScript,Shell
+nanxstats/protr;R,CSS
+GRAAL-Research/poutyne;Python,Jupyter Notebook,TeX,Shell
+ClarityNLP/ClarityNLP;Jupyter Notebook,Python,CSS,C++,C#,Shell,HTML,TSQL,JavaScript,ANTLR,Makefile,Dockerfile
+autonomio/kerasplotlib;Python
+NVIDIA/DIGITS;HTML,Python,Lua,JavaScript,Shell,CSS,Dockerfile,Makefile
+CBICA/CaPTk;C++,CMake,Python,MATLAB,Common Workflow Language,Shell,CSS,HTML,C,Dockerfile,Batchfile
+boost-R/gamboostLSS;R,Shell
+onnx/onnx-caffe2;Python,Shell
+scikit-learn/scikit-learn;Python,C++,Shell,C,Batchfile,Makefile
+raamana/neuropredict;Python,Makefile
+pytorch/ignite;Python,Jupyter Notebook,Shell
+alvations/wordnet;Python,TeX,Shell
+nielstron/quantulum3;Python,Shell
+crcollins/molml;Python
+kakao/n2;Jupyter Notebook,C++,Python,Go,Makefile,SWIG
+yasufumy/pipelib;Python,Makefile
+LanguageMachines/libfolia;C++,M4,Shell,C,Makefile
+bmcfee/muda;Python,Shell
+SekouD/mlconjug;Python,Makefile
+ku-nlp/jumanpp;C++,Perl,Ruby,Python,CMake,Shell,Emacs Lisp
+LanguageMachines/ucto;C++,Coq,M4,Verilog,Python,Shell,NewLisp,Makefile
+JohnSnowLabs/spark-nlp;Scala,Python,Java,Shell,HTML
+nanxstats/enpls;R,CSS
+OpenANN/OpenANN;C++,Python,CMake,C,Shell
+Kitware/SMQTK;Turing,Python,Jupyter Notebook,C++,JavaScript,Java,C,HTML,TeX,CMake,Cuda,M4,Shell,MATLAB,Pug,Makefile,Dockerfile,CSS,Stylus
+patrickschur/language-detection;PHP
+primitiv/primitiv;C++,Cuda,C,CMake,Shell,Common Lisp,Cool
+rsokl/MyGrad;Python
+explosion/spaCy;Python,JavaScript,Sass,HTML,Jinja,Makefile,Shell
+apache/incubator-mxnet;C++,Python,Jupyter Notebook,Cuda,CMake,Shell,Groovy,Dockerfile,Java,R,Makefile,C,PowerShell
+1adrianb/face-alignment;Python,Dockerfile
+undertheseanlp/underthesea;Python,Makefile
+csukuangfj/OpenCNN;C++,Python,CMake,Starlark,Shell
+james-bowman/nlp;Go
+nlgranger/SeqTools;Python,C,TeX
+thehyve/tmtk;Python,CSS,JavaScript,HTML,R
+chainer/chainerrl;Python,Shell
+amadeus4dev/amadeus-node;JavaScript
+clips/pattern;Python,JavaScript,HTML
+thombashi/pytablewriter;Python,Makefile
+flennerhag/mlens;Python,Shell
+axa-group/nlp.js;JavaScript,WebAssembly,CSS,HTML
+stanfordnlp/stanfordnlp;Python,JavaScript,Shell,HTML,CSS
+nilearn/nilearn;Python,HTML,Shell,JavaScript,Makefile
+goulu/Goulib;Jupyter Notebook,Python,Batchfile,Shell
+vertexclique/orkhon;Rust,Shell,Python,PowerShell
+Rostlab/nalaf;Python
+Jopepato/SMiLE;Python,Jupyter Notebook
+openml/OpenML;PHP,CSS,JavaScript,Processing,Hack,HTML,Shell,Python,Batchfile
+LanguageMachines/frog;C++,M4,Shell,Makefile
+patrikhuber/eos;C++,CMake,Python,MATLAB
+triagemd/model-converters;Python,Shell
+majianjia/nnom;C,Python
+reiinakano/scikit-plot;Python
+WeBankFinTech/FATE;Python,Shell,Lua,Dockerfile
+laresbernardo/lares;R
+mdbloice/Augmentor;Jupyter Notebook,Python
+stanfordnlp/CoreNLP;Java,Lex,JavaScript,Makefile,Common Lisp,Python,Shell,Perl,HTML,CSS,Ruby,Batchfile
+symisc/sod;C,HTML,Makefile
+KxSystems/nlp;q,Raku,OpenEdge ABL,Terra,Perl,Dockerfile,Batchfile
+Pseudomanifold/Aleph;C++,Python,CMake,Dockerfile,Shell
+src-d/modelforge;Python,HTML,Dockerfile
+Tyill/skynet;C++,C,C#,Python,Cuda,CMake,Shell
+ecohealthalliance/EpiTator;Python
+owulveryck/onnx-go;Go,Shell,Makefile,PureBasic
+CrowdTruth/CrowdTruth-core;Jupyter Notebook,CSS,JavaScript,Python,HTML
+yooper/php-text-analysis;PHP,Shell
+proycon/colibri-core;C++,Python,Jupyter Notebook,Shell,M4,Makefile,TeX
+vzhou842/profanity-check;Python
+AtheMathmo/rusty-machine;Rust
+archilogic-com/3dio-js;JavaScript,HTML,GLSL,CSS,Less
+rabidgremlin/Mutters;Java
+business-science/timetk;R,CSS
+catboost/catboost;C,Python,C++,Assembly,Fortran,Cuda,Makefile,Scala,R,Roff,Ragel,Java,TeX,HTML,SWIG,JavaScript,C#,Shell,CMake,DIGITAL Command Language,TypeScript,Rust,Batchfile,Clean,CSS,Perl,Smarty,Io,M4,NASL,Dockerfile,PHP
+BehaviorTree/BehaviorTree.CPP;C++,CMake,Shell
+tspooner/rsrl;Rust
+kundajelab/dragonn;Jupyter Notebook,Python,Shell,Dockerfile
+raviqqe/tensorflow-qnd;Python,Ruby
+mratsim/Arraymancer;Nim,Python,Julia,Ruby
+root-project/root;C++,C,Python,JavaScript,HTML,CMake,Roff,Objective-C++,Fortran,Shell,OCaml,Cuda,Objective-C,CSS,Go,Makefile,Perl,Emacs Lisp,Batchfile,C#,Jupyter Notebook,Vim script,Dockerfile,NASL,GLSL,AppleScript,XSLT,Smarty,PowerShell,R,Starlark,SWIG
+onnx/onnx-tensorflow;Python,Shell
+fukatani/stacked_generalization;Python
+BIMSBbioinfo/maui;Jupyter Notebook,Python
+XiaoMi/mace;C++,Python,C,CMake,Starlark,Jinja,Shell,Dockerfile,HTML,Smarty
+DynaSlum/satsense;Jupyter Notebook,Python
+northwesternmutual/ai-challenge;JavaScript,Dockerfile
+gosha20777/keras2cpp;C++,Python,CMake
+RasaHQ/rasa_core;Python,HTML,Makefile,Shell,Dockerfile
+microsoft/LightGBM;C++,Python,R,C,Cuda,Shell,CMake,SWIG,PowerShell,M4
+LLNL/lbann;C++,Python,Cuda,Shell,CMake,NASL,Dockerfile
+CogComp/lbjava;Java,Yacc,Shell,Vim script,Groovy
+bhargavvader/pycobra;Python,TeX
+pfnet-research/menoh;C++,Python,Shell,C,CMake,Batchfile
+nokitjs/nokit;JavaScript,HTML,CSS,Visual Basic,Shell,Batchfile
+MaxHalford/eaopt;Go
+modern-fortran/neural-fortran;Fortran,CMake,Python
+chakki-works/seqeval;Python,Perl
+lucasrodes/whatstk;Python,Shell
+amadeus4dev/amadeus-java;Java
+openml/automlbenchmark;Python,Jupyter Notebook,Shell,R
+CMU-Perceptual-Computing-Lab/openpose;C++,Cuda,CMake,Shell,HCL,Batchfile,HTML,Python
+unagiootoro/ruby-dnn;Ruby,C
+TeamHG-Memex/eli5;Jupyter Notebook,Python,HTML,Shell
+shogun-toolbox/shogun;C++,SWIG,Python,C,CMake,MATLAB,Shell,HTML,Dockerfile,Batchfile,Makefile,GDB,Assembly
+chopralab/lemon;C++,Python,CMake,Shell,Perl,PowerShell
+greyblake/whatlang-rs;Rust,HTML,Ruby
+r9y9/nnmnkwii;Python,Shell
+amzn/xfer;Python,Makefile,Shell
+google/uis-rnn;Python,Shell
+codeplaysoftware/SYCL-DNN;C++,CMake,Python,Shell,Dockerfile,Batchfile
+chakki-works/sumeval;Python
+cnkuangshi/LightCTR;C++,C,Python,Makefile,Shell
+JuliaML/Learn.jl;Julia
+bamos/block;Python
+pytorch/vision;Python,C++,Cuda,Shell,Batchfile,Java,CMake,Objective-C++,PowerShell,Objective-C,Dockerfile,C
+deepmind/lab;C,Lua,C++,GLSL,Python,ShaderLab,Starlark,HTML,Assembly,Roff,Objective-C,Shell,Yacc,Perl,Makefile
+sangwook236/SWL;C++,Python,MATLAB,CMake,C,CSS,Cuda,TeX,Shell,HTML,Objective-C,Batchfile,M
+dkpro/dkpro-cassis;Python,Makefile
+AdamStelmaszczyk/gtsa;C++,Makefile
+jfilter/text-classification-keras;Python
+rosette-api/python;Python,CSS
+yoshoku/rumale;Ruby,C,Terra,C++
+dice-group/LIMES;JavaScript,Java,PHP,Vue,Python,Dart,Lua,Shell,HTML,Dockerfile
+scikit-multiflow/scikit-multiflow;Python,C++,Jupyter Notebook,Dockerfile,Shell,Makefile
+jmaggio14/imagepypelines;Python
+xmartlabs/Bender;Swift,Metal,Objective-C,Ruby
+rai-project/mxnet;Go,Shell,Python,Makefile
+jmschrei/pomegranate;Jupyter Notebook,Python,Makefile,Shell
+yxonic/fret;Python,Makefile
+jubatus/jubatus;C++,Python,OCaml,Shell,Standard ML,Makefile,Dockerfile
+fastnlp/fastNLP;Python,Jupyter Notebook,Shell
+jenetics/jenetics;Java,CSS,Kotlin,TeX,Gnuplot,Shell,JavaScript,C++,Python,Batchfile,HTML
+tensorflow/cleverhans;Jupyter Notebook,Python,HTML,Shell,Makefile,Dockerfile
+hazimehh/L0Learn;C++,R,M4,C,Shell
+SciSharp/SiaNet;C#,C++,C,CSS
+LanguageMachines/timbl;C++,Shell,M4,Makefile
+amadeus4dev/amadeus-python;Python,Makefile
+ray-project/ray;Python,C++,Java,TypeScript,Starlark,Shell,C,HTML,CSS,Dockerfile,Jupyter Notebook,JavaScript,Smarty,Makefile
+davisking/dlib;C++,Python,CMake,Cuda,C,XSLT,Java,Makefile,Shell,Batchfile,Perl,MATLAB
+gunthercox/ChatterBot;Python
+boost-R/mboost;HTML,R,CSS,C,TeX,PHP,Shell
+OGFris/GoStats;Go
+Maluuba/nlg-eval;Python
+d4l3k/go-bayesopt;Go
+aksnzhy/xlearn;C++,Shell,Python,Makefile,CMake,C,M4,Batchfile,R,Dockerfile
+inspirehep/magpie;Python
+lai-bluejay/diego;Python,Shell
+menpo/menpo;Python,C,C++,Makefile
+amadeus4dev/amadeus-ruby;Ruby
+JohnVinyard/zounds;Python,JavaScript,HTML,Dockerfile,Shell
+wkcn/MobulaOP;Python,C++,C,Shell
+iamDecode/sklearn-pmml-model;Python,R
+kermitt2/delft;Python
+chainer/chainer;Python,C++,Cuda,CMake,Shell,PowerShell,Dockerfile,Batchfile,C
+neuronets/nobrainer;Python,Jupyter Notebook,Dockerfile,Shell
+intel-analytics/BigDL;Scala,Python,Shell,RobotFramework,Java,Dockerfile,Lua
+C5T/Current;C++,Shell,TypeScript,Objective-C++,JavaScript,Objective-C,C,HTML,Makefile,F#
+esimov/pigo;Go,Python,C,Shell,HTML,Makefile,CSS
+Mariewelt/OpenChem;Python,Shell,Dockerfile,Batchfile
+plstcharles/thelper;Python,Makefile,Dockerfile,C,Shell
+therfoo/therfoo;Go
+exectails/Yggdrasil;C#
+Tencent/ncnn;C++,C,GLSL,Python,CMake,Shell,Batchfile,SWIG
+dmitryikh/leaves;Go,Python,Shell
+NIHOPA/NLPre;Python
+proycon/foliapy;Python,Shell
+KotlinNLP/SimpleDNN;Kotlin
+microsoft/MMdnn;Python,JavaScript,TypeScript,CSS,HTML,Shell
+microsoft/ConversationLearner-Models;TypeScript
+webfirmframework/wff;Java,JavaScript
+vkuznet/TFaaS;JavaScript,HTML,CSS,C++,Go,Python,SCSS,Shell,PureBasic,Makefile,Dockerfile
+DeNA/ChainerPruner;Python,Shell,Dockerfile
+OlafenwaMoses/ImageAI;Python
+arthurpaulino/miraiml;Python,Makefile
+oracle/Skater;Python,Shell
+pixiedust/pixiedust;Jupyter Notebook,Python,HTML,JavaScript,Scala,Makefile,Batchfile,CSS,Java,Smarty
+RGF-team/rgf;C++,Python,Jupyter Notebook,R,Logos,Yacc,Shell,PowerShell,CMake,Perl,Makefile,Dockerfile
+annoviko/pyclustering;Python,C++,TeX,C,Shell,PowerShell,Makefile,CMake
+dssg/triage;Jupyter Notebook,Python,Shell,Dockerfile,PLpgSQL,Mako
+Thenerdstation/mltest;Python
+cltk/cltk;Python,Jupyter Notebook,Makefile
+shimat/opencvsharp;C#,C++,C,Dockerfile,PowerShell,CMake
+chainer/chainercv;Python,Shell,Dockerfile
+tensorflow/tfjs;TypeScript,JavaScript,Python,C++,HTML,Shell,Starlark,CSS,Objective-C,Java,Batchfile,Ruby,Dockerfile,C
+bsc-wdc/dislib;Python,Jupyter Notebook,Shell,Dockerfile
+PetrochukM/PyTorch-NLP;Python,Shell
+guokr/Caver;Python
+roberino/linqinfer;C#,HTML,Shell,Batchfile,PowerShell,Smalltalk
+ibayer/fastFM;Python,Shell,Makefile
+openeventdata/mordecai;Python,TeX
+scikit-learn-contrib/hdbscan;Jupyter Notebook,Python,TeX,Shell
+Blind-Striker/gender-prediction-turkish;C#,Shell,PowerShell
+openopt/copt;Python,Shell
+bakwc/JamSpell;C++,Python,C,CMake,SWIG,Shell
+rai-project/tensorflow;Go,Shell,Python,Makefile,HTML
+rdk/p2rank;Groovy,Java,Shell,Tcl,Batchfile
+jtablesaw/tablesaw;Java,HTML,Shell
+medtagger/MedTagger;Python,TypeScript,HTML,SCSS,JavaScript,Makefile,HCL,Shell,Dockerfile,Smarty,Mako
+sekia/Algorithm-LibLinear;C++,Perl,C,XS
+DeepMLNet/DeepNet;F#,Cuda,Python,PowerShell,C#,Shell,Batchfile,HTML
+FidoProject/Fido;C++,Makefile,Batchfile,C,Shell
+bakercp/ofxDlib;C++,Shell,Makefile
+lang-ai/langai-node;TypeScript
+azu/nlp-pattern-match;TypeScript,JavaScript
+baidu/Familia;C++,Python,Makefile,Shell,Dockerfile
+RaRe-Technologies/gensim;Python,Shell,C++,Jupyter Notebook,C,GDB
+BVLC/caffe;C++,Python,Cuda,CMake,MATLAB,Makefile,Shell,Dockerfile
+MaxHalford/prince;Python,R
+antoinecarme/pyaf;Python,Makefile,Shell,R
+elki-project/elki;Java,Python,GLSL,Batchfile,Shell
+scikit-learn-contrib/imbalanced-learn;Python,Shell,TeX,Batchfile,Makefile
+usnistgov/jarvis;Python,AMPL,Nix,Shell
+funkey/gunpowder;Python,Dockerfile,Makefile
+thu-ml/zhusuan;Python
+tlverse/tmle3;R,Makefile,TeX
+vzhong/embeddings;Python,Dockerfile,Shell
+Robbepop/prophet;Rust
+fukuball/jieba-php;PHP
+abadojack/whatlanggo;Go
+nickgillian/grt;C++,Python,Processing,Groovy,CMake,QMake,HTML,Makefile,Shell
+yzhao062/pyod;Python,Jupyter Notebook
+pfnet-research/menoh-ruby;C,Ruby,Dockerfile,Shell
+shi510/mlfe;C++,Cuda,CMake,Dockerfile,C,Python,Shell
+proycon/pynlpl;Python,Shell,C++
+alfredfrancis/ai-chatbot-framework;Python,TypeScript,HTML,JavaScript,CSS,Dockerfile,Makefile
+torchgan/torchgan;Python,Jupyter Notebook
+eantcal/nunn;C++,Inno Setup,CMake,Shell
+openml/openml-r;Jupyter Notebook,R,Rebol
+feedly/transfer-nlp;Python,Shell
+EducationalTestingService/skll;Python,PowerShell
+TechPrimers/core-nlp-example;Java
+jpuigcerver/Laia;Shell,Lua,Perl,Python,R,Dockerfile
+openml/openml-tutorial;HTML,Jupyter Notebook,JavaScript,CSS,Smarty
+openvenues/libpostal;C,Python,C++,Shell,M4,Makefile
+versilov/matrex;Elixir,C,Jupyter Notebook,Makefile,Python
+MisaOgura/flashtorch;HTML,Jupyter Notebook,Python,CSS
+rai-project/caffe;Go,Makefile,Shell
+LearnLib/learnlib;Java,Python,Shell,HTML
+morinim/vita;C++,Python,MQL5,CMake,Emacs Lisp,C
+wq2012/SimpleDER;Python,Shell
+modAL-python/modAL;Python,Shell
+SGpp/SGpp;C++,Python,SWIG,C,Shell,PostScript,R,Java,Cuda,MATLAB,TeX,CSS,Makefile,CMake
+openml/openml-python;Python,Batchfile,Shell,Dockerfile,Makefile
+Tw1ddle/needs-ai-lib;Haxe,CSS,JavaScript,Shell,Batchfile
+jnbraun/bcnn;C,C++,Cuda,Assembly,CMake
+mlpack/ensmallen;C++,CMake,Shell
+skorch-dev/skorch;Python,Jupyter Notebook,Shell,Dockerfile
