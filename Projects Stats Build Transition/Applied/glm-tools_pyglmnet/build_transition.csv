@@ -1,0 +1,3 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+700883301,33a00f8d0647c1800d5d39e5a670e0808ec67f8d,FailedToPassed,failed,532,https://github.com/glm-tools/pyglmnet/pull/380
+686496029,30122dd19784e801490ccb2b31df4938d883ed1d,FailedToPassed,passed,508,https://github.com/glm-tools/pyglmnet/pull/380

@@ -1,0 +1,625 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 2f914433-6af0-4a21-837b-173ba16812e7@1.worker-com-64466c68c8-9zp2k.gce-production-2
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-f7b33d96-321b-471b-b294-de2a145fae03 travis-ci-ubuntu-1804-1593521679-ca42795e (via amqp)
+startup: 6.417283225s
+travis_fold:end:worker_info[0Ktravis_time:start:23a06248[0Ktravis_time:end:23a06248:start=1608145819973757835,finish=1608145820139568436,duration=165810601,event=no_world_writable_dirs[0Ktravis_time:start:1fb29e74[0Ktravis_time:end:1fb29e74:start=1608145820142127839,finish=1608145820144909474,duration=2781635,event=setup_filter[0Ktravis_time:start:05dc2efe[0Ktravis_time:end:05dc2efe:start=1608145820152083580,finish=1608145820158903169,duration=6819589,event=agent[0Ktravis_time:start:0038ebb4[0Ktravis_time:end:0038ebb4:start=1608145820161232493,finish=1608145820162828937,duration=1596444,event=check_unsupported[0Ktravis_time:start:15073f08[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: bionic
+Build id: 209184700
+Job id: 461361544
+Runtime kernel version: 5.3.0-1029-gcp
+travis-build version: 53b53106
+[34m[1mBuild image provisioning date and time[0m
+Tue Jun 30 13:35:43 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.8 (Ubuntu 11.8-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Mar 18 2020 18:29:15)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.87
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.21.0
+v11.15.0
+v12.13.1
+v12.18.1
+v13.3.0
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:15073f08:start=1608145820165263334,finish=1608145820169861915,duration=4598581,event=show_system_info[0Ktravis_time:start:17fbd2e0[0Ktravis_time:end:17fbd2e0:start=1608145820172203366,finish=1608145820185605694,duration=13402328,event=rm_riak_source[0Ktravis_time:start:0c549c39[0Ktravis_time:end:0c549c39:start=1608145820188228146,finish=1608145820192496744,duration=4268598,event=fix_rwky_redis[0Ktravis_time:start:235c0bfc[0Ktravis_time:end:235c0bfc:start=1608145820194916557,finish=1608145820822713883,duration=627797326,event=wait_for_network[0Ktravis_time:start:173ff4ea[0Ktravis_time:end:173ff4ea:start=1608145820827835208,finish=1608145821063932801,duration=236097593,event=update_apt_keys[0Ktravis_time:start:06b89dbe[0Ktravis_time:end:06b89dbe:start=1608145821070985467,finish=1608145821122444125,duration=51458658,event=fix_hhvm_source[0Ktravis_time:start:047864f8[0Ktravis_time:end:047864f8:start=1608145821125887555,finish=1608145821128470371,duration=2582816,event=update_mongo_arch[0Ktravis_time:start:1045e150[0Ktravis_time:end:1045e150:start=1608145821133238049,finish=1608145821172084046,duration=38845997,event=fix_sudo_enabled_trusty[0Ktravis_time:start:1393e2df[0Ktravis_time:end:1393e2df:start=1608145821175518921,finish=1608145821177682789,duration=2163868,event=update_glibc[0Ktravis_time:start:0b15b6bb[0Ktravis_time:end:0b15b6bb:start=1608145821182165983,finish=1608145821189851251,duration=7685268,event=clean_up_path[0Ktravis_time:start:02e71ce8[0Ktravis_time:end:02e71ce8:start=1608145821194549773,finish=1608145821202902514,duration=8352741,event=fix_resolv_conf[0Ktravis_time:start:02663da2[0Ktravis_time:end:02663da2:start=1608145821207061138,finish=1608145821232453928,duration=25392790,event=fix_etc_hosts[0Ktravis_time:start:1d37ba54[0Ktravis_time:end:1d37ba54:start=1608145821236384875,finish=1608145821244299623,duration=7914748,event=fix_mvn_settings_xml[0Ktravis_time:start:0a69fe71[0Ktravis_time:end:0a69fe71:start=1608145821247781671,finish=1608145821256561807,duration=8780136,event=no_ipv6_localhost[0Ktravis_time:start:00fa3564[0Ktravis_time:end:00fa3564:start=1608145821260797490,finish=1608145821263238075,duration=2440585,event=fix_etc_mavenrc[0Ktravis_time:start:0523d9fd[0Ktravis_time:end:0523d9fd:start=1608145821267405591,finish=1608145821270470485,duration=3064894,event=fix_wwdr_certificate[0Ktravis_time:start:00005022[0Ktravis_time:end:00005022:start=1608145821273520227,finish=1608145821318433652,duration=44913425,event=put_localhost_first[0Ktravis_time:start:0b7c5328[0Ktravis_time:end:0b7c5328:start=1608145821323162276,finish=1608145821326395387,duration=3233111,event=home_paths[0Ktravis_time:start:27de6594[0Ktravis_time:end:27de6594:start=1608145821330286279,finish=1608145821341891969,duration=11605690,event=disable_initramfs[0Ktravis_time:start:26ebfc5a[0Ktravis_time:end:26ebfc5a:start=1608145821345578646,finish=1608145821476885201,duration=131306555,event=disable_ssh_roaming[0Ktravis_time:start:2bb84e5a[0Ktravis_time:end:2bb84e5a:start=1608145821481151802,finish=1608145821483112934,duration=1961132,event=debug_tools[0Ktravis_time:start:04883dba[0Ktravis_time:end:04883dba:start=1608145821486681664,finish=1608145821489671789,duration=2990125,event=uninstall_oclint[0Ktravis_time:start:07a8803c[0Ktravis_time:end:07a8803c:start=1608145821493541844,finish=1608145821496583544,duration=3041700,event=rvm_use[0Ktravis_time:start:0c220983[0Ktravis_time:end:0c220983:start=1608145821500400059,finish=1608145821507951176,duration=7551117,event=rm_etc_boto_cfg[0Ktravis_time:start:05262249[0Ktravis_time:end:05262249:start=1608145821512020503,finish=1608145821514459283,duration=2438780,event=rm_oraclejdk8_symlink[0Ktravis_time:start:02b0d80e[0Ktravis_time:end:02b0d80e:start=1608145821517504611,finish=1608145821599316438,duration=81811827,event=enable_i386[0Ktravis_time:start:06efb5bc[0Ktravis_time:end:06efb5bc:start=1608145821603876923,finish=1608145821607461307,duration=3584384,event=update_rubygems[0Ktravis_time:start:00406bec[0Ktravis_time:end:00406bec:start=1608145821610572300,finish=1608145822358498648,duration=747926348,event=ensure_path_components[0Ktravis_time:start:0d506f60[0Ktravis_time:end:0d506f60:start=1608145822363226247,finish=1608145822366529770,duration=3303523,event=redefine_curl[0Ktravis_time:start:376fb630[0Ktravis_time:end:376fb630:start=1608145822370619133,finish=1608145822468552855,duration=97933722,event=nonblock_pipe[0Ktravis_time:start:03819726[0Ktravis_time:end:03819726:start=1608145822474442874,finish=1608145828507379525,duration=6032936651,event=apt_get_update[0Ktravis_time:start:1fd8c1a0[0Ktravis_time:end:1fd8c1a0:start=1608145828511544503,finish=1608145828513499080,duration=1954577,event=deprecate_xcode_64[0Ktravis_time:start:02e4aa5c[0Ktravis_time:end:02e4aa5c:start=1608145828517771371,finish=1608145831185754607,duration=2667983236,event=update_heroku[0Ktravis_time:start:07f3f60e[0Ktravis_time:end:07f3f60e:start=1608145831189919024,finish=1608145831192309102,duration=2390078,event=shell_session_update[0Ktravis_time:start:0b21d554[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:0b21d554:start=1608145831196341217,finish=1608145833534213497,duration=2337872280,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:120dd180[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:120dd180:start=1608145833542218286,finish=1608145833613396356,duration=71178070,event=resolvconf[0Ktravis_time:start:01f5d563[0Ktravis_time:end:01f5d563:start=1608145833621981318,finish=1608145833774470121,duration=152488803,event=maven_central_mirror[0Ktravis_time:start:20e90dce[0Ktravis_time:end:20e90dce:start=1608145833779473270,finish=1608145833871841669,duration=92368399,event=maven_https[0K[33;1m3.9 is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/18.04/x86_64/python-3.9.tar.bz2[0m
+travis_time:start:21c62820[0K$ curl -sSf --retry 5 -o python-3.9.tar.bz2 ${archive_url}
+travis_time:end:21c62820:start=1608145833952162861,finish=1608145834506879518,duration=554716657,event=configure[0Ktravis_time:start:071e4784[0K$ sudo tar xjf python-3.9.tar.bz2 --directory /
+travis_time:end:071e4784:start=1608145834511054591,finish=1608145845365973144,duration=10854918553,event=configure[0Ktravis_time:start:04de085a[0Ktravis_time:end:04de085a:start=1608145845387779460,finish=1608145845390770804,duration=2991344,event=fix_ps4[0Ktravis_time:start:27a4cb08[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0e52f0d8[0K$ git clone --depth=50 --branch=py39 https://github.com/nengo/nengo-dl.git nengo/nengo-dl
+Cloning into 'nengo/nengo-dl'...
+travis_time:end:0e52f0d8:start=1608145845401791237,finish=1608145846001547945,duration=599756708,event=checkout[0K$ cd nengo/nengo-dl
+$ git checkout -qf 9e153398957f3fef60a32498bdb3ceb4d88b858f
+travis_fold:end:git.checkout[0K
+travis_time:end:0e52f0d8:start=1608145845401791237,finish=1608145846021108101,duration=619316864,event=checkout[0Ktravis_time:start:02cb1040[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export GH_TOKEN=[secure]
+$ export encrypted_fcdbeb54a1c4_key=[secure]
+$ export encrypted_fcdbeb54a1c4_iv=[secure]
+$ export PYPI_TOKEN=[secure]
+$ export PYPI_TEST_TOKEN=[secure]
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export SCRIPT="test"
+$ export TEST_ARGS=""
+$ export BRANCH_NAME="${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}"
+$ export PIP_USE_FEATURE="2020-resolver"
+$ export NUMPY_VERSION="numpy>=1.16.0"
+$ export TF_VERSION="tensorflow"
+$ export NENGO_VERSION="nengo[tests]"
+$ export SCIPY_VERSION="noop"
+$ export NENGO_VERSION="git+https://github.com/nengo/nengo.git#egg=nengo[tests]"
+$ export SCIPY_VERSION="scipy"
+$ export SCRIPT="test-coverage"
+
+travis_time:end:02cb1040:start=1608145846026374908,finish=1608145846053197824,duration=26822916,event=env[0Ktravis_time:start:03d61430[0K$ source ~/virtualenv/python3.9/bin/activate
+travis_time:end:03d61430:start=1608145846057092144,finish=1608145846062940637,duration=5848493,event=[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:1230e648[0K$ Installing caching utilities
+travis_time:end:1230e648:start=1608145846811957346,finish=1608145846839387820,duration=27430474,event=setup_casher[0Ktravis_time:start:35bc0974[0Ktravis_time:end:35bc0974:start=1608145846846065947,finish=1608145846849339996,duration=3274049,event=setup_casher[0Ktravis_time:start:0002fc4e[0Kattempting to download cache archive[0m
+[32;1mfetching py39/cache--linux-bionic-3391e65aed0039c8c39b44c2f0baa3b98b444c950336bf99aa8a2583e193be1a--python-3.9.tgz[0m
+[32;1mfetching py39/cache-linux-bionic-3391e65aed0039c8c39b44c2f0baa3b98b444c950336bf99aa8a2583e193be1a--python-3.9.tgz[0m
+[32;1mfetching py39/cache--python-3.9.tgz[0m
+[32;1mfetching master/cache--linux-bionic-3391e65aed0039c8c39b44c2f0baa3b98b444c950336bf99aa8a2583e193be1a--python-3.9.tgz[0m
+[32;1mfetching master/cache-linux-bionic-3391e65aed0039c8c39b44c2f0baa3b98b444c950336bf99aa8a2583e193be1a--python-3.9.tgz[0m
+[32;1mfetching master/cache--python-3.9.tgz[0m
+[31;1mcould not download cache[0m
+travis_time:end:0002fc4e:start=1608145846853914800,finish=1608145848455188592,duration=1601273792,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+travis_fold:start:cache.pip[0K
+travis_time:start:10b12138[0Ktravis_time:end:10b12138:start=1608145848462181363,finish=1608145848466794853,duration=4613490,event=setup_cache[0Ktravis_time:start:1e043155[0Kadding /home/travis/.cache/pip to cache[0m
+travis_time:end:1e043155:start=1608145848472530265,finish=1608145849518910162,duration=1046379897,event=setup_cache[0Ktravis_fold:end:cache.pip[0K$ python --version
+Python 3.9.0
+$ pip --version
+pip 20.2.4 from /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages/pip (python 3.9)
+travis_fold:start:before_install.1[0Ktravis_time:start:038600b0[0K$ export -f travis_terminate _travis_terminate_agent _travis_terminate_freebsd _travis_terminate_linux _travis_terminate_osx _travis_terminate_unix _travis_terminate_windows
+travis_time:end:038600b0:start=1608145849674175563,finish=1608145849681573885,duration=7398322,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:023620d4[0K$ pip install pip --upgrade
+Requirement already satisfied: pip in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (20.2.4)
+Collecting pip
+  Downloading pip-20.3.3-py2.py3-none-any.whl (1.5 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.2.4
+    Uninstalling pip-20.2.4:
+      Successfully uninstalled pip-20.2.4
+Successfully installed pip-20.3.3
+travis_time:end:023620d4:start=1608145849687148272,finish=1608145851820811188,duration=2133662916,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:0235e944[0K$ pip install git+https://github.com/nengo/nengo-bones#egg=nengo-bones
+WARNING: --use-feature=2020-resolver no longer has any effect, since it is now the default dependency resolver in pip. This will become an error in pip 21.0.
+Collecting nengo-bones
+  Cloning https://github.com/nengo/nengo-bones to /tmp/pip-install-64efhlv8/nengo-bones_fb13ad3529834b59a1044fe325fd05ff
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting black>=20.8b0
+  Downloading black-20.8b1.tar.gz (1.1 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: toml>=0.10.1 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from black>=20.8b0->nengo-bones) (0.10.1)
+Requirement already satisfied: appdirs in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from black>=20.8b0->nengo-bones) (1.4.4)
+Collecting click>=7.0
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+Collecting codespell>=1.17.1
+  Downloading codespell-2.0.0-py3-none-any.whl (172 kB)
+Collecting flake8>=3.7.7
+  Downloading flake8-3.8.4-py2.py3-none-any.whl (72 kB)
+Collecting jinja2>=2.11
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting jupyter>=1.0.0
+  Downloading jupyter-1.0.0-py2.py3-none-any.whl (2.7 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1.tar.gz (19 kB)
+Collecting mccabe<0.7.0,>=0.6.0
+  Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+Collecting mypy-extensions>=0.4.3
+  Downloading mypy_extensions-0.4.3-py2.py3-none-any.whl (4.5 kB)
+Collecting pathspec<1,>=0.6
+  Downloading pathspec-0.8.1-py2.py3-none-any.whl (28 kB)
+Collecting pycodestyle<2.7.0,>=2.6.0a1
+  Downloading pycodestyle-2.6.0-py2.py3-none-any.whl (41 kB)
+Collecting pyflakes<2.3.0,>=2.2.0
+  Downloading pyflakes-2.2.0-py2.py3-none-any.whl (66 kB)
+Collecting pylint>=2.5.1
+  Downloading pylint-2.6.0-py3-none-any.whl (325 kB)
+Collecting astroid<=2.5,>=2.4.0
+  Downloading astroid-2.4.2-py3-none-any.whl (213 kB)
+Requirement already satisfied: six~=1.12 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from astroid<=2.5,>=2.4.0->pylint>=2.5.1->nengo-bones) (1.15.0)
+Collecting lazy-object-proxy==1.4.*
+  Downloading lazy-object-proxy-1.4.3.tar.gz (34 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting isort<6,>=4.2.5
+  Downloading isort-5.6.4-py3-none-any.whl (98 kB)
+Collecting pyyaml>=5.1
+  Downloading PyYAML-5.3.1.tar.gz (269 kB)
+Collecting regex>=2020.1.8
+  Downloading regex-2020.11.13-cp39-cp39-manylinux2014_x86_64.whl (732 kB)
+Collecting requests>=2.21
+  Downloading requests-2.25.0-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from requests>=2.21->nengo-bones) (2020.6.20)
+Collecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+Collecting typed-ast>=1.4.0
+  Downloading typed_ast-1.4.1-cp39-cp39-manylinux1_x86_64.whl (769 kB)
+Collecting typing-extensions>=3.7.4
+  Downloading typing_extensions-3.7.4.3-py3-none-any.whl (22 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.2-py2.py3-none-any.whl (136 kB)
+Collecting wrapt~=1.11
+  Downloading wrapt-1.12.1.tar.gz (27 kB)
+Collecting ipykernel
+  Downloading ipykernel-5.4.2-py3-none-any.whl (119 kB)
+Collecting ipython>=5.0.0
+  Downloading ipython-7.19.0-py3-none-any.whl (784 kB)
+Requirement already satisfied: setuptools>=18.5 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from ipython>=5.0.0->ipykernel->jupyter>=1.0.0->nengo-bones) (50.3.2)
+Collecting jedi>=0.10
+  Downloading jedi-0.17.2-py2.py3-none-any.whl (1.4 MB)
+Collecting parso<0.8.0,>=0.7.0
+  Downloading parso-0.7.1-py2.py3-none-any.whl (109 kB)
+Collecting pexpect>4.3
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Downloading prompt_toolkit-3.0.8-py3-none-any.whl (355 kB)
+Collecting ptyprocess>=0.5
+  Downloading ptyprocess-0.6.0-py2.py3-none-any.whl (39 kB)
+Collecting tornado>=4.2
+  Downloading tornado-6.1-cp39-cp39-manylinux2010_x86_64.whl (427 kB)
+Collecting traitlets>=4.1.0
+  Downloading traitlets-5.0.5-py3-none-any.whl (100 kB)
+Collecting backcall
+  Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting decorator
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting ipython-genutils
+  Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting ipywidgets
+  Downloading ipywidgets-7.5.1-py2.py3-none-any.whl (121 kB)
+Collecting nbformat>=4.2.0
+  Downloading nbformat-5.0.8-py3-none-any.whl (172 kB)
+Collecting jsonschema!=2.5.0,>=2.4
+  Downloading jsonschema-3.2.0-py2.py3-none-any.whl (56 kB)
+Requirement already satisfied: attrs>=17.4.0 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets->jupyter>=1.0.0->nengo-bones) (20.2.0)
+Collecting pyrsistent>=0.14.0
+  Downloading pyrsistent-0.17.3.tar.gz (106 kB)
+Collecting widgetsnbextension~=3.5.0
+  Downloading widgetsnbextension-3.5.1-py2.py3-none-any.whl (2.2 MB)
+Collecting notebook
+  Downloading notebook-6.1.5-py3-none-any.whl (9.5 MB)
+Collecting jupyter-client
+  Downloading jupyter_client-6.1.7-py3-none-any.whl (108 kB)
+Collecting jupyter-core
+  Downloading jupyter_core-4.7.0-py3-none-any.whl (82 kB)
+Collecting python-dateutil>=2.1
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting pyzmq>=17
+  Downloading pyzmq-20.0.0-cp39-cp39-manylinux1_x86_64.whl (1.1 MB)
+Collecting terminado>=0.8.3
+  Downloading terminado-0.9.1-py3-none-any.whl (13 kB)
+Collecting argon2-cffi
+  Downloading argon2_cffi-20.1.0-cp35-abi3-manylinux1_x86_64.whl (97 kB)
+Collecting cffi>=1.0.0
+  Downloading cffi-1.14.4-cp39-cp39-manylinux1_x86_64.whl (405 kB)
+Collecting jupyter-console
+  Downloading jupyter_console-6.2.0-py3-none-any.whl (22 kB)
+Collecting nbconvert
+  Downloading nbconvert-6.0.7-py3-none-any.whl (552 kB)
+Collecting entrypoints>=0.2.2
+  Downloading entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Collecting mistune<2,>=0.8.1
+  Downloading mistune-0.8.4-py2.py3-none-any.whl (16 kB)
+Collecting nbclient<0.6.0,>=0.5.0
+  Downloading nbclient-0.5.1-py3-none-any.whl (65 kB)
+Collecting pandocfilters>=1.4.1
+  Downloading pandocfilters-1.4.3.tar.gz (16 kB)
+Collecting pygments
+  Downloading Pygments-2.7.3-py3-none-any.whl (950 kB)
+Collecting async-generator
+  Downloading async_generator-1.10-py3-none-any.whl (18 kB)
+Collecting bleach
+  Downloading bleach-3.2.1-py2.py3-none-any.whl (145 kB)
+Requirement already satisfied: packaging in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from bleach->nbconvert->jupyter>=1.0.0->nengo-bones) (20.4)
+Collecting defusedxml
+  Downloading defusedxml-0.6.0-py2.py3-none-any.whl (23 kB)
+Collecting jupyterlab-pygments
+  Downloading jupyterlab_pygments-0.1.2-py2.py3-none-any.whl (4.6 kB)
+Collecting nest-asyncio
+  Downloading nest_asyncio-1.4.3-py3-none-any.whl (5.3 kB)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from packaging->bleach->nbconvert->jupyter>=1.0.0->nengo-bones) (2.4.7)
+Collecting pickleshare
+  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting prometheus-client
+  Downloading prometheus_client-0.9.0-py2.py3-none-any.whl (53 kB)
+Collecting pycparser
+  Downloading pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting qtconsole
+  Downloading qtconsole-5.0.1-py3-none-any.whl (118 kB)
+Collecting qtpy
+  Downloading QtPy-1.9.0-py2.py3-none-any.whl (54 kB)
+Collecting Send2Trash
+  Downloading Send2Trash-1.5.0-py3-none-any.whl (12 kB)
+Collecting testpath
+  Downloading testpath-0.4.4-py2.py3-none-any.whl (163 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting webencodings
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: nengo-bones, black, MarkupSafe, lazy-object-proxy, pyyaml, wrapt, pyrsistent, pandocfilters
+  Building wheel for nengo-bones (PEP 517): started
+  Building wheel for nengo-bones (PEP 517): finished with status 'done'
+  Created wheel for nengo-bones: filename=nengo_bones-20.12.dev_dev_-py3-none-any.whl size=52365 sha256=5a9e83a2dc29bdb1f4494ecd00cf5d462e77ec1e0fe1a83efbce4f7129c031ae
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ih4j7kxd/wheels/e4/ca/f1/670bcba9e9f983bd7ec2045da0a8c7c7af240f39b6c2307bed
+  Building wheel for black (PEP 517): started
+  Building wheel for black (PEP 517): finished with status 'done'
+  Created wheel for black: filename=black-20.8b1-py3-none-any.whl size=124184 sha256=c4b355b8dd21c5bd42ca7285a62dccdd26446cf21418eb5d62828edfdf44d311
+  Stored in directory: /home/travis/.cache/pip/wheels/4e/57/9a/e704bdd859ee892dc46fff03fd499422dc9e99fd9bd5c446d3
+  Building wheel for MarkupSafe (setup.py): started
+  Building wheel for MarkupSafe (setup.py): finished with status 'done'
+  Created wheel for MarkupSafe: filename=MarkupSafe-1.1.1-cp39-cp39-linux_x86_64.whl size=32469 sha256=0275ca45dfa0511cbb344e6239ba0c83cddf988be7939c1128632099044d1885
+  Stored in directory: /home/travis/.cache/pip/wheels/e0/19/6f/6ba857621f50dc08e084312746ed3ebc14211ba30037d5e44e
+  Building wheel for lazy-object-proxy (PEP 517): started
+  Building wheel for lazy-object-proxy (PEP 517): finished with status 'done'
+  Created wheel for lazy-object-proxy: filename=lazy_object_proxy-1.4.3-cp39-cp39-linux_x86_64.whl size=52531 sha256=475d8a2f4eae8de1ee55b72c86800e6923c630bc9ce524d77ac4fc2bb95fbc56
+  Stored in directory: /home/travis/.cache/pip/wheels/41/20/07/2a3e02cdfc8b442404202f6ef99ff1b1c16b73910968a46f2f
+  Building wheel for pyyaml (setup.py): started
+  Building wheel for pyyaml (setup.py): finished with status 'done'
+  Created wheel for pyyaml: filename=PyYAML-5.3.1-cp39-cp39-linux_x86_64.whl size=430214 sha256=72ee8bd2b9e28bf0df99b1a78565672c983ec1ec69b91b64f3802a6276fc4008
+  Stored in directory: /home/travis/.cache/pip/wheels/69/60/81/5cd74b8ee068fbe9e04ca0d53148f28f5c6e2c5b177d5dd622
+  Building wheel for wrapt (setup.py): started
+  Building wheel for wrapt (setup.py): finished with status 'done'
+  Created wheel for wrapt: filename=wrapt-1.12.1-cp39-cp39-linux_x86_64.whl size=74777 sha256=be8d7af490c15e47382b99bd462b39e24d86ec606fd68f3e41855b3d5c7a77c0
+  Stored in directory: /home/travis/.cache/pip/wheels/98/23/68/efe259aaca055e93b08e74fbe512819c69a2155c11ba3c0f10
+  Building wheel for pyrsistent (setup.py): started
+  Building wheel for pyrsistent (setup.py): finished with status 'done'
+  Created wheel for pyrsistent: filename=pyrsistent-0.17.3-cp39-cp39-linux_x86_64.whl size=116788 sha256=794608e194d596e758cea052fda43edf2926fc0b82977f97089120ef0971e5d6
+  Stored in directory: /home/travis/.cache/pip/wheels/00/cc/12/e712d3979a4aeee423b34a832d97c803e1a67659060315a7e0
+  Building wheel for pandocfilters (setup.py): started
+  Building wheel for pandocfilters (setup.py): finished with status 'done'
+  Created wheel for pandocfilters: filename=pandocfilters-1.4.3-py3-none-any.whl size=7991 sha256=526a2aa41a2daed12e6edd4cea5b0b6c14edff484a7e53b6107c6cdce5267ab7
+  Stored in directory: /home/travis/.cache/pip/wheels/d7/2c/f8/55fc25b6130566bdddef382806ceaa33161b39a066c2de5912
+Successfully built nengo-bones black MarkupSafe lazy-object-proxy pyyaml wrapt pyrsistent pandocfilters
+Installing collected packages: ipython-genutils, traitlets, pyrsistent, wcwidth, tornado, pyzmq, python-dateutil, ptyprocess, parso, jupyter-core, jsonschema, webencodings, pygments, pycparser, prompt-toolkit, pickleshare, pexpect, nest-asyncio, nbformat, MarkupSafe, jupyter-client, jedi, decorator, backcall, async-generator, testpath, pandocfilters, nbclient, mistune, jupyterlab-pygments, jinja2, ipython, entrypoints, defusedxml, cffi, bleach, terminado, Send2Trash, prometheus-client, nbconvert, ipykernel, argon2-cffi, notebook, wrapt, widgetsnbextension, qtpy, lazy-object-proxy, urllib3, typing-extensions, typed-ast, regex, qtconsole, pyflakes, pycodestyle, pathspec, mypy-extensions, mccabe, jupyter-console, isort, ipywidgets, idna, click, chardet, astroid, requests, pyyaml, pylint, jupyter, flake8, codespell, black, nengo-bones
+Successfully installed MarkupSafe-1.1.1 Send2Trash-1.5.0 argon2-cffi-20.1.0 astroid-2.4.2 async-generator-1.10 backcall-0.2.0 black-20.8b1 bleach-3.2.1 cffi-1.14.4 chardet-3.0.4 click-7.1.2 codespell-2.0.0 decorator-4.4.2 defusedxml-0.6.0 entrypoints-0.3 flake8-3.8.4 idna-2.10 ipykernel-5.4.2 ipython-7.19.0 ipython-genutils-0.2.0 ipywidgets-7.5.1 isort-5.6.4 jedi-0.17.2 jinja2-2.11.2 jsonschema-3.2.0 jupyter-1.0.0 jupyter-client-6.1.7 jupyter-console-6.2.0 jupyter-core-4.7.0 jupyterlab-pygments-0.1.2 lazy-object-proxy-1.4.3 mccabe-0.6.1 mistune-0.8.4 mypy-extensions-0.4.3 nbclient-0.5.1 nbconvert-6.0.7 nbformat-5.0.8 nengo-bones-20.12.dev-dev- nest-asyncio-1.4.3 notebook-6.1.5 pandocfilters-1.4.3 parso-0.7.1 pathspec-0.8.1 pexpect-4.8.0 pickleshare-0.7.5 prometheus-client-0.9.0 prompt-toolkit-3.0.8 ptyprocess-0.6.0 pycodestyle-2.6.0 pycparser-2.20 pyflakes-2.2.0 pygments-2.7.3 pylint-2.6.0 pyrsistent-0.17.3 python-dateutil-2.8.1 pyyaml-5.3.1 pyzmq-20.0.0 qtconsole-5.0.1 qtpy-1.9.0 regex-2020.11.13 requests-2.25.0 terminado-0.9.1 testpath-0.4.4 tornado-6.1 traitlets-5.0.5 typed-ast-1.4.1 typing-extensions-3.7.4.3 urllib3-1.26.2 wcwidth-0.2.5 webencodings-0.5.1 widgetsnbextension-3.5.1 wrapt-1.12.1
+travis_time:end:0235e944:start=1608145851826563060,finish=1608145886906300630,duration=35079737570,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:01d6c763[0K$ bones-generate --output-dir .ci ci-scripts
+travis_time:end:01d6c763:start=1608145886912227930,finish=1608145887172540572,duration=260312642,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:13000e89[0K$ bones-check --verbose
+**************************************************
+Checking content of nengo-bones generated files:
+root dir: .
+
+.travis.yml:
+  Up to date
+.codecov.yml:
+  Up to date
+docs/conf.py:
+  Up to date
+setup.cfg:
+  Up to date
+setup.py:
+  Up to date
+CONTRIBUTING.rst:
+  Up to date
+CONTRIBUTORS.rst:
+  File not found
+LICENSE.rst:
+  Up to date
+MANIFEST.in:
+  Up to date
+.pre-commit-config.yaml:
+  Up to date
+pyproject.toml:
+  Up to date
+**************************************************
+travis_time:end:13000e89:start=1608145887182065935,finish=1608145887553593356,duration=371527421,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:before_install.6[0Ktravis_time:start:2c668471[0K$ pip freeze
+WARNING: --use-feature=2020-resolver no longer has any effect, since it is now the default dependency resolver in pip. This will become an error in pip 21.0.
+appdirs==1.4.4
+argon2-cffi==20.1.0
+astroid==2.4.2
+async-generator==1.10
+attrs==20.2.0
+backcall==0.2.0
+black==20.8b1
+bleach==3.2.1
+certifi==2020.6.20
+cffi==1.14.4
+chardet==3.0.4
+click==7.1.2
+codespell==2.0.0
+decorator==4.4.2
+defusedxml==0.6.0
+distlib==0.3.1
+entrypoints==0.3
+filelock==3.0.12
+flake8==3.8.4
+idna==2.10
+iniconfig==1.1.1
+ipykernel==5.4.2
+ipython==7.19.0
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+isort==5.6.4
+jedi==0.17.2
+Jinja2==2.11.2
+jsonschema==3.2.0
+jupyter==1.0.0
+jupyter-client==6.1.7
+jupyter-console==6.2.0
+jupyter-core==4.7.0
+jupyterlab-pygments==0.1.2
+lazy-object-proxy==1.4.3
+MarkupSafe==1.1.1
+mccabe==0.6.1
+mistune==0.8.4
+mock==4.0.2
+mypy-extensions==0.4.3
+nbclient==0.5.1
+nbconvert==6.0.7
+nbformat==5.0.8
+nengo-bones @ git+https://github.com/nengo/nengo-bones@5f92079ecf087ae11d73534137f45c797e0ce70d
+nest-asyncio==1.4.3
+nose==1.3.7
+notebook==6.1.5
+numpy==1.19.2
+packaging==20.4
+pandocfilters==1.4.3
+parso==0.7.1
+pathspec==0.8.1
+pexpect==4.8.0
+pickleshare==0.7.5
+pipenv==2020.8.13
+pluggy==0.13.1
+prometheus-client==0.9.0
+prompt-toolkit==3.0.8
+ptyprocess==0.6.0
+py==1.9.0
+pycodestyle==2.6.0
+pycparser==2.20
+pyflakes==2.2.0
+Pygments==2.7.3
+pylint==2.6.0
+pyparsing==2.4.7
+pyrsistent==0.17.3
+pytest==6.1.1
+python-dateutil==2.8.1
+PyYAML==5.3.1
+pyzmq==20.0.0
+qtconsole==5.0.1
+QtPy==1.9.0
+regex==2020.11.13
+requests==2.25.0
+Send2Trash==1.5.0
+six==1.15.0
+terminado==0.9.1
+testpath==0.4.4
+toml==0.10.1
+tornado==6.1
+traitlets==5.0.5
+typed-ast==1.4.1
+typing-extensions==3.7.4.3
+urllib3==1.26.2
+virtualenv==20.1.0
+virtualenv-clone==0.5.4
+wcwidth==0.2.5
+webencodings==0.5.1
+widgetsnbextension==3.5.1
+wrapt==1.12.1
+travis_time:end:2c668471:start=1608145887562116084,finish=1608145887897031777,duration=334915693,event=before_install[0Ktravis_fold:end:before_install.6[0Ktravis_fold:start:install.1[0Ktravis_time:start:0346c272[0K$ .ci/$SCRIPT.sh install
+$ pip install --pre numpy>=1.16.0 tensorflow git+https://github.com/nengo/nengo.git#egg=nengo[tests] scipy git+https://github.com/drasmuss/spaun2.0.git git+https://github.com/nengo/keras-spiking
+WARNING: --use-feature=2020-resolver no longer has any effect, since it is now the default dependency resolver in pip. This will become an error in pip 21.0.
+Requirement already satisfied: numpy>=1.16.0 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (1.19.2)
+ERROR: Could not find a version that satisfies the requirement tensorflow
+ERROR: No matching distribution found for tensorflow
+[1;31mCOMMAND 'pip' FAILED[0m
+$ pip install pytest>=3.6.0
+WARNING: --use-feature=2020-resolver no longer has any effect, since it is now the default dependency resolver in pip. This will become an error in pip 21.0.
+Requirement already satisfied: pytest>=3.6.0 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (6.1.1)
+Requirement already satisfied: attrs>=17.4.0 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=3.6.0) (20.2.0)
+Requirement already satisfied: iniconfig in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=3.6.0) (1.1.1)
+Requirement already satisfied: toml in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=3.6.0) (0.10.1)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=3.6.0) (0.13.1)
+Requirement already satisfied: py>=1.8.2 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=3.6.0) (1.9.0)
+Requirement already satisfied: packaging in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=3.6.0) (20.4)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from packaging->pytest>=3.6.0) (2.4.7)
+Requirement already satisfied: six in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from packaging->pytest>=3.6.0) (1.15.0)
+$ pip install pytest-xdist>=1.16.0
+WARNING: --use-feature=2020-resolver no longer has any effect, since it is now the default dependency resolver in pip. This will become an error in pip 21.0.
+Collecting pytest-xdist>=1.16.0
+  Downloading pytest_xdist-2.2.0-py3-none-any.whl (36 kB)
+Requirement already satisfied: pytest>=6.0.0 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest-xdist>=1.16.0) (6.1.1)
+Collecting execnet>=1.1
+  Downloading execnet-1.7.1-py2.py3-none-any.whl (39 kB)
+Collecting apipkg>=1.4
+  Downloading apipkg-1.5-py2.py3-none-any.whl (4.9 kB)
+Requirement already satisfied: py>=1.8.2 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=6.0.0->pytest-xdist>=1.16.0) (1.9.0)
+Requirement already satisfied: packaging in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=6.0.0->pytest-xdist>=1.16.0) (20.4)
+Requirement already satisfied: attrs>=17.4.0 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=6.0.0->pytest-xdist>=1.16.0) (20.2.0)
+Requirement already satisfied: toml in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=6.0.0->pytest-xdist>=1.16.0) (0.10.1)
+Requirement already satisfied: iniconfig in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=6.0.0->pytest-xdist>=1.16.0) (1.1.1)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=6.0.0->pytest-xdist>=1.16.0) (0.13.1)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from packaging->pytest>=6.0.0->pytest-xdist>=1.16.0) (2.4.7)
+Requirement already satisfied: six in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from packaging->pytest>=6.0.0->pytest-xdist>=1.16.0) (1.15.0)
+Collecting pytest-forked
+  Downloading pytest_forked-1.3.0-py2.py3-none-any.whl (4.7 kB)
+Installing collected packages: apipkg, pytest-forked, execnet, pytest-xdist
+Successfully installed apipkg-1.5 execnet-1.7.1 pytest-forked-1.3.0 pytest-xdist-2.2.0
+$ pip install pytest-cov>=2.6.0
+WARNING: --use-feature=2020-resolver no longer has any effect, since it is now the default dependency resolver in pip. This will become an error in pip 21.0.
+Collecting pytest-cov>=2.6.0
+  Downloading pytest_cov-2.10.1-py2.py3-none-any.whl (19 kB)
+Requirement already satisfied: pytest>=4.6 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest-cov>=2.6.0) (6.1.1)
+Collecting coverage>=4.4
+  Downloading coverage-5.3-cp39-cp39-manylinux1_x86_64.whl (228 kB)
+Requirement already satisfied: py>=1.8.2 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=4.6->pytest-cov>=2.6.0) (1.9.0)
+Requirement already satisfied: attrs>=17.4.0 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=4.6->pytest-cov>=2.6.0) (20.2.0)
+Requirement already satisfied: iniconfig in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=4.6->pytest-cov>=2.6.0) (1.1.1)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=4.6->pytest-cov>=2.6.0) (0.13.1)
+Requirement already satisfied: toml in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=4.6->pytest-cov>=2.6.0) (0.10.1)
+Requirement already satisfied: packaging in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from pytest>=4.6->pytest-cov>=2.6.0) (20.4)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from packaging->pytest>=4.6->pytest-cov>=2.6.0) (2.4.7)
+Requirement already satisfied: six in /home/travis/virtualenv/python3.9.0/lib/python3.9/site-packages (from packaging->pytest>=4.6->pytest-cov>=2.6.0) (1.15.0)
+Installing collected packages: coverage, pytest-cov
+Successfully installed coverage-5.3 pytest-cov-2.10.1
+$ pip install -e .[tests]
+WARNING: --use-feature=2020-resolver no longer has any effect, since it is now the default dependency resolver in pip. This will become an error in pip 21.0.
+Obtaining file:///home/travis/build/nengo/nengo-dl
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+ERROR: Could not find a version that satisfies the requirement tensorflow>=2.2.0 (from nengo-dl[tests])
+ERROR: No matching distribution found for tensorflow>=2.2.0
+[1;31mCOMMAND 'pip' FAILED[0m

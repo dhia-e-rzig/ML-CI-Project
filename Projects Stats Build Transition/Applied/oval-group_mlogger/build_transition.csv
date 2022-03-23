@@ -1,0 +1,17 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+501118761,bad4ee6c475e8e1c55012edfdc4a40dfe11bc998,FailedToPassed,failed,124,https://github.com/oval-group/logger/compare/4623d3446b5a...36e6c9cdef64
+462935822,36e6c9cdef6460461eb0d36a6b9345f7e03317d4,FailedToPassed,passed,118,https://github.com/oval-group/logger/compare/4623d3446b5a...36e6c9cdef64
+462935822,36e6c9cdef6460461eb0d36a6b9345f7e03317d4,PassedToErrored,passed,118,https://github.com/oval-group/logger/pull/17
+462935672,9120b75395782c5b497fbd3c18567de8eee58993,PassedToErrored,errored,201,https://github.com/oval-group/logger/pull/17
+462935672,9120b75395782c5b497fbd3c18567de8eee58993,ErroredToPassed,errored,201,https://github.com/oval-group/logger/compare/5e4f3bd6cc83...4623d3446b5a
+384623363,4623d3446b5a4223a158b3cf9379ec0c065183a4,ErroredToPassed,passed,111,https://github.com/oval-group/logger/compare/5e4f3bd6cc83...4623d3446b5a
+377683921,5e4f3bd6cc83f7005e6c2e922a4701ac3dee66f5,PassedToErrored,passed,54,https://github.com/oval-group/logger/pull/13
+377683887,2cc897f8bc224376da817205278f0abcde752cb4,PassedToErrored,errored,37,https://github.com/oval-group/logger/pull/13
+377683887,2cc897f8bc224376da817205278f0abcde752cb4,ErroredToPassed,errored,37,https://github.com/oval-group/logger/compare/711e6e162fb4...2c8174981799
+350321120,2c817498179985da31eec5d9a4a9baa3047e7c63,ErroredToPassed,passed,119,https://github.com/oval-group/logger/compare/711e6e162fb4...2c8174981799
+304866146,a1c5c4b5c74f139a0436ab41925e5ad2e7f931bd,PassedToFailed,passed,106,https://github.com/oval-group/logger/compare/299d3cbc33e7...5ba3be6583cd
+304864425,5ba3be6583cd21096cecd446b4602ee16a3038a9,PassedToFailed,failed,112,https://github.com/oval-group/logger/compare/299d3cbc33e7...5ba3be6583cd
+304863367,299d3cbc33e7341d44c358b5905d7b6d38a8bec6,FailedToPassed,failed,99,https://github.com/oval-group/logger/compare/19a32589add4...773d4f3f8c10
+286932953,773d4f3f8c1083fa49173e6f515732fe6d96b53c,FailedToPassed,passed,67,https://github.com/oval-group/logger/compare/19a32589add4...773d4f3f8c10
+228300036,f9f2e45568630303c946433c146e6e7af4b7bf30,PassedToFailed,passed,133,https://github.com/oval-group/logger/compare/6b65fd43edd7...2eab8105f2d0
+228298464,2eab8105f2d0e725cbcd78c20815e4449693247c,PassedToFailed,failed,112,https://github.com/oval-group/logger/compare/6b65fd43edd7...2eab8105f2d0

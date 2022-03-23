@@ -1,0 +1,1134 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 36e12226-ace7-4bd7-a2f1-594cf898dbc8@1.worker-org-7c88794c4f-nrdxm.gce-production-2
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-23109898-615c-47bd-ad16-0677c748a5e9 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 7.260996191s
+travis_fold:end:worker_info[0Ktravis_time:start:00812a48[0Ktravis_time:end:00812a48:start=1598965043790544630,finish=1598965043955985839,duration=165441209,event=no_world_writable_dirs[0Ktravis_time:start:1ae53b08[0Ktravis_time:end:1ae53b08:start=1598965043959108451,finish=1598965043966997886,duration=7889435,event=agent[0Ktravis_time:start:18251625[0Ktravis_time:end:18251625:start=1598965043969706514,finish=1598965043971906810,duration=2200296,event=check_unsupported[0Ktravis_time:start:1d9410e8[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: trusty
+Build id: 723072063
+Job id: 723072065
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 8f30c5a8
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:1d9410e8:start=1598965043974763004,finish=1598965043982054674,duration=7291670,event=show_system_info[0Ktravis_time:start:19bfa9be[0Ktravis_time:end:19bfa9be:start=1598965043985232616,finish=1598965044008851838,duration=23619222,event=rm_riak_source[0Ktravis_time:start:02a08568[0Ktravis_time:end:02a08568:start=1598965044013572803,finish=1598965044019063059,duration=5490256,event=fix_rwky_redis[0Ktravis_time:start:0143a1c4[0Ktravis_time:end:0143a1c4:start=1598965044022142884,finish=1598965044508436879,duration=486293995,event=wait_for_network[0Ktravis_time:start:0a2ce606[0Ktravis_time:end:0a2ce606:start=1598965044511294520,finish=1598965046054710267,duration=1543415747,event=update_apt_keys[0Ktravis_time:start:14c1b17b[0Ktravis_time:end:14c1b17b:start=1598965046057810234,finish=1598965047021619275,duration=963809041,event=fix_hhvm_source[0Ktravis_time:start:01ad90fa[0Ktravis_time:end:01ad90fa:start=1598965047025170859,finish=1598965047033995157,duration=8824298,event=update_mongo_arch[0Ktravis_time:start:0f13b198[0Ktravis_time:end:0f13b198:start=1598965047036989651,finish=1598965047074095638,duration=37105987,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0c1e5800[0Ktravis_time:end:0c1e5800:start=1598965047077396858,finish=1598965047079529211,duration=2132353,event=update_glibc[0Ktravis_time:start:237ed5f9[0Ktravis_time:end:237ed5f9:start=1598965047082463141,finish=1598965047090231047,duration=7767906,event=clean_up_path[0Ktravis_time:start:04355608[0Ktravis_time:end:04355608:start=1598965047093058936,finish=1598965047100628651,duration=7569715,event=fix_resolv_conf[0Ktravis_time:start:2f5df5ac[0Ktravis_time:end:2f5df5ac:start=1598965047103418846,finish=1598965047111724253,duration=8305407,event=fix_etc_hosts[0Ktravis_time:start:089b5592[0Ktravis_time:end:089b5592:start=1598965047114521694,finish=1598965047122473656,duration=7951962,event=fix_mvn_settings_xml[0Ktravis_time:start:07f56750[0Ktravis_time:end:07f56750:start=1598965047125499286,finish=1598965047134903247,duration=9403961,event=no_ipv6_localhost[0Ktravis_time:start:2e55f5db[0Ktravis_time:end:2e55f5db:start=1598965047138004758,finish=1598965047140258055,duration=2253297,event=fix_etc_mavenrc[0Ktravis_time:start:0571ea3b[0Ktravis_time:end:0571ea3b:start=1598965047143157875,finish=1598965047146187789,duration=3029914,event=fix_wwdr_certificate[0Ktravis_time:start:2a819b74[0Ktravis_time:end:2a819b74:start=1598965047149156041,finish=1598965047171787186,duration=22631145,event=put_localhost_first[0Ktravis_time:start:02d51eac[0Ktravis_time:end:02d51eac:start=1598965047174814367,finish=1598965047178166630,duration=3352263,event=home_paths[0Ktravis_time:start:180a5810[0Ktravis_time:end:180a5810:start=1598965047181264265,finish=1598965047193149350,duration=11885085,event=disable_initramfs[0Ktravis_time:start:0268c6ce[0Ktravis_time:end:0268c6ce:start=1598965047196021872,finish=1598965047445228110,duration=249206238,event=disable_ssh_roaming[0Ktravis_time:start:18ca90ac[0Ktravis_time:end:18ca90ac:start=1598965047448287737,finish=1598965047450350289,duration=2062552,event=debug_tools[0Ktravis_time:start:0f7ec900[0Ktravis_time:end:0f7ec900:start=1598965047453411835,finish=1598965047456410738,duration=2998903,event=uninstall_oclint[0Ktravis_time:start:006e10e8[0Ktravis_time:end:006e10e8:start=1598965047459669455,finish=1598965047462625733,duration=2956278,event=rvm_use[0Ktravis_time:start:0cedc0d6[0Ktravis_time:end:0cedc0d6:start=1598965047465810071,finish=1598965047473914669,duration=8104598,event=rm_etc_boto_cfg[0Ktravis_time:start:0d9425f6[0Ktravis_time:end:0d9425f6:start=1598965047477084736,finish=1598965047479201270,duration=2116534,event=rm_oraclejdk8_symlink[0Ktravis_time:start:19a501f9[0Ktravis_time:end:19a501f9:start=1598965047482087537,finish=1598965047533540527,duration=51452990,event=enable_i386[0Ktravis_time:start:1c579a03[0Ktravis_time:end:1c579a03:start=1598965047536790141,finish=1598965047541172139,duration=4381998,event=update_rubygems[0Ktravis_time:start:01606568[0Ktravis_time:end:01606568:start=1598965047544091224,finish=1598965048441100177,duration=897008953,event=ensure_path_components[0Ktravis_time:start:06e39112[0Ktravis_time:end:06e39112:start=1598965048444166070,finish=1598965048446210989,duration=2044919,event=redefine_curl[0Ktravis_time:start:1618b8bc[0Ktravis_time:end:1618b8bc:start=1598965048448953611,finish=1598965048450945536,duration=1991925,event=nonblock_pipe[0Ktravis_time:start:00847794[0Ktravis_time:end:00847794:start=1598965048453662249,finish=1598965063244527166,duration=14790864917,event=apt_get_update[0Ktravis_time:start:0dded00c[0Ktravis_time:end:0dded00c:start=1598965063247590084,finish=1598965063249634632,duration=2044548,event=deprecate_xcode_64[0Ktravis_time:start:1a6b420b[0Ktravis_time:end:1a6b420b:start=1598965063252303006,finish=1598965067710586868,duration=4458283862,event=update_heroku[0Ktravis_time:start:133fcad8[0Ktravis_time:end:133fcad8:start=1598965067713652363,finish=1598965067715681409,duration=2029046,event=shell_session_update[0Ktravis_time:start:078d7314[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 4623
+travis_fold:end:docker_mtu[0Ktravis_time:end:078d7314:start=1598965067718379279,finish=1598965068904652187,duration=1186272908,event=set_docker_mtu[0Ktravis_time:start:113ac588[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:113ac588:start=1598965068907639112,finish=1598965068965333497,duration=57694385,event=resolvconf[0Ktravis_time:start:208f3fe1[0Ktravis_time:end:208f3fe1:start=1598965068968310084,finish=1598965069055816693,duration=87506609,event=maven_central_mirror[0Ktravis_time:start:0708d41c[0Ktravis_time:end:0708d41c:start=1598965069058772098,finish=1598965069122031173,duration=63259075,event=maven_https[0K[33;1m3.6-dev is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.6-dev.tar.bz2[0m
+travis_time:start:028e893a[0K$ curl -sSf --retry 5 -o python-3.6-dev.tar.bz2 ${archive_url}
+travis_time:end:028e893a:start=1598965069191409196,finish=1598965069916421393,duration=725012197,event=configure[0Ktravis_time:start:06310037[0K$ sudo tar xjf python-3.6-dev.tar.bz2 --directory /
+travis_time:end:06310037:start=1598965069920150249,finish=1598965078542141399,duration=8621991150,event=configure[0Ktravis_time:start:09df00a8[0Ktravis_time:end:09df00a8:start=1598965078558893030,finish=1598965078560943087,duration=2050057,event=fix_ps4[0Ktravis_time:start:2ee025fa[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:00f6e2dd[0K$ git clone --depth=50 --branch=master https://github.com/jerrygaoLondon/jgtextrank.git jerrygaoLondon/jgtextrank
+Cloning into 'jerrygaoLondon/jgtextrank'...
+remote: Enumerating objects: 11, done.[K
+remote: Counting objects:   9% (1/11)[Kremote: Counting objects:  18% (2/11)[Kremote: Counting objects:  27% (3/11)[Kremote: Counting objects:  36% (4/11)[Kremote: Counting objects:  45% (5/11)[Kremote: Counting objects:  54% (6/11)[Kremote: Counting objects:  63% (7/11)[Kremote: Counting objects:  72% (8/11)[Kremote: Counting objects:  81% (9/11)[Kremote: Counting objects:  90% (10/11)[Kremote: Counting objects: 100% (11/11)[Kremote: Counting objects: 100% (11/11), done.[K
+remote: Compressing objects:  14% (1/7)[Kremote: Compressing objects:  28% (2/7)[Kremote: Compressing objects:  42% (3/7)[Kremote: Compressing objects:  57% (4/7)[Kremote: Compressing objects:  71% (5/7)[Kremote: Compressing objects:  85% (6/7)[Kremote: Compressing objects: 100% (7/7)[Kremote: Compressing objects: 100% (7/7), done.[K
+Receiving objects:   0% (1/3943)   Receiving objects:   1% (40/3943)   Receiving objects:   2% (79/3943)   Receiving objects:   3% (119/3943)   Receiving objects:   4% (158/3943)   Receiving objects:   5% (198/3943)   Receiving objects:   6% (237/3943)   Receiving objects:   7% (277/3943)   Receiving objects:   8% (316/3943)   Receiving objects:   9% (355/3943)   Receiving objects:  10% (395/3943)   Receiving objects:  11% (434/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  12% (474/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  13% (513/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  14% (553/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  15% (592/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  16% (631/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  17% (671/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  18% (710/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  19% (750/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  20% (789/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  21% (829/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  22% (868/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  23% (907/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  24% (947/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  25% (986/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  26% (1026/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  27% (1065/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  28% (1105/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  29% (1144/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  30% (1183/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  31% (1223/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  32% (1262/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  33% (1302/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  34% (1341/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  35% (1381/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  36% (1420/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  37% (1459/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  38% (1499/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  38% (1512/3943), 596.01 KiB | 1.14 MiB/s   Receiving objects:  39% (1538/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  40% (1578/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  41% (1617/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  42% (1657/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  43% (1696/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  44% (1735/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  45% (1775/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  46% (1814/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  47% (1854/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  48% (1893/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  49% (1933/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  50% (1972/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  51% (2011/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  52% (2051/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  53% (2090/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  54% (2130/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  55% (2169/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  56% (2209/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  57% (2248/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  58% (2287/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  59% (2327/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  60% (2366/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  61% (2406/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  62% (2445/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  63% (2485/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  64% (2524/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  65% (2563/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  66% (2603/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  67% (2642/3943), 1.31 MiB | 1.29 MiB/s   Receiving objects:  68% (2682/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  69% (2721/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  70% (2761/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  71% (2800/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  72% (2839/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  73% (2879/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  74% (2918/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  75% (2958/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  76% (2997/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  77% (3037/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  78% (3076/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  79% (3115/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  80% (3155/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  81% (3194/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  82% (3234/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  83% (3273/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  84% (3313/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  85% (3352/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  86% (3391/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  87% (3431/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  88% (3470/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  89% (3510/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  90% (3549/3943), 2.20 MiB | 1.45 MiB/s   Receiving objects:  90% (3588/3943), 3.28 MiB | 1.62 MiB/s   Receiving objects:  91% (3589/3943), 3.28 MiB | 1.62 MiB/s   Receiving objects:  92% (3628/3943), 3.28 MiB | 1.62 MiB/s   Receiving objects:  93% (3667/3943), 3.28 MiB | 1.62 MiB/s   Receiving objects:  94% (3707/3943), 3.28 MiB | 1.62 MiB/s   Receiving objects:  95% (3746/3943), 3.28 MiB | 1.62 MiB/s   Receiving objects:  96% (3786/3943), 3.28 MiB | 1.62 MiB/s   Receiving objects:  96% (3807/3943), 5.96 MiB | 1.97 MiB/s   Receiving objects:  97% (3825/3943), 5.96 MiB | 1.97 MiB/s   Receiving objects:  98% (3865/3943), 5.96 MiB | 1.97 MiB/s   Receiving objects:  99% (3904/3943), 7.64 MiB | 2.16 MiB/s   remote: Total 3943 (delta 3), reused 10 (delta 3), pack-reused 3932[K
+Receiving objects: 100% (3943/3943), 7.64 MiB | 2.16 MiB/s   Receiving objects: 100% (3943/3943), 8.96 MiB | 2.31 MiB/s, done.
+Resolving deltas:   0% (0/140)   Resolving deltas:  10% (14/140)   Resolving deltas:  14% (20/140)   Resolving deltas:  17% (24/140)   Resolving deltas:  20% (29/140)   Resolving deltas:  21% (30/140)   Resolving deltas:  22% (31/140)   Resolving deltas:  23% (33/140)   Resolving deltas:  24% (34/140)   Resolving deltas:  25% (35/140)   Resolving deltas:  35% (49/140)   Resolving deltas:  36% (51/140)   Resolving deltas:  37% (53/140)   Resolving deltas:  40% (56/140)   Resolving deltas:  41% (58/140)   Resolving deltas:  50% (71/140)   Resolving deltas:  55% (78/140)   Resolving deltas:  56% (79/140)   Resolving deltas:  57% (80/140)   Resolving deltas:  60% (85/140)   Resolving deltas:  62% (87/140)   Resolving deltas:  63% (89/140)   Resolving deltas:  67% (95/140)   Resolving deltas:  72% (101/140)   Resolving deltas:  76% (107/140)   Resolving deltas:  79% (111/140)   Resolving deltas:  80% (113/140)   Resolving deltas:  91% (128/140)   Resolving deltas:  93% (131/140)   Resolving deltas:  95% (133/140)   Resolving deltas: 100% (140/140)   Resolving deltas: 100% (140/140), done.
+travis_time:end:00f6e2dd:start=1598965078566602443,finish=1598965083807956888,duration=5241354445,event=checkout[0K$ cd jerrygaoLondon/jgtextrank
+$ git checkout -qf 4647e25a701f168eccab4f4a77f06cda2412dae4
+travis_fold:end:git.checkout[0K
+travis_time:end:00f6e2dd:start=1598965078566602443,finish=1598965083957793148,duration=5391190705,event=checkout[0Ktravis_time:start:09516d47[0Ktravis_time:end:09516d47:start=1598965083961193027,finish=1598965083966843778,duration=5650751,event=env[0Ktravis_time:start:02c17f8c[0K$ source ~/virtualenv/python3.6-dev/bin/activate
+travis_time:end:02c17f8c:start=1598965083970245849,finish=1598965083974939302,duration=4693453,event=[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:137dd7fc[0K$ Installing caching utilities
+travis_time:end:137dd7fc:start=1598965088319817320,finish=1598965088470828469,duration=151011149,event=setup_casher[0Ktravis_time:start:1cc97e78[0Ktravis_time:end:1cc97e78:start=1598965088475894345,finish=1598965088478666345,duration=2772000,event=setup_casher[0Ktravis_time:start:1f7df2cd[0Kattempting to download cache archive[0m
+[32;1mfetching master/cache--linux-trusty-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--python-3.6-dev.tgz[0m
+[32;1mfetching master/cache-linux-trusty-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--python-3.6-dev.tgz[0m
+[32;1mfetching master/cache--python-3.6-dev.tgz[0m
+[31;1mcould not download cache[0m
+travis_time:end:1f7df2cd:start=1598965088482143418,finish=1598965089452470111,duration=970326693,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+travis_fold:start:cache.pip[0K
+travis_time:start:2736980f[0Ktravis_time:end:2736980f:start=1598965089456801005,finish=1598965089459554278,duration=2753273,event=setup_cache[0Ktravis_time:start:1dacaa4c[0Kadding /home/travis/.cache/pip to cache[0m
+travis_time:end:1dacaa4c:start=1598965089462984610,finish=1598965090457783973,duration=994799363,event=setup_cache[0Ktravis_fold:end:cache.pip[0K$ python --version
+Python 3.6.5+
+$ pip --version
+pip 10.0.1 from /home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages/pip (python 3.6)
+travis_fold:start:before_install.1[0Ktravis_time:start:37a314da[0K$ python -m pip install --upgrade pip
+Collecting pip
+[?25l  Downloading https://files.pythonhosted.org/packages/5a/4a/39400ff9b36e719bdf8f31c99fe1fa7842a42fa77432e584f707a5080063/pip-20.2.2-py2.py3-none-any.whl (1.5MB)
+
+[?25hInstalling collected packages: pip
+  Found existing installation: pip 10.0.1
+    Uninstalling pip-10.0.1:
+      Successfully uninstalled pip-10.0.1
+Successfully installed pip-20.2.2
+travis_time:end:37a314da:start=1598965090785372437,finish=1598965092628978030,duration=1843605593,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:01c0e3f0[0K$ pip install --upgrade pip setuptools wheel
+Requirement already up-to-date: pip in /home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages (20.2.2)
+Collecting setuptools
+  Downloading setuptools-50.0.0-py3-none-any.whl (783 kB)
+[?25l
+[?25hCollecting wheel
+  Downloading wheel-0.35.1-py2.py3-none-any.whl (33 kB)
+Installing collected packages: setuptools, wheel
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 39.1.0
+    Uninstalling setuptools-39.1.0:
+      Successfully uninstalled setuptools-39.1.0
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.31.1
+    Uninstalling wheel-0.31.1:
+      Successfully uninstalled wheel-0.31.1
+Successfully installed setuptools-50.0.0 wheel-0.35.1
+travis_time:end:01c0e3f0:start=1598965092632767958,finish=1598965095013043304,duration=2380275346,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:006e6052[0K$ sudo apt-get build-dep python-scipy
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 0%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  cython debhelper dh-apparmor gfortran gfortran-4.8 intltool-debian
+  libamd2.3.1 libblas-dev libblas3 libbtf1.2.0 libcamd2.3.1 libccolamd2.8.0
+  libcholmod2.1.2 libcolamd2.8.0 libcsparse3.1.2 libcxsparse3.1.2
+  libgfortran-4.8-dev libgfortran3 libklu1.2.1 liblapack-dev liblapack3
+  libldl2.1.0 libpython-all-dbg libpython-all-dev libpython-dbg
+  libpython2.7-dbg libpython3-all-dbg libpython3-all-dev libpython3-dbg
+  libpython3.4-dbg libspqr1.3.1 libsuitesparse-dev libumfpack5.6.2 po-debconf
+  python-all python-all-dbg python-all-dev python-dbg python-decorator
+  python-mako python-markupsafe python-nose python-numpy python-numpy-dbg
+  python2.7-dbg python3-all python3-all-dbg python3-all-dev python3-dbg
+  python3-decorator python3-nose python3-numpy python3-numpy-dbg
+  python3-pkg-resources python3-six python3.4-dbg swig swig2.0
+The following packages will be upgraded:
+  cpp-4.8 g++-4.8 gcc-4.8 gcc-4.8-base libasan0 libatomic1 libgcc-4.8-dev
+  libgomp1 libitm1 libpython2.7 libpython2.7-dev libpython2.7-minimal
+  libpython2.7-stdlib libpython3.4 libpython3.4-dev libpython3.4-minimal
+  libpython3.4-stdlib libquadmath0 libstdc++-4.8-dev libstdc++6 libtsan0
+  python2.7 python2.7-dev python2.7-minimal python3.4 python3.4-dev
+  python3.4-minimal
+27 upgraded, 58 newly installed, 0 to remove and 277 not upgraded.
+Need to get 128 MB of archives.
+After this operation, 226 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libatomic1 amd64 4.8.4-2ubuntu1~14.04.4 [8,630 B]
+0% [1 libatomic1 8,630 B/8,630 B 100%]                                      0% [Waiting for headers]                        Get:2 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libitm1 amd64 4.8.4-2ubuntu1~14.04.4 [28.6 kB]
+0% [2 libitm1 21.6 kB/28.6 kB 76%]                                  0% [Working]            Get:3 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libgomp1 amd64 4.8.4-2ubuntu1~14.04.4 [23.1 kB]
+0% [3 libgomp1 4,871 B/23.1 kB 21%]                                   1% [Working]            Get:4 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libasan0 amd64 4.8.4-2ubuntu1~14.04.4 [63.1 kB]
+1% [4 libasan0 4,035 B/63.1 kB 6%]                                  1% [Working]            Get:5 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libtsan0 amd64 4.8.4-2ubuntu1~14.04.4 [94.8 kB]
+1% [5 libtsan0 4,870 B/94.8 kB 5%]                                  1% [Working]            Get:6 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libquadmath0 amd64 4.8.4-2ubuntu1~14.04.4 [126 kB]
+1% [6 libquadmath0 7,445 B/126 kB 6%]                                     2% [Working]            Get:7 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 g++-4.8 amd64 4.8.4-2ubuntu1~14.04.4 [18.0 MB]
+2% [7 g++-4.8 4,865 B/18.0 MB 0%]5% [7 g++-4.8 5,615 kB/18.0 MB 31%]                                   13% [Working]             Get:8 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 gcc-4.8 amd64 4.8.4-2ubuntu1~14.04.4 [5,040 kB]
+13% [8 gcc-4.8 64.1 kB/5,040 kB 1%]                                   16% [Working]             Get:9 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 cpp-4.8 amd64 4.8.4-2ubuntu1~14.04.4 [4,452 kB]
+16% [9 cpp-4.8 24.6 kB/4,452 kB 1%]                                   19% [Working]             Get:10 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libstdc++-4.8-dev amd64 4.8.4-2ubuntu1~14.04.4 [1,051 kB]
+19% [10 libstdc++-4.8-dev 14.5 kB/1,051 kB 1%]                                              20% [Working]             Get:11 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libgcc-4.8-dev amd64 4.8.4-2ubuntu1~14.04.4 [1,688 kB]
+20% [11 libgcc-4.8-dev 49.2 kB/1,688 kB 3%]                                           22% [Working]             Get:12 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 gcc-4.8-base amd64 4.8.4-2ubuntu1~14.04.4 [16.7 kB]
+22% [12 gcc-4.8-base 16.7 kB/16.7 kB 100%]                                          22% [Waiting for headers]                         Get:13 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libstdc++6 amd64 4.8.4-2ubuntu1~14.04.4 [260 kB]
+22% [13 libstdc++6 10.4 kB/260 kB 4%]                                     22% [Working]             Get:14 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3.4-dev amd64 3.4.3-1ubuntu1~14.04.7 [421 kB]
+22% [14 python3.4-dev 12.6 kB/421 kB 3%]                                        23% [Working]             Get:15 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython3.4-dev amd64 3.4.3-1ubuntu1~14.04.7 [17.8 MB]
+23% [15 libpython3.4-dev 22.9 kB/17.8 MB 0%]29% [15 libpython3.4-dev 9,553 kB/17.8 MB 54%]                                              34% [Working]             Get:16 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython3.4 amd64 3.4.3-1ubuntu1~14.04.7 [1,303 kB]
+34% [16 libpython3.4 30.6 kB/1,303 kB 2%]                                         35% [Working]             Get:17 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3.4 amd64 3.4.3-1ubuntu1~14.04.7 [178 kB]
+35% [17 python3.4 38.4 kB/178 kB 22%]                                     35% [Working]             Get:18 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython3.4-stdlib amd64 3.4.3-1ubuntu1~14.04.7 [1,986 kB]
+35% [18 libpython3.4-stdlib 14.6 kB/1,986 kB 1%]                                                37% [Working]             Get:19 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3.4-minimal amd64 3.4.3-1ubuntu1~14.04.7 [1,224 kB]
+37% [19 python3.4-minimal 38.4 kB/1,224 kB 3%]                                              38% [Working]             Get:20 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython3.4-minimal amd64 3.4.3-1ubuntu1~14.04.7 [461 kB]
+38% [20 libpython3.4-minimal 45.1 kB/461 kB 10%]                                                38% [Working]             Get:21 http://archive.ubuntu.com/ubuntu trusty/main amd64 libamd2.3.1 amd64 1:4.2.1-3ubuntu1 [23.5 kB]
+38% [21 libamd2.3.1 12.4 kB/23.5 kB 53%]                                        39% [Working]             Get:22 http://archive.ubuntu.com/ubuntu trusty/main amd64 libbtf1.2.0 amd64 1:4.2.1-3ubuntu1 [10.1 kB]
+39% [22 libbtf1.2.0 10.1 kB/10.1 kB 100%]                                         39% [Working]             Get:23 http://archive.ubuntu.com/ubuntu trusty/main amd64 libcamd2.3.1 amd64 1:4.2.1-3ubuntu1 [21.9 kB]
+39% [23 libcamd2.3.1 21.9 kB/21.9 kB 100%]                                          39% [Waiting for headers]                         Get:24 http://archive.ubuntu.com/ubuntu trusty/main amd64 libccolamd2.8.0 amd64 1:4.2.1-3ubuntu1 [23.3 kB]
+39% [24 libccolamd2.8.0 21.7 kB/23.3 kB 93%]                                            39% [Working]             Get:25 http://archive.ubuntu.com/ubuntu trusty/main amd64 libblas3 amd64 1.2.20110419-7 [215 kB]
+39% [25 libblas3 38.4 kB/215 kB 18%]                                    40% [Working]             Get:26 http://archive.ubuntu.com/ubuntu trusty/main amd64 libcolamd2.8.0 amd64 1:4.2.1-3ubuntu1 [17.7 kB]
+40% [26 libcolamd2.8.0 17.7 kB/17.7 kB 100%]                                            40% [Working]             Get:27 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libgfortran3 amd64 4.8.4-2ubuntu1~14.04.4 [248 kB]
+40% [27 libgfortran3 27.4 kB/248 kB 11%]                                        40% [Working]             Get:28 http://archive.ubuntu.com/ubuntu trusty/main amd64 liblapack3 amd64 3.5.0-2ubuntu1 [1,730 kB]
+40% [28 liblapack3 40.8 kB/1,730 kB 2%]                                       42% [Working]             Get:29 http://archive.ubuntu.com/ubuntu trusty/main amd64 libcholmod2.1.2 amd64 1:4.2.1-3ubuntu1 [281 kB]
+42% [29 libcholmod2.1.2 7,445 B/281 kB 3%]42% [Working]                                                     9,419 kB/s 7s                                                                               Get:30 http://archive.ubuntu.com/ubuntu trusty/main amd64 libcsparse3.1.2 amd64 1:4.2.1-3ubuntu1 [25.2 kB]
+42% [30 libcsparse3.1.2 7,447 B/25.2 kB 29%]                      9,419 kB/s 7s42% [Working]                                                     9,419 kB/s 7s                                                                               Get:31 http://archive.ubuntu.com/ubuntu trusty/main amd64 libcxsparse3.1.2 amd64 1:4.2.1-3ubuntu1 [61.5 kB]
+42% [31 libcxsparse3.1.2 15.2 kB/61.5 kB 25%]                     9,419 kB/s 7s43% [Working]                                                     9,419 kB/s 7s                                                                               Get:32 http://archive.ubuntu.com/ubuntu trusty/main amd64 libklu1.2.1 amd64 1:4.2.1-3ubuntu1 [68.8 kB]
+43% [32 libklu1.2.1 7,446 B/68.8 kB 11%]                          9,419 kB/s 7s43% [Working]                                                     9,419 kB/s 7s                                                                               Get:33 http://archive.ubuntu.com/ubuntu trusty/main amd64 libldl2.1.0 amd64 1:4.2.1-3ubuntu1 [9,930 B]
+43% [33 libldl2.1.0 9,930 B/9,930 B 100%]                         9,419 kB/s 7s43% [Working]                                                     9,419 kB/s 7s                                                                               Get:34 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python2.7-dev amd64 2.7.6-8ubuntu0.5 [269 kB]
+43% [34 python2.7-dev 8,733 B/269 kB 3%]                          9,419 kB/s 7s44% [Working]                                                     9,419 kB/s 7s                                                                               Get:35 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython2.7-dev amd64 2.7.6-8ubuntu0.5 [22.0 MB]
+44% [35 libpython2.7-dev 8,729 B/22.0 MB 0%]                      9,419 kB/s 7s47% [35 libpython2.7-dev 5,328 kB/22.0 MB 24%]                    9,419 kB/s 6s52% [35 libpython2.7-dev 13.2 MB/22.0 MB 60%]                     9,419 kB/s 6s58% [Working]                                                     9,419 kB/s 5s                                                                               Get:36 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython2.7 amd64 2.7.6-8ubuntu0.5 [1,041 kB]
+58% [36 libpython2.7 22.9 kB/1,041 kB 2%]                         9,419 kB/s 5s58% [Working]                                                     9,419 kB/s 5s                                                                               Get:37 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python2.7 amd64 2.7.6-8ubuntu0.5 [197 kB]
+58% [37 python2.7 29.3 kB/197 kB 15%]                             9,419 kB/s 5s59% [Working]                                                     9,419 kB/s 5s                                                                               Get:38 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython2.7-stdlib amd64 2.7.6-8ubuntu0.5 [1,872 kB]
+59% [38 libpython2.7-stdlib 29.3 kB/1,872 kB 2%]                  9,419 kB/s 5s60% [Working]                                                     9,419 kB/s 4s                                                                               Get:39 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python2.7-minimal amd64 2.7.6-8ubuntu0.5 [1,186 kB]
+60% [39 python2.7-minimal 29.3 kB/1,186 kB 2%]                    9,419 kB/s 4s61% [Working]                                                     9,419 kB/s 4s                                                                               Get:40 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython2.7-minimal amd64 2.7.6-8ubuntu0.5 [308 kB]
+61% [40 libpython2.7-minimal 53.4 kB/308 kB 17%]                  9,419 kB/s 4s62% [Working]                                                     9,419 kB/s 4s                                                                               Get:41 http://archive.ubuntu.com/ubuntu trusty/main amd64 libspqr1.3.1 amd64 1:4.2.1-3ubuntu1 [60.4 kB]
+62% [41 libspqr1.3.1 60.4 kB/60.4 kB 100%]                        9,419 kB/s 4s62% [Working]                                                     9,419 kB/s 4s                                                                               Get:42 http://archive.ubuntu.com/ubuntu trusty/main amd64 libumfpack5.6.2 amd64 1:4.2.1-3ubuntu1 [214 kB]
+62% [42 libumfpack5.6.2 11.7 kB/214 kB 5%]                        9,419 kB/s 4s62% [Working]                                                     9,419 kB/s 4s                                                                               Get:43 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython2.7-dbg amd64 2.7.6-8ubuntu0.5 [4,180 kB]
+62% [43 libpython2.7-dbg 29.3 kB/4,180 kB 1%]                     9,419 kB/s 4s65% [Working]                                                     9,419 kB/s 4s                                                                               Get:44 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libpython3.4-dbg amd64 3.4.3-1ubuntu1~14.04.7 [5,098 kB]
+65% [44 libpython3.4-dbg 30.6 kB/5,098 kB 1%]                     9,419 kB/s 4s69% [Working]                                                     9,419 kB/s 3s                                                                               Get:45 http://archive.ubuntu.com/ubuntu trusty/main amd64 cython amd64 0.20.1+git90-g0e6e38e-1ubuntu2 [1,347 kB]
+69% [45 cython 10.0 kB/1,347 kB 1%]                               9,419 kB/s 3s70% [Working]                                                     9,419 kB/s 3s                                                                               Get:46 http://archive.ubuntu.com/ubuntu trusty/main amd64 intltool-debian all 0.35.0+20060710.1 [31.6 kB]
+70% [46 intltool-debian 31.6 kB/31.6 kB 100%]                     9,419 kB/s 3s70% [Working]                                                     9,419 kB/s 3s                                                                               Get:47 http://archive.ubuntu.com/ubuntu trusty/main amd64 po-debconf all 1.0.16+nmu2ubuntu1 [210 kB]
+70% [47 po-debconf 18.0 kB/210 kB 9%]                             9,419 kB/s 3s70% [Working]                                                     9,419 kB/s 3s                                                                               Get:48 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 dh-apparmor all 2.10.95-0ubuntu2.6~14.04.4 [11.3 kB]
+70% [48 dh-apparmor 11.3 kB/11.3 kB 100%]                         9,419 kB/s 3s70% [Waiting for headers]                                         9,419 kB/s 3s                                                                               Get:49 http://archive.ubuntu.com/ubuntu trusty/main amd64 debhelper all 9.20131227ubuntu1 [604 kB]
+70% [49 debhelper 38.4 kB/604 kB 6%]                              9,419 kB/s 3s71% [Working]                                                     9,419 kB/s 3s                                                                               Get:50 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libgfortran-4.8-dev amd64 4.8.4-2ubuntu1~14.04.4 [268 kB]
+71% [50 libgfortran-4.8-dev 38.4 kB/268 kB 14%]                   9,419 kB/s 3s71% [Working]                                                     9,419 kB/s 3s                                                                               Get:51 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 gfortran-4.8 amd64 4.8.4-2ubuntu1~14.04.4 [4,733 kB]
+71% [51 gfortran-4.8 36.9 kB/4,733 kB 1%]                         9,419 kB/s 3s75% [Working]                                                     9,419 kB/s 2s                                                                               Get:52 http://archive.ubuntu.com/ubuntu trusty/main amd64 gfortran amd64 4:4.8.2-1ubuntu6 [1,252 B]
+75% [52 gfortran 1,252 B/1,252 B 100%]                            9,419 kB/s 2s75% [Waiting for headers]                                         9,419 kB/s 2s                                                                               Get:53 http://archive.ubuntu.com/ubuntu trusty/main amd64 libblas-dev amd64 1.2.20110419-7 [240 kB]
+75% [53 libblas-dev 20.3 kB/240 kB 8%]                            9,419 kB/s 2s75% [Working]                                                     9,419 kB/s 2s                                                                               Get:54 http://archive.ubuntu.com/ubuntu trusty/main amd64 liblapack-dev amd64 3.5.0-2ubuntu1 [1,740 kB]
+75% [54 liblapack-dev 38.4 kB/1,740 kB 2%]                        9,419 kB/s 2s77% [Working]                                                     9,419 kB/s 2s                                                                               Get:55 http://archive.ubuntu.com/ubuntu trusty/main amd64 libpython-all-dev amd64 2.7.5-5ubuntu3 [996 B]
+77% [55 libpython-all-dev 996 B/996 B 100%]                       9,419 kB/s 2s77% [Waiting for headers]                                         9,419 kB/s 2s                                                                               Get:56 http://archive.ubuntu.com/ubuntu trusty/main amd64 libpython3-all-dev amd64 3.4.0-0ubuntu2 [996 B]
+77% [56 libpython3-all-dev 996 B/996 B 100%]                      9,419 kB/s 2s77% [Waiting for headers]                                         9,419 kB/s 2s                                                                               Get:57 http://archive.ubuntu.com/ubuntu trusty/main amd64 libsuitesparse-dev amd64 1:4.2.1-3ubuntu1 [868 kB]
+77% [57 libsuitesparse-dev 38.4 kB/868 kB 4%]                     9,419 kB/s 2s78% [Working]                                                     9,419 kB/s 2s                                                                               Get:58 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-all amd64 2.7.5-5ubuntu3 [984 B]
+78% [58 python-all 984 B/984 B 100%]                              9,419 kB/s 2s78% [Waiting for headers]                                         9,419 kB/s 2s                                                                               Get:59 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-all-dev amd64 2.7.5-5ubuntu3 [1,008 B]
+78% [59 python-all-dev 1,008 B/1,008 B 100%]                      9,419 kB/s 2s78% [Waiting for headers]                                         9,419 kB/s 2s                                                                               Get:60 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-decorator all 3.4.0-2build1 [19.2 kB]
+78% [60 python-decorator 19.2 kB/19.2 kB 100%]                    9,419 kB/s 2s79% [Working]                                                     9,419 kB/s 2s                                                                               Get:61 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-markupsafe amd64 0.18-1build2 [14.3 kB]
+79% [61 python-markupsafe 14.3 kB/14.3 kB 100%]                   9,419 kB/s 2s79% [Waiting for headers]                                         9,419 kB/s 2s                                                                               Get:62 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-mako all 0.9.1-1 [59.6 kB]
+79% [62 python-mako 15.9 kB/59.6 kB 27%]                          9,419 kB/s 2s79% [Working]                                                     9,419 kB/s 2s                                                                               Get:63 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-nose all 1.3.1-2 [119 kB]
+79% [63 python-nose 21.6 kB/119 kB 18%]                           9,419 kB/s 2s79% [Working]                                                     9,419 kB/s 2s                                                                               Get:64 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python-numpy amd64 1:1.8.2-0ubuntu0.1 [1,603 kB]
+79% [64 python-numpy 33.6 kB/1,603 kB 2%]                         9,419 kB/s 2s81% [Working]                                                     9,419 kB/s 2s                                                                               Get:65 http://archive.ubuntu.com/ubuntu trusty/main amd64 python3-all amd64 3.4.0-0ubuntu2 [978 B]
+81% [65 python3-all 978 B/978 B 100%]                             7,995 kB/s 2s81% [Waiting for headers]                                         7,995 kB/s 2s                                                                               Get:66 http://archive.ubuntu.com/ubuntu trusty/main amd64 libpython3-dbg amd64 3.4.0-0ubuntu2 [6,950 B]
+81% [66 libpython3-dbg 6,950 B/6,950 B 100%]                      7,995 kB/s 2s81% [Waiting for headers]                                         7,995 kB/s 2s                                                                               Get:67 http://archive.ubuntu.com/ubuntu trusty/main amd64 libpython3-all-dbg amd64 3.4.0-0ubuntu2 [998 B]
+81% [67 libpython3-all-dbg 998 B/998 B 100%]                      7,995 kB/s 2s81% [Waiting for headers]                                         7,995 kB/s 2s                                                                               Get:68 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3.4-dbg amd64 3.4.3-1ubuntu1~14.04.7 [7,591 kB]
+81% [68 python3.4-dbg 38.4 kB/7,591 kB 1%]                        7,995 kB/s 2s86% [Working]                                                     7,995 kB/s 1s                                                                               Get:69 http://archive.ubuntu.com/ubuntu trusty/main amd64 python3-dbg amd64 3.4.0-0ubuntu2 [1,248 B]
+86% [69 python3-dbg 1,248 B/1,248 B 100%]                         7,995 kB/s 1s87% [Waiting for headers]                                         7,995 kB/s 1s                                                                               Get:70 http://archive.ubuntu.com/ubuntu trusty/main amd64 python3-all-dbg amd64 3.4.0-0ubuntu2 [1,002 B]
+87% [70 python3-all-dbg 1,002 B/1,002 B 100%]                     7,995 kB/s 1s87% [Waiting for headers]                                         7,995 kB/s 1s                                                                               Get:71 http://archive.ubuntu.com/ubuntu trusty/main amd64 python3-all-dev amd64 3.4.0-0ubuntu2 [1,000 B]
+87% [71 python3-all-dev 1,000 B/1,000 B 100%]                     7,995 kB/s 1s87% [Waiting for headers]                                         7,995 kB/s 1s                                                                               Get:72 http://archive.ubuntu.com/ubuntu trusty/universe amd64 python3-decorator all 3.4.0-2build1 [19.6 kB]
+87% [72 python3-decorator 19.6 kB/19.6 kB 100%]                   7,995 kB/s 1s87% [Waiting for headers]                                         7,995 kB/s 1s                                                                               Get:73 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3-pkg-resources all 3.3-1ubuntu2 [31.7 kB]
+87% [73 python3-pkg-resources 31.7 kB/31.7 kB 100%]               7,995 kB/s 1s87% [Working]                                                     7,995 kB/s 1s                                                                               Get:74 http://archive.ubuntu.com/ubuntu trusty/main amd64 python3-nose all 1.3.1-2 [116 kB]
+88% [74 python3-nose 38.4 kB/116 kB 33%]                          7,995 kB/s 1s88% [Working]                                                     7,995 kB/s 1s                                                                               Get:75 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3-numpy amd64 1:1.8.2-0ubuntu0.1 [1,603 kB]
+88% [75 python3-numpy 28.7 kB/1,603 kB 2%]                        7,995 kB/s 1s89% [Working]                                                     7,995 kB/s 1s                                                                               Get:76 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3-six all 1.5.2-1ubuntu1.1 [8,438 B]
+89% [76 python3-six 8,438 B/8,438 B 100%]                         7,995 kB/s 1s89% [Waiting for headers]                                         7,995 kB/s 1s                                                                               Get:77 http://archive.ubuntu.com/ubuntu trusty/main amd64 swig2.0 amd64 2.0.11-1ubuntu2 [875 kB]
+89% [77 swig2.0 28.7 kB/875 kB 3%]                                7,995 kB/s 1s90% [Working]                                                     7,995 kB/s 1s                                                                               Get:78 http://archive.ubuntu.com/ubuntu trusty/main amd64 swig amd64 2.0.11-1ubuntu2 [6,272 B]
+90% [78 swig 6,272 B/6,272 B 100%]                                7,995 kB/s 1s90% [Waiting for headers]                                         7,995 kB/s 1s                                                                               Get:79 http://archive.ubuntu.com/ubuntu trusty/main amd64 libpython-dbg amd64 2.7.5-5ubuntu3 [7,010 B]
+90% [79 libpython-dbg 7,010 B/7,010 B 100%]                       7,995 kB/s 1s91% [Waiting for headers]                                         7,995 kB/s 1s                                                                               Get:80 http://archive.ubuntu.com/ubuntu trusty/main amd64 libpython-all-dbg amd64 2.7.5-5ubuntu3 [1,120 B]
+91% [80 libpython-all-dbg 1,120 B/1,120 B 100%]                   7,995 kB/s 1s91% [Working]                                                     7,995 kB/s 1s                                                                               Get:81 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python2.7-dbg amd64 2.7.6-8ubuntu0.5 [6,364 kB]
+91% [81 python2.7-dbg 17.1 kB/6,364 kB 0%]                        7,995 kB/s 1s95% [Working]                                                     7,995 kB/s 0s                                                                               Get:82 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-dbg amd64 2.7.5-5ubuntu3 [1,248 B]
+95% [82 python-dbg 1,248 B/1,248 B 100%]                          7,995 kB/s 0s95% [Working]                                                     7,995 kB/s 0s                                                                               Get:83 http://archive.ubuntu.com/ubuntu trusty/main amd64 python-all-dbg amd64 2.7.5-5ubuntu3 [1,004 B]
+95% [83 python-all-dbg 1,004 B/1,004 B 100%]                      7,995 kB/s 0s95% [Working]                                                     7,995 kB/s 0s                                                                               Get:84 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python-numpy-dbg amd64 1:1.8.2-0ubuntu0.1 [3,052 kB]
+95% [84 python-numpy-dbg 7,256 B/3,052 kB 0%]                     7,995 kB/s 0s98% [Working]                                                     7,995 kB/s 0s                                                                               Get:85 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 python3-numpy-dbg amd64 1:1.8.2-0ubuntu0.1 [3,515 kB]
+98% [85 python3-numpy-dbg 3,579 B/3,515 kB 0%]                    7,995 kB/s 0s100% [Working]                                                    7,995 kB/s 0s                                                                               Fetched 128 MB in 15s (8,534 kB/s)
+Extracting templates from packages: 35%Extracting templates from packages: 70%Extracting templates from packages: 100%
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
+Preparing to unpack .../libatomic1_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libatomic1:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libitm1_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libitm1:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libgomp1_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libgomp1:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libasan0_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libasan0:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libtsan0_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libtsan0:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libquadmath0_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libquadmath0:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../g++-4.8_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking g++-4.8 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../gcc-4.8_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking gcc-4.8 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../cpp-4.8_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking cpp-4.8 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libstdc++-4.8-dev_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libstdc++-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libgcc-4.8-dev_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libgcc-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../gcc-4.8-base_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking gcc-4.8-base:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Processing triggers for ccache (3.1.9-1) ...
+Updating symlinks in /usr/lib/ccache ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up gcc-4.8-base:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
+Preparing to unpack .../libstdc++6_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libstdc++6:amd64 (4.8.4-2ubuntu1~14.04.4) over (4.8.4-2ubuntu1~14.04.3) ...
+Setting up libstdc++6:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
+Preparing to unpack .../python3.4-dev_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking python3.4-dev (3.4.3-1ubuntu1~14.04.7) over (3.4.3-1ubuntu1~14.04.6) ...
+Preparing to unpack .../libpython3.4-dev_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking libpython3.4-dev:amd64 (3.4.3-1ubuntu1~14.04.7) over (3.4.3-1ubuntu1~14.04.6) ...
+Preparing to unpack .../libpython3.4_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking libpython3.4:amd64 (3.4.3-1ubuntu1~14.04.7) over (3.4.3-1ubuntu1~14.04.6) ...
+Preparing to unpack .../python3.4_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking python3.4 (3.4.3-1ubuntu1~14.04.7) over (3.4.3-1ubuntu1~14.04.6) ...
+Preparing to unpack .../libpython3.4-stdlib_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking libpython3.4-stdlib:amd64 (3.4.3-1ubuntu1~14.04.7) over (3.4.3-1ubuntu1~14.04.6) ...
+Preparing to unpack .../python3.4-minimal_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking python3.4-minimal (3.4.3-1ubuntu1~14.04.7) over (3.4.3-1ubuntu1~14.04.6) ...
+Preparing to unpack .../libpython3.4-minimal_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking libpython3.4-minimal:amd64 (3.4.3-1ubuntu1~14.04.7) over (3.4.3-1ubuntu1~14.04.6) ...
+Selecting previously unselected package libamd2.3.1:amd64.
+Preparing to unpack .../libamd2.3.1_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libamd2.3.1:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libbtf1.2.0:amd64.
+Preparing to unpack .../libbtf1.2.0_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libbtf1.2.0:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libcamd2.3.1:amd64.
+Preparing to unpack .../libcamd2.3.1_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libcamd2.3.1:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libccolamd2.8.0:amd64.
+Preparing to unpack .../libccolamd2.8.0_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libccolamd2.8.0:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../libblas3_1.2.20110419-7_amd64.deb ...
+Unpacking libblas3 (1.2.20110419-7) ...
+Selecting previously unselected package libcolamd2.8.0:amd64.
+Preparing to unpack .../libcolamd2.8.0_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libcolamd2.8.0:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libgfortran3:amd64.
+Preparing to unpack .../libgfortran3_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libgfortran3:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Selecting previously unselected package liblapack3.
+Preparing to unpack .../liblapack3_3.5.0-2ubuntu1_amd64.deb ...
+Unpacking liblapack3 (3.5.0-2ubuntu1) ...
+Selecting previously unselected package libcholmod2.1.2:amd64.
+Preparing to unpack .../libcholmod2.1.2_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libcholmod2.1.2:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libcsparse3.1.2:amd64.
+Preparing to unpack .../libcsparse3.1.2_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libcsparse3.1.2:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libcxsparse3.1.2:amd64.
+Preparing to unpack .../libcxsparse3.1.2_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libcxsparse3.1.2:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libklu1.2.1:amd64.
+Preparing to unpack .../libklu1.2.1_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libklu1.2.1:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libldl2.1.0:amd64.
+Preparing to unpack .../libldl2.1.0_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libldl2.1.0:amd64 (1:4.2.1-3ubuntu1) ...
+Preparing to unpack .../python2.7-dev_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking python2.7-dev (2.7.6-8ubuntu0.5) over (2.7.6-8ubuntu0.4) ...
+Preparing to unpack .../libpython2.7-dev_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking libpython2.7-dev:amd64 (2.7.6-8ubuntu0.5) over (2.7.6-8ubuntu0.4) ...
+Preparing to unpack .../libpython2.7_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking libpython2.7:amd64 (2.7.6-8ubuntu0.5) over (2.7.6-8ubuntu0.4) ...
+Preparing to unpack .../python2.7_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking python2.7 (2.7.6-8ubuntu0.5) over (2.7.6-8ubuntu0.4) ...
+Preparing to unpack .../libpython2.7-stdlib_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.6-8ubuntu0.5) over (2.7.6-8ubuntu0.4) ...
+Preparing to unpack .../python2.7-minimal_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking python2.7-minimal (2.7.6-8ubuntu0.5) over (2.7.6-8ubuntu0.4) ...
+Preparing to unpack .../libpython2.7-minimal_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.6-8ubuntu0.5) over (2.7.6-8ubuntu0.4) ...
+Selecting previously unselected package libspqr1.3.1:amd64.
+Preparing to unpack .../libspqr1.3.1_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libspqr1.3.1:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libumfpack5.6.2:amd64.
+Preparing to unpack .../libumfpack5.6.2_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libumfpack5.6.2:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package libpython2.7-dbg:amd64.
+Preparing to unpack .../libpython2.7-dbg_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking libpython2.7-dbg:amd64 (2.7.6-8ubuntu0.5) ...
+Selecting previously unselected package libpython3.4-dbg:amd64.
+Preparing to unpack .../libpython3.4-dbg_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking libpython3.4-dbg:amd64 (3.4.3-1ubuntu1~14.04.7) ...
+Selecting previously unselected package cython.
+Preparing to unpack .../cython_0.20.1+git90-g0e6e38e-1ubuntu2_amd64.deb ...
+Unpacking cython (0.20.1+git90-g0e6e38e-1ubuntu2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2ubuntu1_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2ubuntu1) ...
+Selecting previously unselected package dh-apparmor.
+Preparing to unpack .../dh-apparmor_2.10.95-0ubuntu2.6~14.04.4_all.deb ...
+Unpacking dh-apparmor (2.10.95-0ubuntu2.6~14.04.4) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20131227ubuntu1_all.deb ...
+Unpacking debhelper (9.20131227ubuntu1) ...
+Selecting previously unselected package libgfortran-4.8-dev:amd64.
+Preparing to unpack .../libgfortran-4.8-dev_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking libgfortran-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Selecting previously unselected package gfortran-4.8.
+Preparing to unpack .../gfortran-4.8_4.8.4-2ubuntu1~14.04.4_amd64.deb ...
+Unpacking gfortran-4.8 (4.8.4-2ubuntu1~14.04.4) ...
+Selecting previously unselected package gfortran.
+Preparing to unpack .../gfortran_4%3a4.8.2-1ubuntu6_amd64.deb ...
+Unpacking gfortran (4:4.8.2-1ubuntu6) ...
+Selecting previously unselected package libblas-dev.
+Preparing to unpack .../libblas-dev_1.2.20110419-7_amd64.deb ...
+Unpacking libblas-dev (1.2.20110419-7) ...
+Selecting previously unselected package liblapack-dev.
+Preparing to unpack .../liblapack-dev_3.5.0-2ubuntu1_amd64.deb ...
+Unpacking liblapack-dev (3.5.0-2ubuntu1) ...
+Selecting previously unselected package libpython-all-dev:amd64.
+Preparing to unpack .../libpython-all-dev_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking libpython-all-dev:amd64 (2.7.5-5ubuntu3) ...
+Selecting previously unselected package libpython3-all-dev:amd64.
+Preparing to unpack .../libpython3-all-dev_3.4.0-0ubuntu2_amd64.deb ...
+Unpacking libpython3-all-dev:amd64 (3.4.0-0ubuntu2) ...
+Selecting previously unselected package libsuitesparse-dev:amd64.
+Preparing to unpack .../libsuitesparse-dev_1%3a4.2.1-3ubuntu1_amd64.deb ...
+Unpacking libsuitesparse-dev:amd64 (1:4.2.1-3ubuntu1) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../python-all_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python-all (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python-all-dev.
+Preparing to unpack .../python-all-dev_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python-all-dev (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python-decorator.
+Preparing to unpack .../python-decorator_3.4.0-2build1_all.deb ...
+Unpacking python-decorator (3.4.0-2build1) ...
+Selecting previously unselected package python-markupsafe.
+Preparing to unpack .../python-markupsafe_0.18-1build2_amd64.deb ...
+Unpacking python-markupsafe (0.18-1build2) ...
+Selecting previously unselected package python-mako.
+Preparing to unpack .../python-mako_0.9.1-1_all.deb ...
+Unpacking python-mako (0.9.1-1) ...
+Selecting previously unselected package python-nose.
+Preparing to unpack .../python-nose_1.3.1-2_all.deb ...
+Unpacking python-nose (1.3.1-2) ...
+Selecting previously unselected package python-numpy.
+Preparing to unpack .../python-numpy_1%3a1.8.2-0ubuntu0.1_amd64.deb ...
+Unpacking python-numpy (1:1.8.2-0ubuntu0.1) ...
+Selecting previously unselected package python3-all.
+Preparing to unpack .../python3-all_3.4.0-0ubuntu2_amd64.deb ...
+Unpacking python3-all (3.4.0-0ubuntu2) ...
+Selecting previously unselected package libpython3-dbg:amd64.
+Preparing to unpack .../libpython3-dbg_3.4.0-0ubuntu2_amd64.deb ...
+Unpacking libpython3-dbg:amd64 (3.4.0-0ubuntu2) ...
+Selecting previously unselected package libpython3-all-dbg:amd64.
+Preparing to unpack .../libpython3-all-dbg_3.4.0-0ubuntu2_amd64.deb ...
+Unpacking libpython3-all-dbg:amd64 (3.4.0-0ubuntu2) ...
+Selecting previously unselected package python3.4-dbg.
+Preparing to unpack .../python3.4-dbg_3.4.3-1ubuntu1~14.04.7_amd64.deb ...
+Unpacking python3.4-dbg (3.4.3-1ubuntu1~14.04.7) ...
+Selecting previously unselected package python3-dbg.
+Preparing to unpack .../python3-dbg_3.4.0-0ubuntu2_amd64.deb ...
+Unpacking python3-dbg (3.4.0-0ubuntu2) ...
+Selecting previously unselected package python3-all-dbg.
+Preparing to unpack .../python3-all-dbg_3.4.0-0ubuntu2_amd64.deb ...
+Unpacking python3-all-dbg (3.4.0-0ubuntu2) ...
+Selecting previously unselected package python3-all-dev.
+Preparing to unpack .../python3-all-dev_3.4.0-0ubuntu2_amd64.deb ...
+Unpacking python3-all-dev (3.4.0-0ubuntu2) ...
+Selecting previously unselected package python3-decorator.
+Preparing to unpack .../python3-decorator_3.4.0-2build1_all.deb ...
+Unpacking python3-decorator (3.4.0-2build1) ...
+Selecting previously unselected package python3-pkg-resources.
+Preparing to unpack .../python3-pkg-resources_3.3-1ubuntu2_all.deb ...
+Unpacking python3-pkg-resources (3.3-1ubuntu2) ...
+Selecting previously unselected package python3-nose.
+Preparing to unpack .../python3-nose_1.3.1-2_all.deb ...
+Unpacking python3-nose (1.3.1-2) ...
+Selecting previously unselected package python3-numpy.
+Preparing to unpack .../python3-numpy_1%3a1.8.2-0ubuntu0.1_amd64.deb ...
+Unpacking python3-numpy (1:1.8.2-0ubuntu0.1) ...
+Selecting previously unselected package python3-six.
+Preparing to unpack .../python3-six_1.5.2-1ubuntu1.1_all.deb ...
+Unpacking python3-six (1.5.2-1ubuntu1.1) ...
+Selecting previously unselected package swig2.0.
+Preparing to unpack .../swig2.0_2.0.11-1ubuntu2_amd64.deb ...
+Unpacking swig2.0 (2.0.11-1ubuntu2) ...
+Selecting previously unselected package swig.
+Preparing to unpack .../swig_2.0.11-1ubuntu2_amd64.deb ...
+Unpacking swig (2.0.11-1ubuntu2) ...
+Selecting previously unselected package libpython-dbg:amd64.
+Preparing to unpack .../libpython-dbg_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking libpython-dbg:amd64 (2.7.5-5ubuntu3) ...
+Selecting previously unselected package libpython-all-dbg:amd64.
+Preparing to unpack .../libpython-all-dbg_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking libpython-all-dbg:amd64 (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python2.7-dbg.
+Preparing to unpack .../python2.7-dbg_2.7.6-8ubuntu0.5_amd64.deb ...
+Unpacking python2.7-dbg (2.7.6-8ubuntu0.5) ...
+Selecting previously unselected package python-dbg.
+Preparing to unpack .../python-dbg_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python-dbg (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python-all-dbg.
+Preparing to unpack .../python-all-dbg_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python-all-dbg (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python-numpy-dbg.
+Preparing to unpack .../python-numpy-dbg_1%3a1.8.2-0ubuntu0.1_amd64.deb ...
+Unpacking python-numpy-dbg (1:1.8.2-0ubuntu0.1) ...
+Selecting previously unselected package python3-numpy-dbg.
+Preparing to unpack .../python3-numpy-dbg_1%3a1.8.2-0ubuntu0.1_amd64.deb ...
+Unpacking python3-numpy-dbg (1:1.8.2-0ubuntu0.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Processing triggers for ccache (3.1.9-1) ...
+Updating symlinks in /usr/lib/ccache ...
+Setting up libatomic1:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libitm1:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libgomp1:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libasan0:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libtsan0:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libquadmath0:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up cpp-4.8 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libgcc-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up gcc-4.8 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libstdc++-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up g++-4.8 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up libpython3.4-minimal:amd64 (3.4.3-1ubuntu1~14.04.7) ...
+Setting up python3.4-minimal (3.4.3-1ubuntu1~14.04.7) ...
+Setting up libpython3.4-stdlib:amd64 (3.4.3-1ubuntu1~14.04.7) ...
+Setting up python3.4 (3.4.3-1ubuntu1~14.04.7) ...
+Setting up libpython3.4:amd64 (3.4.3-1ubuntu1~14.04.7) ...
+Setting up libpython3.4-dev:amd64 (3.4.3-1ubuntu1~14.04.7) ...
+Setting up python3.4-dev (3.4.3-1ubuntu1~14.04.7) ...
+Setting up libamd2.3.1:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libbtf1.2.0:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libcamd2.3.1:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libccolamd2.8.0:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libblas3 (1.2.20110419-7) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Setting up libcolamd2.8.0:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libgfortran3:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up liblapack3 (3.5.0-2ubuntu1) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up libcholmod2.1.2:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libcsparse3.1.2:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libcxsparse3.1.2:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libklu1.2.1:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libldl2.1.0:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.6-8ubuntu0.5) ...
+Setting up python2.7-minimal (2.7.6-8ubuntu0.5) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.6-8ubuntu0.5) ...
+Setting up python2.7 (2.7.6-8ubuntu0.5) ...
+Setting up libpython2.7:amd64 (2.7.6-8ubuntu0.5) ...
+Setting up libpython2.7-dev:amd64 (2.7.6-8ubuntu0.5) ...
+Setting up python2.7-dev (2.7.6-8ubuntu0.5) ...
+Setting up libspqr1.3.1:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libumfpack5.6.2:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up libpython2.7-dbg:amd64 (2.7.6-8ubuntu0.5) ...
+Setting up libpython3.4-dbg:amd64 (3.4.3-1ubuntu1~14.04.7) ...
+Setting up cython (0.20.1+git90-g0e6e38e-1ubuntu2) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2ubuntu1) ...
+Setting up dh-apparmor (2.10.95-0ubuntu2.6~14.04.4) ...
+Setting up debhelper (9.20131227ubuntu1) ...
+Setting up libgfortran-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up gfortran-4.8 (4.8.4-2ubuntu1~14.04.4) ...
+Setting up gfortran (4:4.8.2-1ubuntu6) ...
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in auto mode
+Setting up libblas-dev (1.2.20110419-7) ...
+update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+Setting up liblapack-dev (3.5.0-2ubuntu1) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+Setting up libpython-all-dev:amd64 (2.7.5-5ubuntu3) ...
+Setting up libpython3-all-dev:amd64 (3.4.0-0ubuntu2) ...
+Setting up libsuitesparse-dev:amd64 (1:4.2.1-3ubuntu1) ...
+Setting up python-all (2.7.5-5ubuntu3) ...
+Setting up python-all-dev (2.7.5-5ubuntu3) ...
+Setting up python-decorator (3.4.0-2build1) ...
+Setting up python-markupsafe (0.18-1build2) ...
+Setting up python-mako (0.9.1-1) ...
+Setting up python-nose (1.3.1-2) ...
+Setting up python-numpy (1:1.8.2-0ubuntu0.1) ...
+Setting up python3-all (3.4.0-0ubuntu2) ...
+Setting up libpython3-dbg:amd64 (3.4.0-0ubuntu2) ...
+Setting up libpython3-all-dbg:amd64 (3.4.0-0ubuntu2) ...
+Setting up python3.4-dbg (3.4.3-1ubuntu1~14.04.7) ...
+Setting up python3-dbg (3.4.0-0ubuntu2) ...
+Setting up python3-all-dbg (3.4.0-0ubuntu2) ...
+Setting up python3-all-dev (3.4.0-0ubuntu2) ...
+Setting up python3-decorator (3.4.0-2build1) ...
+Setting up python3-pkg-resources (3.3-1ubuntu2) ...
+Setting up python3-nose (1.3.1-2) ...
+Setting up python3-numpy (1:1.8.2-0ubuntu0.1) ...
+Setting up python3-six (1.5.2-1ubuntu1.1) ...
+Setting up swig2.0 (2.0.11-1ubuntu2) ...
+Setting up swig (2.0.11-1ubuntu2) ...
+Setting up libpython-dbg:amd64 (2.7.5-5ubuntu3) ...
+Setting up libpython-all-dbg:amd64 (2.7.5-5ubuntu3) ...
+Setting up python2.7-dbg (2.7.6-8ubuntu0.5) ...
+Setting up python-dbg (2.7.5-5ubuntu3) ...
+Setting up python-all-dbg (2.7.5-5ubuntu3) ...
+Setting up python-numpy-dbg (1:1.8.2-0ubuntu0.1) ...
+Setting up python3-numpy-dbg (1:1.8.2-0ubuntu0.1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
+travis_time:end:006e6052:start=1598965095017215142,finish=1598965133888091067,duration=38870875925,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:09071f70[0K$ sudo apt-get install -qq python-scipy
+Selecting previously unselected package libwebp5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96999 files and directories currently installed.)
+Preparing to unpack .../libwebp5_0.4.0-4_amd64.deb ...
+Unpacking libwebp5:amd64 (0.4.0-4) ...
+Selecting previously unselected package libwebpmux1:amd64.
+Preparing to unpack .../libwebpmux1_0.4.0-4_amd64.deb ...
+Unpacking libwebpmux1:amd64 (0.4.0-4) ...
+Selecting previously unselected package python-pil.
+Preparing to unpack .../python-pil_2.3.0-1ubuntu3.4_amd64.deb ...
+Unpacking python-pil (2.3.0-1ubuntu3.4) ...
+Selecting previously unselected package python-imaging.
+Preparing to unpack .../python-imaging_2.3.0-1ubuntu3.4_all.deb ...
+Unpacking python-imaging (2.3.0-1ubuntu3.4) ...
+Selecting previously unselected package python-scipy.
+Preparing to unpack .../python-scipy_0.13.3-1build1_amd64.deb ...
+Unpacking python-scipy (0.13.3-1build1) ...
+Setting up libwebp5:amd64 (0.4.0-4) ...
+Setting up libwebpmux1:amd64 (0.4.0-4) ...
+Setting up python-pil (2.3.0-1ubuntu3.4) ...
+Setting up python-imaging (2.3.0-1ubuntu3.4) ...
+Setting up python-scipy (0.13.3-1build1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
+travis_time:end:09071f70:start=1598965133892141375,finish=1598965138413624629,duration=4521483254,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:214b68dd[0K$ pip install .
+Processing /home/travis/build/jerrygaoLondon/jgtextrank
+Processing /home/travis/.cache/pip/wheels/de/5e/42/64abaeca668161c3e2cecc24f864a8fc421e3d07a104fc8a51/nltk-3.5-py3-none-any.whl
+Collecting networkx
+  Downloading networkx-2.5-py3-none-any.whl (1.6 MB)
+[?25l
+[?25hCollecting tqdm
+  Using cached tqdm-4.48.2-py2.py3-none-any.whl (68 kB)
+Collecting click
+  Using cached click-7.1.2-py2.py3-none-any.whl (82 kB)
+Collecting regex
+  Using cached regex-2020.7.14-cp36-cp36m-manylinux2010_x86_64.whl (660 kB)
+Collecting joblib
+  Using cached joblib-0.16.0-py3-none-any.whl (300 kB)
+Collecting decorator>=4.3.0
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Building wheels for collected packages: jgtextrank
+  Building wheel for jgtextrank (setup.py) ... [?25l- \ | / - \ | / - \ | error
+[31m  ERROR: Command errored out with exit status 1:
+   command: /home/travis/virtualenv/python3.6-dev/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-req-build-26sw1tap/setup.py'"'"'; __file__='"'"'/tmp/pip-req-build-26sw1tap/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-nmz8e1l0
+       cwd: /tmp/pip-req-build-26sw1tap/
+  Complete output (159 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib
+  creating build/lib/jgtextrank
+  copying jgtextrank/decorators.py -> build/lib/jgtextrank
+  copying jgtextrank/exceptions.py -> build/lib/jgtextrank
+  copying jgtextrank/metrics.py -> build/lib/jgtextrank
+  copying jgtextrank/__init__.py -> build/lib/jgtextrank
+  copying jgtextrank/utility.py -> build/lib/jgtextrank
+  copying jgtextrank/core.py -> build/lib/jgtextrank
+  creating build/lib/jgtextrank/preprocessing
+  copying jgtextrank/preprocessing/__init__.py -> build/lib/jgtextrank/preprocessing
+  copying jgtextrank/preprocessing/segmentation.py -> build/lib/jgtextrank/preprocessing
+  copying jgtextrank/preprocessing/normaliser.py -> build/lib/jgtextrank/preprocessing
+  running egg_info
+  creating jgtextrank.egg-info
+  writing jgtextrank.egg-info/PKG-INFO
+  writing dependency_links to jgtextrank.egg-info/dependency_links.txt
+  writing requirements to jgtextrank.egg-info/requires.txt
+  writing top-level names to jgtextrank.egg-info/top_level.txt
+  writing manifest file 'jgtextrank.egg-info/SOURCES.txt'
+  reading manifest file 'jgtextrank.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  writing manifest file 'jgtextrank.egg-info/SOURCES.txt'
+  installing to build/bdist.linux-x86_64/wheel
+  running install
+  Checking .pth file support in build/bdist.linux-x86_64/wheel/
+  /home/travis/virtualenv/python3.6-dev/bin/python -E -c pass
+  TEST FAILED: build/bdist.linux-x86_64/wheel/ does NOT support .pth files
+  bad install directory or PYTHONPATH
+  
+  You are attempting to install a package to a directory that is not
+  on PYTHONPATH and which Python does not read ".pth" files from.  The
+  installation directory you specified (via --install-dir, --prefix, or
+  the distutils default setting) was:
+  
+      build/bdist.linux-x86_64/wheel/
+  
+  and your PYTHONPATH environment variable currently contains:
+  
+      ''
+  
+  Here are some of your options for correcting the problem:
+  
+  * You can choose a different installation directory, i.e., one that is
+    on PYTHONPATH or supports .pth files
+  
+  * You can add the installation directory to the PYTHONPATH environment
+    variable.  (It must then also be on PYTHONPATH whenever you run
+    Python and want to use the package(s) you are installing.)
+  
+  * You can set up the installation directory to support ".pth" files by
+    using one of the approaches described here:
+  
+    https://setuptools.readthedocs.io/en/latest/easy_install.html#custom-installation-locations
+  
+  
+  Please make the appropriate changes for your system and try again.
+  running bdist_egg
+  installing library code to build/bdist.linux-x86_64/egg
+  running install_lib
+  creating build/bdist.linux-x86_64/egg
+  creating build/bdist.linux-x86_64/egg/jgtextrank
+  copying build/lib/jgtextrank/decorators.py -> build/bdist.linux-x86_64/egg/jgtextrank
+  copying build/lib/jgtextrank/exceptions.py -> build/bdist.linux-x86_64/egg/jgtextrank
+  copying build/lib/jgtextrank/metrics.py -> build/bdist.linux-x86_64/egg/jgtextrank
+  copying build/lib/jgtextrank/__init__.py -> build/bdist.linux-x86_64/egg/jgtextrank
+  copying build/lib/jgtextrank/utility.py -> build/bdist.linux-x86_64/egg/jgtextrank
+  creating build/bdist.linux-x86_64/egg/jgtextrank/preprocessing
+  copying build/lib/jgtextrank/preprocessing/__init__.py -> build/bdist.linux-x86_64/egg/jgtextrank/preprocessing
+  copying build/lib/jgtextrank/preprocessing/segmentation.py -> build/bdist.linux-x86_64/egg/jgtextrank/preprocessing
+  copying build/lib/jgtextrank/preprocessing/normaliser.py -> build/bdist.linux-x86_64/egg/jgtextrank/preprocessing
+  copying build/lib/jgtextrank/core.py -> build/bdist.linux-x86_64/egg/jgtextrank
+  creating build/bdist.linux-x86_64/egg/EGG-INFO
+  copying jgtextrank.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+  copying jgtextrank.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+  copying jgtextrank.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+  copying jgtextrank.egg-info/not-zip-safe -> build/bdist.linux-x86_64/egg/EGG-INFO
+  copying jgtextrank.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+  copying jgtextrank.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+  creating dist
+  creating 'dist/jgtextrank-0.1.6-py3.6.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+  removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+  Processing jgtextrank-0.1.6-py3.6.egg
+  creating /tmp/pip-req-build-26sw1tap/build/bdist.linux-x86_64/wheel/jgtextrank-0.1.6-py3.6.egg
+  Extracting jgtextrank-0.1.6-py3.6.egg to /tmp/pip-req-build-26sw1tap/build/bdist.linux-x86_64/wheel
+  
+  Installed /tmp/pip-req-build-26sw1tap/build/bdist.linux-x86_64/wheel/jgtextrank-0.1.6-py3.6.egg
+  Processing dependencies for jgtextrank==0.1.6
+  Searching for networkx
+  Reading https://pypi.org/simple/networkx/
+  Downloading https://files.pythonhosted.org/packages/9b/cd/dc52755d30ba41c60243235460961fc28022e5b6731f16c268667625baea/networkx-2.5-py3-none-any.whl#sha256=8c5812e9f798d37c50570d15c4a69d5710a18d77bafc903ee9c5fba7454c616c
+  Best match: networkx 2.5
+  Processing networkx-2.5-py3-none-any.whl
+  Installing networkx-2.5-py3-none-any.whl to /tmp/pip-req-build-26sw1tap/build/bdist.linux-x86_64/wheel
+  
+  Installed /tmp/pip-req-build-26sw1tap/build/bdist.linux-x86_64/wheel/networkx-2.5-py3.6.egg
+  Searching for decorator>=4.3.0
+  Reading https://pypi.org/simple/decorator/
+  Downloading https://files.pythonhosted.org/packages/ed/1b/72a1821152d07cf1d8b6fce298aeb06a7eb90f4d6d41acec9861e7cc6df0/decorator-4.4.2-py2.py3-none-any.whl#sha256=41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760
+  Best match: decorator 4.4.2
+  Processing decorator-4.4.2-py2.py3-none-any.whl
+  Installing decorator-4.4.2-py2.py3-none-any.whl to /tmp/pip-req-build-26sw1tap/build/bdist.linux-x86_64/wheel
+  
+  Installed /tmp/pip-req-build-26sw1tap/build/bdist.linux-x86_64/wheel/decorator-4.4.2-py3.6.egg
+  Searching for nltk==3.5
+  Best match: nltk 3.5
+  Processing nltk-3.5-py3.6.egg
+  Installing nltk script to build/bdist.linux-x86_64/wheel/jgtextrank-0.1.6.data/scripts
+  
+  Using /tmp/pip-req-build-26sw1tap/.eggs/nltk-3.5-py3.6.egg
+  Searching for tqdm==4.48.2
+  Best match: tqdm 4.48.2
+  Processing tqdm-4.48.2-py3.6.egg
+  Installing tqdm script to build/bdist.linux-x86_64/wheel/jgtextrank-0.1.6.data/scripts
+  
+  Using /tmp/pip-req-build-26sw1tap/.eggs/tqdm-4.48.2-py3.6.egg
+  Searching for regex==2020.7.14
+  Best match: regex 2020.7.14
+  Processing regex-2020.7.14-py3.6-linux-x86_64.egg
+  
+  Using /tmp/pip-req-build-26sw1tap/.eggs/regex-2020.7.14-py3.6-linux-x86_64.egg
+  Searching for joblib==0.16.0
+  Best match: joblib 0.16.0
+  Processing joblib-0.16.0-py3.6.egg
+  
+  Using /tmp/pip-req-build-26sw1tap/.eggs/joblib-0.16.0-py3.6.egg
+  Searching for click==7.1.2
+  Best match: click 7.1.2
+  Processing click-7.1.2-py3.6.egg
+  
+  Using /tmp/pip-req-build-26sw1tap/.eggs/click-7.1.2-py3.6.egg
+  Finished processing dependencies for jgtextrank==0.1.6
+  [nltk_data] Downloading package punkt to /home/travis/nltk_data...
+  [nltk_data]   Unzipping tokenizers/punkt.zip.
+  [nltk_data] Downloading package averaged_perceptron_tagger to
+  [nltk_data]     /home/travis/nltk_data...
+  [nltk_data]   Unzipping taggers/averaged_perceptron_tagger.zip.
+  [nltk_data] Downloading package wordnet to /home/travis/nltk_data...
+  [nltk_data]   Unzipping corpora/wordnet.zip.
+  Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+    File "/tmp/pip-req-build-26sw1tap/setup.py", line 84, in <module>
+      zip_safe=False)
+    File "/home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages/setuptools/__init__.py", line 153, in setup
+      return distutils.core.setup(**attrs)
+    File "/home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages/setuptools/_distutils/core.py", line 148, in setup
+      dist.run_commands()
+    File "/home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages/setuptools/_distutils/dist.py", line 967, in run_commands
+      self.run_command(cmd)
+    File "/home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+      cmd_obj.run()
+    File "/home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages/wheel/bdist_wheel.py", line 342, in run
+      self.egg2dist(self.egginfo_dir, distinfo_dir)
+    File "/home/travis/virtualenv/python3.6-dev/lib/python3.6/site-packages/wheel/bdist_wheel.py", line 445, in egg2dist
+      raise ValueError(err)
+  ValueError: Egg metadata expected at build/bdist.linux-x86_64/egg/jgtextrank-0.1.6-py3.6.egg-info but not found
+  ----------------------------------------[0m
+[31m  ERROR: Failed building wheel for jgtextrank[0m
+[?25h  Running setup.py clean for jgtextrank
+Failed to build jgtextrank
+[33mDEPRECATION: Could not build wheels for jgtextrank which do not use PEP 517. pip will fall back to legacy 'setup.py install' for these. pip 21.0 will remove support for this functionality. A possible replacement is to fix the wheel build issue reported above. You can find discussion regarding this at https://github.com/pypa/pip/issues/8368.[0m
+Installing collected packages: tqdm, click, regex, joblib, nltk, decorator, networkx, jgtextrank
+    Running setup.py install for jgtextrank ... [?25l- \ | done
+[31mERROR: jgtextrank==0.1.6 did not indicate that it installed an .egg-info directory. Only setup.py projects generating .egg-info directories are supported.[0m
+[?25htravis_time:end:214b68dd:start=1598965138417821918,finish=1598965152513317441,duration=14095495523,event=before_install[0K[31;1mThe command "pip install ." failed and exited with 1 during .[0m
+
+Your build has been stopped.

@@ -87,6 +87,55 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/CSV Archives/CSV Outputs/Python_2gram_with_freq.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/CSV Outputs/Python_3gram_with_freq.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/Ci Adoption folder/CI_adoption_nonml-backup.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/Ci Adoption folder/CI_adoption_nonml-githubactions.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/Ci Adoption folder/githubActions_stats_nonml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/Ci Adoption folder/non-ml_repos_langs-03-16-22-09-25-00.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/Ci Adoption folder/travis-adoption-nonml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/CSV Archives/Fail Labels/fail_labels_dhia.csv">
           <value>
             <Attribute>

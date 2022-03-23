@@ -1,0 +1,723 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 14b12fd6-0a8f-4422-a9ec-3b10a19d6ea3@1.worker-org-69b85cc685-vt88d.gce-production-1
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-1a138df0-cfc6-49bc-b3bc-d158e8b5ec9e travis-ci-ubuntu-1804-1582576938-a9b1ae58 (via amqp)
+startup: 9.880493981s
+travis_fold:end:worker_info[0Ktravis_time:start:034968ab[0Ktravis_time:end:034968ab:start=1593458110952575318,finish=1593458111141264103,duration=188688785,event=no_world_writable_dirs[0Ktravis_time:start:00be42d0[0Ktravis_time:end:00be42d0:start=1593458111144477438,finish=1593458111152112125,duration=7634687,event=agent[0Ktravis_time:start:21022454[0Ktravis_time:end:21022454:start=1593458111154984120,finish=1593458111157330000,duration=2345880,event=check_unsupported[0Ktravis_time:start:1b844e40[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: bionic
+Build id: 703264419
+Job id: 703264424
+Runtime kernel version: 5.0.0-1031-gcp
+travis-build version: 8e9c8035
+[34m[1mBuild image provisioning date and time[0m
+Mon Feb 24 21:21:37 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+b5e4fc1 https://github.com/travis-ci/travis-cookbooks/tree/b5e4fc1
+[34m[1mgit version[0m
+git version 2.25.1
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.38.2 linux-x64 node-v12.13.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.29, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.7 (Ubuntu 11.7-2.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Jun 06 2019 17:31:41)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.35.2
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.87
+[34m[1mphpenv version[0m
+rbenv 1.1.2-26-gc6324ff
+[34m[1mrvm version[0m
+rvm 1.29.9 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.16
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.21
+9.6.17
+[34m[1mRedis version[0m
+redis-server 5.0.7
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.19.0
+v11.15.0
+v12.13.1
+v12.16.1
+v13.3.0
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:1b844e40:start=1593458111160115399,finish=1593458111166194041,duration=6078642,event=show_system_info[0Ktravis_time:start:1f04082f[0Ktravis_time:end:1f04082f:start=1593458111170048914,finish=1593458111184282624,duration=14233710,event=rm_riak_source[0Ktravis_time:start:30763680[0Ktravis_time:end:30763680:start=1593458111187126353,finish=1593458111192393241,duration=5266888,event=fix_rwky_redis[0Ktravis_time:start:0153c627[0Ktravis_time:end:0153c627:start=1593458111199607658,finish=1593458111528922773,duration=329315115,event=wait_for_network[0Ktravis_time:start:02800d9e[0Ktravis_time:end:02800d9e:start=1593458111532014016,finish=1593458111768957318,duration=236943302,event=update_apt_keys[0Ktravis_time:start:033a1358[0Ktravis_time:end:033a1358:start=1593458111771895163,finish=1593458111824897436,duration=53002273,event=fix_hhvm_source[0Ktravis_time:start:18543d4e[0Ktravis_time:end:18543d4e:start=1593458111828149981,finish=1593458111830664330,duration=2514349,event=update_mongo_arch[0Ktravis_time:start:0b0fd4b6[0Ktravis_time:end:0b0fd4b6:start=1593458111833462749,finish=1593458111873734093,duration=40271344,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0784b66c[0Ktravis_time:end:0784b66c:start=1593458111876854772,finish=1593458111879035517,duration=2180745,event=update_glibc[0Ktravis_time:start:233c97d0[0Ktravis_time:end:233c97d0:start=1593458111881816715,finish=1593458111889547493,duration=7730778,event=clean_up_path[0Ktravis_time:start:06a0afe5[0Ktravis_time:end:06a0afe5:start=1593458111892316702,finish=1593458111900548172,duration=8231470,event=fix_resolv_conf[0Ktravis_time:start:09cd0ac0[0Ktravis_time:end:09cd0ac0:start=1593458111903228174,finish=1593458111930566215,duration=27338041,event=fix_etc_hosts[0Ktravis_time:start:0d2839b9[0Ktravis_time:end:0d2839b9:start=1593458111933504418,finish=1593458111941519669,duration=8015251,event=fix_mvn_settings_xml[0Ktravis_time:start:08fa6938[0Ktravis_time:end:08fa6938:start=1593458111944285866,finish=1593458111953612555,duration=9326689,event=no_ipv6_localhost[0Ktravis_time:start:09801a44[0Ktravis_time:end:09801a44:start=1593458111956399344,finish=1593458111958379550,duration=1980206,event=fix_etc_mavenrc[0Ktravis_time:start:0fd8bd69[0Ktravis_time:end:0fd8bd69:start=1593458111961079447,finish=1593458111963678139,duration=2598692,event=fix_wwdr_certificate[0Ktravis_time:start:064d12f6[0Ktravis_time:end:064d12f6:start=1593458111966342126,finish=1593458112002452023,duration=36109897,event=put_localhost_first[0Ktravis_time:start:17f62200[0Ktravis_time:end:17f62200:start=1593458112005220399,finish=1593458112007814645,duration=2594246,event=home_paths[0Ktravis_time:start:1f40f208[0Ktravis_time:end:1f40f208:start=1593458112010493556,finish=1593458112022052386,duration=11558830,event=disable_initramfs[0Ktravis_time:start:13ca6724[0Ktravis_time:end:13ca6724:start=1593458112024880550,finish=1593458112185782977,duration=160902427,event=disable_ssh_roaming[0Ktravis_time:start:01eef730[0Ktravis_time:end:01eef730:start=1593458112188687837,finish=1593458112190747235,duration=2059398,event=debug_tools[0Ktravis_time:start:0d9ad4ea[0Ktravis_time:end:0d9ad4ea:start=1593458112193381081,finish=1593458112196013455,duration=2632374,event=uninstall_oclint[0Ktravis_time:start:2e3f075c[0Ktravis_time:end:2e3f075c:start=1593458112198593796,finish=1593458112201183722,duration=2589926,event=rvm_use[0Ktravis_time:start:17faec6a[0Ktravis_time:end:17faec6a:start=1593458112203754455,finish=1593458112211082639,duration=7328184,event=rm_etc_boto_cfg[0Ktravis_time:start:017bf3a0[0Ktravis_time:end:017bf3a0:start=1593458112213709238,finish=1593458112215588737,duration=1879499,event=rm_oraclejdk8_symlink[0Ktravis_time:start:2688642c[0Ktravis_time:end:2688642c:start=1593458112218220651,finish=1593458112307174016,duration=88953365,event=enable_i386[0Ktravis_time:start:379428d6[0Ktravis_time:end:379428d6:start=1593458112310249088,finish=1593458112313746253,duration=3497165,event=update_rubygems[0Ktravis_time:start:0b5ad7bc[0Ktravis_time:end:0b5ad7bc:start=1593458112316442717,finish=1593458113101687983,duration=785245266,event=ensure_path_components[0Ktravis_time:start:1441be79[0Ktravis_time:end:1441be79:start=1593458113104740253,finish=1593458113106767091,duration=2026838,event=redefine_curl[0Ktravis_time:start:08760678[0Ktravis_time:end:08760678:start=1593458113109491607,finish=1593458113111404021,duration=1912414,event=nonblock_pipe[0Ktravis_time:start:02bb30a6[0Ktravis_time:end:02bb30a6:start=1593458113113933996,finish=1593458119146083840,duration=6032149844,event=apt_get_update[0Ktravis_time:start:0450ad88[0Ktravis_time:end:0450ad88:start=1593458119149109851,finish=1593458119151165469,duration=2055618,event=deprecate_xcode_64[0Ktravis_time:start:10a97dc6[0Ktravis_time:end:10a97dc6:start=1593458119153807256,finish=1593458121680015494,duration=2526208238,event=update_heroku[0Ktravis_time:start:0c5e0bb1[0Ktravis_time:end:0c5e0bb1:start=1593458121682992084,finish=1593458121685022897,duration=2030813,event=shell_session_update[0Ktravis_time:start:01809f8e[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:01809f8e:start=1593458121687575909,finish=1593458123824913462,duration=2137337553,event=set_docker_mtu[0Ktravis_time:start:0df41fde[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0df41fde:start=1593458123827848708,finish=1593458123897183662,duration=69334954,event=resolvconf[0Ktravis_time:start:2a3c5148[0Ktravis_time:end:2a3c5148:start=1593458123901522190,finish=1593458124056589479,duration=155067289,event=maven_central_mirror[0Ktravis_time:start:2e7beff4[0Ktravis_time:end:2e7beff4:start=1593458124059553071,finish=1593458124156971936,duration=97418865,event=maven_https[0Ktravis_time:start:2e43cdf4[0Ktravis_time:end:2e43cdf4:start=1593458124162287826,finish=1593458124164770906,duration=2483080,event=fix_ps4[0Ktravis_time:start:0368a482[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:01f1aba7[0K$ git clone --depth=50 https://github.com/kymatio/kymatio.git kymatio/kymatio
+Cloning into 'kymatio/kymatio'...
+remote: Enumerating objects: 550, done.[K
+remote: Counting objects:   0% (1/550)[Kremote: Counting objects:   1% (6/550)[Kremote: Counting objects:   2% (11/550)[Kremote: Counting objects:   3% (17/550)[Kremote: Counting objects:   4% (22/550)[Kremote: Counting objects:   5% (28/550)[Kremote: Counting objects:   6% (33/550)[Kremote: Counting objects:   7% (39/550)[Kremote: Counting objects:   8% (44/550)[Kremote: Counting objects:   9% (50/550)[Kremote: Counting objects:  10% (55/550)[Kremote: Counting objects:  11% (61/550)[Kremote: Counting objects:  12% (66/550)[Kremote: Counting objects:  13% (72/550)[Kremote: Counting objects:  14% (77/550)[Kremote: Counting objects:  15% (83/550)[Kremote: Counting objects:  16% (88/550)[Kremote: Counting objects:  17% (94/550)[Kremote: Counting objects:  18% (99/550)[Kremote: Counting objects:  19% (105/550)[Kremote: Counting objects:  20% (110/550)[Kremote: Counting objects:  21% (116/550)[Kremote: Counting objects:  22% (121/550)[Kremote: Counting objects:  23% (127/550)[Kremote: Counting objects:  24% (132/550)[Kremote: Counting objects:  25% (138/550)[Kremote: Counting objects:  26% (143/550)[Kremote: Counting objects:  27% (149/550)[Kremote: Counting objects:  28% (154/550)[Kremote: Counting objects:  29% (160/550)[Kremote: Counting objects:  30% (165/550)[Kremote: Counting objects:  31% (171/550)[Kremote: Counting objects:  32% (176/550)[Kremote: Counting objects:  33% (182/550)[Kremote: Counting objects:  34% (187/550)[Kremote: Counting objects:  35% (193/550)[Kremote: Counting objects:  36% (198/550)[Kremote: Counting objects:  37% (204/550)[Kremote: Counting objects:  38% (209/550)[Kremote: Counting objects:  39% (215/550)[Kremote: Counting objects:  40% (220/550)[Kremote: Counting objects:  41% (226/550)[Kremote: Counting objects:  42% (231/550)[Kremote: Counting objects:  43% (237/550)[Kremote: Counting objects:  44% (242/550)[Kremote: Counting objects:  45% (248/550)[Kremote: Counting objects:  46% (253/550)[Kremote: Counting objects:  47% (259/550)[Kremote: Counting objects:  48% (264/550)[Kremote: Counting objects:  49% (270/550)[Kremote: Counting objects:  50% (275/550)[Kremote: Counting objects:  51% (281/550)[Kremote: Counting objects:  52% (286/550)[Kremote: Counting objects:  53% (292/550)[Kremote: Counting objects:  54% (297/550)[Kremote: Counting objects:  55% (303/550)[Kremote: Counting objects:  56% (308/550)[Kremote: Counting objects:  57% (314/550)[Kremote: Counting objects:  58% (319/550)[Kremote: Counting objects:  59% (325/550)[Kremote: Counting objects:  60% (330/550)[Kremote: Counting objects:  61% (336/550)[Kremote: Counting objects:  62% (341/550)[Kremote: Counting objects:  63% (347/550)[Kremote: Counting objects:  64% (352/550)[Kremote: Counting objects:  65% (358/550)[Kremote: Counting objects:  66% (363/550)[Kremote: Counting objects:  67% (369/550)[Kremote: Counting objects:  68% (374/550)[Kremote: Counting objects:  69% (380/550)[Kremote: Counting objects:  70% (385/550)[Kremote: Counting objects:  71% (391/550)[Kremote: Counting objects:  72% (396/550)[Kremote: Counting objects:  73% (402/550)[Kremote: Counting objects:  74% (407/550)[Kremote: Counting objects:  75% (413/550)[Kremote: Counting objects:  76% (418/550)[Kremote: Counting objects:  77% (424/550)[Kremote: Counting objects:  78% (429/550)[Kremote: Counting objects:  79% (435/550)[Kremote: Counting objects:  80% (440/550)[Kremote: Counting objects:  81% (446/550)[Kremote: Counting objects:  82% (451/550)[Kremote: Counting objects:  83% (457/550)remote: Counting objects:  84% (462/550)[Kremote: Counting objects:  85% (468/550)[Kremote: Counting objects:  86% (473/550)[Kremote: Counting objects:  87% (479/550)[Kremote: Counting objects:  88% (484/550)[Kremote: Counting objects:  89% (490/550)[Kremote: Counting objects:  90% (495/550)[Kremote: Counting objects:  91% (501/550)[Kremote: Counting objects:  92% (506/550)[Kremote: Counting objects:  93% (512/550)[Kremote: Counting objects:  94% (517/550)[Kremote: Counting objects:  95% (523/550)[Kremote: Counting objects:  96% (528/550)[Kremote: Counting objects:  97% (534/550)[Kremote: Counting objects:  98% (539/550)[Kremote: Counting objects:  99% (545/550)[Kremote: Counting objects: 100% (550/550)[Kremote: Counting objects: 100% (550/550), done.[K
+remote: Compressing objects:   0% (1/278)[Kremote: Compressing objects:   1% (3/278)[Kremote: Compressing objects:   2% (6/278)[Kremote: Compressing objects:   3% (9/278)[Kremote: Compressing objects:   4% (12/278)[Kremote: Compressing objects:   5% (14/278)[Kremote: Compressing objects:   6% (17/278)[Kremote: Compressing objects:   7% (20/278)[Kremote: Compressing objects:   8% (23/278)[Kremote: Compressing objects:   9% (26/278)[Kremote: Compressing objects:  10% (28/278)[Kremote: Compressing objects:  11% (31/278)[Kremote: Compressing objects:  12% (34/278)[Kremote: Compressing objects:  13% (37/278)[Kremote: Compressing objects:  14% (39/278)[Kremote: Compressing objects:  15% (42/278)[Kremote: Compressing objects:  16% (45/278)[Kremote: Compressing objects:  17% (48/278)[Kremote: Compressing objects:  18% (51/278)[Kremote: Compressing objects:  19% (53/278)[Kremote: Compressing objects:  20% (56/278)[Kremote: Compressing objects:  21% (59/278)[Kremote: Compressing objects:  22% (62/278)[Kremote: Compressing objects:  23% (64/278)[Kremote: Compressing objects:  24% (67/278)[Kremote: Compressing objects:  25% (70/278)[Kremote: Compressing objects:  26% (73/278)[Kremote: Compressing objects:  27% (76/278)[Kremote: Compressing objects:  28% (78/278)[Kremote: Compressing objects:  29% (81/278)[Kremote: Compressing objects:  30% (84/278)[Kremote: Compressing objects:  31% (87/278)[Kremote: Compressing objects:  32% (89/278)[Kremote: Compressing objects:  33% (92/278)[Kremote: Compressing objects:  34% (95/278)[Kremote: Compressing objects:  35% (98/278)[Kremote: Compressing objects:  36% (101/278)[Kremote: Compressing objects:  37% (103/278)[Kremote: Compressing objects:  38% (106/278)[Kremote: Compressing objects:  39% (109/278)[Kremote: Compressing objects:  40% (112/278)[Kremote: Compressing objects:  41% (114/278)[Kremote: Compressing objects:  42% (117/278)[Kremote: Compressing objects:  43% (120/278)[Kremote: Compressing objects:  44% (123/278)[Kremote: Compressing objects:  45% (126/278)[Kremote: Compressing objects:  46% (128/278)[Kremote: Compressing objects:  47% (131/278)[Kremote: Compressing objects:  48% (134/278)[Kremote: Compressing objects:  49% (137/278)[Kremote: Compressing objects:  50% (139/278)[Kremote: Compressing objects:  51% (142/278)[Kremote: Compressing objects:  52% (145/278)[Kremote: Compressing objects:  53% (148/278)[Kremote: Compressing objects:  54% (151/278)[Kremote: Compressing objects:  55% (153/278)[Kremote: Compressing objects:  56% (156/278)[Kremote: Compressing objects:  57% (159/278)[Kremote: Compressing objects:  58% (162/278)[Kremote: Compressing objects:  59% (165/278)[Kremote: Compressing objects:  60% (167/278)[Kremote: Compressing objects:  61% (170/278)[Kremote: Compressing objects:  62% (173/278)[Kremote: Compressing objects:  63% (176/278)[Kremote: Compressing objects:  64% (178/278)[Kremote: Compressing objects:  65% (181/278)[Kremote: Compressing objects:  66% (184/278)[Kremote: Compressing objects:  67% (187/278)[Kremote: Compressing objects:  68% (190/278)[Kremote: Compressing objects:  69% (192/278)[Kremote: Compressing objects:  70% (195/278)[Kremote: Compressing objects:  71% (198/278)[Kremote: Compressing objects:  72% (201/278)[Kremote: Compressing objects:  73% (203/278)[Kremote: Compressing objects:  74% (206/278)[Kremote: Compressing objects:  75% (209/278)[Kremote: Compressing objects:  76% (212/278)[Kremote: Compressing objects:  77% (215/278)[Kremote: Compressing objects:  78% (217/278)[Kremote: Compressing objects:  79% (220/278)[Kremote: Compressing objects:  80% (223/278)[Kremote: Compressing objects:  81% (226/278)[Kremote: Compressing objects:  82% (228/278)[Kremote: Compressing objects:  83% (231/278)[Kremote: Compressing objects:  84% (234/278)[Kremote: Compressing objects:  85% (237/278)[Kremote: Compressing objects:  86% (240/278)[Kremote: Compressing objects:  87% (242/278)[Kremote: Compressing objects:  88% (245/278)[Kremote: Compressing objects:  89% (248/278)[Kremote: Compressing objects:  90% (251/278)[Kremote: Compressing objects:  91% (253/278)[Kremote: Compressing objects:  92% (256/278)[Kremote: Compressing objects:  93% (259/278)[Kremote: Compressing objects:  94% (262/278)[Kremote: Compressing objects:  95% (265/278)[Kremote: Compressing objects:  96% (267/278)[Kremote: Compressing objects:  97% (270/278)[Kremote: Compressing objects:  98% (273/278)[Kremote: Compressing objects:  99% (276/278)[Kremote: Compressing objects: 100% (278/278)[Kremote: Compressing objects: 100% (278/278), done.[K
+Receiving objects:   0% (1/550)Receiving objects:   1% (6/550)Receiving objects:   2% (11/550)Receiving objects:   3% (17/550)Receiving objects:   4% (22/550)Receiving objects:   5% (28/550)Receiving objects:   6% (33/550)Receiving objects:   7% (39/550)Receiving objects:   8% (44/550)Receiving objects:   9% (50/550)Receiving objects:  10% (55/550)Receiving objects:  11% (61/550)Receiving objects:  12% (66/550)Receiving objects:  13% (72/550)Receiving objects:  14% (77/550)Receiving objects:  15% (83/550)Receiving objects:  16% (88/550)Receiving objects:  17% (94/550)Receiving objects:  18% (99/550)Receiving objects:  19% (105/550)Receiving objects:  20% (110/550)Receiving objects:  21% (116/550)Receiving objects:  22% (121/550)Receiving objects:  23% (127/550)Receiving objects:  24% (132/550)Receiving objects:  25% (138/550)Receiving objects:  26% (143/550)Receiving objects:  27% (149/550)Receiving objects:  28% (154/550)Receiving objects:  29% (160/550)Receiving objects:  30% (165/550)Receiving objects:  31% (171/550)Receiving objects:  32% (176/550)Receiving objects:  33% (182/550)Receiving objects:  34% (187/550)Receiving objects:  35% (193/550)Receiving objects:  36% (198/550)Receiving objects:  37% (204/550)Receiving objects:  38% (209/550)Receiving objects:  39% (215/550)Receiving objects:  40% (220/550)Receiving objects:  41% (226/550)Receiving objects:  42% (231/550)Receiving objects:  43% (237/550)Receiving objects:  44% (242/550)Receiving objects:  45% (248/550)Receiving objects:  46% (253/550)Receiving objects:  47% (259/550)Receiving objects:  48% (264/550)Receiving objects:  49% (270/550)Receiving objects:  50% (275/550)Receiving objects:  51% (281/550)Receiving objects:  52% (286/550)Receiving objects:  53% (292/550)Receiving objects:  54% (297/550)Receiving objects:  55% (303/550)Receiving objects:  56% (308/550)Receiving objects:  57% (314/550)Receiving objects:  58% (319/550)Receiving objects:  59% (325/550)Receiving objects:  60% (330/550)Receiving objects:  61% (336/550)Receiving objects:  62% (341/550)Receiving objects:  63% (347/550)Receiving objects:  64% (352/550)Receiving objects:  65% (358/550)Receiving objects:  66% (363/550)Receiving objects:  67% (369/550)Receiving objects:  68% (374/550)Receiving objects:  69% (380/550)Receiving objects:  70% (385/550)Receiving objects:  71% (391/550)Receiving objects:  72% (396/550)Receiving objects:  73% (402/550)Receiving objects:  74% (407/550)Receiving objects:  75% (413/550)Receiving objects:  76% (418/550)Receiving objects:  77% (424/550)Receiving objects:  78% (429/550)Receiving objects:  79% (435/550)Receiving objects:  80% (440/550)Receiving objects:  81% (446/550)Receiving objects:  82% (451/550)Receiving objects:  83% (457/550)Receiving objects:  84% (462/550)remote: Total 550 (delta 293), reused 461 (delta 259), pack-reused 0[K
+Receiving objects:  85% (468/550)Receiving objects:  86% (473/550)Receiving objects:  87% (479/550)Receiving objects:  88% (484/550)Receiving objects:  89% (490/550)Receiving objects:  90% (495/550)Receiving objects:  91% (501/550)Receiving objects:  92% (506/550)Receiving objects:  93% (512/550)Receiving objects:  94% (517/550)Receiving objects:  95% (523/550)Receiving objects:  96% (528/550)Receiving objects:  97% (534/550)Receiving objects:  98% (539/550)Receiving objects:  99% (545/550)Receiving objects: 100% (550/550)Receiving objects: 100% (550/550), 638.20 KiB | 13.87 MiB/s, done.
+Resolving deltas:   0% (0/293)Resolving deltas:   3% (9/293)Resolving deltas:   4% (13/293)Resolving deltas:   5% (15/293)Resolving deltas:   8% (26/293)Resolving deltas:  10% (32/293)Resolving deltas:  15% (44/293)Resolving deltas:  19% (56/293)Resolving deltas:  20% (59/293)Resolving deltas:  21% (63/293)Resolving deltas:  22% (66/293)Resolving deltas:  32% (95/293)Resolving deltas:  37% (110/293)Resolving deltas:  43% (126/293)Resolving deltas:  45% (132/293)Resolving deltas:  46% (137/293)Resolving deltas:  48% (142/293)Resolving deltas:  62% (183/293)Resolving deltas:  64% (188/293)Resolving deltas:  66% (196/293)Resolving deltas:  67% (198/293)Resolving deltas:  69% (204/293)Resolving deltas:  70% (206/293)Resolving deltas:  71% (210/293)Resolving deltas:  72% (211/293)Resolving deltas:  73% (215/293)Resolving deltas:  74% (217/293)Resolving deltas:  75% (220/293)Resolving deltas:  76% (224/293)Resolving deltas:  77% (226/293)Resolving deltas:  78% (230/293)Resolving deltas:  79% (234/293)Resolving deltas:  80% (235/293)Resolving deltas:  82% (243/293)Resolving deltas:  85% (251/293)Resolving deltas:  86% (253/293)Resolving deltas:  87% (257/293)Resolving deltas:  89% (261/293)Resolving deltas:  90% (264/293)Resolving deltas:  91% (267/293)Resolving deltas:  92% (271/293)Resolving deltas:  93% (275/293)Resolving deltas:  94% (276/293)Resolving deltas:  95% (280/293)Resolving deltas:  96% (282/293)Resolving deltas:  97% (285/293)Resolving deltas:  98% (289/293)Resolving deltas:  99% (291/293)Resolving deltas: 100% (293/293)Resolving deltas: 100% (293/293), done.
+travis_time:end:01f1aba7:start=1593458124171383287,finish=1593458124669151282,duration=497767995,event=checkout[0K$ cd kymatio/kymatio
+travis_time:start:0b2850ae[0K$ git fetch origin +refs/pull/621/merge:
+remote: Enumerating objects: 144, done.[K
+remote: Counting objects:   0% (1/121)[Kremote: Counting objects:   1% (2/121)[Kremote: Counting objects:   2% (3/121)[Kremote: Counting objects:   3% (4/121)[Kremote: Counting objects:   4% (5/121)[Kremote: Counting objects:   5% (7/121)[Kremote: Counting objects:   6% (8/121)[Kremote: Counting objects:   7% (9/121)[Kremote: Counting objects:   8% (10/121)[Kremote: Counting objects:   9% (11/121)[Kremote: Counting objects:  10% (13/121)[Kremote: Counting objects:  11% (14/121)[Kremote: Counting objects:  12% (15/121)[Kremote: Counting objects:  13% (16/121)[Kremote: Counting objects:  14% (17/121)[Kremote: Counting objects:  15% (19/121)[Kremote: Counting objects:  16% (20/121)[Kremote: Counting objects:  17% (21/121)[Kremote: Counting objects:  18% (22/121)[Kremote: Counting objects:  19% (23/121)[Kremote: Counting objects:  20% (25/121)[Kremote: Counting objects:  21% (26/121)[Kremote: Counting objects:  22% (27/121)[Kremote: Counting objects:  23% (28/121)[Kremote: Counting objects:  24% (30/121)[Kremote: Counting objects:  25% (31/121)[Kremote: Counting objects:  26% (32/121)[Kremote: Counting objects:  27% (33/121)[Kremote: Counting objects:  28% (34/121)[Kremote: Counting objects:  29% (36/121)[Kremote: Counting objects:  30% (37/121)[Kremote: Counting objects:  31% (38/121)[Kremote: Counting objects:  32% (39/121)[Kremote: Counting objects:  33% (40/121)[Kremote: Counting objects:  34% (42/121)[Kremote: Counting objects:  35% (43/121)[Kremote: Counting objects:  36% (44/121)[Kremote: Counting objects:  37% (45/121)[Kremote: Counting objects:  38% (46/121)[Kremote: Counting objects:  39% (48/121)[Kremote: Counting objects:  40% (49/121)[Kremote: Counting objects:  41% (50/121)[Kremote: Counting objects:  42% (51/121)[Kremote: Counting objects:  43% (53/121)[Kremote: Counting objects:  44% (54/121)[Kremote: Counting objects:  45% (55/121)[Kremote: Counting objects:  46% (56/121)[Kremote: Counting objects:  47% (57/121)[Kremote: Counting objects:  48% (59/121)[Kremote: Counting objects:  49% (60/121)[Kremote: Counting objects:  50% (61/121)[Kremote: Counting objects:  51% (62/121)[Kremote: Counting objects:  52% (63/121)[Kremote: Counting objects:  53% (65/121)[Kremote: Counting objects:  54% (66/121)[Kremote: Counting objects:  55% (67/121)[Kremote: Counting objects:  56% (68/121)[Kremote: Counting objects:  57% (69/121)[Kremote: Counting objects:  58% (71/121)[Kremote: Counting objects:  59% (72/121)[Kremote: Counting objects:  60% (73/121)[Kremote: Counting objects:  61% (74/121)[Kremote: Counting objects:  62% (76/121)[Kremote: Counting objects:  63% (77/121)[Kremote: Counting objects:  64% (78/121)[Kremote: Counting objects:  65% (79/121)[Kremote: Counting objects:  66% (80/121)[Kremote: Counting objects:  67% (82/121)[Kremote: Counting objects:  68% (83/121)[Kremote: Counting objects:  69% (84/121)[Kremote: Counting objects:  70% (85/121)[Kremote: Counting objects:  71% (86/121)[Kremote: Counting objects:  72% (88/121)[Kremote: Counting objects:  73% (89/121)[Kremote: Counting objects:  74% (90/121)[Kremote: Counting objects:  75% (91/121)[Kremote: Counting objects:  76% (92/121)[Kremote: Counting objects:  77% (94/121)[Kremote: Counting objects:  78% (95/121)[Kremote: Counting objects:  79% (96/121)[Kremote: Counting objects:  80% (97/121)[Kremote: Counting objects:  81% (99/121)[Kremote: Counting objects:  82% (100/121)[Kremote: Counting objects:  83% (101/121)[Kremote: Counting objects:  84% (102/121)[Kremote: Counting objects:  85% (103/121)[Kremote: Counting objects:  86% (105/121)[Kremote: Counting objects:  87% (106/121)[Kremote: Counting objects:  88% (107/121)[Kremote: Counting objects:  89% (108/121)[Kremote: Counting objects:  90% (109/121)[Kremote: Counting objects:  91% (111/121)[Kremote: Counting objects:  92% (112/121)[Kremote: Counting objects:  93% (113/121)[Kremote: Counting objects:  94% (114/121)[Kremote: Counting objects:  95% (115/121)[Kremote: Counting objects:  96% (117/121)[Kremote: Counting objects:  97% (118/121)[Kremote: Counting objects:  98% (119/121)[Kremote: Counting objects:  99% (120/121)[Kremote: Counting objects: 100% (121/121)[Kremote: Counting objects: 100% (121/121), done.[K
+remote: Compressing objects:   1% (1/60)[Kremote: Compressing objects:   3% (2/60)[Kremote: Compressing objects:   5% (3/60)[Kremote: Compressing objects:   6% (4/60)[Kremote: Compressing objects:   8% (5/60)[Kremote: Compressing objects:  10% (6/60)[Kremote: Compressing objects:  11% (7/60)[Kremote: Compressing objects:  13% (8/60)[Kremote: Compressing objects:  15% (9/60)[Kremote: Compressing objects:  16% (10/60)[Kremote: Compressing objects:  18% (11/60)[Kremote: Compressing objects:  20% (12/60)[Kremote: Compressing objects:  21% (13/60)[Kremote: Compressing objects:  23% (14/60)[Kremote: Compressing objects:  25% (15/60)[Kremote: Compressing objects:  26% (16/60)[Kremote: Compressing objects:  28% (17/60)[Kremote: Compressing objects:  30% (18/60)[Kremote: Compressing objects:  31% (19/60)[Kremote: Compressing objects:  33% (20/60)[Kremote: Compressing objects:  35% (21/60)[Kremote: Compressing objects:  36% (22/60)[Kremote: Compressing objects:  38% (23/60)[Kremote: Compressing objects:  40% (24/60)[Kremote: Compressing objects:  41% (25/60)[Kremote: Compressing objects:  43% (26/60)[Kremote: Compressing objects:  45% (27/60)[Kremote: Compressing objects:  46% (28/60)[Kremote: Compressing objects:  48% (29/60)[Kremote: Compressing objects:  50% (30/60)[Kremote: Compressing objects:  51% (31/60)[Kremote: Compressing objects:  53% (32/60)[Kremote: Compressing objects:  55% (33/60)[Kremote: Compressing objects:  56% (34/60)[Kremote: Compressing objects:  58% (35/60)[Kremote: Compressing objects:  60% (36/60)[Kremote: Compressing objects:  61% (37/60)[Kremote: Compressing objects:  63% (38/60)[Kremote: Compressing objects:  65% (39/60)[Kremote: Compressing objects:  66% (40/60)[Kremote: Compressing objects:  68% (41/60)[Kremote: Compressing objects:  70% (42/60)[Kremote: Compressing objects:  71% (43/60)[Kremote: Compressing objects:  73% (44/60)[Kremote: Compressing objects:  75% (45/60)[Kremote: Compressing objects:  76% (46/60)[Kremote: Compressing objects:  78% (47/60)[Kremote: Compressing objects:  80% (48/60)[Kremote: Compressing objects:  81% (49/60)[Kremote: Compressing objects:  83% (50/60)[Kremote: Compressing objects:  85% (51/60)[Kremote: Compressing objects:  86% (52/60)[Kremote: Compressing objects:  88% (53/60)[Kremote: Compressing objects:  90% (54/60)[Kremote: Compressing objects:  91% (55/60)[Kremote: Compressing objects:  93% (56/60)[Kremote: Compressing objects:  95% (57/60)[Kremote: Compressing objects:  96% (58/60)[Kremote: Compressing objects:  98% (59/60)[Kremote: Compressing objects: 100% (60/60)[Kremote: Compressing objects: 100% (60/60), done.[K
+Unpacking objects:   1% (1/82)Unpacking objects:   2% (2/82)Unpacking objects:   3% (3/82)Unpacking objects:   4% (4/82)Unpacking objects:   6% (5/82)Unpacking objects:   7% (6/82)Unpacking objects:   8% (7/82)Unpacking objects:   9% (8/82)Unpacking objects:  10% (9/82)Unpacking objects:  12% (10/82)Unpacking objects:  13% (11/82)Unpacking objects:  14% (12/82)Unpacking objects:  15% (13/82)Unpacking objects:  17% (14/82)Unpacking objects:  18% (15/82)Unpacking objects:  19% (16/82)Unpacking objects:  20% (17/82)Unpacking objects:  21% (18/82)Unpacking objects:  23% (19/82)Unpacking objects:  24% (20/82)Unpacking objects:  25% (21/82)Unpacking objects:  26% (22/82)Unpacking objects:  28% (23/82)Unpacking objects:  29% (24/82)Unpacking objects:  30% (25/82)Unpacking objects:  31% (26/82)Unpacking objects:  32% (27/82)Unpacking objects:  34% (28/82)Unpacking objects:  35% (29/82)Unpacking objects:  36% (30/82)Unpacking objects:  37% (31/82)Unpacking objects:  39% (32/82)Unpacking objects:  40% (33/82)Unpacking objects:  41% (34/82)Unpacking objects:  42% (35/82)Unpacking objects:  43% (36/82)remote: Total 82 (delta 47), reused 42 (delta 22), pack-reused 0[K
+Unpacking objects:  45% (37/82)Unpacking objects:  46% (38/82)Unpacking objects:  47% (39/82)Unpacking objects:  48% (40/82)Unpacking objects:  50% (41/82)Unpacking objects:  51% (42/82)Unpacking objects:  52% (43/82)Unpacking objects:  53% (44/82)Unpacking objects:  54% (45/82)Unpacking objects:  56% (46/82)Unpacking objects:  57% (47/82)Unpacking objects:  58% (48/82)Unpacking objects:  59% (49/82)Unpacking objects:  60% (50/82)Unpacking objects:  62% (51/82)Unpacking objects:  63% (52/82)Unpacking objects:  64% (53/82)Unpacking objects:  65% (54/82)Unpacking objects:  67% (55/82)Unpacking objects:  68% (56/82)Unpacking objects:  69% (57/82)Unpacking objects:  70% (58/82)Unpacking objects:  71% (59/82)Unpacking objects:  73% (60/82)Unpacking objects:  74% (61/82)Unpacking objects:  75% (62/82)Unpacking objects:  76% (63/82)Unpacking objects:  78% (64/82)Unpacking objects:  79% (65/82)Unpacking objects:  80% (66/82)Unpacking objects:  81% (67/82)Unpacking objects:  82% (68/82)Unpacking objects:  84% (69/82)Unpacking objects:  85% (70/82)Unpacking objects:  86% (71/82)Unpacking objects:  87% (72/82)Unpacking objects:  89% (73/82)Unpacking objects:  90% (74/82)Unpacking objects:  91% (75/82)Unpacking objects:  92% (76/82)Unpacking objects:  93% (77/82)Unpacking objects:  95% (78/82)Unpacking objects:  96% (79/82)Unpacking objects:  97% (80/82)Unpacking objects:  98% (81/82)Unpacking objects: 100% (82/82)Unpacking objects: 100% (82/82), 37.89 KiB | 1.65 MiB/s, done.
+From https://github.com/kymatio/kymatio
+ * branch            refs/pull/621/merge -> FETCH_HEAD
+travis_time:end:0b2850ae:start=1593458124673051237,finish=1593458125116407047,duration=443355810,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:0b2850ae:start=1593458124673051237,finish=1593458125132202302,duration=459151065,event=checkout[0Ktravis_time:start:04fcf591[0K
+[33;1mEncrypted environment variables have been removed for security reasons.[0m
+[33;1mSee https://docs.travis-ci.com/user/pull-requests/#pull-requests-and-security-restrictions[0m
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export CONDA=0
+
+travis_time:end:04fcf591:start=1593458125135649209,finish=1593458125142657483,duration=7008274,event=env[0Ktravis_time:start:01402800[0K$ source ~/virtualenv/python3.7/bin/activate
+travis_time:end:01402800:start=1593458125146047788,finish=1593458125150934307,duration=4886519,event=[0K$ python --version
+Python 3.7.6
+$ pip --version
+pip 20.0.2 from /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages/pip (python 3.7)
+travis_fold:start:install.1[0Ktravis_time:start:2b9b5543[0K$ source ./tools/travis_install.sh
+0% [Working]            Hit:1 http://apt.postgresql.org/pub/repos/apt bionic-pgdg InRelease
+0% [Connecting to archive.ubuntu.com (91.189.88.152)] [Connecting to security.u0% [1 InRelease gpgv 84.6 kB] [Connecting to archive.ubuntu.com (91.189.88.152)                                                                               0% [Waiting for headers] [Waiting for headers]                                              Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+0% [Waiting for headers] [2 InRelease 12.6 kB/88.7 kB 14%]                                                          Get:3 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+0% [3 InRelease 12.6 kB/242 kB 5%] [2 InRelease 12.6 kB/88.7 kB 14%]                                                                    0% [3 InRelease 89.9 kB/242 kB 37%]0% [2 InRelease gpgv 88.7 kB] [3 InRelease 89.9 kB/242 kB 37%]                                                              0% [3 InRelease 165 kB/242 kB 68%]                                  0% [Working]0% [3 InRelease gpgv 242 kB] [Waiting for headers]                                                  0% [Waiting for headers]                        Get:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+0% [4 InRelease 19.0 kB/88.7 kB 21%]                                    0% [Working]0% [4 InRelease gpgv 88.7 kB] [Waiting for headers]                                                   0% [Waiting for headers]                        Get:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+0% [5 InRelease 3,569 B/74.6 kB 5%]                                   0% [Working]0% [5 InRelease gpgv 74.6 kB] [Waiting for headers]                                                   16% [Waiting for headers]                         Get:6 http://archive.ubuntu.com/ubuntu bionic/multiverse Sources [216 kB]
+16% [6 Sources 11.4 kB/216 kB 5%]                                 16% [Waiting for headers]                         Get:7 http://archive.ubuntu.com/ubuntu bionic/universe Sources [11.5 MB]
+16% [7 Sources 30.5 kB/11.5 MB 0%]16% [6 Sources store 0 B] [7 Sources 34.4 kB/11.5 MB 0%]                                                        16% [7 Sources 75.6 kB/11.5 MB 1%]32% [7 Sources 10.8 MB/11.5 MB 94%]                                   33% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu bionic/main Sources [1,063 kB]
+33% [8 Sources 45.0 kB/1,063 kB 4%]33% [7 Sources store 0 B] [8 Sources 45.0 kB/1,063 kB 4%]                                                         35% [7 Sources store 0 B]                         Get:9 http://archive.ubuntu.com/ubuntu bionic/restricted Sources [5,823 B]
+35% [7 Sources store 0 B] [9 Sources 0 B/5,823 B 0%]                                                    35% [7 Sources store 0 B]                         Get:10 http://archive.ubuntu.com/ubuntu bionic/main amd64 Packages [1,344 kB]
+35% [7 Sources store 0 B] [10 Packages 0 B/1,344 kB 0%]                                                       37% [7 Sources store 0 B]                         Get:11 http://archive.ubuntu.com/ubuntu bionic/main i386 Packages [1,328 kB]
+37% [7 Sources store 0 B] [11 Packages 0 B/1,328 kB 0%]                                                       39% [7 Sources store 0 B]                         Get:12 http://archive.ubuntu.com/ubuntu bionic/main Translation-en [729 kB]
+39% [7 Sources store 0 B] [12 Translation-en 0 B/729 kB 0%]                                                           40% [7 Sources store 0 B]                         Get:13 http://archive.ubuntu.com/ubuntu bionic/restricted i386 Packages [13.5 kB]
+40% [7 Sources store 0 B] [13 Packages 0 B/13.5 kB 0%]                                                      40% [7 Sources store 0 B]                         Get:14 http://archive.ubuntu.com/ubuntu bionic/restricted amd64 Packages [13.5 kB]
+40% [7 Sources store 0 B] [14 Packages 0 B/13.5 kB 0%]                                                      40% [7 Sources store 0 B]                         Get:15 http://archive.ubuntu.com/ubuntu bionic/restricted Translation-en [3,719 B]
+40% [7 Sources store 0 B] [15 Translation-en 0 B/3,719 B 0%]                                                            40% [7 Sources store 0 B]                         Get:16 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [11.3 MB]
+40% [7 Sources store 0 B] [16 Packages 0 B/11.3 MB 0%]                                                      57% [7 Sources store 0 B]                         Get:17 http://archive.ubuntu.com/ubuntu bionic/universe i386 Packages [11.3 MB]
+57% [7 Sources store 0 B] [17 Packages 0 B/11.3 MB 0%]                                                      72% [17 Packages 9,923 kB/11.3 MB 88%]72% [8 Sources store 0 B] [17 Packages 9,923 kB/11.3 MB 88%]                                                            74% [8 Sources store 0 B]                         Get:18 http://archive.ubuntu.com/ubuntu bionic/universe Translation-en [7,122 kB]
+74% [8 Sources store 0 B] [18 Translation-en 43.9 kB/7,122 kB 1%]                                                                 75% [18 Translation-en 560 kB/7,122 kB 8%]75% [9 Sources store 0 B] [18 Translation-en 560 kB/7,122 kB 8%]                                                                75% [18 Translation-en 632 kB/7,122 kB 9%]75% [10 Packages store 0 B] [18 Translation-en 632 kB/7,122 kB 9%]                                                                  81% [18 Translation-en 4,762 kB/7,122 kB 67%]81% [11 Packages store 0 B] [18 Translation-en 4,762 kB/7,122 kB 67%]                                                                     85% [11 Packages store 0 B]                           Get:19 http://archive.ubuntu.com/ubuntu bionic/multiverse i386 Packages [177 kB]
+85% [11 Packages store 0 B] [19 Packages 0 B/177 kB 0%]                                                       85% [11 Packages store 0 B]                           Get:20 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [186 kB]
+85% [11 Packages store 0 B] [20 Packages 0 B/186 kB 0%]                                                       85% [11 Packages store 0 B]                           Get:21 http://archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [134 kB]
+85% [11 Packages store 0 B] [21 Translation-en 0 B/134 kB 0%]                                                             85% [11 Packages store 0 B]                           Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/main Sources [412 kB]
+85% [11 Packages store 0 B] [22 Sources 0 B/412 kB 0%]                                                      86% [22 Sources 212 kB/412 kB 52%]86% [12 Translation-en store 0 B] [22 Sources 212 kB/412 kB 52%]                                                                86% [12 Translation-en store 0 B]                                 Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/universe Sources [372 kB]
+86% [12 Translation-en store 0 B] [23 Sources 0 B/372 kB 0%]                                                            87% [12 Translation-en store 0 B]                                 Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Sources [6,203 B]
+87% [12 Translation-en store 0 B] [24 Sources 0 B/6,203 B 0%]                                                             87% [12 Translation-en store 0 B]                                 Get:25 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Sources [9,368 B]
+87% [12 Translation-en store 0 B] [25 Sources 0 B/9,368 B 0%]                                                             87% [12 Translation-en store 0 B]                                 Get:26 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [1,271 kB]
+87% [12 Translation-en store 0 B] [26 Packages 0 B/1,271 kB 0%]                                                               89% [12 Translation-en store 0 B]                                 Get:27 http://archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [908 kB]
+89% [12 Translation-en store 0 B] [27 Packages 0 B/908 kB 0%]                                                             89% [27 Packages 446 kB/908 kB 49%]89% [13 Packages store 0 B] [27 Packages 446 kB/908 kB 49%]                                                           90% [27 Packages 577 kB/908 kB 64%]90% [14 Packages store 0 B] [27 Packages 577 kB/908 kB 64%]                                                           90% [27 Packages 708 kB/908 kB 78%]90% [15 Translation-en store 0 B] [27 Packages 708 kB/908 kB 78%]                                                                 90% [27 Packages 721 kB/908 kB 79%]90% [16 Packages store 0 B] [27 Packages 721 kB/908 kB 79%]                                                           90% [16 Packages store 0 B]                           Get:28 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [476 kB]
+91% [16 Packages store 0 B] [28 Translation-en 62.1 kB/476 kB 13%]                                                                  91% [16 Packages store 0 B]                           Get:29 http://archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages [15.9 kB]
+91% [16 Packages store 0 B] [29 Packages 0 B/15.9 kB 0%]                                                        91% [16 Packages store 0 B]                           Get:30 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [93.8 kB]
+91% [16 Packages store 0 B] [30 Packages 28.2 kB/93.8 kB 30%]                                                             91% [16 Packages store 0 B]                           Get:31 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [21.1 kB]
+91% [16 Packages store 0 B] [31 Translation-en 21.1 kB/21.1 kB 100%]                                                                    91% [16 Packages store 0 B]                           Get:32 http://archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,316 kB]
+91% [16 Packages store 0 B] [32 Packages 44.0 kB/1,316 kB 3%]                                                             93% [16 Packages store 0 B]                           Get:33 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,398 kB]
+93% [16 Packages store 0 B] [33 Packages 38.9 kB/1,398 kB 3%]                                                             95% [16 Packages store 0 B]                           Get:34 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [474 kB]
+95% [16 Packages store 0 B] [34 Translation-en 16.7 kB/474 kB 4%]                                                                 96% [16 Packages store 0 B]                           Get:35 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [13.4 kB]
+96% [16 Packages store 0 B] [35 Packages 13.4 kB/13.4 kB 100%]                                                              96% [16 Packages store 0 B]                           Get:36 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages [7,775 B]
+96% [16 Packages store 0 B] [36 Packages 4,096 B/7,775 B 53%]                                                             96% [16 Packages store 0 B]                           Get:37 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [5,169 B]
+96% [16 Packages store 0 B] [37 Translation-en 5,169 B/5,169 B 100%]                                                                    96% [16 Packages store 0 B]                           Get:38 http://archive.ubuntu.com/ubuntu bionic-backports/main Sources [4,301 B]
+96% [16 Packages store 0 B] [38 Sources 4,301 B/4,301 B 100%]                                                             96% [16 Packages store 0 B]                           Get:39 http://archive.ubuntu.com/ubuntu bionic-backports/universe Sources [3,566 B]
+96% [16 Packages store 0 B] [39 Sources 3,566 B/3,566 B 100%]                                                             96% [16 Packages store 0 B] [Waiting for headers]                                                 Get:40 http://archive.ubuntu.com/ubuntu bionic-backports/main i386 Packages [8,277 B]
+96% [16 Packages store 0 B] [40 Packages 8,192 B/8,277 B 99%]                                                             96% [16 Packages store 0 B]                           Get:41 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [8,286 B]
+96% [16 Packages store 0 B] [41 Packages 8,286 B/8,286 B 100%]                                                              96% [16 Packages store 0 B]                           Get:42 http://archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [4,858 B]
+96% [16 Packages store 0 B] [42 Translation-en 4,096 B/4,858 B 84%]                                                                   96% [16 Packages store 0 B]                           Get:43 http://archive.ubuntu.com/ubuntu bionic-backports/universe i386 Packages [8,139 B]
+96% [16 Packages store 0 B] [43 Packages 8,139 B/8,139 B 100%]                                                              96% [16 Packages store 0 B]                           Get:44 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [8,158 B]
+96% [16 Packages store 0 B] [44 Packages 8,158 B/8,158 B 100%]                                                              96% [16 Packages store 0 B]                           Get:45 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [4,522 B]
+96% [16 Packages store 0 B] [45 Translation-en 0 B/4,522 B 0%]                                                              96% [16 Packages store 0 B]                           96% [Working]96% [17 Packages store 0 B]96% [17 Packages store 0 B]                           96% [Working]96% [18 Translation-en store 0 B]                                 97% [Working]97% [19 Packages store 0 B]                           97% [Working]97% [20 Packages store 0 B]                           97% [Working]97% [21 Translation-en store 0 B]                                 97% [Working]97% [22 Sources store 0 B]                          97% [Working]97% [23 Sources store 0 B]                          97% [Working]97% [24 Sources store 0 B]                          97% [Working]97% [25 Sources store 0 B]                          97% [Working]97% [26 Packages store 0 B]                           98% [Working]98% [27 Packages store 0 B]                           98% [Working]98% [28 Translation-en store 0 B]                                 98% [Working]98% [29 Packages store 0 B]                           98% [Working]98% [30 Packages store 0 B]                           98% [Working]98% [31 Translation-en store 0 B]                                 98% [Working]98% [32 Packages store 0 B]                           98% [Working]98% [33 Packages store 0 B]                           98% [Working]98% [34 Translation-en store 0 B]                                 99% [Working]99% [35 Packages store 0 B]                           99% [Working]99% [36 Packages store 0 B]                           99% [Working]99% [37 Translation-en store 0 B]                                 99% [Working]99% [38 Sources store 0 B]                          99% [Working]99% [39 Sources store 0 B]                          99% [Working]99% [40 Packages store 0 B]                           99% [Working]99% [41 Packages store 0 B]                           99% [Working]99% [42 Translation-en store 0 B]                                 100% [Working]100% [43 Packages store 0 B]                            100% [Working]100% [44 Packages store 0 B]                            100% [Working]100% [45 Translation-en store 0 B]                                  100% [Working]              Fetched 53.8 MB in 5s (11.0 MB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 2%Reading package lists... 2%Reading package lists... 5%Reading package lists... 5%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 31%Reading package lists... 31%Reading package lists... 41%Reading package lists... 54%Reading package lists... 54%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 71%Reading package lists... 71%Reading package lists... 73%Reading package lists... 73%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 80%Reading package lists... 80%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 88%Reading package lists... 88%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Collecting pytest
+  Downloading pytest-5.4.3-py3-none-any.whl (248 kB)
+[?25l
+[?25hRequirement already satisfied, skipping upgrade: wcwidth in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest) (0.1.7)
+Requirement already satisfied, skipping upgrade: more-itertools>=4.0.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest) (8.0.2)
+Requirement already satisfied, skipping upgrade: attrs>=17.4.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest) (19.3.0)
+Requirement already satisfied, skipping upgrade: py>=1.5.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest) (1.8.0)
+Requirement already satisfied, skipping upgrade: importlib-metadata>=0.12; python_version < "3.8" in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest) (1.3.0)
+Requirement already satisfied, skipping upgrade: packaging in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest) (19.2)
+Requirement already satisfied, skipping upgrade: pluggy<1.0,>=0.12 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest) (0.13.1)
+Requirement already satisfied, skipping upgrade: zipp>=0.5 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest) (0.6.0)
+Requirement already satisfied, skipping upgrade: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from packaging->pytest) (2.4.5)
+Requirement already satisfied, skipping upgrade: six in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from packaging->pytest) (1.13.0)
+Installing collected packages: pytest
+  Attempting uninstall: pytest
+    Found existing installation: pytest 5.3.5
+    Uninstalling pytest-5.3.5:
+      Successfully uninstalled pytest-5.3.5
+Successfully installed pytest-5.4.3
+Collecting pytest-cov
+  Downloading pytest_cov-2.10.0-py2.py3-none-any.whl (19 kB)
+Collecting coverage>=4.4
+  Downloading coverage-5.1-cp37-cp37m-manylinux1_x86_64.whl (227 kB)
+[?25l
+[?25hRequirement already satisfied: pytest>=4.6 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest-cov) (5.4.3)
+Requirement already satisfied: more-itertools>=4.0.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (8.0.2)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (0.13.1)
+Requirement already satisfied: packaging in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (19.2)
+Requirement already satisfied: py>=1.5.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (1.8.0)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (1.3.0)
+Requirement already satisfied: attrs>=17.4.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (19.3.0)
+Requirement already satisfied: wcwidth in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (0.1.7)
+Requirement already satisfied: six in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from packaging->pytest>=4.6->pytest-cov) (1.13.0)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from packaging->pytest>=4.6->pytest-cov) (2.4.5)
+Requirement already satisfied: zipp>=0.5 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest>=4.6->pytest-cov) (0.6.0)
+Installing collected packages: coverage, pytest-cov
+Successfully installed coverage-5.1 pytest-cov-2.10.0
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+Collecting torch==1.3.0+cpu
+  Downloading https://download.pytorch.org/whl/cpu/torch-1.3.0%2Bcpu-cp37-cp37m-linux_x86_64.whl (111.6 MB)
+[?25l
+[?25hCollecting torchvision==0.4.1+cpu
+  Downloading https://download.pytorch.org/whl/cpu/torchvision-0.4.1%2Bcpu-cp37-cp37m-linux_x86_64.whl (13.5 MB)
+[?25l
+[?25hRequirement already satisfied: numpy in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from torch==1.3.0+cpu) (1.17.4)
+Requirement already satisfied: six in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from torchvision==0.4.1+cpu) (1.13.0)
+Collecting pillow>=4.1.1
+  Downloading Pillow-7.1.2-cp37-cp37m-manylinux1_x86_64.whl (2.1 MB)
+[?25l
+[?25hInstalling collected packages: torch, pillow, torchvision
+Successfully installed pillow-7.1.2 torch-1.3.0+cpu torchvision-0.4.1+cpu
+Requirement already satisfied: torchvision in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (0.4.1+cpu)
+Requirement already satisfied: torch==1.3.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from torchvision) (1.3.0+cpu)
+Requirement already satisfied: numpy in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from torchvision) (1.17.4)
+Requirement already satisfied: pillow>=4.1.1 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from torchvision) (7.1.2)
+Requirement already satisfied: six in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from torchvision) (1.13.0)
+Collecting tensorflow>=2.0.0a
+  Downloading tensorflow-2.3.0rc0-cp37-cp37m-manylinux2010_x86_64.whl (320.4 MB)
+[?25l
+[?25hCollecting scikit-learn
+  Downloading scikit_learn-0.23.1-cp37-cp37m-manylinux1_x86_64.whl (6.8 MB)
+[?25l
+[?25hCollecting keras-preprocessing<1.2,>=1.1.1
+  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+[?25l
+[?25hCollecting tf-estimator-nightly<2.3.0.dev2020062302,>=2.3.0.dev2020062301
+  Downloading tf_estimator_nightly-2.3.0.dev2020062301-py2.py3-none-any.whl (459 kB)
+[?25l
+[?25hCollecting opt-einsum>=2.3.2
+  Downloading opt_einsum-3.2.1-py3-none-any.whl (63 kB)
+[?25l
+[?25hCollecting scipy==1.4.1
+  Downloading scipy-1.4.1-cp37-cp37m-manylinux1_x86_64.whl (26.1 MB)
+[?25l
+[?25hCollecting google-pasta>=0.1.8
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+[?25l
+[?25hCollecting astunparse==1.6.3
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Requirement already satisfied: numpy<1.19.0,>=1.16.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from tensorflow>=2.0.0a) (1.17.4)
+Collecting tensorboard<2.3.0,>=2.2.0
+  Downloading tensorboard-2.2.2-py3-none-any.whl (3.0 MB)
+[?25l
+[?25hCollecting wrapt>=1.11.1
+  Downloading wrapt-1.12.1.tar.gz (27 kB)
+Collecting absl-py>=0.7.0
+  Downloading absl-py-0.9.0.tar.gz (104 kB)
+[?25l
+[?25hCollecting protobuf>=3.9.2
+  Downloading protobuf-3.12.2-cp37-cp37m-manylinux1_x86_64.whl (1.3 MB)
+[?25l
+[?25hCollecting gast==0.3.3
+  Downloading gast-0.3.3-py2.py3-none-any.whl (9.7 kB)
+Requirement already satisfied: wheel>=0.26 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from tensorflow>=2.0.0a) (0.34.2)
+Requirement already satisfied: six>=1.12.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from tensorflow>=2.0.0a) (1.13.0)
+Collecting termcolor>=1.1.0
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+Collecting grpcio>=1.8.6
+  Downloading grpcio-1.30.0-cp37-cp37m-manylinux2010_x86_64.whl (3.0 MB)
+[?25l
+[?25hCollecting h5py<2.11.0,>=2.10.0
+  Downloading h5py-2.10.0-cp37-cp37m-manylinux1_x86_64.whl (2.9 MB)
+[?25l
+[?25hCollecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting joblib>=0.11
+  Downloading joblib-0.15.1-py3-none-any.whl (298 kB)
+[?25l
+[?25hCollecting google-auth<2,>=1.6.3
+  Downloading google_auth-1.18.0-py2.py3-none-any.whl (90 kB)
+[?25l
+[?25hCollecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.7.0-py3-none-any.whl (779 kB)
+[?25l
+[?25hCollecting requests<3,>=2.21.0
+  Downloading requests-2.24.0-py2.py3-none-any.whl (61 kB)
+[?25l
+[?25hRequirement already satisfied: setuptools>=41.0.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow>=2.0.0a) (45.2.0)
+Collecting werkzeug>=0.11.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+[?25l
+[?25hCollecting markdown>=2.6.8
+  Downloading Markdown-3.2.2-py3-none-any.whl (88 kB)
+[?25l
+[?25hCollecting google-auth-oauthlib<0.5,>=0.4.1
+  Downloading google_auth_oauthlib-0.4.1-py2.py3-none-any.whl (18 kB)
+Collecting cachetools<5.0,>=2.0.0
+  Downloading cachetools-4.1.1-py3-none-any.whl (10 kB)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+[?25l
+[?25hCollecting rsa<5,>=3.1.4; python_version >= "3"
+  Downloading rsa-4.6-py3-none-any.whl (47 kB)
+[?25l
+[?25hCollecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+[?25l
+[?25hCollecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+  Downloading urllib3-1.25.9-py2.py3-none-any.whl (126 kB)
+[?25l
+[?25hCollecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+[?25l
+[?25hRequirement already satisfied: certifi>=2017.4.17 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<2.3.0,>=2.2.0->tensorflow>=2.0.0a) (2019.11.28)
+Requirement already satisfied: importlib-metadata; python_version < "3.8" in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from markdown>=2.6.8->tensorboard<2.3.0,>=2.2.0->tensorflow>=2.0.0a) (1.3.0)
+Collecting requests-oauthlib>=0.7.0
+  Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+Collecting pyasn1<0.5.0,>=0.4.6
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+[?25l
+[?25hRequirement already satisfied: zipp>=0.5 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from importlib-metadata; python_version < "3.8"->markdown>=2.6.8->tensorboard<2.3.0,>=2.2.0->tensorflow>=2.0.0a) (0.6.0)
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.1.0-py2.py3-none-any.whl (147 kB)
+[?25l
+[?25hRequirement already satisfied: more-itertools in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from zipp>=0.5->importlib-metadata; python_version < "3.8"->markdown>=2.6.8->tensorboard<2.3.0,>=2.2.0->tensorflow>=2.0.0a) (8.0.2)
+Building wheels for collected packages: wrapt, absl-py, termcolor
+  Building wheel for wrapt (setup.py) ... [?25l- \ done
+[?25h  Created wheel for wrapt: filename=wrapt-1.12.1-cp37-cp37m-linux_x86_64.whl size=70864 sha256=9a94006951cd3dde9b70fec9f8a3a203dbfc109574d4e07f40f00be9125fef59
+  Stored in directory: /home/travis/.cache/pip/wheels/62/76/4c/aa25851149f3f6d9785f6c869387ad82b3fd37582fa8147ac6
+  Building wheel for absl-py (setup.py) ... [?25l- done
+[?25h  Created wheel for absl-py: filename=absl_py-0.9.0-py3-none-any.whl size=121931 sha256=3780f34217cbd0c79b1b8197ca19e61c433423b27f801e81e7e14861aa53b9f7
+  Stored in directory: /home/travis/.cache/pip/wheels/cc/af/1a/498a24d0730ef484019e007bb9e8cef3ac00311a672c049a3e
+  Building wheel for termcolor (setup.py) ... [?25l- done
+[?25h  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=ae651e56e195f13a0145e62642d274ae199a1ba3759525501ba29ed20d62cefd
+  Stored in directory: /home/travis/.cache/pip/wheels/3f/e3/ec/8a8336ff196023622fbcb36de0c5a5c218cbb24111d1d4c7f2
+Successfully built wrapt absl-py termcolor
+Installing collected packages: keras-preprocessing, tf-estimator-nightly, opt-einsum, scipy, google-pasta, astunparse, protobuf, cachetools, pyasn1, pyasn1-modules, rsa, google-auth, absl-py, tensorboard-plugin-wit, idna, urllib3, chardet, requests, grpcio, werkzeug, markdown, oauthlib, requests-oauthlib, google-auth-oauthlib, tensorboard, wrapt, gast, termcolor, h5py, tensorflow, threadpoolctl, joblib, scikit-learn
+Successfully installed absl-py-0.9.0 astunparse-1.6.3 cachetools-4.1.1 chardet-3.0.4 gast-0.3.3 google-auth-1.18.0 google-auth-oauthlib-0.4.1 google-pasta-0.2.0 grpcio-1.30.0 h5py-2.10.0 idna-2.10 joblib-0.15.1 keras-preprocessing-1.1.2 markdown-3.2.2 oauthlib-3.1.0 opt-einsum-3.2.1 protobuf-3.12.2 pyasn1-0.4.8 pyasn1-modules-0.2.8 requests-2.24.0 requests-oauthlib-1.3.0 rsa-4.6 scikit-learn-0.23.1 scipy-1.4.1 tensorboard-2.2.2 tensorboard-plugin-wit-1.7.0 tensorflow-2.3.0rc0 termcolor-1.1.0 tf-estimator-nightly-2.3.0.dev2020062301 threadpoolctl-2.1.0 urllib3-1.25.9 werkzeug-1.0.1 wrapt-1.12.1
+Requirement already satisfied: numpy in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (1.17.4)
+Requirement already satisfied: scipy in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (1.4.1)
+Collecting appdirs
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting configparser
+  Downloading configparser-5.0.0-py3-none-any.whl (22 kB)
+Requirement already satisfied: packaging in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (19.2)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from packaging->-r requirements.txt (line 5)) (2.4.5)
+Requirement already satisfied: six in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from packaging->-r requirements.txt (line 5)) (1.13.0)
+Installing collected packages: appdirs, configparser
+Successfully installed appdirs-1.4.4 configparser-5.0.0
+/home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages/setuptools/dist.py:476: UserWarning: Normalizing '0.2.a0' to '0.2a0'
+  normalized_version,
+running develop
+running egg_info
+creating kymatio.egg-info
+writing kymatio.egg-info/PKG-INFO
+writing dependency_links to kymatio.egg-info/dependency_links.txt
+writing requirements to kymatio.egg-info/requires.txt
+writing top-level names to kymatio.egg-info/top_level.txt
+writing manifest file 'kymatio.egg-info/SOURCES.txt'
+reading manifest file 'kymatio.egg-info/SOURCES.txt'
+writing manifest file 'kymatio.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages/kymatio.egg-link (link to .)
+Adding kymatio 0.2a0 to easy-install.pth file
+
+Installed /home/travis/build/kymatio/kymatio
+Processing dependencies for kymatio==0.2a0
+Searching for packaging==19.2
+Best match: packaging 19.2
+Adding packaging 19.2 to easy-install.pth file
+
+Using /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages
+Searching for configparser==5.0.0
+Best match: configparser 5.0.0
+Adding configparser 5.0.0 to easy-install.pth file
+
+Using /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages
+Searching for appdirs==1.4.4
+Best match: appdirs 1.4.4
+Adding appdirs 1.4.4 to easy-install.pth file
+
+Using /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages
+Searching for scipy==1.4.1
+Best match: scipy 1.4.1
+Adding scipy 1.4.1 to easy-install.pth file
+
+Using /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages
+Searching for numpy==1.17.4
+Best match: numpy 1.17.4
+Adding numpy 1.17.4 to easy-install.pth file
+Installing f2py script to /home/travis/virtualenv/python3.7.6/bin
+Installing f2py3 script to /home/travis/virtualenv/python3.7.6/bin
+Installing f2py3.7 script to /home/travis/virtualenv/python3.7.6/bin
+
+Using /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages
+Searching for six==1.13.0
+Best match: six 1.13.0
+Adding six 1.13.0 to easy-install.pth file
+
+Using /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages
+Searching for pyparsing==2.4.5
+Best match: pyparsing 2.4.5
+Adding pyparsing 2.4.5 to easy-install.pth file
+
+Using /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages
+Finished processing dependencies for kymatio==0.2a0
+travis_time:end:2b9b5543:start=1593458125534001979,finish=1593458228453301083,duration=102919299104,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:03a30f38[0K$ pip install -r requirements_optional.txt
+Requirement already satisfied: pytest in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from -r requirements_optional.txt (line 1)) (5.4.3)
+Collecting sphinx<3.0
+  Downloading Sphinx-2.4.4-py3-none-any.whl (2.7 MB)
+[?25l
+[?25hCollecting sphinxcontrib-bibtex
+  Downloading sphinxcontrib_bibtex-1.0.0-py3-none-any.whl (14 kB)
+Collecting sphinx-gallery
+  Downloading sphinx-gallery-0.7.0.tar.gz (6.4 MB)
+[?25l
+[?25hRequirement already satisfied: pillow in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from -r requirements_optional.txt (line 5)) (7.1.2)
+Collecting matplotlib
+  Downloading matplotlib-3.2.2-cp37-cp37m-manylinux1_x86_64.whl (12.4 MB)
+[?25l
+[?25hRequirement already satisfied: scikit-learn in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from -r requirements_optional.txt (line 7)) (0.23.1)
+Collecting texext
+  Downloading texext-0.6.6.tar.gz (38 kB)
+Collecting m2r
+  Downloading m2r-0.2.1.tar.gz (16 kB)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest->-r requirements_optional.txt (line 1)) (1.3.0)
+Requirement already satisfied: wcwidth in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest->-r requirements_optional.txt (line 1)) (0.1.7)
+Requirement already satisfied: packaging in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest->-r requirements_optional.txt (line 1)) (19.2)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest->-r requirements_optional.txt (line 1)) (0.13.1)
+Requirement already satisfied: more-itertools>=4.0.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest->-r requirements_optional.txt (line 1)) (8.0.2)
+Requirement already satisfied: attrs>=17.4.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest->-r requirements_optional.txt (line 1)) (19.3.0)
+Requirement already satisfied: py>=1.5.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from pytest->-r requirements_optional.txt (line 1)) (1.8.0)
+Collecting imagesize
+  Downloading imagesize-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Collecting sphinxcontrib-serializinghtml
+  Downloading sphinxcontrib_serializinghtml-1.1.4-py2.py3-none-any.whl (89 kB)
+[?25l
+[?25hCollecting sphinxcontrib-qthelp
+  Downloading sphinxcontrib_qthelp-1.0.3-py2.py3-none-any.whl (90 kB)
+[?25l
+[?25hCollecting Jinja2>=2.3
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+[?25l
+[?25hCollecting docutils>=0.12
+  Downloading docutils-0.16-py2.py3-none-any.whl (548 kB)
+[?25l
+[?25hCollecting snowballstemmer>=1.1
+  Downloading snowballstemmer-2.0.0-py2.py3-none-any.whl (97 kB)
+[?25l
+[?25hCollecting babel!=2.0,>=1.3
+  Downloading Babel-2.8.0-py2.py3-none-any.whl (8.6 MB)
+[?25l
+[?25hRequirement already satisfied: setuptools in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from sphinx<3.0->-r requirements_optional.txt (line 2)) (45.2.0)
+Collecting sphinxcontrib-jsmath
+  Downloading sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl (5.1 kB)
+Collecting sphinxcontrib-htmlhelp
+  Downloading sphinxcontrib_htmlhelp-1.0.3-py2.py3-none-any.whl (96 kB)
+[?25l
+[?25hCollecting sphinxcontrib-applehelp
+  Downloading sphinxcontrib_applehelp-1.0.2-py2.py3-none-any.whl (121 kB)
+[?25l
+[?25hCollecting Pygments>=2.0
+  Downloading Pygments-2.6.1-py3-none-any.whl (914 kB)
+[?25l
+[?25hCollecting alabaster<0.8,>=0.7
+  Downloading alabaster-0.7.12-py2.py3-none-any.whl (14 kB)
+Requirement already satisfied: requests>=2.5.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from sphinx<3.0->-r requirements_optional.txt (line 2)) (2.24.0)
+Collecting sphinxcontrib-devhelp
+  Downloading sphinxcontrib_devhelp-1.0.2-py2.py3-none-any.whl (84 kB)
+[?25l
+[?25hCollecting oset>=0.1.3
+  Downloading oset-0.1.3.tar.gz (7.3 kB)
+Collecting pybtex>=0.20
+  Downloading pybtex-0.22.2-py2.py3-none-any.whl (279 kB)
+[?25l
+[?25hCollecting pybtex-docutils>=0.2.0
+  Downloading pybtex_docutils-0.2.2-py2.py3-none-any.whl (4.6 kB)
+Requirement already satisfied: numpy>=1.11 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from matplotlib->-r requirements_optional.txt (line 6)) (1.17.4)
+Collecting cycler>=0.10
+  Downloading cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from matplotlib->-r requirements_optional.txt (line 6)) (2.4.5)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.2.0-cp37-cp37m-manylinux1_x86_64.whl (88 kB)
+[?25l
+[?25hCollecting python-dateutil>=2.1
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+[?25l
+[?25hRequirement already satisfied: scipy>=0.19.1 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from scikit-learn->-r requirements_optional.txt (line 7)) (1.4.1)
+Requirement already satisfied: joblib>=0.11 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from scikit-learn->-r requirements_optional.txt (line 7)) (0.15.1)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from scikit-learn->-r requirements_optional.txt (line 7)) (2.1.0)
+Requirement already satisfied: six>=1.4.0 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from texext->-r requirements_optional.txt (line 8)) (1.13.0)
+Collecting mistune
+  Downloading mistune-0.8.4-py2.py3-none-any.whl (16 kB)
+Requirement already satisfied: zipp>=0.5 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest->-r requirements_optional.txt (line 1)) (0.6.0)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp37-cp37m-manylinux1_x86_64.whl (27 kB)
+Collecting pytz>=2015.7
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+[?25l
+[?25hRequirement already satisfied: idna<3,>=2.5 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from requests>=2.5.0->sphinx<3.0->-r requirements_optional.txt (line 2)) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from requests>=2.5.0->sphinx<3.0->-r requirements_optional.txt (line 2)) (2019.11.28)
+Requirement already satisfied: chardet<4,>=3.0.2 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from requests>=2.5.0->sphinx<3.0->-r requirements_optional.txt (line 2)) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages (from requests>=2.5.0->sphinx<3.0->-r requirements_optional.txt (line 2)) (1.25.9)
+Collecting PyYAML>=3.01
+  Downloading PyYAML-5.3.1.tar.gz (269 kB)
+[?25l
+[?25hCollecting latexcodec>=1.0.4
+  Downloading latexcodec-2.0.1-py2.py3-none-any.whl (18 kB)
+Building wheels for collected packages: sphinx-gallery, texext, m2r, oset, PyYAML
+  Building wheel for sphinx-gallery (setup.py) ... [?25l- done
+[?25h  Created wheel for sphinx-gallery: filename=sphinx_gallery-0.7.0-py3-none-any.whl size=113990 sha256=204f8744d7b68560961acbf122d83a2f2050b6ea28f8c8f91960797b18de16af
+  Stored in directory: /home/travis/.cache/pip/wheels/29/9c/f2/b89fbd3b8d077989a1c59392a083430027a419687a8a2087b0
+  Building wheel for texext (setup.py) ... [?25l- done
+[?25h  Created wheel for texext: filename=texext-0.6.6-py3-none-any.whl size=24668 sha256=4da0cd4826c5596070ab0aacb29e9c77c8128201588bdfcd392a9aa851f1cfd8
+  Stored in directory: /home/travis/.cache/pip/wheels/0b/2d/3d/3de42b93b69a70a2b453bad62c3dee44cfede98324486898dc
+  Building wheel for m2r (setup.py) ... [?25l- done
+[?25h  Created wheel for m2r: filename=m2r-0.2.1-py3-none-any.whl size=10466 sha256=05f169d36205154d4869ce99b65d924aef4f83c2de42439a44b71f13ca168ebb
+  Stored in directory: /home/travis/.cache/pip/wheels/02/47/3a/e1c46c2cca442c8781612542397c9559a579f10e2dd87e7c9f
+  Building wheel for oset (setup.py) ... [?25l- done
+[?25h  Created wheel for oset: filename=oset-0.1.3-py3-none-any.whl size=9660 sha256=290fab2213f6abdd6cc791a6dc0f38fc802109c2f4b30d2f4c705e2170e347de
+  Stored in directory: /home/travis/.cache/pip/wheels/d3/97/cf/cfafe0bedac445a9492baca15b27f8afb4693182b00a975ac7
+  Building wheel for PyYAML (setup.py) ... [?25l- \ | / done
+[?25h  Created wheel for PyYAML: filename=PyYAML-5.3.1-cp37-cp37m-linux_x86_64.whl size=392856 sha256=46b8c05878de633efbf26f846645973a7f0f133efb2f1dad3c448134d9b87d2b
+  Stored in directory: /home/travis/.cache/pip/wheels/5e/03/1e/e1e954795d6f35dfc7b637fe2277bff021303bd9570ecea653
+Successfully built sphinx-gallery texext m2r oset PyYAML
+Installing collected packages: imagesize, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, MarkupSafe, Jinja2, docutils, snowballstemmer, pytz, babel, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-applehelp, Pygments, alabaster, sphinxcontrib-devhelp, sphinx, oset, PyYAML, latexcodec, pybtex, pybtex-docutils, sphinxcontrib-bibtex, sphinx-gallery, cycler, kiwisolver, python-dateutil, matplotlib, texext, mistune, m2r
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 PyYAML-5.3.1 Pygments-2.6.1 alabaster-0.7.12 babel-2.8.0 cycler-0.10.0 docutils-0.16 imagesize-1.2.0 kiwisolver-1.2.0 latexcodec-2.0.1 m2r-0.2.1 matplotlib-3.2.2 mistune-0.8.4 oset-0.1.3 pybtex-0.22.2 pybtex-docutils-0.2.2 python-dateutil-2.8.1 pytz-2020.1 snowballstemmer-2.0.0 sphinx-2.4.4 sphinx-gallery-0.7.0 sphinxcontrib-applehelp-1.0.2 sphinxcontrib-bibtex-1.0.0 sphinxcontrib-devhelp-1.0.2 sphinxcontrib-htmlhelp-1.0.3 sphinxcontrib-jsmath-1.0.1 sphinxcontrib-qthelp-1.0.3 sphinxcontrib-serializinghtml-1.1.4 texext-0.6.6
+travis_time:end:03a30f38:start=1593458228457340450,finish=1593458263066421970,duration=34609081520,event=install[0Ktravis_fold:end:install.2[0Ktravis_time:start:0031c560[0K$ pytest --cov=kymatio
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.7.6, pytest-5.4.3, py-1.8.0, pluggy-0.13.1
+rootdir: /home/travis/build/kymatio/kymatio
+plugins: cov-2.10.0
+[1mcollecting ... [0m[1mcollecting 1 item                                                              [0m[1mcollecting 12 items                                                            [0m[1mcollecting 46 items / 1 error / 45 selected                                    [0m[1mcollected 101 items / 1 error / 100 selected                                   [0m
+
+==================================== ERRORS ====================================
+[31m[1m_________ ERROR collecting tests/scattering2d/test_jax_scattering2d.py _________[0m
+[31mImportError while importing test module '/home/travis/build/kymatio/kymatio/tests/scattering2d/test_jax_scattering2d.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests/scattering2d/test_jax_scattering2d.py:3: in <module>
+    import jax.numpy as jnp
+E   ModuleNotFoundError: No module named 'jax'[0m
+[33m=============================== warnings summary ===============================[0m
+/home/travis/virtualenv/python3.7.6/lib/python3.7/distutils/__init__.py:4
+  /home/travis/virtualenv/python3.7.6/lib/python3.7/distutils/__init__.py:4: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+    import imp
+
+/home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages/tensorflow/python/data/ops/iterator_ops.py:546
+  /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages/tensorflow/python/data/ops/iterator_ops.py:546: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+    class IteratorBase(collections.Iterator, trackable.Trackable,
+
+/home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages/tensorflow/python/data/ops/dataset_ops.py:106
+  /home/travis/virtualenv/python3.7.6/lib/python3.7/site-packages/tensorflow/python/data/ops/dataset_ops.py:106: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+    class DatasetV2(collections.Iterable, tracking_base.Trackable,
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+
+----------- coverage: platform linux, python 3.7.6-final-0 -----------
+Name                                                   Stmts   Miss  Cover
+--------------------------------------------------------------------------
+kymatio/__init__.py                                        9      0   100%
+kymatio/backend/__init__.py                                0      0   100%
+kymatio/backend/jax_backend.py                            26     26     0%
+kymatio/backend/numpy_backend.py                          26     18    31%
+kymatio/backend/tensorflow_backend.py                     26     16    38%
+kymatio/backend/torch_backend.py                          76     58    24%
+kymatio/backend/torch_skcuda_backend.py                   36     36     0%
+kymatio/caching.py                                        16     16     0%
+kymatio/datasets.py                                      124    124     0%
+kymatio/frontend/__init__.py                               0      0   100%
+kymatio/frontend/base_frontend.py                         18     12    33%
+kymatio/frontend/entry.py                                 31     25    19%
+kymatio/frontend/jax_frontend.py                          17     17     0%
+kymatio/frontend/keras_frontend.py                        20      6    70%
+kymatio/frontend/numpy_frontend.py                        17      4    76%
+kymatio/frontend/sklearn_frontend.py                      19      6    68%
+kymatio/frontend/tensorflow_frontend.py                   17      4    76%
+kymatio/frontend/torch_frontend.py                        21      6    71%
+kymatio/jax.py                                             7      7     0%
+kymatio/keras.py                                           7      0   100%
+kymatio/numpy.py                                          10      0   100%
+kymatio/scattering1d/__init__.py                           2      0   100%
+kymatio/scattering1d/backend/__init__.py                   0      0   100%
+kymatio/scattering1d/backend/numpy_backend.py             40     17    58%
+kymatio/scattering1d/backend/tensorflow_backend.py        36     15    58%
+kymatio/scattering1d/backend/torch_backend.py             46     23    50%
+kymatio/scattering1d/backend/torch_skcuda_backend.py      69     69     0%
+kymatio/scattering1d/core/__init__.py                      0      0   100%
+kymatio/scattering1d/core/scattering1d.py                 72     70     3%
+kymatio/scattering1d/filter_bank.py                      161    144    11%
+kymatio/scattering1d/frontend/__init__.py                  0      0   100%
+kymatio/scattering1d/frontend/base_frontend.py            65     32    51%
+kymatio/scattering1d/frontend/entry.py                     5      1    80%
+kymatio/scattering1d/frontend/keras_frontend.py           20     11    45%
+kymatio/scattering1d/frontend/numpy_frontend.py           45     35    22%
+kymatio/scattering1d/frontend/sklearn_frontend.py          6      0   100%
+kymatio/scattering1d/frontend/tensorflow_frontend.py      46     35    24%
+kymatio/scattering1d/frontend/torch_frontend.py           84     71    15%
+kymatio/scattering1d/utils.py                             83     75    10%
+kymatio/scattering2d/__init__.py                           2      0   100%
+kymatio/scattering2d/backend/__init__.py                   0      0   100%
+kymatio/scattering2d/backend/jax_backend.py               45     45     0%
+kymatio/scattering2d/backend/numpy_backend.py             45     19    58%
+kymatio/scattering2d/backend/tensorflow_backend.py        41     17    59%
+kymatio/scattering2d/backend/torch_backend.py             74     47    36%
+kymatio/scattering2d/backend/torch_skcuda_backend.py      68     68     0%
+kymatio/scattering2d/core/__init__.py                      0      0   100%
+kymatio/scattering2d/core/scattering2d.py                 55     53     4%
+kymatio/scattering2d/filter_bank.py                       65     58    11%
+kymatio/scattering2d/frontend/__init__.py                  0      0   100%
+kymatio/scattering2d/frontend/base_frontend.py            40     16    60%
+kymatio/scattering2d/frontend/entry.py                     5      1    80%
+kymatio/scattering2d/frontend/jax_frontend.py             37     37     0%
+kymatio/scattering2d/frontend/keras_frontend.py           20     11    45%
+kymatio/scattering2d/frontend/numpy_frontend.py           37     28    24%
+kymatio/scattering2d/frontend/sklearn_frontend.py          6      0   100%
+kymatio/scattering2d/frontend/tensorflow_frontend.py      40     31    22%
+kymatio/scattering2d/frontend/torch_frontend.py           76     63    17%
+kymatio/scattering2d/utils.py                              6      3    50%
+kymatio/scattering3d/__init__.py                           2      0   100%
+kymatio/scattering3d/backend/__init__.py                   0      0   100%
+kymatio/scattering3d/backend/numpy_backend.py             34     15    56%
+kymatio/scattering3d/backend/tensorflow_backend.py        40     20    50%
+kymatio/scattering3d/backend/torch_backend.py             38     19    50%
+kymatio/scattering3d/backend/torch_skcuda_backend.py      54     54     0%
+kymatio/scattering3d/core/__init__.py                      0      0   100%
+kymatio/scattering3d/core/scattering3d.py                 46     45     2%
+kymatio/scattering3d/filter_bank.py                       59     51    14%
+kymatio/scattering3d/frontend/__init__.py                  0      0   100%
+kymatio/scattering3d/frontend/base_frontend.py            27     14    48%
+kymatio/scattering3d/frontend/entry.py                     5      1    80%
+kymatio/scattering3d/frontend/numpy_frontend.py           30     20    33%
+kymatio/scattering3d/frontend/sklearn_frontend.py          6      0   100%
+kymatio/scattering3d/frontend/tensorflow_frontend.py      37     27    27%
+kymatio/scattering3d/frontend/torch_frontend.py           49     49     0%
+kymatio/scattering3d/utils.py                             33     26    21%
+kymatio/sklearn.py                                        10      0   100%
+kymatio/tensorflow.py                                     10      0   100%
+kymatio/torch.py                                          10     10     0%
+kymatio/version.py                                         2      0   100%
+--------------------------------------------------------------------------
+TOTAL                                                   2457   1827    26%
+
+=========================== short test summary info ============================
+ERROR tests/scattering2d/test_jax_scattering2d.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+[31m========================= [33m3 warnings[0m, [31m[1m1 error[0m[31m in 3.88s[0m[31m =========================[0m

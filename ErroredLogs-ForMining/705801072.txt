@@ -1,0 +1,931 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 23b9c94f-3300-41ff-9155-b5d32c69daf3@1.worker-org-576dc846d-l5kxb.gce-production-2
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-3ec8a51d-2cfe-4116-a047-21a254839758 travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
+startup: 6.080753296s
+travis_fold:end:worker_info[0Ktravis_time:start:0afa9fbf[0Ktravis_time:end:0afa9fbf:start=1594131279793639367,finish=1594131279920785375,duration=127146008,event=no_world_writable_dirs[0Ktravis_time:start:0701cea0[0Ktravis_time:end:0701cea0:start=1594131279923118604,finish=1594131279925506287,duration=2387683,event=setup_filter[0Ktravis_time:start:139fb4fc[0Ktravis_time:end:139fb4fc:start=1594131279929269244,finish=1594131279935715897,duration=6446653,event=agent[0Ktravis_time:start:06ac8d5c[0Ktravis_time:end:06ac8d5c:start=1594131279938267761,finish=1594131279939935384,duration=1667623,event=check_unsupported[0Ktravis_time:start:2699b369[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 705801059
+Job id: 705801072
+Runtime kernel version: 4.15.0-1028-gcp
+travis-build version: 53c9fddd
+[34m[1mBuild image provisioning date and time[0m
+Mon Mar 25 16:43:24 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.22.7 linux-x64 node-v11.10.1
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2
+[34m[1mrvm version[0m
+rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.7
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.21
+9.5.16
+9.6.12
+[34m[1mRedis version[0m
+redis-server 5.0.4
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 4.10.2!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.0
+v8.12.0
+v8.15.1
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:2699b369:start=1594131279942276104,finish=1594131279946415196,duration=4139092,event=show_system_info[0Ktravis_time:start:1f2e19e2[0Ktravis_time:end:1f2e19e2:start=1594131279950222128,finish=1594131279961074709,duration=10852581,event=rm_riak_source[0Ktravis_time:start:04344fde[0Ktravis_time:end:04344fde:start=1594131279963976244,finish=1594131279968946675,duration=4970431,event=fix_rwky_redis[0Ktravis_time:start:0c04b6fd[0Ktravis_time:end:0c04b6fd:start=1594131279971577474,finish=1594131280613917566,duration=642340092,event=wait_for_network[0Ktravis_time:start:16f2b0f0[0Ktravis_time:end:16f2b0f0:start=1594131280617755265,finish=1594131280788486026,duration=170730761,event=update_apt_keys[0Ktravis_time:start:0825ba42[0Ktravis_time:end:0825ba42:start=1594131280792552885,finish=1594131280839635529,duration=47082644,event=fix_hhvm_source[0Ktravis_time:start:0533d324[0Ktravis_time:end:0533d324:start=1594131280843361171,finish=1594131280845815388,duration=2454217,event=update_mongo_arch[0Ktravis_time:start:03a331b6[0Ktravis_time:end:03a331b6:start=1594131280850874653,finish=1594131280886974387,duration=36099734,event=fix_sudo_enabled_trusty[0Ktravis_time:start:140f5ef3[0Ktravis_time:end:140f5ef3:start=1594131280890754977,finish=1594131280892665108,duration=1910131,event=update_glibc[0Ktravis_time:start:09271254[0Ktravis_time:end:09271254:start=1594131280896445948,finish=1594131280903535358,duration=7089410,event=clean_up_path[0Ktravis_time:start:24a2050a[0Ktravis_time:end:24a2050a:start=1594131280907752292,finish=1594131280914715433,duration=6963141,event=fix_resolv_conf[0Ktravis_time:start:0061ef27[0Ktravis_time:end:0061ef27:start=1594131280918431679,finish=1594131280926017927,duration=7586248,event=fix_etc_hosts[0Ktravis_time:start:081394a8[0Ktravis_time:end:081394a8:start=1594131280929386178,finish=1594131280938780072,duration=9393894,event=fix_mvn_settings_xml[0Ktravis_time:start:1175073f[0Ktravis_time:end:1175073f:start=1594131280942551882,finish=1594131280951353322,duration=8801440,event=no_ipv6_localhost[0Ktravis_time:start:09f78154[0Ktravis_time:end:09f78154:start=1594131280955923565,finish=1594131280957785628,duration=1862063,event=fix_etc_mavenrc[0Ktravis_time:start:2112fbfa[0Ktravis_time:end:2112fbfa:start=1594131280961417404,finish=1594131280965075093,duration=3657689,event=fix_wwdr_certificate[0Ktravis_time:start:127f93fb[0Ktravis_time:end:127f93fb:start=1594131280971005694,finish=1594131280992059005,duration=21053311,event=put_localhost_first[0Ktravis_time:start:03b03144[0Ktravis_time:end:03b03144:start=1594131280998018463,finish=1594131281000691187,duration=2672724,event=home_paths[0Ktravis_time:start:13d1e788[0Ktravis_time:end:13d1e788:start=1594131281003681804,finish=1594131281013168861,duration=9487057,event=disable_initramfs[0Ktravis_time:start:3084ed45[0Ktravis_time:end:3084ed45:start=1594131281017101993,finish=1594131281215223074,duration=198121081,event=disable_ssh_roaming[0Ktravis_time:start:1c2436c3[0Ktravis_time:end:1c2436c3:start=1594131281219510782,finish=1594131281221755748,duration=2244966,event=debug_tools[0Ktravis_time:start:0ac7a290[0Ktravis_time:end:0ac7a290:start=1594131281225880338,finish=1594131281228744602,duration=2864264,event=uninstall_oclint[0Ktravis_time:start:0504bf5c[0Ktravis_time:end:0504bf5c:start=1594131281232907172,finish=1594131281235732262,duration=2825090,event=rvm_use[0Ktravis_time:start:01e93b2e[0Ktravis_time:end:01e93b2e:start=1594131281239777622,finish=1594131281247074840,duration=7297218,event=rm_etc_boto_cfg[0Ktravis_time:start:04f9a9ad[0Ktravis_time:end:04f9a9ad:start=1594131281250511051,finish=1594131281252974099,duration=2463048,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0ec6dadf[0Ktravis_time:end:0ec6dadf:start=1594131281256238199,finish=1594131281344920564,duration=88682365,event=enable_i386[0Ktravis_time:start:1016ea33[0Ktravis_time:end:1016ea33:start=1594131281349410653,finish=1594131281354161353,duration=4750700,event=update_rubygems[0Ktravis_time:start:26edaba6[0Ktravis_time:end:26edaba6:start=1594131281360873307,finish=1594131282073603044,duration=712729737,event=ensure_path_components[0Ktravis_time:start:1334aeb5[0Ktravis_time:end:1334aeb5:start=1594131282077759621,finish=1594131282080806852,duration=3047231,event=redefine_curl[0Ktravis_time:start:0fa7e200[0Ktravis_time:end:0fa7e200:start=1594131282086419714,finish=1594131282158361133,duration=71941419,event=nonblock_pipe[0Ktravis_time:start:25b314f4[0Ktravis_time:end:25b314f4:start=1594131282162083011,finish=1594131288191192592,duration=6029109581,event=apt_get_update[0Ktravis_time:start:04e6074f[0Ktravis_time:end:04e6074f:start=1594131288196195872,finish=1594131288198567544,duration=2371672,event=deprecate_xcode_64[0Ktravis_time:start:0a49d3d4[0Ktravis_time:end:0a49d3d4:start=1594131288203742794,finish=1594131290568012946,duration=2364270152,event=update_heroku[0Ktravis_time:start:041f4b52[0Ktravis_time:end:041f4b52:start=1594131290574244865,finish=1594131290577011537,duration=2766672,event=shell_session_update[0Ktravis_time:start:08206586[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:08206586:start=1594131290582786871,finish=1594131292744214118,duration=2161427247,event=set_docker_mtu[0Ktravis_time:start:103dbdc4[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:103dbdc4:start=1594131292752723010,finish=1594131292812344283,duration=59621273,event=resolvconf[0Ktravis_time:start:25279b8d[0Ktravis_time:end:25279b8d:start=1594131292817984800,finish=1594131292941721646,duration=123736846,event=maven_central_mirror[0Ktravis_time:start:0db44a44[0Ktravis_time:end:0db44a44:start=1594131292947146876,finish=1594131293037488775,duration=90341899,event=maven_https[0Ktravis_time:start:06f196e0[0Ktravis_time:end:06f196e0:start=1594131293048002915,finish=1594131293051353019,duration=3350104,event=fix_ps4[0Ktravis_time:start:0d9d643c[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:00266e09[0K$ git clone --depth=50 --branch=master https://github.com/datmo/datmo.git datmo/datmo
+Cloning into 'datmo/datmo'...
+travis_time:end:00266e09:start=1594131293060496731,finish=1594131293834065858,duration=773569127,event=checkout[0K$ cd datmo/datmo
+$ git checkout -qf a456d196006b67ce56af96cb4900682eab747bef
+travis_fold:end:git.checkout[0K
+travis_time:end:00266e09:start=1594131293060496731,finish=1594131293866335662,duration=805838931,event=checkout[0Ktravis_time:start:390669f0[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export COVERALLS_REPO_TOKEN=[secure]
+$ export SLACK_WEBHOOK_URL=[secure]
+$ export DATMO_API_KEY=[secure]
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export LOGGING_LEVEL=DEBUG
+
+travis_time:end:390669f0:start=1594131293870324640,finish=1594131293878432523,duration=8107883,event=env[0Ktravis_time:start:134f33e2[0K$ source ~/virtualenv/python2.7/bin/activate
+travis_time:end:134f33e2:start=1594131293882059036,finish=1594131293886746200,duration=4687164,event=[0K$ python --version
+Python 2.7.15
+$ pip --version
+pip 19.0.3 from /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/pip (python 2.7)
+travis_fold:start:install.1[0Ktravis_time:start:13a925f0[0K$ pip install pip==9.0.3
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+Collecting pip==9.0.3
+  Downloading https://files.pythonhosted.org/packages/ac/95/a05b56bb975efa78d3557efa36acaf9cf5d2fd0ee0062060493687432e03/pip-9.0.3-py2.py3-none-any.whl (1.4MB)
+Installing collected packages: pip
+  Found existing installation: pip 19.0.3
+    Uninstalling pip-19.0.3:
+      Successfully uninstalled pip-19.0.3
+Successfully installed pip-18.1
+travis_time:end:13a925f0:start=1594131294486530722,finish=1594131295931677713,duration=1445146991,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:0f614856[0K$ pip install pytest==3.0.4 pytest-cov==2.5.1
+Collecting pytest==3.0.4
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/10/5b/91cadc7c1b82ae287a50e0d5a2ebc17d8ba60cf6b9e0b5df6f9ad4608d85/pytest-3.0.4-py2.py3-none-any.whl (170kB)
+Collecting pytest-cov==2.5.1
+  Downloading https://files.pythonhosted.org/packages/30/7d/7f6a78ae44a1248ee28cc777586c18b28a1df903470e5d34a6e25712b8aa/pytest_cov-2.5.1-py2.py3-none-any.whl
+Requirement already satisfied: py>=1.4.29 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest==3.0.4)
+Collecting coverage>=3.7.1 (from pytest-cov==2.5.1)
+  Downloading https://files.pythonhosted.org/packages/28/7e/c44058c0123899b4255d7acf397cb300ac6eacbf44373f5012fd41fdc3ea/coverage-5.2-cp27-cp27mu-manylinux1_x86_64.whl (226kB)
+Installing collected packages: pytest, coverage, pytest-cov
+  Found existing installation: pytest 4.3.1
+    Uninstalling pytest-4.3.1:
+      Successfully uninstalled pytest-4.3.1
+Successfully installed coverage-5.2 pytest-3.0.4 pytest-cov-2.5.1
+travis_time:end:0f614856:start=1594131295937041203,finish=1594131297713059128,duration=1776017925,event=install[0Ktravis_fold:end:install.2[0Ktravis_fold:start:install.3[0Ktravis_time:start:10915eb3[0K$ pip install yapf==0.20.0
+Collecting yapf==0.20.0
+  Downloading https://files.pythonhosted.org/packages/d0/26/7b494b4b03373bdd253027bff6914ddb4ea44ced817e808e8ccd1a81c6f0/yapf-0.20.0-py2.py3-none-any.whl (158kB)
+Installing collected packages: yapf
+Successfully installed yapf-0.20.0
+travis_time:end:10915eb3:start=1594131297719037927,finish=1594131298531091459,duration=812053532,event=install[0Ktravis_fold:end:install.3[0Ktravis_fold:start:install.4[0Ktravis_time:start:097fa752[0K$ pip install coveralls
+Collecting coveralls
+  Downloading https://files.pythonhosted.org/packages/47/51/d46ae73712af15a74e713067a68a26e5ed61e01bc9e1a752254f3b3f099e/coveralls-1.11.1-py2.py3-none-any.whl
+Collecting requests>=1.0.0 (from coveralls)
+  Downloading https://files.pythonhosted.org/packages/45/1e/0c169c6a5381e241ba7404532c16a21d86ab872c9bed8bdcd4c423954103/requests-2.24.0-py2.py3-none-any.whl (61kB)
+Requirement already satisfied: coverage<6.0,>=3.6 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from coveralls)
+Collecting docopt>=0.6.1 (from coveralls)
+  Downloading https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz
+Collecting urllib3[secure]; python_version < "3" (from coveralls)
+  Downloading https://files.pythonhosted.org/packages/e1/e5/df302e8017440f111c11cc41a6b432838672f5a70aa29227bf58149dc72f/urllib3-1.25.9-py2.py3-none-any.whl (126kB)
+Collecting idna<3,>=2.5 (from requests>=1.0.0->coveralls)
+  Downloading https://files.pythonhosted.org/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl (58kB)
+Collecting chardet<4,>=3.0.2 (from requests>=1.0.0->coveralls)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+Requirement already satisfied: certifi>=2017.4.17 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from requests>=1.0.0->coveralls)
+Collecting cryptography>=1.3.4; extra == "secure" (from urllib3[secure]; python_version < "3"->coveralls)
+  Downloading https://files.pythonhosted.org/packages/5f/fc/a92bad2460d349ee9eb868f9f9dcddb7c8f42a45677d53a5c663fa251e75/cryptography-2.9.2-cp27-cp27mu-manylinux1_x86_64.whl (2.7MB)
+Collecting pyOpenSSL>=0.14; extra == "secure" (from urllib3[secure]; python_version < "3"->coveralls)
+  Downloading https://files.pythonhosted.org/packages/9e/de/f8342b68fa9e981d348039954657bdf681b2ab93de27443be51865ffa310/pyOpenSSL-19.1.0-py2.py3-none-any.whl (53kB)
+Collecting ipaddress; python_version == "2.7" and extra == "secure" (from urllib3[secure]; python_version < "3"->coveralls)
+  Downloading https://files.pythonhosted.org/packages/c2/f8/49697181b1651d8347d24c095ce46c7346c37335ddc7d255833e7cde674d/ipaddress-1.0.23-py2.py3-none-any.whl
+Requirement already satisfied: enum34; python_version < "3" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from cryptography>=1.3.4; extra == "secure"->urllib3[secure]; python_version < "3"->coveralls)
+Collecting cffi!=1.11.3,>=1.8 (from cryptography>=1.3.4; extra == "secure"->urllib3[secure]; python_version < "3"->coveralls)
+  Downloading https://files.pythonhosted.org/packages/08/29/8001b940ef40e7a25ffe8f3188bc9b118934b513d64f769dbf461e46f4ed/cffi-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl (387kB)
+Requirement already satisfied: six>=1.4.1 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from cryptography>=1.3.4; extra == "secure"->urllib3[secure]; python_version < "3"->coveralls)
+Collecting pycparser (from cffi!=1.11.3,>=1.8->cryptography>=1.3.4; extra == "secure"->urllib3[secure]; python_version < "3"->coveralls)
+  Downloading https://files.pythonhosted.org/packages/ae/e7/d9c3a176ca4b02024debf82342dab36efadfc5776f9c8db077e8f6e71821/pycparser-2.20-py2.py3-none-any.whl (112kB)
+Building wheels for collected packages: docopt
+  Running setup.py bdist_wheel for docopt: started
+  Running setup.py bdist_wheel for docopt: finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/9b/04/dd/7daf4150b6d9b12949298737de9431a324d4b797ffd63f526e
+Successfully built docopt
+Installing collected packages: pycparser, cffi, ipaddress, cryptography, idna, pyOpenSSL, urllib3, chardet, requests, docopt, coveralls
+Successfully installed cffi-1.14.0 chardet-3.0.4 coveralls-1.11.1 cryptography-2.9.2 docopt-0.6.2 idna-2.10 ipaddress-1.0.23 pyOpenSSL-19.1.0 pycparser-2.20 requests-2.24.0 urllib3-1.25.9
+travis_time:end:097fa752:start=1594131298535351338,finish=1594131303169289339,duration=4633938001,event=install[0Ktravis_fold:end:install.4[0Ktravis_fold:start:install.5[0Ktravis_time:start:0b03a8c1[0K$ pip install urllib3==1.23
+Collecting urllib3==1.23
+  Downloading https://files.pythonhosted.org/packages/bd/c9/6fdd990019071a4a32a5e7cb78a1d92c53851ef4f56f62a3486e6a7d8ffb/urllib3-1.23-py2.py3-none-any.whl (133kB)
+Installing collected packages: urllib3
+  Found existing installation: urllib3 1.25.9
+    Uninstalling urllib3-1.25.9:
+      Successfully uninstalled urllib3-1.25.9
+Successfully installed urllib3-1.23
+travis_time:end:0b03a8c1:start=1594131303173974024,finish=1594131303754770242,duration=580796218,event=install[0Ktravis_fold:end:install.5[0Ktravis_fold:start:install.6[0Ktravis_time:start:16499af8[0K$ pip install chardet==3.0.2
+Collecting chardet==3.0.2
+  Downloading https://files.pythonhosted.org/packages/b8/74/54fdc2fcfdd46b6c486964b64c5bb7db9a3664033ab25cf11aab06dd2a5d/chardet-3.0.2-py2.py3-none-any.whl (133kB)
+Installing collected packages: chardet
+  Found existing installation: chardet 3.0.4
+    Uninstalling chardet-3.0.4:
+      Successfully uninstalled chardet-3.0.4
+Successfully installed chardet-3.0.2
+travis_time:end:16499af8:start=1594131303761330933,finish=1594131304379483700,duration=618152767,event=install[0Ktravis_fold:end:install.6[0Ktravis_fold:start:install.7[0Ktravis_time:start:184f987e[0K$ pip install requests==2.19.1
+Collecting requests==2.19.1
+  Downloading https://files.pythonhosted.org/packages/65/47/7e02164a2a3db50ed6d8a6ab1d6d60b69c4c3fdf57a284257925dfc12bda/requests-2.19.1-py2.py3-none-any.whl (91kB)
+Collecting idna<2.8,>=2.5 (from requests==2.19.1)
+  Downloading https://files.pythonhosted.org/packages/4b/2a/0276479a4b3caeb8a8c1af2f8e4355746a97fab05a372e4a2c6a6b876165/idna-2.7-py2.py3-none-any.whl (58kB)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from requests==2.19.1)
+Requirement already satisfied: urllib3<1.24,>=1.21.1 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from requests==2.19.1)
+Requirement already satisfied: certifi>=2017.4.17 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from requests==2.19.1)
+Installing collected packages: idna, requests
+  Found existing installation: idna 2.10
+    Uninstalling idna-2.10:
+      Successfully uninstalled idna-2.10
+  Found existing installation: requests 2.24.0
+    Uninstalling requests-2.24.0:
+      Successfully uninstalled requests-2.24.0
+Successfully installed idna-2.7 requests-2.19.1
+travis_time:end:184f987e:start=1594131304384576979,finish=1594131305082704915,duration=698127936,event=install[0Ktravis_fold:end:install.7[0Ktravis_fold:start:install.8[0Ktravis_time:start:17cca1fa[0K$ python setup.py install
+/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/dist.py:475: UserWarning: Normalizing '0.0.41-dev' to '0.0.41.dev0'
+  normalized_version,
+running install
+running bdist_egg
+running egg_info
+creating datmo.egg-info
+writing requirements to datmo.egg-info/requires.txt
+writing datmo.egg-info/PKG-INFO
+writing top-level names to datmo.egg-info/top_level.txt
+writing dependency_links to datmo.egg-info/dependency_links.txt
+writing entry points to datmo.egg-info/entry_points.txt
+writing manifest file 'datmo.egg-info/SOURCES.txt'
+warning: Failed to find the configured license file 'LICENSE.txt'
+reading manifest file 'datmo.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+no previously-included directories found matching 'examples'
+no previously-included directories found matching 'docs'
+no previously-included directories found matching 'templates'
+writing manifest file 'datmo.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/datmo
+copying datmo/logger.py -> build/lib/datmo
+copying datmo/snapshot.py -> build/lib/datmo
+copying datmo/__main__.py -> build/lib/datmo
+copying datmo/config.py -> build/lib/datmo
+copying datmo/__init__.py -> build/lib/datmo
+creating build/lib/datmo/dashboard
+copying datmo/dashboard/__init__.py -> build/lib/datmo/dashboard
+copying datmo/dashboard/app.py -> build/lib/datmo/dashboard
+creating build/lib/datmo/cli
+copying datmo/cli/parser.py -> build/lib/datmo/cli
+copying datmo/cli/main.py -> build/lib/datmo/cli
+copying datmo/cli/__init__.py -> build/lib/datmo/cli
+creating build/lib/datmo/core
+copying datmo/core/__init__.py -> build/lib/datmo/core
+creating build/lib/datmo/cli/driver
+copying datmo/cli/driver/parser.py -> build/lib/datmo/cli/driver
+copying datmo/cli/driver/helper.py -> build/lib/datmo/cli/driver
+copying datmo/cli/driver/__init__.py -> build/lib/datmo/cli/driver
+creating build/lib/datmo/cli/command
+copying datmo/cli/command/snapshot.py -> build/lib/datmo/cli/command
+copying datmo/cli/command/project.py -> build/lib/datmo/cli/command
+copying datmo/cli/command/workspace.py -> build/lib/datmo/cli/command
+copying datmo/cli/command/datmo_command.py -> build/lib/datmo/cli/command
+copying datmo/cli/command/base.py -> build/lib/datmo/cli/command
+copying datmo/cli/command/__init__.py -> build/lib/datmo/cli/command
+copying datmo/cli/command/run.py -> build/lib/datmo/cli/command
+copying datmo/cli/command/environment.py -> build/lib/datmo/cli/command
+creating build/lib/datmo/core/storage
+copying datmo/core/storage/__init__.py -> build/lib/datmo/core/storage
+creating build/lib/datmo/core/util
+copying datmo/core/util/logger.py -> build/lib/datmo/core/util
+copying datmo/core/util/json_store.py -> build/lib/datmo/core/util
+copying datmo/core/util/exceptions.py -> build/lib/datmo/core/util
+copying datmo/core/util/spinner.py -> build/lib/datmo/core/util
+copying datmo/core/util/remote_api.py -> build/lib/datmo/core/util
+copying datmo/core/util/i18n.py -> build/lib/datmo/core/util
+copying datmo/core/util/misc_functions.py -> build/lib/datmo/core/util
+copying datmo/core/util/__init__.py -> build/lib/datmo/core/util
+creating build/lib/datmo/core/entity
+copying datmo/core/entity/code.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/task.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/snapshot.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/file_collection.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/user.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/__init__.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/run.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/model.py -> build/lib/datmo/core/entity
+copying datmo/core/entity/environment.py -> build/lib/datmo/core/entity
+creating build/lib/datmo/core/controller
+copying datmo/core/controller/task.py -> build/lib/datmo/core/controller
+copying datmo/core/controller/snapshot.py -> build/lib/datmo/core/controller
+copying datmo/core/controller/project.py -> build/lib/datmo/core/controller
+copying datmo/core/controller/base.py -> build/lib/datmo/core/controller
+copying datmo/core/controller/__init__.py -> build/lib/datmo/core/controller
+copying datmo/core/controller/model.py -> build/lib/datmo/core/controller
+creating build/lib/datmo/core/storage/remote
+copying datmo/core/storage/remote/__init__.py -> build/lib/datmo/core/storage/remote
+copying datmo/core/storage/remote/dal.py -> build/lib/datmo/core/storage/remote
+creating build/lib/datmo/core/storage/driver
+copying datmo/core/storage/driver/blitzdb_dal_driver.py -> build/lib/datmo/core/storage/driver
+copying datmo/core/storage/driver/__init__.py -> build/lib/datmo/core/storage/driver
+creating build/lib/datmo/core/storage/local
+copying datmo/core/storage/local/__init__.py -> build/lib/datmo/core/storage/local
+copying datmo/core/storage/local/dal.py -> build/lib/datmo/core/storage/local
+creating build/lib/datmo/core/util/validation
+copying datmo/core/util/validation/__init__.py -> build/lib/datmo/core/util/validation
+creating build/lib/datmo/core/util/lang
+copying datmo/core/util/lang/en.py -> build/lib/datmo/core/util/lang
+copying datmo/core/util/lang/__init__.py -> build/lib/datmo/core/util/lang
+creating build/lib/datmo/core/controller/code
+copying datmo/core/controller/code/code.py -> build/lib/datmo/core/controller/code
+copying datmo/core/controller/code/__init__.py -> build/lib/datmo/core/controller/code
+creating build/lib/datmo/core/controller/file
+copying datmo/core/controller/file/file_collection.py -> build/lib/datmo/core/controller/file
+copying datmo/core/controller/file/__init__.py -> build/lib/datmo/core/controller/file
+creating build/lib/datmo/core/controller/environment
+copying datmo/core/controller/environment/__init__.py -> build/lib/datmo/core/controller/environment
+copying datmo/core/controller/environment/environment.py -> build/lib/datmo/core/controller/environment
+creating build/lib/datmo/core/controller/code/driver
+copying datmo/core/controller/code/driver/file.py -> build/lib/datmo/core/controller/code/driver
+copying datmo/core/controller/code/driver/git.py -> build/lib/datmo/core/controller/code/driver
+copying datmo/core/controller/code/driver/__init__.py -> build/lib/datmo/core/controller/code/driver
+creating build/lib/datmo/core/controller/file/driver
+copying datmo/core/controller/file/driver/local.py -> build/lib/datmo/core/controller/file/driver
+copying datmo/core/controller/file/driver/__init__.py -> build/lib/datmo/core/controller/file/driver
+copying datmo/core/controller/file/driver/s3_remote.py -> build/lib/datmo/core/controller/file/driver
+creating build/lib/datmo/core/controller/environment/driver
+copying datmo/core/controller/environment/driver/dockerenv.py -> build/lib/datmo/core/controller/environment/driver
+copying datmo/core/controller/environment/driver/__init__.py -> build/lib/datmo/core/controller/environment/driver
+creating build/lib/datmo/core/controller/environment/driver/templates
+copying datmo/core/controller/environment/driver/templates/__init__.py -> build/lib/datmo/core/controller/environment/driver/templates
+creating build/lib/datmo/core/controller/environment/driver/config
+copying datmo/core/controller/environment/driver/config/__init__.py -> build/lib/datmo/core/controller/environment/driver/config
+copying datmo/VERSION -> build/lib/datmo
+creating build/lib/datmo/dashboard/static
+copying datmo/dashboard/static/favicon.png -> build/lib/datmo/dashboard/static
+creating build/lib/datmo/dashboard/static/css
+copying datmo/dashboard/static/css/base.css -> build/lib/datmo/dashboard/static/css
+copying datmo/dashboard/static/css/flexboxgrid.css -> build/lib/datmo/dashboard/static/css
+copying datmo/dashboard/static/css/font-awesome.min.css -> build/lib/datmo/dashboard/static/css
+copying datmo/dashboard/static/css/overrides.css -> build/lib/datmo/dashboard/static/css
+copying datmo/dashboard/static/css/style.css -> build/lib/datmo/dashboard/static/css
+creating build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/datmo_logo_white.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-compare.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-down.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-left-black.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-left.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-next.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-right-blue.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-right.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-arrow-up.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-ascending-graph.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-breadcrumb-arrow.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-checked.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-close.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-code.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-collaborate.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-commandline.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-commitForAi.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-copy.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-data-contract.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-data.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-deployment.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-email.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-export.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-facebook.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-file-highlight.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-file.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-folder.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-fork.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-git-line.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-github.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-gui.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-link-data.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-link-model.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-link.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-linkedin.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-location.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-mail.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-model-cycle.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-mouse.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-nested.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-search.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-share.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-shared-knowledge.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-sidebar-hightlight.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-snapshot-search.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-snapshot.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-star-filled.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-star.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-stopwatch.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-toolForAi.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-tracking.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-training-monitor.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-training.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-trending.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-twitter.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-update.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/icon-version.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/logo.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/no.png -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/profile-placeholder.jpg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/profile-thumbnail-1.png -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/rocket.svg -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/strip-bar-black.png -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/strip-bar-white.png -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/strip-bar.png -> build/lib/datmo/dashboard/static/img
+copying datmo/dashboard/static/img/yes.png -> build/lib/datmo/dashboard/static/img
+creating build/lib/datmo/dashboard/static/js
+copying datmo/dashboard/static/js/custom.js -> build/lib/datmo/dashboard/static/js
+copying datmo/dashboard/static/js/general.js -> build/lib/datmo/dashboard/static/js
+copying datmo/dashboard/static/js/header.menu.js -> build/lib/datmo/dashboard/static/js
+copying datmo/dashboard/static/js/jquery.min.js -> build/lib/datmo/dashboard/static/js
+copying datmo/dashboard/static/js/snapshot_diff.js -> build/lib/datmo/dashboard/static/js
+copying datmo/dashboard/static/js/snapshots.js -> build/lib/datmo/dashboard/static/js
+creating build/lib/datmo/dashboard/templates
+copying datmo/dashboard/templates/model_experiments.html -> build/lib/datmo/dashboard/templates
+copying datmo/dashboard/templates/model_snapshots.html -> build/lib/datmo/dashboard/templates
+copying datmo/dashboard/templates/model_summary.html -> build/lib/datmo/dashboard/templates
+copying datmo/dashboard/templates/profile.html -> build/lib/datmo/dashboard/templates
+creating build/lib/datmo/dashboard/templates/layouts
+copying datmo/dashboard/templates/layouts/base.html -> build/lib/datmo/dashboard/templates/layouts
+copying datmo/dashboard/templates/layouts/base_model.html -> build/lib/datmo/dashboard/templates/layouts
+copying datmo/core/util/validation/schemas.yml -> build/lib/datmo/core/util/validation
+copying datmo/core/controller/environment/driver/templates/baseDockerfile -> build/lib/datmo/core/controller/environment/driver/templates
+copying datmo/core/controller/environment/driver/templates/python2Dockerfile -> build/lib/datmo/core/controller/environment/driver/templates
+copying datmo/core/controller/environment/driver/templates/python3Dockerfile -> build/lib/datmo/core/controller/environment/driver/templates
+copying datmo/core/controller/environment/driver/config/docker.json -> build/lib/datmo/core/controller/environment/driver/config
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/datmo
+copying build/lib/datmo/logger.py -> build/bdist.linux-x86_64/egg/datmo
+copying build/lib/datmo/VERSION -> build/bdist.linux-x86_64/egg/datmo
+copying build/lib/datmo/snapshot.py -> build/bdist.linux-x86_64/egg/datmo
+copying build/lib/datmo/__main__.py -> build/bdist.linux-x86_64/egg/datmo
+creating build/bdist.linux-x86_64/egg/datmo/dashboard
+creating build/bdist.linux-x86_64/egg/datmo/dashboard/static
+creating build/bdist.linux-x86_64/egg/datmo/dashboard/static/css
+copying build/lib/datmo/dashboard/static/css/base.css -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/css
+copying build/lib/datmo/dashboard/static/css/style.css -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/css
+copying build/lib/datmo/dashboard/static/css/overrides.css -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/css
+copying build/lib/datmo/dashboard/static/css/font-awesome.min.css -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/css
+copying build/lib/datmo/dashboard/static/css/flexboxgrid.css -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/css
+creating build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-folder.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-compare.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-left.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-github.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-code.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-commitForAi.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-file-highlight.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-tracking.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-toolForAi.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-trending.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-down.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-git-line.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-breadcrumb-arrow.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-left-black.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-ascending-graph.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-model-cycle.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-star-filled.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-mail.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-sidebar-hightlight.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/rocket.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-training.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-next.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-twitter.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-share.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-email.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-commandline.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-shared-knowledge.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-export.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/strip-bar.png -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-nested.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-right.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/datmo_logo_white.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-copy.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-right-blue.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-snapshot.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-mouse.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/no.png -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-data.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-location.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-checked.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-training-monitor.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-data-contract.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-collaborate.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-update.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-star.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-snapshot-search.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-linkedin.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-fork.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/profile-placeholder.jpg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-link-data.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/yes.png -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-link.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-stopwatch.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-deployment.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-file.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-facebook.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-search.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/profile-thumbnail-1.png -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-version.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-arrow-up.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/logo.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-link-model.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-gui.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/strip-bar-white.png -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/icon-close.svg -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+copying build/lib/datmo/dashboard/static/img/strip-bar-black.png -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/img
+creating build/bdist.linux-x86_64/egg/datmo/dashboard/static/js
+copying build/lib/datmo/dashboard/static/js/custom.js -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/js
+copying build/lib/datmo/dashboard/static/js/jquery.min.js -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/js
+copying build/lib/datmo/dashboard/static/js/snapshot_diff.js -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/js
+copying build/lib/datmo/dashboard/static/js/snapshots.js -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/js
+copying build/lib/datmo/dashboard/static/js/general.js -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/js
+copying build/lib/datmo/dashboard/static/js/header.menu.js -> build/bdist.linux-x86_64/egg/datmo/dashboard/static/js
+copying build/lib/datmo/dashboard/static/favicon.png -> build/bdist.linux-x86_64/egg/datmo/dashboard/static
+creating build/bdist.linux-x86_64/egg/datmo/dashboard/templates
+creating build/bdist.linux-x86_64/egg/datmo/dashboard/templates/layouts
+copying build/lib/datmo/dashboard/templates/layouts/base_model.html -> build/bdist.linux-x86_64/egg/datmo/dashboard/templates/layouts
+copying build/lib/datmo/dashboard/templates/layouts/base.html -> build/bdist.linux-x86_64/egg/datmo/dashboard/templates/layouts
+copying build/lib/datmo/dashboard/templates/model_summary.html -> build/bdist.linux-x86_64/egg/datmo/dashboard/templates
+copying build/lib/datmo/dashboard/templates/model_experiments.html -> build/bdist.linux-x86_64/egg/datmo/dashboard/templates
+copying build/lib/datmo/dashboard/templates/model_snapshots.html -> build/bdist.linux-x86_64/egg/datmo/dashboard/templates
+copying build/lib/datmo/dashboard/templates/profile.html -> build/bdist.linux-x86_64/egg/datmo/dashboard/templates
+copying build/lib/datmo/dashboard/__init__.py -> build/bdist.linux-x86_64/egg/datmo/dashboard
+copying build/lib/datmo/dashboard/app.py -> build/bdist.linux-x86_64/egg/datmo/dashboard
+copying build/lib/datmo/config.py -> build/bdist.linux-x86_64/egg/datmo
+creating build/bdist.linux-x86_64/egg/datmo/cli
+creating build/bdist.linux-x86_64/egg/datmo/cli/driver
+copying build/lib/datmo/cli/driver/parser.py -> build/bdist.linux-x86_64/egg/datmo/cli/driver
+copying build/lib/datmo/cli/driver/helper.py -> build/bdist.linux-x86_64/egg/datmo/cli/driver
+copying build/lib/datmo/cli/driver/__init__.py -> build/bdist.linux-x86_64/egg/datmo/cli/driver
+copying build/lib/datmo/cli/parser.py -> build/bdist.linux-x86_64/egg/datmo/cli
+creating build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/snapshot.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/project.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/workspace.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/datmo_command.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/base.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/__init__.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/run.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/command/environment.py -> build/bdist.linux-x86_64/egg/datmo/cli/command
+copying build/lib/datmo/cli/main.py -> build/bdist.linux-x86_64/egg/datmo/cli
+copying build/lib/datmo/cli/__init__.py -> build/bdist.linux-x86_64/egg/datmo/cli
+creating build/bdist.linux-x86_64/egg/datmo/core
+creating build/bdist.linux-x86_64/egg/datmo/core/storage
+creating build/bdist.linux-x86_64/egg/datmo/core/storage/remote
+copying build/lib/datmo/core/storage/remote/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/storage/remote
+copying build/lib/datmo/core/storage/remote/dal.py -> build/bdist.linux-x86_64/egg/datmo/core/storage/remote
+creating build/bdist.linux-x86_64/egg/datmo/core/storage/driver
+copying build/lib/datmo/core/storage/driver/blitzdb_dal_driver.py -> build/bdist.linux-x86_64/egg/datmo/core/storage/driver
+copying build/lib/datmo/core/storage/driver/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/storage/driver
+copying build/lib/datmo/core/storage/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/storage
+creating build/bdist.linux-x86_64/egg/datmo/core/storage/local
+copying build/lib/datmo/core/storage/local/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/storage/local
+copying build/lib/datmo/core/storage/local/dal.py -> build/bdist.linux-x86_64/egg/datmo/core/storage/local
+creating build/bdist.linux-x86_64/egg/datmo/core/util
+copying build/lib/datmo/core/util/logger.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+copying build/lib/datmo/core/util/json_store.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+creating build/bdist.linux-x86_64/egg/datmo/core/util/validation
+copying build/lib/datmo/core/util/validation/schemas.yml -> build/bdist.linux-x86_64/egg/datmo/core/util/validation
+copying build/lib/datmo/core/util/validation/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/util/validation
+copying build/lib/datmo/core/util/exceptions.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+copying build/lib/datmo/core/util/spinner.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+copying build/lib/datmo/core/util/remote_api.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+copying build/lib/datmo/core/util/i18n.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+copying build/lib/datmo/core/util/misc_functions.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+copying build/lib/datmo/core/util/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/util
+creating build/bdist.linux-x86_64/egg/datmo/core/util/lang
+copying build/lib/datmo/core/util/lang/en.py -> build/bdist.linux-x86_64/egg/datmo/core/util/lang
+copying build/lib/datmo/core/util/lang/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/util/lang
+creating build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/code.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/task.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/snapshot.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/file_collection.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/user.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/run.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/model.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/entity/environment.py -> build/bdist.linux-x86_64/egg/datmo/core/entity
+copying build/lib/datmo/core/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core
+creating build/bdist.linux-x86_64/egg/datmo/core/controller
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/code
+copying build/lib/datmo/core/controller/code/code.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/code
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/code/driver
+copying build/lib/datmo/core/controller/code/driver/file.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/code/driver
+copying build/lib/datmo/core/controller/code/driver/git.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/code/driver
+copying build/lib/datmo/core/controller/code/driver/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/code/driver
+copying build/lib/datmo/core/controller/code/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/code
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/file
+copying build/lib/datmo/core/controller/file/file_collection.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/file
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/file/driver
+copying build/lib/datmo/core/controller/file/driver/local.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/file/driver
+copying build/lib/datmo/core/controller/file/driver/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/file/driver
+copying build/lib/datmo/core/controller/file/driver/s3_remote.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/file/driver
+copying build/lib/datmo/core/controller/file/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/file
+copying build/lib/datmo/core/controller/task.py -> build/bdist.linux-x86_64/egg/datmo/core/controller
+copying build/lib/datmo/core/controller/snapshot.py -> build/bdist.linux-x86_64/egg/datmo/core/controller
+copying build/lib/datmo/core/controller/project.py -> build/bdist.linux-x86_64/egg/datmo/core/controller
+copying build/lib/datmo/core/controller/base.py -> build/bdist.linux-x86_64/egg/datmo/core/controller
+copying build/lib/datmo/core/controller/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller
+copying build/lib/datmo/core/controller/model.py -> build/bdist.linux-x86_64/egg/datmo/core/controller
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/environment
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/templates
+copying build/lib/datmo/core/controller/environment/driver/templates/python3Dockerfile -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/templates
+copying build/lib/datmo/core/controller/environment/driver/templates/python2Dockerfile -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/templates
+copying build/lib/datmo/core/controller/environment/driver/templates/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/templates
+copying build/lib/datmo/core/controller/environment/driver/templates/baseDockerfile -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/templates
+copying build/lib/datmo/core/controller/environment/driver/dockerenv.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver
+copying build/lib/datmo/core/controller/environment/driver/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver
+creating build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/config
+copying build/lib/datmo/core/controller/environment/driver/config/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/config
+copying build/lib/datmo/core/controller/environment/driver/config/docker.json -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/config
+copying build/lib/datmo/core/controller/environment/__init__.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment
+copying build/lib/datmo/core/controller/environment/environment.py -> build/bdist.linux-x86_64/egg/datmo/core/controller/environment
+copying build/lib/datmo/__init__.py -> build/bdist.linux-x86_64/egg/datmo
+byte-compiling build/bdist.linux-x86_64/egg/datmo/logger.py to logger.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/snapshot.py to snapshot.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/__main__.py to __main__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/dashboard/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/dashboard/app.py to app.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/config.py to config.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/driver/parser.py to parser.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/driver/helper.py to helper.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/driver/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/parser.py to parser.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/snapshot.py to snapshot.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/project.py to project.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/workspace.py to workspace.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/datmo_command.py to datmo_command.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/base.py to base.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/run.py to run.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/command/environment.py to environment.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/main.py to main.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/cli/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/storage/remote/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/storage/remote/dal.py to dal.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/storage/driver/blitzdb_dal_driver.py to blitzdb_dal_driver.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/storage/driver/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/storage/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/storage/local/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/storage/local/dal.py to dal.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/logger.py to logger.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/json_store.py to json_store.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/validation/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/exceptions.py to exceptions.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/spinner.py to spinner.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/remote_api.py to remote_api.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/i18n.py to i18n.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/misc_functions.py to misc_functions.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/lang/en.py to en.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/util/lang/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/code.py to code.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/task.py to task.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/snapshot.py to snapshot.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/file_collection.py to file_collection.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/user.py to user.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/run.py to run.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/model.py to model.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/entity/environment.py to environment.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/code/code.py to code.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/code/driver/file.py to file.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/code/driver/git.py to git.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/code/driver/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/code/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/file/file_collection.py to file_collection.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/file/driver/local.py to local.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/file/driver/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/file/driver/s3_remote.py to s3_remote.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/file/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/task.py to task.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/snapshot.py to snapshot.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/project.py to project.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/base.py to base.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/model.py to model.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/templates/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/dockerenv.py to dockerenv.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/environment/driver/config/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/environment/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/core/controller/environment/environment.py to environment.pyc
+byte-compiling build/bdist.linux-x86_64/egg/datmo/__init__.py to __init__.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying datmo.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying datmo.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying datmo.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying datmo.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying datmo.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying datmo.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+datmo.__init__: module references __file__
+datmo.cli.command.project: module references __file__
+datmo.core.controller.environment.driver.dockerenv: module references __file__
+datmo.core.util.misc_functions: module references __file__
+datmo.core.util.validation.__init__: module references __file__
+creating dist
+creating 'dist/datmo-0.0.41.dev0-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing datmo-0.0.41.dev0-py2.7.egg
+creating /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/datmo-0.0.41.dev0-py2.7.egg
+Extracting datmo-0.0.41.dev0-py2.7.egg to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages
+Adding datmo 0.0.41.dev0 to easy-install.pth file
+Installing datmo script to /home/travis/virtualenv/python2.7.15/bin
+
+Installed /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/datmo-0.0.41.dev0-py2.7.egg
+Processing dependencies for datmo==0.0.41.dev0
+Searching for numpy==1.15.4
+Reading https://pypi.org/simple/numpy/
+Downloading https://files.pythonhosted.org/packages/de/37/fe7db552f4507f379d81dcb78e58e05030a8941757b1f664517d581b5553/numpy-1.15.4-cp27-cp27mu-manylinux1_x86_64.whl#sha256=0df89ca13c25eaa1621a3f09af4c8ba20da849692dcae184cb55e80952c453fb
+Best match: numpy 1.15.4
+Processing numpy-1.15.4-cp27-cp27mu-manylinux1_x86_64.whl
+Installing numpy-1.15.4-cp27-cp27mu-manylinux1_x86_64.whl to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages
+Adding numpy 1.15.4 to easy-install.pth file
+Installing f2py script to /home/travis/virtualenv/python2.7.15/bin
+
+Installed /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/numpy-1.15.4-py2.7-linux-x86_64.egg
+Searching for celery==4.2.1
+Reading https://pypi.org/simple/celery/
+Downloading https://files.pythonhosted.org/packages/e8/58/2a0b1067ab2c12131b5c089dfc579467c76402475c5231095e36a43b749c/celery-4.2.1-py2.py3-none-any.whl#sha256=ad7a7411772b80a4d6c64f2f7f723200e39fb66cf614a7fdfab76d345acc7b13
+Best match: celery 4.2.1
+Processing celery-4.2.1-py2.py3-none-any.whl
+Installing celery-4.2.1-py2.py3-none-any.whl to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages
+writing requirements to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/celery-4.2.1-py2.7.egg/EGG-INFO/requires.txt
+Adding celery 4.2.1 to easy-install.pth file
+Installing celery script to /home/travis/virtualenv/python2.7.15/bin
+
+Installed /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/celery-4.2.1-py2.7.egg
+Searching for jsonschema==2.6.0
+Reading https://pypi.org/simple/jsonschema/
+Downloading https://files.pythonhosted.org/packages/77/de/47e35a97b2b05c2fadbec67d44cfcdcd09b8086951b331d82de90d2912da/jsonschema-2.6.0-py2.py3-none-any.whl#sha256=000e68abd33c972a5248544925a0cae7d1125f9bf6c58280d37546b946769a08
+Best match: jsonschema 2.6.0
+Processing jsonschema-2.6.0-py2.py3-none-any.whl
+Installing jsonschema-2.6.0-py2.py3-none-any.whl to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages
+writing requirements to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/jsonschema-2.6.0-py2.7.egg/EGG-INFO/requires.txt
+Adding jsonschema 2.6.0 to easy-install.pth file
+Installing jsonschema script to /home/travis/virtualenv/python2.7.15/bin
+
+Installed /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/jsonschema-2.6.0-py2.7.egg
+Searching for plotly==3.3.0
+Reading https://pypi.org/simple/plotly/
+Downloading https://files.pythonhosted.org/packages/d6/3b/abec247e24e2b8f29793811788fe0607062f40eefe3104823ad57f06ecf1/plotly-3.3.0-py2.py3-none-any.whl#sha256=501acfdad7e6c3507538fdfaf0c5bd32838adb4bf40f36c411d7d536dbd48311
+Best match: plotly 3.3.0
+Processing plotly-3.3.0-py2.py3-none-any.whl
+Installing plotly-3.3.0-py2.py3-none-any.whl to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages
+writing requirements to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/plotly-3.3.0-py2.7.egg/EGG-INFO/requires.txt
+Adding plotly 3.3.0 to easy-install.pth file
+
+Installed /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/plotly-3.3.0-py2.7.egg
+Searching for requests>=2.20.0
+Reading https://pypi.org/simple/requests/
+Downloading https://files.pythonhosted.org/packages/45/1e/0c169c6a5381e241ba7404532c16a21d86ab872c9bed8bdcd4c423954103/requests-2.24.0-py2.py3-none-any.whl#sha256=fe75cc94a9443b9246fc7049224f75604b113c36acb93f87b80ed42c44cbb898
+Best match: requests 2.24.0
+Processing requests-2.24.0-py2.py3-none-any.whl
+Installing requests-2.24.0-py2.py3-none-any.whl to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages
+writing requirements to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/requests-2.24.0-py2.7.egg/EGG-INFO/requires.txt
+Adding requests 2.24.0 to easy-install.pth file
+
+Installed /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/requests-2.24.0-py2.7.egg
+Searching for urllib3==1.24.2
+Reading https://pypi.org/simple/urllib3/
+Downloading https://files.pythonhosted.org/packages/df/1c/59cca3abf96f991f2ec3131a4ffe72ae3d9ea1f5894abe8a9c5e3c77cfee/urllib3-1.24.2-py2.py3-none-any.whl#sha256=4c291ca23bbb55c76518905869ef34bdd5f0e46af7afe6861e8375643ffee1a0
+Best match: urllib3 1.24.2
+Processing urllib3-1.24.2-py2.py3-none-any.whl
+Installing urllib3-1.24.2-py2.py3-none-any.whl to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages
+writing requirements to /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/urllib3-1.24.2-py2.7.egg/EGG-INFO/requires.txt
+Adding urllib3 1.24.2 to easy-install.pth file
+
+Installed /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/urllib3-1.24.2-py2.7.egg
+Searching for itsdangerous>=0.24
+Reading https://pypi.org/simple/itsdangerous/
+Downloading https://files.pythonhosted.org/packages/b9/1d/761dff1a3196140089c395e9702bbee8fde56d58be05a69639243d9981fe/itsdangerous-2.0.0a1.tar.gz#sha256=1f08ac48fe58cb99a1f58add0c90924b4267398bbd1640268d26a29f6a03eaa4
+Best match: itsdangerous 2.0.0a1
+Processing itsdangerous-2.0.0a1.tar.gz
+Writing /tmp/easy_install-T_LBou/itsdangerous-2.0.0a1/setup.cfg
+Running itsdangerous-2.0.0a1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-T_LBou/itsdangerous-2.0.0a1/egg-dist-tmp-tU08gW
+Traceback (most recent call last):
+  File "setup.py", line 56, in <module>
+    include_package_data=True,
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/__init__.py", line 145, in setup
+    return distutils.core.setup(**attrs)
+  File "/opt/python/2.7.15/lib/python2.7/distutils/core.py", line 151, in setup
+    dist.run_commands()
+  File "/opt/python/2.7.15/lib/python2.7/distutils/dist.py", line 953, in run_commands
+    self.run_command(cmd)
+  File "/opt/python/2.7.15/lib/python2.7/distutils/dist.py", line 972, in run_command
+    cmd_obj.run()
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/install.py", line 67, in run
+    self.do_egg_install()
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/install.py", line 117, in do_egg_install
+    cmd.run()
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 418, in run
+    self.easy_install(spec, not self.no_deps)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 660, in easy_install
+    return self.install_item(None, spec, tmpdir, deps, True)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 707, in install_item
+    self.process_distribution(spec, dist, deps)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 752, in process_distribution
+    [requirement], self.local_index, self.easy_install
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/pkg_resources/__init__.py", line 782, in resolve
+    replace_conflicting=replace_conflicting
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/pkg_resources/__init__.py", line 1065, in best_match
+    return self.obtain(req, installer)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/pkg_resources/__init__.py", line 1077, in obtain
+    return installer(requirement)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 679, in easy_install
+    return self.install_item(spec, dist.location, tmpdir, deps)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 705, in install_item
+    dists = self.install_eggs(spec, download, tmpdir)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 890, in install_eggs
+    return self.build_and_install(setup_script, setup_base)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 1158, in build_and_install
+    self.run_setup(setup_script, setup_base, args)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/command/easy_install.py", line 1144, in run_setup
+    run_setup(setup_script, args)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 253, in run_setup
+    raise
+  File "/opt/python/2.7.15/lib/python2.7/contextlib.py", line 35, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 195, in setup_context
+    yield
+  File "/opt/python/2.7.15/lib/python2.7/contextlib.py", line 35, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 166, in save_modules
+    saved_exc.resume()
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 141, in resume
+    six.reraise(type, exc, self._tb)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 154, in save_modules
+    yield saved
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 195, in setup_context
+    yield
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 250, in run_setup
+    _execfile(setup_script, ns)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/sandbox.py", line 45, in _execfile
+    exec(code, globals, locals)
+  File "/tmp/easy_install-T_LBou/itsdangerous-2.0.0a1/setup.py", line 3, in <module>
+    
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/__init__.py", line 145, in setup
+    return distutils.core.setup(**attrs)
+  File "/opt/python/2.7.15/lib/python2.7/distutils/core.py", line 124, in setup
+    dist.parse_config_files()
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/dist.py", line 705, in parse_config_files
+    ignore_option_errors=ignore_option_errors)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/config.py", line 120, in parse_configuration
+    meta.parse()
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/config.py", line 425, in parse
+    section_parser_method(section_options)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/config.py", line 398, in parse_section
+    self[name] = value
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/config.py", line 183, in __setitem__
+    value = parser(value)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/config.py", line 513, in _parse_version
+    version = self._parse_attr(value, self.package_dir)
+  File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/setuptools/config.py", line 348, in _parse_attr
+    module = import_module(module_name)
+  File "/opt/python/2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/tmp/easy_install-T_LBou/itsdangerous-2.0.0a1/src/itsdangerous/__init__.py", line 2, in <module>
+  File "/tmp/easy_install-T_LBou/itsdangerous-2.0.0a1/src/itsdangerous/encoding.py", line 37
+    _base64_alphabet = f"{string.ascii_letters}{string.digits}-_=".encode("ascii")
+                                                                 ^
+SyntaxError: invalid syntax
+travis_time:end:17cca1fa:start=1594131305090682366,finish=1594131314119903851,duration=9029221485,event=install[0K[31;1mThe command "python setup.py install" failed and exited with 1 during .[0m
+
+Your build has been stopped.

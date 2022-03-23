@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+222328993,edc2a99d321f21701bd8ed6955a81b3f27965d0f,PassedToFailed,passed,225,https://github.com/IBM/MAX-Image-Resolution-Enhancer/pull/44
+222055819,b90e37771d6e58b50aad868f0255cfa964c0cdaf,PassedToFailed,failed,598,https://github.com/IBM/MAX-Image-Resolution-Enhancer/pull/44
+221869077,f98f1330d5260a49d17626d1dfb3fed244342647,FailedToPassed,failed,630,https://github.com/IBM/MAX-Image-Resolution-Enhancer/compare/5885fc3bab486d56ea1a47bc1e7b5fed16a47e12...edc2a99d321f21701bd8ed6955a81b3f27965d0f
+221710363,edc2a99d321f21701bd8ed6955a81b3f27965d0f,FailedToPassed,passed,272,https://github.com/IBM/MAX-Image-Resolution-Enhancer/compare/5885fc3bab486d56ea1a47bc1e7b5fed16a47e12...edc2a99d321f21701bd8ed6955a81b3f27965d0f

@@ -1,0 +1,9 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+440914894,846b473c136d0ec6a8982a365cfe54ed087776fb,ErroredToPassed,errored,236,https://github.com/indix/whatthelang/compare/1.0.1
+297534991,d30874c00beb23c7a5da0cf8ab1eabb0238183fd,ErroredToPassed,passed,439,https://github.com/indix/whatthelang/compare/1.0.1
+296797615,88e6fbb7b78d1affbbfe4ee24d27e481d5573782,PassedToFailed,passed,357,https://github.com/indix/whatthelang/pull/5
+296758808,d89bd6490a1c7ee821802da223cdf393de79c112,PassedToFailed,failed,411,https://github.com/indix/whatthelang/pull/5
+296737850,3ddf6d2ec40ece0b5a623b460fd513c68758bc89,FailedToPassed,failed,337,https://github.com/indix/whatthelang/compare/0e61770abbe6...24ac73d1aecb
+296112637,24ac73d1aecb8b6d59a4986da8379c1ad7fc3d00,FailedToPassed,passed,92,https://github.com/indix/whatthelang/compare/0e61770abbe6...24ac73d1aecb
+296099021,9fb1bc2205b03ecd124d3e76a2c3dc05edd38f20,PassedToErrored,passed,140,https://github.com/indix/whatthelang/pull/2
+296095937,44a5b9bf414c71b5bf334174feb11ab0e30a627b,PassedToErrored,errored,269,https://github.com/indix/whatthelang/pull/2

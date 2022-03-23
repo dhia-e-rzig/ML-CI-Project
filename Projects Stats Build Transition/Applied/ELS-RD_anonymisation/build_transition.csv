@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+186304331,1775ffd05b9b979d551902ffc2439968157e7b5c,FailedToPassed,failed,310,https://github.com/ELS-RD/anonymisation/compare/78b8bd12a09a...8d7ebb64a162
+186299926,8d7ebb64a1623714f5cd16055fd1ffbef1a674c2,FailedToPassed,passed,268,https://github.com/ELS-RD/anonymisation/compare/78b8bd12a09a...8d7ebb64a162
+186299926,8d7ebb64a1623714f5cd16055fd1ffbef1a674c2,PassedToFailed,passed,268,https://github.com/ELS-RD/anonymisation/commit/aa1d8f342b42
+186258661,aa1d8f342b428f032a7ca06dfaeea9dc315e7784,PassedToFailed,failed,264,https://github.com/ELS-RD/anonymisation/commit/aa1d8f342b42
+186258661,aa1d8f342b428f032a7ca06dfaeea9dc315e7784,FailedToPassed,failed,264,https://github.com/ELS-RD/anonymisation/compare/4d6b188c81be...78b8bd12a09a
+175618407,78b8bd12a09ab1b2575c349da73eed10d6a35575,FailedToPassed,passed,266,https://github.com/ELS-RD/anonymisation/compare/4d6b188c81be...78b8bd12a09a
+175395168,0dab38d86b1261ec0ac9d6ccb6ea0e7a1cc039a3,PassedToFailed,passed,244,https://github.com/ELS-RD/anonymisation/compare/dc6961ef8049...0eae37e48b61
+172991801,0eae37e48b61017ce6dee8cc8a534f62fe6fc8b5,PassedToFailed,failed,231,https://github.com/ELS-RD/anonymisation/compare/dc6961ef8049...0eae37e48b61
+172991801,0eae37e48b61017ce6dee8cc8a534f62fe6fc8b5,FailedToPassed,failed,231,https://github.com/ELS-RD/anonymisation/compare/3af8af0e6f51...dc6961ef8049
+163730395,dc6961ef8049b34ca2988c3dd06cb34e294e865a,FailedToPassed,passed,200,https://github.com/ELS-RD/anonymisation/compare/3af8af0e6f51...dc6961ef8049
+119307523,8554655b40b41ac81bd04a2cf705d809b6c2166f,PassedToFailed,passed,79,https://github.com/ELS-RD/anonymisation/compare/a7843d1d6d9b...e2ba9c362c91
+119255643,e2ba9c362c91fa3b13d30d836d29ae3b5c889b5f,PassedToFailed,failed,81,https://github.com/ELS-RD/anonymisation/compare/a7843d1d6d9b...e2ba9c362c91
+119255643,e2ba9c362c91fa3b13d30d836d29ae3b5c889b5f,FailedToPassed,failed,81,https://github.com/ELS-RD/anonymisation/compare/717161c05030...a7843d1d6d9b
+119198380,a7843d1d6d9bc3d8c3410b0ef70d481d6c924f47,FailedToPassed,passed,88,https://github.com/ELS-RD/anonymisation/compare/717161c05030...a7843d1d6d9b

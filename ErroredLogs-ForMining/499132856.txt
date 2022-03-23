@@ -1,0 +1,678 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 36a5106a-c083-4625-9ba9-64e71099e627@1.production-1-worker-org-gce-jf8n
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: travis-job-40221741-a463-47c2-b5bd-767f26ac79ee travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.110153739s
+travis_fold:end:worker_info[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 499132854
+Job id: 499132856
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: f47f1c515
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+
+travis_fold:start:git.checkout[0Ktravis_time:start:0e007ad8[0K$ git clone --depth=50 --branch=dev https://github.com/HunterMcGushion/hyperparameter_hunter.git HunterMcGushion/hyperparameter_hunter
+Cloning into 'HunterMcGushion/hyperparameter_hunter'...
+remote: Enumerating objects: 1008, done.[K
+remote: Counting objects:   0% (1/1008)   [Kremote: Counting objects:   1% (11/1008)   [Kremote: Counting objects:   2% (21/1008)   [Kremote: Counting objects:   3% (31/1008)   [Kremote: Counting objects:   4% (41/1008)   [Kremote: Counting objects:   5% (51/1008)   [Kremote: Counting objects:   6% (61/1008)   [Kremote: Counting objects:   7% (71/1008)   [Kremote: Counting objects:   8% (81/1008)   [Kremote: Counting objects:   9% (91/1008)   [Kremote: Counting objects:  10% (101/1008)   [Kremote: Counting objects:  11% (111/1008)   [Kremote: Counting objects:  12% (121/1008)   [Kremote: Counting objects:  13% (132/1008)   [Kremote: Counting objects:  14% (142/1008)   [Kremote: Counting objects:  15% (152/1008)   [Kremote: Counting objects:  16% (162/1008)   [Kremote: Counting objects:  17% (172/1008)   [Kremote: Counting objects:  18% (182/1008)   [Kremote: Counting objects:  19% (192/1008)   [Kremote: Counting objects:  20% (202/1008)   [Kremote: Counting objects:  21% (212/1008)   [Kremote: Counting objects:  22% (222/1008)   [Kremote: Counting objects:  23% (232/1008)   [Kremote: Counting objects:  24% (242/1008)   [Kremote: Counting objects:  25% (252/1008)   [Kremote: Counting objects:  26% (263/1008)   [Kremote: Counting objects:  27% (273/1008)   [Kremote: Counting objects:  28% (283/1008)   [Kremote: Counting objects:  29% (293/1008)   [Kremote: Counting objects:  30% (303/1008)   [Kremote: Counting objects:  31% (313/1008)   [Kremote: Counting objects:  32% (323/1008)   [Kremote: Counting objects:  33% (333/1008)   [Kremote: Counting objects:  34% (343/1008)   [Kremote: Counting objects:  35% (353/1008)   [Kremote: Counting objects:  36% (363/1008)   [Kremote: Counting objects:  37% (373/1008)   [Kremote: Counting objects:  38% (384/1008)   [Kremote: Counting objects:  39% (394/1008)   [Kremote: Counting objects:  40% (404/1008)   [Kremote: Counting objects:  41% (414/1008)   [Kremote: Counting objects:  42% (424/1008)   [Kremote: Counting objects:  43% (434/1008)   [Kremote: Counting objects:  44% (444/1008)   [Kremote: Counting objects:  45% (454/1008)   [Kremote: Counting objects:  46% (464/1008)   [Kremote: Counting objects:  47% (474/1008)   [Kremote: Counting objects:  48% (484/1008)   [Kremote: Counting objects:  49% (494/1008)   [Kremote: Counting objects:  50% (504/1008)   [Kremote: Counting objects:  51% (515/1008)   [Kremote: Counting objects:  52% (525/1008)   [Kremote: Counting objects:  53% (535/1008)   [Kremote: Counting objects:  54% (545/1008)   [Kremote: Counting objects:  55% (555/1008)   [Kremote: Counting objects:  56% (565/1008)   [Kremote: Counting objects:  57% (575/1008)   [Kremote: Counting objects:  58% (585/1008)   [Kremote: Counting objects:  59% (595/1008)   [Kremote: Counting objects:  60% (605/1008)   [Kremote: Counting objects:  61% (615/1008)   [Kremote: Counting objects:  62% (625/1008)   [Kremote: Counting objects:  63% (636/1008)   [Kremote: Counting objects:  64% (646/1008)   [Kremote: Counting objects:  65% (656/1008)   [Kremote: Counting objects:  66% (666/1008)   [Kremote: Counting objects:  67% (676/1008)   [Kremote: Counting objects:  68% (686/1008)   [Kremote: Counting objects:  69% (696/1008)   [Kremote: Counting objects:  70% (706/1008)   [Kremote: Counting objects:  71% (716/1008)   [Kremote: Counting objects:  72% (726/1008)   [Kremote: Counting objects:  73% (736/1008)   [Kremote: Counting objects:  74% (746/1008)   [Kremote: Counting objects:  75% (756/1008)   [Kremote: Counting objects:  76% (767/1008)   [Kremote: Counting objects:  77% (777/1008)   [Kremote: Counting objects:  78% (787/1008)   [Kremote: Counting objects:  79% (797/1008)   [Kremote: Counting objects:  80% (807/1008)   [Kremote: Counting objects:  81% (817/1008)   [Kremote: Counting objects:  82% (827/1008)   [Kremote: Counting objects:  83% (837/1008)   [Kremote: Counting objects:  84% (847/1008)   [Kremote: Counting objects:  85% (857/1008)   [Kremote: Counting objects:  86% (867/1008)   [Kremote: Counting objects:  87% (877/1008)   [Kremote: Counting objects:  88% (888/1008)   [Kremote: Counting objects:  89% (898/1008)   [Kremote: Counting objects:  90% (908/1008)   [Kremote: Counting objects:  91% (918/1008)   [Kremote: Counting objects:  92% (928/1008)   [Kremote: Counting objects:  93% (938/1008)   [Kremote: Counting objects:  94% (948/1008)   [Kremote: Counting objects:  95% (958/1008)   [Kremote: Counting objects:  96% (968/1008)   [Kremote: Counting objects:  97% (978/1008)   [Kremote: Counting objects:  98% (988/1008)   [Kremote: Counting objects:  99% (998/1008)   [Kremote: Counting objects: 100% (1008/1008)   [Kremote: Counting objects: 100% (1008/1008), done.[K
+remote: Compressing objects:   0% (1/444)   [Kremote: Compressing objects:   1% (5/444)   [Kremote: Compressing objects:   2% (9/444)   [Kremote: Compressing objects:   3% (14/444)   [Kremote: Compressing objects:   4% (18/444)   [Kremote: Compressing objects:   5% (23/444)   [Kremote: Compressing objects:   6% (27/444)   [Kremote: Compressing objects:   7% (32/444)   [Kremote: Compressing objects:   8% (36/444)   [Kremote: Compressing objects:   9% (40/444)   [Kremote: Compressing objects:  10% (45/444)   [Kremote: Compressing objects:  11% (49/444)   [Kremote: Compressing objects:  12% (54/444)   [Kremote: Compressing objects:  13% (58/444)   [Kremote: Compressing objects:  14% (63/444)   [Kremote: Compressing objects:  15% (67/444)   [Kremote: Compressing objects:  16% (72/444)   [Kremote: Compressing objects:  17% (76/444)   [Kremote: Compressing objects:  18% (80/444)   [Kremote: Compressing objects:  19% (85/444)   [Kremote: Compressing objects:  20% (89/444)   [Kremote: Compressing objects:  21% (94/444)   [Kremote: Compressing objects:  22% (98/444)   [Kremote: Compressing objects:  23% (103/444)   [Kremote: Compressing objects:  24% (107/444)   [Kremote: Compressing objects:  25% (111/444)   [Kremote: Compressing objects:  26% (116/444)   [Kremote: Compressing objects:  27% (120/444)   [Kremote: Compressing objects:  28% (125/444)   [Kremote: Compressing objects:  29% (129/444)   [Kremote: Compressing objects:  30% (134/444)   [Kremote: Compressing objects:  31% (138/444)   [Kremote: Compressing objects:  32% (143/444)   [Kremote: Compressing objects:  33% (147/444)   [Kremote: Compressing objects:  34% (151/444)   [Kremote: Compressing objects:  35% (156/444)   [Kremote: Compressing objects:  36% (160/444)   [Kremote: Compressing objects:  37% (165/444)   [Kremote: Compressing objects:  38% (169/444)   [Kremote: Compressing objects:  39% (174/444)   [Kremote: Compressing objects:  40% (178/444)   [Kremote: Compressing objects:  41% (183/444)   [Kremote: Compressing objects:  42% (187/444)   [Kremote: Compressing objects:  43% (191/444)   [Kremote: Compressing objects:  44% (196/444)   [Kremote: Compressing objects:  45% (200/444)   [Kremote: Compressing objects:  46% (205/444)   [Kremote: Compressing objects:  47% (209/444)   [Kremote: Compressing objects:  48% (214/444)   [Kremote: Compressing objects:  49% (218/444)   [Kremote: Compressing objects:  50% (222/444)   [Kremote: Compressing objects:  51% (227/444)   [Kremote: Compressing objects:  52% (231/444)   [Kremote: Compressing objects:  53% (236/444)   [Kremote: Compressing objects:  54% (240/444)   [Kremote: Compressing objects:  55% (245/444)   [Kremote: Compressing objects:  56% (249/444)   [Kremote: Compressing objects:  57% (254/444)   [Kremote: Compressing objects:  58% (258/444)   [Kremote: Compressing objects:  59% (262/444)   [Kremote: Compressing objects:  60% (267/444)   [Kremote: Compressing objects:  61% (271/444)   [Kremote: Compressing objects:  62% (276/444)   [Kremote: Compressing objects:  63% (280/444)   [Kremote: Compressing objects:  64% (285/444)   [Kremote: Compressing objects:  65% (289/444)   [Kremote: Compressing objects:  66% (294/444)   [Kremote: Compressing objects:  67% (298/444)   [Kremote: Compressing objects:  68% (302/444)   [Kremote: Compressing objects:  69% (307/444)   [Kremote: Compressing objects:  70% (311/444)   [Kremote: Compressing objects:  71% (316/444)   [Kremote: Compressing objects:  72% (320/444)   [Kremote: Compressing objects:  73% (325/444)   [Kremote: Compressing objects:  74% (329/444)   [Kremote: Compressing objects:  75% (333/444)   [Kremote: Compressing objects:  76% (338/444)   [Kremote: Compressing objects:  77% (342/444)   [Kremote: Compressing objects:  78% (347/444)   [Kremote: Compressing objects:  79% (351/444)   [Kremote: Compressing objects:  80% (356/444)   [Kremote: Compressing objects:  81% (360/444)   [Kremote: Compressing objects:  82% (365/444)   [Kremote: Compressing objects:  83% (369/444)   [Kremote: Compressing objects:  84% (373/444)   [Kremote: Compressing objects:  85% (378/444)   [Kremote: Compressing objects:  86% (382/444)   [Kremote: Compressing objects:  87% (387/444)   [Kremote: Compressing objects:  88% (391/444)   [Kremote: Compressing objects:  89% (396/444)   [Kremote: Compressing objects:  90% (400/444)   [Kremote: Compressing objects:  91% (405/444)   [Kremote: Compressing objects:  92% (409/444)   [Kremote: Compressing objects:  93% (413/444)   [Kremote: Compressing objects:  94% (418/444)   [Kremote: Compressing objects:  95% (422/444)   [Kremote: Compressing objects:  96% (427/444)   [Kremote: Compressing objects:  97% (431/444)   [Kremote: Compressing objects:  98% (436/444)   [Kremote: Compressing objects:  99% (440/444)   [Kremote: Compressing objects: 100% (444/444)   [Kremote: Compressing objects: 100% (444/444), done.[K
+Receiving objects:   0% (1/1008)   Receiving objects:   1% (11/1008)   Receiving objects:   2% (21/1008)   Receiving objects:   3% (31/1008)   Receiving objects:   4% (41/1008)   Receiving objects:   5% (51/1008)   Receiving objects:   6% (61/1008)   Receiving objects:   7% (71/1008)   Receiving objects:   8% (81/1008)   Receiving objects:   9% (91/1008)   Receiving objects:  10% (101/1008)   Receiving objects:  11% (111/1008)   Receiving objects:  12% (121/1008)   Receiving objects:  13% (132/1008)   Receiving objects:  14% (142/1008)   Receiving objects:  15% (152/1008)   Receiving objects:  16% (162/1008)   Receiving objects:  17% (172/1008)   Receiving objects:  18% (182/1008)   Receiving objects:  19% (192/1008)   Receiving objects:  20% (202/1008)   Receiving objects:  21% (212/1008)   Receiving objects:  22% (222/1008)   Receiving objects:  23% (232/1008)   Receiving objects:  24% (242/1008)   Receiving objects:  25% (252/1008)   Receiving objects:  26% (263/1008)   Receiving objects:  27% (273/1008)   Receiving objects:  28% (283/1008)   Receiving objects:  29% (293/1008)   Receiving objects:  30% (303/1008)   Receiving objects:  31% (313/1008)   Receiving objects:  32% (323/1008)   Receiving objects:  33% (333/1008)   Receiving objects:  34% (343/1008)   Receiving objects:  35% (353/1008)   Receiving objects:  36% (363/1008)   Receiving objects:  37% (373/1008)   Receiving objects:  38% (384/1008)   Receiving objects:  39% (394/1008)   Receiving objects:  40% (404/1008)   Receiving objects:  41% (414/1008)   Receiving objects:  42% (424/1008)   Receiving objects:  43% (434/1008)   Receiving objects:  44% (444/1008)   Receiving objects:  45% (454/1008)   Receiving objects:  46% (464/1008)   Receiving objects:  47% (474/1008)   Receiving objects:  48% (484/1008)   Receiving objects:  49% (494/1008)   Receiving objects:  50% (504/1008)   Receiving objects:  51% (515/1008)   Receiving objects:  52% (525/1008)   Receiving objects:  53% (535/1008)   Receiving objects:  54% (545/1008)   Receiving objects:  55% (555/1008)   Receiving objects:  56% (565/1008)   Receiving objects:  57% (575/1008)   Receiving objects:  58% (585/1008)   Receiving objects:  59% (595/1008)   Receiving objects:  60% (605/1008)   Receiving objects:  61% (615/1008)   Receiving objects:  62% (625/1008)   Receiving objects:  63% (636/1008)   Receiving objects:  64% (646/1008)   Receiving objects:  65% (656/1008)   Receiving objects:  66% (666/1008)   Receiving objects:  67% (676/1008)   Receiving objects:  68% (686/1008)   Receiving objects:  69% (696/1008)   Receiving objects:  70% (706/1008)   Receiving objects:  71% (716/1008)   Receiving objects:  72% (726/1008)   Receiving objects:  73% (736/1008)   Receiving objects:  74% (746/1008)   Receiving objects:  75% (756/1008)   Receiving objects:  76% (767/1008)   remote: Total 1008 (delta 680), reused 801 (delta 557), pack-reused 0[K
+Receiving objects:  77% (777/1008)   Receiving objects:  78% (787/1008)   Receiving objects:  79% (797/1008)   Receiving objects:  80% (807/1008)   Receiving objects:  81% (817/1008)   Receiving objects:  82% (827/1008)   Receiving objects:  83% (837/1008)   Receiving objects:  84% (847/1008)   Receiving objects:  85% (857/1008)   Receiving objects:  86% (867/1008)   Receiving objects:  87% (877/1008)   Receiving objects:  88% (888/1008)   Receiving objects:  89% (898/1008)   Receiving objects:  90% (908/1008)   Receiving objects:  91% (918/1008)   Receiving objects:  92% (928/1008)   Receiving objects:  93% (938/1008)   Receiving objects:  94% (948/1008)   Receiving objects:  95% (958/1008)   Receiving objects:  96% (968/1008)   Receiving objects:  97% (978/1008)   Receiving objects:  98% (988/1008)   Receiving objects:  99% (998/1008)   Receiving objects: 100% (1008/1008)   Receiving objects: 100% (1008/1008), 4.08 MiB | 23.21 MiB/s, done.
+Resolving deltas:   0% (0/680)   Resolving deltas:  15% (108/680)   Resolving deltas:  19% (132/680)   Resolving deltas:  20% (136/680)   Resolving deltas:  21% (145/680)   Resolving deltas:  22% (152/680)   Resolving deltas:  23% (157/680)   Resolving deltas:  24% (164/680)   Resolving deltas:  26% (182/680)   Resolving deltas:  30% (207/680)   Resolving deltas:  37% (258/680)   Resolving deltas:  38% (264/680)   Resolving deltas:  39% (270/680)   Resolving deltas:  40% (278/680)   Resolving deltas:  41% (285/680)   Resolving deltas:  43% (299/680)   Resolving deltas:  44% (302/680)   Resolving deltas:  46% (313/680)   Resolving deltas:  47% (321/680)   Resolving deltas:  48% (327/680)   Resolving deltas:  49% (336/680)   Resolving deltas:  50% (344/680)   Resolving deltas:  51% (350/680)   Resolving deltas:  52% (356/680)   Resolving deltas:  53% (362/680)   Resolving deltas:  54% (371/680)   Resolving deltas:  62% (422/680)   Resolving deltas:  63% (431/680)   Resolving deltas:  64% (437/680)   Resolving deltas:  65% (443/680)   Resolving deltas:  67% (461/680)   Resolving deltas:  68% (464/680)   Resolving deltas:  69% (471/680)   Resolving deltas:  70% (480/680)   Resolving deltas:  71% (487/680)   Resolving deltas:  72% (491/680)   Resolving deltas:  74% (507/680)   Resolving deltas:  77% (524/680)   Resolving deltas:  78% (535/680)   Resolving deltas:  79% (543/680)   Resolving deltas:  80% (545/680)   Resolving deltas:  81% (553/680)   Resolving deltas:  83% (567/680)   Resolving deltas:  84% (573/680)   Resolving deltas:  85% (578/680)   Resolving deltas:  86% (585/680)   Resolving deltas:  87% (597/680)   Resolving deltas:  88% (600/680)   Resolving deltas:  89% (611/680)   Resolving deltas:  90% (614/680)   Resolving deltas:  91% (619/680)   Resolving deltas:  92% (629/680)   Resolving deltas:  95% (647/680)   Resolving deltas:  96% (655/680)   Resolving deltas:  97% (661/680)   Resolving deltas:  98% (667/680)   Resolving deltas:  99% (676/680)   Resolving deltas: 100% (680/680)   Resolving deltas: 100% (680/680), done.
+travis_time:end:0e007ad8:start=1551254000534348607,finish=1551254001392644435,duration=858295828[0K$ cd HunterMcGushion/hyperparameter_hunter
+$ git checkout -qf 734e3e84beeee471968752f3e006bba2e25dae19
+travis_fold:end:git.checkout[0K
+travis_time:start:1f7caf78[0K$ source ~/virtualenv/python3.6/bin/activate
+travis_time:end:1f7caf78:start=1551254001428863978,finish=1551254001435487396,duration=6623418[0K$ python --version
+Python 3.6.3
+$ pip --version
+pip 9.0.1 from /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (python 3.6)
+travis_fold:start:install.1[0Ktravis_time:start:06e8f436[0K$ pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/d8/f3/413bab4ff08e1fc4828dfc59996d721917df8e8583ea85385d51125dceff/pip-19.0.3-py2.py3-none-any.whl (1.4MB)
+[?25l[K    0% |▎                               | 10kB 29.3MB/s eta 0:00:01[K    1% |▌                               | 20kB 2.2MB/s eta 0:00:01[K    2% |▊                               | 30kB 3.1MB/s eta 0:00:01[K    3% |█                               | 40kB 2.1MB/s eta 0:00:01[K    3% |█▏                              | 51kB 2.6MB/s eta 0:00:01[K    4% |█▌                              | 61kB 3.0MB/s eta 0:00:01[K    5% |█▊                              | 71kB 3.5MB/s eta 0:00:01[K    6% |██                              | 81kB 3.9MB/s eta 0:00:01[K    6% |██▏                             | 92kB 4.3MB/s eta 0:00:01[K    7% |██▍                             | 102kB 3.4MB/s eta 0:00:01[K    8% |██▋                             | 112kB 3.4MB/s eta 0:00:01[K    9% |███                             | 122kB 4.7MB/s eta 0:00:01[K    9% |███▏                            | 133kB 4.8MB/s eta 0:00:01[K    10% |███▍                            | 143kB 8.5MB/s eta 0:00:01[K    11% |███▋                            | 153kB 8.5MB/s eta 0:00:01[K    12% |███▉                            | 163kB 8.4MB/s eta 0:00:01[K    12% |████▏                           | 174kB 8.4MB/s eta 0:00:01[K    13% |████▍                           | 184kB 8.4MB/s eta 0:00:01[K    14% |████▋                           | 194kB 8.4MB/s eta 0:00:01[K    15% |████▉                           | 204kB 27.6MB/s eta 0:00:01[K    15% |█████                           | 215kB 9.8MB/s eta 0:00:01[K    16% |█████▎                          | 225kB 9.8MB/s eta 0:00:01[K    17% |█████▋                          | 235kB 9.7MB/s eta 0:00:01[K    18% |█████▉                          | 245kB 9.8MB/s eta 0:00:01[K    18% |██████                          | 256kB 9.8MB/s eta 0:00:01[K    19% |██████▎                         | 266kB 9.8MB/s eta 0:00:01[K    20% |██████▌                         | 276kB 9.8MB/s eta 0:00:01[K    21% |██████▉                         | 286kB 9.8MB/s eta 0:00:01[K    21% |███████                         | 296kB 9.8MB/s eta 0:00:01[K    22% |███████▎                        | 307kB 9.8MB/s eta 0:00:01[K    23% |███████▌                        | 317kB 27.6MB/s eta 0:00:01[K    24% |███████▊                        | 327kB 27.1MB/s eta 0:00:01[K    24% |████████                        | 337kB 28.1MB/s eta 0:00:01[K    25% |████████▎                       | 348kB 27.9MB/s eta 0:00:01[K    26% |████████▌                       | 358kB 28.2MB/s eta 0:00:01[K    27% |████████▊                       | 368kB 27.6MB/s eta 0:00:01[K    27% |█████████                       | 378kB 27.9MB/s eta 0:00:01[K    28% |█████████▏                      | 389kB 27.9MB/s eta 0:00:01[K    29% |█████████▍                      | 399kB 28.4MB/s eta 0:00:01[K    30% |█████████▊                      | 409kB 28.2MB/s eta 0:00:01[K    31% |██████████                      | 419kB 28.4MB/s eta 0:00:01[K    31% |██████████▏                     | 430kB 15.4MB/s eta 0:00:01[K    32% |██████████▍                     | 440kB 15.3MB/s eta 0:00:01[K    33% |██████████▋                     | 450kB 15.1MB/s eta 0:00:01[K    34% |███████████                     | 460kB 14.9MB/s eta 0:00:01[K    34% |███████████▏                    | 471kB 15.1MB/s eta 0:00:01[K    35% |███████████▍                    | 481kB 14.9MB/s eta 0:00:01[K    36% |███████████▋                    | 491kB 14.9MB/s eta 0:00:01[K    37% |███████████▉                    | 501kB 15.1MB/s eta 0:00:01[K    37% |████████████                    | 512kB 14.5MB/s eta 0:00:01[K    38% |████████████▍                   | 522kB 14.9MB/s eta 0:00:01[K    39% |████████████▋                   | 532kB 27.5MB/s eta 0:00:01[K    40% |████████████▉                   | 542kB 28.2MB/s eta 0:00:01[K    40% |█████████████                   | 552kB 29.9MB/s eta 0:00:01[K    41% |█████████████▎                  | 563kB 30.8MB/s eta 0:00:01[K    42% |██���██████████▋                  | 573kB 31.1MB/s eta 0:00:01[K    43% |█████████████▉                  | 583kB 32.2MB/s eta 0:00:01[K    43% |██████████████                  | 593kB 32.4MB/s eta 0:00:01[K    44% |██████████████▎                 | 604kB 32.9MB/s eta 0:00:01[K    45% |██████████████▌                 | 614kB 36.0MB/s eta 0:00:01[K    46% |██████████████▊                 | 624kB 35.0MB/s eta 0:00:01[K    46% |███████████████                 | 634kB 34.5MB/s eta 0:00:01[K    47% |███████████████▎                | 645kB 34.6MB/s eta 0:00:01[K    48% |███████████████▌                | 655kB 33.6MB/s eta 0:00:01[K    49% |███████████████▊                | 665kB 33.8MB/s eta 0:00:01[K    49% |████████████████                | 675kB 33.1MB/s eta 0:00:01[K    50% |████████████████▏               | 686kB 33.8MB/s eta 0:00:01[K    51% |████████████████▌               | 696kB 33.6MB/s eta 0:00:01[K    52% |████████████████▊               | 706kB 33.1MB/s eta 0:00:01[K    52% |█████████████████               | 716kB 33.6MB/s eta 0:00:01[K    53% |█████████████████▏              | 727kB 33.4MB/s eta 0:00:01[K    54% |█████████████████▍              | 737kB 33.0MB/s eta 0:00:01[K    55% |█████████████████▊              | 747kB 33.9MB/s eta 0:00:01[K    55% |██████████████████              | 757kB 34.8MB/s eta 0:00:01[K    56% |██████████████████▏             | 768kB 35.0MB/s eta 0:00:01[K    57% |██████████████████▍             | 778kB 35.8MB/s eta 0:00:01[K    58% |██████████████████▋             | 788kB 34.3MB/s eta 0:00:01[K    59% |██████████████████▉             | 798kB 35.0MB/s eta 0:00:01[K    59% |███████████████████▏            | 808kB 35.9MB/s eta 0:00:01[K    60% |███████████████████▍            | 819kB 35.3MB/s eta 0:00:01[K    61% |███████████████████▋            | 829kB 35.5MB/s eta 0:00:01[K    62% |███████████████████▉            | 839kB 36.3MB/s eta 0:00:01[K    62% |████████████████████            | 849kB 35.6MB/s eta 0:00:01[K    63% |████████████████████▍           | 860kB 35.5MB/s eta 0:00:01[K    64% |████████████████████▋           | 870kB 35.7MB/s eta 0:00:01[K    65% |████████████████████▉           | 880kB 36.3MB/s eta 0:00:01[K    65% |█████████████████████           | 890kB 36.3MB/s eta 0:00:01[K    66% |█████████████████████▎          | 901kB 36.6MB/s eta 0:00:01[K    67% |█████████████████████▌          | 911kB 36.6MB/s eta 0:00:01[K    68% |█████████████████████▉          | 921kB 37.1MB/s eta 0:00:01[K    68% |██████████████████████          | 931kB 37.6MB/s eta 0:00:01[K    69% |██████████████████████▎         | 942kB 37.9MB/s eta 0:00:01[K    70% |██████████████████████▌         | 952kB 38.0MB/s eta 0:00:01[K    71% |██████████████████████▊         | 962kB 38.4MB/s eta 0:00:01[K    71% |███████████████████████         | 972kB 38.3MB/s eta 0:00:01[K    72% |███████████████████████▎        | 983kB 38.3MB/s eta 0:00:01[K    73% |███████████████████████▌        | 993kB 40.2MB/s eta 0:00:01[K    74% |███████████████████████▊        | 1.0MB 39.5MB/s eta 0:00:01[K    74% |████████████████████████        | 1.0MB 39.6MB/s eta 0:00:01[K    75% |███████████████████████���▏       | 1.0MB 40.2MB/s eta 0:00:01[K    76% |████████████████████████▌       | 1.0MB 38.9MB/s eta 0:00:01[K    77% |████████████████████████▊       | 1.0MB 38.2MB/s eta 0:00:01[K    77% |█████████████████████████       | 1.1MB 38.7MB/s eta 0:00:01[K    78% |█████████████████████████▏      | 1.1MB 38.2MB/s eta 0:00:01[K    79% |█████████████████████████▍      | 1.1MB 38.7MB/s eta 0:00:01[K    80% |█████████████████████████▋      | 1.1MB 38.2MB/s eta 0:00:01[K    80% |██████████████████████████      | 1.1MB 38.5MB/s eta 0:00:01[K    81% |██████████████████████████▏     | 1.1MB 39.1MB/s eta 0:00:01[K    82% |██████████████████████████▍     | 1.1MB 39.0MB/s eta 0:00:01[K    83% |██████████████████████████▋     | 1.1MB 38.2MB/s eta 0:00:01[K    83% |██████████████████████████▉     | 1.1MB 39.3MB/s eta 0:00:01[K    84% |███████████████████████████▏    | 1.1MB 39.8MB/s eta 0:00:01[K    85% |███████████████████████████▍    | 1.2MB 40.4MB/s eta 0:00:01[K    86% |███████████████████████████▋    | 1.2MB 40.5MB/s eta 0:00:01[K    86% |███████████████████████████▉    | 1.2MB 40.4MB/s eta 0:00:01[K    87% |████████████████████████████    | 1.2MB 41.1MB/s eta 0:00:01[K    88% |████████████████████████████▎   | 1.2MB 40.7MB/s eta 0:00:01[K    89% |████████████████████████████▋   | 1.2MB 40.8MB/s eta 0:00:01[K    90% |████████████████████████████▉   | 1.2MB 41.0MB/s eta 0:00:01[K    90% |█████████████████████████████   | 1.2MB 42.0MB/s eta 0:00:01[K    91% |█████████████████████████████▎  | 1.2MB 42.2MB/s eta 0:00:01[K    92% |█████████████████████████████▌  | 1.2MB 41.8MB/s eta 0:00:01[K    93% |█████████████████████████████▊  | 1.3MB 41.5MB/s eta 0:00:01[K    93% |██████████████████████████████  | 1.3MB 41.6MB/s eta 0:00:01[K    94% |██████████████████████████████▎ | 1.3MB 40.2MB/s eta 0:00:01[K    95% |█████████████���████████████████▌ | 1.3MB 40.3MB/s eta 0:00:01[K    96% |██████████████████████████████▊ | 1.3MB 40.3MB/s eta 0:00:01[K    96% |███████████████████████████████ | 1.3MB 40.4MB/s eta 0:00:01[K    97% |███████████████████████████████▎| 1.3MB 40.7MB/s eta 0:00:01[K    98% |███████████████████████████████▌| 1.3MB 40.9MB/s eta 0:00:01[K    99% |███████████████████████████████▊| 1.3MB 41.1MB/s eta 0:00:01[K    99% |████████████████████████████████| 1.4MB 41.7MB/s eta 0:00:01[K    100% |████████████████████████████████| 1.4MB 1.1MB/s 
+[?25hInstalling collected packages: pip
+  Found existing installation: pip 9.0.1
+    Uninstalling pip-9.0.1:
+      Successfully uninstalled pip-9.0.1
+Successfully installed pip-19.0.3
+travis_time:end:06e8f436:start=1551254002320799911,finish=1551254004325688276,duration=2004888365[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:026db5da[0K$ pip install flake8
+Collecting flake8
+[?25l  Downloading https://files.pythonhosted.org/packages/e9/76/b915bd28976068a9843bf836b789794aa4a8eb13338b23581005cd9177c0/flake8-3.7.7-py2.py3-none-any.whl (68kB)
+
+[?25hCollecting pyflakes<2.2.0,>=2.1.0 (from flake8)
+[?25l  Downloading https://files.pythonhosted.org/packages/16/3b/b6a508ad148ce1ef50bd7a9a783afbb8d775616fc4ae5e3007c8815a3c85/pyflakes-2.1.0-py2.py3-none-any.whl (62kB)
+
+[?25hCollecting pycodestyle<2.6.0,>=2.5.0 (from flake8)
+[?25l  Downloading https://files.pythonhosted.org/packages/0e/0c/04a353e104d2f324f8ee5f4b32012618c1c86dd79e52a433b64fceed511b/pycodestyle-2.5.0-py2.py3-none-any.whl (51kB)
+
+[?25hCollecting mccabe<0.7.0,>=0.6.0 (from flake8)
+  Downloading https://files.pythonhosted.org/packages/87/89/479dc97e18549e21354893e4ee4ef36db1d237534982482c3681ee6e7b57/mccabe-0.6.1-py2.py3-none-any.whl
+Collecting entrypoints<0.4.0,>=0.3.0 (from flake8)
+  Downloading https://files.pythonhosted.org/packages/ac/c6/44694103f8c221443ee6b0041f69e2740d89a25641e62fb4f2ee568f2f9c/entrypoints-0.3-py2.py3-none-any.whl
+Installing collected packages: pyflakes, pycodestyle, mccabe, entrypoints, flake8
+Successfully installed entrypoints-0.3 flake8-3.7.7 mccabe-0.6.1 pycodestyle-2.5.0 pyflakes-2.1.0
+travis_time:end:026db5da:start=1551254004329248843,finish=1551254005430279317,duration=1101030474[0Ktravis_fold:end:install.2[0Ktravis_fold:start:install.3[0Ktravis_time:start:1aaef438[0K$ pip install -r requirements.txt
+Looking in indexes: https://pypi.python.org/simple/
+Obtaining file:///home/travis/build/HunterMcGushion/hyperparameter_hunter (from -r requirements.txt (line 3))
+  Installing build dependencies ... [?25l- \ | / done
+[?25h  Getting requirements to build wheel ... [?25l- done
+[?25h    Preparing wheel metadata ... [?25l- done
+[?25hRequirement already satisfied: numpy in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (1.13.3)
+Collecting scikit-learn (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/0d/3a/b92670f5c368c20329ecc4c255993fae7934564d485c3ed7ea7b8da7f741/scikit_learn-0.20.2-cp36-cp36m-manylinux1_x86_64.whl (5.4MB)
+
+[?25hCollecting simplejson (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/e3/24/c35fb1c1c315fc0fffe61ea00d3f88e85469004713dab488dee4f35b0aff/simplejson-3.16.0.tar.gz (81kB)
+
+[?25hCollecting scikit-optimize (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/f4/44/60f82c97d1caa98752c7da2c1681cab5c7a390a0fdd3a55fac672b321cac/scikit_optimize-0.5.2-py2.py3-none-any.whl (74kB)
+
+[?25hCollecting wrapt (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/67/b2/0f71ca90b0ade7fad27e3d20327c996c6252a2ffe88f50a95bba7434eda9/wrapt-1.11.1.tar.gz
+Collecting nbconvert (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/b8/39/1e67fea74dc9577cc49f9863fe3ec824e525d1304ab6027d95a94cd586f5/nbconvert-5.4.1-py2.py3-none-any.whl (407kB)
+
+[?25hCollecting nbformat (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/da/27/9a654d2b6cc1eaa517d1c5a4405166c7f6d72f04f6e7eea41855fe808a46/nbformat-4.4.0-py2.py3-none-any.whl (155kB)
+
+[?25hCollecting dill (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/fe/42/bfe2e0857bc284cbe6a011d93f2a9ad58a22cb894461b199ae72cfef0f29/dill-0.2.9.tar.gz (150kB)
+
+[?25hCollecting scipy (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/7f/5f/c48860704092933bf1c4c1574a8de1ffd16bf4fde8bab190d747598844b2/scipy-1.2.1-cp36-cp36m-manylinux1_x86_64.whl (24.8MB)
+
+[?25hCollecting pandas (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/e6/de/a0d3defd8f338eaf53ef716e40ef6d6c277c35d50e09b586e170169cdf0d/pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl (10.1MB)
+
+[?25hCollecting black; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/2a/34/9938749f260a861cdd8427d63899e08f9a2a041159a26c2615b02828c973/black-18.9b0-py36-none-any.whl (88kB)
+
+[?25hCollecting pytest>=4.0; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/51/b2/2fa8e8b179c792c457c2f7800f1313bfbd34f515e3a833e6083121844c14/pytest-4.3.0-py2.py3-none-any.whl (219kB)
+
+[?25hCollecting xgboost; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/54/21/8b2ec99862903a6d3aed62ce156d21d114b8666e669c46d9e54041df9496/xgboost-0.81-py2.py3-none-manylinux1_x86_64.whl (16.6MB)
+
+[?25hCollecting tensorflow; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/77/63/a9fa76de8dffe7455304c4ed635be4aa9c0bacef6e0633d87d5f54530c5c/tensorflow-1.13.1-cp36-cp36m-manylinux1_x86_64.whl (92.5MB)
+
+[?25hCollecting codecov; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/8b/28/4c1950a61c3c5786f0f34d643d0d28ec832433c9a7c0bd157690d4eb1d5f/codecov-2.0.15-py2.py3-none-any.whl
+Collecting pytest-cov; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/7d/b5/92f32674ab954f80499ac73347bfeb815545ea295439c12b0ef3ac8f0975/pytest_cov-2.6.1-py2.py3-none-any.whl
+Collecting keras; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/5e/10/aa32dad071ce52b5502266b5c659451cfd6ffcbf14e6c8c4f16c0ff5aaab/Keras-2.2.4-py2.py3-none-any.whl (312kB)
+
+[?25hCollecting coveralls; extra == "travis" (from hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/8e/1e/37630b59b6144f6a3ea2b55df14f3866d1055924ade5b3b8c465c0e12334/coveralls-1.6.0-py2.py3-none-any.whl
+Collecting defusedxml (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/87/1c/17f3e3935a913dfe2a5ca85fa5ccbef366bfd82eb318b1f75dadbf0affca/defusedxml-0.5.0-py2.py3-none-any.whl
+Collecting mistune>=0.8.1 (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/09/ec/4b43dae793655b7d8a25f76119624350b4d65eb663459eb9603d7f1f0345/mistune-0.8.4-py2.py3-none-any.whl
+Collecting bleach (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/ab/05/27e1466475e816d3001efb6e0a85a819be17411420494a1e602c36f8299d/bleach-3.1.0-py2.py3-none-any.whl (157kB)
+
+[?25hCollecting pandocfilters>=1.4.1 (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/4c/ea/236e2584af67bb6df960832731a6e5325fd4441de001767da328c33368ce/pandocfilters-1.4.2.tar.gz
+Requirement already satisfied: entrypoints>=0.2.2 in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (0.3)
+Collecting pygments (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/13/e5/6d710c9cf96c31ac82657bcfb441df328b22df8564d58d0c4cd62612674c/Pygments-2.3.1-py2.py3-none-any.whl (849kB)
+
+[?25hCollecting jupyter-core (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/1d/44/065d2d7bae7bebc06f1dd70d23c36da8c50c0f08b4236716743d706762a8/jupyter_core-4.4.0-py2.py3-none-any.whl (126kB)
+
+[?25hCollecting jinja2 (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl (126kB)
+
+[?25hCollecting testpath (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/be/a4/162f9ebb6489421fe46dcca2ae420369edfee4b563c668d93cb4605d12ba/testpath-0.4.2-py2.py3-none-any.whl (163kB)
+
+[?25hCollecting traitlets>=4.2 (from nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/93/d6/abcb22de61d78e2fc3959c964628a5771e47e7cc60d53e9342e21ed6cc9a/traitlets-4.3.2-py2.py3-none-any.whl (74kB)
+
+[?25hCollecting ipython-genutils (from nbformat->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Collecting jsonschema!=2.5.0,>=2.4 (from nbformat->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/cd/e6/be1b2a6ebebdaf1f790f1e750bb720fbda0335c2a19601ea9d8bb5059f38/jsonschema-3.0.0-py2.py3-none-any.whl (54kB)
+
+[?25hCollecting pytz>=2011k (from pandas->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/61/28/1d3920e4d1d50b19bc5d24398a7cd85cc7b9a75a490570d5a30c57622d34/pytz-2018.9-py2.py3-none-any.whl (510kB)
+
+[?25hCollecting python-dateutil>=2.5.0 (from pandas->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
+
+[?25hCollecting click>=6.5 (from black; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+
+[?25hCollecting toml>=0.9.4 (from black; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Collecting appdirs (from black; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl
+Collecting attrs>=17.4.0 (from black; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/3a/e1/5f9023cc983f1a628a8c2fd051ad19e76ff7b142a0faf329336f9a62a514/attrs-18.2.0-py2.py3-none-any.whl
+Requirement already satisfied: py>=1.5.0 in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from pytest>=4.0; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (1.5.2)
+Requirement already satisfied: setuptools in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from pytest>=4.0; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (38.2.4)
+Collecting more-itertools>=4.0.0; python_version > "2.7" (from pytest>=4.0; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/ae/d4/d6bad4844831943dd667510947712750004525c5807711982f4ec390da2b/more_itertools-6.0.0-py3-none-any.whl (52kB)
+
+[?25hCollecting pluggy>=0.7 (from pytest>=4.0; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/84/e8/4ddac125b5a0e84ea6ffc93cfccf1e7ee1924e88f53c64e98227f0af2a5f/pluggy-0.9.0-py2.py3-none-any.whl
+Requirement already satisfied: six>=1.10.0 in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from pytest>=4.0; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (1.11.0)
+Collecting atomicwrites>=1.0 (from pytest>=4.0; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/52/90/6155aa926f43f2b2a22b01be7241be3bfd1ceaf7d0b3267213e8127d41f4/atomicwrites-1.3.0-py2.py3-none-any.whl
+Collecting gast>=0.2.0 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/4e/35/11749bf99b2d4e3cceb4d55ca22590b0d7c2c62b9de38ac4a4a7f4687421/gast-0.2.2.tar.gz
+Collecting keras-applications>=1.0.6 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/90/85/64c82949765cfb246bbdaf5aca2d55f400f792655927a017710a78445def/Keras_Applications-1.0.7-py2.py3-none-any.whl (51kB)
+
+[?25hCollecting keras-preprocessing>=1.0.5 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/c0/bf/0315ef6a9fd3fc2346e85b0ff1f5f83ca17073f2c31ac719ab2e4da0d4a3/Keras_Preprocessing-1.0.9-py2.py3-none-any.whl (59kB)
+
+[?25hCollecting absl-py>=0.1.6 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/31/bc/ab68120d1d89ae23b694a55fe2aece2f91194313b71f9b05a80b32d3c24b/absl-py-0.7.0.tar.gz (96kB)
+
+[?25hCollecting tensorboard<1.14.0,>=1.13.0 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/fa/7b/3ee06856ec30d5136cd2002408df1d111fcff269f3691147dbf3b8dc0ba2/tensorboard-1.13.0-py3-none-any.whl (3.2MB)
+
+[?25hCollecting astor>=0.6.0 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Collecting termcolor>=1.1.0 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting grpcio>=1.8.6 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/f4/dc/5503d89e530988eb7a1aed337dcb456ef8150f7c06132233bd9e41ec0215/grpcio-1.19.0-cp36-cp36m-manylinux1_x86_64.whl (10.8MB)
+
+[?25hCollecting protobuf>=3.6.1 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/c2/f9/28787754923612ca9bfdffc588daa05580ed70698add063a5629d1a4209d/protobuf-3.6.1-cp36-cp36m-manylinux1_x86_64.whl (1.1MB)
+
+[?25hCollecting tensorflow-estimator<1.14.0rc0,>=1.13.0 (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/bb/48/13f49fc3fa0fdf916aa1419013bb8f2ad09674c275b4046d5ee669a46873/tensorflow_estimator-1.13.0-py2.py3-none-any.whl (367kB)
+
+[?25hRequirement already satisfied: wheel>=0.26 in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (0.30.0)
+Collecting coverage (from codecov; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/a4/5c/b3eac6aa7eb4af83c8580d9c1578343910bdcc59e64e3565402f9a527f9c/coverage-4.5.2-cp36-cp36m-manylinux1_x86_64.whl (205kB)
+
+[?25hCollecting requests>=2.7.9 (from codecov; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/7d/e3/20f3d364d6c8e5d2353c72a67778eb189176f08e873c9900e10c0287b84b/requests-2.21.0-py2.py3-none-any.whl (57kB)
+
+[?25hCollecting h5py (from keras; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/30/99/d7d4fbf2d02bb30fb76179911a250074b55b852d34e98dd452a9f394ac06/h5py-2.9.0-cp36-cp36m-manylinux1_x86_64.whl (2.8MB)
+
+[?25hCollecting pyyaml (from keras; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz (270kB)
+
+[?25hCollecting docopt>=0.6.1 (from coveralls; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz
+Collecting webencodings (from bleach->nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from jinja2->nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
+Collecting decorator (from traitlets>=4.2->nbconvert->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/f1/cd/7c8240007e9716b14679bc217a1baefa4432aa30394f7e2ec40a52b1a708/decorator-4.3.2-py2.py3-none-any.whl
+Collecting pyrsistent>=0.14.0 (from jsonschema!=2.5.0,>=2.4->nbformat->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/8c/46/4e93ab8a379d7efe93f20a0fb8a27bdfe88942cc954ab0210c3164e783e0/pyrsistent-0.14.11.tar.gz (104kB)
+
+[?25hCollecting werkzeug>=0.11.15 (from tensorboard<1.14.0,>=1.13.0->tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
+
+[?25hCollecting markdown>=2.6.8 (from tensorboard<1.14.0,>=1.13.0->tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/7a/6b/5600647404ba15545ec37d2f7f58844d690baf2f81f3a60b862e48f29287/Markdown-3.0.1-py2.py3-none-any.whl (89kB)
+
+[?25hRequirement already satisfied: mock>=2.0.0 in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from tensorflow-estimator<1.14.0rc0,>=1.13.0->tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (2.0.0)
+Collecting idna<2.9,>=2.5 (from requests>=2.7.9->codecov; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc474c9/idna-2.8-py2.py3-none-any.whl (58kB)
+
+[?25hCollecting chardet<3.1.0,>=3.0.2 (from requests>=2.7.9->codecov; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+
+[?25hCollecting certifi>=2017.4.17 (from requests>=2.7.9->codecov; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887e8a/certifi-2018.11.29-py2.py3-none-any.whl (154kB)
+
+[?25hCollecting urllib3<1.25,>=1.21.1 (from requests>=2.7.9->codecov; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3))
+[?25l  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+
+[?25hRequirement already satisfied: pbr>=0.11 in /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (from mock>=2.0.0->tensorflow-estimator<1.14.0rc0,>=1.13.0->tensorflow; extra == "travis"->hyperparameter-hunter==2.2.0->-r requirements.txt (line 3)) (3.1.1)
+Building wheels for collected packages: simplejson, wrapt, dill, pandocfilters, gast, absl-py, termcolor, pyyaml, docopt, pyrsistent
+  Building wheel for simplejson (setup.py) ... [?25l- \ | done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/5d/1a/1e/0350bb3df3e74215cd91325344cc86c2c691f5306eb4d22c77
+  Building wheel for wrapt (setup.py) ... [?25l- \ done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/89/67/41/63cbf0f6ac0a6156588b9587be4db5565f8c6d8ccef98202fc
+  Building wheel for dill (setup.py) ... [?25l- done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/5b/d7/0f/e58eae695403de585269f4e4a94e0cd6ca60ec0c202936fa4a
+  Building wheel for pandocfilters (setup.py) ... [?25l- done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/39/01/56/f1b08a6275acc59e846fa4c1e1b65dbc1919f20157d9e66c20
+  Building wheel for gast (setup.py) ... [?25l- done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/5c/2e/7e/a1d4d4fcebe6c381f378ce7743a3ced3699feb89bcfbdadadd
+  Building wheel for absl-py (setup.py) ... [?25l- done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/90/db/f8/2c3101f72ef1ad434e4662853174126ce30201a3e163dcbeca
+  Building wheel for termcolor (setup.py) ... [?25l- done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/7c/06/54/bc84598ba1daf8f970247f550b175aaaee85f68b4b0c5ab2c6
+  Building wheel for pyyaml (setup.py) ... [?25l- \ | / - done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/ad/da/0c/74eb680767247273e2cf2723482cb9c924fe70af57c334513f
+  Building wheel for docopt (setup.py) ... [?25l- done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/9b/04/dd/7daf4150b6d9b12949298737de9431a324d4b797ffd63f526e
+  Building wheel for pyrsistent (setup.py) ... [?25l- \ done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/83/59/9a/a037b9b3c3e93d9275ea0aff9d6064400f372879dfdab01afe
+Successfully built simplejson wrapt dill pandocfilters gast absl-py termcolor pyyaml docopt pyrsistent
+Installing collected packages: scipy, scikit-learn, simplejson, scikit-optimize, wrapt, defusedxml, mistune, webencodings, bleach, pandocfilters, pygments, ipython-genutils, decorator, traitlets, jupyter-core, pyrsistent, attrs, jsonschema, nbformat, MarkupSafe, jinja2, testpath, nbconvert, dill, pytz, python-dateutil, pandas, click, toml, appdirs, black, more-itertools, pluggy, atomicwrites, pytest, xgboost, gast, h5py, keras-applications, keras-preprocessing, absl-py, grpcio, werkzeug, protobuf, markdown, tensorboard, astor, termcolor, tensorflow-estimator, tensorflow, coverage, idna, chardet, certifi, urllib3, requests, codecov, pytest-cov, pyyaml, keras, docopt, coveralls, hyperparameter-hunter
+  Found existing installation: attrs 17.3.0
+    Uninstalling attrs-17.3.0:
+      Successfully uninstalled attrs-17.3.0
+  Found existing installation: pluggy 0.6.0
+    Uninstalling pluggy-0.6.0:
+      Successfully uninstalled pluggy-0.6.0
+  Found existing installation: pytest 3.3.0
+    Uninstalling pytest-3.3.0:
+      Successfully uninstalled pytest-3.3.0
+  Running setup.py develop for hyperparameter-hunter
+Successfully installed MarkupSafe-1.1.1 absl-py-0.7.0 appdirs-1.4.3 astor-0.7.1 atomicwrites-1.3.0 attrs-18.2.0 black-18.9b0 bleach-3.1.0 certifi-2018.11.29 chardet-3.0.4 click-7.0 codecov-2.0.15 coverage-4.5.2 coveralls-1.6.0 decorator-4.3.2 defusedxml-0.5.0 dill-0.2.9 docopt-0.6.2 gast-0.2.2 grpcio-1.19.0 h5py-2.9.0 hyperparameter-hunter idna-2.8 ipython-genutils-0.2.0 jinja2-2.10 jsonschema-3.0.0 jupyter-core-4.4.0 keras-2.2.4 keras-applications-1.0.7 keras-preprocessing-1.0.9 markdown-3.0.1 mistune-0.8.4 more-itertools-6.0.0 nbconvert-5.4.1 nbformat-4.4.0 pandas-0.24.1 pandocfilters-1.4.2 pluggy-0.9.0 protobuf-3.6.1 pygments-2.3.1 pyrsistent-0.14.11 pytest-4.3.0 pytest-cov-2.6.1 python-dateutil-2.8.0 pytz-2018.9 pyyaml-3.13 requests-2.21.0 scikit-learn-0.20.2 scikit-optimize-0.5.2 scipy-1.2.1 simplejson-3.16.0 tensorboard-1.13.0 tensorflow-1.13.1 tensorflow-estimator-1.13.0 termcolor-1.1.0 testpath-0.4.2 toml-0.10.0 traitlets-4.3.2 urllib3-1.24.1 webencodings-0.5.1 werkzeug-0.14.1 wrapt-1.11.1 xgboost-0.81
+travis_time:end:1aaef438:start=1551254005433859773,finish=1551254056620633583,duration=51186773810[0Ktravis_fold:end:install.3[0Ktravis_fold:start:before_script.1[0Ktravis_time:start:1e4bc87e[0K$ flake8 . --count --select=E901,E999,F821,F822,F823 --ignore=E266 --show-source --statistics
+./hyperparameter_hunter/utils/file_utils.py:283:70: F821 undefined name 'user_defaults'
+            raise TypeError("{} must have dict, not {}".format(file, user_defaults))
+                                                                     ^
+1     F821 undefined name 'user_defaults'
+1
+travis_time:end:1e4bc87e:start=1551254056624450206,finish=1551254061289881772,duration=4665431566[0K[31;1mThe command "flake8 . --count --select=E901,E999,F821,F822,F823 --ignore=E266 --show-source --statistics" failed and exited with 1 during .[0m
+
+Your build has been stopped.

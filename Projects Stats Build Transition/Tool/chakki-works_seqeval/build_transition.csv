@@ -1,0 +1,13 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+738453840,354c576ca2b3cf3c71d8bc80d4e91fccf3c9a047,PassedToErrored,passed,62,https://github.com/chakki-works/seqeval/pull/66
+738453357,995016a8f8b5ef8f8e01d4081bbfe0fc9121dc0b,PassedToErrored,errored,21,https://github.com/chakki-works/seqeval/pull/66
+738452804,1433e1611915ca677eb8b47c510d2a8c61470984,ErroredToPassed,errored,22,https://github.com/chakki-works/seqeval/compare/29a0e1e44f16...f56b292d3394
+738177563,f56b292d3394ef5e6032698e62891b4a8934e149,ErroredToPassed,passed,18,https://github.com/chakki-works/seqeval/compare/29a0e1e44f16...f56b292d3394
+738177563,f56b292d3394ef5e6032698e62891b4a8934e149,PassedToErrored,passed,18,https://github.com/chakki-works/seqeval/pull/64
+738176895,007d52d7c58da3c7d94df91368dec4e2aa4a7b3e,PassedToErrored,errored,22,https://github.com/chakki-works/seqeval/pull/64
+738176063,7c332687e2cc10a25f71f9228ba81477afef48ee,ErroredToPassed,errored,68,https://github.com/chakki-works/seqeval/commit/cc6193630a75
+736795432,cc6193630a7588cb49cfd6d5f1ea2dc51a599c9a,ErroredToPassed,passed,17,https://github.com/chakki-works/seqeval/commit/cc6193630a75
+731536540,ca1ad9f8d02a858af01f041aeb8efb7e00df6ac3,PassedToErrored,passed,56,https://github.com/chakki-works/seqeval/pull/47
+731536384,10bfe67818adbc22ce0dd7c6f1b9923195a98a3c,PassedToErrored,errored,21,https://github.com/chakki-works/seqeval/pull/47
+731533568,af70b231fe76a27890a748df7ccf349dc234e91b,ErroredToPassed,errored,53,https://github.com/chakki-works/seqeval/commit/d13bfb45a306
+731533243,d13bfb45a306eea442d75511cfc06f032fb8b264,ErroredToPassed,passed,56,https://github.com/chakki-works/seqeval/commit/d13bfb45a306

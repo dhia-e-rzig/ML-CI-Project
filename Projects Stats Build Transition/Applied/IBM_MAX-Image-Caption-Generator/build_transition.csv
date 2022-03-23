@@ -1,0 +1,17 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+228958642,47f441d61a7e3712c42e797e4f5ce3e2d5405780,PassedToErrored,passed,142,https://github.com/IBM/MAX-Image-Caption-Generator/pull/71
+228645734,52275bcc014fe19994cac81ab8f16d283747d95e,PassedToErrored,errored,70,https://github.com/IBM/MAX-Image-Caption-Generator/pull/71
+228645731,f0e08cf75f5517e6668665bd45444e4899010e2b,ErroredToPassed,errored,70,https://github.com/IBM/MAX-Image-Caption-Generator/compare/e0377b3c830a...47f441d61a7e
+228645661,47f441d61a7e3712c42e797e4f5ce3e2d5405780,ErroredToPassed,passed,140,https://github.com/IBM/MAX-Image-Caption-Generator/compare/e0377b3c830a...47f441d61a7e
+226743756,e0377b3c830adc78ce4de5ac018fac817094d436,PassedToErrored,passed,140,https://github.com/IBM/MAX-Image-Caption-Generator/commit/a2b57ef8f41c
+226536598,a2b57ef8f41c22dffa160b7bd16af5887456433a,PassedToErrored,errored,78,https://github.com/IBM/MAX-Image-Caption-Generator/commit/a2b57ef8f41c
+226536599,11cc6db808918c68af63f54612a94301b3d44da7,ErroredToPassed,errored,77,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d63245fcbf9a081a09715981705e76fd26ac814f...e0377b3c830adc78ce4de5ac018fac817094d436
+226145763,e0377b3c830adc78ce4de5ac018fac817094d436,ErroredToPassed,passed,137,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d63245fcbf9a081a09715981705e76fd26ac814f...e0377b3c830adc78ce4de5ac018fac817094d436
+221565936,e0377b3c830adc78ce4de5ac018fac817094d436,PassedToErrored,passed,169,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d63245fcbf9a081a09715981705e76fd26ac814f...e0377b3c830adc78ce4de5ac018fac817094d436
+220866083,e0377b3c830adc78ce4de5ac018fac817094d436,PassedToErrored,errored,22,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d63245fcbf9a081a09715981705e76fd26ac814f...e0377b3c830adc78ce4de5ac018fac817094d436
+220866083,e0377b3c830adc78ce4de5ac018fac817094d436,ErroredToPassed,errored,22,https://github.com/IBM/MAX-Image-Caption-Generator/pull/70
+220553647,f50f2a95a07d2078874a750163fe66883631847a,ErroredToPassed,passed,138,https://github.com/IBM/MAX-Image-Caption-Generator/pull/70
+207862142,244a74e92f8cb732063a76f6f369da87af6f5602,PassedToErrored,passed,139,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d18c2d359b2ccf7604cfe61ba6d5187328964b29...6146c1838141135289fdfdb7eb38a8f40c821a16
+207159578,6146c1838141135289fdfdb7eb38a8f40c821a16,PassedToErrored,errored,108,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d18c2d359b2ccf7604cfe61ba6d5187328964b29...6146c1838141135289fdfdb7eb38a8f40c821a16
+207159578,6146c1838141135289fdfdb7eb38a8f40c821a16,ErroredToPassed,errored,108,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d18c2d359b2ccf7604cfe61ba6d5187328964b29...6146c1838141135289fdfdb7eb38a8f40c821a16
+205482234,6146c1838141135289fdfdb7eb38a8f40c821a16,ErroredToPassed,passed,136,https://github.com/IBM/MAX-Image-Caption-Generator/compare/d18c2d359b2ccf7604cfe61ba6d5187328964b29...6146c1838141135289fdfdb7eb38a8f40c821a16

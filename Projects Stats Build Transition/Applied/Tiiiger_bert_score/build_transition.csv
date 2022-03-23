@@ -1,0 +1,13 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+160850295,8896db70a10a9fbefd2ee883be19e70d219c6baa,FailedToPassed,failed,690,https://github.com/Tiiiger/bert_score/compare/v0.3.0
+160850085,926c516ac516411c560918dddce7755e6ea9aa70,FailedToPassed,passed,394,https://github.com/Tiiiger/bert_score/compare/v0.3.0
+160850085,926c516ac516411c560918dddce7755e6ea9aa70,PassedToFailed,passed,394,https://github.com/Tiiiger/bert_score/compare/v0.3.2
+160849607,15ca8407ff3630fb614092a84fdc805d9f88f79a,PassedToFailed,failed,605,https://github.com/Tiiiger/bert_score/compare/v0.3.2
+151581638,16d658aa835df61de75bcd9ee31ec517e00b8a6d,FailedToPassed,failed,528,https://github.com/Tiiiger/bert_score/compare/6f8881fade58...df2f21ddf911
+151433424,df2f21ddf911ad3a9cff4962cfcedf4339ba383f,FailedToPassed,passed,236,https://github.com/Tiiiger/bert_score/compare/6f8881fade58...df2f21ddf911
+151165828,fab9d4a7709589865dd900c1cbfb449fed4aa9b3,PassedToErrored,passed,378,https://github.com/Tiiiger/bert_score/commit/60e1333ed3a1
+151164502,60e1333ed3a1ca6b7b9568901090bec6d65724e3,PassedToErrored,errored,209,https://github.com/Tiiiger/bert_score/commit/60e1333ed3a1
+151164502,60e1333ed3a1ca6b7b9568901090bec6d65724e3,ErroredToPassed,errored,209,https://github.com/Tiiiger/bert_score/compare/7bdcf338c097...926c516ac516
+145483511,926c516ac516411c560918dddce7755e6ea9aa70,ErroredToPassed,passed,527,https://github.com/Tiiiger/bert_score/compare/7bdcf338c097...926c516ac516
+144377194,58c32bdf144a928c7f9719340f5eaae4d0d2237b,PassedToFailed,passed,525,https://github.com/Tiiiger/bert_score/compare/ecc085de387c...df744ebb876e
+144373544,df744ebb876ea7c149e02a4a05fa62b25ffaafb1,PassedToFailed,failed,539,https://github.com/Tiiiger/bert_score/compare/ecc085de387c...df744ebb876e

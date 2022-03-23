@@ -1,0 +1,232 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 5f9eda7d-48a7-4154-9ef5-7f4615d0a158@1.worker-org-77db9856dc-rgnp2.gce-production-3
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-7b576a42-efdb-4e5f-8bce-4abad1040364 travis-ci-sardonyx-xenial-1593004276-4d46c6b3 (via amqp)
+startup: 7.266102091s
+travis_fold:end:worker_info[0Ktravis_time:start:0471f4e0[0Ktravis_time:end:0471f4e0:start=1601565966099126385,finish=1601565966267109551,duration=167983166,event=no_world_writable_dirs[0Ktravis_time:start:04bd5808[0Ktravis_time:end:04bd5808:start=1601565966270333743,finish=1601565966273716947,duration=3383204,event=setup_filter[0Ktravis_time:start:006cc130[0Ktravis_time:end:006cc130:start=1601565966278586494,finish=1601565966288428763,duration=9842269,event=agent[0Ktravis_time:start:0fe9edba[0Ktravis_time:end:0fe9edba:start=1601565966291493807,finish=1601565966293898444,duration=2404637,event=check_unsupported[0Ktravis_time:start:0947dc00[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 731975760
+Job id: 731975764
+Runtime kernel version: 4.15.0-1077-gcp
+travis-build version: 68cdc09f
+[34m[1mBuild image provisioning date and time[0m
+Wed Jun 24 13:36:52 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-11-12 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.13 (Ubuntu 10.13-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Mar 18 2020 14:06:17)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.21.0
+v11.0.0
+v12.18.1
+v4.9.1
+v6.17.1
+v8.12.0
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:0947dc00:start=1601565966297059556,finish=1601565966303567304,duration=6507748,event=show_system_info[0Ktravis_time:start:015a538a[0Ktravis_time:end:015a538a:start=1601565966306762507,finish=1601565966324181987,duration=17419480,event=rm_riak_source[0Ktravis_time:start:1dddb112[0Ktravis_time:end:1dddb112:start=1601565966328599774,finish=1601565966342972195,duration=14372421,event=fix_rwky_redis[0Ktravis_time:start:128aab2e[0Ktravis_time:end:128aab2e:start=1601565966351488238,finish=1601565966996155507,duration=644667269,event=wait_for_network[0Ktravis_time:start:1376a459[0Ktravis_time:end:1376a459:start=1601565967000704642,finish=1601565967246452312,duration=245747670,event=update_apt_keys[0Ktravis_time:start:32e28c87[0Ktravis_time:end:32e28c87:start=1601565967250777723,finish=1601565967306820461,duration=56042738,event=fix_hhvm_source[0Ktravis_time:start:191c56e2[0Ktravis_time:end:191c56e2:start=1601565967310952991,finish=1601565967314077447,duration=3124456,event=update_mongo_arch[0Ktravis_time:start:04a44800[0Ktravis_time:end:04a44800:start=1601565967318496097,finish=1601565967361571641,duration=43075544,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0089e3e0[0Ktravis_time:end:0089e3e0:start=1601565967366512734,finish=1601565967368967951,duration=2455217,event=update_glibc[0Ktravis_time:start:0252017d[0Ktravis_time:end:0252017d:start=1601565967373447570,finish=1601565967381797657,duration=8350087,event=clean_up_path[0Ktravis_time:start:04f7326b[0Ktravis_time:end:04f7326b:start=1601565967386203498,finish=1601565967394657172,duration=8453674,event=fix_resolv_conf[0Ktravis_time:start:0c68ac34[0Ktravis_time:end:0c68ac34:start=1601565967398567266,finish=1601565967408675923,duration=10108657,event=fix_etc_hosts[0Ktravis_time:start:0f33bbde[0Ktravis_time:end:0f33bbde:start=1601565967413330499,finish=1601565967428302139,duration=14971640,event=fix_mvn_settings_xml[0Ktravis_time:start:161f8dca[0Ktravis_time:end:161f8dca:start=1601565967432601194,finish=1601565967443059261,duration=10458067,event=no_ipv6_localhost[0Ktravis_time:start:3bb10c67[0Ktravis_time:end:3bb10c67:start=1601565967447679310,finish=1601565967450546146,duration=2866836,event=fix_etc_mavenrc[0Ktravis_time:start:02abcedc[0Ktravis_time:end:02abcedc:start=1601565967454668772,finish=1601565967458340648,duration=3671876,event=fix_wwdr_certificate[0Ktravis_time:start:0def6c4f[0Ktravis_time:end:0def6c4f:start=1601565967463535954,finish=1601565967488635147,duration=25099193,event=put_localhost_first[0Ktravis_time:start:017cedaa[0Ktravis_time:end:017cedaa:start=1601565967492569631,finish=1601565967496312350,duration=3742719,event=home_paths[0Ktravis_time:start:00850bf3[0Ktravis_time:end:00850bf3:start=1601565967501356184,finish=1601565967514540254,duration=13184070,event=disable_initramfs[0Ktravis_time:start:1597fc6e[0Ktravis_time:end:1597fc6e:start=1601565967519460347,finish=1601565967897236471,duration=377776124,event=disable_ssh_roaming[0Ktravis_time:start:17184c4d[0Ktravis_time:end:17184c4d:start=1601565967901562816,finish=1601565967904284313,duration=2721497,event=debug_tools[0Ktravis_time:start:1f1a85a9[0Ktravis_time:end:1f1a85a9:start=1601565967908362365,finish=1601565967911474335,duration=3111970,event=uninstall_oclint[0Ktravis_time:start:0ff132a0[0Ktravis_time:end:0ff132a0:start=1601565967915487299,finish=1601565967919000789,duration=3513490,event=rvm_use[0Ktravis_time:start:007eb088[0Ktravis_time:end:007eb088:start=1601565967923509896,finish=1601565967932676083,duration=9166187,event=rm_etc_boto_cfg[0Ktravis_time:start:00741850[0Ktravis_time:end:00741850:start=1601565967937670034,finish=1601565967942026773,duration=4356739,event=rm_oraclejdk8_symlink[0Ktravis_time:start:1c05fef8[0Ktravis_time:end:1c05fef8:start=1601565967946320430,finish=1601565968051057036,duration=104736606,event=enable_i386[0Ktravis_time:start:32c5831a[0Ktravis_time:end:32c5831a:start=1601565968055458267,finish=1601565968062017180,duration=6558913,event=update_rubygems[0Ktravis_time:start:14e966f0[0Ktravis_time:end:14e966f0:start=1601565968067041840,finish=1601565968905425951,duration=838384111,event=ensure_path_components[0Ktravis_time:start:2d22242e[0Ktravis_time:end:2d22242e:start=1601565968909850712,finish=1601565968912685417,duration=2834705,event=redefine_curl[0Ktravis_time:start:0c34da06[0Ktravis_time:end:0c34da06:start=1601565968916848528,finish=1601565969034772178,duration=117923650,event=nonblock_pipe[0Ktravis_time:start:071f8950[0Ktravis_time:end:071f8950:start=1601565969039494376,finish=1601565975075141762,duration=6035647386,event=apt_get_update[0Ktravis_time:start:14d9cfe0[0Ktravis_time:end:14d9cfe0:start=1601565975079718132,finish=1601565975082241106,duration=2522974,event=deprecate_xcode_64[0Ktravis_time:start:17becb13[0Ktravis_time:end:17becb13:start=1601565975086410325,finish=1601565977972774238,duration=2886363913,event=update_heroku[0Ktravis_time:start:1205f190[0Ktravis_time:end:1205f190:start=1601565977977713699,finish=1601565977980663474,duration=2949775,event=shell_session_update[0Ktravis_time:start:15760fcc[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:15760fcc:start=1601565977985480763,finish=1601565980458595725,duration=2473114962,event=set_docker_mtu[0Ktravis_time:start:0b0fde10[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0b0fde10:start=1601565980463181891,finish=1601565980533553355,duration=70371464,event=resolvconf[0Ktravis_time:start:0fb74ad0[0Ktravis_time:end:0fb74ad0:start=1601565980538158097,finish=1601565980696118375,duration=157960278,event=maven_central_mirror[0Ktravis_time:start:1e2efc42[0Ktravis_time:end:1e2efc42:start=1601565980701230108,finish=1601565980795780154,duration=94550046,event=maven_https[0K[33;1m3.8 is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/16.04/x86_64/python-3.8.tar.bz2[0m
+travis_time:start:11593ab6[0K$ curl -sSf --retry 5 -o python-3.8.tar.bz2 ${archive_url}
+travis_time:end:11593ab6:start=1601565980884376312,finish=1601565981347860157,duration=463483845,event=configure[0Ktravis_time:start:2d5b8254[0K$ sudo tar xjf python-3.8.tar.bz2 --directory /
+travis_time:end:2d5b8254:start=1601565981351795019,finish=1601565994491084463,duration=13139289444,event=configure[0Ktravis_time:start:1ab281b1[0Ktravis_time:end:1ab281b1:start=1601565994513348215,finish=1601565994516511167,duration=3162952,event=fix_ps4[0Ktravis_time:start:3338a092[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0f78589e[0K$ git clone --depth=50 --branch=devel https://github.com/tasoc/starclass.git tasoc/starclass
+Cloning into 'tasoc/starclass'...
+travis_time:end:0f78589e:start=1601565994525071506,finish=1601565996476634217,duration=1951562711,event=checkout[0K$ cd tasoc/starclass
+$ git checkout -qf 26d3683f5c561d604be5e83abd1a459402f78e66
+travis_fold:end:git.checkout[0K
+travis_time:end:0f78589e:start=1601565994525071506,finish=1601565996755141368,duration=2230069862,event=checkout[0Ktravis_time:start:06ff3a65[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export GITHUB_TOKEN=[secure]
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export PYTHON="python"
+$ export PIP="pip"
+
+travis_time:end:06ff3a65:start=1601565996759939002,finish=1601565996767804740,duration=7865738,event=env[0Ktravis_time:start:0527c66c[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:0527c66c:start=1601565996771756592,finish=1601565996776988645,duration=5232053,event=[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:0a098330[0K$ Installing caching utilities
+travis_time:end:0a098330:start=1601565997601310360,finish=1601565997865729203,duration=264418843,event=setup_casher[0Ktravis_time:start:02acd90b[0Ktravis_time:end:02acd90b:start=1601565997872704551,finish=1601565997875624435,duration=2919884,event=setup_casher[0Ktravis_time:start:25031820[0Kattempting to download cache archive[0m
+[32;1mfetching devel/cache--linux-xenial-d45905065d6f3b97bb744e1049076024f4fa989db9d92717416fa11c4bbc2062--python-3.8.tgz[0m
+[32;1mfetching devel/cache-linux-xenial-d45905065d6f3b97bb744e1049076024f4fa989db9d92717416fa11c4bbc2062--python-3.8.tgz[0m
+[32;1mfetching devel/cache--python-3.8.tgz[0m
+[31;1mcould not download cache[0m
+travis_time:end:25031820:start=1601565997879693055,finish=1601565999343486593,duration=1463793538,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+travis_fold:start:cache.pip[0K
+travis_time:start:017165a0[0Ktravis_time:end:017165a0:start=1601565999349025134,finish=1601565999352130666,duration=3105532,event=setup_cache[0Ktravis_time:start:1fd8f02f[0Kadding /home/travis/.cache/pip to cache[0m
+travis_time:end:1fd8f02f:start=1601565999356081568,finish=1601566000463630276,duration=1107548708,event=setup_cache[0Ktravis_fold:end:cache.pip[0K$ python --version
+Python 3.8.0
+$ pip --version
+pip 19.3 from /home/travis/virtualenv/python3.8.0/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install.1[0Ktravis_time:start:03cfd815[0K$ $PYTHON -m pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/4e/5f/528232275f6509b1fff703c9280e58951a81abe24640905de621c9f81839/pip-20.2.3-py2.py3-none-any.whl (1.5MB)
+Installing collected packages: pip
+  Found existing installation: pip 19.3
+    Uninstalling pip-19.3:
+      Successfully uninstalled pip-19.3
+Successfully installed pip-20.2.3
+travis_time:end:03cfd815:start=1601566000665724946,finish=1601566002631950464,duration=1966225518,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:141e36ac[0K$ $PIP install -r requirements.txt
+Requirement already satisfied: pytest in /home/travis/virtualenv/python3.8.0/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (5.2.1)
+Collecting numpy==1.17.5
+  Downloading numpy-1.17.5-cp38-cp38-manylinux1_x86_64.whl (20.5 MB)
+Collecting matplotlib==3.2.1
+  Downloading matplotlib-3.2.1-cp38-cp38-manylinux1_x86_64.whl (12.4 MB)
+Collecting scipy==1.3.3
+  Downloading scipy-1.3.3-cp38-cp38-manylinux1_x86_64.whl (25.2 MB)
+Collecting astropy==4.0.1
+  Downloading astropy-4.0.1.tar.gz (8.2 MB)
+Collecting lightkurve>=1.7.0
+  Downloading lightkurve-1.11.2-py3-none-any.whl (1.2 MB)
+Collecting scikit-learn==0.23
+  Downloading scikit_learn-0.23.0-cp38-cp38-manylinux1_x86_64.whl (7.2 MB)
+Collecting Bottleneck==1.3.2
+  Downloading Bottleneck-1.3.2.tar.gz (88 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting requests
+  Downloading requests-2.24.0-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: setuptools>=41.0.0 in /home/travis/virtualenv/python3.8.0/lib/python3.8/site-packages (from -r requirements.txt (line 10)) (41.4.0)
+ERROR: Could not find a version that satisfies the requirement tensorflow==1.15.4 (from -r requirements.txt (line 11)) (from versions: 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0, 2.2.1, 2.3.0rc0, 2.3.0rc1, 2.3.0rc2, 2.3.0, 2.3.1)
+ERROR: No matching distribution found for tensorflow==1.15.4 (from -r requirements.txt (line 11))
+travis_time:end:141e36ac:start=1601566002637855523,finish=1601566021070676278,duration=18432820755,event=install[0K[31;1mThe command "$PIP install -r requirements.txt" failed and exited with 1 during .[0m
+
+Your build has been stopped.

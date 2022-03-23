@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+771432630,1fc31f13ee2a224f1ebfcffea32cc38138b4f3c9,ErroredToPassed,errored,37,https://github.com/gosha20777/keras2cpp/compare/b57475558ee5...21cd338e63a2
+550778711,21cd338e63a2ed44517b669523c9e69d66c0df89,ErroredToPassed,passed,168,https://github.com/gosha20777/keras2cpp/compare/b57475558ee5...21cd338e63a2
+491513812,725ceca5607f0ae56a15e9c59acbee9a213be5ef,PassedToFailed,passed,360,https://github.com/gosha20777/keras2cpp/compare/6fa1ba363a7f...eec4d2402031
+491511705,eec4d2402031bb68e3389f6ccb06d6cf1a6d88e4,PassedToFailed,failed,348,https://github.com/gosha20777/keras2cpp/compare/6fa1ba363a7f...eec4d2402031

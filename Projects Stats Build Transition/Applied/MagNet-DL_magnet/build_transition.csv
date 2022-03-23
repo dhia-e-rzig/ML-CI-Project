@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+433329599,cd3b21084f745ccd7e3a25c1c252d9cfd7d6b7e8,PassedToFailed,passed,85,https://github.com/MagNet-DL/magnet/compare/be2b9d1cdbd6...7b17b332b738
+433318575,7b17b332b738f8f3efb61fed3e1fa12e741882c8,PassedToFailed,failed,103,https://github.com/MagNet-DL/magnet/compare/be2b9d1cdbd6...7b17b332b738
+433270042,6b3aa58be0dd70ac3a9667fa104d57249a19ef03,FailedToPassed,failed,109,https://github.com/svaisakh/magnet/compare/328c20c2a36f...473019e3e237
+423805345,473019e3e23768fb9c21dd09e82f6ae18639a673,FailedToPassed,passed,134,https://github.com/svaisakh/magnet/compare/328c20c2a36f...473019e3e237
+423090847,3dd01114fad1b0c44a4109c4e2344dac46811c05,PassedToFailed,passed,102,https://github.com/svaisakh/magnet/commit/de11fee12458
+422996705,de11fee12458ac0e53bd05404bd5fde6609f297b,PassedToFailed,failed,122,https://github.com/svaisakh/magnet/commit/de11fee12458
+422996705,de11fee12458ac0e53bd05404bd5fde6609f297b,FailedToPassed,failed,122,https://github.com/svaisakh/magnet/compare/bdcc3fc84840...bd8981c757a1
+422979753,bd8981c757a1404bb33b8a3df48b7a2c42f3d1bd,FailedToPassed,passed,93,https://github.com/svaisakh/magnet/compare/bdcc3fc84840...bd8981c757a1
+422957923,ac92889d7873f683919f06f74a327fe878807737,PassedToErrored,passed,89,https://github.com/svaisakh/magnet/compare/4558618b2042...230d85195367
+422953019,230d85195367ec6bf939b0d9eb3d598854304851,PassedToErrored,errored,54,https://github.com/svaisakh/magnet/compare/4558618b2042...230d85195367
+422953019,230d85195367ec6bf939b0d9eb3d598854304851,ErroredToPassed,errored,54,https://github.com/svaisakh/magnet/compare/11685e3f3127...4558618b2042
+422923070,4558618b2042f9c15e50daeffb540475ce8f42d5,ErroredToPassed,passed,72,https://github.com/svaisakh/magnet/compare/11685e3f3127...4558618b2042
+422923070,4558618b2042f9c15e50daeffb540475ce8f42d5,PassedToFailed,passed,72,https://github.com/svaisakh/magnet/commit/11685e3f3127
+422915402,11685e3f312727a25a17e700e18b98ff3c59e3bd,PassedToFailed,failed,90,https://github.com/svaisakh/magnet/commit/11685e3f3127

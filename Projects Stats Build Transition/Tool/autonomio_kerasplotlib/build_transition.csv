@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+642450809,447a611582026a0d41549fe7d75f9b7546be2fb2,FailedToPassed,failed,48,https://github.com/autonomio/kerasplotlib/compare/290d0dbe4376...4ff0d9700618
+641812792,4ff0d97006189cb41b0e61f342ce308240686f77,FailedToPassed,passed,68,https://github.com/autonomio/kerasplotlib/compare/290d0dbe4376...4ff0d9700618
+641812252,d9949ffff32b3929bbdd77776315681ad9b06a4f,PassedToErrored,passed,48,https://github.com/autonomio/kerasplotlib/pull/4
+641811874,b814d52beb48321f41cf9c8402920a656075def5,PassedToErrored,errored,41,https://github.com/autonomio/kerasplotlib/pull/4
+641811289,271d1df64db61b96121089dd1d18ef0dda21a8a1,ErroredToPassed,errored,45,https://github.com/autonomio/kerasplotlib/compare/5999deb23435...bdbfb3c91460
+641811109,bdbfb3c914600c458d5f205c2555c4e8f929ad22,ErroredToPassed,passed,47,https://github.com/autonomio/kerasplotlib/compare/5999deb23435...bdbfb3c91460
+409593071,290d0dbe43761adca3a5816f7707af89753557bc,PassedToErrored,passed,51,https://github.com/autonomio/kerasplotlib/pull/3
+409593060,47680dca9bc0d61a318dbc5b447568ebe86d5cbd,PassedToErrored,errored,38,https://github.com/autonomio/kerasplotlib/pull/3
+409593060,47680dca9bc0d61a318dbc5b447568ebe86d5cbd,ErroredToPassed,errored,38,https://github.com/autonomio/kerasplotlib/compare/f4b5de14084a...318090df69bf
+409592922,318090df69bfcff2e4e06f7ee1170077a20dfad7,ErroredToPassed,passed,50,https://github.com/autonomio/kerasplotlib/compare/f4b5de14084a...318090df69bf
+409592922,318090df69bfcff2e4e06f7ee1170077a20dfad7,PassedToErrored,passed,50,https://github.com/autonomio/kerasplotlib/compare/production
+409523371,f4b5de14084a309630cf1edb0f49bb818d497d1f,PassedToErrored,errored,66,https://github.com/autonomio/kerasplotlib/compare/production
+409523371,f4b5de14084a309630cf1edb0f49bb818d497d1f,ErroredToPassed,errored,66,https://github.com/autonomio/kerasplotlib/compare/70084ada6575...f4b5de14084a
+409522454,f4b5de14084a309630cf1edb0f49bb818d497d1f,ErroredToPassed,passed,49,https://github.com/autonomio/kerasplotlib/compare/70084ada6575...f4b5de14084a

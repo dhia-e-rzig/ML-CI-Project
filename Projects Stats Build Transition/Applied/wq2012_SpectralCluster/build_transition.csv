@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+625753798,13069a63e3b66627fb907d93045bbe0a77177e76,PassedToFailed,passed,54,https://github.com/wq2012/SpectralCluster/compare/e738c9a9b8df...cffc59a8bdce
+625750718,cffc59a8bdcee7a48107bc98a15963a144eec1b3,PassedToFailed,failed,54,https://github.com/wq2012/SpectralCluster/compare/e738c9a9b8df...cffc59a8bdce
+625750718,cffc59a8bdcee7a48107bc98a15963a144eec1b3,FailedToPassed,failed,54,https://github.com/wq2012/SpectralCluster/compare/b0760658c26c...e738c9a9b8df
+618735240,e738c9a9b8df1d2ddb588663e47160e6948ecfea,FailedToPassed,passed,59,https://github.com/wq2012/SpectralCluster/compare/b0760658c26c...e738c9a9b8df
+617565242,1032733c146cebb7636b2d84766b5eb4f1d8fb4f,PassedToFailed,passed,63,https://github.com/wq2012/SpectralCluster/pull/8
+617563217,a66b8a439ede7d9415e86f232aef1ba516db3ec1,PassedToFailed,failed,56,https://github.com/wq2012/SpectralCluster/pull/8
+617497750,cc33240b19ac2a89e8fa0a28f1a7a3974b8a41b6,FailedToPassed,failed,51,https://github.com/wq2012/SpectralCluster/compare/ef653203c693...3f169883779f
+612982967,3f169883779fbabc7a6d9c867cfcd2e263ad343d,FailedToPassed,passed,55,https://github.com/wq2012/SpectralCluster/compare/ef653203c693...3f169883779f
+485072910,f22160f03018e98e5d7e5c2b3c949078d943d328,PassedToFailed,passed,65,https://github.com/wq2012/SpectralCluster/compare/9cbf6cdcb24d...7ba129fc0155
+485072446,7ba129fc01555ca0ac6af28b0cf95dee944aaca6,PassedToFailed,failed,59,https://github.com/wq2012/SpectralCluster/compare/9cbf6cdcb24d...7ba129fc0155
+485072049,9cbf6cdcb24dd6e9a3588f4e9987ca6943491385,FailedToPassed,failed,54,https://github.com/wq2012/SpectralCluster/compare/f63e73c935e5...b3dbee8f2ede
+483699211,b3dbee8f2edec7ed0c529b2b64efc495ae784fc1,FailedToPassed,passed,70,https://github.com/wq2012/SpectralCluster/compare/f63e73c935e5...b3dbee8f2ede
+481625799,00afb91756968dd4e313bb8930b3cb9bdf7ecbba,PassedToFailed,passed,71,https://github.com/wq2012/SpectralCluster/compare/f8bc87465e7a...99efb433cfbb
+481623983,99efb433cfbbbe473393fabf0ceb8acfb2463853,PassedToFailed,failed,90,https://github.com/wq2012/SpectralCluster/compare/f8bc87465e7a...99efb433cfbb

@@ -1,0 +1,977 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 4132676c-a1ba-406b-89ea-004b0680e5a6@1.worker-org-576dc846d-8djtj.gce-production-2
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-db3e5e76-8ded-424f-81f7-4f1519284209 travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
+startup: 6.072098588s
+travis_fold:end:worker_info[0Ktravis_time:start:22563d8a[0Ktravis_time:end:22563d8a:start=1593440680660997121,finish=1593440680807774149,duration=146777028,event=no_world_writable_dirs[0Ktravis_time:start:01f498ee[0Ktravis_time:end:01f498ee:start=1593440680811066056,finish=1593440680818386079,duration=7320023,event=agent[0Ktravis_time:start:0eb5c44e[0Ktravis_time:end:0eb5c44e:start=1593440680821567657,finish=1593440680824180112,duration=2612455,event=check_unsupported[0Ktravis_time:start:0db805ce[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 703174611
+Job id: 703174612
+Runtime kernel version: 4.15.0-1028-gcp
+travis-build version: 8e9c8035
+[34m[1mBuild image provisioning date and time[0m
+Mon Mar 25 16:43:24 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.22.7 linux-x64 node-v11.10.1
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2
+[34m[1mrvm version[0m
+rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.7
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.21
+9.5.16
+9.6.12
+[34m[1mRedis version[0m
+redis-server 5.0.4
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 4.10.2!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.0
+v8.12.0
+v8.15.1
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:0db805ce:start=1593440680827202942,finish=1593440680833715618,duration=6512676,event=show_system_info[0Ktravis_time:start:25ac6530[0Ktravis_time:end:25ac6530:start=1593440680837695855,finish=1593440680849325884,duration=11630029,event=rm_riak_source[0Ktravis_time:start:16862741[0Ktravis_time:end:16862741:start=1593440680853717962,finish=1593440680861302989,duration=7585027,event=fix_rwky_redis[0Ktravis_time:start:02adefec[0Ktravis_time:end:02adefec:start=1593440680864785806,finish=1593440681486811320,duration=622025514,event=wait_for_network[0Ktravis_time:start:08cc3e20[0Ktravis_time:end:08cc3e20:start=1593440681489937465,finish=1593440681683478735,duration=193541270,event=update_apt_keys[0Ktravis_time:start:1946a516[0Ktravis_time:end:1946a516:start=1593440681686717493,finish=1593440681740033403,duration=53315910,event=fix_hhvm_source[0Ktravis_time:start:04f6a076[0Ktravis_time:end:04f6a076:start=1593440681743261444,finish=1593440681745872976,duration=2611532,event=update_mongo_arch[0Ktravis_time:start:01cd86c2[0Ktravis_time:end:01cd86c2:start=1593440681748648838,finish=1593440681790246583,duration=41597745,event=fix_sudo_enabled_trusty[0Ktravis_time:start:01fd6ba8[0Ktravis_time:end:01fd6ba8:start=1593440681793630229,finish=1593440681795976164,duration=2345935,event=update_glibc[0Ktravis_time:start:280690f0[0Ktravis_time:end:280690f0:start=1593440681798915943,finish=1593440681806769689,duration=7853746,event=clean_up_path[0Ktravis_time:start:024b088d[0Ktravis_time:end:024b088d:start=1593440681809691072,finish=1593440681817518147,duration=7827075,event=fix_resolv_conf[0Ktravis_time:start:0882fb94[0Ktravis_time:end:0882fb94:start=1593440681820293829,finish=1593440681829013025,duration=8719196,event=fix_etc_hosts[0Ktravis_time:start:00392400[0Ktravis_time:end:00392400:start=1593440681831913118,finish=1593440681840319456,duration=8406338,event=fix_mvn_settings_xml[0Ktravis_time:start:016b4b9e[0Ktravis_time:end:016b4b9e:start=1593440681843510516,finish=1593440681852943582,duration=9433066,event=no_ipv6_localhost[0Ktravis_time:start:251a386a[0Ktravis_time:end:251a386a:start=1593440681855859395,finish=1593440681857922010,duration=2062615,event=fix_etc_mavenrc[0Ktravis_time:start:206b01c4[0Ktravis_time:end:206b01c4:start=1593440681860579967,finish=1593440681863394195,duration=2814228,event=fix_wwdr_certificate[0Ktravis_time:start:008a476a[0Ktravis_time:end:008a476a:start=1593440681866026096,finish=1593440681888207317,duration=22181221,event=put_localhost_first[0Ktravis_time:start:0aeba7fc[0Ktravis_time:end:0aeba7fc:start=1593440681891117953,finish=1593440681893872068,duration=2754115,event=home_paths[0Ktravis_time:start:0fb42cd4[0Ktravis_time:end:0fb42cd4:start=1593440681896652438,finish=1593440681908007454,duration=11355016,event=disable_initramfs[0Ktravis_time:start:040dc146[0Ktravis_time:end:040dc146:start=1593440681910753977,finish=1593440682154303963,duration=243549986,event=disable_ssh_roaming[0Ktravis_time:start:217e1f40[0Ktravis_time:end:217e1f40:start=1593440682157295775,finish=1593440682159365258,duration=2069483,event=debug_tools[0Ktravis_time:start:0fd415c2[0Ktravis_time:end:0fd415c2:start=1593440682162067747,finish=1593440682164752354,duration=2684607,event=uninstall_oclint[0Ktravis_time:start:0577ed8c[0Ktravis_time:end:0577ed8c:start=1593440682167393113,finish=1593440682170096961,duration=2703848,event=rvm_use[0Ktravis_time:start:0493f893[0Ktravis_time:end:0493f893:start=1593440682172675154,finish=1593440682180023805,duration=7348651,event=rm_etc_boto_cfg[0Ktravis_time:start:39787234[0Ktravis_time:end:39787234:start=1593440682182834242,finish=1593440682185359318,duration=2525076,event=rm_oraclejdk8_symlink[0Ktravis_time:start:109443ae[0Ktravis_time:end:109443ae:start=1593440682188088747,finish=1593440682293136995,duration=105048248,event=enable_i386[0Ktravis_time:start:0185135c[0Ktravis_time:end:0185135c:start=1593440682296114780,finish=1593440682302260771,duration=6145991,event=update_rubygems[0Ktravis_time:start:07edd1f4[0Ktravis_time:end:07edd1f4:start=1593440682305275112,finish=1593440683097615540,duration=792340428,event=ensure_path_components[0Ktravis_time:start:0104dc00[0Ktravis_time:end:0104dc00:start=1593440683100754711,finish=1593440683102949340,duration=2194629,event=redefine_curl[0Ktravis_time:start:03b19d26[0Ktravis_time:end:03b19d26:start=1593440683105696962,finish=1593440683107908452,duration=2211490,event=nonblock_pipe[0Ktravis_time:start:21f9ed9c[0Ktravis_time:end:21f9ed9c:start=1593440683110735168,finish=1593440700268711714,duration=17157976546,event=apt_get_update[0Ktravis_time:start:1c2ff114[0Ktravis_time:end:1c2ff114:start=1593440700271659267,finish=1593440700273683249,duration=2023982,event=deprecate_xcode_64[0Ktravis_time:start:20ed03aa[0Ktravis_time:end:20ed03aa:start=1593440700276321642,finish=1593440702828334054,duration=2552012412,event=update_heroku[0Ktravis_time:start:0063f5de[0Ktravis_time:end:0063f5de:start=1593440702832211678,finish=1593440702834437374,duration=2225696,event=shell_session_update[0Ktravis_time:start:01797900[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:01797900:start=1593440702837178639,finish=1593440706504758987,duration=3667580348,event=set_docker_mtu[0Ktravis_time:start:14acb662[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:14acb662:start=1593440706508052202,finish=1593440706564838979,duration=56786777,event=resolvconf[0Ktravis_time:start:0b212e20[0Ktravis_time:end:0b212e20:start=1593440706570523374,finish=1593440706708848174,duration=138324800,event=maven_central_mirror[0Ktravis_time:start:072c74e8[0Ktravis_time:end:072c74e8:start=1593440706711689376,finish=1593440706800700101,duration=89010725,event=maven_https[0Ktravis_time:start:2a13b319[0Ktravis_time:end:2a13b319:start=1593440706809997512,finish=1593440706812182960,duration=2185448,event=fix_ps4[0Ktravis_time:start:223646ca[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0807cc15[0K$ git clone --depth=50 https://github.com/bigartm/bigartm.git bigartm/bigartm
+Cloning into 'bigartm/bigartm'...
+remote: Enumerating objects: 3040, done.[K
+remote: Counting objects:   0% (1/3040)[Kremote: Counting objects:   1% (31/3040)[Kremote: Counting objects:   2% (61/3040)[Kremote: Counting objects:   3% (92/3040)[Kremote: Counting objects:   4% (122/3040)[Kremote: Counting objects:   5% (152/3040)[Kremote: Counting objects:   6% (183/3040)[Kremote: Counting objects:   7% (213/3040)[Kremote: Counting objects:   8% (244/3040)[Kremote: Counting objects:   9% (274/3040)[Kremote: Counting objects:  10% (304/3040)[Kremote: Counting objects:  11% (335/3040)[Kremote: Counting objects:  12% (365/3040)[Kremote: Counting objects:  13% (396/3040)[Kremote: Counting objects:  14% (426/3040)[Kremote: Counting objects:  15% (456/3040)[Kremote: Counting objects:  16% (487/3040)[Kremote: Counting objects:  17% (517/3040)[Kremote: Counting objects:  18% (548/3040)[Kremote: Counting objects:  19% (578/3040)[Kremote: Counting objects:  20% (608/3040)[Kremote: Counting objects:  21% (639/3040)[Kremote: Counting objects:  22% (669/3040)[Kremote: Counting objects:  23% (700/3040)[Kremote: Counting objects:  24% (730/3040)[Kremote: Counting objects:  25% (760/3040)[Kremote: Counting objects:  26% (791/3040)[Kremote: Counting objects:  27% (821/3040)[Kremote: Counting objects:  28% (852/3040)[Kremote: Counting objects:  29% (882/3040)[Kremote: Counting objects:  30% (912/3040)[Kremote: Counting objects:  31% (943/3040)[Kremote: Counting objects:  32% (973/3040)[Kremote: Counting objects:  33% (1004/3040)[Kremote: Counting objects:  34% (1034/3040)[Kremote: Counting objects:  35% (1064/3040)[Kremote: Counting objects:  36% (1095/3040)[Kremote: Counting objects:  37% (1125/3040)[Kremote: Counting objects:  38% (1156/3040)[Kremote: Counting objects:  39% (1186/3040)[Kremote: Counting objects:  40% (1216/3040)[Kremote: Counting objects:  41% (1247/3040)[Kremote: Counting objects:  42% (1277/3040)[Kremote: Counting objects:  43% (1308/3040)[Kremote: Counting objects:  44% (1338/3040)[Kremote: Counting objects:  45% (1368/3040)[Kremote: Counting objects:  46% (1399/3040)[Kremote: Counting objects:  47% (1429/3040)[Kremote: Counting objects:  48% (1460/3040)[Kremote: Counting objects:  49% (1490/3040)[Kremote: Counting objects:  50% (1520/3040)[Kremote: Counting objects:  51% (1551/3040)[Kremote: Counting objects:  52% (1581/3040)[Kremote: Counting objects:  53% (1612/3040)[Kremote: Counting objects:  54% (1642/3040)[Kremote: Counting objects:  55% (1672/3040)[Kremote: Counting objects:  56% (1703/3040)[Kremote: Counting objects:  57% (1733/3040)[Kremote: Counting objects:  58% (1764/3040)[Kremote: Counting objects:  59% (1794/3040)[Kremote: Counting objects:  60% (1824/3040)[Kremote: Counting objects:  61% (1855/3040)[Kremote: Counting objects:  62% (1885/3040)[Kremote: Counting objects:  63% (1916/3040)[Kremote: Counting objects:  64% (1946/3040)[Kremote: Counting objects:  65% (1976/3040)[Kremote: Counting objects:  66% (2007/3040)[Kremote: Counting objects:  67% (2037/3040)[Kremote: Counting objects:  68% (2068/3040)[Kremote: Counting objects:  69% (2098/3040)[Kremote: Counting objects:  70% (2128/3040)[Kremote: Counting objects:  71% (2159/3040)[Kremote: Counting objects:  72% (2189/3040)[Kremote: Counting objects:  73% (2220/3040)[Kremote: Counting objects:  74% (2250/3040)[Kremote: Counting objects:  75% (2280/3040)[Kremote: Counting objects:  76% (2311/3040)[Kremote: Counting objects:  77% (2341/3040)[Kremote: Counting objects:  78% (2372/3040)[Kremote: Counting objects:  79% (2402/3040)[Kremote: Counting objects:  80% (2432/3040)[Kremote: Counting objects:  81% (2463/3040)[Kremote: Counting objects:  82% (2493/3040)[Kremote: Counting objects:  83% (2524/3040)[Kremote: Counting objects:  84% (2554/3040)[Kremote: Counting objects:  85% (2584/3040)[Kremote: Counting objects:  86% (2615/3040)[Kremote: Counting objects:  87% (2645/3040)[Kremote: Counting objects:  88% (2676/3040)[Kremote: Counting objects:  89% (2706/3040)[Kremote: Counting objects:  90% (2736/3040)[Kremote: Counting objects:  91% (2767/3040)[Kremote: Counting objects:  92% (2797/3040)[Kremote: Counting objects:  93% (2828/3040)[Kremote: Counting objects:  94% (2858/3040)[Kremote: Counting objects:  95% (2888/3040)[Kremote: Counting objects:  96% (2919/3040)[Kremote: Counting objects:  97% (2949/3040)[Kremote: Counting objects:  98% (2980/3040)[Kremote: Counting objects:  99% (3010/3040)[Kremote: Counting objects: 100% (3040/3040)[Kremote: Counting objects: 100% (3040/3040), done.[K
+remote: Compressing objects:   0% (1/1771)[Kremote: Compressing objects:   1% (18/1771)[Kremote: Compressing objects:   2% (36/1771)[Kremote: Compressing objects:   3% (54/1771)[Kremote: Compressing objects:   4% (71/1771)[Kremote: Compressing objects:   5% (89/1771)[Kremote: Compressing objects:   6% (107/1771)[Kremote: Compressing objects:   7% (124/1771)[Kremote: Compressing objects:   8% (142/1771)[Kremote: Compressing objects:   9% (160/1771)[Kremote: Compressing objects:  10% (178/1771)[Kremote: Compressing objects:  11% (195/1771)[Kremote: Compressing objects:  12% (213/1771)[Kremote: Compressing objects:  13% (231/1771)[Kremote: Compressing objects:  14% (248/1771)[Kremote: Compressing objects:  15% (266/1771)[Kremote: Compressing objects:  16% (284/1771)[Kremote: Compressing objects:  17% (302/1771)[Kremote: Compressing objects:  18% (319/1771)[Kremote: Compressing objects:  19% (337/1771)[Kremote: Compressing objects:  20% (355/1771)[Kremote: Compressing objects:  21% (372/1771)[Kremote: Compressing objects:  22% (390/1771)[Kremote: Compressing objects:  23% (408/1771)[Kremote: Compressing objects:  24% (426/1771)[Kremote: Compressing objects:  25% (443/1771)[Kremote: Compressing objects:  26% (461/1771)[Kremote: Compressing objects:  27% (479/1771)[Kremote: Compressing objects:  28% (496/1771)[Kremote: Compressing objects:  29% (514/1771)[Kremote: Compressing objects:  30% (532/1771)[Kremote: Compressing objects:  31% (550/1771)[Kremote: Compressing objects:  32% (567/1771)[Kremote: Compressing objects:  33% (585/1771)[Kremote: Compressing objects:  34% (603/1771)[Kremote: Compressing objects:  35% (620/1771)[Kremote: Compressing objects:  36% (638/1771)[Kremote: Compressing objects:  37% (656/1771)[Kremote: Compressing objects:  38% (673/1771)[Kremote: Compressing objects:  39% (691/1771)[Kremote: Compressing objects:  40% (709/1771)[Kremote: Compressing objects:  41% (727/1771)[Kremote: Compressing objects:  42% (744/1771)[Kremote: Compressing objects:  43% (762/1771)[Kremote: Compressing objects:  44% (780/1771)[Kremote: Compressing objects:  45% (797/1771)[Kremote: Compressing objects:  46% (815/1771)[Kremote: Compressing objects:  47% (833/1771)[Kremote: Compressing objects:  48% (851/1771)[Kremote: Compressing objects:  49% (868/1771)[Kremote: Compressing objects:  50% (886/1771)[Kremote: Compressing objects:  51% (904/1771)[Kremote: Compressing objects:  52% (921/1771)[Kremote: Compressing objects:  53% (939/1771)[Kremote: Compressing objects:  54% (957/1771)[Kremote: Compressing objects:  55% (975/1771)[Kremote: Compressing objects:  56% (992/1771)[Kremote: Compressing objects:  57% (1010/1771)[Kremote: Compressing objects:  58% (1028/1771)[Kremote: Compressing objects:  59% (1045/1771)[Kremote: Compressing objects:  60% (1063/1771)[Kremote: Compressing objects:  61% (1081/1771)[Kremote: Compressing objects:  62% (1099/1771)[Kremote: Compressing objects:  63% (1116/1771)[Kremote: Compressing objects:  64% (1134/1771)[Kremote: Compressing objects:  65% (1152/1771)[Kremote: Compressing objects:  66% (1169/1771)[Kremote: Compressing objects:  67% (1187/1771)[Kremote: Compressing objects:  68% (1205/1771)[Kremote: Compressing objects:  69% (1222/1771)[Kremote: Compressing objects:  70% (1240/1771)[Kremote: Compressing objects:  71% (1258/1771)[Kremote: Compressing objects:  72% (1276/1771)[Kremote: Compressing objects:  73% (1293/1771)[Kremote: Compressing objects:  74% (1311/1771)[Kremote: Compressing objects:  75% (1329/1771)[Kremote: Compressing objects:  76% (1346/1771)[Kremote: Compressing objects:  77% (1364/1771)[Kremote: Compressing objects:  78% (1382/1771)[Kremote: Compressing objects:  79% (1400/1771)[Kremote: Compressing objects:  80% (1417/1771)[Kremote: Compressing objects:  81% (1435/1771)[Kremote: Compressing objects:  82% (1453/1771)[Kremote: Compressing objects:  83% (1470/1771)[Kremote: Compressing objects:  84% (1488/1771)[Kremote: Compressing objects:  85% (1506/1771)[Kremote: Compressing objects:  86% (1524/1771)[Kremote: Compressing objects:  87% (1541/1771)[Kremote: Compressing objects:  88% (1559/1771)[Kremote: Compressing objects:  89% (1577/1771)[Kremote: Compressing objects:  90% (1594/1771)[Kremote: Compressing objects:  91% (1612/1771)[Kremote: Compressing objects:  92% (1630/1771)[Kremote: Compressing objects:  93% (1648/1771)[Kremote: Compressing objects:  94% (1665/1771)[Kremote: Compressing objects:  95% (1683/1771)[Kremote: Compressing objects:  96% (1701/1771)[Kremote: Compressing objects:  97% (1718/1771)[Kremote: Compressing objects:  98% (1736/1771)[Kremote: Compressing objects:  99% (1754/1771)[Kremote: Compressing objects: 100% (1771/1771)[Kremote: Compressing objects: 100% (1771/1771), done.[K
+Receiving objects:   0% (1/3040)   Receiving objects:   1% (31/3040)   Receiving objects:   2% (61/3040)   Receiving objects:   3% (92/3040)   Receiving objects:   4% (122/3040)   Receiving objects:   5% (152/3040)   Receiving objects:   6% (183/3040)   Receiving objects:   7% (213/3040)   Receiving objects:   8% (244/3040)   Receiving objects:   9% (274/3040)   Receiving objects:  10% (304/3040)   Receiving objects:  11% (335/3040)   Receiving objects:  12% (365/3040)   Receiving objects:  13% (396/3040)   Receiving objects:  14% (426/3040)   Receiving objects:  15% (456/3040)   Receiving objects:  16% (487/3040)   Receiving objects:  17% (517/3040)   Receiving objects:  18% (548/3040)   Receiving objects:  19% (578/3040)   Receiving objects:  20% (608/3040)   Receiving objects:  21% (639/3040)   Receiving objects:  22% (669/3040)   Receiving objects:  23% (700/3040)   Receiving objects:  24% (730/3040)   Receiving objects:  25% (760/3040)   Receiving objects:  26% (791/3040)   Receiving objects:  27% (821/3040)   Receiving objects:  28% (852/3040)   Receiving objects:  29% (882/3040)   Receiving objects:  30% (912/3040)   Receiving objects:  31% (943/3040)   Receiving objects:  32% (973/3040)   Receiving objects:  33% (1004/3040)   Receiving objects:  34% (1034/3040)   Receiving objects:  35% (1064/3040)   Receiving objects:  36% (1095/3040)   Receiving objects:  37% (1125/3040)   Receiving objects:  38% (1156/3040)   Receiving objects:  39% (1186/3040)   Receiving objects:  40% (1216/3040)   Receiving objects:  41% (1247/3040)   Receiving objects:  42% (1277/3040)   Receiving objects:  43% (1308/3040)   Receiving objects:  44% (1338/3040)   Receiving objects:  45% (1368/3040)   Receiving objects:  46% (1399/3040)   Receiving objects:  47% (1429/3040)   Receiving objects:  48% (1460/3040)   Receiving objects:  49% (1490/3040)   Receiving objects:  50% (1520/3040)   Receiving objects:  51% (1551/3040)   Receiving objects:  52% (1581/3040)   Receiving objects:  53% (1612/3040)   Receiving objects:  54% (1642/3040)   Receiving objects:  55% (1672/3040)   Receiving objects:  56% (1703/3040)   Receiving objects:  57% (1733/3040)   Receiving objects:  58% (1764/3040)   Receiving objects:  59% (1794/3040)   Receiving objects:  60% (1824/3040)   Receiving objects:  61% (1855/3040)   Receiving objects:  62% (1885/3040)   Receiving objects:  63% (1916/3040)   Receiving objects:  64% (1946/3040)   Receiving objects:  65% (1976/3040)   Receiving objects:  66% (2007/3040)   Receiving objects:  67% (2037/3040)   Receiving objects:  68% (2068/3040)   Receiving objects:  69% (2098/3040)   Receiving objects:  70% (2128/3040)   Receiving objects:  71% (2159/3040)   Receiving objects:  72% (2189/3040)   Receiving objects:  73% (2220/3040)   Receiving objects:  74% (2250/3040)   Receiving objects:  75% (2280/3040)   Receiving objects:  76% (2311/3040)   Receiving objects:  77% (2341/3040)   Receiving objects:  78% (2372/3040)   Receiving objects:  79% (2402/3040)   Receiving objects:  80% (2432/3040)   Receiving objects:  81% (2463/3040)   Receiving objects:  82% (2493/3040)   Receiving objects:  83% (2524/3040)   Receiving objects:  84% (2554/3040)   Receiving objects:  85% (2584/3040)   Receiving objects:  86% (2615/3040)   Receiving objects:  87% (2645/3040)   Receiving objects:  88% (2676/3040)   Receiving objects:  89% (2706/3040)   Receiving objects:  90% (2736/3040)   Receiving objects:  91% (2767/3040)   Receiving objects:  92% (2797/3040)   Receiving objects:  93% (2828/3040)   Receiving objects:  94% (2858/3040)   Receiving objects:  95% (2888/3040)   remote: Total 3040 (delta 1564), reused 2401 (delta 1219), pack-reused 0[K
+Receiving objects:  96% (2919/3040)   Receiving objects:  97% (2949/3040)   Receiving objects:  98% (2980/3040)   Receiving objects:  99% (3010/3040)   Receiving objects: 100% (3040/3040)   Receiving objects: 100% (3040/3040), 7.13 MiB | 22.00 MiB/s, done.
+Resolving deltas:   0% (0/1564)   Resolving deltas:   1% (26/1564)   Resolving deltas:   4% (78/1564)   Resolving deltas:   5% (80/1564)   Resolving deltas:   7% (118/1564)   Resolving deltas:   9% (151/1564)   Resolving deltas:  10% (163/1564)   Resolving deltas:  11% (180/1564)   Resolving deltas:  13% (213/1564)   Resolving deltas:  14% (231/1564)   Resolving deltas:  15% (240/1564)   Resolving deltas:  16% (259/1564)   Resolving deltas:  17% (274/1564)   Resolving deltas:  18% (286/1564)   Resolving deltas:  19% (299/1564)   Resolving deltas:  20% (313/1564)   Resolving deltas:  21% (337/1564)   Resolving deltas:  22% (348/1564)   Resolving deltas:  23% (360/1564)   Resolving deltas:  24% (377/1564)   Resolving deltas:  25% (394/1564)   Resolving deltas:  26% (415/1564)   Resolving deltas:  27% (426/1564)   Resolving deltas:  28% (439/1564)   Resolving deltas:  29% (457/1564)   Resolving deltas:  30% (477/1564)   Resolving deltas:  31% (489/1564)   Resolving deltas:  32% (502/1564)   Resolving deltas:  33% (520/1564)   Resolving deltas:  34% (534/1564)   Resolving deltas:  35% (548/1564)   Resolving deltas:  36% (564/1564)   Resolving deltas:  37% (587/1564)   Resolving deltas:  38% (595/1564)   Resolving deltas:  39% (616/1564)   Resolving deltas:  40% (626/1564)   Resolving deltas:  41% (642/1564)   Resolving deltas:  42% (660/1564)   Resolving deltas:  43% (684/1564)   Resolving deltas:  44% (690/1564)   Resolving deltas:  45% (705/1564)   Resolving deltas:  46% (720/1564)   Resolving deltas:  47% (741/1564)   Resolving deltas:  48% (758/1564)   Resolving deltas:  49% (767/1564)   Resolving deltas:  50% (782/1564)   Resolving deltas:  51% (800/1564)   Resolving deltas:  52% (816/1564)   Resolving deltas:  53% (829/1564)   Resolving deltas:  54% (845/1564)   Resolving deltas:  55% (861/1564)   Resolving deltas:  56% (876/1564)   Resolving deltas:  57% (892/1564)   Resolving deltas:  58% (911/1564)   Resolving deltas:  59% (924/1564)   Resolving deltas:  60% (939/1564)   Resolving deltas:  61% (962/1564)   Resolving deltas:  62% (970/1564)   Resolving deltas:  63% (986/1564)   Resolving deltas:  64% (1001/1564)   Resolving deltas:  66% (1033/1564)   Resolving deltas:  67% (1052/1564)   Resolving deltas:  68% (1064/1564)   Resolving deltas:  69% (1080/1564)   Resolving deltas:  70% (1095/1564)   Resolving deltas:  71% (1115/1564)   Resolving deltas:  72% (1127/1564)   Resolving deltas:  73% (1149/1564)   Resolving deltas:  74% (1160/1564)   Resolving deltas:  75% (1180/1564)   Resolving deltas:  76% (1199/1564)   Resolving deltas:  77% (1209/1564)   Resolving deltas:  78% (1220/1564)   Resolving deltas:  79% (1239/1564)   Resolving deltas:  80% (1255/1564)   Resolving deltas:  81% (1267/1564)   Resolving deltas:  82% (1283/1564)   Resolving deltas:  83% (1303/1564)   Resolving deltas:  84% (1319/1564)   Resolving deltas:  85% (1337/1564)   Resolving deltas:  87% (1369/1564)   Resolving deltas:  88% (1383/1564)   Resolving deltas:  89% (1392/1564)   Resolving deltas:  90% (1409/1564)   Resolving deltas:  91% (1425/1564)   Resolving deltas:  92% (1439/1564)   Resolving deltas:  93% (1455/1564)   Resolving deltas:  94% (1474/1564)   Resolving deltas:  95% (1486/1564)   Resolving deltas:  96% (1504/1564)   Resolving deltas:  97% (1518/1564)   Resolving deltas:  98% (1538/1564)   Resolving deltas:  99% (1550/1564)   Resolving deltas: 100% (1564/1564)   Resolving deltas: 100% (1564/1564), done.
+travis_time:end:0807cc15:start=1593440706818356871,finish=1593440708434333630,duration=1615976759,event=checkout[0K$ cd bigartm/bigartm
+travis_time:start:0b4e1042[0K$ git fetch origin +refs/pull/1015/merge:
+remote: Enumerating objects: 12, done.[K
+remote: Counting objects:   8% (1/12)[Kremote: Counting objects:  16% (2/12)[Kremote: Counting objects:  25% (3/12)[Kremote: Counting objects:  33% (4/12)[Kremote: Counting objects:  41% (5/12)[Kremote: Counting objects:  50% (6/12)[Kremote: Counting objects:  58% (7/12)[Kremote: Counting objects:  66% (8/12)[Kremote: Counting objects:  75% (9/12)[Kremote: Counting objects:  83% (10/12)[Kremote: Counting objects:  91% (11/12)[Kremote: Counting objects: 100% (12/12)[Kremote: Counting objects: 100% (12/12), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 7 (delta 5), reused 6 (delta 5), pack-reused 0[K
+Unpacking objects:  14% (1/7)   Unpacking objects:  28% (2/7)   Unpacking objects:  42% (3/7)   Unpacking objects:  57% (4/7)   Unpacking objects:  71% (5/7)   Unpacking objects:  85% (6/7)   Unpacking objects: 100% (7/7)   Unpacking objects: 100% (7/7), done.
+From https://github.com/bigartm/bigartm
+ * branch            refs/pull/1015/merge -> FETCH_HEAD
+travis_time:end:0b4e1042:start=1593440708438141280,finish=1593440708979369817,duration=541228537,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:0b4e1042:start=1593440708438141280,finish=1593440709207606576,duration=769465296,event=checkout[0Ktravis_time:start:343db074[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export CCACHE_DIR=$HOME/.ccache
+$ export CCACHE_COMPILERCHECK=content
+$ export CCACHE_COMPRESS=true
+$ export CCACHE_NODISABLE=true
+$ export CCACHE_MAXSIZE=500M
+$ export GCC_VER=4.8
+
+travis_time:end:343db074:start=1593440709210898383,finish=1593440709218347935,duration=7449552,event=env[0Ktravis_time:start:0b9c5d26[0K$ source ~/virtualenv/python2.7/bin/activate
+travis_time:end:0b9c5d26:start=1593440709221717960,finish=1593440709227059962,duration=5342002,event=[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:35cceb28[0K$ Installing caching utilities
+travis_time:end:35cceb28:start=1593440709984789407,finish=1593440710151307057,duration=166517650,event=setup_casher[0Ktravis_time:start:1aa34d27[0Ktravis_time:end:1aa34d27:start=1593440710156170862,finish=1593440710158964826,duration=2793964,event=setup_casher[0Ktravis_time:start:066f3bbe[0Kattempting to download cache archive[0m
+[32;1mfetching PR.1015/cache--linux-xenial-34bba6d2357f932e2a9a3ce7c95b99bf662be6d07e6707ad1dd79592e5eda8d7--python-2.7.tgz[0m
+[32;1mfetching PR.1015/cache-linux-xenial-34bba6d2357f932e2a9a3ce7c95b99bf662be6d07e6707ad1dd79592e5eda8d7--python-2.7.tgz[0m
+[32;1mfetching PR.1015/cache--python-2.7.tgz[0m
+[32;1mfetching master/cache--linux-xenial-34bba6d2357f932e2a9a3ce7c95b99bf662be6d07e6707ad1dd79592e5eda8d7--python-2.7.tgz[0m
+[32;1mfetching master/cache-linux-xenial-34bba6d2357f932e2a9a3ce7c95b99bf662be6d07e6707ad1dd79592e5eda8d7--python-2.7.tgz[0m
+[32;1mfetching master/cache--python-2.7.tgz[0m
+[31;1mcould not download cache[0m
+travis_time:end:066f3bbe:start=1593440710162514938,finish=1593440712565516576,duration=2403001638,event=setup_casher[0Ktravis_time:start:0d1d2580[0Ktravis_time:end:0d1d2580:start=1593440712569832458,finish=1593440712572749598,duration=2917140,event=setup_casher[0Ktravis_time:start:0a59a006[0Kadding /home/travis/.ccache to cache[0m
+travis_time:end:0a59a006:start=1593440712576489888,finish=1593440713544210270,duration=967720382,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+$ python --version
+Python 2.7.15
+$ pip --version
+pip 19.0.3 from /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/pip (python 2.7)
+travis_fold:start:before_install.1[0Ktravis_time:start:03a241f2[0K$ pip install -U pip
+[33mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.[0m
+Collecting pip
+[?25l  Downloading https://files.pythonhosted.org/packages/43/84/23ed6a1796480a6f1a2d38f2802901d078266bda38388954d01d3f2e821d/pip-20.1.1-py2.py3-none-any.whl (1.5MB)
+
+[?25hInstalling collected packages: pip
+  Found existing installation: pip 19.0.3
+    Uninstalling pip-19.0.3:
+      Successfully uninstalled pip-19.0.3
+Successfully installed pip-20.1.1
+travis_time:end:03a241f2:start=1593440714302199731,finish=1593440716044727370,duration=1742527639,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:07a50670[0K$ pip install -U pytest pep8 wheel pytest-forked
+[33mDEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Collecting pytest
+  Downloading pytest-4.6.11-py2.py3-none-any.whl (231 kB)
+[?25l
+[?25hCollecting pep8
+  Downloading pep8-1.7.1-py2.py3-none-any.whl (41 kB)
+[?25l
+[?25hCollecting wheel
+  Downloading wheel-0.34.2-py2.py3-none-any.whl (26 kB)
+Collecting pytest-forked
+  Downloading pytest_forked-1.2.0-py2.py3-none-any.whl (4.7 kB)
+Requirement already satisfied, skipping upgrade: atomicwrites>=1.0 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest) (1.2.1)
+Requirement already satisfied, skipping upgrade: pathlib2>=2.2.0; python_version < "3.6" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest) (2.3.2)
+Collecting pluggy<1.0,>=0.12
+  Downloading pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+Requirement already satisfied, skipping upgrade: py>=1.5.0 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest) (1.7.0)
+Collecting wcwidth
+  Downloading wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting importlib-metadata>=0.12; python_version < "3.8"
+  Downloading importlib_metadata-1.7.0-py2.py3-none-any.whl (31 kB)
+Requirement already satisfied, skipping upgrade: funcsigs>=1.0; python_version < "3.0" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest) (1.0.2)
+Requirement already satisfied, skipping upgrade: attrs>=17.4.0 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest) (18.2.0)
+Requirement already satisfied, skipping upgrade: six>=1.10.0 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest) (1.11.0)
+Requirement already satisfied, skipping upgrade: more-itertools<6.0.0,>=4.0.0; python_version <= "2.7" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pytest) (4.3.0)
+Collecting packaging
+  Downloading packaging-20.4-py2.py3-none-any.whl (37 kB)
+Requirement already satisfied, skipping upgrade: scandir; python_version < "3.5" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pathlib2>=2.2.0; python_version < "3.6"->pytest) (1.9.0)
+Collecting backports.functools-lru-cache>=1.2.1; python_version < "3.2"
+  Downloading backports.functools_lru_cache-1.6.1-py2.py3-none-any.whl (5.7 kB)
+Collecting contextlib2; python_version < "3"
+  Downloading contextlib2-0.6.0.post1-py2.py3-none-any.whl (9.8 kB)
+Collecting zipp>=0.5
+  Downloading zipp-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Collecting configparser>=3.5; python_version < "3"
+  Downloading configparser-4.0.2-py2.py3-none-any.whl (22 kB)
+Collecting pyparsing>=2.0.2
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+[?25l
+[?25hInstalling collected packages: contextlib2, zipp, configparser, importlib-metadata, pluggy, backports.functools-lru-cache, wcwidth, pyparsing, packaging, pytest, pep8, wheel, pytest-forked
+  Attempting uninstall: pluggy
+    Found existing installation: pluggy 0.8.0
+    Uninstalling pluggy-0.8.0:
+      Successfully uninstalled pluggy-0.8.0
+  Attempting uninstall: pytest
+    Found existing installation: pytest 4.3.1
+    Uninstalling pytest-4.3.1:
+      Successfully uninstalled pytest-4.3.1
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.33.1
+    Uninstalling wheel-0.33.1:
+      Successfully uninstalled wheel-0.33.1
+Successfully installed backports.functools-lru-cache-1.6.1 configparser-4.0.2 contextlib2-0.6.0.post1 importlib-metadata-1.7.0 packaging-20.4 pep8-1.7.1 pluggy-0.13.1 pyparsing-2.4.7 pytest-4.6.11 pytest-forked-1.2.0 wcwidth-0.2.5 wheel-0.34.2 zipp-1.2.0
+travis_time:end:07a50670:start=1593440716048674601,finish=1593440718916199995,duration=2867525394,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:0035e544[0K$ pip install -U numpy scipy pandas tqdm --only-binary numpy,scipy,pandas
+[33mDEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Collecting numpy
+  Downloading numpy-1.16.6-cp27-cp27mu-manylinux1_x86_64.whl (17.0 MB)
+[?25l
+[?25hCollecting scipy
+  Downloading scipy-1.2.3-cp27-cp27mu-manylinux1_x86_64.whl (24.8 MB)
+[?25l
+[?25hCollecting pandas
+  Downloading pandas-0.24.2-cp27-cp27mu-manylinux1_x86_64.whl (10.1 MB)
+[?25l
+[?25hCollecting tqdm
+  Downloading tqdm-4.47.0-py2.py3-none-any.whl (66 kB)
+[?25l
+[?25hCollecting python-dateutil>=2.5.0
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+[?25l
+[?25hCollecting pytz>=2011k
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+[?25l
+[?25hRequirement already satisfied, skipping upgrade: six>=1.5 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from python-dateutil>=2.5.0->pandas) (1.11.0)
+Installing collected packages: numpy, scipy, python-dateutil, pytz, pandas, tqdm
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.16.2
+    Uninstalling numpy-1.16.2:
+      Successfully uninstalled numpy-1.16.2
+Successfully installed numpy-1.16.6 pandas-0.24.2 python-dateutil-2.8.1 pytz-2020.1 scipy-1.2.3 tqdm-4.47.0
+travis_time:end:0035e544:start=1593440718920720754,finish=1593440730788728355,duration=11868007601,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:059f1a23[0K$ pip install -U protobuf
+[33mDEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Collecting protobuf
+  Downloading protobuf-3.12.2-cp27-cp27mu-manylinux1_x86_64.whl (1.3 MB)
+[?25l
+[?25hRequirement already satisfied, skipping upgrade: setuptools in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from protobuf) (40.8.0)
+Requirement already satisfied, skipping upgrade: six>=1.9 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from protobuf) (1.11.0)
+Installing collected packages: protobuf
+Successfully installed protobuf-3.12.2
+travis_time:end:059f1a23:start=1593440730792878793,finish=1593440732287753456,duration=1494874663,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:02076ff2[0K$ sudo add-apt-repository universe
+'universe' distribution component is already enabled for all sources.
+travis_time:end:02076ff2:start=1593440732292105543,finish=1593440732602374787,duration=310269244,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:before_install.6[0Ktravis_time:start:0965806e[0K$ sudo apt-get update
+0% [Working]            Hit:1 http://apt.postgresql.org/pub/repos/apt xenial-pgdg InRelease
+0% [Connecting to archive.ubuntu.com (91.189.88.142)] [Connecting to security.u0% [1 InRelease gpgv 66.6 kB] [Connecting to archive.ubuntu.com (91.189.88.142)                                                                               0% [Waiting for headers] [Waiting for headers]                                              Hit:2 http://security.ubuntu.com/ubuntu xenial-security InRelease
+                                              0% [Waiting for headers]0% [2 InRelease gpgv 109 kB] [Waiting for headers]                                                  Hit:3 http://archive.ubuntu.com/ubuntu xenial InRelease
+0% [2 InRelease gpgv 109 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [3 InRelease gpgv 247 kB] [Waiting for headers]                                                  Hit:4 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
+0% [3 InRelease gpgv 247 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [4 InRelease gpgv 109 kB] [Waiting for headers]                                                  Hit:5 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
+                                                  0% [4 InRelease gpgv 109 kB]                            0% [Working]0% [5 InRelease gpgv 107 kB]                            20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 3%Reading package lists... 3%Reading package lists... 7%Reading package lists... 7%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 31%Reading package lists... 31%Reading package lists... 43%Reading package lists... 53%Reading package lists... 53%Reading package lists... 65%Reading package lists... 65%Reading package lists... 65%Reading package lists... 65%Reading package lists... 66%Reading package lists... 66%Reading package lists... 66%Reading package lists... 66%Reading package lists... 70%Reading package lists... 70%Reading package lists... 73%Reading package lists... 73%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 80%Reading package lists... 80%Reading package lists... 83%Reading package lists... 83%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 88%Reading package lists... 88%Reading package lists... 90%Reading package lists... 90%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+travis_time:end:0965806e:start=1593440732606270383,finish=1593440734749404026,duration=2143133643,event=before_install[0Ktravis_fold:end:before_install.6[0Ktravis_fold:start:before_install.7[0Ktravis_time:start:02938848[0K$ sudo apt-get install libboost-all-dev
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libboost-atomic-dev libboost-atomic1.58-dev libboost-atomic1.58.0
+  libboost-chrono-dev libboost-chrono1.58-dev libboost-chrono1.58.0
+  libboost-context-dev libboost-context1.58-dev libboost-context1.58.0
+  libboost-coroutine-dev libboost-coroutine1.58-dev libboost-coroutine1.58.0
+  libboost-date-time-dev libboost-date-time1.58-dev libboost-date-time1.58.0
+  libboost-dev libboost-exception-dev libboost-exception1.58-dev
+  libboost-filesystem-dev libboost-filesystem1.58-dev libboost-graph-dev
+  libboost-graph-parallel-dev libboost-graph-parallel1.58-dev
+  libboost-graph-parallel1.58.0 libboost-graph1.58-dev libboost-graph1.58.0
+  libboost-iostreams-dev libboost-iostreams1.58-dev libboost-locale-dev
+  libboost-locale1.58-dev libboost-locale1.58.0 libboost-log-dev
+  libboost-log1.58-dev libboost-log1.58.0 libboost-math-dev
+  libboost-math1.58-dev libboost-math1.58.0 libboost-mpi-dev
+  libboost-mpi-python-dev libboost-mpi-python1.58-dev
+  libboost-mpi-python1.58.0 libboost-mpi1.58-dev libboost-mpi1.58.0
+  libboost-program-options-dev libboost-program-options1.58-dev
+  libboost-program-options1.58.0 libboost-python-dev libboost-python1.58-dev
+  libboost-python1.58.0 libboost-random-dev libboost-random1.58-dev
+  libboost-random1.58.0 libboost-regex-dev libboost-regex1.58-dev
+  libboost-serialization-dev libboost-serialization1.58-dev
+  libboost-serialization1.58.0 libboost-signals-dev libboost-signals1.58-dev
+  libboost-signals1.58.0 libboost-system-dev libboost-system1.58-dev
+  libboost-test-dev libboost-test1.58-dev libboost-test1.58.0
+  libboost-thread-dev libboost-thread1.58-dev libboost-thread1.58.0
+  libboost-timer-dev libboost-timer1.58-dev libboost-timer1.58.0
+  libboost-tools-dev libboost-wave-dev libboost-wave1.58-dev
+  libboost-wave1.58.0 libboost1.58-dev libboost1.58-tools-dev libhwloc-dev
+  libhwloc5 libibverbs-dev libibverbs1 libnuma-dev libopenmpi-dev
+  libopenmpi1.10 mpi-default-bin mpi-default-dev openmpi-bin openmpi-common
+Suggested packages:
+  libboost-doc graphviz libboost1.58-doc gccxml libmpfrc++-dev libntl-dev
+  xsltproc doxygen docbook-xml docbook-xsl fop libhwloc-contrib-plugins
+  opennmpi-doc gfortran openmpi-checkpoint
+Recommended packages:
+  libhwloc-plugins
+The following NEW packages will be installed:
+  libboost-all-dev libboost-atomic-dev libboost-atomic1.58-dev
+  libboost-atomic1.58.0 libboost-chrono-dev libboost-chrono1.58-dev
+  libboost-chrono1.58.0 libboost-context-dev libboost-context1.58-dev
+  libboost-context1.58.0 libboost-coroutine-dev libboost-coroutine1.58-dev
+  libboost-coroutine1.58.0 libboost-date-time-dev libboost-date-time1.58-dev
+  libboost-date-time1.58.0 libboost-dev libboost-exception-dev
+  libboost-exception1.58-dev libboost-filesystem-dev
+  libboost-filesystem1.58-dev libboost-graph-dev libboost-graph-parallel-dev
+  libboost-graph-parallel1.58-dev libboost-graph-parallel1.58.0
+  libboost-graph1.58-dev libboost-graph1.58.0 libboost-iostreams-dev
+  libboost-iostreams1.58-dev libboost-locale-dev libboost-locale1.58-dev
+  libboost-locale1.58.0 libboost-log-dev libboost-log1.58-dev
+  libboost-log1.58.0 libboost-math-dev libboost-math1.58-dev
+  libboost-math1.58.0 libboost-mpi-dev libboost-mpi-python-dev
+  libboost-mpi-python1.58-dev libboost-mpi-python1.58.0 libboost-mpi1.58-dev
+  libboost-mpi1.58.0 libboost-program-options-dev
+  libboost-program-options1.58-dev libboost-program-options1.58.0
+  libboost-python-dev libboost-python1.58-dev libboost-python1.58.0
+  libboost-random-dev libboost-random1.58-dev libboost-random1.58.0
+  libboost-regex-dev libboost-regex1.58-dev libboost-serialization-dev
+  libboost-serialization1.58-dev libboost-serialization1.58.0
+  libboost-signals-dev libboost-signals1.58-dev libboost-signals1.58.0
+  libboost-system-dev libboost-system1.58-dev libboost-test-dev
+  libboost-test1.58-dev libboost-test1.58.0 libboost-thread-dev
+  libboost-thread1.58-dev libboost-thread1.58.0 libboost-timer-dev
+  libboost-timer1.58-dev libboost-timer1.58.0 libboost-tools-dev
+  libboost-wave-dev libboost-wave1.58-dev libboost-wave1.58.0 libboost1.58-dev
+  libboost1.58-tools-dev libhwloc-dev libhwloc5 libibverbs-dev libibverbs1
+  libnuma-dev libopenmpi-dev libopenmpi1.10 mpi-default-bin mpi-default-dev
+  openmpi-bin openmpi-common
+0 upgraded, 89 newly installed, 0 to remove and 296 not upgraded.
+Need to get 16.6 MB of archives.
+After this operation, 188 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [6,222 kB]
+0% [1 libboost1.58-dev 13.8 kB/6,222 kB 0%]3% [1 libboost1.58-dev 653 kB/6,222 kB 10%]                                           30% [Working]             Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libboost-dev amd64 1.58.0.1ubuntu1 [3,134 B]
+30% [2 libboost-dev 3,134 B/3,134 B 100%]                                         31% [Working]             Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost1.58-tools-dev amd64 1.58.0+dfsg-5ubuntu3.1 [1,140 kB]
+31% [3 libboost1.58-tools-dev 56.0 kB/1,140 kB 5%]                                                  36% [Working]             Get:4 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-tools-dev amd64 1.58.0.1ubuntu1 [2,974 B]
+36% [4 libboost-tools-dev 2,974 B/2,974 B 100%]                                               37% [Working]             Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-atomic1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [7,120 B]
+37% [5 libboost-atomic1.58.0 7,120 B/7,120 B 100%]                                                  37% [Working]             Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-atomic1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [5,026 B]
+37% [6 libboost-atomic1.58-dev 5,026 B/5,026 B 100%]                                                    37% [Working]             Get:7 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-atomic-dev amd64 1.58.0.1ubuntu1 [3,104 B]
+37% [7 libboost-atomic-dev 3,104 B/3,104 B 100%]                                                37% [Working]             Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-chrono1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [13.2 kB]
+37% [8 libboost-chrono1.58.0 13.2 kB/13.2 kB 100%]                                                  38% [Working]             Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-chrono1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [15.6 kB]
+38% [9 libboost-chrono1.58-dev 6,717 B/15.6 kB 43%]                                                   38% [Working]             Get:10 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-chrono-dev amd64 1.58.0.1ubuntu1 [3,422 B]
+38% [10 libboost-chrono-dev 3,422 B/3,422 B 100%]                                                 38% [Working]             Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-thread1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [47.0 kB]
+38% [11 libboost-thread1.58.0 47.0 kB/47.0 kB 100%]                                                   39% [Working]             Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-context1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [18.9 kB]
+39% [12 libboost-context1.58.0 18.9 kB/18.9 kB 100%]                                                    39% [Working]             Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-context1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [19.0 kB]
+39% [13 libboost-context1.58-dev 19.0 kB/19.0 kB 100%]                                                      39% [Working]             Get:14 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-context-dev amd64 1.58.0.1ubuntu1 [2,994 B]
+39% [14 libboost-context-dev 2,994 B/2,994 B 100%]                                                  39% [Working]             Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-coroutine1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [20.2 kB]
+40% [15 libboost-coroutine1.58.0 20.2 kB/20.2 kB 100%]                                                      40% [Working]             Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-coroutine1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [21.0 kB]
+40% [16 libboost-coroutine1.58-dev 8,720 B/21.0 kB 42%]                                                       40% [Working]             Get:17 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-coroutine-dev amd64 1.58.0.1ubuntu1 [3,070 B]
+40% [17 libboost-coroutine-dev 3,070 B/3,070 B 100%]                                                    40% [Working]             Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-date-time1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [20.7 kB]
+40% [18 libboost-date-time1.58.0 20.7 kB/20.7 kB 100%]                                                      41% [Working]             Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-serialization1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [113 kB]
+41% [19 libboost-serialization1.58.0 28.6 kB/113 kB 25%]                                                        41% [Working]             Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-serialization1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [147 kB]
+42% [20 libboost-serialization1.58-dev 45.9 kB/147 kB 31%]                                                          42% [Working]             Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-date-time1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [27.4 kB]
+42% [21 libboost-date-time1.58-dev 27.4 kB/27.4 kB 100%]                                                        43% [Working]             Get:22 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-date-time-dev amd64 1.58.0.1ubuntu1 [2,800 B]
+43% [22 libboost-date-time-dev 2,800 B/2,800 B 100%]                                                    43% [Working]             Get:23 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-exception1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [4,456 B]
+43% [23 libboost-exception1.58-dev 4,456 B/4,456 B 100%]                                                        43% [Working]             Get:24 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-exception-dev amd64 1.58.0.1ubuntu1 [2,792 B]
+43% [24 libboost-exception-dev 2,792 B/2,792 B 100%]                                                    43% [Waiting for headers]                         Get:25 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-system1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [8,526 B]
+43% [25 libboost-system1.58-dev 8,526 B/8,526 B 100%]                                                     44% [Working]             Get:26 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-filesystem1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [46.4 kB]
+44% [26 libboost-filesystem1.58-dev 46.4 kB/46.4 kB 100%]                                                         44% [Waiting for headers]                         Get:27 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-filesystem-dev amd64 1.58.0.1ubuntu1 [2,826 B]
+44% [27 libboost-filesystem-dev 2,826 B/2,826 B 100%]                                                     44% [Working]             Get:28 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-graph1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [94.2 kB]
+45% [28 libboost-graph1.58.0 64.0 kB/94.2 kB 68%]                                                 45% [Working]             Get:29 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-test1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [188 kB]
+45% [29 libboost-test1.58.0 35.0 kB/188 kB 19%]                                               46% [Working]             Get:30 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-test1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [232 kB]
+46% [30 libboost-test1.58-dev 42.9 kB/232 kB 19%]                                                 48% [Working]             Get:31 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-graph1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [104 kB]
+48% [31 libboost-graph1.58-dev 65.5 kB/104 kB 63%]                                                  48% [Working]             Get:32 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-graph-dev amd64 1.58.0.1ubuntu1 [2,886 B]
+48% [32 libboost-graph-dev 2,886 B/2,886 B 100%]                                                48% [Working]             Get:33 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libhwloc5 amd64 1.11.2-3 [99.5 kB]
+49% [33 libhwloc5 30.8 kB/99.5 kB 31%]                                      49% [Working]             Get:34 http://archive.ubuntu.com/ubuntu xenial/main amd64 libibverbs1 amd64 1.1.8-1.1ubuntu2 [25.0 kB]
+49% [34 libibverbs1 25.0 kB/25.0 kB 100%]                                         50% [Waiting for headers]                         Get:35 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libopenmpi1.10 amd64 1.10.2-8ubuntu1 [2,025 kB]
+50% [35 libopenmpi1.10 36.7 kB/2,025 kB 2%]                                           60% [Working]             Get:36 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-mpi1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [47.8 kB]
+60% [36 libboost-mpi1.58.0 43.3 kB/47.8 kB 91%]                                               60% [Working]             Get:37 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-graph-parallel1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [72.6 kB]
+60% [37 libboost-graph-parallel1.58.0 60.8 kB/72.6 kB 84%]                                                          61% [Working]             Get:38 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-graph-parallel1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [78.9 kB]
+61% [38 libboost-graph-parallel1.58-dev 53.4 kB/78.9 kB 68%]                                                            61% [Working]             Get:39 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-graph-parallel-dev amd64 1.58.0.1ubuntu1 [2,932 B]
+61% [39 libboost-graph-parallel-dev 2,932 B/2,932 B 100%]                                                         61% [Working]             Get:40 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-regex1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [322 kB]
+62% [40 libboost-regex1.58-dev 36.5 kB/322 kB 11%]                                                  63% [Working]             Get:41 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-iostreams1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [36.2 kB]
+63% [41 libboost-iostreams1.58-dev 36.2 kB/36.2 kB 100%]                                                        64% [Working]             Get:42 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-iostreams-dev amd64 1.58.0.1ubuntu1 [2,784 B]
+64% [42 libboost-iostreams-dev 2,784 B/2,784 B 100%]                                                    64% [Working]             Get:43 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-locale1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [242 kB]
+64% [43 libboost-locale1.58.0 64.5 kB/242 kB 27%]                                                 65% [Working]             Get:44 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-locale1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [331 kB]
+65% [44 libboost-locale1.58-dev 22.6 kB/331 kB 7%]                                                  67% [Working]             Get:45 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-locale-dev amd64 1.58.0.1ubuntu1 [3,128 B]
+67% [45 libboost-locale-dev 3,128 B/3,128 B 100%]                                                 67% [Working]             Get:46 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-log1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [422 kB]
+67% [46 libboost-log1.58.0 15.8 kB/422 kB 4%]                                             70% [Working]             Get:47 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-thread1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [48.8 kB]
+70% [47 libboost-thread1.58-dev 48.8 kB/48.8 kB 100%]                                                     70% [Working]             Get:48 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-log1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [533 kB]
+70% [48 libboost-log1.58-dev 64.5 kB/533 kB 12%]                                                73% [Working]             Get:49 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-log-dev amd64 1.58.0.1ubuntu1 [2,986 B]
+73% [49 libboost-log-dev 2,986 B/2,986 B 100%]                                              73% [Waiting for headers]                         Get:50 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-math1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [291 kB]
+73% [50 libboost-math1.58.0 56.9 kB/291 kB 20%]                                               75% [Working]             Get:51 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-math1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [829 kB]
+75% [51 libboost-math1.58-dev 27.5 kB/829 kB 3%]                                                79% [Working]             Get:52 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-math-dev amd64 1.58.0.1ubuntu1 [2,998 B]
+79% [52 libboost-math-dev 2,998 B/2,998 B 100%]                                               79% [Working]             Get:53 http://archive.ubuntu.com/ubuntu xenial/universe amd64 openmpi-common all 1.10.2-8ubuntu1 [129 kB]
+79% [53 openmpi-common 47.0 kB/129 kB 36%]                                          80% [Working]             Get:54 http://archive.ubuntu.com/ubuntu xenial/main amd64 libibverbs-dev amd64 1.1.8-1.1ubuntu2 [77.6 kB]
+80% [54 libibverbs-dev 48.5 kB/77.6 kB 62%]                       2,334 kB/s 1s81% [Working]                                                     2,334 kB/s 1s                                                                               Get:55 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libnuma-dev amd64 2.0.11-1ubuntu1.1 [31.5 kB]
+81% [55 libnuma-dev 31.5 kB/31.5 kB 100%]                         2,334 kB/s 1s81% [Waiting for headers]                                         2,334 kB/s 1s                                                                               Get:56 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libhwloc-dev amd64 1.11.2-3 [155 kB]
+81% [56 libhwloc-dev 65.5 kB/155 kB 42%]                          2,334 kB/s 0s82% [Working]                                                     2,334 kB/s 0s                                                                               Get:57 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libopenmpi-dev amd64 1.10.2-8ubuntu1 [537 kB]
+82% [57 libopenmpi-dev 45.7 kB/537 kB 9%]                         2,334 kB/s 0s85% [Working]                                                     2,334 kB/s 0s                                                                               Get:58 http://archive.ubuntu.com/ubuntu xenial/universe amd64 mpi-default-dev amd64 1.4 [4,154 B]
+85% [58 mpi-default-dev 4,154 B/4,154 B 100%]                     2,334 kB/s 0s85% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:59 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-mpi1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [147 kB]
+85% [59 libboost-mpi1.58-dev 27.9 kB/147 kB 19%]                  2,334 kB/s 0s86% [Working]                                                     2,334 kB/s 0s                                                                               Get:60 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-mpi-dev amd64 1.58.0.1ubuntu1 [2,876 B]
+86% [60 libboost-mpi-dev 2,876 B/2,876 B 100%]                    2,334 kB/s 0s86% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:61 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-python1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [120 kB]
+86% [61 libboost-python1.58.0 8,127 B/120 kB 7%]                  2,334 kB/s 0s87% [Working]                                                     2,334 kB/s 0s                                                                               Get:62 http://archive.ubuntu.com/ubuntu xenial/universe amd64 openmpi-bin amd64 1.10.2-8ubuntu1 [100 kB]
+87% [62 openmpi-bin 19.0 kB/100 kB 19%]                           2,334 kB/s 0s88% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:63 http://archive.ubuntu.com/ubuntu xenial/universe amd64 mpi-default-bin amd64 1.4 [3,370 B]
+88% [63 mpi-default-bin 3,370 B/3,370 B 100%]                     2,334 kB/s 0s88% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:64 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-mpi-python1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [220 kB]
+88% [64 libboost-mpi-python1.58.0 46.0 kB/220 kB 21%]             2,334 kB/s 0s89% [Working]                                                     2,334 kB/s 0s                                                                               Get:65 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-mpi-python1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [27.0 kB]
+89% [65 libboost-mpi-python1.58-dev 21.9 kB/27.0 kB 81%]          2,334 kB/s 0s90% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:66 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-mpi-python-dev amd64 1.58.0.1ubuntu1 [2,912 B]
+90% [66 libboost-mpi-python-dev 2,912 B/2,912 B 100%]             2,334 kB/s 0s90% [Working]                                                     2,334 kB/s 0s                                                                               Get:67 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-program-options1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [138 kB]
+90% [67 libboost-program-options1.58.0 56.9 kB/138 kB 41%]        2,334 kB/s 0s91% [Working]                                                     2,334 kB/s 0s                                                                               Get:68 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-program-options1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [171 kB]
+91% [68 libboost-program-options1.58-dev 49.2 kB/171 kB 29%]      2,334 kB/s 0s92% [Working]                                                     2,334 kB/s 0s                                                                               Get:69 http://archive.ubuntu.com/ubuntu xenial/main amd64 libboost-program-options-dev amd64 1.58.0.1ubuntu1 [2,808 B]
+92% [69 libboost-program-options-dev 2,808 B/2,808 B 100%]        2,334 kB/s 0s92% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:70 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-python1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [149 kB]
+92% [70 libboost-python1.58-dev 58.9 kB/149 kB 40%]               2,334 kB/s 0s93% [Working]                                                     2,334 kB/s 0s                                                                               Get:71 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-python-dev amd64 1.58.0.1ubuntu1 [3,170 B]
+93% [71 libboost-python-dev 3,170 B/3,170 B 100%]                 2,334 kB/s 0s93% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:72 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-random1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [11.7 kB]
+93% [72 libboost-random1.58.0 11.7 kB/11.7 kB 100%]               2,334 kB/s 0s94% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:73 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-random1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [11.1 kB]
+94% [73 libboost-random1.58-dev 11.1 kB/11.1 kB 100%]             2,334 kB/s 0s94% [Working]                                                     2,334 kB/s 0s                                                                               Get:74 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-random-dev amd64 1.58.0.1ubuntu1 [2,790 B]
+94% [74 libboost-random-dev 2,790 B/2,790 B 100%]                 2,334 kB/s 0s94% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:75 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-regex-dev amd64 1.58.0.1ubuntu1 [3,058 B]
+94% [75 libboost-regex-dev 3,058 B/3,058 B 100%]                  2,334 kB/s 0s94% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:76 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-serialization-dev amd64 1.58.0.1ubuntu1 [3,026 B]
+94% [76 libboost-serialization-dev 3,026 B/3,026 B 100%]          2,334 kB/s 0s94% [Working]                                                     2,334 kB/s 0s                                                                               Get:77 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-signals1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [31.5 kB]
+95% [77 libboost-signals1.58.0 17.3 kB/31.5 kB 55%]               2,334 kB/s 0s95% [Working]                                                     2,334 kB/s 0s                                                                               Get:78 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-signals1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [34.8 kB]
+95% [78 libboost-signals1.58-dev 34.8 kB/34.8 kB 100%]            2,334 kB/s 0s95% [Working]                                                     2,334 kB/s 0s                                                                               Get:79 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-signals-dev amd64 1.58.0.1ubuntu1 [2,856 B]
+95% [79 libboost-signals-dev 2,856 B/2,856 B 100%]                2,334 kB/s 0s96% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:80 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-system-dev amd64 1.58.0.1ubuntu1 [2,930 B]
+96% [80 libboost-system-dev 2,930 B/2,930 B 100%]                 2,334 kB/s 0s96% [Working]                                                     2,334 kB/s 0s                                                                               Get:81 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-test-dev amd64 1.58.0.1ubuntu1 [2,830 B]
+96% [81 libboost-test-dev 2,830 B/2,830 B 100%]                   2,334 kB/s 0s96% [Working]                                                     2,334 kB/s 0s                                                                               Get:82 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-thread-dev amd64 1.58.0.1ubuntu1 [2,818 B]
+96% [82 libboost-thread-dev 2,818 B/2,818 B 100%]                 2,334 kB/s 0s96% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:83 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-timer1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [10.2 kB]
+96% [83 libboost-timer1.58.0 10.2 kB/10.2 kB 100%]                2,334 kB/s 0s96% [Working]                                                     2,334 kB/s 0s                                                                               Get:84 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-timer1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [9,632 B]
+97% [84 libboost-timer1.58-dev 9,632 B/9,632 B 100%]              2,334 kB/s 0s97% [Working]                                                     2,334 kB/s 0s                                                                               Get:85 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-timer-dev amd64 1.58.0.1ubuntu1 [2,922 B]
+97% [85 libboost-timer-dev 2,922 B/2,922 B 100%]                  2,334 kB/s 0s97% [Waiting for headers]                                         2,334 kB/s 0s                                                                               Get:86 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-wave1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [184 kB]
+97% [86 libboost-wave1.58.0 45.3 kB/184 kB 25%]                   2,334 kB/s 0s98% [Working]                                                     2,334 kB/s 0s                                                                               Get:87 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libboost-wave1.58-dev amd64 1.58.0+dfsg-5ubuntu3.1 [245 kB]
+98% [87 libboost-wave1.58-dev 57.7 kB/245 kB 24%]                 2,334 kB/s 0s100% [Working]                                                    2,334 kB/s 0s                                                                               Get:88 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-wave-dev amd64 1.58.0.1ubuntu1 [2,838 B]
+100% [88 libboost-wave-dev 2,838 B/2,838 B 100%]                  2,334 kB/s 0s100% [Waiting for headers]                                        2,334 kB/s 0s                                                                               Get:89 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libboost-all-dev amd64 1.58.0.1ubuntu1 [2,228 B]
+100% [89 libboost-all-dev 2,228 B/2,228 B 100%]                   2,334 kB/s 0s100% [Working]                                                    2,334 kB/s 0s                                                                               Fetched 16.6 MB in 9s (1,786 kB/s)
+Extracting templates from packages: 33%Extracting templates from packages: 67%Extracting templates from packages: 100%
+Selecting previously unselected package libboost1.58-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 124189 files and directories currently installed.)
+Preparing to unpack .../libboost1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-dev:amd64.
+Preparing to unpack .../libboost-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost1.58-tools-dev.
+Preparing to unpack .../libboost1.58-tools-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost1.58-tools-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-tools-dev.
+Preparing to unpack .../libboost-tools-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-tools-dev (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-atomic1.58.0:amd64.
+Preparing to unpack .../libboost-atomic1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-atomic1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-atomic1.58-dev:amd64.
+Preparing to unpack .../libboost-atomic1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-atomic1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-atomic-dev:amd64.
+Preparing to unpack .../libboost-atomic-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-atomic-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-chrono1.58.0:amd64.
+Preparing to unpack .../libboost-chrono1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-chrono1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-chrono1.58-dev:amd64.
+Preparing to unpack .../libboost-chrono1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-chrono1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-chrono-dev:amd64.
+Preparing to unpack .../libboost-chrono-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-chrono-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-thread1.58.0:amd64.
+Preparing to unpack .../libboost-thread1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-thread1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-context1.58.0:amd64.
+Preparing to unpack .../libboost-context1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-context1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-context1.58-dev:amd64.
+Preparing to unpack .../libboost-context1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-context1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-context-dev:amd64.
+Preparing to unpack .../libboost-context-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-context-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-coroutine1.58.0:amd64.
+Preparing to unpack .../libboost-coroutine1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-coroutine1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-coroutine1.58-dev:amd64.
+Preparing to unpack .../libboost-coroutine1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-coroutine1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-coroutine-dev:amd64.
+Preparing to unpack .../libboost-coroutine-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-coroutine-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-date-time1.58.0:amd64.
+Preparing to unpack .../libboost-date-time1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-date-time1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-serialization1.58.0:amd64.
+Preparing to unpack .../libboost-serialization1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-serialization1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-serialization1.58-dev:amd64.
+Preparing to unpack .../libboost-serialization1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-serialization1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-date-time1.58-dev:amd64.
+Preparing to unpack .../libboost-date-time1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-date-time1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-date-time-dev:amd64.
+Preparing to unpack .../libboost-date-time-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-date-time-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-exception1.58-dev:amd64.
+Preparing to unpack .../libboost-exception1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-exception1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-exception-dev:amd64.
+Preparing to unpack .../libboost-exception-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-exception-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-system1.58-dev:amd64.
+Preparing to unpack .../libboost-system1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-system1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-filesystem1.58-dev:amd64.
+Preparing to unpack .../libboost-filesystem1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-filesystem1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-filesystem-dev:amd64.
+Preparing to unpack .../libboost-filesystem-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-filesystem-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-graph1.58.0:amd64.
+Preparing to unpack .../libboost-graph1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-graph1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-test1.58.0:amd64.
+Preparing to unpack .../libboost-test1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-test1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-test1.58-dev:amd64.
+Preparing to unpack .../libboost-test1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-test1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-graph1.58-dev:amd64.
+Preparing to unpack .../libboost-graph1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-graph1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-graph-dev:amd64.
+Preparing to unpack .../libboost-graph-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-graph-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libhwloc5:amd64.
+Preparing to unpack .../libhwloc5_1.11.2-3_amd64.deb ...
+Unpacking libhwloc5:amd64 (1.11.2-3) ...
+Selecting previously unselected package libibverbs1.
+Preparing to unpack .../libibverbs1_1.1.8-1.1ubuntu2_amd64.deb ...
+Unpacking libibverbs1 (1.1.8-1.1ubuntu2) ...
+Selecting previously unselected package libopenmpi1.10.
+Preparing to unpack .../libopenmpi1.10_1.10.2-8ubuntu1_amd64.deb ...
+Unpacking libopenmpi1.10 (1.10.2-8ubuntu1) ...
+Selecting previously unselected package libboost-mpi1.58.0.
+Preparing to unpack .../libboost-mpi1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-mpi1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-graph-parallel1.58.0.
+Preparing to unpack .../libboost-graph-parallel1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-graph-parallel1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-graph-parallel1.58-dev.
+Preparing to unpack .../libboost-graph-parallel1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-graph-parallel1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-graph-parallel-dev.
+Preparing to unpack .../libboost-graph-parallel-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-graph-parallel-dev (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-regex1.58-dev:amd64.
+Preparing to unpack .../libboost-regex1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-regex1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-iostreams1.58-dev:amd64.
+Preparing to unpack .../libboost-iostreams1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-iostreams1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-iostreams-dev:amd64.
+Preparing to unpack .../libboost-iostreams-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-iostreams-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-locale1.58.0:amd64.
+Preparing to unpack .../libboost-locale1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-locale1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-locale1.58-dev:amd64.
+Preparing to unpack .../libboost-locale1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-locale1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-locale-dev:amd64.
+Preparing to unpack .../libboost-locale-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-locale-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-log1.58.0.
+Preparing to unpack .../libboost-log1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-log1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-thread1.58-dev:amd64.
+Preparing to unpack .../libboost-thread1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-thread1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-log1.58-dev.
+Preparing to unpack .../libboost-log1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-log1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-log-dev.
+Preparing to unpack .../libboost-log-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-log-dev (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-math1.58.0:amd64.
+Preparing to unpack .../libboost-math1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-math1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-math1.58-dev:amd64.
+Preparing to unpack .../libboost-math1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-math1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-math-dev:amd64.
+Preparing to unpack .../libboost-math-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-math-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package openmpi-common.
+Preparing to unpack .../openmpi-common_1.10.2-8ubuntu1_all.deb ...
+Unpacking openmpi-common (1.10.2-8ubuntu1) ...
+Selecting previously unselected package libibverbs-dev.
+Preparing to unpack .../libibverbs-dev_1.1.8-1.1ubuntu2_amd64.deb ...
+Unpacking libibverbs-dev (1.1.8-1.1ubuntu2) ...
+Selecting previously unselected package libnuma-dev:amd64.
+Preparing to unpack .../libnuma-dev_2.0.11-1ubuntu1.1_amd64.deb ...
+Unpacking libnuma-dev:amd64 (2.0.11-1ubuntu1.1) ...
+Selecting previously unselected package libhwloc-dev:amd64.
+Preparing to unpack .../libhwloc-dev_1.11.2-3_amd64.deb ...
+Unpacking libhwloc-dev:amd64 (1.11.2-3) ...
+Selecting previously unselected package libopenmpi-dev.
+Preparing to unpack .../libopenmpi-dev_1.10.2-8ubuntu1_amd64.deb ...
+Unpacking libopenmpi-dev (1.10.2-8ubuntu1) ...
+Selecting previously unselected package mpi-default-dev.
+Preparing to unpack .../mpi-default-dev_1.4_amd64.deb ...
+Unpacking mpi-default-dev (1.4) ...
+Selecting previously unselected package libboost-mpi1.58-dev.
+Preparing to unpack .../libboost-mpi1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-mpi1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-mpi-dev.
+Preparing to unpack .../libboost-mpi-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-mpi-dev (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-python1.58.0.
+Preparing to unpack .../libboost-python1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-python1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package openmpi-bin.
+Preparing to unpack .../openmpi-bin_1.10.2-8ubuntu1_amd64.deb ...
+Unpacking openmpi-bin (1.10.2-8ubuntu1) ...
+Selecting previously unselected package mpi-default-bin.
+Preparing to unpack .../mpi-default-bin_1.4_amd64.deb ...
+Unpacking mpi-default-bin (1.4) ...
+Selecting previously unselected package libboost-mpi-python1.58.0.
+Preparing to unpack .../libboost-mpi-python1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-mpi-python1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-mpi-python1.58-dev.
+Preparing to unpack .../libboost-mpi-python1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-mpi-python1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-mpi-python-dev.
+Preparing to unpack .../libboost-mpi-python-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-mpi-python-dev (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-program-options1.58.0:amd64.
+Preparing to unpack .../libboost-program-options1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-program-options1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-program-options1.58-dev:amd64.
+Preparing to unpack .../libboost-program-options1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-program-options1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-program-options-dev:amd64.
+Preparing to unpack .../libboost-program-options-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-program-options-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-python1.58-dev.
+Preparing to unpack .../libboost-python1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-python1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-python-dev.
+Preparing to unpack .../libboost-python-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-python-dev (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-random1.58.0:amd64.
+Preparing to unpack .../libboost-random1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-random1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-random1.58-dev:amd64.
+Preparing to unpack .../libboost-random1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-random1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-random-dev:amd64.
+Preparing to unpack .../libboost-random-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-random-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-regex-dev:amd64.
+Preparing to unpack .../libboost-regex-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-regex-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-serialization-dev:amd64.
+Preparing to unpack .../libboost-serialization-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-serialization-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-signals1.58.0:amd64.
+Preparing to unpack .../libboost-signals1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-signals1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-signals1.58-dev:amd64.
+Preparing to unpack .../libboost-signals1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-signals1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-signals-dev:amd64.
+Preparing to unpack .../libboost-signals-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-signals-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-system-dev:amd64.
+Preparing to unpack .../libboost-system-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-system-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-test-dev:amd64.
+Preparing to unpack .../libboost-test-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-test-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-thread-dev:amd64.
+Preparing to unpack .../libboost-thread-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-thread-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-timer1.58.0:amd64.
+Preparing to unpack .../libboost-timer1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-timer1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-timer1.58-dev:amd64.
+Preparing to unpack .../libboost-timer1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-timer1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-timer-dev:amd64.
+Preparing to unpack .../libboost-timer-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-timer-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-wave1.58.0:amd64.
+Preparing to unpack .../libboost-wave1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-wave1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-wave1.58-dev:amd64.
+Preparing to unpack .../libboost-wave1.58-dev_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+Unpacking libboost-wave1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-wave-dev:amd64.
+Preparing to unpack .../libboost-wave-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-wave-dev:amd64 (1.58.0.1ubuntu1) ...
+Selecting previously unselected package libboost-all-dev.
+Preparing to unpack .../libboost-all-dev_1.58.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-all-dev (1.58.0.1ubuntu1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up libboost1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost1.58-tools-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-tools-dev (1.58.0.1ubuntu1) ...
+Setting up libboost-atomic1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-atomic1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-atomic-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-chrono1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-chrono1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-chrono-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-thread1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-context1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-context1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-context-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-coroutine1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-coroutine1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-coroutine-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-date-time1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-serialization1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-serialization1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-date-time1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-date-time-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-exception1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-exception-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-system1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-filesystem1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-filesystem-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-graph1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-test1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-test1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-graph1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-graph-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libhwloc5:amd64 (1.11.2-3) ...
+Setting up libibverbs1 (1.1.8-1.1ubuntu2) ...
+Setting up libopenmpi1.10 (1.10.2-8ubuntu1) ...
+Setting up libboost-mpi1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-graph-parallel1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-graph-parallel1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-graph-parallel-dev (1.58.0.1ubuntu1) ...
+Setting up libboost-regex1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-iostreams1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-iostreams-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-locale1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-locale1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-locale-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-log1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-thread1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-log1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-log-dev (1.58.0.1ubuntu1) ...
+Setting up libboost-math1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-math1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-math-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up openmpi-common (1.10.2-8ubuntu1) ...
+Setting up libibverbs-dev (1.1.8-1.1ubuntu2) ...
+Setting up libnuma-dev:amd64 (2.0.11-1ubuntu1.1) ...
+Setting up libhwloc-dev:amd64 (1.11.2-3) ...
+Setting up libopenmpi-dev (1.10.2-8ubuntu1) ...
+update-alternatives: using /usr/lib/openmpi/include to provide /usr/include/mpi (mpi) in auto mode
+Setting up mpi-default-dev (1.4) ...
+Setting up libboost-mpi1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-mpi-dev (1.58.0.1ubuntu1) ...
+Setting up libboost-python1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up openmpi-bin (1.10.2-8ubuntu1) ...
+update-alternatives: using /usr/bin/mpirun.openmpi to provide /usr/bin/mpirun (mpirun) in auto mode
+Setting up mpi-default-bin (1.4) ...
+Setting up libboost-mpi-python1.58.0 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-mpi-python1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-mpi-python-dev (1.58.0.1ubuntu1) ...
+Setting up libboost-program-options1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-program-options1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-program-options-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-python1.58-dev (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-python-dev (1.58.0.1ubuntu1) ...
+Setting up libboost-random1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-random1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-random-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-regex-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-serialization-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-signals1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-signals1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-signals-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-system-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-test-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-thread-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-timer1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-timer1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-timer-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-wave1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-wave1.58-dev:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-wave-dev:amd64 (1.58.0.1ubuntu1) ...
+Setting up libboost-all-dev (1.58.0.1ubuntu1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+travis_time:end:02938848:start=1593440734753951720,finish=1593440756278467435,duration=21524515715,event=before_install[0Ktravis_fold:end:before_install.7[0Ktravis_fold:start:before_install.8[0Ktravis_time:start:00050401[0K$ export PATH=$(whereis -b ccache |grep -o '\S*lib\S*'):$PATH
+travis_time:end:00050401:start=1593440756282575470,finish=1593440756296359211,duration=13783741,event=before_install[0Ktravis_fold:end:before_install.8[0Ktravis_fold:start:before_install.9[0Ktravis_time:start:2ae82004[0K$ export CXX=g++ CC=gcc PATH=$HOME:$PATH
+travis_time:end:2ae82004:start=1593440756300993282,finish=1593440756304015149,duration=3021867,event=before_install[0Ktravis_fold:end:before_install.9[0Ktravis_fold:start:install.1[0Ktravis_time:start:0f6e50fa[0K$ if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then ./codestyle_checks.sh; fi
+Running C++ code checks
+Done processing src/artm/regularizer_interface.cc
+Done processing src/artm/cpp_interface.cc
+Done processing src/artm/c_interface.cc
+Done processing src/artm/core/batch_manager.cc
+Done processing src/artm/core/cache_manager.cc
+Done processing src/artm/core/collection_parser.cc
+Done processing src/artm/core/cooccurrence_collector.cc
+Done processing src/artm/core/cooccurrence_collector.h
+Done processing src/artm/core/dictionary.cc
+Done processing src/artm/core/dictionary_operations.cc
+Done processing src/artm/core/cuckoo_watch.cc
+Done processing src/artm/core/dense_phi_matrix.cc
+Done processing src/artm/core/helpers.cc
+Done processing src/artm/core/instance.cc
+src/artm/core/master_component.cc:476:  Missing space before {  [whitespace/braces] [5]
+Done processing src/artm/core/master_component.cc
+Done processing src/artm/core/phi_matrix_operations.cc
+Done processing src/artm/core/processor.cc
+Done processing src/artm/core/processor_helpers.cc
+Done processing src/artm/core/processor_transaction_helpers.cc
+Done processing src/artm/core/processor_input.cc
+Done processing src/artm/core/protobuf_serialization.cc
+Done processing src/artm/core/score_manager.cc
+Done processing src/artm/core/token.cc
+Done processing src/artm/core/transform_function.cc
+Done processing src/artm/regularizer/decorrelator_phi.cc
+Done processing src/artm/regularizer/hierarchy_sparsing_theta.cc
+Done processing src/artm/regularizer/multilanguage_phi.cc
+Done processing src/artm/regularizer/smooth_sparse_phi.cc
+Done processing src/artm/regularizer/label_regularization_phi.cc
+Done processing src/artm/regularizer/smooth_sparse_theta.cc
+Done processing src/artm/regularizer/specified_sparse_phi.cc
+Done processing src/artm/regularizer/improve_coherence_phi.cc
+Done processing src/artm/regularizer/smooth_ptdw.cc
+Done processing src/artm/regularizer/topic_selection_theta.cc
+Done processing src/artm/regularizer/biterms_phi.cc
+Done processing src/artm/regularizer/topic_segmentation_ptdw.cc
+Done processing src/artm/regularizer/smooth_time_in_topics_phi.cc
+Done processing src/artm/regularizer/net_plsa_phi.cc
+Done processing src/artm/score/class_precision.cc
+Done processing src/artm/score/peak_memory.cc
+Done processing src/artm/score/perplexity.cc
+Done processing src/artm/score/sparsity_theta.cc
+Done processing src/artm/score/sparsity_phi.cc
+Done processing src/artm/score/items_processed.cc
+Done processing src/artm/score/top_tokens.cc
+Done processing src/artm/score/theta_snippet.cc
+Done processing src/artm/score/topic_kernel.cc
+Done processing src/artm/score/topic_mass_phi.cc
+Done processing src/artm/score/background_tokens_ratio.cc
+Done processing src/artm/utility/blas.cc
+Done processing src/artm_tests/api.cc
+Done processing src/artm_tests/boost_thread_test.cc
+Done processing src/artm_tests/blas_test.cc
+Done processing src/artm_tests/cache_manager_test.cc
+Done processing src/artm_tests/collection_parser_test.cc
+Done processing src/artm_tests/cpp_interface_test.cc
+Done processing src/artm_tests/template_manager_test.cc
+Done processing src/artm_tests/regularizers_test.cc
+Done processing src/artm_tests/scores_test.cc
+Done processing src/artm_tests/repeatable_result_test.cc
+Done processing src/artm_tests/master_model_test.cc
+Done processing src/artm_tests/multiple_classes_test.cc
+Done processing src/artm_tests/supcry_test.cc
+Done processing src/artm_tests/test_mother.cc
+Done processing src/artm_tests/thread_safe_holder_test.cc
+Done processing src/artm_tests/topic_seg_test.cc
+Done processing src/artm_tests/batch_manager_test.cc
+Done processing src/artm_tests/transactions_test.cc
+Done processing src/artm/regularizer_interface.h
+Done processing src/artm/score_calculator_interface.h
+Done processing src/artm/cpp_interface.h
+Done processing src/artm/c_interface.h
+Done processing src/artm/core/batch_manager.h
+Done processing src/artm/core/cache_manager.h
+Done processing src/artm/core/call_on_destruction.h
+Done processing src/artm/core/check_messages.h
+Done processing src/artm/core/collection_parser.h
+Done processing src/artm/core/common.h
+Done processing src/artm/core/cuckoo_watch.h
+Done processing src/artm/core/dense_phi_matrix.h
+Done processing src/artm/core/dictionary.h
+Done processing src/artm/core/dictionary_operations.h
+Done processing src/artm/core/exceptions.h
+Done processing src/artm/core/helpers.h
+Done processing src/artm/core/instance.h
+Done processing src/artm/core/master_component.h
+Done processing src/artm/core/phi_matrix.h
+Done processing src/artm/core/phi_matrix_operations.h
+Done processing src/artm/core/processor.h
+Done processing src/artm/core/processor_helpers.h
+Done processing src/artm/core/processor_transaction_helpers.h
+Done processing src/artm/core/processor_input.h
+Done processing src/artm/core/protobuf_helpers.h
+Done processing src/artm/core/protobuf_serialization.h
+Done processing src/artm/core/score_manager.h
+Done processing src/artm/core/template_manager.h
+Done processing src/artm/core/thread_safe_holder.h
+Done processing src/artm/core/token.h
+Done processing src/artm/core/transform_function.h
+Done processing src/artm_tests/api.h
+Done processing src/artm_tests/test_mother.h
+Done processing src/artm/regularizer/decorrelator_phi.h
+Done processing src/artm/regularizer/hierarchy_sparsing_theta.h
+Done processing src/artm/regularizer/multilanguage_phi.h
+Done processing src/artm/regularizer/smooth_sparse_phi.h
+Done processing src/artm/regularizer/label_regularization_phi.h
+Done processing src/artm/regularizer/smooth_sparse_theta.h
+Done processing src/artm/regularizer/specified_sparse_phi.h
+Done processing src/artm/regularizer/improve_coherence_phi.h
+Done processing src/artm/regularizer/smooth_ptdw.h
+Done processing src/artm/regularizer/topic_selection_theta.h
+Done processing src/artm/regularizer/biterms_phi.h
+Done processing src/artm/regularizer/topic_segmentation_ptdw.h
+Done processing src/artm/regularizer/smooth_time_in_topics_phi.h
+Done processing src/artm/regularizer/net_plsa_phi.h
+Done processing src/artm/score/class_precision.h
+Done processing src/artm/score/peak_memory.h
+Done processing src/artm/score/perplexity.h
+Done processing src/artm/score/sparsity_theta.h
+Done processing src/artm/score/sparsity_phi.h
+Done processing src/artm/score/items_processed.h
+Done processing src/artm/score/top_tokens.h
+Done processing src/artm/score/theta_snippet.h
+Done processing src/artm/score/topic_kernel.h
+Done processing src/artm/score/topic_mass_phi.h
+Done processing src/artm/score/background_tokens_ratio.h
+Done processing src/artm/utility/blas.h
+Done processing src/artm/utility/ifstream_or_cin.h
+Done processing src/artm/utility/memory_usage.h
+Total errors found: 1
+travis_time:end:0f6e50fa:start=1593440756308363844,finish=1593440761914653215,duration=5606289371,event=install[0K[31;1mThe command "if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then ./codestyle_checks.sh; fi" failed and exited with 1 during .[0m
+
+Your build has been stopped.

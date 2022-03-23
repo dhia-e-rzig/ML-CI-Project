@@ -1,0 +1,1773 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: ed9e1445-e530-4e1b-9594-9a68b89d494d@1.worker-org-b6c9dcb4d-nhtj6.gce-production-1
+version: v6.2.1 https://github.com/travis-ci/worker/tree/4e3246c044eb4915c2378ffacd0b3d3ed0136bba
+instance: travis-job-66c00329-ceb6-4428-a75e-fee6155a4b72 travis-ci-ubuntu-1804-minimal-1560235308-b605d4ff (via amqp)
+startup: 6.510453008s
+travis_fold:end:worker_info[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: minimal
+Build group: stable
+Build dist: bionic
+Build id: 567659107
+Job id: 567659121
+Runtime kernel version: 4.15.0-1033-gcp
+travis-build version: 65949ed1e
+[34m[1mBuild image provisioning date and time[0m
+Tue Jun 11 06:59:20 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.2 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+02f3efe https://github.com/travis-ci/travis-cookbooks/tree/02f3efe
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.4.19(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.4.0-1ubuntu1~18.04) 7.4.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.25.0 linux-x64 node-v11.14.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.26, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.8 (Ubuntu 10.8-0ubuntu0.18.04.1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Apr 10 2018 21:31:58)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2-2-g4e92322
+[34m[1mrvm version[0m
+rvm 1.29.8 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-linux]
+travis_fold:end:system_info[0K
+sudo: unable to resolve host travis-job-66c00329-ceb6-4428-a75e-fee6155a4b72
+sudo: unable to resolve host travis-job-66c00329-ceb6-4428-a75e-fee6155a4b72
+sudo: unable to resolve host travis-job-66c00329-ceb6-4428-a75e-fee6155a4b72
+travis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_fold:start:services[0Ktravis_time:start:199a4018[0K$ sudo systemctl start docker
+travis_time:end:199a4018:start=1564961947059615921,finish=1564961947075187228,duration=15571307[0Ktravis_fold:end:services[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0db05301[0K$ git clone --depth=1 --branch=feature/oop-api-refactoring https://github.com/nok/sklearn-porter.git nok/sklearn-porter
+Cloning into 'nok/sklearn-porter'...
+remote: Enumerating objects: 667, done.[K
+remote: Counting objects:   0% (1/667)   [Kremote: Counting objects:   1% (7/667)   [Kremote: Counting objects:   2% (14/667)   [Kremote: Counting objects:   3% (21/667)   [Kremote: Counting objects:   4% (27/667)   [Kremote: Counting objects:   5% (34/667)   [Kremote: Counting objects:   6% (41/667)   [Kremote: Counting objects:   7% (47/667)   [Kremote: Counting objects:   8% (54/667)   [Kremote: Counting objects:   9% (61/667)   [Kremote: Counting objects:  10% (67/667)   [Kremote: Counting objects:  11% (74/667)   [Kremote: Counting objects:  12% (81/667)   [Kremote: Counting objects:  13% (87/667)   [Kremote: Counting objects:  14% (94/667)   [Kremote: Counting objects:  15% (101/667)   [Kremote: Counting objects:  16% (107/667)   [Kremote: Counting objects:  17% (114/667)   [Kremote: Counting objects:  18% (121/667)   [Kremote: Counting objects:  19% (127/667)   [Kremote: Counting objects:  20% (134/667)   [Kremote: Counting objects:  21% (141/667)   [Kremote: Counting objects:  22% (147/667)   [Kremote: Counting objects:  23% (154/667)   [Kremote: Counting objects:  24% (161/667)   [Kremote: Counting objects:  25% (167/667)   [Kremote: Counting objects:  26% (174/667)   [Kremote: Counting objects:  27% (181/667)   [Kremote: Counting objects:  28% (187/667)   [Kremote: Counting objects:  29% (194/667)   [Kremote: Counting objects:  30% (201/667)   [Kremote: Counting objects:  31% (207/667)   [Kremote: Counting objects:  32% (214/667)   [Kremote: Counting objects:  33% (221/667)   [Kremote: Counting objects:  34% (227/667)   [Kremote: Counting objects:  35% (234/667)   [Kremote: Counting objects:  36% (241/667)   [Kremote: Counting objects:  37% (247/667)   [Kremote: Counting objects:  38% (254/667)   [Kremote: Counting objects:  39% (261/667)   [Kremote: Counting objects:  40% (267/667)   [Kremote: Counting objects:  41% (274/667)   [Kremote: Counting objects:  42% (281/667)   [Kremote: Counting objects:  43% (287/667)   [Kremote: Counting objects:  44% (294/667)   [Kremote: Counting objects:  45% (301/667)   [Kremote: Counting objects:  46% (307/667)   [Kremote: Counting objects:  47% (314/667)   [Kremote: Counting objects:  48% (321/667)   [Kremote: Counting objects:  49% (327/667)   [Kremote: Counting objects:  50% (334/667)   [Kremote: Counting objects:  51% (341/667)   [Kremote: Counting objects:  52% (347/667)   [Kremote: Counting objects:  53% (354/667)   [Kremote: Counting objects:  54% (361/667)   [Kremote: Counting objects:  55% (367/667)   [Kremote: Counting objects:  56% (374/667)   [Kremote: Counting objects:  57% (381/667)   [Kremote: Counting objects:  58% (387/667)   [Kremote: Counting objects:  59% (394/667)   [Kremote: Counting objects:  60% (401/667)   [Kremote: Counting objects:  61% (407/667)   [Kremote: Counting objects:  62% (414/667)   [Kremote: Counting objects:  63% (421/667)   [Kremote: Counting objects:  64% (427/667)   [Kremote: Counting objects:  65% (434/667)   [Kremote: Counting objects:  66% (441/667)   [Kremote: Counting objects:  67% (447/667)   [Kremote: Counting objects:  68% (454/667)   [Kremote: Counting objects:  69% (461/667)   [Kremote: Counting objects:  70% (467/667)   [Kremote: Counting objects:  71% (474/667)   [Kremote: Counting objects:  72% (481/667)   [Kremote: Counting objects:  73% (487/667)   [Kremote: Counting objects:  74% (494/667)   [Kremote: Counting objects:  75% (501/667)   [Kremote: Counting objects:  76% (507/667)   [Kremote: Counting objects:  77% (514/667)   [Kremote: Counting objects:  78% (521/667)   [Kremote: Counting objects:  79% (527/667)   [Kremote: Counting objects:  80% (534/667)   [Kremote: Counting objects:  81% (541/667)   [Kremote: Counting objects:  82% (547/667)   [Kremote: Counting objects:  83% (554/667)   [Kremote: Counting objects:  84% (561/667)   [Kremote: Counting objects:  85% (567/667)   [Kremote: Counting objects:  86% (574/667)   [Kremote: Counting objects:  87% (581/667)   [Kremote: Counting objects:  88% (587/667)   [Kremote: Counting objects:  89% (594/667)   [Kremote: Counting objects:  90% (601/667)   [Kremote: Counting objects:  91% (607/667)   [Kremote: Counting objects:  92% (614/667)   [Kremote: Counting objects:  93% (621/667)   [Kremote: Counting objects:  94% (627/667)   [Kremote: Counting objects:  95% (634/667)   [Kremote: Counting objects:  96% (641/667)   [Kremote: Counting objects:  97% (647/667)   [Kremote: Counting objects:  98% (654/667)   [Kremote: Counting objects:  99% (661/667)   [Kremote: Counting objects: 100% (667/667)   [Kremote: Counting objects: 100% (667/667), done.[K
+remote: Compressing objects:   0% (1/467)   [Kremote: Compressing objects:   1% (5/467)   [Kremote: Compressing objects:   2% (10/467)   [Kremote: Compressing objects:   3% (15/467)   [Kremote: Compressing objects:   4% (19/467)   [Kremote: Compressing objects:   5% (24/467)   [Kremote: Compressing objects:   6% (29/467)   [Kremote: Compressing objects:   7% (33/467)   [Kremote: Compressing objects:   8% (38/467)   [Kremote: Compressing objects:   9% (43/467)   [Kremote: Compressing objects:  10% (47/467)   [Kremote: Compressing objects:  11% (52/467)   [Kremote: Compressing objects:  12% (57/467)   [Kremote: Compressing objects:  13% (61/467)   [Kremote: Compressing objects:  14% (66/467)   [Kremote: Compressing objects:  15% (71/467)   [Kremote: Compressing objects:  16% (75/467)   [Kremote: Compressing objects:  17% (80/467)   [Kremote: Compressing objects:  18% (85/467)   [Kremote: Compressing objects:  19% (89/467)   [Kremote: Compressing objects:  20% (94/467)   [Kremote: Compressing objects:  21% (99/467)   [Kremote: Compressing objects:  22% (103/467)   [Kremote: Compressing objects:  23% (108/467)   [Kremote: Compressing objects:  24% (113/467)   [Kremote: Compressing objects:  25% (117/467)   [Kremote: Compressing objects:  26% (122/467)   [Kremote: Compressing objects:  27% (127/467)   [Kremote: Compressing objects:  28% (131/467)   [Kremote: Compressing objects:  29% (136/467)   [Kremote: Compressing objects:  30% (141/467)   [Kremote: Compressing objects:  31% (145/467)   [Kremote: Compressing objects:  32% (150/467)   [Kremote: Compressing objects:  33% (155/467)   [Kremote: Compressing objects:  34% (159/467)   [Kremote: Compressing objects:  35% (164/467)   [Kremote: Compressing objects:  36% (169/467)   [Kremote: Compressing objects:  37% (173/467)   [Kremote: Compressing objects:  38% (178/467)   [Kremote: Compressing objects:  39% (183/467)   [Kremote: Compressing objects:  40% (187/467)   [Kremote: Compressing objects:  41% (192/467)   [Kremote: Compressing objects:  42% (197/467)   [Kremote: Compressing objects:  43% (201/467)   [Kremote: Compressing objects:  44% (206/467)   [Kremote: Compressing objects:  45% (211/467)   [Kremote: Compressing objects:  46% (215/467)   [Kremote: Compressing objects:  47% (220/467)   [Kremote: Compressing objects:  48% (225/467)   [Kremote: Compressing objects:  49% (229/467)   [Kremote: Compressing objects:  50% (234/467)   [Kremote: Compressing objects:  51% (239/467)   [Kremote: Compressing objects:  52% (243/467)   [Kremote: Compressing objects:  53% (248/467)   [Kremote: Compressing objects:  54% (253/467)   [Kremote: Compressing objects:  55% (257/467)   [Kremote: Compressing objects:  56% (262/467)   [Kremote: Compressing objects:  57% (267/467)   [Kremote: Compressing objects:  58% (271/467)   [Kremote: Compressing objects:  59% (276/467)   [Kremote: Compressing objects:  60% (281/467)   [Kremote: Compressing objects:  61% (285/467)   [Kremote: Compressing objects:  62% (290/467)   [Kremote: Compressing objects:  63% (295/467)   [Kremote: Compressing objects:  64% (299/467)   [Kremote: Compressing objects:  65% (304/467)   [Kremote: Compressing objects:  66% (309/467)   [Kremote: Compressing objects:  67% (313/467)   [Kremote: Compressing objects:  68% (318/467)   [Kremote: Compressing objects:  69% (323/467)   [Kremote: Compressing objects:  70% (327/467)   [Kremote: Compressing objects:  71% (332/467)   [Kremote: Compressing objects:  72% (337/467)   [Kremote: Compressing objects:  73% (341/467)   [Kremote: Compressing objects:  74% (346/467)   [Kremote: Compressing objects:  75% (351/467)   [Kremote: Compressing objects:  76% (355/467)   [Kremote: Compressing objects:  77% (360/467)   [Kremote: Compressing objects:  78% (365/467)   [Kremote: Compressing objects:  79% (369/467)   [Kremote: Compressing objects:  80% (374/467)   [Kremote: Compressing objects:  81% (379/467)   [Kremote: Compressing objects:  82% (383/467)   [Kremote: Compressing objects:  83% (388/467)   [Kremote: Compressing objects:  84% (393/467)   [Kremote: Compressing objects:  85% (397/467)   [Kremote: Compressing objects:  86% (402/467)   [Kremote: Compressing objects:  87% (407/467)   [Kremote: Compressing objects:  88% (411/467)   [Kremote: Compressing objects:  89% (416/467)   [Kremote: Compressing objects:  90% (421/467)   [Kremote: Compressing objects:  91% (425/467)   [Kremote: Compressing objects:  92% (430/467)   [Kremote: Compressing objects:  93% (435/467)   [Kremote: Compressing objects:  94% (439/467)   [Kremote: Compressing objects:  95% (444/467)   [Kremote: Compressing objects:  96% (449/467)   [Kremote: Compressing objects:  97% (453/467)   [Kremote: Compressing objects:  98% (458/467)   [Kremote: Compressing objects:  99% (463/467)   [Kremote: Compressing objects: 100% (467/467)   [Kremote: Compressing objects: 100% (467/467), done.[K
+Receiving objects:   0% (1/667)   Receiving objects:   1% (7/667)   Receiving objects:   2% (14/667)   Receiving objects:   3% (21/667)   Receiving objects:   4% (27/667)   Receiving objects:   5% (34/667)   Receiving objects:   6% (41/667)   Receiving objects:   7% (47/667)   Receiving objects:   8% (54/667)   Receiving objects:   9% (61/667)   Receiving objects:  10% (67/667)   Receiving objects:  11% (74/667)   Receiving objects:  12% (81/667)   Receiving objects:  13% (87/667)   Receiving objects:  14% (94/667)   Receiving objects:  15% (101/667)   Receiving objects:  16% (107/667)   Receiving objects:  17% (114/667)   Receiving objects:  18% (121/667)   Receiving objects:  19% (127/667)   Receiving objects:  20% (134/667)   Receiving objects:  21% (141/667)   Receiving objects:  22% (147/667)   Receiving objects:  23% (154/667)   Receiving objects:  24% (161/667)   Receiving objects:  25% (167/667)   Receiving objects:  26% (174/667)   Receiving objects:  27% (181/667)   Receiving objects:  28% (187/667)   Receiving objects:  29% (194/667)   Receiving objects:  30% (201/667)   Receiving objects:  31% (207/667)   Receiving objects:  32% (214/667)   Receiving objects:  33% (221/667)   Receiving objects:  34% (227/667)   Receiving objects:  35% (234/667)   Receiving objects:  36% (241/667)   Receiving objects:  37% (247/667)   Receiving objects:  38% (254/667)   Receiving objects:  39% (261/667)   Receiving objects:  40% (267/667)   Receiving objects:  41% (274/667)   Receiving objects:  42% (281/667)   Receiving objects:  43% (287/667)   Receiving objects:  44% (294/667)   Receiving objects:  45% (301/667)   Receiving objects:  46% (307/667)   Receiving objects:  47% (314/667)   Receiving objects:  48% (321/667)   Receiving objects:  49% (327/667)   Receiving objects:  50% (334/667)   Receiving objects:  51% (341/667)   Receiving objects:  52% (347/667)   Receiving objects:  53% (354/667)   Receiving objects:  54% (361/667)   Receiving objects:  55% (367/667)   Receiving objects:  56% (374/667)   Receiving objects:  57% (381/667)   Receiving objects:  58% (387/667)   Receiving objects:  59% (394/667)   Receiving objects:  60% (401/667)   Receiving objects:  61% (407/667)   Receiving objects:  62% (414/667)   Receiving objects:  63% (421/667)   Receiving objects:  64% (427/667)   Receiving objects:  65% (434/667)   Receiving objects:  66% (441/667)   Receiving objects:  67% (447/667)   Receiving objects:  68% (454/667)   Receiving objects:  69% (461/667)   Receiving objects:  70% (467/667)   Receiving objects:  71% (474/667)   Receiving objects:  72% (481/667)   Receiving objects:  73% (487/667)   remote: Total 667 (delta 272), reused 446 (delta 173), pack-reused 0[K
+Receiving objects:  74% (494/667)   Receiving objects:  75% (501/667)   Receiving objects:  76% (507/667)   Receiving objects:  77% (514/667)   Receiving objects:  78% (521/667)   Receiving objects:  79% (527/667)   Receiving objects:  80% (534/667)   Receiving objects:  81% (541/667)   Receiving objects:  82% (547/667)   Receiving objects:  83% (554/667)   Receiving objects:  84% (561/667)   Receiving objects:  85% (567/667)   Receiving objects:  86% (574/667)   Receiving objects:  87% (581/667)   Receiving objects:  88% (587/667)   Receiving objects:  89% (594/667)   Receiving objects:  90% (601/667)   Receiving objects:  91% (607/667)   Receiving objects:  92% (614/667)   Receiving objects:  93% (621/667)   Receiving objects:  94% (627/667)   Receiving objects:  95% (634/667)   Receiving objects:  96% (641/667)   Receiving objects:  97% (647/667)   Receiving objects:  98% (654/667)   Receiving objects:  99% (661/667)   Receiving objects: 100% (667/667)   Receiving objects: 100% (667/667), 270.22 KiB | 3.42 MiB/s, done.
+Resolving deltas:   0% (0/272)   Resolving deltas:   4% (11/272)   Resolving deltas:   9% (27/272)   Resolving deltas:  14% (40/272)   Resolving deltas:  22% (61/272)   Resolving deltas:  30% (84/272)   Resolving deltas:  37% (102/272)   Resolving deltas:  38% (106/272)   Resolving deltas:  40% (109/272)   Resolving deltas:  41% (112/272)   Resolving deltas:  43% (117/272)   Resolving deltas:  44% (122/272)   Resolving deltas:  45% (124/272)   Resolving deltas:  47% (129/272)   Resolving deltas:  48% (133/272)   Resolving deltas:  49% (135/272)   Resolving deltas:  52% (142/272)   Resolving deltas:  59% (161/272)   Resolving deltas:  60% (164/272)   Resolving deltas:  61% (167/272)   Resolving deltas:  62% (170/272)   Resolving deltas:  63% (174/272)   Resolving deltas:  64% (175/272)   Resolving deltas:  65% (179/272)   Resolving deltas:  66% (180/272)   Resolving deltas:  67% (184/272)   Resolving deltas:  68% (186/272)   Resolving deltas:  69% (188/272)   Resolving deltas:  70% (192/272)   Resolving deltas:  71% (194/272)   Resolving deltas:  74% (203/272)   Resolving deltas:  75% (204/272)   Resolving deltas:  76% (207/272)   Resolving deltas:  77% (210/272)   Resolving deltas:  78% (213/272)   Resolving deltas:  79% (215/272)   Resolving deltas:  80% (218/272)   Resolving deltas:  82% (225/272)   Resolving deltas:  83% (227/272)   Resolving deltas:  84% (229/272)   Resolving deltas:  86% (234/272)   Resolving deltas:  88% (242/272)   Resolving deltas:  90% (245/272)   Resolving deltas:  96% (263/272)   Resolving deltas:  97% (266/272)   Resolving deltas: 100% (272/272)   Resolving deltas: 100% (272/272), done.
+travis_time:end:0db05301:start=1564961950083517770,finish=1564961950727190372,duration=643672602[0K$ cd nok/sklearn-porter
+$ git checkout -qf 08dff206950fdbe3e9a5a4ffb69873d9866bef35
+travis_fold:end:git.checkout[0K
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export PYTHON_VER=python=3.5
+$ export CYTHON_VER=cython==0.27.3
+$ export NUMPY_VER=numpy==1.8.1
+$ export SCIPY_VER=scipy==0.14.0
+$ export SCIKIT_LEARN_VER=scikit-learn==0.16
+
+$ bash -c 'echo $BASH_VERSION'
+4.4.19(1)-release
+
+travis_fold:start:before_install[0Ktravis_time:start:05fa2cbc[0K$ travis_wait 30 docker build -t sklearn-porter --build-arg PYTHON_VER=${PYTHON_VER} --build-arg CYTHON_VER=${CYTHON_VER} --build-arg NUMPY_VER=${NUMPY_VER} --build-arg SCIPY_VER=${SCIPY_VER} --build-arg SCIKIT_LEARN_VER=${SCIKIT_LEARN_VER} --no-cache .
+
+
+Still running (1 of 30): docker build -t sklearn-porter --build-arg PYTHON_VER=python=3.5 --build-arg CYTHON_VER=cython==0.27.3 --build-arg NUMPY_VER=numpy==1.8.1 --build-arg SCIPY_VER=scipy==0.14.0 --build-arg SCIKIT_LEARN_VER=scikit-learn==0.16 --no-cache .Still running (2 of 30): docker build -t sklearn-porter --build-arg PYTHON_VER=python=3.5 --build-arg CYTHON_VER=cython==0.27.3 --build-arg NUMPY_VER=numpy==1.8.1 --build-arg SCIPY_VER=scipy==0.14.0 --build-arg SCIKIT_LEARN_VER=scikit-learn==0.16 --no-cache .
+[31;1mThe command docker build -t sklearn-porter --build-arg PYTHON_VER=python=3.5 --build-arg CYTHON_VER=cython==0.27.3 --build-arg NUMPY_VER=numpy==1.8.1 --build-arg SCIPY_VER=scipy==0.14.0 --build-arg SCIKIT_LEARN_VER=scikit-learn==0.16 --no-cache . exited with 127.[0m
+
+[32;1mLog:[0m
+
+Sending build context to Docker daemon  1.599MB
+Step 1/12 : FROM continuumio/miniconda3:latest
+latest: Pulling from continuumio/miniconda3
+e79bb959ec00: Pulling fs layer
+2a7608a50ae3: Pulling fs layer
+ed7fdbb53a8b: Pulling fs layer
+d9f5448383b9: Pulling fs layer
+e902202dc40d: Pulling fs layer
+d9f5448383b9: Waiting
+e902202dc40d: Waiting
+e79bb959ec00: Verifying Checksum
+e79bb959ec00: Download complete
+2a7608a50ae3: Verifying Checksum
+2a7608a50ae3: Download complete
+d9f5448383b9: Verifying Checksum
+d9f5448383b9: Download complete
+e902202dc40d: Verifying Checksum
+e902202dc40d: Download complete
+ed7fdbb53a8b: Verifying Checksum
+ed7fdbb53a8b: Download complete
+e79bb959ec00: Pull complete
+2a7608a50ae3: Pull complete
+ed7fdbb53a8b: Pull complete
+d9f5448383b9: Pull complete
+e902202dc40d: Pull complete
+Digest: sha256:97c73cf6b1aef82bb9f79d9ee82bdcb7bcef07d508fa270bc608bf61d7e98bec
+Status: Downloaded newer image for continuumio/miniconda3:latest
+ ---> 6b5cf97566c3
+Step 2/12 : ARG CONDA_ENV=sklearn-porter
+ ---> Running in 0a1d0b6d1349
+Removing intermediate container 0a1d0b6d1349
+ ---> 6b1a2a04082c
+Step 3/12 : ARG PYTHON_VER
+ ---> Running in 27adf08d1226
+Removing intermediate container 27adf08d1226
+ ---> 87cdef13142e
+Step 4/12 : ARG CYTHON_VER
+ ---> Running in 601a62ceb5eb
+Removing intermediate container 601a62ceb5eb
+ ---> 1f70a0cdb3a4
+Step 5/12 : ARG NUMPY_VER
+ ---> Running in 7de9c3ebdb2a
+Removing intermediate container 7de9c3ebdb2a
+ ---> 2fa894dabc92
+Step 6/12 : ARG SCIPY_VER
+ ---> Running in 5809ef5d31d9
+Removing intermediate container 5809ef5d31d9
+ ---> 8fe0a8548a41
+Step 7/12 : ARG SCIKIT_LEARN_VER
+ ---> Running in 5a9749894aff
+Removing intermediate container 5a9749894aff
+ ---> 414239af1885
+Step 8/12 : COPY . $HOME/app
+ ---> 20e98fc0687c
+Step 9/12 : WORKDIR $HOME/app
+ ---> Running in ecedc19ff2d6
+Removing intermediate container ecedc19ff2d6
+ ---> 132946524c2b
+Step 10/12 : RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends     apt-transport-https gfortran libopenblas-dev liblapack-dev     curl     make=4.1-9.1     g++=4:6.3.0-4     gcc=4:6.3.0-4                                                   `# gcc v6.3.0`          ruby=1:2.3.3                                                    `# ruby v2.3.3`         php7.0=7.0.33-0+deb9u3                                          `# php v7.0.33`         openjdk-8-jdk                                                   `# java v1.8.x`         && curl -sL https://deb.nodesource.com/setup_10.x | bash     && apt-get install -y nodejs                                    `# node v10.x.x`        && npm install --global xmlhttprequest     && wget --quiet https://dl.google.com/go/go1.12.4.linux-amd64.tar.gz     && tar -xf go1.12.4.linux-amd64.tar.gz                          `# go v1.12.4`          && mv go /usr/bin     && wget --quiet -O gson.jar http://central.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar     && make clean     && apt-get clean && rm -rf /var/lib/apt/lists/*
+ ---> Running in 9b536ae51e31
+Ign:1 http://deb.debian.org/debian stretch InRelease
+Get:2 http://security.debian.org/debian-security stretch/updates InRelease [94.3 kB]
+Get:3 http://deb.debian.org/debian stretch-updates InRelease [91.0 kB]
+Get:4 http://deb.debian.org/debian stretch Release [118 kB]
+Get:5 http://deb.debian.org/debian stretch Release.gpg [2434 B]
+Get:6 http://security.debian.org/debian-security stretch/updates/main amd64 Packages [501 kB]
+Get:7 http://deb.debian.org/debian stretch-updates/main amd64 Packages [27.4 kB]
+Get:8 http://deb.debian.org/debian stretch/main amd64 Packages [7082 kB]
+Fetched 7917 kB in 1s (4629 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages will be upgraded:
+  base-files debian-archive-keyring libexpat1 libssl1.0.2 libssl1.1
+  libsystemd0 libudev1 openssl patch tzdata
+10 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4422 kB of archives.
+After this operation, 38.9 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stretch/main amd64 base-files amd64 9.9+deb9u9 [67.4 kB]
+Get:2 http://security.debian.org/debian-security stretch/updates/main amd64 libssl1.0.2 amd64 1.0.2s-1~deb9u1 [1302 kB]
+Get:3 http://deb.debian.org/debian stretch/main amd64 libsystemd0 amd64 232-25+deb9u11 [281 kB]
+Get:4 http://deb.debian.org/debian stretch-updates/main amd64 debian-archive-keyring all 2017.5+deb9u1 [73.9 kB]
+Get:5 http://deb.debian.org/debian stretch/main amd64 libudev1 amd64 232-25+deb9u11 [126 kB]
+Get:6 http://deb.debian.org/debian stretch/main amd64 tzdata all 2019a-0+deb9u1 [273 kB]
+Get:7 http://security.debian.org/debian-security stretch/updates/main amd64 libssl1.1 amd64 1.1.0k-1~deb9u1 [1356 kB]
+Get:8 http://security.debian.org/debian-security stretch/updates/main amd64 patch amd64 2.7.5-1+deb9u2 [112 kB]
+Get:9 http://security.debian.org/debian-security stretch/updates/main amd64 libexpat1 amd64 2.2.0-2+deb9u2 [83.6 kB]
+Get:10 http://security.debian.org/debian-security stretch/updates/main amd64 openssl amd64 1.1.0k-1~deb9u1 [747 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 4422 kB in 0s (29.3 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10409 files and directories currently installed.)
+Preparing to unpack .../base-files_9.9+deb9u9_amd64.deb ...
+Unpacking base-files (9.9+deb9u9) over (9.9+deb9u8) ...
+Setting up base-files (9.9+deb9u9) ...
+Installing new version of config file /etc/debian_version ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10409 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_232-25+deb9u11_amd64.deb ...
+Unpacking libsystemd0:amd64 (232-25+deb9u11) over (232-25+deb9u9) ...
+Setting up libsystemd0:amd64 (232-25+deb9u11) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10409 files and directories currently installed.)
+Preparing to unpack .../debian-archive-keyring_2017.5+deb9u1_all.deb ...
+Unpacking debian-archive-keyring (2017.5+deb9u1) over (2017.5) ...
+Setting up debian-archive-keyring (2017.5+deb9u1) ...
+Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg ...
+Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10410 files and directories currently installed.)
+Preparing to unpack .../libudev1_232-25+deb9u11_amd64.deb ...
+Unpacking libudev1:amd64 (232-25+deb9u11) over (232-25+deb9u9) ...
+Setting up libudev1:amd64 (232-25+deb9u11) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10410 files and directories currently installed.)
+Preparing to unpack .../0-tzdata_2019a-0+deb9u1_all.deb ...
+Unpacking tzdata (2019a-0+deb9u1) over (2018i-0+deb9u1) ...
+Preparing to unpack .../1-libssl1.0.2_1.0.2s-1~deb9u1_amd64.deb ...
+Unpacking libssl1.0.2:amd64 (1.0.2s-1~deb9u1) over (1.0.2r-1~deb9u1) ...
+Preparing to unpack .../2-libssl1.1_1.1.0k-1~deb9u1_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.0k-1~deb9u1) over (1.1.0j-1~deb9u1) ...
+Preparing to unpack .../3-patch_2.7.5-1+deb9u2_amd64.deb ...
+Unpacking patch (2.7.5-1+deb9u2) over (2.7.5-1+deb9u1) ...
+Preparing to unpack .../4-libexpat1_2.2.0-2+deb9u2_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.0-2+deb9u2) over (2.2.0-2+deb9u1) ...
+Preparing to unpack .../5-openssl_1.1.0k-1~deb9u1_amd64.deb ...
+Unpacking openssl (1.1.0k-1~deb9u1) over (1.1.0j-1~deb9u1) ...
+Setting up libexpat1:amd64 (2.2.0-2+deb9u2) ...
+Setting up tzdata (2019a-0+deb9u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Sun Aug  4 23:39:39 UTC 2019.
+Universal Time is now:  Sun Aug  4 23:39:39 UTC 2019.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up libssl1.0.2:amd64 (1.0.2s-1~deb9u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up patch (2.7.5-1+deb9u2) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Setting up libssl1.1:amd64 (1.1.0k-1~deb9u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up openssl (1.1.0k-1~deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.52.1-5+deb9u9).
+The following additional packages will be installed:
+  adwaita-icon-theme apache2-bin binutils ca-certificates-java cpp cpp-6
+  dconf-gsettings-backend dconf-service fontconfig fontconfig-config
+  fonts-dejavu-core g++-6 gcc-6 gfortran-6 glib-networking
+  glib-networking-common glib-networking-services gnome-icon-theme
+  gsettings-desktop-schemas gtk-update-icon-cache hicolor-icon-theme
+  java-common libapache2-mod-php7.0 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libasan3 libasound2 libasound2-data
+  libasyncns0 libatk-bridge2.0-0 libatk-wrapper-java libatk-wrapper-java-jni
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libblas-common libblas-dev libblas3
+  libc-dev-bin libc6-dev libcairo-gobject2 libcairo2 libcc1-0 libcilkrts5
+  libcolord2 libcroco3 libcups2 libdatrie1 libdbus-1-3 libdconf1 libdrm2
+  libegl1-mesa libepoxy0 libflac8 libfontconfig1 libfontenc1 libfreetype6
+  libgbm1 libgcc-6-dev libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgfortran-6-dev libgfortran3 libgif7 libgl1-mesa-glx libglapi-mesa
+  libglib2.0-0 libgomp1 libgraphite2-3 libgtk-3-0 libgtk-3-common libgtk2.0-0
+  libgtk2.0-common libharfbuzz0b libice6 libicu57 libisl15 libitm1 libjbig0
+  libjpeg62-turbo libjson-glib-1.0-0 libjson-glib-1.0-common liblapack3
+  liblcms2-2 liblsan0 liblua5.2-0 libmagic-mgc libmagic1 libmpc3 libmpfr4
+  libmpx2 libnspr4 libnss3 libogg0 libopenblas-base libpango-1.0-0
+  libpangocairo-1.0-0 libpangoft2-1.0-0 libpcsclite1 libpixman-1-0 libpng16-16
+  libproxy1v5 libpulse0 libquadmath0 libreadline7 librest-0.7-0 librsvg2-2
+  librsvg2-common libruby2.3 libsm6 libsndfile1 libsoup-gnome2.4-1
+  libsoup2.4-1 libsqlite3-0 libstdc++-6-dev libthai-data libthai0 libtiff5
+  libtsan0 libubsan0 libvorbis0a libvorbisenc2 libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwrap0
+  libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0
+  libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxft2 libxi6
+  libxinerama1 libxkbcommon0 libxml2 libxmu6 libxpm4 libxrandr2 libxrender1
+  libxshmfence1 libxt6 libxtst6 libxv1 libxxf86dga1 libxxf86vm1 libyaml-0-2
+  linux-libc-dev mime-support openjdk-8-jdk-headless openjdk-8-jre
+  openjdk-8-jre-headless php-common php7.0-cli php7.0-common php7.0-json
+  php7.0-opcache php7.0-readline psmisc rake readline-common ruby-did-you-mean
+  ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby2.3
+  rubygems-integration shared-mime-info ucf x11-common x11-utils xkb-data
+Suggested packages:
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+  binutils-doc cpp-doc gcc-6-locales g++-multilib g++-6-multilib gcc-6-doc
+  libstdc++6-6-dbg gcc-multilib manpages-dev autoconf automake libtool flex
+  bison gdb gcc-doc gcc-6-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg
+  libatomic1-dbg libasan3-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg
+  libcilkrts5-dbg libmpx2-dbg libquadmath0-dbg gfortran-multilib gfortran-doc
+  gfortran-6-multilib gfortran-6-doc libgfortran3-dbg libcoarrays-dev
+  default-jre php-pear libasound2-plugins alsa-utils liblapack-doc-man
+  liblapack-doc glibc-doc colord cups-common gvfs liblcms2-utils file pcscd
+  pulseaudio librsvg2-bin libstdc++-6-doc make-doc openjdk-8-demo
+  openjdk-8-source visualvm icedtea-8-plugin libnss-mdns fonts-dejavu-extra
+  fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+  fonts-wqy-zenhei fonts-indic readline-doc ri ruby-dev bundler mesa-utils
+Recommended packages:
+  apache2 at-spi2-core manpages manpages-dev dbus libgl1-mesa-dri
+  libglib2.0-data xdg-user-dirs libgtk-3-bin libgail-common libgtk2.0-bin tcpd
+  xml-core file xz-utils libxt-dev fonts-dejavu-extra zip fonts-lato
+  libjs-jquery
+The following NEW packages will be installed:
+  adwaita-icon-theme apache2-bin apt-transport-https binutils
+  ca-certificates-java cpp cpp-6 dconf-gsettings-backend dconf-service
+  fontconfig fontconfig-config fonts-dejavu-core g++ g++-6 gcc gcc-6 gfortran
+  gfortran-6 glib-networking glib-networking-common glib-networking-services
+  gnome-icon-theme gsettings-desktop-schemas gtk-update-icon-cache
+  hicolor-icon-theme java-common libapache2-mod-php7.0 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libasan3 libasound2 libasound2-data
+  libasyncns0 libatk-bridge2.0-0 libatk-wrapper-java libatk-wrapper-java-jni
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libblas-common libblas-dev libblas3
+  libc-dev-bin libc6-dev libcairo-gobject2 libcairo2 libcc1-0 libcilkrts5
+  libcolord2 libcroco3 libcups2 libdatrie1 libdbus-1-3 libdconf1 libdrm2
+  libegl1-mesa libepoxy0 libflac8 libfontconfig1 libfontenc1 libfreetype6
+  libgbm1 libgcc-6-dev libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgfortran-6-dev libgfortran3 libgif7 libgl1-mesa-glx libglapi-mesa
+  libglib2.0-0 libgomp1 libgraphite2-3 libgtk-3-0 libgtk-3-common libgtk2.0-0
+  libgtk2.0-common libharfbuzz0b libice6 libicu57 libisl15 libitm1 libjbig0
+  libjpeg62-turbo libjson-glib-1.0-0 libjson-glib-1.0-common liblapack-dev
+  liblapack3 liblcms2-2 liblsan0 liblua5.2-0 libmagic-mgc libmagic1 libmpc3
+  libmpfr4 libmpx2 libnspr4 libnss3 libogg0 libopenblas-base libopenblas-dev
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpcsclite1
+  libpixman-1-0 libpng16-16 libproxy1v5 libpulse0 libquadmath0 libreadline7
+  librest-0.7-0 librsvg2-2 librsvg2-common libruby2.3 libsm6 libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libsqlite3-0 libstdc++-6-dev libthai-data
+  libthai0 libtiff5 libtsan0 libubsan0 libvorbis0a libvorbisenc2
+  libwayland-client0 libwayland-cursor0 libwayland-egl1-mesa
+  libwayland-server0 libwrap0 libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0
+  libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shape0 libxcb-shm0
+  libxcb-sync1 libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1
+  libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0 libxml2 libxmu6 libxpm4
+  libxrandr2 libxrender1 libxshmfence1 libxt6 libxtst6 libxv1 libxxf86dga1
+  libxxf86vm1 libyaml-0-2 linux-libc-dev make mime-support openjdk-8-jdk
+  openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless php-common
+  php7.0 php7.0-cli php7.0-common php7.0-json php7.0-opcache php7.0-readline
+  psmisc rake readline-common ruby ruby-did-you-mean ruby-minitest
+  ruby-net-telnet ruby-power-assert ruby-test-unit ruby2.3
+  rubygems-integration shared-mime-info ucf x11-common x11-utils xkb-data
+0 upgraded, 200 newly installed, 0 to remove and 0 not upgraded.
+Need to get 164 MB of archives.
+After this operation, 681 MB of additional disk space will be used.
+Get:1 http://security.debian.org/debian-security stretch/updates/main amd64 libpng16-16 amd64 1.6.28-1+deb9u1 [280 kB]
+Get:2 http://deb.debian.org/debian stretch/main amd64 libfreetype6 amd64 2.6.3-3.2 [438 kB]
+Get:3 http://deb.debian.org/debian stretch/main amd64 ucf all 3.0036 [70.2 kB]
+Get:4 http://deb.debian.org/debian stretch/main amd64 fonts-dejavu-core all 2.37-1 [1068 kB]
+Get:5 http://security.debian.org/debian-security stretch/updates/main amd64 libdbus-1-3 amd64 1.10.28-0+deb9u1 [195 kB]
+Get:6 http://security.debian.org/debian-security stretch/updates/main amd64 openjdk-8-jre-headless amd64 8u222-b10-1~deb9u1 [27.3 MB]
+Get:7 http://deb.debian.org/debian stretch/main amd64 fontconfig-config all 2.11.0-6.7 [271 kB]
+Get:8 http://deb.debian.org/debian stretch/main amd64 libfontconfig1 amd64 2.11.0-6.7+b1 [331 kB]
+Get:9 http://deb.debian.org/debian stretch/main amd64 fontconfig amd64 2.11.0-6.7+b1 [404 kB]
+Get:10 http://deb.debian.org/debian stretch/main amd64 libogg0 amd64 1.3.2-1 [19.9 kB]
+Get:11 http://deb.debian.org/debian stretch/main amd64 readline-common all 7.0-3 [70.4 kB]
+Get:12 http://deb.debian.org/debian stretch/main amd64 libreadline7 amd64 7.0-3 [151 kB]
+Get:13 http://deb.debian.org/debian stretch/main amd64 libmagic-mgc amd64 1:5.30-1+deb9u2 [222 kB]
+Get:14 http://deb.debian.org/debian stretch/main amd64 libmagic1 amd64 1:5.30-1+deb9u2 [111 kB]
+Get:15 http://deb.debian.org/debian stretch/main amd64 libsqlite3-0 amd64 3.16.2-5+deb9u1 [572 kB]
+Get:16 http://deb.debian.org/debian stretch/main amd64 libwrap0 amd64 7.6.q-26 [58.2 kB]
+Get:17 http://deb.debian.org/debian stretch/main amd64 libicu57 amd64 57.1-6+deb9u2 [7700 kB]
+Get:18 http://deb.debian.org/debian stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2 [920 kB]
+Get:19 http://deb.debian.org/debian stretch/main amd64 mime-support all 3.60 [36.7 kB]
+Get:20 http://deb.debian.org/debian stretch/main amd64 hicolor-icon-theme all 0.15-1 [9550 B]
+Get:21 http://deb.debian.org/debian stretch/main amd64 libglib2.0-0 amd64 2.50.3-2 [2691 kB]
+Get:22 http://deb.debian.org/debian stretch/main amd64 libjpeg62-turbo amd64 1:1.5.1-2 [134 kB]
+Get:23 http://deb.debian.org/debian stretch/main amd64 libjbig0 amd64 2.1-3.1+b2 [31.0 kB]
+Get:24 http://deb.debian.org/debian stretch/main amd64 libtiff5 amd64 4.0.8-2+deb9u4 [238 kB]
+Get:25 http://deb.debian.org/debian stretch/main amd64 shared-mime-info amd64 1.8-1+deb9u1 [731 kB]
+Get:26 http://deb.debian.org/debian stretch/main amd64 libgdk-pixbuf2.0-common all 2.36.5-2+deb9u2 [311 kB]
+Get:27 http://deb.debian.org/debian stretch/main amd64 libgdk-pixbuf2.0-0 amd64 2.36.5-2+deb9u2 [170 kB]
+Get:28 http://deb.debian.org/debian stretch/main amd64 gtk-update-icon-cache amd64 3.22.11-1 [76.6 kB]
+Get:29 http://deb.debian.org/debian stretch/main amd64 libpixman-1-0 amd64 0.34.0-1 [530 kB]
+Get:30 http://deb.debian.org/debian stretch/main amd64 libxcb-render0 amd64 1.12-1 [105 kB]
+Get:31 http://deb.debian.org/debian stretch/main amd64 libxcb-shm0 amd64 1.12-1 [95.9 kB]
+Get:32 http://deb.debian.org/debian stretch/main amd64 libxrender1 amd64 1:0.9.10-1 [33.0 kB]
+Get:33 http://deb.debian.org/debian stretch/main amd64 libcairo2 amd64 1.14.8-1 [771 kB]
+Get:34 http://deb.debian.org/debian stretch/main amd64 libcroco3 amd64 0.6.11-3 [143 kB]
+Get:35 http://deb.debian.org/debian stretch/main amd64 libthai-data all 0.1.26-1 [166 kB]
+Get:36 http://deb.debian.org/debian stretch/main amd64 libdatrie1 amd64 0.2.10-4+b1 [36.4 kB]
+Get:37 http://deb.debian.org/debian stretch/main amd64 libthai0 amd64 0.1.26-1 [52.1 kB]
+Get:38 http://deb.debian.org/debian stretch/main amd64 libpango-1.0-0 amd64 1.40.5-1 [320 kB]
+Get:39 http://deb.debian.org/debian stretch/main amd64 libgraphite2-3 amd64 1.3.10-1 [84.2 kB]
+Get:40 http://deb.debian.org/debian stretch/main amd64 libharfbuzz0b amd64 1.4.2-1 [671 kB]
+Get:41 http://deb.debian.org/debian stretch/main amd64 libpangoft2-1.0-0 amd64 1.40.5-1 [205 kB]
+Get:42 http://deb.debian.org/debian stretch/main amd64 libpangocairo-1.0-0 amd64 1.40.5-1 [193 kB]
+Get:43 http://deb.debian.org/debian stretch/main amd64 librsvg2-2 amd64 2.40.16-1+b1 [281 kB]
+Get:44 http://deb.debian.org/debian stretch/main amd64 librsvg2-common amd64 2.40.16-1+b1 [194 kB]
+Get:45 http://deb.debian.org/debian stretch/main amd64 adwaita-icon-theme all 3.22.0-1+deb9u1 [11.5 MB]
+Get:46 http://deb.debian.org/debian stretch/main amd64 libapr1 amd64 1.5.2-5 [96.6 kB]
+Get:47 http://security.debian.org/debian-security stretch/updates/main amd64 linux-libc-dev amd64 4.9.168-1+deb9u4 [1422 kB]
+Get:48 http://deb.debian.org/debian stretch/main amd64 libaprutil1 amd64 1.5.4-3 [85.8 kB]
+Get:49 http://deb.debian.org/debian stretch/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-3 [19.3 kB]
+Get:50 http://deb.debian.org/debian stretch/main amd64 libaprutil1-ldap amd64 1.5.4-3 [17.4 kB]
+Get:51 http://deb.debian.org/debian stretch/main amd64 liblua5.2-0 amd64 5.2.4-1.1+b2 [110 kB]
+Get:52 http://deb.debian.org/debian stretch/main amd64 apache2-bin amd64 2.4.25-3+deb9u7 [1187 kB]
+Get:53 http://deb.debian.org/debian stretch/main amd64 apt-transport-https amd64 1.4.9 [171 kB]
+Get:54 http://security.debian.org/debian-security stretch/updates/main amd64 openjdk-8-jre amd64 8u222-b10-1~deb9u1 [69.2 kB]
+Get:55 http://deb.debian.org/debian stretch/main amd64 binutils amd64 2.28-5 [3770 kB]
+Get:56 http://security.debian.org/debian-security stretch/updates/main amd64 openjdk-8-jdk-headless amd64 8u222-b10-1~deb9u1 [8247 kB]
+Get:57 http://deb.debian.org/debian stretch/main amd64 java-common all 0.58+deb9u1 [13.6 kB]
+Get:58 http://deb.debian.org/debian stretch/main amd64 libavahi-common-data amd64 0.6.32-2 [118 kB]
+Get:59 http://deb.debian.org/debian stretch/main amd64 libavahi-common3 amd64 0.6.32-2 [52.0 kB]
+Get:60 http://deb.debian.org/debian stretch/main amd64 libavahi-client3 amd64 0.6.32-2 [55.3 kB]
+Get:61 http://deb.debian.org/debian stretch/main amd64 libcups2 amd64 2.2.1-8+deb9u3 [306 kB]
+Get:62 http://deb.debian.org/debian stretch/main amd64 liblcms2-2 amd64 2.8-4+deb9u1 [143 kB]
+Get:63 http://deb.debian.org/debian stretch/main amd64 libnspr4 amd64 2:4.12-6 [117 kB]
+Get:64 http://deb.debian.org/debian stretch/main amd64 libnss3 amd64 2:3.26.2-1.1+deb9u1 [1161 kB]
+Get:65 http://deb.debian.org/debian stretch/main amd64 libpcsclite1 amd64 1.8.20-1 [56.5 kB]
+Get:66 http://deb.debian.org/debian stretch/main amd64 libxi6 amd64 2:1.7.9-1 [82.6 kB]
+Get:67 http://deb.debian.org/debian stretch/main amd64 x11-common all 1:7.7+19 [251 kB]
+Get:68 http://deb.debian.org/debian stretch/main amd64 libxtst6 amd64 2:1.2.3-1 [27.8 kB]
+Get:69 http://deb.debian.org/debian stretch/main amd64 ca-certificates-java all 20170929~deb9u3 [15.1 kB]
+Get:70 http://deb.debian.org/debian stretch/main amd64 libisl15 amd64 0.18-1 [564 kB]
+Get:71 http://deb.debian.org/debian stretch/main amd64 libmpfr4 amd64 3.1.5-1 [556 kB]
+Get:72 http://deb.debian.org/debian stretch/main amd64 libmpc3 amd64 1.0.3-1+b2 [39.9 kB]
+Get:73 http://deb.debian.org/debian stretch/main amd64 cpp-6 amd64 6.3.0-18+deb9u1 [6584 kB]
+Get:74 http://security.debian.org/debian-security stretch/updates/main amd64 openjdk-8-jdk amd64 8u222-b10-1~deb9u1 [2033 kB]
+Get:75 http://deb.debian.org/debian stretch/main amd64 cpp amd64 4:6.3.0-4 [18.7 kB]
+Get:76 http://deb.debian.org/debian stretch/main amd64 libdconf1 amd64 0.26.0-2+b1 [37.6 kB]
+Get:77 http://deb.debian.org/debian stretch/main amd64 dconf-service amd64 0.26.0-2+b1 [34.7 kB]
+Get:78 http://deb.debian.org/debian stretch/main amd64 dconf-gsettings-backend amd64 0.26.0-2+b1 [26.4 kB]
+Get:79 http://deb.debian.org/debian stretch/main amd64 libcc1-0 amd64 6.3.0-18+deb9u1 [30.6 kB]
+Get:80 http://deb.debian.org/debian stretch/main amd64 libgomp1 amd64 6.3.0-18+deb9u1 [73.3 kB]
+Get:81 http://deb.debian.org/debian stretch/main amd64 libitm1 amd64 6.3.0-18+deb9u1 [27.3 kB]
+Get:82 http://deb.debian.org/debian stretch/main amd64 libatomic1 amd64 6.3.0-18+deb9u1 [8966 B]
+Get:83 http://deb.debian.org/debian stretch/main amd64 libasan3 amd64 6.3.0-18+deb9u1 [311 kB]
+Get:84 http://deb.debian.org/debian stretch/main amd64 liblsan0 amd64 6.3.0-18+deb9u1 [115 kB]
+Get:85 http://deb.debian.org/debian stretch/main amd64 libtsan0 amd64 6.3.0-18+deb9u1 [257 kB]
+Get:86 http://deb.debian.org/debian stretch/main amd64 libubsan0 amd64 6.3.0-18+deb9u1 [107 kB]
+Get:87 http://deb.debian.org/debian stretch/main amd64 libcilkrts5 amd64 6.3.0-18+deb9u1 [40.5 kB]
+Get:88 http://deb.debian.org/debian stretch/main amd64 libmpx2 amd64 6.3.0-18+deb9u1 [11.2 kB]
+Get:89 http://deb.debian.org/debian stretch/main amd64 libquadmath0 amd64 6.3.0-18+deb9u1 [131 kB]
+Get:90 http://deb.debian.org/debian stretch/main amd64 libgcc-6-dev amd64 6.3.0-18+deb9u1 [2296 kB]
+Get:91 http://deb.debian.org/debian stretch/main amd64 gcc-6 amd64 6.3.0-18+deb9u1 [6900 kB]
+Get:92 http://deb.debian.org/debian stretch/main amd64 gcc amd64 4:6.3.0-4 [5196 B]
+Get:93 http://deb.debian.org/debian stretch/main amd64 libc-dev-bin amd64 2.24-11+deb9u4 [259 kB]
+Get:94 http://deb.debian.org/debian stretch/main amd64 libc6-dev amd64 2.24-11+deb9u4 [2364 kB]
+Get:95 http://deb.debian.org/debian stretch/main amd64 libstdc++-6-dev amd64 6.3.0-18+deb9u1 [1420 kB]
+Get:96 http://deb.debian.org/debian stretch/main amd64 g++-6 amd64 6.3.0-18+deb9u1 [7094 kB]
+Get:97 http://deb.debian.org/debian stretch/main amd64 g++ amd64 4:6.3.0-4 [1546 B]
+Get:98 http://deb.debian.org/debian stretch/main amd64 libgfortran3 amd64 6.3.0-18+deb9u1 [265 kB]
+Get:99 http://deb.debian.org/debian stretch/main amd64 libgfortran-6-dev amd64 6.3.0-18+deb9u1 [299 kB]
+Get:100 http://deb.debian.org/debian stretch/main amd64 gfortran-6 amd64 6.3.0-18+deb9u1 [6916 kB]
+Get:101 http://deb.debian.org/debian stretch/main amd64 gfortran amd64 4:6.3.0-4 [1356 B]
+Get:102 http://deb.debian.org/debian stretch/main amd64 libproxy1v5 amd64 0.4.14-2 [57.4 kB]
+Get:103 http://deb.debian.org/debian stretch/main amd64 glib-networking-common all 2.50.0-1 [49.1 kB]
+Get:104 http://deb.debian.org/debian stretch/main amd64 glib-networking-services amd64 2.50.0-1+b1 [12.3 kB]
+Get:105 http://deb.debian.org/debian stretch/main amd64 gsettings-desktop-schemas all 3.22.0-1 [473 kB]
+Get:106 http://deb.debian.org/debian stretch/main amd64 glib-networking amd64 2.50.0-1+b1 [57.3 kB]
+Get:107 http://deb.debian.org/debian stretch/main amd64 gnome-icon-theme all 3.12.0-2 [9890 kB]
+Get:108 http://deb.debian.org/debian stretch/main amd64 psmisc amd64 22.21-2.1+b2 [123 kB]
+Get:109 http://deb.debian.org/debian stretch/main amd64 php-common all 1:49 [14.1 kB]
+Get:110 http://deb.debian.org/debian stretch/main amd64 php7.0-common amd64 7.0.33-0+deb9u3 [882 kB]
+Get:111 http://deb.debian.org/debian stretch/main amd64 php7.0-json amd64 7.0.33-0+deb9u3 [17.0 kB]
+Get:112 http://deb.debian.org/debian stretch/main amd64 php7.0-opcache amd64 7.0.33-0+deb9u3 [77.5 kB]
+Get:113 http://deb.debian.org/debian stretch/main amd64 php7.0-readline amd64 7.0.33-0+deb9u3 [12.2 kB]
+Get:114 http://deb.debian.org/debian stretch/main amd64 php7.0-cli amd64 7.0.33-0+deb9u3 [1284 kB]
+Get:115 http://deb.debian.org/debian stretch/main amd64 libapache2-mod-php7.0 amd64 7.0.33-0+deb9u3 [1224 kB]
+Get:116 http://deb.debian.org/debian stretch/main amd64 libasound2-data all 1.1.3-5 [173 kB]
+Get:117 http://deb.debian.org/debian stretch/main amd64 libasound2 amd64 1.1.3-5 [497 kB]
+Get:118 http://deb.debian.org/debian stretch/main amd64 libasyncns0 amd64 0.8-6 [12.5 kB]
+Get:119 http://deb.debian.org/debian stretch/main amd64 libatk1.0-data all 2.22.0-1 [172 kB]
+Get:120 http://deb.debian.org/debian stretch/main amd64 libatk1.0-0 amd64 2.22.0-1 [78.4 kB]
+Get:121 http://deb.debian.org/debian stretch/main amd64 libatspi2.0-0 amd64 2.22.0-6+deb9u1 [60.9 kB]
+Get:122 http://deb.debian.org/debian stretch/main amd64 libatk-bridge2.0-0 amd64 2.22.0-2 [56.3 kB]
+Get:123 http://deb.debian.org/debian stretch/main amd64 libfontenc1 amd64 1:1.1.3-1+b2 [24.4 kB]
+Get:124 http://deb.debian.org/debian stretch/main amd64 libdrm2 amd64 2.4.74-1 [36.2 kB]
+Get:125 http://deb.debian.org/debian stretch/main amd64 libglapi-mesa amd64 13.0.6-1+b2 [58.9 kB]
+Get:126 http://deb.debian.org/debian stretch/main amd64 libx11-xcb1 amd64 2:1.6.4-3+deb9u1 [183 kB]
+Get:127 http://deb.debian.org/debian stretch/main amd64 libxcb-dri2-0 amd64 1.12-1 [97.2 kB]
+Get:128 http://deb.debian.org/debian stretch/main amd64 libxcb-dri3-0 amd64 1.12-1 [95.6 kB]
+Get:129 http://deb.debian.org/debian stretch/main amd64 libxcb-glx0 amd64 1.12-1 [113 kB]
+Get:130 http://deb.debian.org/debian stretch/main amd64 libxcb-present0 amd64 1.12-1 [95.8 kB]
+Get:131 http://deb.debian.org/debian stretch/main amd64 libxcb-sync1 amd64 1.12-1 [99.2 kB]
+Get:132 http://deb.debian.org/debian stretch/main amd64 libxfixes3 amd64 1:5.0.3-1 [21.9 kB]
+Get:133 http://deb.debian.org/debian stretch/main amd64 libxdamage1 amd64 1:1.1.4-2+b3 [14.5 kB]
+Get:134 http://deb.debian.org/debian stretch/main amd64 libxshmfence1 amd64 1.2-1+b2 [7922 B]
+Get:135 http://deb.debian.org/debian stretch/main amd64 libxxf86vm1 amd64 1:1.1.4-1+b2 [20.8 kB]
+Get:136 http://deb.debian.org/debian stretch/main amd64 libgl1-mesa-glx amd64 13.0.6-1+b2 [167 kB]
+Get:137 http://deb.debian.org/debian stretch/main amd64 libice6 amd64 2:1.0.9-2 [58.7 kB]
+Get:138 http://deb.debian.org/debian stretch/main amd64 libsm6 amd64 2:1.2.2-1+b3 [33.3 kB]
+Get:139 http://deb.debian.org/debian stretch/main amd64 libxt6 amd64 1:1.1.5-1 [188 kB]
+Get:140 http://deb.debian.org/debian stretch/main amd64 libxmu6 amd64 2:1.1.2-2 [60.3 kB]
+Get:141 http://deb.debian.org/debian stretch/main amd64 libxpm4 amd64 1:3.5.12-1 [49.1 kB]
+Get:142 http://deb.debian.org/debian stretch/main amd64 libxaw7 amd64 2:1.0.13-1+b2 [201 kB]
+Get:143 http://deb.debian.org/debian stretch/main amd64 libxcb-shape0 amd64 1.12-1 [96.2 kB]
+Get:144 http://deb.debian.org/debian stretch/main amd64 libxcomposite1 amd64 1:0.4.4-2 [16.5 kB]
+Get:145 http://deb.debian.org/debian stretch/main amd64 libxft2 amd64 2.3.2-1+b2 [56.5 kB]
+Get:146 http://deb.debian.org/debian stretch/main amd64 libxinerama1 amd64 2:1.1.3-1+b3 [16.7 kB]
+Get:147 http://deb.debian.org/debian stretch/main amd64 libxrandr2 amd64 2:1.5.1-1 [37.5 kB]
+Get:148 http://deb.debian.org/debian stretch/main amd64 libxv1 amd64 2:1.0.11-1 [24.6 kB]
+Get:149 http://deb.debian.org/debian stretch/main amd64 libxxf86dga1 amd64 2:1.1.4-1+b3 [22.1 kB]
+Get:150 http://deb.debian.org/debian stretch/main amd64 x11-utils amd64 7.7+3+b1 [202 kB]
+Get:151 http://deb.debian.org/debian stretch/main amd64 libatk-wrapper-java all 0.33.3-13+deb9u1 [44.1 kB]
+Get:152 http://deb.debian.org/debian stretch/main amd64 libcairo-gobject2 amd64 1.14.8-1 [336 kB]
+Get:153 http://deb.debian.org/debian stretch/main amd64 libgtk-3-common all 3.22.11-1 [3416 kB]
+Get:154 http://deb.debian.org/debian stretch/main amd64 libcolord2 amd64 1.3.3-2 [252 kB]
+Get:155 http://deb.debian.org/debian stretch/main amd64 libepoxy0 amd64 1.3.1-2 [176 kB]
+Get:156 http://deb.debian.org/debian stretch/main amd64 libjson-glib-1.0-common all 1.2.6-1 [166 kB]
+Get:157 http://deb.debian.org/debian stretch/main amd64 libjson-glib-1.0-0 amd64 1.2.6-1 [178 kB]
+Get:158 http://deb.debian.org/debian stretch/main amd64 libsoup2.4-1 amd64 2.56.0-2+deb9u2 [296 kB]
+Get:159 http://deb.debian.org/debian stretch/main amd64 libsoup-gnome2.4-1 amd64 2.56.0-2+deb9u2 [16.4 kB]
+Get:160 http://deb.debian.org/debian stretch/main amd64 librest-0.7-0 amd64 0.8.0-2 [33.0 kB]
+Get:161 http://deb.debian.org/debian stretch/main amd64 libwayland-client0 amd64 1.12.0-1+deb9u1 [25.1 kB]
+Get:162 http://deb.debian.org/debian stretch/main amd64 libwayland-cursor0 amd64 1.12.0-1+deb9u1 [13.5 kB]
+Get:163 http://deb.debian.org/debian stretch/main amd64 libwayland-server0 amd64 1.12.0-1+deb9u1 [30.6 kB]
+Get:164 http://deb.debian.org/debian stretch/main amd64 libgbm1 amd64 13.0.6-1+b2 [59.2 kB]
+Get:165 http://deb.debian.org/debian stretch/main amd64 libxcb-xfixes0 amd64 1.12-1 [99.6 kB]
+Get:166 http://deb.debian.org/debian stretch/main amd64 libegl1-mesa amd64 13.0.6-1+b2 [112 kB]
+Get:167 http://deb.debian.org/debian stretch/main amd64 libwayland-egl1-mesa amd64 13.0.6-1+b2 [43.0 kB]
+Get:168 http://deb.debian.org/debian stretch/main amd64 libxcursor1 amd64 1:1.1.14-1+deb9u2 [34.9 kB]
+Get:169 http://deb.debian.org/debian stretch/main amd64 xkb-data all 2.19-1+deb9u1 [650 kB]
+Get:170 http://deb.debian.org/debian stretch/main amd64 libxkbcommon0 amd64 0.7.1-2~deb9u1 [122 kB]
+Get:171 http://deb.debian.org/debian stretch/main amd64 libgtk-3-0 amd64 3.22.11-1 [2529 kB]
+Get:172 http://deb.debian.org/debian stretch/main amd64 libgtk2.0-common all 2.24.31-2 [2693 kB]
+Get:173 http://deb.debian.org/debian stretch/main amd64 libgtk2.0-0 amd64 2.24.31-2 [1800 kB]
+Get:174 http://deb.debian.org/debian stretch/main amd64 libatk-wrapper-java-jni amd64 0.33.3-13+deb9u1 [37.5 kB]
+Get:175 http://deb.debian.org/debian stretch/main amd64 libblas-common amd64 3.7.0-2 [14.2 kB]
+Get:176 http://deb.debian.org/debian stretch/main amd64 libblas3 amd64 3.7.0-2 [155 kB]
+Get:177 http://deb.debian.org/debian stretch/main amd64 libblas-dev amd64 3.7.0-2 [162 kB]
+Get:178 http://deb.debian.org/debian stretch/main amd64 libflac8 amd64 1.3.2-1 [221 kB]
+Get:179 http://deb.debian.org/debian stretch/main amd64 libgif7 amd64 5.1.4-0.4 [43.1 kB]
+Get:180 http://deb.debian.org/debian stretch/main amd64 libopenblas-base amd64 0.2.19-3 [3793 kB]
+Get:181 http://deb.debian.org/debian stretch/main amd64 liblapack3 amd64 3.7.0-2 [2141 kB]
+Get:182 http://deb.debian.org/debian stretch/main amd64 libopenblas-dev amd64 0.2.19-3 [3809 kB]
+Get:183 http://deb.debian.org/debian stretch/main amd64 liblapack-dev amd64 3.7.0-2 [2170 kB]
+Get:184 http://deb.debian.org/debian stretch/main amd64 libvorbis0a amd64 1.3.5-4+deb9u2 [91.7 kB]
+Get:185 http://deb.debian.org/debian stretch/main amd64 libvorbisenc2 amd64 1.3.5-4+deb9u2 [79.4 kB]
+Get:186 http://deb.debian.org/debian stretch/main amd64 libsndfile1 amd64 1.0.27-3 [248 kB]
+Get:187 http://deb.debian.org/debian stretch/main amd64 libpulse0 amd64 10.0-1+deb9u1 [283 kB]
+Get:188 http://deb.debian.org/debian stretch/main amd64 libyaml-0-2 amd64 0.1.7-2 [47.6 kB]
+Get:189 http://deb.debian.org/debian stretch/main amd64 make amd64 4.1-9.1 [302 kB]
+Get:190 http://deb.debian.org/debian stretch/main amd64 php7.0 all 7.0.33-0+deb9u3 [54.7 kB]
+Get:191 http://deb.debian.org/debian stretch/main amd64 rubygems-integration all 1.11 [4994 B]
+Get:192 http://deb.debian.org/debian stretch/main amd64 ruby-did-you-mean all 1.0.0-2 [11.2 kB]
+Get:193 http://deb.debian.org/debian stretch/main amd64 ruby-minitest all 5.9.0-1 [51.1 kB]
+Get:194 http://deb.debian.org/debian stretch/main amd64 ruby-net-telnet all 0.1.1-2 [12.5 kB]
+Get:195 http://deb.debian.org/debian stretch/main amd64 ruby-power-assert all 0.3.0-1 [7902 B]
+Get:196 http://deb.debian.org/debian stretch/main amd64 ruby-test-unit all 3.1.7-2 [69.6 kB]
+Get:197 http://deb.debian.org/debian stretch/main amd64 libruby2.3 amd64 2.3.3-1+deb9u6 [3109 kB]
+Get:198 http://deb.debian.org/debian stretch/main amd64 ruby2.3 amd64 2.3.3-1+deb9u6 [188 kB]
+Get:199 http://deb.debian.org/debian stretch/main amd64 ruby amd64 1:2.3.3 [10.8 kB]
+Get:200 http://deb.debian.org/debian stretch/main amd64 rake all 10.5.0-2 [49.4 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 164 MB in 2s (77.2 MB/s)
+Selecting previously unselected package libpng16-16:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10410 files and directories currently installed.)
+Preparing to unpack .../000-libpng16-16_1.6.28-1+deb9u1_amd64.deb ...
+Unpacking libpng16-16:amd64 (1.6.28-1+deb9u1) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../001-libfreetype6_2.6.3-3.2_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.6.3-3.2) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../002-ucf_3.0036_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0036) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../003-fonts-dejavu-core_2.37-1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../004-fontconfig-config_2.11.0-6.7_all.deb ...
+Unpacking fontconfig-config (2.11.0-6.7) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../005-libfontconfig1_2.11.0-6.7+b1_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.11.0-6.7+b1) ...
+Selecting previously unselected package fontconfig.
+Preparing to unpack .../006-fontconfig_2.11.0-6.7+b1_amd64.deb ...
+Unpacking fontconfig (2.11.0-6.7+b1) ...
+Selecting previously unselected package libogg0:amd64.
+Preparing to unpack .../007-libogg0_1.3.2-1_amd64.deb ...
+Unpacking libogg0:amd64 (1.3.2-1) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../008-readline-common_7.0-3_all.deb ...
+Unpacking readline-common (7.0-3) ...
+Selecting previously unselected package libreadline7:amd64.
+Preparing to unpack .../009-libreadline7_7.0-3_amd64.deb ...
+Unpacking libreadline7:amd64 (7.0-3) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../010-libmagic-mgc_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking libmagic-mgc (1:5.30-1+deb9u2) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../011-libmagic1_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.30-1+deb9u2) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../012-libsqlite3-0_3.16.2-5+deb9u1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.16.2-5+deb9u1) ...
+Selecting previously unselected package libwrap0:amd64.
+Preparing to unpack .../013-libwrap0_7.6.q-26_amd64.deb ...
+Unpacking libwrap0:amd64 (7.6.q-26) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../014-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../015-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../016-mime-support_3.60_all.deb ...
+Unpacking mime-support (3.60) ...
+Selecting previously unselected package hicolor-icon-theme.
+Preparing to unpack .../017-hicolor-icon-theme_0.15-1_all.deb ...
+Unpacking hicolor-icon-theme (0.15-1) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../018-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libjpeg62-turbo:amd64.
+Preparing to unpack .../019-libjpeg62-turbo_1%3a1.5.1-2_amd64.deb ...
+Unpacking libjpeg62-turbo:amd64 (1:1.5.1-2) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../020-libjbig0_2.1-3.1+b2_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1+b2) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../021-libtiff5_4.0.8-2+deb9u4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.8-2+deb9u4) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../022-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+Preparing to unpack .../023-libgdk-pixbuf2.0-common_2.36.5-2+deb9u2_all.deb ...
+Unpacking libgdk-pixbuf2.0-common (2.36.5-2+deb9u2) ...
+Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
+Preparing to unpack .../024-libgdk-pixbuf2.0-0_2.36.5-2+deb9u2_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-0:amd64 (2.36.5-2+deb9u2) ...
+Selecting previously unselected package gtk-update-icon-cache.
+Preparing to unpack .../025-gtk-update-icon-cache_3.22.11-1_amd64.deb ...
+No diversion 'diversion of /usr/sbin/update-icon-caches to /usr/sbin/update-icon-caches.gtk2 by libgtk-3-bin', none removed.
+No diversion 'diversion of /usr/share/man/man8/update-icon-caches.8.gz to /usr/share/man/man8/update-icon-caches.gtk2.8.gz by libgtk-3-bin', none removed.
+Unpacking gtk-update-icon-cache (3.22.11-1) ...
+Selecting previously unselected package libpixman-1-0:amd64.
+Preparing to unpack .../026-libpixman-1-0_0.34.0-1_amd64.deb ...
+Unpacking libpixman-1-0:amd64 (0.34.0-1) ...
+Selecting previously unselected package libxcb-render0:amd64.
+Preparing to unpack .../027-libxcb-render0_1.12-1_amd64.deb ...
+Unpacking libxcb-render0:amd64 (1.12-1) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../028-libxcb-shm0_1.12-1_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.12-1) ...
+Selecting previously unselected package libxrender1:amd64.
+Preparing to unpack .../029-libxrender1_1%3a0.9.10-1_amd64.deb ...
+Unpacking libxrender1:amd64 (1:0.9.10-1) ...
+Selecting previously unselected package libcairo2:amd64.
+Preparing to unpack .../030-libcairo2_1.14.8-1_amd64.deb ...
+Unpacking libcairo2:amd64 (1.14.8-1) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../031-libcroco3_0.6.11-3_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.11-3) ...
+Selecting previously unselected package libthai-data.
+Preparing to unpack .../032-libthai-data_0.1.26-1_all.deb ...
+Unpacking libthai-data (0.1.26-1) ...
+Selecting previously unselected package libdatrie1:amd64.
+Preparing to unpack .../033-libdatrie1_0.2.10-4+b1_amd64.deb ...
+Unpacking libdatrie1:amd64 (0.2.10-4+b1) ...
+Selecting previously unselected package libthai0:amd64.
+Preparing to unpack .../034-libthai0_0.1.26-1_amd64.deb ...
+Unpacking libthai0:amd64 (0.1.26-1) ...
+Selecting previously unselected package libpango-1.0-0:amd64.
+Preparing to unpack .../035-libpango-1.0-0_1.40.5-1_amd64.deb ...
+Unpacking libpango-1.0-0:amd64 (1.40.5-1) ...
+Selecting previously unselected package libgraphite2-3:amd64.
+Preparing to unpack .../036-libgraphite2-3_1.3.10-1_amd64.deb ...
+Unpacking libgraphite2-3:amd64 (1.3.10-1) ...
+Selecting previously unselected package libharfbuzz0b:amd64.
+Preparing to unpack .../037-libharfbuzz0b_1.4.2-1_amd64.deb ...
+Unpacking libharfbuzz0b:amd64 (1.4.2-1) ...
+Selecting previously unselected package libpangoft2-1.0-0:amd64.
+Preparing to unpack .../038-libpangoft2-1.0-0_1.40.5-1_amd64.deb ...
+Unpacking libpangoft2-1.0-0:amd64 (1.40.5-1) ...
+Selecting previously unselected package libpangocairo-1.0-0:amd64.
+Preparing to unpack .../039-libpangocairo-1.0-0_1.40.5-1_amd64.deb ...
+Unpacking libpangocairo-1.0-0:amd64 (1.40.5-1) ...
+Selecting previously unselected package librsvg2-2:amd64.
+Preparing to unpack .../040-librsvg2-2_2.40.16-1+b1_amd64.deb ...
+Unpacking librsvg2-2:amd64 (2.40.16-1+b1) ...
+Selecting previously unselected package librsvg2-common:amd64.
+Preparing to unpack .../041-librsvg2-common_2.40.16-1+b1_amd64.deb ...
+Unpacking librsvg2-common:amd64 (2.40.16-1+b1) ...
+Selecting previously unselected package adwaita-icon-theme.
+Preparing to unpack .../042-adwaita-icon-theme_3.22.0-1+deb9u1_all.deb ...
+Unpacking adwaita-icon-theme (3.22.0-1+deb9u1) ...
+Selecting previously unselected package libapr1:amd64.
+Preparing to unpack .../043-libapr1_1.5.2-5_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.2-5) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../044-libaprutil1_1.5.4-3_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.4-3) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../045-libaprutil1-dbd-sqlite3_1.5.4-3_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-3) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../046-libaprutil1-ldap_1.5.4-3_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.4-3) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../047-liblua5.2-0_5.2.4-1.1+b2_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../048-apache2-bin_2.4.25-3+deb9u7_amd64.deb ...
+Unpacking apache2-bin (2.4.25-3+deb9u7) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../049-apt-transport-https_1.4.9_amd64.deb ...
+Unpacking apt-transport-https (1.4.9) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../050-binutils_2.28-5_amd64.deb ...
+Unpacking binutils (2.28-5) ...
+Selecting previously unselected package java-common.
+Preparing to unpack .../051-java-common_0.58+deb9u1_all.deb ...
+Unpacking java-common (0.58+deb9u1) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Preparing to unpack .../052-libavahi-common-data_0.6.32-2_amd64.deb ...
+Unpacking libavahi-common-data:amd64 (0.6.32-2) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Preparing to unpack .../053-libavahi-common3_0.6.32-2_amd64.deb ...
+Unpacking libavahi-common3:amd64 (0.6.32-2) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../054-libdbus-1-3_1.10.28-0+deb9u1_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.10.28-0+deb9u1) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Preparing to unpack .../055-libavahi-client3_0.6.32-2_amd64.deb ...
+Unpacking libavahi-client3:amd64 (0.6.32-2) ...
+Selecting previously unselected package libcups2:amd64.
+Preparing to unpack .../056-libcups2_2.2.1-8+deb9u3_amd64.deb ...
+Unpacking libcups2:amd64 (2.2.1-8+deb9u3) ...
+Selecting previously unselected package liblcms2-2:amd64.
+Preparing to unpack .../057-liblcms2-2_2.8-4+deb9u1_amd64.deb ...
+Unpacking liblcms2-2:amd64 (2.8-4+deb9u1) ...
+Selecting previously unselected package libnspr4:amd64.
+Preparing to unpack .../058-libnspr4_2%3a4.12-6_amd64.deb ...
+Unpacking libnspr4:amd64 (2:4.12-6) ...
+Selecting previously unselected package libnss3:amd64.
+Preparing to unpack .../059-libnss3_2%3a3.26.2-1.1+deb9u1_amd64.deb ...
+Unpacking libnss3:amd64 (2:3.26.2-1.1+deb9u1) ...
+Selecting previously unselected package libpcsclite1:amd64.
+Preparing to unpack .../060-libpcsclite1_1.8.20-1_amd64.deb ...
+Unpacking libpcsclite1:amd64 (1.8.20-1) ...
+Selecting previously unselected package libxi6:amd64.
+Preparing to unpack .../061-libxi6_2%3a1.7.9-1_amd64.deb ...
+Unpacking libxi6:amd64 (2:1.7.9-1) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../062-x11-common_1%3a7.7+19_all.deb ...
+Unpacking x11-common (1:7.7+19) ...
+Selecting previously unselected package libxtst6:amd64.
+Preparing to unpack .../063-libxtst6_2%3a1.2.3-1_amd64.deb ...
+Unpacking libxtst6:amd64 (2:1.2.3-1) ...
+Selecting previously unselected package openjdk-8-jre-headless:amd64.
+Preparing to unpack .../064-openjdk-8-jre-headless_8u222-b10-1~deb9u1_amd64.deb ...
+Unpacking openjdk-8-jre-headless:amd64 (8u222-b10-1~deb9u1) ...
+Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../065-ca-certificates-java_20170929~deb9u3_all.deb ...
+Unpacking ca-certificates-java (20170929~deb9u3) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../066-libisl15_0.18-1_amd64.deb ...
+Unpacking libisl15:amd64 (0.18-1) ...
+Selecting previously unselected package libmpfr4:amd64.
+Preparing to unpack .../067-libmpfr4_3.1.5-1_amd64.deb ...
+Unpacking libmpfr4:amd64 (3.1.5-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../068-libmpc3_1.0.3-1+b2_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.3-1+b2) ...
+Selecting previously unselected package cpp-6.
+Preparing to unpack .../069-cpp-6_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking cpp-6 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../070-cpp_4%3a6.3.0-4_amd64.deb ...
+Unpacking cpp (4:6.3.0-4) ...
+Selecting previously unselected package libdconf1:amd64.
+Preparing to unpack .../071-libdconf1_0.26.0-2+b1_amd64.deb ...
+Unpacking libdconf1:amd64 (0.26.0-2+b1) ...
+Selecting previously unselected package dconf-service.
+Preparing to unpack .../072-dconf-service_0.26.0-2+b1_amd64.deb ...
+Unpacking dconf-service (0.26.0-2+b1) ...
+Selecting previously unselected package dconf-gsettings-backend:amd64.
+Preparing to unpack .../073-dconf-gsettings-backend_0.26.0-2+b1_amd64.deb ...
+Unpacking dconf-gsettings-backend:amd64 (0.26.0-2+b1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../074-libcc1-0_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libcc1-0:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../075-libgomp1_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libgomp1:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../076-libitm1_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libitm1:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../077-libatomic1_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libatomic1:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libasan3:amd64.
+Preparing to unpack .../078-libasan3_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libasan3:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../079-liblsan0_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking liblsan0:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../080-libtsan0_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libtsan0:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../081-libubsan0_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libubsan0:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../082-libcilkrts5_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libcilkrts5:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libmpx2:amd64.
+Preparing to unpack .../083-libmpx2_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libmpx2:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../084-libquadmath0_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libquadmath0:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libgcc-6-dev:amd64.
+Preparing to unpack .../085-libgcc-6-dev_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libgcc-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package gcc-6.
+Preparing to unpack .../086-gcc-6_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking gcc-6 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../087-gcc_4%3a6.3.0-4_amd64.deb ...
+Unpacking gcc (4:6.3.0-4) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../088-libc-dev-bin_2.24-11+deb9u4_amd64.deb ...
+Unpacking libc-dev-bin (2.24-11+deb9u4) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../089-linux-libc-dev_4.9.168-1+deb9u4_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.9.168-1+deb9u4) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../090-libc6-dev_2.24-11+deb9u4_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.24-11+deb9u4) ...
+Selecting previously unselected package libstdc++-6-dev:amd64.
+Preparing to unpack .../091-libstdc++-6-dev_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libstdc++-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package g++-6.
+Preparing to unpack .../092-g++-6_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking g++-6 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../093-g++_4%3a6.3.0-4_amd64.deb ...
+Unpacking g++ (4:6.3.0-4) ...
+Selecting previously unselected package libgfortran3:amd64.
+Preparing to unpack .../094-libgfortran3_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libgfortran3:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libgfortran-6-dev:amd64.
+Preparing to unpack .../095-libgfortran-6-dev_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libgfortran-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package gfortran-6.
+Preparing to unpack .../096-gfortran-6_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking gfortran-6 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package gfortran.
+Preparing to unpack .../097-gfortran_4%3a6.3.0-4_amd64.deb ...
+Unpacking gfortran (4:6.3.0-4) ...
+Selecting previously unselected package libproxy1v5:amd64.
+Preparing to unpack .../098-libproxy1v5_0.4.14-2_amd64.deb ...
+Unpacking libproxy1v5:amd64 (0.4.14-2) ...
+Selecting previously unselected package glib-networking-common.
+Preparing to unpack .../099-glib-networking-common_2.50.0-1_all.deb ...
+Unpacking glib-networking-common (2.50.0-1) ...
+Selecting previously unselected package glib-networking-services.
+Preparing to unpack .../100-glib-networking-services_2.50.0-1+b1_amd64.deb ...
+Unpacking glib-networking-services (2.50.0-1+b1) ...
+Selecting previously unselected package gsettings-desktop-schemas.
+Preparing to unpack .../101-gsettings-desktop-schemas_3.22.0-1_all.deb ...
+Unpacking gsettings-desktop-schemas (3.22.0-1) ...
+Selecting previously unselected package glib-networking:amd64.
+Preparing to unpack .../102-glib-networking_2.50.0-1+b1_amd64.deb ...
+Unpacking glib-networking:amd64 (2.50.0-1+b1) ...
+Selecting previously unselected package gnome-icon-theme.
+Preparing to unpack .../103-gnome-icon-theme_3.12.0-2_all.deb ...
+Unpacking gnome-icon-theme (3.12.0-2) ...
+Selecting previously unselected package psmisc.
+Preparing to unpack .../104-psmisc_22.21-2.1+b2_amd64.deb ...
+Unpacking psmisc (22.21-2.1+b2) ...
+Selecting previously unselected package php-common.
+Preparing to unpack .../105-php-common_1%3a49_all.deb ...
+Unpacking php-common (1:49) ...
+Selecting previously unselected package php7.0-common.
+Preparing to unpack .../106-php7.0-common_7.0.33-0+deb9u3_amd64.deb ...
+Unpacking php7.0-common (7.0.33-0+deb9u3) ...
+Selecting previously unselected package php7.0-json.
+Preparing to unpack .../107-php7.0-json_7.0.33-0+deb9u3_amd64.deb ...
+Unpacking php7.0-json (7.0.33-0+deb9u3) ...
+Selecting previously unselected package php7.0-opcache.
+Preparing to unpack .../108-php7.0-opcache_7.0.33-0+deb9u3_amd64.deb ...
+Unpacking php7.0-opcache (7.0.33-0+deb9u3) ...
+Selecting previously unselected package php7.0-readline.
+Preparing to unpack .../109-php7.0-readline_7.0.33-0+deb9u3_amd64.deb ...
+Unpacking php7.0-readline (7.0.33-0+deb9u3) ...
+Selecting previously unselected package php7.0-cli.
+Preparing to unpack .../110-php7.0-cli_7.0.33-0+deb9u3_amd64.deb ...
+Unpacking php7.0-cli (7.0.33-0+deb9u3) ...
+Selecting previously unselected package libapache2-mod-php7.0.
+Preparing to unpack .../111-libapache2-mod-php7.0_7.0.33-0+deb9u3_amd64.deb ...
+Unpacking libapache2-mod-php7.0 (7.0.33-0+deb9u3) ...
+Selecting previously unselected package libasound2-data.
+Preparing to unpack .../112-libasound2-data_1.1.3-5_all.deb ...
+Unpacking libasound2-data (1.1.3-5) ...
+Selecting previously unselected package libasound2:amd64.
+Preparing to unpack .../113-libasound2_1.1.3-5_amd64.deb ...
+Unpacking libasound2:amd64 (1.1.3-5) ...
+Selecting previously unselected package libasyncns0:amd64.
+Preparing to unpack .../114-libasyncns0_0.8-6_amd64.deb ...
+Unpacking libasyncns0:amd64 (0.8-6) ...
+Selecting previously unselected package libatk1.0-data.
+Preparing to unpack .../115-libatk1.0-data_2.22.0-1_all.deb ...
+Unpacking libatk1.0-data (2.22.0-1) ...
+Selecting previously unselected package libatk1.0-0:amd64.
+Preparing to unpack .../116-libatk1.0-0_2.22.0-1_amd64.deb ...
+Unpacking libatk1.0-0:amd64 (2.22.0-1) ...
+Selecting previously unselected package libatspi2.0-0:amd64.
+Preparing to unpack .../117-libatspi2.0-0_2.22.0-6+deb9u1_amd64.deb ...
+Unpacking libatspi2.0-0:amd64 (2.22.0-6+deb9u1) ...
+Selecting previously unselected package libatk-bridge2.0-0:amd64.
+Preparing to unpack .../118-libatk-bridge2.0-0_2.22.0-2_amd64.deb ...
+Unpacking libatk-bridge2.0-0:amd64 (2.22.0-2) ...
+Selecting previously unselected package libfontenc1:amd64.
+Preparing to unpack .../119-libfontenc1_1%3a1.1.3-1+b2_amd64.deb ...
+Unpacking libfontenc1:amd64 (1:1.1.3-1+b2) ...
+Selecting previously unselected package libdrm2:amd64.
+Preparing to unpack .../120-libdrm2_2.4.74-1_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.74-1) ...
+Selecting previously unselected package libglapi-mesa:amd64.
+Preparing to unpack .../121-libglapi-mesa_13.0.6-1+b2_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (13.0.6-1+b2) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../122-libx11-xcb1_2%3a1.6.4-3+deb9u1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.6.4-3+deb9u1) ...
+Selecting previously unselected package libxcb-dri2-0:amd64.
+Preparing to unpack .../123-libxcb-dri2-0_1.12-1_amd64.deb ...
+Unpacking libxcb-dri2-0:amd64 (1.12-1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../124-libxcb-dri3-0_1.12-1_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.12-1) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../125-libxcb-glx0_1.12-1_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.12-1) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../126-libxcb-present0_1.12-1_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.12-1) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../127-libxcb-sync1_1.12-1_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.12-1) ...
+Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../128-libxfixes3_1%3a5.0.3-1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:5.0.3-1) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../129-libxdamage1_1%3a1.1.4-2+b3_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.4-2+b3) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../130-libxshmfence1_1.2-1+b2_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.2-1+b2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../131-libxxf86vm1_1%3a1.1.4-1+b2_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.4-1+b2) ...
+Selecting previously unselected package libgl1-mesa-glx:amd64.
+Preparing to unpack .../132-libgl1-mesa-glx_13.0.6-1+b2_amd64.deb ...
+Unpacking libgl1-mesa-glx:amd64 (13.0.6-1+b2) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../133-libice6_2%3a1.0.9-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.9-2) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../134-libsm6_2%3a1.2.2-1+b3_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.2-1+b3) ...
+Selecting previously unselected package libxt6:amd64.
+Preparing to unpack .../135-libxt6_1%3a1.1.5-1_amd64.deb ...
+Unpacking libxt6:amd64 (1:1.1.5-1) ...
+Selecting previously unselected package libxmu6:amd64.
+Preparing to unpack .../136-libxmu6_2%3a1.1.2-2_amd64.deb ...
+Unpacking libxmu6:amd64 (2:1.1.2-2) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../137-libxpm4_1%3a3.5.12-1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1) ...
+Selecting previously unselected package libxaw7:amd64.
+Preparing to unpack .../138-libxaw7_2%3a1.0.13-1+b2_amd64.deb ...
+Unpacking libxaw7:amd64 (2:1.0.13-1+b2) ...
+Selecting previously unselected package libxcb-shape0:amd64.
+Preparing to unpack .../139-libxcb-shape0_1.12-1_amd64.deb ...
+Unpacking libxcb-shape0:amd64 (1.12-1) ...
+Selecting previously unselected package libxcomposite1:amd64.
+Preparing to unpack .../140-libxcomposite1_1%3a0.4.4-2_amd64.deb ...
+Unpacking libxcomposite1:amd64 (1:0.4.4-2) ...
+Selecting previously unselected package libxft2:amd64.
+Preparing to unpack .../141-libxft2_2.3.2-1+b2_amd64.deb ...
+Unpacking libxft2:amd64 (2.3.2-1+b2) ...
+Selecting previously unselected package libxinerama1:amd64.
+Preparing to unpack .../142-libxinerama1_2%3a1.1.3-1+b3_amd64.deb ...
+Unpacking libxinerama1:amd64 (2:1.1.3-1+b3) ...
+Selecting previously unselected package libxrandr2:amd64.
+Preparing to unpack .../143-libxrandr2_2%3a1.5.1-1_amd64.deb ...
+Unpacking libxrandr2:amd64 (2:1.5.1-1) ...
+Selecting previously unselected package libxv1:amd64.
+Preparing to unpack .../144-libxv1_2%3a1.0.11-1_amd64.deb ...
+Unpacking libxv1:amd64 (2:1.0.11-1) ...
+Selecting previously unselected package libxxf86dga1:amd64.
+Preparing to unpack .../145-libxxf86dga1_2%3a1.1.4-1+b3_amd64.deb ...
+Unpacking libxxf86dga1:amd64 (2:1.1.4-1+b3) ...
+Selecting previously unselected package x11-utils.
+Preparing to unpack .../146-x11-utils_7.7+3+b1_amd64.deb ...
+Unpacking x11-utils (7.7+3+b1) ...
+Selecting previously unselected package libatk-wrapper-java.
+Preparing to unpack .../147-libatk-wrapper-java_0.33.3-13+deb9u1_all.deb ...
+Unpacking libatk-wrapper-java (0.33.3-13+deb9u1) ...
+Selecting previously unselected package libcairo-gobject2:amd64.
+Preparing to unpack .../148-libcairo-gobject2_1.14.8-1_amd64.deb ...
+Unpacking libcairo-gobject2:amd64 (1.14.8-1) ...
+Selecting previously unselected package libgtk-3-common.
+Preparing to unpack .../149-libgtk-3-common_3.22.11-1_all.deb ...
+Unpacking libgtk-3-common (3.22.11-1) ...
+Selecting previously unselected package libcolord2:amd64.
+Preparing to unpack .../150-libcolord2_1.3.3-2_amd64.deb ...
+Unpacking libcolord2:amd64 (1.3.3-2) ...
+Selecting previously unselected package libepoxy0:amd64.
+Preparing to unpack .../151-libepoxy0_1.3.1-2_amd64.deb ...
+Unpacking libepoxy0:amd64 (1.3.1-2) ...
+Selecting previously unselected package libjson-glib-1.0-common.
+Preparing to unpack .../152-libjson-glib-1.0-common_1.2.6-1_all.deb ...
+Unpacking libjson-glib-1.0-common (1.2.6-1) ...
+Selecting previously unselected package libjson-glib-1.0-0:amd64.
+Preparing to unpack .../153-libjson-glib-1.0-0_1.2.6-1_amd64.deb ...
+Unpacking libjson-glib-1.0-0:amd64 (1.2.6-1) ...
+Selecting previously unselected package libsoup2.4-1:amd64.
+Preparing to unpack .../154-libsoup2.4-1_2.56.0-2+deb9u2_amd64.deb ...
+Unpacking libsoup2.4-1:amd64 (2.56.0-2+deb9u2) ...
+Selecting previously unselected package libsoup-gnome2.4-1:amd64.
+Preparing to unpack .../155-libsoup-gnome2.4-1_2.56.0-2+deb9u2_amd64.deb ...
+Unpacking libsoup-gnome2.4-1:amd64 (2.56.0-2+deb9u2) ...
+Selecting previously unselected package librest-0.7-0:amd64.
+Preparing to unpack .../156-librest-0.7-0_0.8.0-2_amd64.deb ...
+Unpacking librest-0.7-0:amd64 (0.8.0-2) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../157-libwayland-client0_1.12.0-1+deb9u1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.12.0-1+deb9u1) ...
+Selecting previously unselected package libwayland-cursor0:amd64.
+Preparing to unpack .../158-libwayland-cursor0_1.12.0-1+deb9u1_amd64.deb ...
+Unpacking libwayland-cursor0:amd64 (1.12.0-1+deb9u1) ...
+Selecting previously unselected package libwayland-server0:amd64.
+Preparing to unpack .../159-libwayland-server0_1.12.0-1+deb9u1_amd64.deb ...
+Unpacking libwayland-server0:amd64 (1.12.0-1+deb9u1) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../160-libgbm1_13.0.6-1+b2_amd64.deb ...
+Unpacking libgbm1:amd64 (13.0.6-1+b2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../161-libxcb-xfixes0_1.12-1_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.12-1) ...
+Selecting previously unselected package libegl1-mesa:amd64.
+Preparing to unpack .../162-libegl1-mesa_13.0.6-1+b2_amd64.deb ...
+Unpacking libegl1-mesa:amd64 (13.0.6-1+b2) ...
+Selecting previously unselected package libwayland-egl1-mesa:amd64.
+Preparing to unpack .../163-libwayland-egl1-mesa_13.0.6-1+b2_amd64.deb ...
+Unpacking libwayland-egl1-mesa:amd64 (13.0.6-1+b2) ...
+Selecting previously unselected package libxcursor1:amd64.
+Preparing to unpack .../164-libxcursor1_1%3a1.1.14-1+deb9u2_amd64.deb ...
+Unpacking libxcursor1:amd64 (1:1.1.14-1+deb9u2) ...
+Selecting previously unselected package xkb-data.
+Preparing to unpack .../165-xkb-data_2.19-1+deb9u1_all.deb ...
+Unpacking xkb-data (2.19-1+deb9u1) ...
+Selecting previously unselected package libxkbcommon0:amd64.
+Preparing to unpack .../166-libxkbcommon0_0.7.1-2~deb9u1_amd64.deb ...
+Unpacking libxkbcommon0:amd64 (0.7.1-2~deb9u1) ...
+Selecting previously unselected package libgtk-3-0:amd64.
+Preparing to unpack .../167-libgtk-3-0_3.22.11-1_amd64.deb ...
+Unpacking libgtk-3-0:amd64 (3.22.11-1) ...
+Selecting previously unselected package libgtk2.0-common.
+Preparing to unpack .../168-libgtk2.0-common_2.24.31-2_all.deb ...
+Unpacking libgtk2.0-common (2.24.31-2) ...
+Selecting previously unselected package libgtk2.0-0:amd64.
+Preparing to unpack .../169-libgtk2.0-0_2.24.31-2_amd64.deb ...
+Unpacking libgtk2.0-0:amd64 (2.24.31-2) ...
+Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+Preparing to unpack .../170-libatk-wrapper-java-jni_0.33.3-13+deb9u1_amd64.deb ...
+Unpacking libatk-wrapper-java-jni:amd64 (0.33.3-13+deb9u1) ...
+Selecting previously unselected package libblas-common.
+Preparing to unpack .../171-libblas-common_3.7.0-2_amd64.deb ...
+Unpacking libblas-common (3.7.0-2) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../172-libblas3_3.7.0-2_amd64.deb ...
+Unpacking libblas3 (3.7.0-2) ...
+Selecting previously unselected package libblas-dev.
+Preparing to unpack .../173-libblas-dev_3.7.0-2_amd64.deb ...
+Unpacking libblas-dev (3.7.0-2) ...
+Selecting previously unselected package libflac8:amd64.
+Preparing to unpack .../174-libflac8_1.3.2-1_amd64.deb ...
+Unpacking libflac8:amd64 (1.3.2-1) ...
+Selecting previously unselected package libgif7:amd64.
+Preparing to unpack .../175-libgif7_5.1.4-0.4_amd64.deb ...
+Unpacking libgif7:amd64 (5.1.4-0.4) ...
+Selecting previously unselected package libopenblas-base.
+Preparing to unpack .../176-libopenblas-base_0.2.19-3_amd64.deb ...
+Unpacking libopenblas-base (0.2.19-3) ...
+Selecting previously unselected package liblapack3.
+Preparing to unpack .../177-liblapack3_3.7.0-2_amd64.deb ...
+Unpacking liblapack3 (3.7.0-2) ...
+Selecting previously unselected package libopenblas-dev.
+Preparing to unpack .../178-libopenblas-dev_0.2.19-3_amd64.deb ...
+Unpacking libopenblas-dev (0.2.19-3) ...
+Selecting previously unselected package liblapack-dev.
+Preparing to unpack .../179-liblapack-dev_3.7.0-2_amd64.deb ...
+Unpacking liblapack-dev (3.7.0-2) ...
+Selecting previously unselected package libvorbis0a:amd64.
+Preparing to unpack .../180-libvorbis0a_1.3.5-4+deb9u2_amd64.deb ...
+Unpacking libvorbis0a:amd64 (1.3.5-4+deb9u2) ...
+Selecting previously unselected package libvorbisenc2:amd64.
+Preparing to unpack .../181-libvorbisenc2_1.3.5-4+deb9u2_amd64.deb ...
+Unpacking libvorbisenc2:amd64 (1.3.5-4+deb9u2) ...
+Selecting previously unselected package libsndfile1:amd64.
+Preparing to unpack .../182-libsndfile1_1.0.27-3_amd64.deb ...
+Unpacking libsndfile1:amd64 (1.0.27-3) ...
+Selecting previously unselected package libpulse0:amd64.
+Preparing to unpack .../183-libpulse0_10.0-1+deb9u1_amd64.deb ...
+Unpacking libpulse0:amd64 (10.0-1+deb9u1) ...
+Selecting previously unselected package libyaml-0-2:amd64.
+Preparing to unpack .../184-libyaml-0-2_0.1.7-2_amd64.deb ...
+Unpacking libyaml-0-2:amd64 (0.1.7-2) ...
+Selecting previously unselected package make.
+Preparing to unpack .../185-make_4.1-9.1_amd64.deb ...
+Unpacking make (4.1-9.1) ...
+Selecting previously unselected package openjdk-8-jre:amd64.
+Preparing to unpack .../186-openjdk-8-jre_8u222-b10-1~deb9u1_amd64.deb ...
+Unpacking openjdk-8-jre:amd64 (8u222-b10-1~deb9u1) ...
+Selecting previously unselected package openjdk-8-jdk-headless:amd64.
+Preparing to unpack .../187-openjdk-8-jdk-headless_8u222-b10-1~deb9u1_amd64.deb ...
+Unpacking openjdk-8-jdk-headless:amd64 (8u222-b10-1~deb9u1) ...
+Selecting previously unselected package openjdk-8-jdk:amd64.
+Preparing to unpack .../188-openjdk-8-jdk_8u222-b10-1~deb9u1_amd64.deb ...
+Unpacking openjdk-8-jdk:amd64 (8u222-b10-1~deb9u1) ...
+Selecting previously unselected package php7.0.
+Preparing to unpack .../189-php7.0_7.0.33-0+deb9u3_all.deb ...
+Unpacking php7.0 (7.0.33-0+deb9u3) ...
+Selecting previously unselected package rubygems-integration.
+Preparing to unpack .../190-rubygems-integration_1.11_all.deb ...
+Unpacking rubygems-integration (1.11) ...
+Selecting previously unselected package ruby-did-you-mean.
+Preparing to unpack .../191-ruby-did-you-mean_1.0.0-2_all.deb ...
+Unpacking ruby-did-you-mean (1.0.0-2) ...
+Selecting previously unselected package ruby-minitest.
+Preparing to unpack .../192-ruby-minitest_5.9.0-1_all.deb ...
+Unpacking ruby-minitest (5.9.0-1) ...
+Selecting previously unselected package ruby-net-telnet.
+Preparing to unpack .../193-ruby-net-telnet_0.1.1-2_all.deb ...
+Unpacking ruby-net-telnet (0.1.1-2) ...
+Selecting previously unselected package ruby-power-assert.
+Preparing to unpack .../194-ruby-power-assert_0.3.0-1_all.deb ...
+Unpacking ruby-power-assert (0.3.0-1) ...
+Selecting previously unselected package ruby-test-unit.
+Preparing to unpack .../195-ruby-test-unit_3.1.7-2_all.deb ...
+Unpacking ruby-test-unit (3.1.7-2) ...
+Selecting previously unselected package libruby2.3:amd64.
+Preparing to unpack .../196-libruby2.3_2.3.3-1+deb9u6_amd64.deb ...
+Unpacking libruby2.3:amd64 (2.3.3-1+deb9u6) ...
+Selecting previously unselected package ruby2.3.
+Preparing to unpack .../197-ruby2.3_2.3.3-1+deb9u6_amd64.deb ...
+Unpacking ruby2.3 (2.3.3-1+deb9u6) ...
+Selecting previously unselected package ruby.
+Preparing to unpack .../198-ruby_1%3a2.3.3_amd64.deb ...
+Unpacking ruby (1:2.3.3) ...
+Selecting previously unselected package rake.
+Preparing to unpack .../199-rake_10.5.0-2_all.deb ...
+Unpacking rake (10.5.0-2) ...
+Setting up libquadmath0:amd64 (6.3.0-18+deb9u1) ...
+Setting up libxi6:amd64 (2:1.7.9-1) ...
+Setting up libgomp1:amd64 (6.3.0-18+deb9u1) ...
+Setting up libatomic1:amd64 (6.3.0-18+deb9u1) ...
+Setting up libapr1:amd64 (1.5.2-5) ...
+Setting up libxcb-present0:amd64 (1.12-1) ...
+Setting up readline-common (7.0-3) ...
+Setting up libxinerama1:amd64 (2:1.1.3-1+b3) ...
+Setting up libxcb-dri2-0:amd64 (1.12-1) ...
+Setting up libxcb-dri3-0:amd64 (1.12-1) ...
+Setting up libxcb-glx0:amd64 (1.12-1) ...
+Setting up libcc1-0:amd64 (6.3.0-18+deb9u1) ...
+Setting up make (4.1-9.1) ...
+Setting up libasan3:amd64 (6.3.0-18+deb9u1) ...
+Setting up libjson-glib-1.0-common (1.2.6-1) ...
+Setting up libxcb-xfixes0:amd64 (1.12-1) ...
+Setting up libgtk2.0-common (2.24.31-2) ...
+Setting up apt-transport-https (1.4.9) ...
+Setting up libxcb-render0:amd64 (1.12-1) ...
+Setting up libasyncns0:amd64 (0.8-6) ...
+Setting up glib-networking-common (2.50.0-1) ...
+Setting up libjpeg62-turbo:amd64 (1:1.5.1-2) ...
+Setting up psmisc (22.21-2.1+b2) ...
+Setting up libxfixes3:amd64 (1:5.0.3-1) ...
+Setting up mime-support (3.60) ...
+Setting up libpng16-16:amd64 (1.6.28-1+deb9u1) ...
+Setting up liblcms2-2:amd64 (2.8-4+deb9u1) ...
+Setting up libjbig0:amd64 (2.1-3.1+b2) ...
+Setting up libpcsclite1:amd64 (1.8.20-1) ...
+Setting up fonts-dejavu-core (2.37-1) ...
+Setting up libcilkrts5:amd64 (6.3.0-18+deb9u1) ...
+Setting up libreadline7:amd64 (7.0-3) ...
+Setting up libblas-common (3.7.0-2) ...
+Setting up libubsan0:amd64 (6.3.0-18+deb9u1) ...
+Setting up libtsan0:amd64 (6.3.0-18+deb9u1) ...
+Setting up libgfortran3:amd64 (6.3.0-18+deb9u1) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+Setting up libasound2-data (1.1.3-5) ...
+Setting up libxshmfence1:amd64 (1.2-1+b2) ...
+Setting up libwayland-client0:amd64 (1.12.0-1+deb9u1) ...
+Setting up xkb-data (2.19-1+deb9u1) ...
+Setting up libproxy1v5:amd64 (0.4.14-2) ...
+Setting up linux-libc-dev:amd64 (4.9.168-1+deb9u4) ...
+Setting up java-common (0.58+deb9u1) ...
+Setting up libgdk-pixbuf2.0-common (2.36.5-2+deb9u2) ...
+Setting up glib-networking-services (2.50.0-1+b1) ...
+Setting up libdatrie1:amd64 (0.2.10-4+b1) ...
+Setting up libtiff5:amd64 (4.0.8-2+deb9u4) ...
+Setting up libgif7:amd64 (5.1.4-0.4) ...
+Setting up libglapi-mesa:amd64 (13.0.6-1+b2) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libnspr4:amd64 (2:4.12-6) ...
+Setting up ucf (3.0036) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up libfreetype6:amd64 (2.6.3-3.2) ...
+Setting up libmagic-mgc (1:5.30-1+deb9u2) ...
+Setting up libasound2:amd64 (1.1.3-5) ...
+Setting up libdrm2:amd64 (2.4.74-1) ...
+Setting up libmagic1:amd64 (1:5.30-1+deb9u2) ...
+Setting up libjson-glib-1.0-0:amd64 (1.2.6-1) ...
+Setting up libgraphite2-3:amd64 (1.3.10-1) ...
+Setting up liblsan0:amd64 (6.3.0-18+deb9u1) ...
+Setting up libcroco3:amd64 (0.6.11-3) ...
+Setting up libxcb-sync1:amd64 (1.12-1) ...
+Setting up libogg0:amd64 (1.3.2-1) ...
+Setting up libatk1.0-data (2.22.0-1) ...
+Setting up ruby-did-you-mean (1.0.0-2) ...
+Setting up libmpx2:amd64 (6.3.0-18+deb9u1) ...
+Setting up libisl15:amd64 (0.18-1) ...
+Setting up libyaml-0-2:amd64 (0.1.7-2) ...
+Setting up libx11-xcb1:amd64 (2:1.6.4-3+deb9u1) ...
+Setting up libpixman-1-0:amd64 (0.34.0-1) ...
+Setting up libblas3 (3.7.0-2) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Setting up libxxf86dga1:amd64 (2:1.1.4-1+b3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Setting up libepoxy0:amd64 (1.3.1-2) ...
+Setting up libatk1.0-0:amd64 (2.22.0-1) ...
+Setting up libaprutil1:amd64 (1.5.4-3) ...
+Setting up php-common (1:49) ...
+Setting up ruby-net-telnet (0.1.1-2) ...
+Setting up libsqlite3-0:amd64 (3.16.2-5+deb9u1) ...
+Setting up libfontenc1:amd64 (1:1.1.3-1+b2) ...
+Setting up libdconf1:amd64 (0.26.0-2+b1) ...
+Setting up libxcomposite1:amd64 (1:0.4.4-2) ...
+Setting up libxcb-shm0:amd64 (1.12-1) ...
+Setting up libmpfr4:amd64 (3.1.5-1) ...
+Setting up libxpm4:amd64 (1:3.5.12-1) ...
+Setting up rubygems-integration (1.11) ...
+Setting up libxcb-shape0:amd64 (1.12-1) ...
+Setting up libxrender1:amd64 (1:0.9.10-1) ...
+Setting up libxv1:amd64 (2:1.0.11-1) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libxkbcommon0:amd64 (0.7.1-2~deb9u1) ...
+Setting up libmpc3:amd64 (1.0.3-1+b2) ...
+Setting up binutils (2.28-5) ...
+Setting up cpp-6 (6.3.0-18+deb9u1) ...
+Setting up libc-dev-bin (2.24-11+deb9u4) ...
+Setting up liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
+Setting up libcolord2:amd64 (1.3.3-2) ...
+Setting up libthai-data (0.1.26-1) ...
+Setting up php7.0-common (7.0.33-0+deb9u3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/calendar.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/ctype.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/exif.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/fileinfo.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/ftp.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/gettext.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/iconv.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/pdo.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/phar.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/posix.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/shmop.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/sockets.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/sysvmsg.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/sysvsem.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/sysvshm.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/tokenizer.ini with new version
+Setting up libxxf86vm1:amd64 (1:1.1.4-1+b2) ...
+Setting up ruby-minitest (5.9.0-1) ...
+Setting up libvorbis0a:amd64 (1.3.5-4+deb9u2) ...
+Setting up x11-common (1:7.7+19) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Processing triggers for ca-certificates (20161130+nmu1+deb9u1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Setting up hicolor-icon-theme (0.15-1) ...
+Setting up libc6-dev:amd64 (2.24-11+deb9u4) ...
+Setting up libwayland-cursor0:amd64 (1.12.0-1+deb9u1) ...
+Setting up libitm1:amd64 (6.3.0-18+deb9u1) ...
+Setting up libxrandr2:amd64 (2:1.5.1-1) ...
+Setting up libdbus-1-3:amd64 (1.10.28-0+deb9u1) ...
+Setting up libwrap0:amd64 (7.6.q-26) ...
+Setting up ruby-power-assert (0.3.0-1) ...
+Setting up libavahi-common-data:amd64 (0.6.32-2) ...
+Setting up libaprutil1-ldap:amd64 (1.5.4-3) ...
+Setting up libwayland-server0:amd64 (1.12.0-1+deb9u1) ...
+Setting up libopenblas-base (0.2.19-3) ...
+update-alternatives: using /usr/lib/openblas-base/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+update-alternatives: using /usr/lib/openblas-base/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up cpp (4:6.3.0-4) ...
+Setting up fontconfig-config (2.11.0-6.7) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up php7.0-readline (7.0.33-0+deb9u3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/readline.ini with new version
+Setting up libgcc-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Setting up php7.0-opcache (7.0.33-0+deb9u3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/opcache.ini with new version
+Setting up libstdc++-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Setting up libxdamage1:amd64 (1:1.1.4-2+b3) ...
+Setting up ruby-test-unit (3.1.7-2) ...
+Setting up dconf-service (0.26.0-2+b1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-3) ...
+Setting up libatspi2.0-0:amd64 (2.22.0-6+deb9u1) ...
+Setting up liblapack3 (3.7.0-2) ...
+Setting up libgdk-pixbuf2.0-0:amd64 (2.36.5-2+deb9u2) ...
+Setting up libgbm1:amd64 (13.0.6-1+b2) ...
+Setting up libgfortran-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Setting up libflac8:amd64 (1.3.2-1) ...
+Setting up apache2-bin (2.4.25-3+deb9u7) ...
+Setting up libnss3:amd64 (2:3.26.2-1.1+deb9u1) ...
+Setting up libharfbuzz0b:amd64 (1.4.2-1) ...
+Setting up libthai0:amd64 (0.1.26-1) ...
+Setting up gcc-6 (6.3.0-18+deb9u1) ...
+Setting up libxtst6:amd64 (2:1.2.3-1) ...
+Setting up g++-6 (6.3.0-18+deb9u1) ...
+Setting up gtk-update-icon-cache (3.22.11-1) ...
+Setting up libxcursor1:amd64 (1:1.1.14-1+deb9u2) ...
+Setting up libgl1-mesa-glx:amd64 (13.0.6-1+b2) ...
+Setting up php7.0-json (7.0.33-0+deb9u3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/mods-available/json.ini with new version
+Setting up libatk-bridge2.0-0:amd64 (2.22.0-2) ...
+Setting up libice6:amd64 (2:1.0.9-2) ...
+Setting up libavahi-common3:amd64 (0.6.32-2) ...
+Setting up libvorbisenc2:amd64 (1.3.5-4+deb9u2) ...
+Setting up dconf-gsettings-backend:amd64 (0.26.0-2+b1) ...
+Setting up libegl1-mesa:amd64 (13.0.6-1+b2) ...
+Setting up libfontconfig1:amd64 (2.11.0-6.7+b1) ...
+Setting up libsm6:amd64 (2:1.2.2-1+b3) ...
+Setting up gfortran-6 (6.3.0-18+deb9u1) ...
+Setting up gsettings-desktop-schemas (3.22.0-1) ...
+Setting up libgtk-3-common (3.22.11-1) ...
+Setting up gcc (4:6.3.0-4) ...
+Setting up php7.0-cli (7.0.33-0+deb9u3) ...
+update-alternatives: using /usr/bin/php7.0 to provide /usr/bin/php (php) in auto mode
+update-alternatives: using /usr/bin/phar7.0 to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar7.0 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/cli/php.ini with new version
+Setting up libsndfile1:amd64 (1.0.27-3) ...
+Setting up glib-networking:amd64 (2.50.0-1+b1) ...
+Setting up libwayland-egl1-mesa:amd64 (13.0.6-1+b2) ...
+Setting up libxt6:amd64 (1:1.1.5-1) ...
+Setting up g++ (4:6.3.0-4) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up libavahi-client3:amd64 (0.6.32-2) ...
+Setting up libxft2:amd64 (2.3.2-1+b2) ...
+Setting up fontconfig (2.11.0-6.7+b1) ...
+Regenerating fonts cache... done.
+Setting up libcups2:amd64 (2.2.1-8+deb9u3) ...
+Setting up gfortran (4:6.3.0-4) ...
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in auto mode
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f77 (f77) in auto mode
+Setting up libcairo2:amd64 (1.14.8-1) ...
+Setting up libblas-dev (3.7.0-2) ...
+update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+Setting up libapache2-mod-php7.0 (7.0.33-0+deb9u3) ...
+Warning: Could not load Apache 2.4 maintainer script helper.
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.0/apache2/php.ini with new version
+Setting up libcairo-gobject2:amd64 (1.14.8-1) ...
+Setting up libsoup2.4-1:amd64 (2.56.0-2+deb9u2) ...
+Setting up libsoup-gnome2.4-1:amd64 (2.56.0-2+deb9u2) ...
+Setting up libpulse0:amd64 (10.0-1+deb9u1) ...
+Setting up libxmu6:amd64 (2:1.1.2-2) ...
+Setting up libpango-1.0-0:amd64 (1.40.5-1) ...
+Setting up librest-0.7-0:amd64 (0.8.0-2) ...
+Setting up libopenblas-dev (0.2.19-3) ...
+update-alternatives: using /usr/lib/openblas-base/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+update-alternatives: using /usr/lib/openblas-base/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+Setting up liblapack-dev (3.7.0-2) ...
+Setting up libxaw7:amd64 (2:1.0.13-1+b2) ...
+Setting up php7.0 (7.0.33-0+deb9u3) ...
+Setting up x11-utils (7.7+3+b1) ...
+Setting up libpangoft2-1.0-0:amd64 (1.40.5-1) ...
+Setting up libatk-wrapper-java (0.33.3-13+deb9u1) ...
+Setting up libpangocairo-1.0-0:amd64 (1.40.5-1) ...
+Setting up librsvg2-2:amd64 (2.40.16-1+b1) ...
+Setting up librsvg2-common:amd64 (2.40.16-1+b1) ...
+Setting up adwaita-icon-theme (3.22.0-1+deb9u1) ...
+update-alternatives: using /usr/share/icons/Adwaita/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
+Setting up libgtk2.0-0:amd64 (2.24.31-2) ...
+Setting up gnome-icon-theme (3.12.0-2) ...
+update-alternatives: using /usr/share/icons/gnome/scalable/places/debian-swirl.svg to provide /usr/share/icons/gnome/scalable/places/start-here.svg (start-here.svg) in auto mode
+Setting up libgtk-3-0:amd64 (3.22.11-1) ...
+Setting up libatk-wrapper-java-jni:amd64 (0.33.3-13+deb9u1) ...
+Setting up openjdk-8-jre-headless:amd64 (8u222-b10-1~deb9u1) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/clhsdb to provide /usr/bin/clhsdb (clhsdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/hsdb to provide /usr/bin/hsdb (hsdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Setting up ca-certificates-java (20170929~deb9u3) ...
+Adding debian:thawte_Primary_Root_CA.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:thawte_Primary_Root_CA_-_G3.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
+Adding debian:EC-ACC.pem
+Adding debian:TrustCor_ECA-1.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:Certplus_Root_CA_G2.pem
+Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:Visa_eCommerce_Root.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:AC_Raíz_Certicámara_S.A..pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:OpenTrust_Root_CA_G3.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:DST_Root_CA_X3.pem
+Adding debian:Amazon_Root_CA_4.pem
+Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+Adding debian:Trustis_FPS_Root_CA.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:Certinomis_-_Root_CA.pem
+Adding debian:Cybertrust_Global_Root.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+Adding debian:Symantec_Class_1_Public_Primary_Certification_Authority_-_G6.pem
+Adding debian:Verisign_Class_2_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:GeoTrust_Universal_CA.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:EE_Certification_Centre_Root_CA.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:Certum_Root_CA.pem
+Adding debian:OISTE_WISeKey_Global_Root_GA_CA.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:Sonera_Class_2_Root_CA.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:E-Tugra_Certification_Authority.pem
+Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
+Adding debian:Swisscom_Root_CA_2.pem
+Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:TrustCor_RootCert_CA-1.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:Certplus_Class_2_Primary_CA.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:TC_TrustCenter_Class_3_CA_II.pem
+Adding debian:Deutsche_Telekom_Root_CA_2.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
+Adding debian:OpenTrust_Root_CA_G2.pem
+Adding debian:GeoTrust_Universal_CA_2.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:Taiwan_GRCA.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:ComSign_CA.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:Symantec_Class_1_Public_Primary_Certification_Authority_-_G4.pem
+Adding debian:LuxTrust_Global_Root_2.pem
+Adding debian:AddTrust_Low-Value_Services_Root.pem
+Adding debian:Chambers_of_Commerce_Root_-_2008.pem
+Adding debian:D-TRUST_Root_CA_3_2013.pem
+Adding debian:Amazon_Root_CA_1.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:OpenTrust_Root_CA_G1.pem
+Adding debian:Certigna.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:Network_Solutions_Certificate_Authority.pem
+Adding debian:Symantec_Class_2_Public_Primary_Certification_Authority_-_G4.pem
+Adding debian:Global_Chambersign_Root_-_2008.pem
+Adding debian:AffirmTrust_Networking.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:GeoTrust_Primary_Certification_Authority.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
+Adding debian:Camerfirma_Global_Chambersign_Root.pem
+Adding debian:QuoVadis_Root_CA.pem
+Adding debian:Symantec_Class_2_Public_Primary_Certification_Authority_-_G6.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:Amazon_Root_CA_3.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:thawte_Primary_Root_CA_-_G2.pem
+Adding debian:GlobalSign_Root_CA_-_R2.pem
+Adding debian:S-TRUST_Universal_Root_CA.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:AC_RAIZ_FNMT-RCM.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:GeoTrust_Global_CA.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:SwissSign_Platinum_CA_-_G2.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:TrustCor_RootCert_CA-2.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:Izenpe.com.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:AddTrust_External_Root.pem
+Adding debian:UTN_USERFirst_Email_Root_CA.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:Certplus_Root_CA_G1.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:Hongkong_Post_Root_CA_1.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+done.
+Setting up openjdk-8-jdk-headless:amd64 (8u222-b10-1~deb9u1) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/idlj to provide /usr/bin/idlj (idlj) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/wsimport to provide /usr/bin/wsimport (wsimport) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jsadebugd to provide /usr/bin/jsadebugd (jsadebugd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/native2ascii to provide /usr/bin/native2ascii (native2ascii) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javah to provide /usr/bin/javah (javah) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/extcheck to provide /usr/bin/extcheck (extcheck) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/schemagen to provide /usr/bin/schemagen (schemagen) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/xjc to provide /usr/bin/xjc (xjc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jhat to provide /usr/bin/jhat (jhat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/wsgen to provide /usr/bin/wsgen (wsgen) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+Setting up rake (10.5.0-2) ...
+Setting up openjdk-8-jre:amd64 (8u222-b10-1~deb9u1) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
+Setting up libruby2.3:amd64 (2.3.3-1+deb9u6) ...
+Setting up openjdk-8-jdk:amd64 (8u222-b10-1~deb9u1) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/appletviewer to provide /usr/bin/appletviewer (appletviewer) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+Setting up ruby2.3 (2.3.3-1+deb9u6) ...
+Setting up ruby (1:2.3.3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Processing triggers for libgdk-pixbuf2.0-0:amd64 (2.36.5-2+deb9u2) ...
+Processing triggers for ca-certificates (20161130+nmu1+deb9u1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+done.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libuv1
+The following NEW packages will be installed:
+  libuv1 nodejs
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3524 kB of archives.
+After this operation, 14.5 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stretch/main amd64 libuv1 amd64 1.9.1-3 [84.4 kB]
+Get:2 http://deb.debian.org/debian stretch/main amd64 nodejs amd64 4.8.2~dfsg-1 [3440 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 3524 kB in 0s (25.6 MB/s)
+Selecting previously unselected package libuv1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 30087 files and directories currently installed.)
+Preparing to unpack .../libuv1_1.9.1-3_amd64.deb ...
+Unpacking libuv1:amd64 (1.9.1-3) ...
+Selecting previously unselected package nodejs.
+Preparing to unpack .../nodejs_4.8.2~dfsg-1_amd64.deb ...
+Unpacking nodejs (4.8.2~dfsg-1) ...
+Setting up libuv1:amd64 (1.9.1-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Setting up nodejs (4.8.2~dfsg-1) ...
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+[91m/bin/sh: 1: npm: not found
+[0mThe command '/bin/sh -c apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends     apt-transport-https gfortran libopenblas-dev liblapack-dev     curl     make=4.1-9.1     g++=4:6.3.0-4     gcc=4:6.3.0-4                                                   `# gcc v6.3.0`          ruby=1:2.3.3                                                    `# ruby v2.3.3`         php7.0=7.0.33-0+deb9u3                                          `# php v7.0.33`         openjdk-8-jdk                                                   `# java v1.8.x`         && curl -sL https://deb.nodesource.com/setup_10.x | bash     && apt-get install -y nodejs                                    `# node v10.x.x`        && npm install --global xmlhttprequest     && wget --quiet https://dl.google.com/go/go1.12.4.linux-amd64.tar.gz     && tar -xf go1.12.4.linux-amd64.tar.gz                          `# go v1.12.4`          && mv go /usr/bin     && wget --quiet -O gson.jar http://central.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar     && make clean     && apt-get clean && rm -rf /var/lib/apt/lists/*' returned a non-zero code: 127
+/home/travis/.travis/functions: line 524:  2939 Terminated              travis_jigger "${!}" "${timeout}" "${cmd[@]}"
+travis_time:end:05fa2cbc:start=1564961950770077415,finish=1564962046582591944,duration=95812514529[0K[31;1mThe command "travis_wait 30 docker build -t sklearn-porter --build-arg PYTHON_VER=${PYTHON_VER} --build-arg CYTHON_VER=${CYTHON_VER} --build-arg NUMPY_VER=${NUMPY_VER} --build-arg SCIPY_VER=${SCIPY_VER} --build-arg SCIKIT_LEARN_VER=${SCIKIT_LEARN_VER} --no-cache ." failed and exited with 127 during .[0m
+
+Your build has been stopped.

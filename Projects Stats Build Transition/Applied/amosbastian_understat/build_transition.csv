@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+126637582,f594b2a4f55df3a9abe5bf132b86e96da9426937,FailedToPassed,failed,51,https://github.com/amosbastian/understat/compare/154c9ced22a9...c2e633928a28
+126228737,c2e633928a28938c2f3238173c8ebcacc1118b5b,FailedToPassed,passed,972,https://github.com/amosbastian/understat/compare/154c9ced22a9...c2e633928a28
+124794669,2278a451db791c6a3070955dd2f56783adb22a77,PassedToFailed,passed,204,https://github.com/amosbastian/understat/pull/5
+124501266,23e55c6068504ce45605743fd4c0453df31c5831,PassedToFailed,failed,158,https://github.com/amosbastian/understat/pull/5
+113466423,09d8d839f07d433e5eefde2592f570986661ac93,FailedToPassed,failed,159,https://github.com/amosbastian/understat/compare/dd2560628a47...cb4ed81cbf4f
+105024502,cb4ed81cbf4f2996d0c9ddb1af9a99419486f1ec,FailedToPassed,passed,169,https://github.com/amosbastian/understat/compare/dd2560628a47...cb4ed81cbf4f
+103463059,cc8d4a67a1d29a6d8ae1442673abbb5cfb5c5ac2,PassedToFailed,passed,144,https://github.com/amosbastian/understat/compare/0a35a51ba723...cc8d4a67a1d2
+103462721,cc8d4a67a1d29a6d8ae1442673abbb5cfb5c5ac2,PassedToFailed,failed,120,https://github.com/amosbastian/understat/compare/0a35a51ba723...cc8d4a67a1d2
+103462721,cc8d4a67a1d29a6d8ae1442673abbb5cfb5c5ac2,FailedToPassed,failed,120,https://github.com/amosbastian/understat/pull/1
+103461866,972749053ca6c44a825711e410ab443f48d41c43,FailedToPassed,passed,143,https://github.com/amosbastian/understat/pull/1

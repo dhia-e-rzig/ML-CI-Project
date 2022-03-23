@@ -1,0 +1,864 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 375acfbc-0c38-4f7b-99bc-675436caf68a@1.worker-com-657c8fc959-q8lmd.gce-production-1
+version: v6.2.6 https://github.com/travis-ci/worker/tree/ba21bd30589fd152126e13df30e0cc78ccdf2837
+instance: travis-job-3ed12ed7-88c1-458c-ac10-830c3213fe70 travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
+startup: 5.987048006s
+travis_fold:end:worker_info[0Ktravis_time:start:3121e49e[0Ktravis_time:end:3121e49e:start=1580136224412770524,finish=1580136224567683846,duration=154913322,event=no_world_writable_dirs[0Ktravis_time:start:10f6e108[0Ktravis_time:end:10f6e108:start=1580136224570777864,finish=1580136224573812292,duration=3034428,event=setup_filter[0Ktravis_time:start:07632f84[0Ktravis_time:end:07632f84:start=1580136224578404941,finish=1580136224586830461,duration=8425520,event=agent[0Ktravis_time:start:0d635738[0Ktravis_time:end:0d635738:start=1580136224589793093,finish=1580136224591952501,duration=2159408,event=check_unsupported[0Ktravis_time:start:15b03908[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: xenial
+Build id: 146228246
+Job id: 280481144
+Runtime kernel version: 4.15.0-1028-gcp
+travis-build version: 74fa7e3af
+[34m[1mBuild image provisioning date and time[0m
+Mon Mar 25 16:43:24 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.22.7 linux-x64 node-v11.10.1
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2
+[34m[1mrvm version[0m
+rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.7
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.21
+9.5.16
+9.6.12
+[34m[1mRedis version[0m
+redis-server 5.0.4
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 4.10.2!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.0
+v8.12.0
+v8.15.1
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:15b03908:start=1580136224594751462,finish=1580136224613108945,duration=18357483,event=show_system_info[0Ktravis_time:start:01f49d81[0Ktravis_time:end:01f49d81:start=1580136224632258636,finish=1580136224667125907,duration=34867271,event=rm_riak_source[0Ktravis_time:start:12c622a0[0Ktravis_time:end:12c622a0:start=1580136224670372773,finish=1580136224678421421,duration=8048648,event=fix_rwky_redis[0Ktravis_time:start:04c287ab[0Ktravis_time:end:04c287ab:start=1580136224682901388,finish=1580136224995015106,duration=312113718,event=wait_for_network[0Ktravis_time:start:089a035c[0Ktravis_time:end:089a035c:start=1580136224998929032,finish=1580136225201276570,duration=202347538,event=update_apt_keys[0Ktravis_time:start:02bda8d0[0Ktravis_time:end:02bda8d0:start=1580136225206419193,finish=1580136225260606634,duration=54187441,event=fix_hhvm_source[0Ktravis_time:start:026a962a[0Ktravis_time:end:026a962a:start=1580136225264569192,finish=1580136225267270106,duration=2700914,event=update_mongo_arch[0Ktravis_time:start:05017add[0Ktravis_time:end:05017add:start=1580136225272757631,finish=1580136225314991121,duration=42233490,event=fix_sudo_enabled_trusty[0Ktravis_time:start:007469d6[0Ktravis_time:end:007469d6:start=1580136225319144004,finish=1580136225321616333,duration=2472329,event=update_glibc[0Ktravis_time:start:23b6c446[0Ktravis_time:end:23b6c446:start=1580136225325439079,finish=1580136225333906344,duration=8467265,event=clean_up_path[0Ktravis_time:start:1bb52200[0Ktravis_time:end:1bb52200:start=1580136225339165419,finish=1580136225347218801,duration=8053382,event=fix_resolv_conf[0Ktravis_time:start:353451f0[0Ktravis_time:end:353451f0:start=1580136225352556134,finish=1580136225361644656,duration=9088522,event=fix_etc_hosts[0Ktravis_time:start:1ff193c7[0Ktravis_time:end:1ff193c7:start=1580136225367181084,finish=1580136225375741409,duration=8560325,event=fix_mvn_settings_xml[0Ktravis_time:start:020893e6[0Ktravis_time:end:020893e6:start=1580136225380568787,finish=1580136225389731685,duration=9162898,event=no_ipv6_localhost[0Ktravis_time:start:0a5cb28c[0Ktravis_time:end:0a5cb28c:start=1580136225393138087,finish=1580136225395367466,duration=2229379,event=fix_etc_mavenrc[0Ktravis_time:start:01d4aea2[0Ktravis_time:end:01d4aea2:start=1580136225398779371,finish=1580136225401907704,duration=3128333,event=fix_wwdr_certificate[0Ktravis_time:start:101c5476[0Ktravis_time:end:101c5476:start=1580136225407534472,finish=1580136225433486211,duration=25951739,event=put_localhost_first[0Ktravis_time:start:17df269e[0Ktravis_time:end:17df269e:start=1580136225438743014,finish=1580136225442586769,duration=3843755,event=home_paths[0Ktravis_time:start:00600e09[0Ktravis_time:end:00600e09:start=1580136225446648516,finish=1580136225459304715,duration=12656199,event=disable_initramfs[0Ktravis_time:start:13ededcc[0Ktravis_time:end:13ededcc:start=1580136225463061204,finish=1580136225705272752,duration=242211548,event=disable_ssh_roaming[0Ktravis_time:start:15b507ac[0Ktravis_time:end:15b507ac:start=1580136225709450267,finish=1580136225712168102,duration=2717835,event=debug_tools[0Ktravis_time:start:0eb431cc[0Ktravis_time:end:0eb431cc:start=1580136225715876267,finish=1580136225719314188,duration=3437921,event=uninstall_oclint[0Ktravis_time:start:29674179[0Ktravis_time:end:29674179:start=1580136225723672127,finish=1580136225727822147,duration=4150020,event=rvm_use[0Ktravis_time:start:216d7c9a[0Ktravis_time:end:216d7c9a:start=1580136225733180338,finish=1580136225741735823,duration=8555485,event=rm_etc_boto_cfg[0Ktravis_time:start:132d48fe[0Ktravis_time:end:132d48fe:start=1580136225746043946,finish=1580136225749126884,duration=3082938,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0144183f[0Ktravis_time:end:0144183f:start=1580136225755060247,finish=1580136225857642625,duration=102582378,event=enable_i386[0Ktravis_time:start:2c2c8522[0Ktravis_time:end:2c2c8522:start=1580136225861904862,finish=1580136225876709300,duration=14804438,event=update_rubygems[0Ktravis_time:start:09610a0d[0Ktravis_time:end:09610a0d:start=1580136225881702165,finish=1580136226679518533,duration=797816368,event=ensure_path_components[0Ktravis_time:start:06699da4[0Ktravis_time:end:06699da4:start=1580136226683984286,finish=1580136226686449131,duration=2464845,event=redefine_curl[0Ktravis_time:start:0a002903[0Ktravis_time:end:0a002903:start=1580136226690174838,finish=1580136226777102835,duration=86927997,event=nonblock_pipe[0Ktravis_time:start:131f2c38[0Ktravis_time:end:131f2c38:start=1580136226781109665,finish=1580136244765385513,duration=17984275848,event=apt_get_update[0Ktravis_time:start:01cb4ca2[0Ktravis_time:end:01cb4ca2:start=1580136244769608294,finish=1580136244772080745,duration=2472451,event=deprecate_xcode_64[0Ktravis_time:start:158d46f8[0Ktravis_time:end:158d46f8:start=1580136244777016033,finish=1580136247311761914,duration=2534745881,event=update_heroku[0Ktravis_time:start:22ea13e0[0Ktravis_time:end:22ea13e0:start=1580136247315635624,finish=1580136247318418917,duration=2783293,event=shell_session_update[0Ktravis_time:start:03e4b618[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:03e4b618:start=1580136247323714458,finish=1580136250970129381,duration=3646414923,event=set_docker_mtu[0Ktravis_time:start:09845638[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:09845638:start=1580136250973739894,finish=1580136251038109181,duration=64369287,event=resolvconf[0Ktravis_time:start:01565754[0Ktravis_time:end:01565754:start=1580136251042802795,finish=1580136251182495003,duration=139692208,event=maven_central_mirror[0Ktravis_time:start:07f72ff0[0Ktravis_time:end:07f72ff0:start=1580136251187169254,finish=1580136251284230034,duration=97060780,event=maven_https[0Ktravis_time:start:0d769ea4[0Ktravis_time:end:0d769ea4:start=1580136251293735238,finish=1580136251296812811,duration=3077573,event=fix_ps4[0Ktravis_time:start:216b1b57[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:000f2eb2[0K$ git clone --depth=50 --branch=master https://github.com/lambdaclass/finance_playground.git lambdaclass/finance_playground
+Cloning into 'lambdaclass/finance_playground'...
+travis_time:end:000f2eb2:start=1580136251304928351,finish=1580136257014373747,duration=5709445396,event=checkout[0K$ cd lambdaclass/finance_playground
+$ git checkout -qf fb7c535c6e6ee59e3668627c05c7754b86c8f76e
+travis_fold:end:git.checkout[0K
+travis_time:end:000f2eb2:start=1580136251304928351,finish=1580136257032447207,duration=5727518856,event=checkout[0Ktravis_time:start:06f90825[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export GITHUB_TOKEN=[secure]
+
+travis_time:end:06f90825:start=1580136257037698610,finish=1580136257044433015,duration=6734405,event=env[0Ktravis_time:start:0363bf50[0K$ source ~/virtualenv/python3.6/bin/activate
+travis_time:end:0363bf50:start=1580136257047903041,finish=1580136257053322765,duration=5419724,event=[0K$ python --version
+Python 3.6.7
+$ pip --version
+pip 19.0.3 from /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages/pip (python 3.6)
+travis_fold:start:before_install.1[0Ktravis_time:start:08e3d484[0K$ sudo apt-get -qq update
+travis_time:end:08e3d484:start=1580136257941546694,finish=1580136260018740937,duration=2077194243,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:02da5b24[0K$ wget https://github.com/jgm/pandoc/releases/download/2.9.1.1/pandoc-2.9.1.1-1-amd64.deb
+--2020-01-27 14:44:20--  https://github.com/jgm/pandoc/releases/download/2.9.1.1/pandoc-2.9.1.1-1-amd64.deb
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/571770/a4b9e180-3000-11ea-86f8-5c8fe8b95901?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200127T144420Z&X-Amz-Expires=300&X-Amz-Signature=bc54fd39a1aa883bd488d5744cd23dc6e1f6a8c0532984fa14fddbf9d3eb4a40&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dpandoc-2.9.1.1-1-amd64.deb&response-content-type=application%2Foctet-stream [following]
+--2020-01-27 14:44:20--  https://github-production-release-asset-2e65be.s3.amazonaws.com/571770/a4b9e180-3000-11ea-86f8-5c8fe8b95901?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200127T144420Z&X-Amz-Expires=300&X-Amz-Signature=bc54fd39a1aa883bd488d5744cd23dc6e1f6a8c0532984fa14fddbf9d3eb4a40&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dpandoc-2.9.1.1-1-amd64.deb&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.179.11
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.179.11|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12557972 (12M) [application/octet-stream]
+Saving to: ‘pandoc-2.9.1.1-1-amd64.deb’
+
+     0K .......... .......... .......... .......... ..........  0% 3.31M 4s
+    50K .......... .......... .......... .......... ..........  0% 3.50M 3s
+   100K .......... .......... .......... .......... ..........  1% 4.03M 3s
+   150K .......... .......... .......... .......... ..........  1% 76.4M 3s
+   200K .......... .......... .......... .......... ..........  2% 27.4M 2s
+   250K .......... .......... .......... .......... ..........  2% 4.24M 2s
+   300K .......... .......... .......... .......... ..........  2%  221M 2s
+   350K .......... .......... .......... .......... ..........  3% 82.2M 2s
+   400K .......... .......... .......... .......... ..........  3% 74.5M 1s
+   450K .......... .......... .......... .......... ..........  4%  276M 1s
+   500K .......... .......... .......... .......... ..........  4% 34.2M 1s
+   550K .......... .......... .......... .......... ..........  4% 4.76M 1s
+   600K .......... .......... .......... .......... ..........  5% 40.2M 1s
+   650K .......... .......... .......... .......... ..........  5% 89.0M 1s
+   700K .......... .......... .......... .......... ..........  6%  262M 1s
+   750K .......... .......... .......... .......... ..........  6%  252M 1s
+   800K .......... .......... .......... .......... ..........  6%  303M 1s
+   850K .......... .......... .......... .......... ..........  7%  359M 1s
+   900K .......... .......... .......... .......... ..........  7%  351M 1s
+   950K .......... .......... .......... .......... ..........  8% 65.1M 1s
+  1000K .......... .......... .......... .......... ..........  8%  235M 1s
+  1050K .......... .......... .......... .......... ..........  8%  267M 1s
+  1100K .......... .......... .......... .......... ..........  9% 47.4M 1s
+  1150K .......... .......... .......... .......... ..........  9% 5.53M 1s
+  1200K .......... .......... .......... .......... .......... 10%  283M 1s
+  1250K .......... .......... .......... .......... .......... 10%  323M 1s
+  1300K .......... .......... .......... .......... .......... 11% 39.3M 1s
+  1350K .......... .......... .......... .......... .......... 11%  342M 1s
+  1400K .......... .......... .......... .......... .......... 11%  309M 1s
+  1450K .......... .......... .......... .......... .......... 12% 32.1M 1s
+  1500K .......... .......... .......... .......... .......... 12% 70.3M 1s
+  1550K .......... .......... .......... .......... .......... 13%  320M 1s
+  1600K .......... .......... .......... .......... .......... 13% 75.6M 1s
+  1650K .......... .......... .......... .......... .......... 13% 73.4M 1s
+  1700K .......... .......... .......... .......... .......... 14% 48.2M 1s
+  1750K .......... .......... .......... .......... .......... 14%  244M 1s
+  1800K .......... .......... .......... .......... .......... 15%  218M 0s
+  1850K .......... .......... .......... .......... .......... 15%  279M 0s
+  1900K .......... .......... .......... .......... .......... 15%  282M 0s
+  1950K .......... .......... .......... .......... .......... 16%  264M 0s
+  2000K .......... .......... .......... .......... .......... 16%  260M 0s
+  2050K .......... .......... .......... .......... .......... 17%  370M 0s
+  2100K .......... .......... .......... .......... .......... 17%  363M 0s
+  2150K .......... .......... .......... .......... .......... 17%  372M 0s
+  2200K .......... .......... .......... .......... .......... 18%  267M 0s
+  2250K .......... .......... .......... .......... .......... 18%  274M 0s
+  2300K .......... .......... .......... .......... .......... 19% 6.95M 0s
+  2350K .......... .......... .......... .......... .......... 19%  334M 0s
+  2400K .......... .......... .......... .......... .......... 19%  272M 0s
+  2450K .......... .......... .......... .......... .......... 20%  336M 0s
+  2500K .......... .......... .......... .......... .......... 20%  297M 0s
+  2550K .......... .......... .......... .......... .......... 21%  293M 0s
+  2600K .......... .......... .......... .......... .......... 21%  220M 0s
+  2650K .......... .......... .......... .......... .......... 22%  324M 0s
+  2700K .......... .......... .......... .......... .......... 22%  339M 0s
+  2750K .......... .......... .......... .......... .......... 22%  298M 0s
+  2800K .......... .......... .......... .......... .......... 23%  279M 0s
+  2850K .......... .......... .......... .......... .......... 23%  306M 0s
+  2900K .......... .......... .......... .......... .......... 24%  342M 0s
+  2950K .......... .......... .......... .......... .......... 24% 6.76M 0s
+  3000K .......... .......... .......... .......... .......... 24%  159M 0s
+  3050K .......... .......... .......... .......... .......... 25%  235M 0s
+  3100K .......... .......... .......... .......... .......... 25%  202M 0s
+  3150K .......... .......... .......... .......... .......... 26%  190M 0s
+  3200K .......... .......... .......... .......... .......... 26%  180M 0s
+  3250K .......... .......... .......... .......... .......... 26%  247M 0s
+  3300K .......... .......... .......... .......... .......... 27%  195M 0s
+  3350K .......... .......... .......... .......... .......... 27%  194M 0s
+  3400K .......... .......... .......... .......... .......... 28%  263M 0s
+  3450K .......... .......... .......... .......... .......... 28%  243M 0s
+  3500K .......... .......... .......... .......... .......... 28%  242M 0s
+  3550K .......... .......... .......... .......... .......... 29%  310M 0s
+  3600K .......... .......... .......... .......... .......... 29%  240M 0s
+  3650K .......... .......... .......... .......... .......... 30% 73.0M 0s
+  3700K .......... .......... .......... .......... .......... 30%  171M 0s
+  3750K .......... .......... .......... .......... .......... 30%  287M 0s
+  3800K .......... .......... .......... .......... .......... 31% 75.7M 0s
+  3850K .......... .......... .......... .......... .......... 31%  225M 0s
+  3900K .......... .......... .......... .......... .......... 32% 87.7M 0s
+  3950K .......... .......... .......... .......... .......... 32%  136M 0s
+  4000K .......... .......... .......... .......... .......... 33% 80.5M 0s
+  4050K .......... .......... .......... .......... .......... 33% 75.0M 0s
+  4100K .......... .......... .......... .......... .......... 33%  102M 0s
+  4150K .......... .......... .......... .......... .......... 34% 85.0M 0s
+  4200K .......... .......... .......... .......... .......... 34%  216M 0s
+  4250K .......... .......... .......... .......... .......... 35% 60.9M 0s
+  4300K .......... .......... .......... .......... .......... 35%  299M 0s
+  4350K .......... .......... .......... .......... .......... 35%  274M 0s
+  4400K .......... .......... .......... .......... .......... 36% 62.7M 0s
+  4450K .......... .......... .......... .......... .......... 36%  310M 0s
+  4500K .......... .......... .......... .......... .......... 37%  304M 0s
+  4550K .......... .......... .......... .......... .......... 37% 58.6M 0s
+  4600K .......... .......... .......... .......... .......... 37%  218M 0s
+  4650K .......... .......... .......... .......... .......... 38%  292M 0s
+  4700K .......... .......... .......... .......... .......... 38%  311M 0s
+  4750K .......... .......... .......... .......... .......... 39% 40.1M 0s
+  4800K .......... .......... .......... .......... .......... 39%  249M 0s
+  4850K .......... .......... .......... .......... .......... 39%  258M 0s
+  4900K .......... .......... .......... .......... .......... 40%  309M 0s
+  4950K .......... .......... .......... .......... .......... 40%  301M 0s
+  5000K .......... .......... .......... .......... .......... 41%  221M 0s
+  5050K .......... .......... .......... .......... .......... 41%  247M 0s
+  5100K .......... .......... .......... .......... .......... 41%  305M 0s
+  5150K .......... .......... .......... .......... .......... 42%  277M 0s
+  5200K .......... .......... .......... .......... .......... 42% 23.1M 0s
+  5250K .......... .......... .......... .......... .......... 43%  306M 0s
+  5300K .......... .......... .......... .......... .......... 43%  265M 0s
+  5350K .......... .......... .......... .......... .......... 44%  253M 0s
+  5400K .......... .......... .......... .......... .......... 44%  183M 0s
+  5450K .......... .......... .......... .......... .......... 44%  272M 0s
+  5500K .......... .......... .......... .......... .......... 45%  186M 0s
+  5550K .......... .......... .......... .......... .......... 45%  227M 0s
+  5600K .......... .......... .......... .......... .......... 46%  237M 0s
+  5650K .......... .......... .......... .......... .......... 46%  213M 0s
+  5700K .......... .......... .......... .......... .......... 46%  206M 0s
+  5750K .......... .......... .......... .......... .......... 47%  184M 0s
+  5800K .......... .......... .......... .......... .......... 47%  180M 0s
+  5850K .......... .......... .......... .......... .......... 48% 16.5M 0s
+  5900K .......... .......... .......... .......... .......... 48%  181M 0s
+  5950K .......... .......... .......... .......... .......... 48%  202M 0s
+  6000K .......... .......... .......... .......... .......... 49%  229M 0s
+  6050K .......... .......... .......... .......... .......... 49%  239M 0s
+  6100K .......... .......... .......... .......... .......... 50%  213M 0s
+  6150K .......... .......... .......... .......... .......... 50%  236M 0s
+  6200K .......... .......... .......... .......... .......... 50%  170M 0s
+  6250K .......... .......... .......... .......... .......... 51%  224M 0s
+  6300K .......... .......... .......... .......... .......... 51%  324M 0s
+  6350K .......... .......... .......... .......... .......... 52%  249M 0s
+  6400K .......... .......... .......... .......... .......... 52% 23.3M 0s
+  6450K .......... .......... .......... .......... .......... 53%  192M 0s
+  6500K .......... .......... .......... .......... .......... 53%  288M 0s
+  6550K .......... .......... .......... .......... .......... 53%  215M 0s
+  6600K .......... .......... .......... .......... .......... 54%  254M 0s
+  6650K .......... .......... .......... .......... .......... 54%  313M 0s
+  6700K .......... .......... .......... .......... .......... 55%  264M 0s
+  6750K .......... .......... .......... .......... .......... 55%  311M 0s
+  6800K .......... .......... .......... .......... .......... 55%  287M 0s
+  6850K .......... .......... .......... .......... .......... 56%  264M 0s
+  6900K .......... .......... .......... .......... .......... 56%  244M 0s
+  6950K .......... .......... .......... .......... .......... 57%  304M 0s
+  7000K .......... .......... .......... .......... .......... 57%  236M 0s
+  7050K .......... .......... .......... .......... .......... 57%  307M 0s
+  7100K .......... .......... .......... .......... .......... 58%  306M 0s
+  7150K .......... .......... .......... .......... .......... 58%  318M 0s
+  7200K .......... .......... .......... .......... .......... 59%  245M 0s
+  7250K .......... .......... .......... .......... .......... 59%  305M 0s
+  7300K .......... .......... .......... .......... .......... 59%  276M 0s
+  7350K .......... .......... .......... .......... .......... 60%  307M 0s
+  7400K .......... .......... .......... .......... .......... 60% 17.6M 0s
+  7450K .......... .......... .......... .......... .......... 61%  174M 0s
+  7500K .......... .......... .......... .......... .......... 61%  161M 0s
+  7550K .......... .......... .......... .......... .......... 61%  243M 0s
+  7600K .......... .......... .......... .......... .......... 62%  189M 0s
+  7650K .......... .......... .......... .......... .......... 62%  292M 0s
+  7700K .......... .......... .......... .......... .......... 63%  263M 0s
+  7750K .......... .......... .......... .......... .......... 63%  217M 0s
+  7800K .......... .......... .......... .......... .......... 64%  161M 0s
+  7850K .......... .......... .......... .......... .......... 64%  204M 0s
+  7900K .......... .......... .......... .......... .......... 64%  264M 0s
+  7950K .......... .......... .......... .......... .......... 65%  228M 0s
+  8000K .......... .......... .......... .......... .......... 65%  195M 0s
+  8050K .......... .......... .......... .......... .......... 66%  255M 0s
+  8100K .......... .......... .......... .......... .......... 66%  228M 0s
+  8150K .......... .......... .......... .......... .......... 66%  248M 0s
+  8200K .......... .......... .......... .......... .......... 67%  106M 0s
+  8250K .......... .......... .......... .......... .......... 67% 40.9M 0s
+  8300K .......... .......... .......... .......... .......... 68% 70.7M 0s
+  8350K .......... .......... .......... .......... .......... 68% 21.4M 0s
+  8400K .......... .......... .......... .......... .......... 68% 43.1M 0s
+  8450K .......... .......... .......... .......... .......... 69%  313M 0s
+  8500K .......... .......... .......... .......... .......... 69%  386M 0s
+  8550K .......... .......... .......... .......... .......... 70%  382M 0s
+  8600K .......... .......... .......... .......... .......... 70%  325M 0s
+  8650K .......... .......... .......... .......... .......... 70%  191M 0s
+  8700K .......... .......... .......... .......... .......... 71%  375M 0s
+  8750K .......... .......... .......... .......... .......... 71%  334M 0s
+  8800K .......... .......... .......... .......... .......... 72%  345M 0s
+  8850K .......... .......... .......... .......... .......... 72%  336M 0s
+  8900K .......... .......... .......... .......... .......... 72%  358M 0s
+  8950K .......... .......... .......... .......... .......... 73%  334M 0s
+  9000K .......... .......... .......... .......... .......... 73%  316M 0s
+  9050K .......... .......... .......... .......... .......... 74%  366M 0s
+  9100K .......... .......... .......... .......... .......... 74%  370M 0s
+  9150K .......... .......... .......... .......... .......... 75%  354M 0s
+  9200K .......... .......... .......... .......... .......... 75%  337M 0s
+  9250K .......... .......... .......... .......... .......... 75% 5.90M 0s
+  9300K .......... .......... .......... .......... .......... 76%  250M 0s
+  9350K .......... .......... .......... .......... .......... 76%  309M 0s
+  9400K .......... .......... .......... .......... .......... 77%  232M 0s
+  9450K .......... .......... .......... .......... .......... 77%  270M 0s
+  9500K .......... .......... .......... .......... .......... 77%  273M 0s
+  9550K .......... .......... .......... .......... .......... 78%  253M 0s
+  9600K .......... .......... .......... .......... .......... 78%  246M 0s
+  9650K .......... .......... .......... .......... .......... 79%  289M 0s
+  9700K .......... .......... .......... .......... .......... 79%  266M 0s
+  9750K .......... .......... .......... .......... .......... 79%  251M 0s
+  9800K .......... .......... .......... .......... .......... 80%  238M 0s
+  9850K .......... .......... .......... .......... .......... 80%  269M 0s
+  9900K .......... .......... .......... .......... .......... 81%  312M 0s
+  9950K .......... .......... .......... .......... .......... 81%  240M 0s
+ 10000K .......... .......... .......... .......... .......... 81%  255M 0s
+ 10050K .......... .......... .......... .......... .......... 82%  256M 0s
+ 10100K .......... .......... .......... .......... .......... 82%  283M 0s
+ 10150K .......... .......... .......... .......... .......... 83%  337M 0s
+ 10200K .......... .......... .......... .......... .......... 83%  223M 0s
+ 10250K .......... .......... .......... .......... .......... 83%  230M 0s
+ 10300K .......... .......... .......... .......... .......... 84% 4.96M 0s
+ 10350K .......... .......... .......... .......... .......... 84%  377M 0s
+ 10400K .......... .......... .......... .......... .......... 85%  324M 0s
+ 10450K .......... .......... .......... .......... .......... 85%  198M 0s
+ 10500K .......... .......... .......... .......... .......... 86%  312M 0s
+ 10550K .......... .......... .......... .......... .......... 86%  359M 0s
+ 10600K .......... .......... .......... .......... .......... 86%  302M 0s
+ 10650K .......... .......... .......... .......... .......... 87%  360M 0s
+ 10700K .......... .......... .......... .......... .......... 87%  366M 0s
+ 10750K .......... .......... .......... .......... .......... 88%  360M 0s
+ 10800K .......... .......... .......... .......... .......... 88%  333M 0s
+ 10850K .......... .......... .......... .......... .......... 88%  390M 0s
+ 10900K .......... .......... .......... .......... .......... 89%  397M 0s
+ 10950K .......... .......... .......... .......... .......... 89%  367M 0s
+ 11000K .......... .......... .......... .......... .......... 90%  316M 0s
+ 11050K .......... .......... .......... .......... .......... 90%  383M 0s
+ 11100K .......... .......... .......... .......... .......... 90% 7.81M 0s
+ 11150K .......... .......... .......... .......... .......... 91%  341M 0s
+ 11200K .......... .......... .......... .......... .......... 91%  334M 0s
+ 11250K .......... .......... .......... .......... .......... 92%  383M 0s
+ 11300K .......... .......... .......... .......... .......... 92%  351M 0s
+ 11350K .......... .......... .......... .......... .......... 92% 19.1M 0s
+ 11400K .......... .......... .......... .......... .......... 93%  247M 0s
+ 11450K .......... .......... .......... .......... .......... 93%  307M 0s
+ 11500K .......... .......... .......... .......... .......... 94%  307M 0s
+ 11550K .......... .......... .......... .......... .......... 94%  327M 0s
+ 11600K .......... .......... .......... .......... .......... 94%  278M 0s
+ 11650K .......... .......... .......... .......... .......... 95%  322M 0s
+ 11700K .......... .......... .......... .......... .......... 95%  284M 0s
+ 11750K .......... .......... .......... .......... .......... 96%  325M 0s
+ 11800K .......... .......... .......... .......... .......... 96%  272M 0s
+ 11850K .......... .......... .......... .......... .......... 97%  331M 0s
+ 11900K .......... .......... .......... .......... .......... 97%  283M 0s
+ 11950K .......... .......... .......... .......... .......... 97%  309M 0s
+ 12000K .......... .......... .......... .......... .......... 98%  288M 0s
+ 12050K .......... .......... .......... .......... .......... 98%  334M 0s
+ 12100K .......... .......... .......... .......... .......... 99%  327M 0s
+ 12150K .......... .......... .......... .......... .......... 99%  331M 0s
+ 12200K .......... .......... .......... .......... .......... 99%  204M 0s
+ 12250K .......... ...                                        100%  532M=0.2s
+
+2020-01-27 14:44:20 (64.0 MB/s) - ‘pandoc-2.9.1.1-1-amd64.deb’ saved [12557972/12557972]
+
+travis_time:end:02da5b24:start=1580136260024259556,finish=1580136260529845662,duration=505586106,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:06c2f02f[0K$ sudo dpkg -i ./pandoc-2.9.1.1-1-amd64.deb
+Selecting previously unselected package pandoc.
+(Reading database ... 124189 files and directories currently installed.)
+Preparing to unpack ./pandoc-2.9.1.1-1-amd64.deb ...
+Unpacking pandoc (2.9.1.1-1) ...
+Setting up pandoc (2.9.1.1-1) ...
+Processing triggers for man-db (2.7.5-1) ...
+travis_time:end:06c2f02f:start=1580136260542365645,finish=1580136263450271757,duration=2907906112,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:install.1[0Ktravis_time:start:00eb454c[0K$ sudo apt-get install -y nodejs npm
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  gyp libjs-inherits libjs-node-uuid libjs-underscore libuv1 libuv1-dev
+  node-abbrev node-ansi node-ansi-color-table node-archy node-async
+  node-block-stream node-combined-stream node-cookie-jar node-delayed-stream
+  node-forever-agent node-form-data node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-gyp node-inherits
+  node-ini node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv node-qs
+  node-read node-read-package-json node-request node-retry node-rimraf
+  node-semver node-sha node-sigmund node-slide node-tar node-tunnel-agent
+  node-underscore node-which nodejs-dev
+Suggested packages:
+  javascript-common node-hawk node-aws-sign node-oauth-sign
+  node-http-signature debhelper
+Recommended packages:
+  javascript-common
+The following NEW packages will be installed:
+  gyp libjs-inherits libjs-node-uuid libjs-underscore libuv1 libuv1-dev
+  node-abbrev node-ansi node-ansi-color-table node-archy node-async
+  node-block-stream node-combined-stream node-cookie-jar node-delayed-stream
+  node-forever-agent node-form-data node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-gyp node-inherits
+  node-ini node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv node-qs
+  node-read node-read-package-json node-request node-retry node-rimraf
+  node-semver node-sha node-sigmund node-slide node-tar node-tunnel-agent
+  node-underscore node-which nodejs nodejs-dev npm
+0 upgraded, 55 newly installed, 0 to remove and 262 not upgraded.
+Need to get 5,809 kB of archives.
+After this operation, 29.7 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/universe amd64 gyp all 0.1+20150913git1f374df9-1ubuntu1 [265 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libjs-node-uuid all 1.4.0-1 [11.1 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjs-underscore all 1.7.0~dfsg-1ubuntu1 [46.7 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libuv1 amd64 1.8.0-1 [57.4 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libuv1-dev amd64 1.8.0-1 [74.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 nodejs amd64 4.2.6~dfsg-1ubuntu4.2 [3,162 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-async all 0.8.0-1 [22.2 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-node-uuid all 1.4.0-1 [2,530 B]
+Get:9 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-underscore all 1.7.0~dfsg-1ubuntu1 [3,780 B]
+Get:10 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libjs-inherits all 2.0.1-3 [2,794 B]
+Get:11 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-abbrev all 1.0.5-2 [3,592 B]
+Get:12 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-ansi all 0.3.0-2 [8,590 B]
+Get:13 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-ansi-color-table all 1.0.0-1 [4,478 B]
+Get:14 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-archy all 0.0.2-1 [3,660 B]
+Get:15 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-inherits all 2.0.1-3 [3,060 B]
+Get:16 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-block-stream all 0.0.7-1 [4,832 B]
+Get:17 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-delayed-stream all 0.0.5-1 [4,750 B]
+Get:18 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-combined-stream all 0.0.5-1 [4,958 B]
+Get:19 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-cookie-jar all 0.3.1-1 [3,746 B]
+Get:20 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-forever-agent all 0.5.1-1 [3,194 B]
+Get:21 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-mime all 1.3.4-1 [11.9 kB]
+Get:22 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-form-data all 0.1.0-1 [6,412 B]
+Get:23 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-rimraf all 2.2.8-1 [5,702 B]
+Get:24 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-mkdirp all 0.5.0-1 [4,690 B]
+Get:25 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-graceful-fs all 3.0.2-1 [7,102 B]
+Get:26 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-fstream all 0.1.24-1 [19.5 kB]
+Get:27 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-lru-cache all 2.3.1-1 [5,674 B]
+Get:28 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-sigmund all 1.0.0-1 [3,818 B]
+Get:29 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-minimatch all 1.0.0-1 [14.0 kB]
+Get:30 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-fstream-ignore all 0.0.6-2 [5,586 B]
+Get:31 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-github-url-from-git all 1.1.1-1 [3,138 B]
+Get:32 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-once all 1.1.1-1 [2,608 B]
+Get:33 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-glob all 4.0.5-1 [13.2 kB]
+Get:34 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 nodejs-dev amd64 4.2.6~dfsg-1ubuntu4.2 [265 kB]
+Get:35 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-nopt all 3.0.1-1 [9,544 B]
+Get:36 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-npmlog all 0.0.4-1 [5,844 B]
+Get:37 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-osenv all 0.1.0-1 [3,772 B]
+Get:38 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-tunnel-agent all 0.3.1-1 [4,018 B]
+Get:39 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-json-stringify-safe all 5.0.0-1 [3,544 B]
+Get:40 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-qs all 2.2.4-1 [7,574 B]
+Get:41 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-request all 2.26.1-1 [14.5 kB]
+Get:42 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-semver all 2.1.0-2 [16.2 kB]
+Get:43 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-tar all 1.0.3-2 [17.5 kB]
+Get:44 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-which all 1.0.5-2 [3,678 B]
+Get:45 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-gyp all 3.0.3-2ubuntu1 [23.2 kB]
+Get:46 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-ini all 1.1.0-1 [4,770 B]
+Get:47 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-lockfile all 0.4.1-1 [5,450 B]
+Get:48 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-mute-stream all 0.0.4-1 [4,096 B]
+Get:49 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-normalize-package-data all 0.2.2-1 [9,286 B]
+Get:50 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-read all 1.0.5-1 [4,314 B]
+Get:51 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-read-package-json all 1.2.4-1 [7,780 B]
+Get:52 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-retry all 0.6.0-1 [6,172 B]
+Get:53 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-sha all 1.2.3-1 [4,272 B]
+Get:54 http://archive.ubuntu.com/ubuntu xenial/universe amd64 node-slide all 1.1.4-1 [6,118 B]
+Get:55 http://archive.ubuntu.com/ubuntu xenial/universe amd64 npm all 3.5.2-0ubuntu4 [1,586 kB]
+Extracting templates from packages: 54%Extracting templates from packages: 100%
+Fetched 5,809 kB in 6s (879 kB/s)
+Selecting previously unselected package gyp.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 124196 files and directories currently installed.)
+Preparing to unpack .../gyp_0.1+20150913git1f374df9-1ubuntu1_all.deb ...
+Unpacking gyp (0.1+20150913git1f374df9-1ubuntu1) ...
+Selecting previously unselected package libjs-node-uuid.
+Preparing to unpack .../libjs-node-uuid_1.4.0-1_all.deb ...
+Unpacking libjs-node-uuid (1.4.0-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../libjs-underscore_1.7.0~dfsg-1ubuntu1_all.deb ...
+Unpacking libjs-underscore (1.7.0~dfsg-1ubuntu1) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../libuv1_1.8.0-1_amd64.deb ...
+Unpacking libuv1:amd64 (1.8.0-1) ...
+Selecting previously unselected package libuv1-dev:amd64.
+Preparing to unpack .../libuv1-dev_1.8.0-1_amd64.deb ...
+Unpacking libuv1-dev:amd64 (1.8.0-1) ...
+Selecting previously unselected package nodejs.
+Preparing to unpack .../nodejs_4.2.6~dfsg-1ubuntu4.2_amd64.deb ...
+Unpacking nodejs (4.2.6~dfsg-1ubuntu4.2) ...
+Selecting previously unselected package node-async.
+Preparing to unpack .../node-async_0.8.0-1_all.deb ...
+Unpacking node-async (0.8.0-1) ...
+Selecting previously unselected package node-node-uuid.
+Preparing to unpack .../node-node-uuid_1.4.0-1_all.deb ...
+Unpacking node-node-uuid (1.4.0-1) ...
+Selecting previously unselected package node-underscore.
+Preparing to unpack .../node-underscore_1.7.0~dfsg-1ubuntu1_all.deb ...
+Unpacking node-underscore (1.7.0~dfsg-1ubuntu1) ...
+Selecting previously unselected package libjs-inherits.
+Preparing to unpack .../libjs-inherits_2.0.1-3_all.deb ...
+Unpacking libjs-inherits (2.0.1-3) ...
+Selecting previously unselected package node-abbrev.
+Preparing to unpack .../node-abbrev_1.0.5-2_all.deb ...
+Unpacking node-abbrev (1.0.5-2) ...
+Selecting previously unselected package node-ansi.
+Preparing to unpack .../node-ansi_0.3.0-2_all.deb ...
+Unpacking node-ansi (0.3.0-2) ...
+Selecting previously unselected package node-ansi-color-table.
+Preparing to unpack .../node-ansi-color-table_1.0.0-1_all.deb ...
+Unpacking node-ansi-color-table (1.0.0-1) ...
+Selecting previously unselected package node-archy.
+Preparing to unpack .../node-archy_0.0.2-1_all.deb ...
+Unpacking node-archy (0.0.2-1) ...
+Selecting previously unselected package node-inherits.
+Preparing to unpack .../node-inherits_2.0.1-3_all.deb ...
+Unpacking node-inherits (2.0.1-3) ...
+Selecting previously unselected package node-block-stream.
+Preparing to unpack .../node-block-stream_0.0.7-1_all.deb ...
+Unpacking node-block-stream (0.0.7-1) ...
+Selecting previously unselected package node-delayed-stream.
+Preparing to unpack .../node-delayed-stream_0.0.5-1_all.deb ...
+Unpacking node-delayed-stream (0.0.5-1) ...
+Selecting previously unselected package node-combined-stream.
+Preparing to unpack .../node-combined-stream_0.0.5-1_all.deb ...
+Unpacking node-combined-stream (0.0.5-1) ...
+Selecting previously unselected package node-cookie-jar.
+Preparing to unpack .../node-cookie-jar_0.3.1-1_all.deb ...
+Unpacking node-cookie-jar (0.3.1-1) ...
+Selecting previously unselected package node-forever-agent.
+Preparing to unpack .../node-forever-agent_0.5.1-1_all.deb ...
+Unpacking node-forever-agent (0.5.1-1) ...
+Selecting previously unselected package node-mime.
+Preparing to unpack .../node-mime_1.3.4-1_all.deb ...
+Unpacking node-mime (1.3.4-1) ...
+Selecting previously unselected package node-form-data.
+Preparing to unpack .../node-form-data_0.1.0-1_all.deb ...
+Unpacking node-form-data (0.1.0-1) ...
+Selecting previously unselected package node-rimraf.
+Preparing to unpack .../node-rimraf_2.2.8-1_all.deb ...
+Unpacking node-rimraf (2.2.8-1) ...
+Selecting previously unselected package node-mkdirp.
+Preparing to unpack .../node-mkdirp_0.5.0-1_all.deb ...
+Unpacking node-mkdirp (0.5.0-1) ...
+Selecting previously unselected package node-graceful-fs.
+Preparing to unpack .../node-graceful-fs_3.0.2-1_all.deb ...
+Unpacking node-graceful-fs (3.0.2-1) ...
+Selecting previously unselected package node-fstream.
+Preparing to unpack .../node-fstream_0.1.24-1_all.deb ...
+Unpacking node-fstream (0.1.24-1) ...
+Selecting previously unselected package node-lru-cache.
+Preparing to unpack .../node-lru-cache_2.3.1-1_all.deb ...
+Unpacking node-lru-cache (2.3.1-1) ...
+Selecting previously unselected package node-sigmund.
+Preparing to unpack .../node-sigmund_1.0.0-1_all.deb ...
+Unpacking node-sigmund (1.0.0-1) ...
+Selecting previously unselected package node-minimatch.
+Preparing to unpack .../node-minimatch_1.0.0-1_all.deb ...
+Unpacking node-minimatch (1.0.0-1) ...
+Selecting previously unselected package node-fstream-ignore.
+Preparing to unpack .../node-fstream-ignore_0.0.6-2_all.deb ...
+Unpacking node-fstream-ignore (0.0.6-2) ...
+Selecting previously unselected package node-github-url-from-git.
+Preparing to unpack .../node-github-url-from-git_1.1.1-1_all.deb ...
+Unpacking node-github-url-from-git (1.1.1-1) ...
+Selecting previously unselected package node-once.
+Preparing to unpack .../node-once_1.1.1-1_all.deb ...
+Unpacking node-once (1.1.1-1) ...
+Selecting previously unselected package node-glob.
+Preparing to unpack .../node-glob_4.0.5-1_all.deb ...
+Unpacking node-glob (4.0.5-1) ...
+Selecting previously unselected package nodejs-dev.
+Preparing to unpack .../nodejs-dev_4.2.6~dfsg-1ubuntu4.2_amd64.deb ...
+Unpacking nodejs-dev (4.2.6~dfsg-1ubuntu4.2) ...
+Selecting previously unselected package node-nopt.
+Preparing to unpack .../node-nopt_3.0.1-1_all.deb ...
+Unpacking node-nopt (3.0.1-1) ...
+Selecting previously unselected package node-npmlog.
+Preparing to unpack .../node-npmlog_0.0.4-1_all.deb ...
+Unpacking node-npmlog (0.0.4-1) ...
+Selecting previously unselected package node-osenv.
+Preparing to unpack .../node-osenv_0.1.0-1_all.deb ...
+Unpacking node-osenv (0.1.0-1) ...
+Selecting previously unselected package node-tunnel-agent.
+Preparing to unpack .../node-tunnel-agent_0.3.1-1_all.deb ...
+Unpacking node-tunnel-agent (0.3.1-1) ...
+Selecting previously unselected package node-json-stringify-safe.
+Preparing to unpack .../node-json-stringify-safe_5.0.0-1_all.deb ...
+Unpacking node-json-stringify-safe (5.0.0-1) ...
+Selecting previously unselected package node-qs.
+Preparing to unpack .../node-qs_2.2.4-1_all.deb ...
+Unpacking node-qs (2.2.4-1) ...
+Selecting previously unselected package node-request.
+Preparing to unpack .../node-request_2.26.1-1_all.deb ...
+Unpacking node-request (2.26.1-1) ...
+Selecting previously unselected package node-semver.
+Preparing to unpack .../node-semver_2.1.0-2_all.deb ...
+Unpacking node-semver (2.1.0-2) ...
+Selecting previously unselected package node-tar.
+Preparing to unpack .../node-tar_1.0.3-2_all.deb ...
+Unpacking node-tar (1.0.3-2) ...
+Selecting previously unselected package node-which.
+Preparing to unpack .../node-which_1.0.5-2_all.deb ...
+Unpacking node-which (1.0.5-2) ...
+Selecting previously unselected package node-gyp.
+Preparing to unpack .../node-gyp_3.0.3-2ubuntu1_all.deb ...
+Unpacking node-gyp (3.0.3-2ubuntu1) ...
+Selecting previously unselected package node-ini.
+Preparing to unpack .../node-ini_1.1.0-1_all.deb ...
+Unpacking node-ini (1.1.0-1) ...
+Selecting previously unselected package node-lockfile.
+Preparing to unpack .../node-lockfile_0.4.1-1_all.deb ...
+Unpacking node-lockfile (0.4.1-1) ...
+Selecting previously unselected package node-mute-stream.
+Preparing to unpack .../node-mute-stream_0.0.4-1_all.deb ...
+Unpacking node-mute-stream (0.0.4-1) ...
+Selecting previously unselected package node-normalize-package-data.
+Preparing to unpack .../node-normalize-package-data_0.2.2-1_all.deb ...
+Unpacking node-normalize-package-data (0.2.2-1) ...
+Selecting previously unselected package node-read.
+Preparing to unpack .../node-read_1.0.5-1_all.deb ...
+Unpacking node-read (1.0.5-1) ...
+Selecting previously unselected package node-read-package-json.
+Preparing to unpack .../node-read-package-json_1.2.4-1_all.deb ...
+Unpacking node-read-package-json (1.2.4-1) ...
+Selecting previously unselected package node-retry.
+Preparing to unpack .../node-retry_0.6.0-1_all.deb ...
+Unpacking node-retry (0.6.0-1) ...
+Selecting previously unselected package node-sha.
+Preparing to unpack .../node-sha_1.2.3-1_all.deb ...
+Unpacking node-sha (1.2.3-1) ...
+Selecting previously unselected package node-slide.
+Preparing to unpack .../node-slide_1.1.4-1_all.deb ...
+Unpacking node-slide (1.1.4-1) ...
+Selecting previously unselected package npm.
+Preparing to unpack .../npm_3.5.2-0ubuntu4_all.deb ...
+Unpacking npm (3.5.2-0ubuntu4) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up gyp (0.1+20150913git1f374df9-1ubuntu1) ...
+Setting up libjs-node-uuid (1.4.0-1) ...
+Setting up libjs-underscore (1.7.0~dfsg-1ubuntu1) ...
+Setting up libuv1:amd64 (1.8.0-1) ...
+Setting up libuv1-dev:amd64 (1.8.0-1) ...
+Setting up nodejs (4.2.6~dfsg-1ubuntu4.2) ...
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+Setting up node-async (0.8.0-1) ...
+Setting up node-node-uuid (1.4.0-1) ...
+Setting up node-underscore (1.7.0~dfsg-1ubuntu1) ...
+Setting up libjs-inherits (2.0.1-3) ...
+Setting up node-abbrev (1.0.5-2) ...
+Setting up node-ansi (0.3.0-2) ...
+Setting up node-ansi-color-table (1.0.0-1) ...
+Setting up node-archy (0.0.2-1) ...
+Setting up node-inherits (2.0.1-3) ...
+Setting up node-block-stream (0.0.7-1) ...
+Setting up node-delayed-stream (0.0.5-1) ...
+Setting up node-combined-stream (0.0.5-1) ...
+Setting up node-cookie-jar (0.3.1-1) ...
+Setting up node-forever-agent (0.5.1-1) ...
+Setting up node-mime (1.3.4-1) ...
+Setting up node-form-data (0.1.0-1) ...
+Setting up node-rimraf (2.2.8-1) ...
+Setting up node-mkdirp (0.5.0-1) ...
+Setting up node-graceful-fs (3.0.2-1) ...
+Setting up node-fstream (0.1.24-1) ...
+Setting up node-lru-cache (2.3.1-1) ...
+Setting up node-sigmund (1.0.0-1) ...
+Setting up node-minimatch (1.0.0-1) ...
+Setting up node-fstream-ignore (0.0.6-2) ...
+Setting up node-github-url-from-git (1.1.1-1) ...
+Setting up node-once (1.1.1-1) ...
+Setting up node-glob (4.0.5-1) ...
+Setting up nodejs-dev (4.2.6~dfsg-1ubuntu4.2) ...
+Setting up node-nopt (3.0.1-1) ...
+Setting up node-npmlog (0.0.4-1) ...
+Setting up node-osenv (0.1.0-1) ...
+Setting up node-tunnel-agent (0.3.1-1) ...
+Setting up node-json-stringify-safe (5.0.0-1) ...
+Setting up node-qs (2.2.4-1) ...
+Setting up node-request (2.26.1-1) ...
+Setting up node-semver (2.1.0-2) ...
+Setting up node-tar (1.0.3-2) ...
+Setting up node-which (1.0.5-2) ...
+Setting up node-gyp (3.0.3-2ubuntu1) ...
+Setting up node-ini (1.1.0-1) ...
+Setting up node-lockfile (0.4.1-1) ...
+Setting up node-mute-stream (0.0.4-1) ...
+Setting up node-normalize-package-data (0.2.2-1) ...
+Setting up node-read (1.0.5-1) ...
+Setting up node-read-package-json (1.2.4-1) ...
+Setting up node-retry (0.6.0-1) ...
+Setting up node-sha (1.2.3-1) ...
+Setting up node-slide (1.1.4-1) ...
+Setting up npm (3.5.2-0ubuntu4) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+travis_time:end:00eb454c:start=1580136263457559896,finish=1580136277494519938,duration=14036960042,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:01a16e92[0K$ pip install pipenv
+Requirement already satisfied: pipenv in /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages (2018.11.26)
+Requirement already satisfied: setuptools>=36.2.1 in /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages (from pipenv) (40.8.0)
+Requirement already satisfied: virtualenv-clone>=0.2.5 in /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages (from pipenv) (0.4.0)
+Requirement already satisfied: virtualenv in /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages (from pipenv) (16.0.0)
+Requirement already satisfied: pip>=9.0.1 in /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages (from pipenv) (19.0.3)
+Requirement already satisfied: certifi in /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages (from pipenv) (2018.10.15)
+travis_time:end:01a16e92:start=1580136277499704299,finish=1580136278006240516,duration=506536217,event=install[0Ktravis_fold:end:install.2[0Ktravis_fold:start:install.3[0Ktravis_time:start:024b5bcf[0K$ pipenv install
+Installing dependencies from Pipfile.lock (4fd762)…
+Ignoring appnope: markers 'sys_platform == "darwin"' don't match your environment
+travis_time:end:024b5bcf:start=1580136278011393127,finish=1580136327855777291,duration=49844384164,event=install[0Ktravis_fold:end:install.3[0Ktravis_time:start:1690bcc0[0K$ make
+mkdir -p build
+mkdir -p build/css
+cp -R ./css/* build/css/
+pandoc README.md --template ./template.tmpl -t html5 --mathjax -o build/index.html --metadata title="LambdaClass Finance Playground"
+mkdir -p build/emergence_of_cooperation/img
+mkdir -p build/emergence_of_cooperation/css
+cp -R ./emergence_of_cooperation/img/* build/emergence_of_cooperation/img/
+cp -R ./emergence_of_cooperation/css/* build/emergence_of_cooperation/css/
+pandoc ./emergence_of_cooperation/README.md --template ./emergence_of_cooperation/template.tmpl -t html5 --mathjax -o build/emergence_of_cooperation/index.html --metadata title="Emergence of Cooperation"
+mkdir -p build/troubled_markets_and_volatility/img
+mkdir -p build/troubled_markets_and_volatility/css
+cp -R ./troubled_markets_and_volatility/img/* build/troubled_markets_and_volatility/img/
+cp -R ./troubled_markets_and_volatility/css/* build/troubled_markets_and_volatility/css/
+pandoc ./troubled_markets_and_volatility/README.md --template ./troubled_markets_and_volatility/template.tmpl -t html5 --mathjax -o build/troubled_markets_and_volatility/index.html --metadata title="Troubled Markets and Volatility"
+mkdir -p build/ergodicity_explorations/img
+mkdir -p build/ergodicity_explorations/css
+cp -R ./ergodicity_explorations/img/* build/ergodicity_explorations/img/
+cp -R ./ergodicity_explorations/css/* build/ergodicity_explorations/css/
+pandoc ./ergodicity_explorations/README.md --template ./ergodicity_explorations/template.tmpl -t html5 --mathjax -o build/ergodicity_explorations/index.html --metadata title="Ergodicity Explorations"
+mkdir -p build/evaluating_gambles/img
+mkdir -p build/evaluating_gambles/css
+cp -R ./evaluating_gambles/img/* build/evaluating_gambles/img/
+cp -R ./evaluating_gambles/css/* build/evaluating_gambles/css/
+pandoc ./evaluating_gambles/README.md --template ./evaluating_gambles/template.tmpl -t html5 --mathjax -o build/evaluating_gambles/Evaluating_Gambles.html --metadata title="Evaluating Gambles"
+pandoc README.md --template ./template.tmpl -t html5 -o build/index.html --metadata title="LambdaClass Finance Playground"
+mkdir -p build/rgbm_animation
+cp -R ./html/rgbm_animation/* build/rgbm_animation
+cd build/rgbm_animation && npm install && npm run build
+added 369 packages from 268 contributors and audited 1937 packages in 11.658s
+found 2 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> rgbm_animations@1.0.0 build /home/travis/build/lambdaclass/finance_playground/build/rgbm_animation
+> browserify -p tinyify src/index.js -o assets/js/bundle.js
+
+rm -rf build/rgbm_animation/node_modules/
+travis_time:end:1690bcc0:start=1580136327861118693,finish=1580136354693841325,duration=26832722632,event=script[0K[32;1mThe command "make" exited with 0.[0m
+travis_time:start:0718b29b[0K$ cp README.md html/
+travis_time:end:0718b29b:start=1580136354700128982,finish=1580136354705890448,duration=5761466,event=script[0K[32;1mThe command "cp README.md html/" exited with 0.[0m
+
+travis_fold:start:dpl_0[0Ktravis_time:start:11afde94[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.14
+1 gem installed
+travis_time:end:11afde94:start=1580136355906864963,finish=1580136357366285733,duration=1459420770,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:3634b47b[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed multipart-post-2.1.1
+Successfully installed faraday-0.15.4
+Successfully installed public_suffix-3.0.3
+Successfully installed addressable-2.7.0
+Successfully installed sawyer-0.8.2
+Successfully installed octokit-4.6.2
+Successfully installed dpl-pages-1.10.14
+7 gems installed
+
+travis_fold:end:dpl.1Logged in as @unbalancedparentheses (Federico Carrone)
+Starting deployment of gh-pages branch to GitHub Pages...
+Created a temporary work directory /tmp/d20200127-7169-1djjs04/work
+cd /tmp/d20200127-7169-1djjs04/work
+Creating a brand new local repo from scratch in dir /tmp/d20200127-7169-1djjs04/work...
+travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+Initialized empty Git repository in /tmp/d20200127-7169-1djjs04/work/.git/
+Repo created successfully
+Switched to a new branch 'gh-pages'
+An orphan branch gh-pages created successfully
+cd -
+cd /tmp/d20200127-7169-1djjs04/work
+Copying /home/travis/build/lambdaclass/finance_playground/build contents to /tmp/d20200127-7169-1djjs04/work (workdir: /tmp/d20200127-7169-1djjs04/work)...
+Configuring git committer to be Deployment Bot (from Travis CI) <deploy@travis-ci.org> (workdir: /tmp/d20200127-7169-1djjs04/work)
+Preparing to deploy gh-pages branch to gh-pages (workdir: /tmp/d20200127-7169-1djjs04/work)
+commit b9aa03b07de65b4e7013aa185513c3627ef46c31
+Author: Deployment Bot (from Travis CI) <deploy@travis-ci.org>
+Date:   Mon Jan 27 14:46:00 2020 +0000
+
+    Deploy lambdaclass/finance_playground to github.com/lambdaclass/finance_playground.git:gh-pages
+
+ css/main.css                                       |  56 ++++++++++++
+ emergence_of_cooperation/css/main.css              |   8 ++
+ emergence_of_cooperation/img/biomass-growth.mp4    | Bin 0 -> 103375 bytes
+ .../img/emergence-of-cooperation_11_0.png          | Bin 0 -> 170792 bytes
+ emergence_of_cooperation/index.html                |  95 +++++++++++++++++++++
+ ergodicity_explorations/css/main.css               |   8 ++
+ .../img/ergodicity-explorations_14_0.png           | Bin 0 -> 49635 bytes
+ .../img/ergodicity-explorations_16_0.png           | Bin 0 -> 80053 bytes
+ .../img/ergodicity-explorations_27_0.png           | Bin 0 -> 79787 bytes
+ .../img/ergodicity-explorations_33_0.png           | Bin 0 -> 83527 bytes
+ ...
+ 64 files changed, 7108 insertions(+)
+Doing the git push (workdir: /tmp/d20200127-7169-1djjs04/work)...
+Couldn't push the build to github.com/lambdaclass/finance_playground.git:gh-pages
+
+travis_fold:end:dpl.3failed to deploy

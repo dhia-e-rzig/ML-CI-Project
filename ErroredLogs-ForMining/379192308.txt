@@ -1,0 +1,498 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: a9dde73f-2f33-4409-8631-4c1a4b90d1f8@1.worker-com-668464d7c8-bfsnk.gce-production-2
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-42df61d4-4663-4945-a26b-0a833554f633 travis-ci-sardonyx-xenial-1593004276-4d46c6b3 (via amqp)
+startup: 6.203067905s
+travis_fold:end:worker_info[0Ktravis_time:start:008425ca[0Ktravis_time:end:008425ca:start=1598785712280875562,finish=1598785712426495585,duration=145620023,event=no_world_writable_dirs[0Ktravis_time:start:0332417f[0Ktravis_time:end:0332417f:start=1598785712429916326,finish=1598785712437853802,duration=7937476,event=agent[0Ktravis_time:start:0ca5b3dc[0Ktravis_time:end:0ca5b3dc:start=1598785712440605003,finish=1598785712442728913,duration=2123910,event=check_unsupported[0Ktravis_time:start:03f1cb59[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 181943257
+Job id: 379192308
+Runtime kernel version: 4.15.0-1077-gcp
+travis-build version: 8f30c5a8
+[34m[1mBuild image provisioning date and time[0m
+Wed Jun 24 13:36:52 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-11-12 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.13 (Ubuntu 10.13-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Mar 18 2020 14:06:17)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.21.0
+v11.0.0
+v12.18.1
+v4.9.1
+v6.17.1
+v8.12.0
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:03f1cb59:start=1598785712445529578,finish=1598785712452656221,duration=7126643,event=show_system_info[0Ktravis_time:start:0ebffe47[0Ktravis_time:end:0ebffe47:start=1598785712455505262,finish=1598785712468012952,duration=12507690,event=rm_riak_source[0Ktravis_time:start:297ce2c6[0Ktravis_time:end:297ce2c6:start=1598785712471243194,finish=1598785712477052989,duration=5809795,event=fix_rwky_redis[0Ktravis_time:start:2fca07a0[0Ktravis_time:end:2fca07a0:start=1598785712480210870,finish=1598785716167206957,duration=3686996087,event=wait_for_network[0Ktravis_time:start:185d1fb9[0Ktravis_time:end:185d1fb9:start=1598785716170400996,finish=1598785716383157030,duration=212756034,event=update_apt_keys[0Ktravis_time:start:16913bea[0Ktravis_time:end:16913bea:start=1598785716386139548,finish=1598785716436643551,duration=50504003,event=fix_hhvm_source[0Ktravis_time:start:156ae664[0Ktravis_time:end:156ae664:start=1598785716439807068,finish=1598785716442337287,duration=2530219,event=update_mongo_arch[0Ktravis_time:start:1d3887f5[0Ktravis_time:end:1d3887f5:start=1598785716445104309,finish=1598785716484163133,duration=39058824,event=fix_sudo_enabled_trusty[0Ktravis_time:start:00055f9a[0Ktravis_time:end:00055f9a:start=1598785716487321137,finish=1598785716489555481,duration=2234344,event=update_glibc[0Ktravis_time:start:1faa578e[0Ktravis_time:end:1faa578e:start=1598785716492414377,finish=1598785716500046435,duration=7632058,event=clean_up_path[0Ktravis_time:start:1f665b6a[0Ktravis_time:end:1f665b6a:start=1598785716502758634,finish=1598785716510116553,duration=7357919,event=fix_resolv_conf[0Ktravis_time:start:173b335f[0Ktravis_time:end:173b335f:start=1598785716512786262,finish=1598785716521144671,duration=8358409,event=fix_etc_hosts[0Ktravis_time:start:09d28729[0Ktravis_time:end:09d28729:start=1598785716523886607,finish=1598785716534026828,duration=10140221,event=fix_mvn_settings_xml[0Ktravis_time:start:0b836430[0Ktravis_time:end:0b836430:start=1598785716536817369,finish=1598785716545512324,duration=8694955,event=no_ipv6_localhost[0Ktravis_time:start:20c30a3c[0Ktravis_time:end:20c30a3c:start=1598785716548275965,finish=1598785716550180696,duration=1904731,event=fix_etc_mavenrc[0Ktravis_time:start:046403f8[0Ktravis_time:end:046403f8:start=1598785716552811403,finish=1598785716555628846,duration=2817443,event=fix_wwdr_certificate[0Ktravis_time:start:2e3b55be[0Ktravis_time:end:2e3b55be:start=1598785716558278909,finish=1598785716580638475,duration=22359566,event=put_localhost_first[0Ktravis_time:start:021bdf90[0Ktravis_time:end:021bdf90:start=1598785716583548292,finish=1598785716587094186,duration=3545894,event=home_paths[0Ktravis_time:start:10d90169[0Ktravis_time:end:10d90169:start=1598785716589905045,finish=1598785716601554804,duration=11649759,event=disable_initramfs[0Ktravis_time:start:01065b70[0Ktravis_time:end:01065b70:start=1598785716604456292,finish=1598785716909497174,duration=305040882,event=disable_ssh_roaming[0Ktravis_time:start:1c9429fe[0Ktravis_time:end:1c9429fe:start=1598785716912593467,finish=1598785716914798867,duration=2205400,event=debug_tools[0Ktravis_time:start:096146a4[0Ktravis_time:end:096146a4:start=1598785716917573571,finish=1598785716920418827,duration=2845256,event=uninstall_oclint[0Ktravis_time:start:0ef638de[0Ktravis_time:end:0ef638de:start=1598785716923089745,finish=1598785716925736583,duration=2646838,event=rvm_use[0Ktravis_time:start:04d8fbdb[0Ktravis_time:end:04d8fbdb:start=1598785716928373853,finish=1598785716935463011,duration=7089158,event=rm_etc_boto_cfg[0Ktravis_time:start:1252f458[0Ktravis_time:end:1252f458:start=1598785716938078790,finish=1598785716941886059,duration=3807269,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0244e6a2[0Ktravis_time:end:0244e6a2:start=1598785716944681030,finish=1598785717036961722,duration=92280692,event=enable_i386[0Ktravis_time:start:15f6c19c[0Ktravis_time:end:15f6c19c:start=1598785717040158333,finish=1598785717046759320,duration=6600987,event=update_rubygems[0Ktravis_time:start:02be1fc5[0Ktravis_time:end:02be1fc5:start=1598785717049605671,finish=1598785717844394073,duration=794788402,event=ensure_path_components[0Ktravis_time:start:0218a4ad[0Ktravis_time:end:0218a4ad:start=1598785717847594286,finish=1598785717849741088,duration=2146802,event=redefine_curl[0Ktravis_time:start:14f01195[0Ktravis_time:end:14f01195:start=1598785717852509800,finish=1598785717854511012,duration=2001212,event=nonblock_pipe[0Ktravis_time:start:09867da0[0Ktravis_time:end:09867da0:start=1598785717857287312,finish=1598785723890219895,duration=6032932583,event=apt_get_update[0Ktravis_time:start:00e5388c[0Ktravis_time:end:00e5388c:start=1598785723893285395,finish=1598785723895410681,duration=2125286,event=deprecate_xcode_64[0Ktravis_time:start:00e5da39[0Ktravis_time:end:00e5da39:start=1598785723898324506,finish=1598785726596272979,duration=2697948473,event=update_heroku[0Ktravis_time:start:005f3340[0Ktravis_time:end:005f3340:start=1598785726599471654,finish=1598785726601669525,duration=2197871,event=shell_session_update[0Ktravis_time:start:36a3b690[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:36a3b690:start=1598785726604434738,finish=1598785729176193199,duration=2571758461,event=set_docker_mtu[0Ktravis_time:start:2d9692a8[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:2d9692a8:start=1598785729179720591,finish=1598785729240747013,duration=61026422,event=resolvconf[0Ktravis_time:start:0e0c6eef[0Ktravis_time:end:0e0c6eef:start=1598785729244644696,finish=1598785729376504419,duration=131859723,event=maven_central_mirror[0Ktravis_time:start:1a51b3e8[0Ktravis_time:end:1a51b3e8:start=1598785729379557682,finish=1598785729465074752,duration=85517070,event=maven_https[0K[33;1m3.8 is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/16.04/x86_64/python-3.8.tar.bz2[0m
+travis_time:start:0bb776cf[0K$ curl -sSf --retry 5 -o python-3.8.tar.bz2 ${archive_url}
+travis_time:end:0bb776cf:start=1598785729545389508,finish=1598785730032836248,duration=487446740,event=configure[0Ktravis_time:start:29c85112[0K$ sudo tar xjf python-3.8.tar.bz2 --directory /
+travis_time:end:29c85112:start=1598785730036478940,finish=1598785740036881748,duration=10000402808,event=configure[0Ktravis_time:start:05def656[0Ktravis_time:end:05def656:start=1598785740055759928,finish=1598785740057826169,duration=2066241,event=fix_ps4[0Ktravis_time:start:0df36b60[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:25f4fedc[0K$ git clone --depth=50 --branch=master https://github.com/knorth55/chainer-light-head-rcnn.git knorth55/chainer-light-head-rcnn
+Cloning into 'knorth55/chainer-light-head-rcnn'...
+remote: Enumerating objects: 285, done.[K
+remote: Counting objects:   0% (1/285)[Kremote: Counting objects:   1% (3/285)[Kremote: Counting objects:   2% (6/285)[Kremote: Counting objects:   3% (9/285)[Kremote: Counting objects:   4% (12/285)[Kremote: Counting objects:   5% (15/285)[Kremote: Counting objects:   6% (18/285)[Kremote: Counting objects:   7% (20/285)[Kremote: Counting objects:   8% (23/285)[Kremote: Counting objects:   9% (26/285)[Kremote: Counting objects:  10% (29/285)[Kremote: Counting objects:  11% (32/285)[Kremote: Counting objects:  12% (35/285)[Kremote: Counting objects:  13% (38/285)[Kremote: Counting objects:  14% (40/285)[Kremote: Counting objects:  15% (43/285)[Kremote: Counting objects:  16% (46/285)[Kremote: Counting objects:  17% (49/285)[Kremote: Counting objects:  18% (52/285)[Kremote: Counting objects:  19% (55/285)[Kremote: Counting objects:  20% (57/285)[Kremote: Counting objects:  21% (60/285)[Kremote: Counting objects:  22% (63/285)[Kremote: Counting objects:  23% (66/285)[Kremote: Counting objects:  24% (69/285)[Kremote: Counting objects:  25% (72/285)[Kremote: Counting objects:  26% (75/285)[Kremote: Counting objects:  27% (77/285)[Kremote: Counting objects:  28% (80/285)[Kremote: Counting objects:  29% (83/285)[Kremote: Counting objects:  30% (86/285)[Kremote: Counting objects:  31% (89/285)[Kremote: Counting objects:  32% (92/285)[Kremote: Counting objects:  33% (95/285)[Kremote: Counting objects:  34% (97/285)[Kremote: Counting objects:  35% (100/285)[Kremote: Counting objects:  36% (103/285)[Kremote: Counting objects:  37% (106/285)[Kremote: Counting objects:  38% (109/285)[Kremote: Counting objects:  39% (112/285)[Kremote: Counting objects:  40% (114/285)[Kremote: Counting objects:  41% (117/285)[Kremote: Counting objects:  42% (120/285)[Kremote: Counting objects:  43% (123/285)[Kremote: Counting objects:  44% (126/285)[Kremote: Counting objects:  45% (129/285)[Kremote: Counting objects:  46% (132/285)[Kremote: Counting objects:  47% (134/285)[Kremote: Counting objects:  48% (137/285)[Kremote: Counting objects:  49% (140/285)[Kremote: Counting objects:  50% (143/285)[Kremote: Counting objects:  51% (146/285)[Kremote: Counting objects:  52% (149/285)[Kremote: Counting objects:  53% (152/285)[Kremote: Counting objects:  54% (154/285)[Kremote: Counting objects:  55% (157/285)[Kremote: Counting objects:  56% (160/285)[Kremote: Counting objects:  57% (163/285)[Kremote: Counting objects:  58% (166/285)[Kremote: Counting objects:  59% (169/285)[Kremote: Counting objects:  60% (171/285)[Kremote: Counting objects:  61% (174/285)[Kremote: Counting objects:  62% (177/285)[Kremote: Counting objects:  63% (180/285)[Kremote: Counting objects:  64% (183/285)[Kremote: Counting objects:  65% (186/285)[Kremote: Counting objects:  66% (189/285)[Kremote: Counting objects:  67% (191/285)[Kremote: Counting objects:  68% (194/285)[Kremote: Counting objects:  69% (197/285)[Kremote: Counting objects:  70% (200/285)[Kremote: Counting objects:  71% (203/285)[Kremote: Counting objects:  72% (206/285)[Kremote: Counting objects:  73% (209/285)[Kremote: Counting objects:  74% (211/285)[Kremote: Counting objects:  75% (214/285)[Kremote: Counting objects:  76% (217/285)[Kremote: Counting objects:  77% (220/285)[Kremote: Counting objects:  78% (223/285)[Kremote: Counting objects:  79% (226/285)[Kremote: Counting objects:  80% (228/285)[Kremote: Counting objects:  81% (231/285)[Kremote: Counting objects:  82% (234/285)[Kremote: Counting objects:  83% (237/285)[Kremote: Counting objects:  84% (240/285)[Kremote: Counting objects:  85% (243/285)[Kremote: Counting objects:  86% (246/285)[Kremote: Counting objects:  87% (248/285)[Kremote: Counting objects:  88% (251/285)[Kremote: Counting objects:  89% (254/285)[Kremote: Counting objects:  90% (257/285)[Kremote: Counting objects:  91% (260/285)[Kremote: Counting objects:  92% (263/285)[Kremote: Counting objects:  93% (266/285)[Kremote: Counting objects:  94% (268/285)[Kremote: Counting objects:  95% (271/285)[Kremote: Counting objects:  96% (274/285)[Kremote: Counting objects:  97% (277/285)[Kremote: Counting objects:  98% (280/285)[Kremote: Counting objects:  99% (283/285)[Kremote: Counting objects: 100% (285/285)[Kremote: Counting objects: 100% (285/285), done.[K
+remote: Compressing objects:   0% (1/133)[Kremote: Compressing objects:   1% (2/133)[Kremote: Compressing objects:   2% (3/133)[Kremote: Compressing objects:   3% (4/133)[Kremote: Compressing objects:   4% (6/133)[Kremote: Compressing objects:   5% (7/133)[Kremote: Compressing objects:   6% (8/133)[Kremote: Compressing objects:   7% (10/133)[Kremote: Compressing objects:   8% (11/133)[Kremote: Compressing objects:   9% (12/133)[Kremote: Compressing objects:  10% (14/133)[Kremote: Compressing objects:  11% (15/133)[Kremote: Compressing objects:  12% (16/133)[Kremote: Compressing objects:  13% (18/133)[Kremote: Compressing objects:  14% (19/133)[Kremote: Compressing objects:  15% (20/133)[Kremote: Compressing objects:  16% (22/133)[Kremote: Compressing objects:  17% (23/133)[Kremote: Compressing objects:  18% (24/133)[Kremote: Compressing objects:  19% (26/133)[Kremote: Compressing objects:  20% (27/133)[Kremote: Compressing objects:  21% (28/133)[Kremote: Compressing objects:  22% (30/133)[Kremote: Compressing objects:  23% (31/133)[Kremote: Compressing objects:  24% (32/133)[Kremote: Compressing objects:  25% (34/133)[Kremote: Compressing objects:  26% (35/133)[Kremote: Compressing objects:  27% (36/133)[Kremote: Compressing objects:  28% (38/133)[Kremote: Compressing objects:  29% (39/133)[Kremote: Compressing objects:  30% (40/133)[Kremote: Compressing objects:  31% (42/133)[Kremote: Compressing objects:  32% (43/133)[Kremote: Compressing objects:  33% (44/133)[Kremote: Compressing objects:  34% (46/133)[Kremote: Compressing objects:  35% (47/133)[Kremote: Compressing objects:  36% (48/133)[Kremote: Compressing objects:  37% (50/133)[Kremote: Compressing objects:  38% (51/133)[Kremote: Compressing objects:  39% (52/133)[Kremote: Compressing objects:  40% (54/133)[Kremote: Compressing objects:  41% (55/133)[Kremote: Compressing objects:  42% (56/133)[Kremote: Compressing objects:  43% (58/133)[Kremote: Compressing objects:  44% (59/133)[Kremote: Compressing objects:  45% (60/133)[Kremote: Compressing objects:  46% (62/133)[Kremote: Compressing objects:  47% (63/133)[Kremote: Compressing objects:  48% (64/133)[Kremote: Compressing objects:  49% (66/133)[Kremote: Compressing objects:  50% (67/133)[Kremote: Compressing objects:  51% (68/133)[Kremote: Compressing objects:  52% (70/133)[Kremote: Compressing objects:  53% (71/133)[Kremote: Compressing objects:  54% (72/133)[Kremote: Compressing objects:  55% (74/133)[Kremote: Compressing objects:  56% (75/133)[Kremote: Compressing objects:  57% (76/133)[Kremote: Compressing objects:  58% (78/133)[Kremote: Compressing objects:  59% (79/133)[Kremote: Compressing objects:  60% (80/133)[Kremote: Compressing objects:  61% (82/133)[Kremote: Compressing objects:  62% (83/133)[Kremote: Compressing objects:  63% (84/133)[Kremote: Compressing objects:  64% (86/133)[Kremote: Compressing objects:  65% (87/133)[Kremote: Compressing objects:  66% (88/133)[Kremote: Compressing objects:  67% (90/133)[Kremote: Compressing objects:  68% (91/133)[Kremote: Compressing objects:  69% (92/133)[Kremote: Compressing objects:  70% (94/133)[Kremote: Compressing objects:  71% (95/133)[Kremote: Compressing objects:  72% (96/133)[Kremote: Compressing objects:  73% (98/133)[Kremote: Compressing objects:  74% (99/133)[Kremote: Compressing objects:  75% (100/133)[Kremote: Compressing objects:  76% (102/133)[Kremote: Compressing objects:  77% (103/133)[Kremote: Compressing objects:  78% (104/133)[Kremote: Compressing objects:  79% (106/133)[Kremote: Compressing objects:  80% (107/133)[Kremote: Compressing objects:  81% (108/133)[Kremote: Compressing objects:  82% (110/133)[Kremote: Compressing objects:  83% (111/133)[Kremote: Compressing objects:  84% (112/133)[Kremote: Compressing objects:  85% (114/133)[Kremote: Compressing objects:  86% (115/133)[Kremote: Compressing objects:  87% (116/133)[Kremote: Compressing objects:  88% (118/133)[Kremote: Compressing objects:  89% (119/133)[Kremote: Compressing objects:  90% (120/133)[Kremote: Compressing objects:  91% (122/133)[Kremote: Compressing objects:  92% (123/133)[Kremote: Compressing objects:  93% (124/133)[Kremote: Compressing objects:  94% (126/133)[Kremote: Compressing objects:  95% (127/133)[Kremote: Compressing objects:  96% (128/133)[Kremote: Compressing objects:  97% (130/133)[Kremote: Compressing objects:  98% (131/133)[Kremote: Compressing objects:  99% (132/133)[Kremote: Compressing objects: 100% (133/133)[Kremote: Compressing objects: 100% (133/133), done.[K
+Receiving objects:   0% (1/285)Receiving objects:   1% (3/285)Receiving objects:   2% (6/285)Receiving objects:   3% (9/285)Receiving objects:   4% (12/285)Receiving objects:   5% (15/285)Receiving objects:   6% (18/285)Receiving objects:   7% (20/285)Receiving objects:   8% (23/285)Receiving objects:   9% (26/285)Receiving objects:  10% (29/285)Receiving objects:  11% (32/285)Receiving objects:  12% (35/285)Receiving objects:  13% (38/285)Receiving objects:  14% (40/285)Receiving objects:  15% (43/285)Receiving objects:  16% (46/285)Receiving objects:  17% (49/285)Receiving objects:  18% (52/285)Receiving objects:  19% (55/285)Receiving objects:  20% (57/285)Receiving objects:  21% (60/285)Receiving objects:  22% (63/285)Receiving objects:  23% (66/285)Receiving objects:  24% (69/285)Receiving objects:  25% (72/285)Receiving objects:  26% (75/285)Receiving objects:  27% (77/285)Receiving objects:  28% (80/285)Receiving objects:  29% (83/285)Receiving objects:  30% (86/285)Receiving objects:  31% (89/285)Receiving objects:  32% (92/285)Receiving objects:  33% (95/285)Receiving objects:  34% (97/285)Receiving objects:  35% (100/285)Receiving objects:  36% (103/285)Receiving objects:  37% (106/285)Receiving objects:  38% (109/285)Receiving objects:  39% (112/285)Receiving objects:  40% (114/285)Receiving objects:  41% (117/285)Receiving objects:  42% (120/285)Receiving objects:  43% (123/285)Receiving objects:  44% (126/285)Receiving objects:  45% (129/285)Receiving objects:  46% (132/285)Receiving objects:  47% (134/285)Receiving objects:  48% (137/285)Receiving objects:  49% (140/285)Receiving objects:  50% (143/285)Receiving objects:  51% (146/285)Receiving objects:  52% (149/285)Receiving objects:  53% (152/285)Receiving objects:  54% (154/285)Receiving objects:  55% (157/285)Receiving objects:  56% (160/285)Receiving objects:  57% (163/285)Receiving objects:  58% (166/285)Receiving objects:  59% (169/285)Receiving objects:  60% (171/285)Receiving objects:  61% (174/285)Receiving objects:  62% (177/285)Receiving objects:  63% (180/285)Receiving objects:  64% (183/285)Receiving objects:  65% (186/285)Receiving objects:  66% (189/285)Receiving objects:  67% (191/285)Receiving objects:  68% (194/285)Receiving objects:  69% (197/285)Receiving objects:  70% (200/285)Receiving objects:  71% (203/285)Receiving objects:  72% (206/285)Receiving objects:  73% (209/285)Receiving objects:  74% (211/285)Receiving objects:  75% (214/285)Receiving objects:  76% (217/285)Receiving objects:  77% (220/285)Receiving objects:  78% (223/285)Receiving objects:  79% (226/285)Receiving objects:  80% (228/285)Receiving objects:  81% (231/285)Receiving objects:  82% (234/285)Receiving objects:  83% (237/285)Receiving objects:  84% (240/285)Receiving objects:  85% (243/285)Receiving objects:  86% (246/285)Receiving objects:  87% (248/285)Receiving objects:  88% (251/285)Receiving objects:  89% (254/285)Receiving objects:  90% (257/285)Receiving objects:  91% (260/285)Receiving objects:  92% (263/285)remote: Total 285 (delta 156), reused 259 (delta 145), pack-reused 0[K
+Receiving objects:  93% (266/285)Receiving objects:  94% (268/285)Receiving objects:  95% (271/285)Receiving objects:  96% (274/285)Receiving objects:  97% (277/285)Receiving objects:  98% (280/285)Receiving objects:  99% (283/285)Receiving objects: 100% (285/285)Receiving objects: 100% (285/285), 4.21 MiB | 21.14 MiB/s, done.
+Resolving deltas:   0% (0/156)Resolving deltas:  30% (48/156)Resolving deltas:  37% (58/156)Resolving deltas:  40% (63/156)Resolving deltas:  41% (64/156)Resolving deltas:  44% (69/156)Resolving deltas:  50% (79/156)Resolving deltas:  57% (89/156)Resolving deltas:  58% (92/156)Resolving deltas:  62% (97/156)Resolving deltas:  70% (110/156)Resolving deltas:  74% (116/156)Resolving deltas:  76% (119/156)Resolving deltas:  77% (121/156)Resolving deltas:  82% (128/156)Resolving deltas:  83% (131/156)Resolving deltas:  85% (133/156)Resolving deltas:  86% (135/156)Resolving deltas:  91% (143/156)Resolving deltas:  96% (150/156)Resolving deltas:  98% (154/156)Resolving deltas: 100% (156/156)Resolving deltas: 100% (156/156), done.
+travis_time:end:25f4fedc:start=1598785740064214434,finish=1598785740800631014,duration=736416580,event=checkout[0K$ cd knorth55/chainer-light-head-rcnn
+$ git checkout -qf 4408311384d5abe550cd6ad004fa190aaced2c95
+travis_fold:end:git.checkout[0K
+travis_time:end:25f4fedc:start=1598785740064214434,finish=1598785740828790971,duration=764576537,event=checkout[0Ktravis_time:start:05cb26a8[0Ktravis_time:end:05cb26a8:start=1598785740832065088,finish=1598785740837921474,duration=5856386,event=env[0Ktravis_time:start:0c9764d0[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:0c9764d0:start=1598785740841138440,finish=1598785740845525225,duration=4386785,event=[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:0e0309af[0K$ Installing caching utilities
+travis_time:end:0e0309af:start=1598785741596020867,finish=1598785741865849817,duration=269828950,event=setup_casher[0Ktravis_time:start:04cc90ef[0Ktravis_time:end:04cc90ef:start=1598785741871075528,finish=1598785741874026441,duration=2950913,event=setup_casher[0Ktravis_time:start:00717ff6[0Kattempting to download cache archive[0m
+[32;1mfetching master/cache--linux-xenial-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--python-3.8.tgz[0m
+[32;1mfetching master/cache-linux-xenial-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--python-3.8.tgz[0m
+[32;1mfetching master/cache--python-3.8.tgz[0m
+[31;1mcould not download cache[0m
+travis_time:end:00717ff6:start=1598785741877714853,finish=1598785743204801931,duration=1327087078,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+travis_fold:start:cache.pip[0K
+travis_time:start:096c24c0[0Ktravis_time:end:096c24c0:start=1598785743209274131,finish=1598785743211971891,duration=2697760,event=setup_cache[0Ktravis_time:start:001c2370[0Kadding /home/travis/.cache/pip to cache[0m
+travis_time:end:001c2370:start=1598785743215395077,finish=1598785744228477176,duration=1013082099,event=setup_cache[0Ktravis_fold:end:cache.pip[0K$ python --version
+Python 3.8.0
+$ pip --version
+pip 19.3 from /home/travis/virtualenv/python3.8.0/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:before_install.1[0Ktravis_time:start:0a6cd5e8[0K$ wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh
+--2020-08-30 11:09:04--  https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+Resolving repo.continuum.io (repo.continuum.io)... 104.18.200.79, 104.18.201.79, 2606:4700::6812:c84f, ...
+Connecting to repo.continuum.io (repo.continuum.io)|104.18.200.79|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh [following]
+--2020-08-30 11:09:04--  https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
+Resolving repo.anaconda.com (repo.anaconda.com)... 104.16.130.3, 104.16.131.3, 2606:4700::6810:8303, ...
+Connecting to repo.anaconda.com (repo.anaconda.com)|104.16.130.3|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51093759 (49M) [application/x-sh]
+Saving to: ‘miniconda.sh’
+
+miniconda.sh          0%[                    ]       0  --.-KB/s               miniconda.sh         69%[============>       ]  33.87M   169MB/s               miniconda.sh        100%[===================>]  48.73M   186MB/s    in 0.3s    
+
+2020-08-30 11:09:04 (186 MB/s) - ‘miniconda.sh’ saved [51093759/51093759]
+
+travis_time:end:0a6cd5e8:start=1598785744409132178,finish=1598785744868390648,duration=459258470,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:0a9006f5[0K$ bash miniconda.sh -b -p $HOME/miniconda
+PREFIX=/home/travis/miniconda
+Unpacking payload ...
+  0%|                                                    | 0/37 [00:00<?, ?it/s]Extracting : urllib3-1.25.7-py27_0.conda:   0%|          | 0/37 [00:00<?, ?it/s]Extracting : urllib3-1.25.7-py27_0.conda:   3%|  | 1/37 [00:00<00:04,  7.96it/s]Extracting : requests-2.22.0-py27_1.conda:   3%| | 1/37 [00:00<00:04,  7.96it/s]Extracting : libffi-3.3-he6710b0_1.conda:   5%|  | 2/37 [00:00<00:04,  7.96it/s]Extracting : pip-19.3.1-py27_0.conda:   8%|▍     | 3/37 [00:00<00:04,  7.96it/s]Extracting : pip-19.3.1-py27_0.conda:  11%|▋     | 4/37 [00:00<00:03,  9.67it/s]Extracting : tk-8.6.8-hbc83047_0.conda:  11%|▍   | 4/37 [00:00<00:03,  9.67it/s]Extracting : asn1crypto-1.3.0-py27_0.conda:  14%|▏| 5/37 [00:00<00:03,  9.67it/sExtracting : asn1crypto-1.3.0-py27_0.conda:  16%|▏| 6/37 [00:00<00:02, 11.44it/sExtracting : openssl-1.1.1g-h7b6447c_0.conda:  16%|▏| 6/37 [00:00<00:02, 11.44itExtracting : libedit-3.1.20181209-hc058e9b_0.conda:  19%|▏| 7/37 [00:00<00:02, 1Extracting : zlib-1.2.11-h7b6447c_3.conda:  22%|▏| 8/37 [00:00<00:02, 11.44it/s]Extracting : zlib-1.2.11-h7b6447c_3.conda:  24%|▏| 9/37 [00:00<00:02, 12.62it/s]Extracting : six-1.13.0-py27_0.conda:  24%|█▍    | 9/37 [00:00<00:02, 12.62it/s]Extracting : futures-3.3.0-py27_0.conda:  27%|▌ | 10/37 [00:00<00:02, 12.62it/s]Extracting : futures-3.3.0-py27_0.conda:  30%|▌ | 11/37 [00:00<00:02, 12.25it/s]Extracting : setuptools-44.0.0-py27_0.conda:  30%|▎| 11/37 [00:00<00:02, 12.25itExtracting : pysocks-1.7.1-py27_0.conda:  32%|▋ | 12/37 [00:00<00:02, 12.25it/s]Extracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  35%|▎| 13/37 [00:00<00:01, 12Extracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  38%|▍| 14/37 [00:00<00:01, 13Extracting : enum34-1.1.6-py27_1.conda:  38%|█▏ | 14/37 [00:00<00:01, 13.93it/s]Extracting : pycparser-2.20-py_0.conda:  41%|█▏ | 15/37 [00:00<00:01, 13.93it/s]Extracting : wheel-0.33.6-py27_0.conda:  43%|█▎ | 16/37 [00:00<00:01, 13.93it/s]Extracting : conda-package-handling-1.6.0-py27h7b6447c_0.conda:  46%|▍| 17/37 [0Extracting : conda-package-handling-1.6.0-py27h7b6447c_0.conda:  49%|▍| 18/37 [0Extracting : pycosat-0.6.3-py27h7b6447c_0.conda:  49%|▍| 18/37 [00:01<00:01, 15.Extracting : cffi-1.14.0-py27he30daa8_1.conda:  51%|▌| 19/37 [00:01<00:01, 15.91Extracting : readline-8.0-h7b6447c_0.conda:  54%|▌| 20/37 [00:01<00:01, 15.91it/Extracting : readline-8.0-h7b6447c_0.conda:  57%|▌| 21/37 [00:01<00:00, 17.99it/Extracting : cryptography-2.8-py27h1ba5d50_0.conda:  57%|▌| 21/37 [00:01<00:00, Extracting : _libgcc_mutex-0.1-main.conda:  59%|▌| 22/37 [00:01<00:00, 17.99it/sExtracting : pyopenssl-19.1.0-py27_0.conda:  62%|▌| 23/37 [00:01<00:00, 17.99it/Extracting : pyopenssl-19.1.0-py27_0.conda:  65%|▋| 24/37 [00:01<00:00, 15.35it/Extracting : ca-certificates-2020.1.1-0.conda:  65%|▋| 24/37 [00:01<00:00, 15.35Extracting : ruamel_yaml-0.15.87-py27h7b6447c_0.conda:  68%|▋| 25/37 [00:01<00:0Extracting : tqdm-4.46.0-py_0.conda:  70%|████▏ | 26/37 [00:01<00:00, 15.35it/s]Extracting : chardet-3.0.4-py27_1003.conda:  73%|▋| 27/37 [00:01<00:00, 15.35it/Extracting : chardet-3.0.4-py27_1003.conda:  76%|▊| 28/37 [00:01<00:00, 18.42it/Extracting : idna-2.8-py27_0.conda:  76%|█████▎ | 28/37 [00:01<00:00, 18.42it/s]Extracting : sqlite-3.31.1-h62c20be_1.conda:  78%|▊| 29/37 [00:01<00:00, 18.42itExtracting : ipaddress-1.0.23-py_0.conda:  81%|▊| 30/37 [00:01<00:00, 18.42it/s]Extracting : ipaddress-1.0.23-py_0.conda:  84%|▊| 31/37 [00:01<00:00, 18.36it/s]Extracting : python-2.7.18-h15b4118_1.conda:  84%|▊| 31/37 [00:02<00:00, 18.36itExtracting : ncurses-6.2-he6710b0_1.conda:  86%|▊| 32/37 [00:02<00:00, 18.36it/sExtracting : certifi-2019.11.28-py27_0.conda:  89%|▉| 33/37 [00:02<00:00, 18.36iExtracting : certifi-2019.11.28-py27_0.conda:  92%|▉| 34/37 [00:02<00:00, 13.75iExtracting : yaml-0.1.7-had09818_2.conda:  92%|▉| 34/37 [00:02<00:00, 13.75it/s]Extracting : libgcc-ng-9.1.0-hdf63c60_0.conda:  95%|▉| 35/37 [00:02<00:00, 13.75Extracting : libgcc-ng-9.1.0-hdf63c60_0.conda:  97%|▉| 36/37 [00:02<00:00, 12.06Extracting : conda-4.8.3-py27_0.tar.bz2:  97%|█▉| 36/37 [00:02<00:00, 12.06it/s]                                                                                Collecting package metadata (current_repodata.json): - done
+Solving environment: | / done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda
+
+  added / updated specs:
+    - _libgcc_mutex==0.1=main
+    - asn1crypto==1.3.0=py27_0
+    - ca-certificates==2020.1.1=0
+    - certifi==2019.11.28=py27_0
+    - cffi==1.14.0=py27he30daa8_1
+    - chardet==3.0.4=py27_1003
+    - conda-package-handling==1.6.0=py27h7b6447c_0
+    - conda==4.8.3=py27_0
+    - cryptography==2.8=py27h1ba5d50_0
+    - enum34==1.1.6=py27_1
+    - futures==3.3.0=py27_0
+    - idna==2.8=py27_0
+    - ipaddress==1.0.23=py_0
+    - libedit==3.1.20181209=hc058e9b_0
+    - libffi==3.3=he6710b0_1
+    - libgcc-ng==9.1.0=hdf63c60_0
+    - libstdcxx-ng==9.1.0=hdf63c60_0
+    - ncurses==6.2=he6710b0_1
+    - openssl==1.1.1g=h7b6447c_0
+    - pip==19.3.1=py27_0
+    - pycosat==0.6.3=py27h7b6447c_0
+    - pycparser==2.20=py_0
+    - pyopenssl==19.1.0=py27_0
+    - pysocks==1.7.1=py27_0
+    - python==2.7.18=h15b4118_1
+    - readline==8.0=h7b6447c_0
+    - requests==2.22.0=py27_1
+    - ruamel_yaml==0.15.87=py27h7b6447c_0
+    - setuptools==44.0.0=py27_0
+    - six==1.13.0=py27_0
+    - sqlite==3.31.1=h62c20be_1
+    - tk==8.6.8=hbc83047_0
+    - tqdm==4.46.0=py_0
+    - urllib3==1.25.7=py27_0
+    - wheel==0.33.6=py27_0
+    - yaml==0.1.7=had09818_2
+    - zlib==1.2.11=h7b6447c_3
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  asn1crypto         pkgs/main/linux-64::asn1crypto-1.3.0-py27_0
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2020.1.1-0
+  certifi            pkgs/main/linux-64::certifi-2019.11.28-py27_0
+  cffi               pkgs/main/linux-64::cffi-1.14.0-py27he30daa8_1
+  chardet            pkgs/main/linux-64::chardet-3.0.4-py27_1003
+  conda              pkgs/main/linux-64::conda-4.8.3-py27_0
+  conda-package-han~ pkgs/main/linux-64::conda-package-handling-1.6.0-py27h7b6447c_0
+  cryptography       pkgs/main/linux-64::cryptography-2.8-py27h1ba5d50_0
+  enum34             pkgs/main/linux-64::enum34-1.1.6-py27_1
+  futures            pkgs/main/linux-64::futures-3.3.0-py27_0
+  idna               pkgs/main/linux-64::idna-2.8-py27_0
+  ipaddress          pkgs/main/noarch::ipaddress-1.0.23-py_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_1
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1g-h7b6447c_0
+  pip                pkgs/main/linux-64::pip-19.3.1-py27_0
+  pycosat            pkgs/main/linux-64::pycosat-0.6.3-py27h7b6447c_0
+  pycparser          pkgs/main/noarch::pycparser-2.20-py_0
+  pyopenssl          pkgs/main/linux-64::pyopenssl-19.1.0-py27_0
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py27_0
+  python             pkgs/main/linux-64::python-2.7.18-h15b4118_1
+  readline           pkgs/main/linux-64::readline-8.0-h7b6447c_0
+  requests           pkgs/main/linux-64::requests-2.22.0-py27_1
+  ruamel_yaml        pkgs/main/linux-64::ruamel_yaml-0.15.87-py27h7b6447c_0
+  setuptools         pkgs/main/linux-64::setuptools-44.0.0-py27_0
+  six                pkgs/main/linux-64::six-1.13.0-py27_0
+  sqlite             pkgs/main/linux-64::sqlite-3.31.1-h62c20be_1
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  tqdm               pkgs/main/noarch::tqdm-4.46.0-py_0
+  urllib3            pkgs/main/linux-64::urllib3-1.25.7-py27_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py27_0
+  yaml               pkgs/main/linux-64::yaml-0.1.7-had09818_2
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Preparing transaction: \ | / done
+Executing transaction: \ | / - \ | / done
+installation finished.
+travis_time:end:0a9006f5:start=1598785744872955511,finish=1598785753561098080,duration=8688142569,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:13b1fe33[0K$ export PATH="$HOME/miniconda/bin:$PATH"
+travis_time:end:13b1fe33:start=1598785753565239306,finish=1598785753567859113,duration=2619807,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:01392d6b[0K$ conda config --set always_yes yes --set changeps1 no
+travis_time:end:01392d6b:start=1598785753571935101,finish=1598785753663119657,duration=91184556,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:0eda89c0[0K$ conda update -q conda
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    asn1crypto-1.4.0           |             py_0          80 KB
+    ca-certificates-2020.7.22  |                0         125 KB
+    conda-4.8.4                |           py27_0         2.8 MB
+    idna-2.10                  |             py_0          50 KB
+    libedit-3.1.20191231       |       h14c3975_1         116 KB
+    libffi-3.3                 |       he6710b0_2          50 KB
+    pycparser-2.20             |             py_2          94 KB
+    pyopenssl-19.1.0           |             py_1          48 KB
+    requests-2.24.0            |             py_0          56 KB
+    scandir-1.10.0             |   py27h7b6447c_0          32 KB
+    six-1.15.0                 |             py_0          13 KB
+    sqlite-3.33.0              |       h62c20be_0         1.1 MB
+    tk-8.6.10                  |       hbc83047_0         3.0 MB
+    tqdm-4.48.2                |             py_0          63 KB
+    wheel-0.35.1               |             py_0          37 KB
+    ------------------------------------------------------------
+                                           Total:         7.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  scandir            pkgs/main/linux-64::scandir-1.10.0-py27h7b6447c_0
+
+The following packages will be UPDATED:
+
+  asn1crypto         pkgs/main/linux-64::asn1crypto-1.3.0-~ --> pkgs/main/noarch::asn1crypto-1.4.0-py_0
+  ca-certificates                                2020.1.1-0 --> 2020.7.22-0
+  conda                                        4.8.3-py27_0 --> 4.8.4-py27_0
+  idna                  pkgs/main/linux-64::idna-2.8-py27_0 --> pkgs/main/noarch::idna-2.10-py_0
+  libedit                           3.1.20181209-hc058e9b_0 --> 3.1.20191231-h14c3975_1
+  libffi                                     3.3-he6710b0_1 --> 3.3-he6710b0_2
+  pycparser                                       2.20-py_0 --> 2.20-py_2
+  pyopenssl          pkgs/main/linux-64::pyopenssl-19.1.0-~ --> pkgs/main/noarch::pyopenssl-19.1.0-py_1
+  requests           pkgs/main/linux-64::requests-2.22.0-p~ --> pkgs/main/noarch::requests-2.24.0-py_0
+  six                 pkgs/main/linux-64::six-1.13.0-py27_0 --> pkgs/main/noarch::six-1.15.0-py_0
+  sqlite                                  3.31.1-h62c20be_1 --> 3.33.0-h62c20be_0
+  tk                                       8.6.8-hbc83047_0 --> 8.6.10-hbc83047_0
+  tqdm                                          4.46.0-py_0 --> 4.48.2-py_0
+  wheel              pkgs/main/linux-64::wheel-0.33.6-py27~ --> pkgs/main/noarch::wheel-0.35.1-py_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+travis_time:end:0eda89c0:start=1598785753667350881,finish=1598785763677732504,duration=10010381623,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:before_install.6[0Ktravis_time:start:34656cde[0K$ conda info -a
+
+     active environment : None
+       user config file : /home/travis/.condarc
+ populated config files : /home/travis/.condarc
+          conda version : 4.8.4
+    conda-build version : not installed
+         python version : 2.7.18.final.0
+       virtual packages : __glibc=2.23
+       base environment : /home/travis/miniconda  (writable)
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /home/travis/miniconda/pkgs
+                          /home/travis/.conda/pkgs
+       envs directories : /home/travis/miniconda/envs
+                          /home/travis/.conda/envs
+               platform : linux-64
+             user-agent : conda/4.8.4 requests/2.24.0 CPython/2.7.18 Linux/4.15.0-1077-gcp ubuntu/16.04.5 glibc/2.23
+                UID:GID : 2000:2000
+             netrc file : None
+           offline mode : False
+
+# conda environments:
+#
+base                  *  /home/travis/miniconda
+
+sys.version: 2.7.18 |Anaconda, Inc.| (default, Apr 23...
+sys.prefix: /home/travis/miniconda
+sys.executable: /home/travis/miniconda/bin/python
+conda location: /home/travis/miniconda/lib/python2.7/site-packages/conda
+conda-build: None
+conda-env: /home/travis/miniconda/bin/conda-env
+user site dirs: 
+
+CIO_TEST: <not set>
+CONDA_ROOT: /home/travis/miniconda
+CURL_CA_BUNDLE: <not set>
+GEM_PATH: /home/travis/.rvm/gems/ruby-2.5.3:/home/travis/.rvm/gems/ruby-2.5.3@global
+GOPATH: /home/travis/gopath
+MANPATH: /home/travis/.nvm/versions/node/v8.12.0/share/man:/home/travis/.rvm/rubies/ruby-2.5.3/share/man:/usr/local/cmake-3.12.4/man:/usr/local/clang-7.0.0/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man:/home/travis/.rvm/man
+PATH: /home/travis/miniconda/bin:/home/travis/.rvm/gems/ruby-2.5.3/bin:/home/travis/.rvm/gems/ruby-2.5.3@global/bin:/home/travis/.rvm/rubies/ruby-2.5.3/bin:/home/travis/.rvm/bin:/home/travis/virtualenv/python3.8.0/bin:/home/travis/bin:/home/travis/.local/bin:/usr/local/lib/jvm/openjdk11/bin:/opt/pyenv/shims:/home/travis/.phpenv/shims:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/versions/node/v8.12.0/bin:/home/travis/gopath/bin:/home/travis/.gimme/versions/go1.11.1.linux.amd64/bin:/usr/local/maven-3.6.3/bin:/usr/local/cmake-3.12.4/bin:/usr/local/clang-7.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/travis/.phpenv/bin:/opt/pyenv/bin:/home/travis/.yarn/bin
+PYTHON_CFLAGS: -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security
+PYTHON_CONFIGURE_OPTS: --enable-unicode=ucs4 --with-wide-unicode --enable-shared --enable-ipv6 --enable-loadable-sqlite-extensions --with-computed-gotos
+REQUESTS_CA_BUNDLE: <not set>
+SSL_CERT_FILE: <not set>
+TRAVIS_APT_PROXY: <set>
+rvm_bin_path: /home/travis/.rvm/bin
+rvm_path: /home/travis/.rvm
+
+travis_time:end:34656cde:start=1598785763682176375,finish=1598785763912484620,duration=230308245,event=before_install[0Ktravis_fold:end:before_install.6[0Ktravis_fold:start:install.1[0Ktravis_time:start:16801dee[0K$ conda create --name=light-head-rcnn python=$TRAVIS_PYTHON_VERSION -q -y
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda/envs/light-head-rcnn
+
+  added / updated specs:
+    - python=3.8
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2020.6.20          |           py38_0         156 KB
+    ld_impl_linux-64-2.33.1    |       h53a641e_7         568 KB
+    pip-20.2.2                 |           py38_0         1.7 MB
+    python-3.8.5               |       hcff3b4d_0        49.3 MB
+    setuptools-49.6.0          |           py38_0         748 KB
+    xz-5.2.5                   |       h7b6447c_0         341 KB
+    ------------------------------------------------------------
+                                           Total:        52.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2020.7.22-0
+  certifi            pkgs/main/linux-64::certifi-2020.6.20-py38_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
+  libedit            pkgs/main/linux-64::libedit-3.1.20191231-h14c3975_1
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1g-h7b6447c_0
+  pip                pkgs/main/linux-64::pip-20.2.2-py38_0
+  python             pkgs/main/linux-64::python-3.8.5-hcff3b4d_0
+  readline           pkgs/main/linux-64::readline-8.0-h7b6447c_0
+  setuptools         pkgs/main/linux-64::setuptools-49.6.0-py38_0
+  sqlite             pkgs/main/linux-64::sqlite-3.33.0-h62c20be_0
+  tk                 pkgs/main/linux-64::tk-8.6.10-hbc83047_0
+  wheel              pkgs/main/noarch::wheel-0.35.1-py_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7b6447c_0
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+travis_time:end:16801dee:start=1598785763917118407,finish=1598785769590111286,duration=5672992879,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:0053f21c[0K$ source activate light-head-rcnn
+travis_time:end:0053f21c:start=1598785769594380409,finish=1598785769672722887,duration=78342478,event=install[0Ktravis_fold:end:install.2[0Ktravis_fold:start:install.3[0Ktravis_time:start:0ab5ed88[0K$ conda install -c menpo opencv
+Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | / - \ | done
+Solving environment: - \ | / - \ failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: / - \ | / failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - 
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+\ Building graph of deps:   0%|                             | 0/3 [00:00<?, ?it/s]Examining @/linux-64::__glibc==2.23=0:   0%|              | 0/3 [00:00<?, ?it/s]Examining python=3.8:  33%|███████              | 1/3 [00:00<00:00, 3095.43it/s]| Examining opencv:  67%|██████████████████         | 2/3 [00:00<00:00, 14.79it/s]Examining opencv: 100%|███████████████████████████| 3/3 [00:00<00:00, 22.13it/s]/ - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / -                                                                                 Determining conflicts:   0%|                              | 0/3 [00:00<?, ?it/s]Examining conflict for python opencv:   0%|               | 0/3 [00:00<?, ?it/s]\ | / - \ | / - \ | /                                                                                 failed
+
+UnsatisfiableError: The following specifications were found
+to be incompatible with the existing python installation in your environment:
+
+Specifications:
+
+  - opencv -> python[version='2.7.*|>=3.5,<3.6.0a0|>=3.6,<3.7.0a0|>=2.7,<2.8.0a0|>=3.7,<3.8.0a0']
+
+Your python: python=3.8
+
+If python is on the left-most side of the chain, that's the version you've asked for.
+When python appears to the right, that indicates that the thing on the left is somehow
+not available for the python version you are constrained to. Note that conda will not
+change your python version to a different minor version unless you explicitly specify
+that.
+
+
+
+travis_time:end:0ab5ed88:start=1598785769676976863,finish=1598785803298439610,duration=33621462747,event=install[0K[31;1mThe command "conda install -c menpo opencv" failed and exited with 1 during .[0m
+
+Your build has been stopped.

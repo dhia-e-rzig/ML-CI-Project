@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+221471997,b98aff0d5711172e9e1e0c970f5f61dac235cc35,PassedToFailed,passed,281,https://github.com/raphaelvallat/entropy/pull/16
+221470301,bfafab9442ffc515c5c179c19a337a705346992e,PassedToFailed,failed,174,https://github.com/raphaelvallat/entropy/pull/16
+221460624,f3f2d2c0cc38c83914951fa2b1ddfd99f0f141f8,FailedToPassed,failed,153,https://github.com/raphaelvallat/entropy/pull/16
+221460164,99c45e0800a3d8bf4ef69e260150107349082e91,FailedToPassed,passed,275,https://github.com/raphaelvallat/entropy/pull/16

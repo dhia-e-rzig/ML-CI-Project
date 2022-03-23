@@ -1,0 +1,7 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+769035766,08d04067a0c670488e1f8bd3f17cd78005163249,PassedToFailed,passed,189,https://github.com/alvations/sacremoses/compare/c821fe6b96f97a3b40a10db555184b52e61c3e77...08d04067a0c670488e1f8bd3f17cd78005163249
+768861545,08d04067a0c670488e1f8bd3f17cd78005163249,PassedToFailed,failed,175,https://github.com/alvations/sacremoses/compare/c821fe6b96f97a3b40a10db555184b52e61c3e77...08d04067a0c670488e1f8bd3f17cd78005163249
+768861545,08d04067a0c670488e1f8bd3f17cd78005163249,FailedToPassed,failed,175,https://github.com/alvations/sacremoses/compare/044d2ae61038...d7e19d5a921a
+768736507,d7e19d5a921a1d3315842f994d1e9203a0bdc686,FailedToPassed,passed,199,https://github.com/alvations/sacremoses/compare/044d2ae61038...d7e19d5a921a
+767503015,c821fe6b96f97a3b40a10db555184b52e61c3e77,PassedToFailed,passed,205,https://github.com/alvations/sacremoses/compare/95df5d8bfa4e...94c776a2bdf1
+767502463,94c776a2bdf10d24c8a8b86c3ca38ca272855065,PassedToFailed,failed,188,https://github.com/alvations/sacremoses/compare/95df5d8bfa4e...94c776a2bdf1

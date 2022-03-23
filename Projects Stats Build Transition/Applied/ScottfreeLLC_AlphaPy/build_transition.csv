@@ -1,0 +1,7 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+587724897,3b7aea6478a512bb02b05928aff4c0248302bc04,PassedToErrored,passed,174,https://github.com/ScottfreeLLC/AlphaPy/compare/86622be1f4cd...9ed5f154d8b7
+571511623,9ed5f154d8b7fad0fcadc109bce74da2d6fb9740,PassedToErrored,errored,166,https://github.com/ScottfreeLLC/AlphaPy/compare/86622be1f4cd...9ed5f154d8b7
+568933091,7f60e5bfd0dc666f8b5ab8b95a3eb8795457118c,ErroredToPassed,errored,142,https://github.com/ScottfreeLLC/AlphaPy/compare/eeb72c7d7f19...02f9b331dc47
+544830580,02f9b331dc47e0ba6ba1e98b542f60c5b9c82dc1,ErroredToPassed,passed,523,https://github.com/ScottfreeLLC/AlphaPy/compare/eeb72c7d7f19...02f9b331dc47
+383920165,6325cdef4e20ff94fbcd95a92b771feb2d12f1bc,PassedToFailed,passed,372,https://github.com/ScottFreeLLC/AlphaPy/compare/c4c97e2ff956...e9e345ed828a
+383914787,e9e345ed828a72a74b67ae1f7022e513b814d815,PassedToFailed,failed,418,https://github.com/ScottFreeLLC/AlphaPy/compare/c4c97e2ff956...e9e345ed828a

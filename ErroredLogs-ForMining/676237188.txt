@@ -1,0 +1,318 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 22ebceb7-50eb-4ef8-8fe7-0fc47d4852b0@1.worker-org-6bc68c5dcd-nt7dh.macstadium-prod-2
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: 307cb4af-ade3-418b-a1da-df5bb32a0703 travis-ci-macos10.14.6-xcode11g-1585832443 (via amqp)
+startup: 1m14.101254527s
+travis_fold:end:worker_info[0Ktravis_time:start:0595ffac[0Ktravis_time:end:0595ffac:start=1587132644843231000,finish=1587132645232199000,duration=388968000,event=no_world_writable_dirs[0Ktravis_time:start:20072063[0Ktravis_time:end:20072063:start=1587132645240992000,finish=1587132645247404000,duration=6412000,event=check_unsupported[0Ktravis_time:start:0582bd6c[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: generic
+Build id: 676237184
+Job id: 676237188
+Runtime kernel version: 18.7.0
+travis-build version: dddf3090e
+[34m[1mBuild image provisioning date and time[0m
+Thu Apr  2 17:17:49 GMT 2020
+[34m[1mOperating System Details[0m
+ProductName:	Mac OS X
+ProductVersion:	10.14.6
+BuildVersion:	18G3020
+[34m[1mGit version[0m
+git version 2.26.0
+[34m[1mbash version[0m
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
+Copyright (C) 2007 Free Software Foundation, Inc.
+[34m[1mGCC version[0m
+Apple clang version 11.0.0 (clang-1100.0.33.8)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mLLVM version[0m
+Apple clang version 11.0.0 (clang-1100.0.33.8)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.6.5
+[34m[1mPre-installed Node.js versions[0m
+v10.18.1
+v10.19.0
+v12.14.1
+v12.16.1
+v13.6.0
+v4.9.1
+v6.17.1
+v8.17.0
+[34m[1mmvn -version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /usr/local/Cellar/maven/3.6.3_1/libexec
+Java version: 13.0.2, vendor: N/A, runtime: /usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.14.6", arch: "x86_64", family: "mac"
+travis_fold:end:system_info[0K
+travis_time:end:0582bd6c:start=1587132645255529000,finish=1587132645271251000,duration=15722000,event=show_system_info[0Ktravis_time:start:35ad81c8[0Ktravis_time:end:35ad81c8:start=1587132645279103000,finish=1587132645286547000,duration=7444000,event=rm_riak_source[0Ktravis_time:start:101ff0b2[0Ktravis_time:end:101ff0b2:start=1587132645294952000,finish=1587132645302217000,duration=7265000,event=fix_rwky_redis[0Ktravis_time:start:0075affe[0Ktravis_time:end:0075affe:start=1587132645310601000,finish=1587132645759055000,duration=448454000,event=wait_for_network[0Ktravis_time:start:2676170d[0Ktravis_time:end:2676170d:start=1587132645767818000,finish=1587132645775037000,duration=7219000,event=update_apt_keys[0Ktravis_time:start:08143fb0[0Ktravis_time:end:08143fb0:start=1587132645783644000,finish=1587132645791635000,duration=7991000,event=fix_hhvm_source[0Ktravis_time:start:0270b26e[0Ktravis_time:end:0270b26e:start=1587132645800837000,finish=1587132645808491000,duration=7654000,event=update_mongo_arch[0Ktravis_time:start:1197310a[0Ktravis_time:end:1197310a:start=1587132645816876000,finish=1587132645827771000,duration=10895000,event=fix_sudo_enabled_trusty[0Ktravis_time:start:190d4486[0Ktravis_time:end:190d4486:start=1587132645836759000,finish=1587132645843664000,duration=6905000,event=update_glibc[0Ktravis_time:start:01d7cac5[0Ktravis_time:end:01d7cac5:start=1587132645852643000,finish=1587132646839535000,duration=986892000,event=clean_up_path[0Ktravis_time:start:09ac0eb4[0Ktravis_time:end:09ac0eb4:start=1587132646847950000,finish=1587132646962344000,duration=114394000,event=fix_resolv_conf[0Ktravis_time:start:11d0ce1b[0Ktravis_time:end:11d0ce1b:start=1587132646971397000,finish=1587132647063495000,duration=92098000,event=fix_etc_hosts[0Ktravis_time:start:1d8371b4[0Ktravis_time:end:1d8371b4:start=1587132647072949000,finish=1587132647080454000,duration=7505000,event=fix_mvn_settings_xml[0Ktravis_time:start:029859c7[0Ktravis_time:end:029859c7:start=1587132647089264000,finish=1587132647212332000,duration=123068000,event=no_ipv6_localhost[0Ktravis_time:start:0869fbb6[0Ktravis_time:end:0869fbb6:start=1587132647221072000,finish=1587132647228532000,duration=7460000,event=fix_etc_mavenrc[0Ktravis_time:start:1135c53c[0Ktravis_time:end:1135c53c:start=1587132647237736000,finish=1587132649351775000,duration=2114039000,event=fix_wwdr_certificate[0Ktravis_time:start:0382de8f[0Ktravis_time:end:0382de8f:start=1587132649361947000,finish=1587132649527852000,duration=165905000,event=put_localhost_first[0Ktravis_time:start:18433554[0Ktravis_time:end:18433554:start=1587132649536531000,finish=1587132649546698000,duration=10167000,event=home_paths[0Ktravis_time:start:027d9c07[0Ktravis_time:end:027d9c07:start=1587132649558239000,finish=1587132649577501000,duration=19262000,event=disable_initramfs[0Ktravis_time:start:0785ff31[0Ktravis_time:end:0785ff31:start=1587132649587866000,finish=1587132649616273000,duration=28407000,event=disable_ssh_roaming[0Ktravis_time:start:0ee549b0[0Ktravis_time:end:0ee549b0:start=1587132649625819000,finish=1587132649633765000,duration=7946000,event=debug_tools[0Ktravis_time:start:004c1541[0K
+travis_time:end:004c1541:start=1587132649644422000,finish=1587132652756541000,duration=3112119000,event=uninstall_oclint[0Ktravis_time:start:0fd19f7c[0Ktravis_time:end:0fd19f7c:start=1587132652765001000,finish=1587132653942846000,duration=1177845000,event=rvm_use[0Ktravis_time:start:0442989e[0Ktravis_time:end:0442989e:start=1587132653951534000,finish=1587132653985476000,duration=33942000,event=rm_etc_boto_cfg[0Ktravis_time:start:036ce648[0Ktravis_time:end:036ce648:start=1587132653994190000,finish=1587132654001063000,duration=6873000,event=rm_oraclejdk8_symlink[0Ktravis_time:start:08cda149[0Ktravis_time:end:08cda149:start=1587132654009477000,finish=1587132654021477000,duration=12000000,event=enable_i386[0Ktravis_time:start:1a7d182e[0Ktravis_time:end:1a7d182e:start=1587132654030080000,finish=1587132654040868000,duration=10788000,event=update_rubygems[0Ktravis_time:start:24019389[0Ktravis_time:end:24019389:start=1587132654049481000,finish=1587132654061920000,duration=12439000,event=ensure_path_components[0Ktravis_time:start:32be1fca[0Ktravis_time:end:32be1fca:start=1587132654070998000,finish=1587132654077946000,duration=6948000,event=redefine_curl[0Ktravis_time:start:0e8cb311[0Ktravis_time:end:0e8cb311:start=1587132654086321000,finish=1587132654093258000,duration=6937000,event=nonblock_pipe[0Ktravis_time:start:003e9f10[0Ktravis_time:end:003e9f10:start=1587132654101952000,finish=1587132654109646000,duration=7694000,event=apt_get_update[0Ktravis_time:start:1b0fa2aa[0Ktravis_time:end:1b0fa2aa:start=1587132654118284000,finish=1587132654125083000,duration=6799000,event=deprecate_xcode_64[0Ktravis_time:start:038ee4a2[0Ktravis_time:end:038ee4a2:start=1587132654133474000,finish=1587132654143293000,duration=9819000,event=update_heroku[0Ktravis_time:start:074ce2de[0Ktravis_time:end:074ce2de:start=1587132654151654000,finish=1587132654158659000,duration=7005000,event=shell_session_update[0Ktravis_time:start:36adf9f9[0Ktravis_time:end:36adf9f9:start=1587132654166921000,finish=1587132654173678000,duration=6757000,event=maven_central_mirror[0Ktravis_time:start:1075a548[0Ktravis_time:end:1075a548:start=1587132654181914000,finish=1587132654188681000,duration=6767000,event=maven_https[0Ktravis_time:start:00212cb6[0Ktravis_time:end:00212cb6:start=1587132654197566000,finish=1587132654204114000,duration=6548000,event=fix_ps4[0Ktravis_time:start:1d45adfe[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:02baac50[0K$ git clone --depth=50 https://github.com/benfred/implicit.git benfred/implicit
+Cloning into 'benfred/implicit'...
+remote: Enumerating objects: 439, done.[K
+remote: Counting objects:   0% (1/439)[Kremote: Counting objects:   1% (5/439)[Kremote: Counting objects:   2% (9/439)[Kremote: Counting objects:   3% (14/439)[Kremote: Counting objects:   4% (18/439)[Kremote: Counting objects:   5% (22/439)[Kremote: Counting objects:   6% (27/439)[Kremote: Counting objects:   7% (31/439)[Kremote: Counting objects:   8% (36/439)[Kremote: Counting objects:   9% (40/439)[Kremote: Counting objects:  10% (44/439)[Kremote: Counting objects:  11% (49/439)[Kremote: Counting objects:  12% (53/439)[Kremote: Counting objects:  13% (58/439)[Kremote: Counting objects:  14% (62/439)[Kremote: Counting objects:  15% (66/439)[Kremote: Counting objects:  16% (71/439)[Kremote: Counting objects:  17% (75/439)[Kremote: Counting objects:  18% (80/439)[Kremote: Counting objects:  19% (84/439)[Kremote: Counting objects:  20% (88/439)[Kremote: Counting objects:  21% (93/439)[Kremote: Counting objects:  22% (97/439)[Kremote: Counting objects:  23% (101/439)[Kremote: Counting objects:  24% (106/439)[Kremote: Counting objects:  25% (110/439)[Kremote: Counting objects:  26% (115/439)[Kremote: Counting objects:  27% (119/439)[Kremote: Counting objects:  28% (123/439)[Kremote: Counting objects:  29% (128/439)[Kremote: Counting objects:  30% (132/439)[Kremote: Counting objects:  31% (137/439)[Kremote: Counting objects:  32% (141/439)[Kremote: Counting objects:  33% (145/439)[Kremote: Counting objects:  34% (150/439)[Kremote: Counting objects:  35% (154/439)[Kremote: Counting objects:  36% (159/439)[Kremote: Counting objects:  37% (163/439)[Kremote: Counting objects:  38% (167/439)[Kremote: Counting objects:  39% (172/439)[Kremote: Counting objects:  40% (176/439)[Kremote: Counting objects:  41% (180/439)[Kremote: Counting objects:  42% (185/439)[Kremote: Counting objects:  43% (189/439)[Kremote: Counting objects:  44% (194/439)[Kremote: Counting objects:  45% (198/439)[Kremote: Counting objects:  46% (202/439)[Kremote: Counting objects:  47% (207/439)[Kremote: Counting objects:  48% (211/439)[Kremote: Counting objects:  49% (216/439)[Kremote: Counting objects:  50% (220/439)[Kremote: Counting objects:  51% (224/439)[Kremote: Counting objects:  52% (229/439)[Kremote: Counting objects:  53% (233/439)[Kremote: Counting objects:  54% (238/439)[Kremote: Counting objects:  55% (242/439)[Kremote: Counting objects:  56% (246/439)[Kremote: Counting objects:  57% (251/439)[Kremote: Counting objects:  58% (255/439)[Kremote: Counting objects:  59% (260/439)[Kremote: Counting objects:  60% (264/439)[Kremote: Counting objects:  61% (268/439)[Kremote: Counting objects:  62% (273/439)[Kremote: Counting objects:  63% (277/439)[Kremote: Counting objects:  64% (281/439)[Kremote: Counting objects:  65% (286/439)[Kremote: Counting objects:  66% (290/439)[Kremote: Counting objects:  67% (295/439)[Kremote: Counting objects:  68% (299/439)[Kremote: Counting objects:  69% (303/439)[Kremote: Counting objects:  70% (308/439)[Kremote: Counting objects:  71% (312/439)[Kremote: Counting objects:  72% (317/439)[Kremote: Counting objects:  73% (321/439)[Kremote: Counting objects:  74% (325/439)[Kremote: Counting objects:  75% (330/439)[Kremote: Counting objects:  76% (334/439)[Kremote: Counting objects:  77% (339/439)[Kremote: Counting objects:  78% (343/439)[Kremote: Counting objects:  79% (347/439)[Kremote: Counting objects:  80% (352/439)[Kremote: Counting objects:  81% (356/439)[Kremote: Counting objects:  82% (360/439)[Kremote: Counting objects:  83% (365/439)[Kremote: Counting objects:  84% (369/439)[Kremote: Counting objects:  85% (374/439)[Kremote: Counting objects:  86% (378/439)[Kremote: Counting objects:  87% (382/439)[Kremote: Counting objects:  88% (387/439)[Kremote: Counting objects:  89% (391/439)[Kremote: Counting objects:  90% (396/439)[Kremote: Counting objects:  91% (400/439)[Kremote: Counting objects:  92% (404/439)[Kremote: Counting objects:  93% (409/439)[Kremote: Counting objects:  94% (413/439)[Kremote: Counting objects:  95% (418/439)[Kremote: Counting objects:  96% (422/439)[Kremote: Counting objects:  97% (426/439)[Kremote: Counting objects:  98% (431/439)[Kremote: Counting objects:  99% (435/439)[Kremote: Counting objects: 100% (439/439)[Kremote: Counting objects: 100% (439/439), done.[K
+remote: Compressing objects:   0% (1/217)[Kremote: Compressing objects:   1% (3/217)[Kremote: Compressing objects:   2% (5/217)[Kremote: Compressing objects:   3% (7/217)[Kremote: Compressing objects:   4% (9/217)[Kremote: Compressing objects:   5% (11/217)[Kremote: Compressing objects:   6% (14/217)[Kremote: Compressing objects:   7% (16/217)[Kremote: Compressing objects:   8% (18/217)[Kremote: Compressing objects:   9% (20/217)[Kremote: Compressing objects:  10% (22/217)[Kremote: Compressing objects:  11% (24/217)[Kremote: Compressing objects:  12% (27/217)[Kremote: Compressing objects:  13% (29/217)[Kremote: Compressing objects:  14% (31/217)[Kremote: Compressing objects:  15% (33/217)[Kremote: Compressing objects:  16% (35/217)[Kremote: Compressing objects:  17% (37/217)[Kremote: Compressing objects:  18% (40/217)[Kremote: Compressing objects:  19% (42/217)[Kremote: Compressing objects:  20% (44/217)[Kremote: Compressing objects:  21% (46/217)[Kremote: Compressing objects:  22% (48/217)[Kremote: Compressing objects:  23% (50/217)[Kremote: Compressing objects:  24% (53/217)[Kremote: Compressing objects:  25% (55/217)[Kremote: Compressing objects:  26% (57/217)[Kremote: Compressing objects:  27% (59/217)[Kremote: Compressing objects:  28% (61/217)[Kremote: Compressing objects:  29% (63/217)[Kremote: Compressing objects:  30% (66/217)[Kremote: Compressing objects:  31% (68/217)[Kremote: Compressing objects:  32% (70/217)[Kremote: Compressing objects:  33% (72/217)[Kremote: Compressing objects:  34% (74/217)[Kremote: Compressing objects:  35% (76/217)[Kremote: Compressing objects:  36% (79/217)[Kremote: Compressing objects:  37% (81/217)[Kremote: Compressing objects:  38% (83/217)[Kremote: Compressing objects:  39% (85/217)[Kremote: Compressing objects:  40% (87/217)[Kremote: Compressing objects:  41% (89/217)[Kremote: Compressing objects:  42% (92/217)[Kremote: Compressing objects:  43% (94/217)[Kremote: Compressing objects:  44% (96/217)[Kremote: Compressing objects:  45% (98/217)[Kremote: Compressing objects:  46% (100/217)[Kremote: Compressing objects:  47% (102/217)[Kremote: Compressing objects:  48% (105/217)[Kremote: Compressing objects:  49% (107/217)[Kremote: Compressing objects:  50% (109/217)[Kremote: Compressing objects:  51% (111/217)[Kremote: Compressing objects:  52% (113/217)[Kremote: Compressing objects:  53% (116/217)[Kremote: Compressing objects:  54% (118/217)[Kremote: Compressing objects:  55% (120/217)[Kremote: Compressing objects:  56% (122/217)[Kremote: Compressing objects:  57% (124/217)[Kremote: Compressing objects:  58% (126/217)[Kremote: Compressing objects:  59% (129/217)[Kremote: Compressing objects:  60% (131/217)[Kremote: Compressing objects:  61% (133/217)[Kremote: Compressing objects:  62% (135/217)[Kremote: Compressing objects:  63% (137/217)[Kremote: Compressing objects:  64% (139/217)[Kremote: Compressing objects:  65% (142/217)[Kremote: Compressing objects:  66% (144/217)[Kremote: Compressing objects:  67% (146/217)[Kremote: Compressing objects:  68% (148/217)[Kremote: Compressing objects:  69% (150/217)[Kremote: Compressing objects:  70% (152/217)[Kremote: Compressing objects:  71% (155/217)[Kremote: Compressing objects:  72% (157/217)[Kremote: Compressing objects:  73% (159/217)[Kremote: Compressing objects:  74% (161/217)[Kremote: Compressing objects:  75% (163/217)[Kremote: Compressing objects:  76% (165/217)[Kremote: Compressing objects:  77% (168/217)[Kremote: Compressing objects:  78% (170/217)[Kremote: Compressing objects:  79% (172/217)[Kremote: Compressing objects:  80% (174/217)[Kremote: Compressing objects:  81% (176/217)[Kremote: Compressing objects:  82% (178/217)[Kremote: Compressing objects:  83% (181/217)[Kremote: Compressing objects:  84% (183/217)[Kremote: Compressing objects:  85% (185/217)[Kremote: Compressing objects:  86% (187/217)[Kremote: Compressing objects:  87% (189/217)[Kremote: Compressing objects:  88% (191/217)[Kremote: Compressing objects:  89% (194/217)[Kremote: Compressing objects:  90% (196/217)[Kremote: Compressing objects:  91% (198/217)[Kremote: Compressing objects:  92% (200/217)[Kremote: Compressing objects:  93% (202/217)[Kremote: Compressing objects:  94% (204/217)[Kremote: Compressing objects:  95% (207/217)[Kremote: Compressing objects:  96% (209/217)[Kremote: Compressing objects:  97% (211/217)[Kremote: Compressing objects:  98% (213/217)[Kremote: Compressing objects:  99% (215/217)[Kremote: Compressing objects: 100% (217/217)[Kremote: Compressing objects: 100% (217/217), done.[K
+Receiving objects:   0% (1/439)Receiving objects:   1% (5/439)Receiving objects:   2% (9/439)Receiving objects:   3% (14/439)Receiving objects:   4% (18/439)Receiving objects:   5% (22/439)Receiving objects:   6% (27/439)Receiving objects:   7% (31/439)Receiving objects:   8% (36/439)Receiving objects:   9% (40/439)Receiving objects:  10% (44/439)Receiving objects:  11% (49/439)Receiving objects:  12% (53/439)Receiving objects:  13% (58/439)Receiving objects:  14% (62/439)Receiving objects:  15% (66/439)Receiving objects:  16% (71/439)Receiving objects:  17% (75/439)Receiving objects:  18% (80/439)Receiving objects:  19% (84/439)Receiving objects:  20% (88/439)Receiving objects:  21% (93/439)Receiving objects:  22% (97/439)Receiving objects:  23% (101/439)Receiving objects:  24% (106/439)Receiving objects:  25% (110/439)Receiving objects:  26% (115/439)Receiving objects:  27% (119/439)Receiving objects:  28% (123/439)Receiving objects:  29% (128/439)Receiving objects:  30% (132/439)Receiving objects:  31% (137/439)Receiving objects:  32% (141/439)Receiving objects:  33% (145/439)Receiving objects:  34% (150/439)Receiving objects:  35% (154/439)Receiving objects:  36% (159/439)Receiving objects:  37% (163/439)Receiving objects:  38% (167/439)Receiving objects:  39% (172/439)Receiving objects:  40% (176/439)Receiving objects:  41% (180/439)Receiving objects:  42% (185/439)Receiving objects:  43% (189/439)Receiving objects:  44% (194/439)Receiving objects:  45% (198/439)Receiving objects:  46% (202/439)Receiving objects:  47% (207/439)Receiving objects:  48% (211/439)Receiving objects:  49% (216/439)Receiving objects:  50% (220/439)Receiving objects:  51% (224/439)Receiving objects:  52% (229/439)Receiving objects:  53% (233/439)Receiving objects:  54% (238/439)Receiving objects:  55% (242/439)Receiving objects:  56% (246/439)Receiving objects:  57% (251/439)Receiving objects:  58% (255/439)Receiving objects:  59% (260/439)Receiving objects:  60% (264/439)Receiving objects:  61% (268/439)remote: Total 439 (delta 272), reused 341 (delta 219), pack-reused 0[K
+Receiving objects:  62% (273/439)Receiving objects:  63% (277/439)Receiving objects:  64% (281/439)Receiving objects:  65% (286/439)Receiving objects:  66% (290/439)Receiving objects:  67% (295/439)Receiving objects:  68% (299/439)Receiving objects:  69% (303/439)Receiving objects:  70% (308/439)Receiving objects:  71% (312/439)Receiving objects:  72% (317/439)Receiving objects:  73% (321/439)Receiving objects:  74% (325/439)Receiving objects:  75% (330/439)Receiving objects:  76% (334/439)Receiving objects:  77% (339/439)Receiving objects:  78% (343/439)Receiving objects:  79% (347/439)Receiving objects:  80% (352/439)Receiving objects:  81% (356/439)Receiving objects:  82% (360/439)Receiving objects:  83% (365/439)Receiving objects:  84% (369/439)Receiving objects:  85% (374/439)Receiving objects:  86% (378/439)Receiving objects:  87% (382/439)Receiving objects:  88% (387/439)Receiving objects:  89% (391/439)Receiving objects:  90% (396/439)Receiving objects:  91% (400/439)Receiving objects:  92% (404/439)Receiving objects:  93% (409/439)Receiving objects:  94% (413/439)Receiving objects:  95% (418/439)Receiving objects:  96% (422/439)Receiving objects:  97% (426/439)Receiving objects:  98% (431/439)Receiving objects:  99% (435/439)Receiving objects: 100% (439/439)Receiving objects: 100% (439/439), 2.25 MiB | 15.91 MiB/s, done.
+Resolving deltas:   0% (0/272)Resolving deltas:   1% (4/272)Resolving deltas:  16% (46/272)Resolving deltas:  20% (55/272)Resolving deltas:  23% (65/272)Resolving deltas:  32% (88/272)Resolving deltas:  35% (96/272)Resolving deltas:  38% (106/272)Resolving deltas:  44% (121/272)Resolving deltas:  45% (123/272)Resolving deltas:  46% (127/272)Resolving deltas:  47% (128/272)Resolving deltas:  48% (132/272)Resolving deltas:  50% (136/272)Resolving deltas:  51% (139/272)Resolving deltas:  56% (153/272)Resolving deltas:  59% (162/272)Resolving deltas:  60% (165/272)Resolving deltas:  63% (172/272)Resolving deltas:  64% (175/272)Resolving deltas:  65% (177/272)Resolving deltas:  68% (187/272)Resolving deltas:  69% (189/272)Resolving deltas:  70% (193/272)Resolving deltas:  72% (198/272)Resolving deltas:  75% (204/272)Resolving deltas:  79% (216/272)Resolving deltas:  80% (219/272)Resolving deltas:  82% (225/272)Resolving deltas:  83% (226/272)Resolving deltas:  84% (229/272)Resolving deltas:  85% (232/272)Resolving deltas: 100% (272/272)Resolving deltas: 100% (272/272), done.
+travis_time:end:02baac50:start=1587132654221097000,finish=1587132655455852000,duration=1234755000,event=checkout[0K$ cd benfred/implicit
+travis_time:start:1120bc58[0K$ git fetch origin +refs/pull/95/merge:
+remote: Enumerating objects: 48, done.[K
+remote: Counting objects:   2% (1/48)[Kremote: Counting objects:   4% (2/48)[Kremote: Counting objects:   6% (3/48)[Kremote: Counting objects:   8% (4/48)[Kremote: Counting objects:  10% (5/48)[Kremote: Counting objects:  12% (6/48)[Kremote: Counting objects:  14% (7/48)[Kremote: Counting objects:  16% (8/48)[Kremote: Counting objects:  18% (9/48)[Kremote: Counting objects:  20% (10/48)[Kremote: Counting objects:  22% (11/48)[Kremote: Counting objects:  25% (12/48)[Kremote: Counting objects:  27% (13/48)[Kremote: Counting objects:  29% (14/48)[Kremote: Counting objects:  31% (15/48)[Kremote: Counting objects:  33% (16/48)[Kremote: Counting objects:  35% (17/48)[Kremote: Counting objects:  37% (18/48)[Kremote: Counting objects:  39% (19/48)[Kremote: Counting objects:  41% (20/48)[Kremote: Counting objects:  43% (21/48)[Kremote: Counting objects:  45% (22/48)[Kremote: Counting objects:  47% (23/48)[Kremote: Counting objects:  50% (24/48)[Kremote: Counting objects:  52% (25/48)[Kremote: Counting objects:  54% (26/48)[Kremote: Counting objects:  56% (27/48)[Kremote: Counting objects:  58% (28/48)[Kremote: Counting objects:  60% (29/48)[Kremote: Counting objects:  62% (30/48)[Kremote: Counting objects:  64% (31/48)[Kremote: Counting objects:  66% (32/48)[Kremote: Counting objects:  68% (33/48)[Kremote: Counting objects:  70% (34/48)[Kremote: Counting objects:  72% (35/48)[Kremote: Counting objects:  75% (36/48)[Kremote: Counting objects:  77% (37/48)[Kremote: Counting objects:  79% (38/48)[Kremote: Counting objects:  81% (39/48)[Kremote: Counting objects:  83% (40/48)[Kremote: Counting objects:  85% (41/48)[Kremote: Counting objects:  87% (42/48)[Kremote: Counting objects:  89% (43/48)[Kremote: Counting objects:  91% (44/48)[Kremote: Counting objects:  93% (45/48)[Kremote: Counting objects:  95% (46/48)[Kremote: Counting objects:  97% (47/48)[Kremote: Counting objects: 100% (48/48)[Kremote: Counting objects: 100% (48/48), done.[K
+remote: Compressing objects:   5% (1/18)[Kremote: Compressing objects:  11% (2/18)[Kremote: Compressing objects:  16% (3/18)[Kremote: Compressing objects:  22% (4/18)[Kremote: Compressing objects:  27% (5/18)[Kremote: Compressing objects:  33% (6/18)[Kremote: Compressing objects:  38% (7/18)[Kremote: Compressing objects:  44% (8/18)[Kremote: Compressing objects:  50% (9/18)[Kremote: Compressing objects:  55% (10/18)[Kremote: Compressing objects:  61% (11/18)[Kremote: Compressing objects:  66% (12/18)[Kremote: Compressing objects:  72% (13/18)[Kremote: Compressing objects:  77% (14/18)[Kremote: Compressing objects:  83% (15/18)[Kremote: Compressing objects:  88% (16/18)[Kremote: Compressing objects:  94% (17/18)[Kremote: Compressing objects: 100% (18/18)[Kremote: Compressing objects: 100% (18/18), done.[K
+remote: Total 35 (delta 28), reused 23 (delta 17), pack-reused 0[K
+Unpacking objects:   2% (1/35)Unpacking objects:   5% (2/35)Unpacking objects:   8% (3/35)Unpacking objects:  11% (4/35)Unpacking objects:  14% (5/35)Unpacking objects:  17% (6/35)Unpacking objects:  20% (7/35)Unpacking objects:  22% (8/35)Unpacking objects:  25% (9/35)Unpacking objects:  28% (10/35)Unpacking objects:  31% (11/35)Unpacking objects:  34% (12/35)Unpacking objects:  37% (13/35)Unpacking objects:  40% (14/35)Unpacking objects:  42% (15/35)Unpacking objects:  45% (16/35)Unpacking objects:  48% (17/35)Unpacking objects:  51% (18/35)Unpacking objects:  54% (19/35)Unpacking objects:  57% (20/35)Unpacking objects:  60% (21/35)Unpacking objects:  62% (22/35)Unpacking objects:  65% (23/35)Unpacking objects:  68% (24/35)Unpacking objects:  71% (25/35)Unpacking objects:  74% (26/35)Unpacking objects:  77% (27/35)Unpacking objects:  80% (28/35)Unpacking objects:  82% (29/35)Unpacking objects:  85% (30/35)Unpacking objects:  88% (31/35)Unpacking objects:  91% (32/35)Unpacking objects:  94% (33/35)Unpacking objects:  97% (34/35)Unpacking objects: 100% (35/35)Unpacking objects: 100% (35/35), 9.67 KiB | 91.00 KiB/s, done.
+From https://github.com/benfred/implicit
+ * branch            refs/pull/95/merge -> FETCH_HEAD
+travis_time:end:1120bc58:start=1587132655514327000,finish=1587132655955369000,duration=441042000,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:1120bc58:start=1587132655514327000,finish=1587132656026718000,duration=512391000,event=checkout[0Ktravis_time:start:02b03ea0[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export PYTHON=2
+
+travis_time:end:02b03ea0:start=1587132656036315000,finish=1587132656055353000,duration=19038000,event=env[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:044b8daa[0K$ Installing caching utilities
+travis_time:end:044b8daa:start=1587132657836090000,finish=1587132657966472000,duration=130382000,event=setup_casher[0Ktravis_time:start:118cac82[0Ktravis_time:end:118cac82:start=1587132657978728000,finish=1587132657986874000,duration=8146000,event=setup_casher[0Ktravis_time:start:000b7bc4[0Kattempting to download cache archive[0m
+[32;1mfetching PR.95/cache--osx-xcode11-26f5813f08114505100657faa9d5776c677a5ecea3fb1e4b8c47d155855e807a.tgz[0m
+[32;1mfetching PR.95/cache-osx-xcode11-26f5813f08114505100657faa9d5776c677a5ecea3fb1e4b8c47d155855e807a.tgz[0m
+[32;1mfetching master/cache--osx-xcode11-26f5813f08114505100657faa9d5776c677a5ecea3fb1e4b8c47d155855e807a.tgz[0m
+[32;1mfound cache[0m
+travis_time:end:000b7bc4:start=1587132657996473000,finish=1587132661329508000,duration=3333035000,event=setup_casher[0Ktravis_time:start:04befcbb[0Ktravis_time:end:04befcbb:start=1587132661339293000,finish=1587132661347551000,duration=8258000,event=setup_casher[0Ktravis_time:start:313a6a84[0Kadding /Users/travis/.cache/pip to cache[0m
+creating directory /Users/travis/.cache/pip[0m
+travis_time:end:313a6a84:start=1587132661357207000,finish=1587132663981686000,duration=2624479000,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+$ bash -c 'echo $BASH_VERSION'
+3.2.57(1)-release
+
+travis_fold:start:brew[0K[33;1mInstalling Homebrew Packages[0m
+travis_time:start:1ef7513a[0K$ rvm $brew_ruby do brew bundle --verbose --global
+Skipping install of python3 formula. It is already up-to-date.
+Using python3
+[32mHomebrew Bundle complete! 1 Brewfile dependency now installed.[0m
+travis_time:end:1ef7513a:start=1587132664944196000,finish=1587132674860605000,duration=9916409000,event=before_install[0Ktravis_fold:end:brew[0Ktravis_fold:start:before_install[0Ktravis_time:start:1605cc00[0K$ PIP=pip
+  PY=python
+  if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+    PIP=pip2
+    PY=python2
+    if  [ "${PYTHON:0:1}" = "3" ]; then
+      PIP=pip3
+      PY=python3
+    fi
+  fi
+  
+travis_time:end:1605cc00:start=1587132674871802000,finish=1587132674879526000,duration=7724000,event=before_install[0Ktravis_fold:end:before_install[0Ktravis_fold:start:install[0Ktravis_time:start:01c018e0[0K$ travis_wait travis_retry $PIP uninstall numpy -y
+  travis_wait travis_retry $PIP install -r requirements.txt --ignore-installed flake8 isort cpplint faiss annoy
+  if  [ "${PYTHON:0:1}" = "3" ]; then
+     travis_wait travis_retry $PIP install nmslib
+  fi
+  travis_retry $PIP install -e .
+  
+
+
+Still running (1 of 20): travis_retry pip2 uninstall numpy -y
+[32;1mThe command travis_retry pip2 uninstall numpy -y exited with 0.[0m
+
+[32;1mLog:[0m
+
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+WARNING: Skipping numpy as it is not installed.
+/Users/travis/.travis/functions: line 607:  3852 Terminated: 15          travis_jigger "${!}" "${timeout}" "${cmd[@]}"
+
+
+Still running (1 of 20): travis_retry pip2 install -r requirements.txt --ignore-installed flake8 isort cpplint faiss annoy
+[32;1mThe command travis_retry pip2 install -r requirements.txt --ignore-installed flake8 isort cpplint faiss annoy exited with 0.[0m
+
+[32;1mLog:[0m
+
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Collecting flake8
+  Downloading https://files.pythonhosted.org/packages/f8/1f/7ea40d1e4146ea55dbab41cda1376db092a75794914169aabd7e8d7a7def/flake8-3.7.9-py2.py3-none-any.whl (69kB)
+Collecting isort
+  Downloading https://files.pythonhosted.org/packages/e5/b0/c121fd1fa3419ea9bfd55c7f9c4fedfec5143208d8c7ad3ce3db6c623c21/isort-4.3.21-py2.py3-none-any.whl (42kB)
+Collecting cpplint
+  Downloading https://files.pythonhosted.org/packages/55/eb/b92ca550d87390b9245f02f9098842fa6a62f1605dfe567b2b140f3bb9da/cpplint-1.4.5.tar.gz (329kB)
+Collecting faiss
+  Downloading https://files.pythonhosted.org/packages/91/14/937da22b9fb796f5a65990cf1f3790a5e8f6a8abc180d6a68d431c9ebd04/faiss-1.5.3-cp27-cp27m-macosx_10_13_x86_64.whl (1.1MB)
+Collecting annoy
+  Downloading https://files.pythonhosted.org/packages/00/15/5a9db225ebda93a235aebd5e42bbf83ab7035e7e4783c6cb528c635c9afb/annoy-1.16.3.tar.gz (644kB)
+Collecting scipy>=0.16.0
+  Downloading https://files.pythonhosted.org/packages/dc/7a/3de1700fb471a6f56353446b4b962a7e4a5baaf24e5e4dec2d91d5f500da/scipy-1.2.3-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (27.4MB)
+Collecting Cython>=0.24.0
+  Downloading https://files.pythonhosted.org/packages/e6/7b/b72b1b96d2c09a57954ddd14f900e2326fa74bd1f8831f0d962b68f79151/Cython-0.29.16-cp27-cp27m-macosx_10_9_x86_64.whl (1.9MB)
+Collecting tqdm>=4.27.0
+  Downloading https://files.pythonhosted.org/packages/4a/1c/6359be64e8301b84160f6f6f7936bbfaaa5e9a4eab6cbc681db07600b949/tqdm-4.45.0-py2.py3-none-any.whl (60kB)
+Collecting entrypoints<0.4.0,>=0.3.0
+  Downloading https://files.pythonhosted.org/packages/ac/c6/44694103f8c221443ee6b0041f69e2740d89a25641e62fb4f2ee568f2f9c/entrypoints-0.3-py2.py3-none-any.whl
+Collecting pycodestyle<2.6.0,>=2.5.0
+  Downloading https://files.pythonhosted.org/packages/0e/0c/04a353e104d2f324f8ee5f4b32012618c1c86dd79e52a433b64fceed511b/pycodestyle-2.5.0-py2.py3-none-any.whl (51kB)
+Collecting configparser; python_version < "3.2"
+  Downloading https://files.pythonhosted.org/packages/7a/2a/95ed0501cf5d8709490b1d3a3f9b5cf340da6c433f896bbe9ce08dbe6785/configparser-4.0.2-py2.py3-none-any.whl
+Collecting mccabe<0.7.0,>=0.6.0
+  Downloading https://files.pythonhosted.org/packages/87/89/479dc97e18549e21354893e4ee4ef36db1d237534982482c3681ee6e7b57/mccabe-0.6.1-py2.py3-none-any.whl
+Collecting functools32; python_version < "3.2"
+  Downloading https://files.pythonhosted.org/packages/c5/60/6ac26ad05857c601308d8fb9e87fa36d0ebf889423f47c3502ef034365db/functools32-3.2.3-2.tar.gz
+Collecting pyflakes<2.2.0,>=2.1.0
+  Downloading https://files.pythonhosted.org/packages/84/f2/ed0ffb887f8138a8fe5a621b8c0bb9598bfb3989e029f6c6a85ee66628ee/pyflakes-2.1.1-py2.py3-none-any.whl (59kB)
+Collecting typing; python_version < "3.5"
+  Downloading https://files.pythonhosted.org/packages/22/30/64ca29543375759dc589ade14a6cd36382abf2bec17d67de8481bc9814d7/typing-3.7.4.1-py2-none-any.whl
+Collecting enum34; python_version < "3.4"
+  Downloading https://files.pythonhosted.org/packages/6f/2c/a9386903ece2ea85e9807e0e062174dc26fdce8b05f216d00491be29fad5/enum34-1.1.10-py2-none-any.whl
+Collecting backports.functools-lru-cache; python_version < "3.2"
+  Downloading https://files.pythonhosted.org/packages/da/d1/080d2bb13773803648281a49e3918f65b31b7beebf009887a529357fd44a/backports.functools_lru_cache-1.6.1-py2.py3-none-any.whl
+Collecting futures; python_version < "3.2"
+  Downloading https://files.pythonhosted.org/packages/d8/a6/f46ae3f1da0cd4361c344888f59ec2f5785e69c872e175a748ef6071cdb5/futures-3.3.0-py2-none-any.whl
+Collecting numpy
+  Downloading https://files.pythonhosted.org/packages/09/96/84cf406fe7d589f3dba9fc0f737e65985a3526c6d8c783f02d4b5a10825d/numpy-1.16.6-cp27-cp27m-macosx_10_9_x86_64.whl (13.9MB)
+Building wheels for collected packages: cpplint, annoy, functools32
+  Building wheel for cpplint (setup.py): started
+  Building wheel for cpplint (setup.py): finished with status 'done'
+  Created wheel for cpplint: filename=cpplint-1.4.5-cp27-none-any.whl size=74353 sha256=760daa4808f8e27671c252ab73fc99ed049fbfbfa077fe5d6ceb1097f89cb2fd
+  Stored in directory: /Users/travis/Library/Caches/pip/wheels/af/20/20/29ce3a7708b635d63481a7efe7276beedd00de29c046afd30d
+  Building wheel for annoy (setup.py): started
+  Building wheel for annoy (setup.py): finished with status 'done'
+  Created wheel for annoy: filename=annoy-1.16.3-cp27-cp27m-macosx_10_14_x86_64.whl size=64544 sha256=3ec4dbcf935c783cb0f4e908bc7d418776cb146120f128130f0f1a0f415ef2b9
+  Stored in directory: /Users/travis/Library/Caches/pip/wheels/f3/01/54/6ef760fe9f9fc6ba8c19cebbe6358212b5f3b5b0195c0b813f
+  Building wheel for functools32 (setup.py): started
+  Building wheel for functools32 (setup.py): finished with status 'done'
+  Created wheel for functools32: filename=functools32-3.2.3.post2-cp27-none-any.whl size=14557 sha256=c9d81b61548468172852ebb9f7221844c9bde0262b31a2a2fb239408aa345d72
+  Stored in directory: /Users/travis/Library/Caches/pip/wheels/b5/18/32/77a1030457155606ba5e3ec3a8a57132b1a04b1c4f765177b2
+Successfully built cpplint annoy functools32
+Installing collected packages: configparser, entrypoints, pycodestyle, mccabe, functools32, pyflakes, typing, enum34, flake8, backports.functools-lru-cache, futures, isort, cpplint, numpy, faiss, annoy, scipy, Cython, tqdm
+Successfully installed Cython-0.29.16 annoy-1.16.3 backports.functools-lru-cache-1.6.1 configparser-4.0.2 cpplint-1.4.5 entrypoints-0.3 enum34-1.1.10 faiss-1.5.3 flake8-3.7.9 functools32-3.2.3.post2 futures-3.3.0 isort-4.3.21 mccabe-0.6.1 numpy-1.16.6 pycodestyle-2.5.0 pyflakes-2.1.1 scipy-1.2.3 tqdm-4.45.0 typing-3.7.4.1
+/Users/travis/.travis/functions: line 607:  3860 Terminated: 15          travis_jigger "${!}" "${timeout}" "${cmd[@]}"
+[33mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Obtaining file:///Users/travis/build/benfred/implicit
+Requirement already satisfied: numpy in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (1.16.6)
+Requirement already satisfied: scipy>=0.16 in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (1.2.3)
+Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (4.45.0)
+Installing collected packages: implicit
+  Running setup.py develop for implicit
+[31m    ERROR: Command errored out with exit status 1:
+     command: /usr/local/opt/python@2/bin/python2.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/Users/travis/build/benfred/implicit/setup.py'"'"'; __file__='"'"'/Users/travis/build/benfred/implicit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps
+         cwd: /Users/travis/build/benfred/implicit/
+    Complete output (34 lines):
+    WARNING:root:The nvcc binary could not be located in your $PATH. Either add it to your path, or set $CUDAHOME to enable CUDA extensions
+    Failed to find CUDA toolkit. Building without GPU acceleration.
+    running develop
+    running egg_info
+    writing requirements to implicit.egg-info/requires.txt
+    writing implicit.egg-info/PKG-INFO
+    writing top-level names to implicit.egg-info/top_level.txt
+    writing dependency_links to implicit.egg-info/dependency_links.txt
+    reading manifest file 'implicit.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*' found under directory 'examples'
+    writing manifest file 'implicit.egg-info/SOURCES.txt'
+    running build_ext
+    building 'implicit._als' extension
+    creating build
+    creating build/temp.macosx-10.14-x86_64-2.7
+    creating build/temp.macosx-10.14-x86_64-2.7/implicit
+    g++-9 -fno-strict-aliasing -fno-common -dynamic -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/include -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/sqlite/include -I/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c implicit/_als.cpp -o build/temp.macosx-10.14-x86_64-2.7/implicit/_als.o -Wno-unused-function -Wno-maybe-uninitialized -O3 -ffast-math -fopenmp -std=c++11
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    creating build/lib.macosx-10.14-x86_64-2.7
+    creating build/lib.macosx-10.14-x86_64-2.7/implicit
+    g++-9 -bundle -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk build/temp.macosx-10.14-x86_64-2.7/implicit/_als.o -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/sqlite/lib -o build/lib.macosx-10.14-x86_64-2.7/implicit/_als.so -Wl,-rpath,/usr/local/opt/gcc/lib/gcc/9/ -fopenmp -std=c++11
+    building 'implicit._nearest_neighbours' extension
+    g++-9 -fno-strict-aliasing -fno-common -dynamic -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -Iimplicit -I/usr/local/include -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/sqlite/include -I/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c implicit/_nearest_neighbours.cpp -o build/temp.macosx-10.14-x86_64-2.7/implicit/_nearest_neighbours.o -Wno-unused-function -Wno-maybe-uninitialized -O3 -ffast-math -fopenmp -std=c++11
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    g++-9 -bundle -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk build/temp.macosx-10.14-x86_64-2.7/implicit/_nearest_neighbours.o -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/sqlite/lib -o build/lib.macosx-10.14-x86_64-2.7/implicit/_nearest_neighbours.so -Wl,-rpath,/usr/local/opt/gcc/lib/gcc/9/ -fopenmp -std=c++11
+    building 'implicit.bpr' extension
+    g++-9 -fno-strict-aliasing -fno-common -dynamic -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -Iimplicit -I/usr/local/include -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/sqlite/include -I/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c implicit/bpr.cpp -o build/temp.macosx-10.14-x86_64-2.7/implicit/bpr.o -Wno-unused-function -Wno-maybe-uninitialized -O3 -ffast-math -fopenmp -std=c++11
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    implicit/bpr.cpp:648:10: fatal error: numpy/arrayobject.h: No such file or directory
+      648 | #include "numpy/arrayobject.h"
+          |          ^~~~~~~~~~~~~~~~~~~~~
+    compilation terminated.
+    error: command 'g++-9' failed with exit status 1
+    ----------------------------------------[0m
+[31mERROR: Command errored out with exit status 1: /usr/local/opt/python@2/bin/python2.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/Users/travis/build/benfred/implicit/setup.py'"'"'; __file__='"'"'/Users/travis/build/benfred/implicit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps Check the logs for full command output.[0m
+
+[31;1mThe command "pip2 install -e ." failed. Retrying, 2 of 3.[0m
+
+[33mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Obtaining file:///Users/travis/build/benfred/implicit
+Requirement already satisfied: numpy in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (1.16.6)
+Requirement already satisfied: scipy>=0.16 in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (1.2.3)
+Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (4.45.0)
+Installing collected packages: implicit
+  Running setup.py develop for implicit
+[31m    ERROR: Command errored out with exit status 1:
+     command: /usr/local/opt/python@2/bin/python2.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/Users/travis/build/benfred/implicit/setup.py'"'"'; __file__='"'"'/Users/travis/build/benfred/implicit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps
+         cwd: /Users/travis/build/benfred/implicit/
+    Complete output (21 lines):
+    WARNING:root:The nvcc binary could not be located in your $PATH. Either add it to your path, or set $CUDAHOME to enable CUDA extensions
+    Failed to find CUDA toolkit. Building without GPU acceleration.
+    running develop
+    running egg_info
+    writing requirements to implicit.egg-info/requires.txt
+    writing implicit.egg-info/PKG-INFO
+    writing top-level names to implicit.egg-info/top_level.txt
+    writing dependency_links to implicit.egg-info/dependency_links.txt
+    reading manifest file 'implicit.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*' found under directory 'examples'
+    writing manifest file 'implicit.egg-info/SOURCES.txt'
+    running build_ext
+    building 'implicit.bpr' extension
+    g++-9 -fno-strict-aliasing -fno-common -dynamic -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -Iimplicit -I/usr/local/include -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/sqlite/include -I/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c implicit/bpr.cpp -o build/temp.macosx-10.14-x86_64-2.7/implicit/bpr.o -Wno-unused-function -Wno-maybe-uninitialized -O3 -ffast-math -fopenmp -std=c++11
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    implicit/bpr.cpp:648:10: fatal error: numpy/arrayobject.h: No such file or directory
+      648 | #include "numpy/arrayobject.h"
+          |          ^~~~~~~~~~~~~~~~~~~~~
+    compilation terminated.
+    error: command 'g++-9' failed with exit status 1
+    ----------------------------------------[0m
+[31mERROR: Command errored out with exit status 1: /usr/local/opt/python@2/bin/python2.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/Users/travis/build/benfred/implicit/setup.py'"'"'; __file__='"'"'/Users/travis/build/benfred/implicit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps Check the logs for full command output.[0m
+
+[31;1mThe command "pip2 install -e ." failed. Retrying, 3 of 3.[0m
+
+[33mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Obtaining file:///Users/travis/build/benfred/implicit
+Requirement already satisfied: numpy in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (1.16.6)
+Requirement already satisfied: scipy>=0.16 in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (1.2.3)
+Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python2.7/site-packages (from implicit==0.4.0) (4.45.0)
+Installing collected packages: implicit
+  Running setup.py develop for implicit
+[31m    ERROR: Command errored out with exit status 1:
+     command: /usr/local/opt/python@2/bin/python2.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/Users/travis/build/benfred/implicit/setup.py'"'"'; __file__='"'"'/Users/travis/build/benfred/implicit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps
+         cwd: /Users/travis/build/benfred/implicit/
+    Complete output (21 lines):
+    WARNING:root:The nvcc binary could not be located in your $PATH. Either add it to your path, or set $CUDAHOME to enable CUDA extensions
+    Failed to find CUDA toolkit. Building without GPU acceleration.
+    running develop
+    running egg_info
+    writing requirements to implicit.egg-info/requires.txt
+    writing implicit.egg-info/PKG-INFO
+    writing top-level names to implicit.egg-info/top_level.txt
+    writing dependency_links to implicit.egg-info/dependency_links.txt
+    reading manifest file 'implicit.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*' found under directory 'examples'
+    writing manifest file 'implicit.egg-info/SOURCES.txt'
+    running build_ext
+    building 'implicit.bpr' extension
+    g++-9 -fno-strict-aliasing -fno-common -dynamic -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -Iimplicit -I/usr/local/include -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/sqlite/include -I/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c implicit/bpr.cpp -o build/temp.macosx-10.14-x86_64-2.7/implicit/bpr.o -Wno-unused-function -Wno-maybe-uninitialized -O3 -ffast-math -fopenmp -std=c++11
+    cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+    implicit/bpr.cpp:648:10: fatal error: numpy/arrayobject.h: No such file or directory
+      648 | #include "numpy/arrayobject.h"
+          |          ^~~~~~~~~~~~~~~~~~~~~
+    compilation terminated.
+    error: command 'g++-9' failed with exit status 1
+    ----------------------------------------[0m
+[31mERROR: Command errored out with exit status 1: /usr/local/opt/python@2/bin/python2.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/Users/travis/build/benfred/implicit/setup.py'"'"'; __file__='"'"'/Users/travis/build/benfred/implicit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps Check the logs for full command output.[0m
+
+[31;1mThe command "pip2 install -e ." failed 3 times.[0m
+
+travis_time:end:01c018e0:start=1587132674889649000,finish=1587132783060271000,duration=108170622000,event=install[0K[31;1mThe command "travis_wait travis_retry $PIP uninstall numpy -y
+  travis_wait travis_retry $PIP install -r requirements.txt --ignore-installed flake8 isort cpplint faiss annoy
+  if  [ "${PYTHON:0:1}" = "3" ]; then
+     travis_wait travis_retry $PIP install nmslib
+  fi
+  travis_retry $PIP install -e .
+  " failed and exited with 1 during .[0m
+
+Your build has been stopped.

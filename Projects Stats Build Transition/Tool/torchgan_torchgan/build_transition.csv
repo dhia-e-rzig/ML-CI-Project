@@ -1,0 +1,9 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+750839754,fe86d7cf6cac9b6676aa43b56eabc6b4d583bbcf,ErroredToPassed,errored,111,https://github.com/torchgan/torchgan/compare/fc8b01a1b34d0f19c4860ff6dac2568d357fe069...fe86d7cf6cac9b6676aa43b56eabc6b4d583bbcf
+745064623,fe86d7cf6cac9b6676aa43b56eabc6b4d583bbcf,ErroredToPassed,passed,376,https://github.com/torchgan/torchgan/compare/fc8b01a1b34d0f19c4860ff6dac2568d357fe069...fe86d7cf6cac9b6676aa43b56eabc6b4d583bbcf
+688992900,2668b5a252b1bf40acd5b8356f4783448a8ddc7a,PassedToFailed,passed,635,https://github.com/torchgan/torchgan/compare/fb3db2ba4ec7...c51f8aee33f5
+683211273,c51f8aee33f51103db3dc58797c00cdcac974abd,PassedToFailed,failed,26,https://github.com/torchgan/torchgan/compare/fb3db2ba4ec7...c51f8aee33f5
+683196441,fb3db2ba4ec716145edc4718925e4f72aa827a49,FailedToPassed,failed,120,https://github.com/torchgan/torchgan/commit/42398ebebc86
+683167123,42398ebebc865e241fcff3075f4187079e66947d,FailedToPassed,passed,619,https://github.com/torchgan/torchgan/commit/42398ebebc86
+647654072,a4489679fa40b30500570af3a3f7ddd65f099e94,PassedToFailed,passed,639,https://github.com/torchgan/torchgan/pull/128
+647631800,1f4533830c74bf8af0fae26920b0ccbbcbf14742,PassedToFailed,failed,139,https://github.com/torchgan/torchgan/pull/128

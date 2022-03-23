@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+512403098,14edc9056edb6ba75e1d5ec2fc7b86b3f71e1b74,FailedToPassed,failed,436,https://github.com/lai-bluejay/diego/compare/171e4c0ddda0...2b7e42e2eaee
+511934519,2b7e42e2eaee18f9be84242c8068cef8bcef62a9,FailedToPassed,passed,411,https://github.com/lai-bluejay/diego/compare/171e4c0ddda0...2b7e42e2eaee
+510363986,8d0b33699e03e1142f6650a5e75aed693c7da99d,PassedToFailed,passed,316,https://github.com/lai-bluejay/diego/compare/39cf8dd05191...b8b858175714
+510360808,b8b858175714a963338c4af9e55393db5fe853ef,PassedToFailed,failed,312,https://github.com/lai-bluejay/diego/compare/39cf8dd05191...b8b858175714

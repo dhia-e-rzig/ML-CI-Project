@@ -1,0 +1,7 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+464447516,694cf17e19cc0c7d1da297a90d0d311d39599837,PassedToFailed,passed,50,https://github.com/jdestefani/ulb-infof305-1819/compare/f2a3bf103c96...3e18ac5f2f45
+464433266,3e18ac5f2f4560a0bbc3142286a23fa2dabf12f0,PassedToFailed,failed,60,https://github.com/jdestefani/ulb-infof305-1819/compare/f2a3bf103c96...3e18ac5f2f45
+464433266,3e18ac5f2f4560a0bbc3142286a23fa2dabf12f0,FailedToPassed,failed,60,https://github.com/jdestefani/ulb-infof305-1819/compare/72038806f4ce...f2a3bf103c96
+464363838,f2a3bf103c961e096cbc80a33110eff545b72c66,FailedToPassed,passed,33,https://github.com/jdestefani/ulb-infof305-1819/compare/72038806f4ce...f2a3bf103c96
+444706285,af2fd284d568f5129ed9a1e5bee7674f6b14d1f7,PassedToFailed,passed,39,https://github.com/jdestefani/ulb-infof305-1819/compare/be50e6169c22...5a63156cd4ad
+443887395,5a63156cd4adc54f7b23f2f09af95736f9ca211d,PassedToFailed,failed,44,https://github.com/jdestefani/ulb-infof305-1819/compare/be50e6169c22...5a63156cd4ad

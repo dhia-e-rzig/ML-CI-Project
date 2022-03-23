@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+208878582,b1d04757b79e123ccd0fead9c1e3146b0f361dab,FailedToPassed,failed,378,https://github.com/BIMSBbioinfo/maui/compare/b11134c3adb6...6646b4090086
+185050576,6646b4090086fc97579049593fb46e71a5bf8473,FailedToPassed,passed,440,https://github.com/BIMSBbioinfo/maui/compare/b11134c3adb6...6646b4090086
+177443423,454c18a05fea1caa91558632e764d749cbdac000,PassedToFailed,passed,371,https://github.com/BIMSBbioinfo/maui/compare/5ccb48166a40...c5204457907c
+177441964,c5204457907cae617b475a1163801df7754f3c2c,PassedToFailed,failed,382,https://github.com/BIMSBbioinfo/maui/compare/5ccb48166a40...c5204457907c
+177440528,5ccb48166a4052029e63f9eb1afdf70ce1ad8a0a,FailedToPassed,failed,71,https://github.com/BIMSBbioinfo/maui/compare/e5160c9c81d1...b429437012c2
+165214500,b429437012c21acf25a4d6ca0520009439ca5be6,FailedToPassed,passed,291,https://github.com/BIMSBbioinfo/maui/compare/e5160c9c81d1...b429437012c2
+157589424,296b5667b8bad7c9ee3c8240df99142c67adc27b,PassedToFailed,passed,250,https://github.com/BIMSBbioinfo/maui/compare/059052280f32...53231fca5502
+157527474,53231fca5502c0673ef571f1a880a4a5894ee1eb,PassedToFailed,failed,260,https://github.com/BIMSBbioinfo/maui/compare/059052280f32...53231fca5502
+157527474,53231fca5502c0673ef571f1a880a4a5894ee1eb,FailedToPassed,failed,260,https://github.com/BIMSBbioinfo/maui/compare/3db9c03d6a07...059052280f32
+139143470,059052280f322ae197b40b57ac730db6226246c6,FailedToPassed,passed,238,https://github.com/BIMSBbioinfo/maui/compare/3db9c03d6a07...059052280f32
+125076882,5d91055042281c242b6b72e92c22b2eeacfc033c,PassedToErrored,passed,232,https://github.com/BIMSBbioinfo/maui/compare/7cf711aeba9b...99328523f07e
+125076534,99328523f07e52f673fd24b4fcbc5df78a200cfb,PassedToErrored,errored,62,https://github.com/BIMSBbioinfo/maui/compare/7cf711aeba9b...99328523f07e
+107807299,9b14c7560a4fa88abac083a96b12fd425ec08bdc,ErroredToPassed,errored,60,https://github.com/BIMSBbioinfo/maui/compare/c88e6e2131b1...13f1c637722d
+99989481,13f1c637722d4b46a66fae506a1dd3d871edfc93,ErroredToPassed,passed,118,https://github.com/BIMSBbioinfo/maui/compare/c88e6e2131b1...13f1c637722d

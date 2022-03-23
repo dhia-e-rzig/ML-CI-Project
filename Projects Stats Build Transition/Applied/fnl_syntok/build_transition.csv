@@ -1,0 +1,3 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+455246311,21f3353a1a75d81a16d2e148e3d1393ce8f68b7a,PassedToFailed,passed,87,https://github.com/fnl/syntok/compare/62df5480908d...ef8ffcfc65e1
+455245225,ef8ffcfc65e11e18565dec2d79bfa8545d667912,PassedToFailed,failed,121,https://github.com/fnl/syntok/compare/62df5480908d...ef8ffcfc65e1

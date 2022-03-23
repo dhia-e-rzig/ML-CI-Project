@@ -1,0 +1,229 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: a5c08fba-b88f-486e-a035-38fe866365af@690360.lxd-arm64-07-org
+version: ? ?
+instance: travis-job-parlance-ctcdecode-723592518 03e95732d355bb6061689d41d23ad21c759bbde32a2ce0d53b0ee90b1424e2c5 (via amqp)
+startup: 7.929465387s
+travis_fold:end:worker_info[0Ksudo: unable to resolve host travis-job-parlance-ctcdecode-723592518
+travis_time:start:15d723c2[0Ktravis_time:end:15d723c2:start=1599081297874631389,finish=1599081298471469332,duration=596837943,event=no_world_writable_dirs[0Ktravis_time:start:0798df08[0Ktravis_time:end:0798df08:start=1599081298494005137,finish=1599081298503725467,duration=9720330,event=setup_filter[0Ktravis_time:start:14bc7c12[0Ktravis_time:end:14bc7c12:start=1599081298520097182,finish=1599081298566170132,duration=46072950,event=agent[0Ktravis_time:start:1c0843d9[0Ktravis_time:end:1c0843d9:start=1599081298581373008,finish=1599081298595115899,duration=13742891,event=check_unsupported[0Ktravis_time:start:24aa68b9[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 723592516
+Job id: 723592518
+Runtime kernel version: 5.3.0-42-generic
+travis-build version: 6807bf05
+[34m[1mBuild image provisioning date and time[0m
+Fri Jul 10 13:20:51 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mLinux Version[0m
+5.0.0-23-generic
+[34m[1mGit version[0m
+git version 2.7.4
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (aarch64-unknown-linux-gnu)
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mDocker version[0m
+Client:
+ Version:           18.09.7
+ API version:       1.39
+ Go version:        go1.10.4
+ Git commit:        2d0083d
+ Built:             Fri Aug 16 14:20:40 2019
+ OS/Arch:           linux/arm64
+ Experimental:      false
+[34m[1mLLVM version[0m
+clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.6.3
+ruby-2.6.5
+ruby-2.7.0
+[34m[1mPre-installed Node.js versions[0m
+v10.21.0
+v12.18.2
+v4.9.1
+v6.17.1
+v8.12.0
+v8.17.0
+[34m[1mmysql --version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (aarch64) using  EditLine wrapper
+[34m[1mPre-installed PostgreSQL versions[0m
+9.5.21
+[34m[1mRedis version[0m
+redis-server 5.0.6
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mCouchDB version[0m
+couchdb 1.6.0
+[34m[1mkiex list[0m
+
+kiex elixirs
+
+=* elixir-1.9.1
+
+# => - current
+# =* - current && default
+#  * - default
+
+[34m[1mphpenv versions[0m
+  7.2
+  7.2.31
+* 7.3 (set by /home/travis/.phpenv/version)
+  7.3.19
+  7.4
+  7.4.7
+[34m[1mcomposer --version[0m
+Composer version 1.10.8 2020-06-24 21:23:30
+travis_fold:end:system_info[0K
+travis_time:end:24aa68b9:start=1599081298614976730,finish=1599081298638466975,duration=23490245,event=show_system_info[0Ktravis_time:start:17942796[0Ktravis_time:end:17942796:start=1599081298658815802,finish=1599081298700068323,duration=41252521,event=rm_riak_source[0Ktravis_time:start:15520fd4[0Ktravis_time:end:15520fd4:start=1599081298714997953,finish=1599081298746900891,duration=31902938,event=fix_rwky_redis[0Ktravis_time:start:1e56d446[0Ktravis_time:end:1e56d446:start=1599081298769024000,finish=1599081299683119718,duration=914095718,event=wait_for_network[0Ktravis_time:start:32219d1a[0Ktravis_time:end:32219d1a:start=1599081299705545374,finish=1599081300528678806,duration=823133432,event=update_apt_keys[0Ktravis_time:start:13fccb56[0Ktravis_time:end:13fccb56:start=1599081300550891889,finish=1599081300792401879,duration=241509990,event=fix_hhvm_source[0Ktravis_time:start:0b1214df[0Ktravis_time:end:0b1214df:start=1599081300810053532,finish=1599081300873003717,duration=62950185,event=update_mongo_arch[0Ktravis_time:start:0ed3b4f0[0Ktravis_time:end:0ed3b4f0:start=1599081300891083715,finish=1599081301042826157,duration=151742442,event=fix_sudo_enabled_trusty[0Ktravis_time:start:00605991[0Ktravis_time:end:00605991:start=1599081301059420245,finish=1599081301068764779,duration=9344534,event=update_glibc[0Ktravis_time:start:0012db49[0Ktravis_time:end:0012db49:start=1599081301091161460,finish=1599081301151485846,duration=60324386,event=clean_up_path[0Ktravis_time:start:007c5f30[0Ktravis_time:end:007c5f30:start=1599081301169459420,finish=1599081301188705782,duration=19246362,event=fix_mvn_settings_xml[0Ktravis_time:start:0037ee0d[0Ktravis_time:end:0037ee0d:start=1599081301212177828,finish=1599081301287696890,duration=75519062,event=no_ipv6_localhost[0Ktravis_time:start:34635e78[0Ktravis_time:end:34635e78:start=1599081301311052162,finish=1599081301331493937,duration=20441775,event=fix_etc_mavenrc[0Ktravis_time:start:01d8971f[0Ktravis_time:end:01d8971f:start=1599081301350560951,finish=1599081301376062202,duration=25501251,event=fix_wwdr_certificate[0Ktravis_time:start:0578cf9d[0Ktravis_time:end:0578cf9d:start=1599081301391424102,finish=1599081301551756310,duration=160332208,event=put_localhost_first[0Ktravis_time:start:1879ffc8[0Ktravis_time:end:1879ffc8:start=1599081301582070864,finish=1599081301606357302,duration=24286438,event=home_paths[0Ktravis_time:start:09de72fc[0Ktravis_time:end:09de72fc:start=1599081301632155075,finish=1599081301703748375,duration=71593300,event=disable_initramfs[0Ktravis_time:start:2845df76[0Ktravis_time:end:2845df76:start=1599081301713380856,finish=1599081301797363010,duration=83982154,event=disable_ssh_roaming[0Ktravis_time:start:23580458[0Ktravis_time:end:23580458:start=1599081301814609842,finish=1599081301837655092,duration=23045250,event=debug_tools[0Ktravis_time:start:109c560c[0Ktravis_time:end:109c560c:start=1599081301853273039,finish=1599081301871374687,duration=18101648,event=uninstall_oclint[0Ktravis_time:start:0027464a[0Ktravis_time:end:0027464a:start=1599081301891817738,finish=1599081301914769163,duration=22951425,event=rvm_use[0Ktravis_time:start:1f74d3e7[0Ktravis_time:end:1f74d3e7:start=1599081301939698045,finish=1599081301979168134,duration=39470089,event=rm_etc_boto_cfg[0Ktravis_time:start:05b42544[0Ktravis_time:end:05b42544:start=1599081302000918947,finish=1599081302024671140,duration=23752193,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0145870c[0Ktravis_time:end:0145870c:start=1599081302045803058,finish=1599081302070312844,duration=24509786,event=enable_i386[0Ktravis_time:start:0467143a[0Ktravis_time:end:0467143a:start=1599081302085332372,finish=1599081302112848778,duration=27516406,event=update_rubygems[0Ktravis_time:start:01c18080[0Ktravis_time:end:01c18080:start=1599081302128103704,finish=1599081302154908617,duration=26804913,event=ensure_path_components[0Ktravis_time:start:173206b0[0Ktravis_time:end:173206b0:start=1599081302180596966,finish=1599081302193278192,duration=12681226,event=redefine_curl[0Ktravis_time:start:04cf212e[0Ktravis_time:end:04cf212e:start=1599081302213467395,finish=1599081302312836249,duration=99368854,event=nonblock_pipe[0Ktravis_time:start:129c52ae[0Ktravis_time:end:129c52ae:start=1599081302333196751,finish=1599081308503599653,duration=6170402902,event=apt_get_update[0Ktravis_time:start:32f18826[0Ktravis_time:end:32f18826:start=1599081308538255990,finish=1599081308550728768,duration=12472778,event=deprecate_xcode_64[0Ktravis_time:start:04e296a4[0Ktravis_time:end:04e296a4:start=1599081308570347726,finish=1599081308591556794,duration=21209068,event=update_heroku[0Ktravis_time:start:08c6aff8[0Ktravis_time:end:08c6aff8:start=1599081308602888433,finish=1599081308616693299,duration=13804866,event=shell_session_update[0Ktravis_time:start:343c6798[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:343c6798:start=1599081308635876436,finish=1599081310351712880,duration=1715836444,event=set_docker_mtu[0Ktravis_time:start:06487275[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:06487275:start=1599081310361532409,finish=1599081310679687352,duration=318154943,event=resolvconf[0Ktravis_time:start:09f7d310[0Ktravis_time:end:09f7d310:start=1599081310693420218,finish=1599081310702241957,duration=8821739,event=maven_central_mirror[0Ktravis_time:start:1b7fdca6[0Ktravis_time:end:1b7fdca6:start=1599081310727716983,finish=1599081310747742387,duration=20025404,event=maven_https[0K[33;1m3.7 is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/16.04/aarch64/python-3.7.tar.bz2[0m
+travis_time:start:239de54d[0K$ curl -sSf --retry 5 -o python-3.7.tar.bz2 ${archive_url}
+travis_time:end:239de54d:start=1599081311066863821,finish=1599081312606614136,duration=1539750315,event=configure[0Ktravis_time:start:1b69af2c[0K$ sudo tar xjf python-3.7.tar.bz2 --directory /
+travis_time:end:1b69af2c:start=1599081312638348226,finish=1599081333354595238,duration=20716247012,event=configure[0Ktravis_time:start:0a0c8bb2[0Ktravis_fold:start:services[0Ktravis_time:start:0a0a5000[0K$ sudo systemctl start docker
+travis_time:end:0a0a5000:start=1599081333444352288,finish=1599081333509056032,duration=64703744,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:0a0a5000:start=1599081333444352288,finish=1599081336546867631,duration=3102515343,event=services[0Ktravis_time:start:19b3cfa4[0Ktravis_time:end:19b3cfa4:start=1599081336568088524,finish=1599081336586508219,duration=18419695,event=fix_ps4[0Ktravis_time:start:0952ed53[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:1268ac52[0K$ git clone --depth=50 --branch=feature/buildwheel https://github.com/parlance/ctcdecode.git parlance/ctcdecode
+Cloning into 'parlance/ctcdecode'...
+travis_time:end:1268ac52:start=1599081336630250093,finish=1599081339590142531,duration=2959892438,event=checkout[0K$ cd parlance/ctcdecode
+$ git checkout -qf 8873bef2ac18346b917fa978bf5bb0b97aa29fec
+travis_fold:end:git.checkout[0K
+travis_fold:start:git.submodule[0Ktravis_time:start:0f37e3c0[0K$ git submodule update --init --recursive
+Submodule 'third_party/ThreadPool' (https://github.com/progschj/ThreadPool.git) registered for path 'third_party/ThreadPool'
+Submodule 'third_party/kenlm' (https://github.com/kpu/kenlm.git) registered for path 'third_party/kenlm'
+Cloning into 'third_party/ThreadPool'...
+Submodule path 'third_party/ThreadPool': checked out '9a42ec1329f259a5f4881a291db1dcb8f2ad9040'
+Cloning into 'third_party/kenlm'...
+Submodule path 'third_party/kenlm': checked out '35835f1ac4884126458ac89f9bf6dd9ccad561e0'
+travis_time:end:0f37e3c0:start=1599081339639712798,finish=1599081345651953562,duration=6012240764,event=checkout[0Ktravis_fold:end:git.submodule[0Ktravis_time:end:0f37e3c0:start=1599081339639712798,finish=1599081345672231689,duration=6032518891,event=checkout[0Ktravis_time:start:0f587211[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export TWINE_USERNAME=__token__
+$ export TWINE_PASSWORD=[secure]
+
+travis_time:end:0f587211:start=1599081345703313886,finish=1599081345738254446,duration=34940560,event=env[0Ktravis_time:start:0125693a[0K$ source ~/virtualenv/python3.7/bin/activate
+travis_time:end:0125693a:start=1599081345750958297,finish=1599081345782220767,duration=31262470,event=[0K$ python --version
+Python 3.7.5
+$ pip --version
+pip 19.3.1 from /home/travis/virtualenv/python3.7.5/lib/python3.7/site-packages/pip (python 3.7)
+travis_fold:start:install.1[0Ktravis_time:start:006e8795[0K$ pip install --upgrade cibuildwheel
+Collecting cibuildwheel
+  Downloading https://files.pythonhosted.org/packages/9b/e6/1e665df2897f3c69df5538df64be427d70bbe5e6fb1da14c76cab528edb4/cibuildwheel-1.5.5-py3-none-any.whl (1.5MB)
+Collecting toml
+  Downloading https://files.pythonhosted.org/packages/9f/e1/1b40b80f2e1663a6b9f497123c11d7d988c0919abbf3c3f2688e448c5363/toml-0.10.1-py2.py3-none-any.whl
+Collecting bashlex!=0.13
+  Downloading https://files.pythonhosted.org/packages/c1/0d/ff84a5cf5822b12d77ab08ab91b2b00550a7ca742aa9d31381b7c88deb0f/bashlex-0.15.tar.gz (60kB)
+Building wheels for collected packages: bashlex
+  Building wheel for bashlex (setup.py): started
+  Building wheel for bashlex (setup.py): finished with status 'done'
+  Created wheel for bashlex: filename=bashlex-0.15-cp37-none-any.whl size=62410 sha256=529ad968aa7e6e15002926ba42cb3220bae10edea962ab3845d72ff59f72b3c6
+  Stored in directory: /home/travis/.cache/pip/wheels/31/84/69/f9a34b7317bfb0f9ab4180e3e7c0d8866a4467b503ff76ec38
+Successfully built bashlex
+Installing collected packages: toml, bashlex, cibuildwheel
+Successfully installed bashlex-0.15 cibuildwheel-1.5.5 toml-0.10.1
+travis_time:end:006e8795:start=1599081346518413067,finish=1599081351381112652,duration=4862699585,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:05ff6e20[0K$ pip install -r requirements.txt
+Collecting torch
+  Downloading https://files.pythonhosted.org/packages/f8/02/880b468bd382dc79896eaecbeb8ce95e9c4b99a24902874a2cef0b562cea/torch-0.1.2.post2.tar.gz (128kB)
+Collecting pyyaml
+  Downloading https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz (269kB)
+Building wheels for collected packages: torch, pyyaml
+  Building wheel for torch (setup.py): started
+  Building wheel for torch (setup.py): finished with status 'error'
+  ERROR: Command errored out with exit status 1:
+   command: /home/travis/virtualenv/python3.7.5/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"'; __file__='"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-ibxj29fv --python-tag cp37
+       cwd: /tmp/pip-install-934eauuw/torch/
+  Complete output (30 lines):
+  running bdist_wheel
+  running build
+  running build_deps
+  Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+    File "/tmp/pip-install-934eauuw/torch/setup.py", line 265, in <module>
+      description="Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    File "/home/travis/virtualenv/python3.7.5/lib/python3.7/site-packages/setuptools/__init__.py", line 145, in setup
+      return distutils.core.setup(**attrs)
+    File "/opt/python/3.7.5/lib/python3.7/distutils/core.py", line 148, in setup
+      dist.run_commands()
+    File "/opt/python/3.7.5/lib/python3.7/distutils/dist.py", line 966, in run_commands
+      self.run_command(cmd)
+    File "/opt/python/3.7.5/lib/python3.7/distutils/dist.py", line 985, in run_command
+      cmd_obj.run()
+    File "/home/travis/virtualenv/python3.7.5/lib/python3.7/site-packages/wheel/bdist_wheel.py", line 192, in run
+      self.run_command('build')
+    File "/opt/python/3.7.5/lib/python3.7/distutils/cmd.py", line 313, in run_command
+      self.distribution.run_command(command)
+    File "/opt/python/3.7.5/lib/python3.7/distutils/dist.py", line 985, in run_command
+      cmd_obj.run()
+    File "/opt/python/3.7.5/lib/python3.7/distutils/command/build.py", line 135, in run
+      self.run_command(cmd_name)
+    File "/opt/python/3.7.5/lib/python3.7/distutils/cmd.py", line 313, in run_command
+      self.distribution.run_command(command)
+    File "/opt/python/3.7.5/lib/python3.7/distutils/dist.py", line 985, in run_command
+      cmd_obj.run()
+    File "/tmp/pip-install-934eauuw/torch/setup.py", line 51, in run
+      from tools.nnwrap import generate_wrappers as generate_nn_wrappers
+  ModuleNotFoundError: No module named 'tools.nnwrap'
+  ----------------------------------------
+  ERROR: Failed building wheel for torch
+  Running setup.py clean for torch
+  ERROR: Command errored out with exit status 1:
+   command: /home/travis/virtualenv/python3.7.5/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"'; __file__='"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' clean --all
+       cwd: /tmp/pip-install-934eauuw/torch
+  Complete output (2 lines):
+  running clean
+  error: [Errno 2] No such file or directory: '.gitignore'
+  ----------------------------------------
+  ERROR: Failed cleaning build dir for torch
+  Building wheel for pyyaml (setup.py): started
+  Building wheel for pyyaml (setup.py): finished with status 'done'
+  Created wheel for pyyaml: filename=PyYAML-5.3.1-cp37-cp37m-linux_aarch64.whl size=390803 sha256=10b3636a78bc8c762fad5b0b23161171cf7227877a80daa742008e23f3b5b7d7
+  Stored in directory: /home/travis/.cache/pip/wheels/a7/c1/ea/cf5bd31012e735dc1dfea3131a2d5eae7978b251083d6247bd
+Successfully built pyyaml
+Failed to build torch
+Installing collected packages: pyyaml, torch
+    Running setup.py install for torch: started
+    Running setup.py install for torch: finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: /home/travis/virtualenv/python3.7.5/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"'; __file__='"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-h4k0_9f7/install-record.txt --single-version-externally-managed --compile --install-headers /home/travis/virtualenv/python3.7.5/include/site/python3.7/torch
+         cwd: /tmp/pip-install-934eauuw/torch/
+    Complete output (23 lines):
+    running install
+    running build_deps
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-934eauuw/torch/setup.py", line 265, in <module>
+        description="Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      File "/home/travis/virtualenv/python3.7.5/lib/python3.7/site-packages/setuptools/__init__.py", line 145, in setup
+        return distutils.core.setup(**attrs)
+      File "/opt/python/3.7.5/lib/python3.7/distutils/core.py", line 148, in setup
+        dist.run_commands()
+      File "/opt/python/3.7.5/lib/python3.7/distutils/dist.py", line 966, in run_commands
+        self.run_command(cmd)
+      File "/opt/python/3.7.5/lib/python3.7/distutils/dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-install-934eauuw/torch/setup.py", line 99, in run
+        self.run_command('build_deps')
+      File "/opt/python/3.7.5/lib/python3.7/distutils/cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "/opt/python/3.7.5/lib/python3.7/distutils/dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-install-934eauuw/torch/setup.py", line 51, in run
+        from tools.nnwrap import generate_wrappers as generate_nn_wrappers
+    ModuleNotFoundError: No module named 'tools.nnwrap'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /home/travis/virtualenv/python3.7.5/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"'; __file__='"'"'/tmp/pip-install-934eauuw/torch/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-h4k0_9f7/install-record.txt --single-version-externally-managed --compile --install-headers /home/travis/virtualenv/python3.7.5/include/site/python3.7/torch Check the logs for full command output.
+travis_time:end:05ff6e20:start=1599081351394623521,finish=1599081380647895627,duration=29253272106,event=install[0K[31;1mThe command "pip install -r requirements.txt" failed and exited with 1 during .[0m
+
+Your build has been stopped.

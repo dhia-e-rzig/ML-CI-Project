@@ -1,0 +1,17 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+713977718,4647e25a701f168eccab4f4a77f06cda2412dae4,ErroredToPassed,errored,291,https://github.com/jerrygaoLondon/jgtextrank/compare/d12b3100b397f579bc46c1860ee127b99e0b93e6...4647e25a701f168eccab4f4a77f06cda2412dae4
+703902220,4647e25a701f168eccab4f4a77f06cda2412dae4,ErroredToPassed,passed,413,https://github.com/jerrygaoLondon/jgtextrank/compare/d12b3100b397f579bc46c1860ee127b99e0b93e6...4647e25a701f168eccab4f4a77f06cda2412dae4
+617277756,bffdfafdba17e9a068ea22b000b77205f3a01a3f,PassedToErrored,passed,434,https://github.com/jerrygaoLondon/jgtextrank/compare/252ba6fb2c25...370beeeacdc7
+617213044,370beeeacdc7366d31a85f474adb34cae741bc99,PassedToErrored,errored,275,https://github.com/jerrygaoLondon/jgtextrank/compare/252ba6fb2c25...370beeeacdc7
+617198199,252ba6fb2c25dc9d64756e7ba361ce96d58ebdb5,ErroredToPassed,errored,312,https://github.com/jerrygaoLondon/jgtextrank/compare/1424773b5f6d0633fc2bce1f8b4224d27b33940c...1dd05a9ab14cc22c80dff403275c715123f49672
+605984749,1dd05a9ab14cc22c80dff403275c715123f49672,ErroredToPassed,passed,507,https://github.com/jerrygaoLondon/jgtextrank/compare/1424773b5f6d0633fc2bce1f8b4224d27b33940c...1dd05a9ab14cc22c80dff403275c715123f49672
+418651994,bf74037f20197add0592b8217a9346948bb72fc2,PassedToErrored,passed,503,https://github.com/jerrygaoLondon/jgtextrank/compare/a7de184a373d...89346b3a8124
+415380196,89346b3a8124cabae5214ec8770651681012c6c9,PassedToErrored,errored,1392,https://github.com/jerrygaoLondon/jgtextrank/compare/a7de184a373d...89346b3a8124
+415380196,89346b3a8124cabae5214ec8770651681012c6c9,ErroredToPassed,errored,1392,https://github.com/jerrygaoLondon/jgtextrank/compare/1c4c73bf8f1d...a7de184a373d
+415369813,a7de184a373d5d9d84a043c1ac9fdc07ae1c04ca,ErroredToPassed,passed,480,https://github.com/jerrygaoLondon/jgtextrank/compare/1c4c73bf8f1d...a7de184a373d
+414086987,afade54ca566aff632f417cc1345bd36af7d0f1d,PassedToErrored,passed,491,https://github.com/jerrygaoLondon/jgtextrank/compare/301d38eabe76...2bbe1ff67b13
+414084448,2bbe1ff67b13f472e94e84ada7d8b8c530bd4c92,PassedToErrored,errored,239,https://github.com/jerrygaoLondon/jgtextrank/compare/301d38eabe76...2bbe1ff67b13
+414084448,2bbe1ff67b13f472e94e84ada7d8b8c530bd4c92,ErroredToPassed,errored,239,https://github.com/jerrygaoLondon/jgtextrank/compare/708e7831c84ef66e5724bd44326312c28ace3876...301d38eabe76a0c1bcd8a95110040f4163db2d5e
+410790389,301d38eabe76a0c1bcd8a95110040f4163db2d5e,ErroredToPassed,passed,388,https://github.com/jerrygaoLondon/jgtextrank/compare/708e7831c84ef66e5724bd44326312c28ace3876...301d38eabe76a0c1bcd8a95110040f4163db2d5e
+323811103,ee3806611e7d9e048774c657d688141a9e3c78a6,PassedToFailed,passed,454,https://github.com/jerrygaoLondon/jgtextrank/compare/16c2994d98d6...ba73c1d338cb
+323808153,ba73c1d338cb93059f057544f5868e9f25fe2381,PassedToFailed,failed,534,https://github.com/jerrygaoLondon/jgtextrank/compare/16c2994d98d6...ba73c1d338cb

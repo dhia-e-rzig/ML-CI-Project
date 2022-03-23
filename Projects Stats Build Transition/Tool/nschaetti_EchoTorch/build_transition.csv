@@ -1,0 +1,13 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+699849542,d3907dfbf1e93e58e2fb0de4e2cad7c5684eea40,FailedToPassed,failed,1291,https://github.com/nschaetti/EchoTorch/compare/cdbe2fd399c6...0c613d67a2c3
+699809503,0c613d67a2c3c854012c75b9a1908829d3aa1ad9,FailedToPassed,passed,1197,https://github.com/nschaetti/EchoTorch/compare/cdbe2fd399c6...0c613d67a2c3
+699809503,0c613d67a2c3c854012c75b9a1908829d3aa1ad9,PassedToFailed,passed,1197,https://github.com/nschaetti/EchoTorch/compare/da468ba7d1f4...cdbe2fd399c6
+699807118,cdbe2fd399c6ea51858f94b6b77df67ea1d49be6,PassedToFailed,failed,1194,https://github.com/nschaetti/EchoTorch/compare/da468ba7d1f4...cdbe2fd399c6
+699796370,3cd99ce9f08cdfbd9ffbdb1cb3d2815e85e6d1f4,FailedToPassed,failed,1205,https://github.com/nschaetti/EchoTorch/compare/c61ef4672fdb...e4b4b0ca1682
+699737335,e4b4b0ca16820089bdfdde0ab1a29109e7e15ec9,FailedToPassed,passed,1117,https://github.com/nschaetti/EchoTorch/compare/c61ef4672fdb...e4b4b0ca1682
+699705150,c61ef4672fdb974ce5fc5e46058441091e5b4b37,PassedToFailed,passed,1133,https://github.com/nschaetti/EchoTorch/compare/3dcd329e346f...b645b25d9ea6
+699700829,b645b25d9ea69b4f45c5f23e6f82cff7000ffcaf,PassedToFailed,failed,1137,https://github.com/nschaetti/EchoTorch/compare/3dcd329e346f...b645b25d9ea6
+604450230,e328854280619295a9dc5619aa637baf8a2b6106,FailedToPassed,failed,676,https://github.com/nschaetti/EchoTorch/compare/8ba78b67bc9c...8a036ea07cd2
+604380532,8a036ea07cd289e3f18ed70069baafd1be855ab9,FailedToPassed,passed,666,https://github.com/nschaetti/EchoTorch/compare/8ba78b67bc9c...8a036ea07cd2
+604376061,f1848aae06e63a0de1c437a4257ea0749cd9976e,PassedToFailed,passed,660,https://github.com/nschaetti/EchoTorch/compare/540c52172418...33d7dd6552b9
+604371818,33d7dd6552b9e97df296809da6322a8ea04c22e9,PassedToFailed,failed,678,https://github.com/nschaetti/EchoTorch/compare/540c52172418...33d7dd6552b9

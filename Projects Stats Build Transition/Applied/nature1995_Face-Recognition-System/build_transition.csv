@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+147444279,cab48c6ce853edaa3e5d15d630525c568d613c65,PassedToErrored,passed,229,https://github.com/nature1995/Face-Recognition-System/compare/ce4d67792722...517ec1c5a298
+147442809,517ec1c5a298e2a6c87876861c1d92cadc20e02e,PassedToErrored,errored,161,https://github.com/nature1995/Face-Recognition-System/compare/ce4d67792722...517ec1c5a298
+137900895,ce4d67792722e9892bca454b82056ea7905dabdd,ErroredToPassed,errored,174,https://github.com/nature1995/Face-Recognition-System/compare/a92eb232a8db76c464acf675574ad4aeeebf0e1d...e2a94d6fbe2c87af00972babdbd64e1524c88863
+137900487,e2a94d6fbe2c87af00972babdbd64e1524c88863,ErroredToPassed,passed,200,https://github.com/nature1995/Face-Recognition-System/compare/a92eb232a8db76c464acf675574ad4aeeebf0e1d...e2a94d6fbe2c87af00972babdbd64e1524c88863

@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+408396594,8a02a78a4e1fb90deed1352683d278297ce34371,PassedToFailed,passed,111,https://github.com/CyberZHG/wiki-dump-reader/compare/2eabb3cd6b68...c1d5b6c9b48c
+408392889,c1d5b6c9b48c4f6ac84f3ff440a95702e877ca7f,PassedToFailed,failed,141,https://github.com/CyberZHG/wiki-dump-reader/compare/2eabb3cd6b68...c1d5b6c9b48c
+408392889,c1d5b6c9b48c4f6ac84f3ff440a95702e877ca7f,FailedToPassed,failed,141,https://github.com/CyberZHG/wiki-dump-reader/compare/1c0b5c819ffa...2eabb3cd6b68
+408381228,2eabb3cd6b68507e8f5f0e061fb8badb45e00dd0,FailedToPassed,passed,187,https://github.com/CyberZHG/wiki-dump-reader/compare/1c0b5c819ffa...2eabb3cd6b68
+408310645,a557b3679212b28b7cb675f59ede5e89b2adb37d,PassedToErrored,passed,496,https://github.com/CyberZHG/wiki-dump-reader/compare/37c33cbe43f4...0fdd6bb9f7dc
+408007118,0fdd6bb9f7dcbf82fbe79ded2bec6c6df07e2c0c,PassedToErrored,errored,857,https://github.com/CyberZHG/wiki-dump-reader/compare/37c33cbe43f4...0fdd6bb9f7dc
+408007118,0fdd6bb9f7dcbf82fbe79ded2bec6c6df07e2c0c,ErroredToPassed,errored,857,https://github.com/CyberZHG/wiki-dump-reader/compare/5745caeb01a2...37c33cbe43f4
+408001917,37c33cbe43f4863c995a2fd4b48eb079f517b4d2,ErroredToPassed,passed,190,https://github.com/CyberZHG/wiki-dump-reader/compare/5745caeb01a2...37c33cbe43f4
+408001917,37c33cbe43f4863c995a2fd4b48eb079f517b4d2,PassedToFailed,passed,190,https://github.com/CyberZHG/wiki-dump-reader/compare/6e7d570ef72e...5745caeb01a2
+408000307,5745caeb01a2c22bbd2362cc89ea33a76c37a294,PassedToFailed,failed,246,https://github.com/CyberZHG/wiki-dump-reader/compare/6e7d570ef72e...5745caeb01a2
+408000307,5745caeb01a2c22bbd2362cc89ea33a76c37a294,FailedToPassed,failed,246,https://github.com/CyberZHG/wiki-dump-reader/compare/414ef79ec85c...6e7d570ef72e
+407998120,6e7d570ef72e240a4122f1cf0447c60c9178203e,FailedToPassed,passed,102,https://github.com/CyberZHG/wiki-dump-reader/compare/414ef79ec85c...6e7d570ef72e
+407973744,897d524a0897253220a62d92077e283099858124,PassedToErrored,passed,123,https://github.com/CyberZHG/wiki-dump-reader/compare/adb0f49a0638...694e9dde7260
+407969616,694e9dde726003d235a3410c7a31ae5559f66441,PassedToErrored,errored,123,https://github.com/CyberZHG/wiki-dump-reader/compare/adb0f49a0638...694e9dde7260

@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+727082219,acf8fd09ae2cf160682268842338869e8a11c7cf,PassedToErrored,passed,5027,https://github.com/oseiskar/autosubsync/compare/7d5ee76f4b4e...03b51ba6efbe
+727079564,03b51ba6efbe9df8b1a08384d162205e3e0b7b09,PassedToErrored,errored,4923,https://github.com/oseiskar/autosubsync/compare/7d5ee76f4b4e...03b51ba6efbe
+727079564,03b51ba6efbe9df8b1a08384d162205e3e0b7b09,ErroredToPassed,errored,4923,https://github.com/oseiskar/autosubsync/pull/9
+726951360,ad2e2e5a3a1c136142919edb0dc5a101833fe488,ErroredToPassed,passed,2656,https://github.com/oseiskar/autosubsync/pull/9
+504812683,cf4aab8756787597fa87147690ab14cda2a96852,PassedToErrored,passed,1921,https://github.com/oseiskar/autosubsync/pull/4
+504805231,356039ff5ddb7119af94fa7d6cd7364fa89d41f2,PassedToErrored,errored,634,https://github.com/oseiskar/autosubsync/pull/4
+504805231,356039ff5ddb7119af94fa7d6cd7364fa89d41f2,ErroredToPassed,errored,634,https://github.com/oseiskar/autosubsync/commit/21fae693a87b
+504804487,21fae693a87b31894d4e332573b8153d115e1e64,ErroredToPassed,passed,1879,https://github.com/oseiskar/autosubsync/commit/21fae693a87b
+444348052,ffabcb11c3ec642bef7879edefb740e155ee9037,PassedToFailed,passed,862,https://github.com/oseiskar/autosubsync/compare/562b0b10b473...d11a6db9d9f6
+444346052,d11a6db9d9f664600d2cae6e3ac77c234bfb7b37,PassedToFailed,failed,147,https://github.com/oseiskar/autosubsync/compare/562b0b10b473...d11a6db9d9f6
+444346052,d11a6db9d9f664600d2cae6e3ac77c234bfb7b37,FailedToPassed,failed,147,https://github.com/oseiskar/autosubsync/pull/2
+444345837,0a1aa3196cab177d752d841ef56ae8f14def7b7b,FailedToPassed,passed,885,https://github.com/oseiskar/autosubsync/pull/2
+444345825,9dc3be523da6bf5c4dd82c5282ed5a0e76251e8d,PassedToFailed,passed,893,https://github.com/oseiskar/autosubsync/pull/2
+444342752,c0db026e7929e68bf83268d770a4ad202a45daf3,PassedToFailed,failed,776,https://github.com/oseiskar/autosubsync/pull/2

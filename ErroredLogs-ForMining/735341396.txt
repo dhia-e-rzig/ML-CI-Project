@@ -1,0 +1,4617 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 8fcf9cb7-9963-412c-b122-32cd2a23c76c@1.worker-org-67c595df7c-mssf5.macstadium-prod-2
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: 4c2db9e2-0f31-4c89-ace0-3543f77fba48 travis-ci-macos10.14.6-xcode11.2.1-1585785973 (via amqp)
+startup: 1m13.125856127s
+travis_fold:end:worker_info[0Ktravis_time:start:0499a5cf[0Ktravis_time:end:0499a5cf:start=1602587251488531000,finish=1602587251864003000,duration=375472000,event=no_world_writable_dirs[0Ktravis_time:start:0f04f9c0[0Ktravis_time:end:0f04f9c0:start=1602587251871821000,finish=1602587251888570000,duration=16749000,event=setup_filter[0Ktravis_time:start:1ebef7a0[0Ktravis_time:end:1ebef7a0:start=1602587251897645000,finish=1602587251903674000,duration=6029000,event=check_unsupported[0Ktravis_time:start:0365b5c1[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: shell
+Build id: 735341389
+Job id: 735341396
+Runtime kernel version: 18.7.0
+travis-build version: 65e55fb9
+[34m[1mBuild image provisioning date and time[0m
+Thu Apr  2 02:31:55 GMT 2020
+[34m[1mOperating System Details[0m
+ProductName:	Mac OS X
+ProductVersion:	10.14.6
+BuildVersion:	18G3020
+[34m[1mGit version[0m
+git version 2.26.0
+[34m[1mbash version[0m
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
+Copyright (C) 2007 Free Software Foundation, Inc.
+[34m[1mGCC version[0m
+Apple clang version 11.0.0 (clang-1100.0.33.12)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mLLVM version[0m
+Apple clang version 11.0.0 (clang-1100.0.33.12)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.6.5
+[34m[1mPre-installed Node.js versions[0m
+v10.18.1
+v10.19.0
+v12.14.1
+v12.16.1
+v13.6.0
+v4.9.1
+v6.17.1
+v8.17.0
+[34m[1mmvn -version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /usr/local/Cellar/maven/3.6.3_1/libexec
+Java version: 13.0.2, vendor: N/A, runtime: /usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.14.6", arch: "x86_64", family: "mac"
+travis_fold:end:system_info[0K
+travis_time:end:0365b5c1:start=1602587251910816000,finish=1602587251928591000,duration=17775000,event=show_system_info[0Ktravis_time:start:0656401b[0Ktravis_time:end:0656401b:start=1602587251935678000,finish=1602587251941942000,duration=6264000,event=rm_riak_source[0Ktravis_time:start:0d016e1a[0Ktravis_time:end:0d016e1a:start=1602587251950117000,finish=1602587251956576000,duration=6459000,event=fix_rwky_redis[0Ktravis_time:start:12afce7e[0Ktravis_time:end:12afce7e:start=1602587251963720000,finish=1602587252435770000,duration=472050000,event=wait_for_network[0Ktravis_time:start:0745dcea[0Ktravis_time:end:0745dcea:start=1602587252445988000,finish=1602587252452011000,duration=6023000,event=update_apt_keys[0Ktravis_time:start:078d7124[0Ktravis_time:end:078d7124:start=1602587252460267000,finish=1602587252467422000,duration=7155000,event=fix_hhvm_source[0Ktravis_time:start:12767d45[0Ktravis_time:end:12767d45:start=1602587252476108000,finish=1602587252483187000,duration=7079000,event=update_mongo_arch[0Ktravis_time:start:0018e778[0Ktravis_time:end:0018e778:start=1602587252491675000,finish=1602587252501807000,duration=10132000,event=fix_sudo_enabled_trusty[0Ktravis_time:start:030be66c[0Ktravis_time:end:030be66c:start=1602587252510188000,finish=1602587252516927000,duration=6739000,event=update_glibc[0Ktravis_time:start:2bf7860e[0Ktravis_time:end:2bf7860e:start=1602587252525367000,finish=1602587252587670000,duration=62303000,event=clean_up_path[0Ktravis_time:start:115750d8[0Ktravis_time:end:115750d8:start=1602587252595818000,finish=1602587252630968000,duration=35150000,event=fix_resolv_conf[0Ktravis_time:start:1bfeca1d[0Ktravis_time:end:1bfeca1d:start=1602587252640325000,finish=1602587252677416000,duration=37091000,event=fix_etc_hosts[0Ktravis_time:start:28fcc854[0Ktravis_time:end:28fcc854:start=1602587252686013000,finish=1602587252692503000,duration=6490000,event=fix_mvn_settings_xml[0Ktravis_time:start:098f141a[0Ktravis_time:end:098f141a:start=1602587252700391000,finish=1602587252738600000,duration=38209000,event=no_ipv6_localhost[0Ktravis_time:start:0008f3c8[0Ktravis_time:end:0008f3c8:start=1602587252748686000,finish=1602587252755702000,duration=7016000,event=fix_etc_mavenrc[0Ktravis_time:start:190bf7e4[0Ktravis_time:end:190bf7e4:start=1602587252764072000,finish=1602587253079070000,duration=314998000,event=fix_wwdr_certificate[0Ktravis_time:start:07562e16[0Ktravis_time:end:07562e16:start=1602587253087633000,finish=1602587253229886000,duration=142253000,event=put_localhost_first[0Ktravis_time:start:1d551dfc[0Ktravis_time:end:1d551dfc:start=1602587253243293000,finish=1602587253250774000,duration=7481000,event=home_paths[0Ktravis_time:start:030ce862[0Ktravis_time:end:030ce862:start=1602587253258797000,finish=1602587253271938000,duration=13141000,event=disable_initramfs[0Ktravis_time:start:0895449a[0Ktravis_time:end:0895449a:start=1602587253280100000,finish=1602587253303936000,duration=23836000,event=disable_ssh_roaming[0Ktravis_time:start:1073c460[0Ktravis_time:end:1073c460:start=1602587253312721000,finish=1602587253318856000,duration=6135000,event=debug_tools[0Ktravis_time:start:16862600[0K
+travis_time:end:16862600:start=1602587253327147000,finish=1602587256145503000,duration=2818356000,event=uninstall_oclint[0Ktravis_time:start:11ce0ad3[0Ktravis_time:end:11ce0ad3:start=1602587256156015000,finish=1602587257171328000,duration=1015313000,event=rvm_use[0Ktravis_time:start:08f15a33[0Ktravis_time:end:08f15a33:start=1602587257180637000,finish=1602587257214016000,duration=33379000,event=rm_etc_boto_cfg[0Ktravis_time:start:05e40335[0Ktravis_time:end:05e40335:start=1602587257222758000,finish=1602587257230724000,duration=7966000,event=rm_oraclejdk8_symlink[0Ktravis_time:start:15462354[0Ktravis_time:end:15462354:start=1602587257239577000,finish=1602587257252583000,duration=13006000,event=enable_i386[0Ktravis_time:start:01882b42[0Ktravis_time:end:01882b42:start=1602587257261595000,finish=1602587257272584000,duration=10989000,event=update_rubygems[0Ktravis_time:start:04971ba6[0Ktravis_time:end:04971ba6:start=1602587257281849000,finish=1602587257295500000,duration=13651000,event=ensure_path_components[0Ktravis_time:start:0ab69d4d[0Ktravis_time:end:0ab69d4d:start=1602587257304426000,finish=1602587257311458000,duration=7032000,event=redefine_curl[0Ktravis_time:start:0ccac140[0Ktravis_time:end:0ccac140:start=1602587257320330000,finish=1602587257449410000,duration=129080000,event=nonblock_pipe[0Ktravis_time:start:186fae45[0Ktravis_time:end:186fae45:start=1602587257459192000,finish=1602587257466850000,duration=7658000,event=apt_get_update[0Ktravis_time:start:00421422[0Ktravis_time:end:00421422:start=1602587257475988000,finish=1602587257483063000,duration=7075000,event=deprecate_xcode_64[0Ktravis_time:start:03300a90[0Ktravis_time:end:03300a90:start=1602587257491747000,finish=1602587257501607000,duration=9860000,event=update_heroku[0Ktravis_time:start:07bde9d4[0Ktravis_time:end:07bde9d4:start=1602587257509877000,finish=1602587257516758000,duration=6881000,event=shell_session_update[0Ktravis_time:start:0fd81a52[0Ktravis_time:end:0fd81a52:start=1602587257525470000,finish=1602587257532329000,duration=6859000,event=maven_central_mirror[0Ktravis_time:start:12413138[0Ktravis_time:end:12413138:start=1602587257540874000,finish=1602587257547174000,duration=6300000,event=maven_https[0Ktravis_time:start:1e55d209[0Ktravis_time:end:1e55d209:start=1602587257556963000,finish=1602587257563495000,duration=6532000,event=fix_ps4[0Ktravis_time:start:0421bee8[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:2c8ef2f6[0K$ git clone --depth=50 --branch=devel https://github.com/tasoc/starclass.git tasoc/starclass
+Cloning into 'tasoc/starclass'...
+travis_time:end:2c8ef2f6:start=1602587257580641000,finish=1602587258349632000,duration=768991000,event=checkout[0K$ cd tasoc/starclass
+$ git checkout -qf 47ec36287aec260fbfcf4fd89df415931ff37cc0
+travis_fold:end:git.checkout[0K
+travis_time:end:2c8ef2f6:start=1602587257580641000,finish=1602587258423876000,duration=843235000,event=checkout[0Ktravis_time:start:1fbe486c[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export GITHUB_TOKEN=[secure]
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export PYTHON="python"
+$ export PIP="pip"
+$ export PYTHON="python3"
+$ export PIP="sudo pip3"
+
+travis_time:end:1fbe486c:start=1602587258432716000,finish=1602587258452555000,duration=19839000,event=env[0K$ bash -c 'echo $BASH_VERSION'
+3.2.57(1)-release
+
+travis_fold:start:before_install.1[0Ktravis_time:start:085253a0[0K$ brew install git-lfs
+Updating Homebrew...
+[KSuccessfully rebased and updated refs/heads/master.
+[KSuccessfully rebased and updated refs/heads/master.
+[KSuccessfully rebased and updated refs/heads/master.
+[KSuccessfully rebased and updated refs/heads/master.
+==> Downloading https://homebrew.bintray.com/bottles-portable-ruby/portable-ruby-2.6.3_2.yosemite.bottle.tar.gz
+                                                                           0.2%###########################                                               38.3%######################################################################## 100.0%
+==> Pouring portable-ruby-2.6.3_2.yosemite.bottle.tar.gz
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Auto-updated Homebrew!
+Updated 4 taps (homebrew/core, homebrew/cask, homebrew/bundle and homebrew/services).
+==> New Formulae
+acl2
+act
+airshare
+alsa-lib
+amp
+apidoc
+arb
+argo
+argocd
+arrayfire
+asimov
+asroute
+asuka
+athenacli
+austin
+autodiff
+awsweeper
+bcoin
+beancount
+blogc
+bombadillo
+bond
+bootloadhid
+borgbackup
+box2d
+buildozer
+c7n
+cadence
+carton
+cassowary
+castget
+cbc
+cbmc
+cddlib
+cdktf
+cdo
+cgl
+chalk-cli
+charge
+chart-testing
+chezmoi
+choose-rust
+chrony
+clair
+clang-format@8
+claws-mail
+cli11
+clip
+cloud-nuke
+cloudformation-cli
+cloudformation-guard
+coconut
+code-server
+colfer
+commitizen
+copilot
+coredns
+cortex
+cpio
+cpm
+cpr
+cqlkit
+croaring
+croc
+cubejs-cli
+cucumber-ruby
+datasette
+dbdeployer
+detach
+dgraph
+diskonaut
+dmagnetic
+dnsprobe
+doctest
+dolt
+dosbox-staging
+duckdb
+duckscript
+duktape
+earthly
+eksctl
+eleventy
+emacs-dracula
+empty
+envoy
+erlang@22
+eva
+fargatecli
+fava
+fblog
+fcct
+fennel
+fetch
+field3d
+flamegraph
+flank
+flarectl
+flash
+fleet-cli
+flit
+folderify
+font-util
+fpdns
+fplll
+functionalplus
+gateway-go
+gau
+gcc@9
+gdbgui
+geph2
+ghc@8.8
+ghz
+ghz-web
+git-bug
+git-hooks-go
+git-hound
+git-remote-codecommit
+gitql
+gitui
+gluon
+gmailctl
+go-jsonnet
+go@1.14
+gocloc
+gofish
+golangci-lint
+gostatic
+gradle-profiler
+graphql-cli
+gravity
+grpcui
+guile@2
+gulp-cli
+halide
+hashlink
+hasura-cli
+hcxtools
+hdf5-mpi
+heksa
+httpx
+hy
+i686-elf-binutils
+i686-elf-gcc
+idris2
+immudb
+infracost
+inja
+inko
+inxi
+ioctl
+jc
+jerryscript
+jimtcl
+jinx
+jobber
+jolie
+jsonnet-bundler
+k9s
+kamel
+kde-extra-cmake-modules
+kde-karchive
+kde-kdoctools
+kde-ki18n
+kde-threadweaver
+kona
+kondo
+ksync
+kubie
+kumactl
+ladspa-sdk
+lanraragi
+latexindent
+lc0
+ldpl
+leaf
+leakcanary-shark
+libaio
+libcouchbase@2
+libcpuid
+libdmx
+libfontenc
+libfs
+libgccjit
+libgnt
+libhandy
+libice
+libirecovery
+libmnl
+libnetfilter-queue
+libnetworkit
+libnfnetlink
+libolm
+liboqs
+libpciaccess
+libpqxx@6
+libpthread-stubs
+libseccomp
+libsm
+libtorrent-rakshasa
+libx11
+libxau
+libxaw
+libxaw3d
+libxcb
+libxcomposite
+libxcursor
+libxdamage
+libxdmcp
+libxext
+libxfixes
+libxfont
+libxft
+libxi
+libxinerama
+libxkbfile
+libxmu
+libxpm
+libxrandr
+libxrender
+libxres
+libxscrnsaver
+libxshmfence
+libxt
+libxtst
+libxv
+libxvmc
+libxxf86dga
+libxxf86vm
+litecli
+lizard-analyzer
+localstack
+logcli
+loki
+lunchy
+lunchy-go
+macos-trash
+mandown
+mariadb@10.4
+marked
+mask
+matplotplusplus
+mhonarc
+microplane
+minipro
+naabu
+nanorc
+nest
+networkit
+never
+nfpm
+ngs
+notmuch-mutt
+numcpp
+oci-cli
+odin
+oha
+omake
+openfast
+openfst
+openstackclient
+oq
+ormolu
+ory-hydra
+osi
+osm
+packetbeat
+packr
+pandoc-include-code
+pandocomatic
+parallel-hashmap
+pass-git-helper
+periscope
+pfetch
+pipgrip
+po4a
+podman
+prometheus-cpp
+promtail
+protoc-gen-go-grpc
+protoc-gen-gogo
+protoc-gen-gogofaster
+pwncat
+python@3.7
+python@3.9
+qrcp
+quill
+rbtools
+rcm
+redo
+reg
+reorder-python-imports
+rgf
+rqlite
+rtorrent
+rust-analyzer
+rustscan
+s2n
+saltwater
+scw@1
+sdns
+semgrep
+server-go
+shallow-backup
+sheldon
+shtools
+silicon
+simdjson
+skylighting
+sleef
+smlpkg
+snap
+so
+solidity
+sollya
+sonic
+sponge
+spotify-tui
+spotifyd
+sqlite-utils
+standardese
+staticcheck
+structurizr-cli
+subfinder
+tanka
+tengo
+termcolor
+terraform-ls
+terraform@0.12
+terrascan
+tfsec
+thanos
+toot
+torchvision
+trailscraper
+tre-command
+trimage
+trunk
+ugrep
+unum
+uptoc
+usb.ids
+util-macros
+uutils-coreutils
+vapor
+vcpkg
+vgrep
+vivid
+vlang
+vlmcsd
+volk
+volta
+vsearch
+vtk@8.2
+wasm-pack
+webify
+wgcf
+wolfmqtt
+wownero
+wren
+wren-cli
+x86_64-elf-gdb
+xcb-proto
+xdpyinfo
+xorgproto
+xtrans
+xxh
+yj
+z.lua
+zenith
+zoxide
+==> Updated Formulae
+Updated 4592 formulae.
+==> Renamed Formulae
+elasticsearch@6.8 -> elasticsearch@6
+gst-validate -> gst-devtools
+interactive-rebase-tool -> git-interactive-rebase-tool
+jfrog-cli-go -> jfrog-cli
+kibana@6.8 -> kibana@6
+mkl-dnn -> onednn
+==> Deleted Formulae
+baidupcs-go
+biogeme
+cargo-completion
+compcert
+crc
+cryptopp
+deis
+deisctl
+elasticsearch@2.4
+elasticsearch@5.6
+gnome-builder
+highlighting-kate
+i386-elf-grub
+kibana@5.6
+lumo
+marathon-swift
+open-cobol
+pijul
+python
+residualvm
+sflowtool
+tomee-jax-rs
+unravel
+urbit
+wpscan
+xu4
+==> New Casks
+8bitdo-ultimate-software
+8x8-meet
+accurics
+ajour
+aleph-one
+all-in-one-messenger
+alloy
+amd-power-gadget
+anka-build-cloud-registry
+anka-virtualization
+anzeigenchef
+apparency
+aws-vpn-client
+babeledit
+batteries
+beekeeper-studio
+bingpaper
+blizz
+bluejeans
+bluetility
+blurred
+boop
+boost-note
+bootstrap-studio
+box-notes
+box-tools
+breaktimer
+bricklink-partdesigner
+camo-studio
+cernbox
+chef-workstation
+chirp
+cisco-jabber
+clash-for-windows
+clashxr
+classicftp
+cleanshot
+cljstyle
+cloudflare-warp
+coconutid
+codespace
+colorchecker-camera-calibration
+convert3dgui
+copytranslator
+countdown
+craft
+cryo
+customshortcuts
+daedalus-mainnet
+dangerzone
+deadbolt
+devolo-cockpit
+ditto
+dmenu-mac
+dropbox-passwords
+dteoh-devdocs
+duoshao
+dynobase
+edenmath
+edfbrowser
+element
+eme
+empoche
+energia
+eudic-es
+fastclicker
+fellow
+filemaker-pro
+fing-cli
+firestormos
+fireworks
+flutter
+flying-carpet
+fme
+freetube
+g-desktop-suite
+gdlauncher
+gearboy
+gearsystem
+geneious-prime
+gitfiend
+gitpigeon
+glance
+goldendict
+google-analytics-opt-out
+gotomeeting
+grid-clock
+hancock
+hermit-crab
+hessenbox-da
+hey
+home-assistant
+hookshot
+hoststool
+icollections
+infoflow
+insomnia-designer
+intune-company-portal
+ipremoteutility
+iriunwebcam
+jabt-flow
+jamulus
+jellyfin
+jetbrains-space
+joshjon-nocturnal
+kdiff3
+keysmith
+klogg
+koodo-reader
+kryoflux
+ksnip
+kui
+leela
+librepcb
+linear-linear
+loaf
+locklizard-safeguard-viewer
+loni-pipeline
+macintoshjs
+macjournal
+marathon-infinity
+marathon2
+mcreator
+mdimagesizemdimporter
+medibangpaintpro
+meetingbar
+messenger-unofficial
+mic-drop
+microsoft-auto-update
+middle
+miro
+mit-app-inventor
+molsoftbrowser
+moose
+mplab-xc16
+mplab-xc32
+mplab-xc8
+mplabx-ide
+mqttx
+mtgaprotracker
+multi
+mumu
+nautilus
+naver-whale
+netdownloadhelpercoapp
+network-radar
+nifty
+niftyman
+nocturn
+nomachine-enterprise-client
+noraswitch
+nordvpn-teams
+noto
+nova
+ntfstool
+objektiv
+obs-virtualcam
+obsidian
+openphone
+orca
+osquery
+paletro
+pb
+pcoipclient
+pdf-over
+phd2
+piskel
+plecs-standalone
+pokemon-reborn
+pppc-utility
+privatevpn
+pro-fit
+project-slippi-dolphin
+publii
+purei-play
+pycharm-ce-with-anaconda-plugin
+pycharm-with-anaconda-plugin
+qtum
+qtvlm
+querypie
+quickkeyextension
+quickwords
+qv2ray
+raiderio
+raven-reader
+rcse
+recaf
+redeclipse
+redisinsight
+removebg
+repoz
+residualvm
+responsively
+ringcentral-classic
+ringcentral-phone
+ripme
+river-sparkle
+rolisteam
+rotki
+screenfocus
+secretive
+sequel-ace
+sessionrestore
+shutter-encoder
+sigdigger
+sigviewer
+silnite
+sim-genie
+sipgate-softphone
+slimhud
+spires
+splayer
+ssh-config-editor
+stack-stack
+stageplotpro
+stats
+strawberry
+strawberry-wallpaper
+streamlabs-obs
+strongvpn
+subsync
+sunloginclient
+surfshark
+syncroom
+syntax-highlight
+tap-forms
+techsmith-capture
+tenable-nessus-agent
+tencent-meeting
+thor
+thorium
+tigerjython
+timche-gmail-desktop
+time-to-leave
+timelane
+tinkerwell
+tip
+toggl-track
+toinane-colorpicker
+toolreleases
+transcribe
+transnomino
+twilioquest
+uberconference
+unclutter
+unnaturalscrollwheels
+usenapp
+vallum
+vb-cable
+via
+vipriser
+voov-meeting
+vrew
+warzone-2100
+waterfox-classic
+weakauras-companion
+webots
+winclone
+windocd
+wondershare-uniconverter
+workspaces
+wormhole
+x-swiftformat
+xcodeclangformat
+xlink-kai
+yggdrasil
+ytmdesktop-youtube-music
+zappy
+zbuc-imgur
+zenbeats
+zoom-for-it-admins
+zoomin
+zprint
+==> Updated Casks
+0-ad
+010-editor
+0xed
+115browser
+1clipboard
+1password
+1password-cli
+360safe
+3cxphone
+3dgenceslicer
+4k-slideshow-maker
+4k-stogram
+4k-video-downloader
+4k-video-to-mp3
+4k-youtube-to-mp3
+4peaks
+5kplayer
+a-better-finder-attributes
+a-better-finder-rename
+a-slower-speed-of-light
+ableton-live
+ableton-live-intro
+ableton-live-lite
+ableton-live-standard
+ableton-live-suite
+abricotine
+abscissa
+abstract
+accessmenubarapps
+ace-link
+acorn
+acousticbrainz-gui
+acquia-dev
+acronis-true-image
+acslogo
+activedock
+activitywatch
+actual-odbc-pack
+adafruit-arduino
+adapter
+adguard
+adium
+adobe-acrobat-pro
+adobe-acrobat-reader
+adobe-air
+adobe-air-sdk
+adobe-connect
+adobe-creative-cloud
+adobe-creative-cloud-cleaner-tool
+adobe-digital-editions
+adobe-dng-converter
+adobe-lens-profile-creator
+adoptopenjdk
+advancedrestclient
+adventure
+adware-removal-tool
+aegisub
+aerial
+aether
+aexol-remote-mouse
+after-dark-classic
+agenda
+agfeo-dashboard
+aimersoft-video-converter-ultimate
+air-connect
+air-video-server-hd
+aircall
+airdisplay
+airdroid
+airflow
+airfoil
+airmedia
+airparrot
+airpass
+airqmon
+airserver
+airtable
+airtame
+airtool
+airtrash
+airunlock
+airy
+aja-system-test
+alacritty
+aladin
+alchemy
+alfaview
+alfred
+algodoo
+alinof-timer
+aliwangwang
+aliworkbench
+alt-c
+alt-tab
+altair-graphql-client
+altdeploy
+alternote
+altserver
+alva
+amadeus-pro
+amadine
+amazon-chime
+amazon-music
+amazon-photos
+amazon-workdocs
+amazon-workspaces
+amethyst
+amitv87-pip
+amm
+ammonite
+amorphousdiskmark
+ampps
+anaconda
+ananas-analytics-desktop-edition
+android-file-transfer
+android-messages
+android-ndk
+android-platform-tools
+android-sdk
+android-studio
+androidtool
+angband
+angry-ip-scanner
+anki
+ankiapp-anki
+anonym
+anonymousvpn
+another-redis-desktop-manager
+ansible-dk
+antconc
+anvil
+anybar
+anydesk
+anydo
+anylist
+anytrans
+anytrans-for-android
+ao
+apache-couchdb
+apache-directory-studio
+apk-icon-editor
+app-cleaner
+app-tamer
+appcleaner
+appcode
+appdelete
+appgate-sdp-client
+appgrid
+appium
+apple-events
+apple-juice
+applepi-baker
+apppolice
+appstore-quickview
+appstudio
+apptivate
+apptrap
+appzapper
+aptanastudio
+aptible
+aqua-data-studio
+aquamacs
+aquaskk
+aquaterm
+araxis-merge
+archipelago
+archiver
+arduino
+aria-maestosa
+aria2d
+aria2gui
+ariang
+ark-desktop-wallet
+armitage
+armory
+arq
+arq-cloud-backup
+arrayfire
+arrsync
+art-directors-toolkit
+artisan
+artpip
+asc-timetables
+ascension
+asciidocfx
+aspera-connect
+asset-catalog-tinkerer
+astah-professional
+astro-command-center
+astropad
+astropad-studio
+atext
+atlantis
+atlauncher
+atok
+atom
+au-lab
+audio-hijack
+audiobook-builder
+audiobookbinder
+audioscrobbler
+audioslicer
+audirvana
+augur
+auristor-client
+aurora
+aurora-hdr
+auryo
+authy
+autodesk-fusion360
+autodmg
+autofirma
+automute
+autopkgr
+autovolume
+autumn
+avast-secureline-vpn
+avast-security
+avg-antivirus
+aviatrix-vpn-client
+avibrazil-rdm
+avidcodecsle
+avidemux
+avira-antivirus
+avitools
+avocode
+avogadro
+awa
+aware
+awareness
+awips-python
+aws-vault
+axe-edit-iii
+axe-electrum
+axure-rp
+azure-data-studio
+back-in-time
+backblaze
+backblaze-downloader
+background-music
+backlog
+backuploupe
+badlion-client
+baiducloud
+baiduinput
+baidunetdisk
+balance-lock
+balenaetcher
+ballast
+balsamiq-wireframes
+bandage
+bankid
+banking-4
+banktivity
+banshee
+baretorrent
+baritone
+barrier
+bartender
+barxtemp
+base
+basecamp
+basictex
+batchmod
+bathyscaphe
+battery-guardian
+battery-report
+battle-net
+battlescribe
+baudline
+bbc-iplayer-downloads
+bbedit
+bdash
+bdinfo
+beacon-scanner
+beaker-browser
+beamer
+bean
+beardedspice
+bearychat
+beatport-pro
+beatunes
+beautune
+bee
+beersmith
+beoplay-software-update
+bestres
+betaflight-configurator
+better-window-manager
+bettertouchtool
+betterzip
+between
+betwixt
+beyond-compare
+bfxr
+bibdesk
+big-mean-folder-machine
+bilibili
+bilimini
+binary-ninja
+bino
+biopassfido
+birdfont
+biscuit
+bisq
+bit-slicer
+bitbar
+bitcoin-core
+bitmessage
+bitrix24
+bitshares
+bitwarden
+bitwig-studio
+blackhole
+blender
+blheli-configurator
+blink1control
+blisk
+blitz
+blobby-volley2
+blockblock
+blockstack
+blocs
+bloodhound
+bloomrpc
+blooo
+blu-ray-player
+blu-ray-player-pro
+blue-jeans-browser-plugin
+bluefish
+bluegriffon
+blueharvest
+bluej
+bluesense
+bluestacks
+bob
+boinc
+bonitastudiocommunity
+bonjeff
+bonjour-browser
+bookends
+bookmacster
+boom
+boom-3d
+boonzi
+boostnote
+bootchamp
+bootxchanger
+bossa
+bot-framework-emulator
+bowtie
+box-drive
+box-sync
+boxcryptor
+boxer
+boxofsnoo-fairmount
+boxy-suite
+brackets
+brain-workshop
+brainfm
+brave-browser
+breakaway
+brewservicesmenubar
+brewtarget
+bria
+bricklink-studio
+bricksmith
+brightness
+brightness-sync
+brisk
+brisync
+brl-cad-mged
+brook
+brooklyn
+browserosaurus
+browserstacklocal
+btcpayserver-vault
+bubo
+buildsettingextractor
+bunch
+bunqcommunity-bunq
+burn
+burp-suite
+busycal
+busycontacts
+butler
+butt
+butter
+buttercup
+bwana
+bzflag
+c0re100-qbittorrent
+cabal
+cacher
+caffeine
+cajviewer
+cakebrew
+calcservice
+calendar-366
+calibre
+camed
+camera-live
+camerabag-photo
+camtasia
+camunda-modeler
+canary
+candybar
+cantata
+caprine
+captain
+captin
+caption
+capto
+carbon-copy-cloner
+cardhop
+caret
+cashnotify
+catalina-cache-cleaner
+catch
+catlight
+cave-story
+ccleaner
+ccmenu
+cctalk
+cd-to
+celestialteapot-runway
+celldesigner
+cellery
+cellprofiler
+cemu
+cerebro
+cevelop
+chai
+chalk
+chameleon-ssd-optimizer
+charles
+charlessoft-timetracker
+chatmate-for-facebook
+chatmate-for-whatsapp
+chatology
+chatty
+chatwork
+cheatsheet
+checkra1n
+cheetah3d
+chemdoodle
+chessx
+chiaki
+chocolat
+choosy
+chrome-devtools
+chrome-remote-desktop-host
+chromedriver
+chromium
+chronicle
+chronoagent
+chronos
+chronosync
+chronycontrol
+chrysalis
+cinch
+cinder
+cinebench
+cisco-proximity
+cisdem-data-recovery
+cisdem-document-reader
+cisdem-pdf-converter-ocr
+cisdem-pdfmanagerultimate
+cisdem-pdftoolkit
+citra
+cityofzion-neon
+ckan
+ckb-next
+clamxav
+clashx
+classroom-assistant
+clean-me
+cleanapp
+cleanmymac
+cleartext
+clementine
+clickcharts
+clickup
+clion
+clip-studio-paint
+clipbuddy
+clipgrab
+clipy
+cliqz
+clix
+clock
+clock-bar
+clockify
+clocksaver
+clone-hero
+clonk
+cloud-pbx
+cloudapp
+cloudcompare
+cloudmounter
+cloudup
+cloudytabs
+clover-configurator
+cmake
+cmd-eikana
+cmdtap
+cncjs
+cncnet
+coccinellida
+coccoc
+cockatrice
+cocktail
+cocoapods
+cocoarestclient
+cocoaspell
+coconutbattery
+coda
+code-notes
+code42-crashplan
+codeexpander
+codekit
+codelite
+coderunner
+cold-turkey-blocker
+collabshot
+color-oracle
+colormunki-photo
+colorpicker-developer
+colorpicker-materialdesign
+colorpicker-propicker
+colorpicker-skalacolor
+colorsnapper
+colortester
+colour-contrast-analyser
+combine-pdfs
+comictagger
+comma-chameleon
+command-tab-plus
+commander-one
+commandq
+comparemerge
+composercat
+compositor
+conferences
+connectiq
+connectmenow
+console
+container-ps
+contexts
+continuity-activation-tool
+contraste
+controllermate
+controlplane
+cookie
+cool-retro-term
+coolterm
+copyclip
+copyq
+coqide
+cord
+core-data-editor
+corelocationcli
+cornercal
+cornerstone
+corona-tracker
+coronasdk
+corretto
+coteditor
+couchbase-server-community
+couchbase-server-enterprise
+couchpotato
+couleurs
+coverload
+cozy-drive
+cpuinfo
+cr
+craftmanager
+create-recovery-partition-installer
+createuserpkg
+creepy
+cricut-design-space
+criptext
+cronnix
+crossover
+crosspack-avr
+crunch
+crushftp
+crypt
+crypter
+cryptomator
+cryptr
+crystalmaker
+crystax-ndk
+cscreen
+cubicsdr
+cuda-z
+cumulus
+cura-lulzbot
+curio
+cursorcerer
+cursorsense
+cuteclips
+cutesdr
+cutter
+cyberduck
+cyberghost-vpn
+cycling74-max
+cytoscape
+daedalus
+daisydisk
+darktable
+darwindumper
+dash
+dash-dash
+dashcam-viewer
+dashlane
+dat
+data-integration
+data-rescue
+data-science-studio
+datadog-agent
+datagraph
+datagrip
+datazenit
+datovka
+datweatherdoe
+davmail
+day-o
+db-browser-for-sqlite
+dbeaver-community
+dbeaver-enterprise
+dbglass
+dbkoda
+dbngin
+dbschema
+dbvisualizer
+dcommander
+dcp-o-matic
+dcp-o-matic-batch-converter
+dcp-o-matic-encode-server
+dcp-o-matic-kdm-creator
+dcp-o-matic-player
+dcv-viewer
+dd-utility
+deathtodsstore
+debookee
+deckset
+deco
+decrediton
+deeper
+deepgit
+deepl
+deepstream
+deezer
+default-folder-x
+dejalu
+delayedlauncher
+delicious-library
+delta
+deltawalker
+deluge
+dendroscope
+denemo
+desktoputility
+desmume
+detectx-swift
+detexify
+devdocs
+developerexcuses
+devonagent
+devonthink
+dexed
+dhs
+dia
+dialpad
+diashapes
+dictater
+dictcc-en-de-dictionary-plugin
+dictionaries
+dictunifier
+difffork
+diffmerge
+digikam
+dingtalk
+disablemonitor
+discord
+discretescroll
+disk-arbitrator
+disk-drill
+disk-inventory-x
+diskcatalogmaker
+diskmaker-x
+diskwave
+displaperture
+displaycal
+dissenter-browser
+divvy
+djay-pro
+djv
+djview
+dmm-player
+dmm-player-for-chrome
+do-not-disturb
+docear
+docker
+docker-toolbox
+dockey
+dockstation
+dogecoin
+dolphin
+doly
+domainbrain
+doomrl
+doomsday-engine
+dosbox
+dosbox-x
+doteditor
+dotnet
+dotnet-sdk
+double-commander
+doubletwist
+downie
+doxie
+doxygen
+dozer
+dragthing
+drama
+drawbot
+drawio
+dremel-slicer
+drivedx
+drivethrurpg
+droidid
+drop-to-gif
+dropbox
+dropdmg
+dropletmanager
+droplr
+dropshare
+duckietv
+duefocus
+duet
+dukto
+dungeon-crawl-stone-soup-console
+dungeon-crawl-stone-soup-tiles
+duo-connect
+dupeguru
+duplicacy
+duplicacy-web-edition
+duplicate-annihilator-for-photos
+duplicati
+dupscanub
+dust3d
+dusty
+dvdstyler
+dwarf-fortress
+dwarf-fortress-lmp
+dwgsee
+dwihn0r-keepassx
+dyn-updater
+dynalist
+dynamic-dark-mode
+dynamodb-local
+eaccess
+eagle
+eaglefiler
+ealeksandrov-cd-to
+easy-move-plus-resize
+easyeda
+easyfind
+easytether
+ebibookreader
+ebmac
+eclipse-cpp
+eclipse-dsl
+eclipse-ide
+eclipse-installer
+eclipse-java
+eclipse-javascript
+eclipse-jee
+eclipse-modeling
+eclipse-php
+eclipse-platform
+eclipse-rcp
+eclipse-testing
+eddie
+edex-ui
+editaro
+edrawmax
+eggplant
+eiskaltdcpp
+ejector
+elan
+elasticwolf
+electerm
+electorrent
+electric-sheep
+electrocrud
+electron
+electron-api-demos
+electron-cash
+electron-fiddle
+electronic-wechat
+electronmail
+electrum
+electrum-ltc
+electrumsv
+elgiganten-jotta
+elmedia-player
+eloston-chromium
+elpass
+emacs
+emacsclient
+emailchemy
+emby-server
+emclient
+emojipedia
+encryptme
+encryptr
+endless-sky
+endnote
+endurance
+energybar
+enfusegui
+engine-prime
+enjoyable
+enpass
+entropy
+envkey
+enzymex
+epic
+epic-games
+epichrome
+epoch-flip-clock
+epub-to-pdf
+epubmdimporter
+epubquicklook
+eqmac
+eset-cyber-security-pro
+espresso
+ethereum-wallet
+etrecheckpro
+eudic
+eurkey
+eve-launcher
+eventstore
+evernote
+everweb
+evolve-ip-uc-one
+evom
+exactscan
+exfalso
+exifrenamer
+exist-db
+exodus
+expandrive
+explorer
+expo-xde
+expressions
+expressscribe
+expressvpn
+extraterm
+ezip
+facebook-ios-sdk
+factor
+fake
+falcon-sql-client
+family-tree-builder
+fanny
+fantastical
+fantasy-grounds
+fantasy-map-generator
+farrago
+fastonosql
+fastrawviewer
+fastscripts
+fauxpas
+favro
+faxbot
+fbreader
+fedora-media-writer
+feed-the-beast
+feem
+feishu
+fenix
+ferdi
+fetch
+ff-works
+figma
+figmadaemon
+figtree
+fiji
+file-juicer
+filebot
+filedrop
+filemon
+filepane
+final-cut-library-manager
+find-any-file
+find-empty-folders
+findergo
+finereader
+fing
+finicky
+firealpaca
+firebase-admin
+firebird-emu
+firecamp
+firefox
+firestorm
+fiscript
+fission
+fitbit-os-simulator
+fl-studio
+flame
+flash-decompiler-trillix
+flash-npapi
+flash-player
+flash-player-debugger
+flash-player-debugger-npapi
+flash-player-debugger-ppapi
+flash-ppapi
+flashlighttool
+fldigi
+flexiglass
+flic
+flickr-uploadr
+flightgear
+flip4mac
+flipper
+fliqlo
+flirc
+flixtools
+flock
+flotato
+flow
+flow-e
+flowdock
+flowsync
+fluid
+flume
+fluor
+flux
+fluxcenter
+flvcd-bigrats
+fly
+flycut
+fm3-edit
+fman
+focus
+focus-booster
+focusatwill
+focused
+focuswriter
+fog
+folding-at-home
+foldingtext
+foldit
+folx
+fontbase
+fontexplorer-x-pro
+fontforge
+fontgoggles
+fontlab
+fontplop
+fontstand
+force-paste
+forecast
+foreman
+fork
+forklift
+forticlient
+foxitreader
+foxmail
+fpcsrc
+fractal-bot
+fraise
+framer
+framer-x
+franz
+freac
+fredm-fuse
+free-download-manager
+free-ruler
+freecad
+freecol
+freedom
+freedome
+freemind
+freenettray
+freeorion
+freeplane
+freesmug-chromium
+freeter
+freeyourmusic
+freeze
+frescobaldi
+frhelper
+fritzing
+fromscratch
+front
+fs-uae
+fsmonitor
+fsnotes
+fstream
+fugu
+functionflip
+funter
+fuse
+futuniuniu
+fuwari
+fuzzyclock
+gameranger
+gameshow
+ganache
+ganttproject
+garagebuy
+garagesale
+gargoyle
+gas-mask
+gb-studio
+gcc-arm-embedded
+gcollazo-mongodb
+gdisk
+geany
+geburtstagschecker
+geekbench
+geektool
+gemini
+genymotion
+geogebra
+geomap
+geotag
+geotag-photos-pro
+geotagger
+geph
+gephi
+get-backup-pro
+get-iplayer-automator
+get-lyrical
+getrasplex
+gfortran
+gfxcardstatus
+ghdl
+ghidra
+ghost-browser
+ghosttile
+gifcapture
+gifox
+gifrocket
+gifs
+gimp
+gingko
+gisto
+git-it
+gitahead
+gitblade
+gitbook
+gitbox
+gitee
+giteye
+gitfinder
+gitfox
+github
+githubpulse
+gitify
+gitkraken
+gitnote
+gitscout
+gitter
+gitup
+gitx
+glimmerblocker
+globalmeet
+gloomhaven-helper
+gltfquicklook
+glyphfinder
+glyphs
+gmail-notifier
+gmvault
+gns3
+gnucash
+go-agent
+go-server
+go2shell
+go64
+gobdokumente
+godot
+godot-mono
+gog-galaxy
+gogs
+goland
+goldencheetah
+golly
+goodsync
+goofy
+google-ads-editor
+google-backup-and-sync
+google-chat
+google-chrome
+google-cloud-sdk
+google-drive-file-stream
+google-earth-pro
+google-featured-photos
+google-hangouts
+google-japanese-ime
+google-photos-backup-and-sync
+google-trends
+google-web-designer
+googleappengine
+gopanda
+gopass-ui
+gotiengviet
+gpg-suite
+gpg-suite-no-mail
+gpg-suite-pinentry
+gpg-sync
+gplates
+gpodder
+gpower
+gps4cam
+gpxsee
+gqrx
+grads
+grafx
+grammarly
+gramps
+grandperspective
+grandtotal
+graphicconverter
+graphiql
+graphql-ide
+graphql-playground
+graphsketcher
+gray
+greenfoot
+gretl
+gridea
+grids
+grisbi
+growlnotify
+gswitch
+gtkwave
+guijs
+guild-wars2
+guitar-pro
+gulp
+guppy
+gureumkim
+gyazmail
+gyazo
+gzdoom
+ha-menu
+hacker-menu
+hackhands
+hackintool
+hackmd
+hakuneko
+hammerspoon
+handbrake
+handbrakebatch
+hands-off
+handshaker
+handylock
+happygrep
+haptic-touch-bar
+haptickey
+harbor
+harmony
+haroopad
+harvest
+hashbackup
+hazel
+hazeover
+hbuilder
+hbuilderx
+hdrmerge
+headset
+heaven
+hedgewars
+heimdall-suite
+helium
+hermes
+hex
+hex-fiend
+hfsleuth
+hiarcs-chess-explorer
+hiddenbar
+historyhound
+hma-pro-vpn
+hockey
+hocus-focus
+holavpn
+home-inventory
+honer
+honto
+hopper-debugger-server
+horndis
+horos
+hotswitch
+houdahspot
+houseparty
+hp-eprint
+hp-prime
+hstracker
+http-toolkit
+hubic
+hubstaff
+hue-topia
+hugin
+hwsensors
+hydrogen
+hype
+hyper
+hyperbackupexplorer
+hyperdock
+hyperswitch
+i1profiler
+ibabel
+ibackup
+ibackup-viewer
+ibackupbot
+ibettercharge
+ibm-cloud-cli
+ibored
+icab
+icanhazshortcut
+icc
+iceberg
+icefloor
+icestudio
+icloud-control
+iconizer
+iconjar
+icons
+icons8
+icq
+id3-editor
+idafree
+idagio
+idefrag
+idisplay
+idrive
+ieasemusic
+iexplorer
+ifunbox
+igdm
+igetter
+iglance
+igv
+iina
+iina-plus
+ilok-license-manager
+ilya-birman-typography-layout
+image-tool
+image2icon
+imagealpha
+imagej
+imagemin
+imageoptim
+imazing
+imazing-mini
+imgotv
+imitone
+imo
+impactor
+inav-configurator
+inboard
+indigo
+inform
+inkdrop
+inkscape
+inky
+inloop-qlplayground
+insomnia
+inssider
+install-disk-creator
+instant-articles-builder
+instasizer
+insync
+integrity
+intel-haxm
+intel-power-gadget
+intel-psxe-ce-c-plus-plus
+intellij-idea
+intellij-idea-ce
+interarchy
+invesalius
+invisiblix
+invisionsync
+invisor-lite
+inxmail-professional
+iograph
+ionic-lab
+ioquake3
+ios-app-signer
+ios-console
+ios-saver
+iota-wallet
+ip-in-menu-bar
+ipa-manager
+ipartition
+ipe
+ipepresenter
+ipfs
+iphoto-library-manager
+ipsecuritas
+ipvanish-vpn
+ipynb-quicklook
+irccloud
+ireadfast
+iridient-developer
+iridium
+irip
+iris
+isabelle
+ishowu
+ishowu-instant
+isimulator
+islide
+isolator
+istat-menus
+istat-server
+isteg
+istumbler
+isubtitle
+iswiff
+isyncr
+itau
+itch
+iterm2
+ithoughtsx
+itk-snap
+itools
+itrash
+itsycal
+itubedownloader
+itunes-producer
+itunes-volume-control
+ivideonclient
+ivideonserver
+ivolume
+ivpn
+izip
+j
+jabref
+jad
+jaikoz
+jaksta-media-recorder
+jalbum
+jalview
+jameica
+james
+jamf-migrator
+jami
+jamovi
+jandi
+jasp
+jasper
+jaxx-liberty
+jazzup
+jbidwatcher
+jbrowse
+jclasslib-bytecode-viewer
+jcryptool
+jd-gui
+jdiskreport
+jdk-mission-control
+jdownloader
+jedit
+jedit-omega
+jenkins-menu
+jeromelebel-mongohub
+jet
+jetbrains-toolbox
+jettison
+jewelrybox
+jgrasp
+jietu
+jiggler
+jira-client
+jitouch
+jitsi
+jitsi-meet
+jmc
+joinme
+joker
+jollysfastvnc
+joplin
+josm
+journey
+jprofiler
+jqbx
+jsui
+jtool
+jtool2
+jubler
+juicebar
+julia
+jump
+jumpcut
+jumpshare
+jupyter-notebook-ql
+jupyter-notebook-viewer
+kactus
+kafka-tool
+kakapo
+kaku
+kaleidoscope
+kap
+kapitainsky-rclone-browser
+kapow
+karabiner-elements
+katalon-studio
+katana
+kawa
+keep
+keep-it
+keepassx
+keepassxc
+keeper-password-manager
+keepingyouawake
+keeweb
+keka
+kekadefaultapp
+kern
+kext-updater
+kext-utility
+kextviewr
+key-codes
+keybase
+keyboard-cleaner
+keyboard-lock
+keyboard-maestro
+keyboardcleantool
+keycast
+keycastr
+keycue
+keyfinder
+keymanager
+keypad-layout
+keyshot
+keystore-explorer
+kicad
+kid3
+kindle
+kindle-comic-converter
+kindle-comic-creator
+kindle-previewer
+kinza
+kite
+kitematic
+kitty
+kiwi-for-g-suite
+kiwix
+kk7ds-python-runtime
+kkbox
+klatexformula
+klayout
+klokki
+kmbmpdc
+kmplayer
+knime
+knock
+knockknock
+knotes
+knox
+knuff
+koa11y
+koala
+kobo
+kode54-cog
+kodelife
+kodi
+komet
+komodo-edit
+komodo-ide
+kotlin-native
+krisp
+krita
+ksdiff
+kstars
+kube-cluster
+kube-forwarder
+kubecontext
+kubernetic
+kugoumusic
+kvirc
+lab
+lacona
+lando
+lantern
+laravel-kit
+lark
+lastfm
+lastpass
+latest
+latexdraw
+latexit
+launchbar
+launchcontrol
+launchpad-manager
+launchrocket
+launchy
+laverna
+lazarus
+lazpaint
+lazy
+lbry
+league-displays
+league-of-legends
+leanote
+leap-motion
+ledger-live
+leech
+lego-digital-designer
+lego-mindstorms-ev3
+lehreroffice
+leksah
+lektor
+lelivrescolairefr
+lens
+leocad
+lepton
+levelator
+librecad
+libreelec-usb-sd-creator
+libreoffice
+libreoffice-language-pack
+licecap
+license-control-center
+licensed
+liclipse
+lidarr
+lifesize
+lightgallery
+lighting
+lightpaper
+lightproxy
+lighttable
+lightworks
+lilypond
+lincastor
+line-bot-designer
+linear
+linein
+lingo
+lingon-x
+linkliar
+linphone
+listen1
+litecoin
+liteicon
+liteide
+little-snitch
+littlesecrets
+livereload
+livetail
+liya
+lmms
+loading
+local
+localdev
+localizationeditor
+lockdown
+lockrattler
+logdna-agent
+logdna-cli
+logicsniffer
+loginputmac
+logisim
+logisim-evolution
+logitech-presentation
+logmein-client
+logmein-hamachi
+logos
+lookin
+loom
+loopback
+losslesscut
+love
+lrtimelapse
+ltspice
+lulu
+lumen
+luminance-hdr
+lunar
+lunastudio
+luxmark
+luyten
+lyn
+lynkeos
+lynx
+lynxlet
+lyrics-master
+lyricsx
+lyx
+m3unify
+mac2imgur
+macbreakz
+macclean
+maccpuid
+maccy
+macdependency
+macdive
+macdjview
+macdown
+macdropany
+macfusion
+macfusion-ng
+macgamestore
+macgdbp
+macgesture
+machacha
+machg
+machoexplorer
+machoview
+maciasl
+macintosh-explorer
+macmediakeyforwarder
+macpar-deluxe
+macpass
+macpilot
+macs-fan-control
+macspice
+macsvg
+macterm
+mactex
+mactex-no-gui
+mactracker
+macupdate
+macupdater
+macvim
+macwinzipper
+macx-dvd-ripper-mac-free-edition
+macx-dvd-ripper-pro
+macx-video-converter-pro
+macx-youtube-downloader
+maczip4win
+maelstrom
+magic-launch
+magicavoxel
+magiccap
+magicplotpro
+magicplotstudent
+magicprefs
+mailbutler
+mailmaster
+mailmate
+mailplane
+mailspring
+maintenance
+majsoul-plus
+makehuman
+makemkv
+maltego
+malus
+malwarebytes
+mame
+mamp
+manageengine-mibbrowser
+manico
+manictime
+manta
+manuscripts
+manuskript
+mapillary-uploader
+mapture
+marathon
+marble
+marginnote
+mari0
+maria
+mark-text
+markdown-service-tools
+markdownmdimporter
+marked
+markright
+mars
+marsedit
+marshallofsound-google-play-music-player
+marta
+marvel
+marvin
+masscode
+massreplaceit
+master-password
+master-pdf-editor
+masterway-note
+mat
+mate-translate
+mater
+material-colors
+mathpix-snipping-tool
+mathtype
+matterhorn
+mattermost
+mattr-slate
+mauve
+mavensmate
+max
+mbed-studio
+mblock
+mcbopomofo
+mcedit
+mcgimp
+mdrp
+media-center
+media-converter
+mediaelch
+mediahuman-audio-converter
+mediahuman-youtube-downloader
+mediainfo
+mediathekview
+mega
+megacmd
+megahertz-knotes
+megasync
+meld
+mellow
+mellowplayer
+melodics
+melonbooksviewer
+memo
+memory
+memory-map
+mendeley
+mendeley-reference-manager
+menubar-colors
+menubar-countdown
+menubar-stats
+menucalendarclock-ical
+menumeters
+menutube
+merlin-project
+mesasqlite
+meshcommander
+meshlab
+meshmixer
+messenger-native
+meta
+metabase
+metashape
+metashapepro
+metasploit
+metaz
+meteorologist
+mgba
+mi
+mia-for-gmail
+michaelvillar-timer
+micro-snitch
+microblog
+microsoft-azure-storage-explorer
+microsoft-edge
+microsoft-excel
+microsoft-lync
+microsoft-office
+microsoft-outlook
+microsoft-powerpoint
+microsoft-r-open
+microsoft-teams
+microsoft-word
+middleclick
+midi-monitor
+midikeys
+midistroke
+miditrail
+mikogo
+miktex-console
+milanote
+milkman
+milkytracker
+mimecast
+min
+mindforger
+mindjet-mindmanager
+mindmaster
+minecraft
+minecraft-server
+minecraftpe
+mini-program-studio
+mini-vmac
+miniconda
+minishift
+minitimer
+minitube
+minizincide
+mipony
+mirrordisplays
+mirrorop
+mission-control-plus
+missive
+mist
+mixxx
+mjml
+mjolnir
+mkchromecast
+mks
+mkvtoolnix
+mkvtools
+mmex
+mnemosyne
+mob
+mobirise
+mobster
+mochi
+mockoon
+mockplus
+mockuuups-studio
+modelio
+modmove
+modulair
+moefe-google-translate
+mojibar
+molotov
+monal
+monero-wallet
+moneydance
+moneymoney
+moneywiz
+mongodb-compass
+mongodb-compass-isolated-edition
+mongodb-compass-readonly
+mongodbpreferencepane
+mongotron
+monitorcontrol
+monitorearth
+monity-helper
+mono-mdk
+monodraw
+monogame
+monolingual
+moom
+moonlight
+morkro-papyrus
+morpheus
+mos
+mosaic
+moscow-ml
+motrix
+mountain
+mountain-duck
+mounty
+mouse-locator
+mousepose
+movist
+movist-pro
+mp3gain-express
+mp3tag
+mp4tools
+mpeg-streamclip
+mplayer-osx-extended
+mplayerx
+mps
+mpv
+mqtt-explorer
+mqttfx
+mtmr
+mu-editor
+mucommander
+mudlet
+mullvadvpn
+multibit-hd
+multifirefox
+multimc
+multipass
+multipatch
+multiscan-3b
+multitouch
+mumble
+munki
+murus
+murus-menulet
+muruslogsvisualizer
+musaicfm
+muse
+museeks
+musescore
+music-manager
+musicbrainz-picard
+musictube
+mutespotifyads
+mutify
+muzzle
+mweb
+my-budget
+my-image-garden
+mycloud
+mycrypto
+mylio
+mymonero
+myphone
+mysides
+mysql-connector-python
+mysql-shell
+mysql-utilities
+mysqlworkbench
+nagbar
+nagstamon
+nally
+name-mangler
+namebench
+namechanger
+nano
+nanostudio
+nasas-eyes
+native-access
+nativedisplaybrightness
+natron
+navicat-data-modeler
+navicat-data-modeler-essentials
+navicat-for-mariadb
+navicat-for-mysql
+navicat-for-oracle
+navicat-for-postgresql
+navicat-for-sql-server
+navicat-for-sqlite
+navicat-premium
+navicat-premium-essentials
+nbtexplorer
+ncar-ncl
+ndm
+near-lock
+neo4j
+neofinder
+nestopia
+netbeans
+netbeans-cpp
+netbeans-java-ee
+netbeans-java-se
+netbeans-php
+neteasemusic
+nethackcocoa
+netiquette
+netlogo
+netnewswire
+netron
+netspot
+netxms-console
+next
+nextcloud
+nfov
+ngrok
+nheko
+night-owl
+nightfall
+nightingale
+nightowl
+nimble-commander
+nimbus
+ninja-download-manager-ndm
+nisus-thesaurus
+nitroshare
+nndd
+no-ip-duc
+nocturnal
+nocturne
+nodebox
+nodeclipse
+noisebuddy
+noisy
+noisytyper
+nomachine
+nomad
+nordvpn
+nosleep
+nosql-workbench-for-amazon-dynamodb
+nosqlbooster-for-mongodb
+nosqlclient
+not-pacman
+not-tetris
+notable
+notational-velocity
+notebooks
+notedup
+noteplan
+noti
+notion
+noun-project
+novabench
+now
+now-tv-player
+noxappplayer
+nozbe
+nrlquaker-winbox
+nslogger
+nsregextester
+nteract
+nuclear
+nucleo
+nuclino
+nulloy
+nullpomino
+numi
+nutstore
+nvalt
+nvidia-geforce-now
+nwjs
+nzbget
+nzbvortex
+objectivesharpie
+obs
+obyte
+ocenaudio
+oclint
+octomouse
+octoscreen
+odio
+odrive
+ogdesign-eagle
+olive
+omegat
+omnidazzle
+omnidb
+omnidisksweeper
+omnifocus
+omnigraffle
+omnioutliner
+omniplan
+omnipresence
+omniweb
+omx-ebooks
+ondesoft-audiobook-converter
+one-switch
+onecast
+onedrive
+onenote-importer-preview
+onepile
+oni
+onionshare
+onlyoffice
+onyx
+oolite
+open-ecard
+open-in-code
+openarena
+openaudible
+openbazaar
+openboard
+openboardview
+openconnect-gui
+opencore-configurator
+opencpn
+opendnsupdater
+openemu
+openframeworks
+openineditor-lite
+openinterminal
+openinterminal-lite
+openkey
+openlp
+openmsx
+openmtp
+openmw
+opennx
+openoffice
+openpht
+openra
+openrct2
+openrefine
+opensc
+openscad
+opensesame
+openshot-video-editor
+opensim
+opensong
+opentoonz
+openttd
+openvanilla
+openvisualtraceroute
+openvpn-connect
+openwebstart
+openxcom
+openzfs
+opera
+opera-mail
+opera-mobile-emulator
+opera-neon
+operadriver
+optimage
+optimal-layout
+oracle-jdk
+oracle-jdk-javadoc
+orange
+origami-studio
+origin
+orka
+oryoki
+osbuddy
+oscar
+oscilloscope
+osirix-quicklook
+osmc
+osxfuse
+otter-browser
+otx
+outguess
+outline
+outline-manager
+outset
+outwit-hub
+overdrive-media-console
+overflow
+overkill
+oversight
+owasp-zap
+owncloud
+oxygen-xml-editor
+p4v
+pablodraw
+pacifist
+packages
+packet-peeper
+packetproxy
+packetsender
+pages-data-merge
+pagico
+paintbrush
+paintcode
+panda
+pandora
+panic-unison
+panoply
+paparazzi
+paper
+papers
+paperspace
+papyrus
+paragon-extfs
+paragon-ntfs
+paragon-vmdk-mounter
+parallels
+parallels-access
+parallels-client
+parallels-toolbox
+parallels-virtualization-sdk
+paraview
+parse
+parsec
+parsehub
+particle-dev
+pashua
+password-assistant
+password-gorilla
+pastebot
+pastor
+patchwork
+path-finder
+paw
+pd
+pd-extended
+pd-l2ork
+pdf-converter-master
+pdf-expert
+pdf-images
+pdf-squeezer
+pdf-toolbox
+pdfelement
+pdfelement-express
+pdfextractor
+pdfkey-pro
+pdfpen
+pdfpenpro
+pdfsam-basic
+pdfshaver
+pdftotext
+peakhour
+penc
+pencil
+pencil2d
+pennywise
+perforce
+permute
+persepolis-download-manager
+pester
+pext
+pflists
+pg-commander
+pgadmin4
+phantomjs
+phew
+phocus
+phoenix
+phoenix-slides
+phonebrowse
+phoneclean
+phonegap
+phonerescue
+phonetrans
+photo-supreme-single-user
+photoninja
+photosweeper-x
+photosync
+photozoom-pro
+phpstorm
+physicseditor
+pibakery
+picgo
+piezo
+pikopixel
+pine
+pineapple
+pinegrow
+pingid
+pingmenu
+pingplotter
+pins
+pinta
+pitchperfect
+pivy
+pixel-check
+pixel-picker
+pixelpeeper
+pixelsnap
+pixelstick
+plain-clip
+plan
+platelet
+platypus
+play
+playback
+playmemories-home
+playnow
+playonmac
+plex
+plex-media-player
+plex-media-server
+plexamp
+pliim
+plistedit-pro
+plotdigitizer
+plover
+plug
+pluralsight
+pngyu
+pock
+pocket-casts
+podcastmenu
+podolski
+poedit
+poi
+pokemon-showdown
+pokerstars
+pokerth
+polar-bookshelf
+polycom-content
+polycom-realpresence
+polymail
+polyphone
+pomello
+pomodone
+pomolectron
+pomotodo
+pomotroid
+pongsaver
+popchar
+popclip
+popmaker
+popo
+popsql
+portfolioperformance
+porting-kit
+post-haste
+postbird
+postbox
+posterazor
+postgres
+postgrespreferencepane
+postico
+postman
+powder
+powder-player
+power-manager
+powerpanel
+powerphotos
+powershell
+powerword
+ppduck
+praat
+pref-setter
+preference-manager
+preferencecleaner
+preform
+prefs-editor
+prepros
+presentation
+pretzel
+prey
+prezi-classic
+prezi-next
+prince
+principle
+printopia
+printrun
+prismatik
+pritunl
+private-eye
+private-internet-access
+privatetunnel
+prizmo
+processing
+procexp
+proclaim
+product-hunt
+profilecreator
+profilemanager
+profind
+programmer-dvorak
+progressive-downloader
+projectlibre
+propresenter
+prosys-opc-ua-browser
+protege
+protonmail-bridge
+protonmail-unofficial
+protonvpn
+protopie
+provisioning
+provisionql
+prowritingaid
+proxifier
+proximity
+proxyman
+prudent
+prusaslicer
+psequel
+psi
+psi-plus
+psychopy
+publish-or-perish
+pullover
+pulse-sms
+punto-switcher
+puppetry
+purevpn
+pusher
+putio-adder
+puush
+puzzles
+pwnagetool
+pycharm
+pycharm-ce
+pycharm-edu
+pyfa
+pym-player
+pynsource
+pyzo
+qbittorrent
+qblocker
+qbserve
+qcad
+qcma
+qctools
+qdesktop
+qdslrdashboard
+qfinder-pro
+qgis
+qgroundcontrol
+qingg
+qiyimedia
+ql-ansilove
+qlab
+qladdict
+qlc-plus
+qlcolorcode
+qlcommonmark
+qldds
+qlfits
+qlgradle
+qlimagesize
+qlmarkdown
+qlmobi
+qlnetcdf
+qlplayground
+qlprettypatch
+qlrest
+qlstephen
+qlswift
+qlvideo
+qmoji
+qnapi
+qobuz
+qownnotes
+qq
+qqbrowser
+qqlive
+qqmacmgr
+qqmusic
+qqplayer
+qr-journal
+qsync-client
+qsyncthingtray
+qt-creator
+qt-design-studio
+qt3dstudio
+qtox
+qtpass
+qtspim
+quail
+quakespasm
+quassel
+quassel-client
+quaternion
+querious
+questrade-iq-edge
+quickbooks
+quickbooks-online
+quickboot
+quicken
+quickgeojson
+quickhash
+quickhue
+quickjson
+quicklook-csv
+quicklook-json
+quicklook-pat
+quicklook-pfm
+quicklookapk
+quicklookase
+quicknfo
+quicksilver
+quicksync
+quik
+quip
+quiterss
+quitter
+quodlibet
+qutebrowser
+qview
+qxmledit
+qyooo
+r
+r-name
+rabbitmq
+race-into-space
+racket
+racket-cs
+radarr
+radiant-player
+radio-silence
+raindropio
+rambox
+ramme
+ransomwhere
+rapidminer-studio
+rapidweaver
+rar
+raspberry-pi-imager
+raven
+raw-photo-processor
+rawtherapee
+razorsql
+rclone-browser
+rcloneosx
+react-native-debugger
+react-proto
+react-studio
+reactotron
+realforce
+realm-studio
+reaper
+receiptquicklook
+receipts
+recents
+recordit
+recovery-disk-assistant
+rectangle
+red
+red-eye
+redcine-x-pro
+redis
+refined-github-safari
+reflector
+regexhibit
+reggy
+reikey
+rekordbox
+rember
+remember-the-milk
+remote-buddy
+remote-desktop-manager
+remote-desktop-manager-free
+remoteviewer
+remotix-agent
+renamer
+renpy
+repetier-host
+rescuetime
+resilio-sync
+resolume-arena
+resolutionator
+resxtreme
+retinizer
+retro-virtual-machine
+retroarch
+retroarch-metal
+retrobatch
+retroshare
+reunion
+reveal
+revisions
+rhinoceros
+ricochet
+rider
+ridibooks
+rightfont
+rightzoom
+ringcentral
+ringcentral-meetings
+ringtones
+ripcord
+ripit
+roaringapps
+robo-3t
+robofont
+roboform
+rocket
+rocket-chat
+rocket-typist
+rocks-n-diamonds
+rodeo
+roku-remote-tool
+roon
+rosaimagewriter
+rotato
+routebuddy
+routeconverter
+rowanj-gitx
+rowmote-helper
+royal-tsx
+rpn-scientific
+rpvoip
+rq
+rrcc
+rss
+rssowl
+rstudio
+rsyncosx
+rubitrack-pro
+rubymine
+rubymotion
+runescape
+runjs
+runway
+ryver
+sabaki
+sabnzbd
+safeincloud-password-manager
+sage
+sameboy
+santa
+saoimageds9
+sapmachine-jdk
+satellite-eyes
+sauce-connect
+sauerbraten
+save-hollywood
+scala-ide
+scaleft
+scansion
+scap-workbench
+scapple
+scenebuilder
+schism-tracker
+scidavis
+scidvsmac
+scihubeva
+scilab
+scout
+scratch
+screaming-frog-seo-spider
+screen
+screencast
+screenflick
+screenflow
+screens
+screens-connect
+scribus
+script-debugger
+scriptql
+scrivener
+scroll-reverser
+scrooo
+scrutiny
+scummvm
+sdformatter
+sdrdx
+seadrive
+seafile-client
+seaglass
+seamonkey
+seashore
+second-life-viewer
+secure-pipes
+securesafe
+securid
+security-growler
+securityspy
+segger-embedded-studio-for-arm
+sejda-pdf
+sekey
+selfcontrol
+semulov
+sencha
+send-anywhere
+send-to-kindle
+sensei
+sensiblesidebuttons
+sentinel
+senuti
+sequel-pro
+sequential
+serial
+serial-tools
+serviio
+servo
+servpane
+session
+session-manager-plugin
+setapp
+sf-symbols
+sfdx
+shades
+shadow
+shadowsocksx
+shadowsocksx-ng
+shadowsocksx-ng-r
+shapes
+sharemouse
+sharepod
+shellhere
+sherlock
+shiba
+shift
+shiftit
+shifty
+shimeike-formulatepro
+shimo
+shiori
+shoes
+shortcat
+shortcutdetective
+shortcuts
+shotcut
+showhiddenfiles
+showyedge
+shrinkit
+shupapan
+shuttle
+sia-ui
+sickbeard-anime
+sidekick
+sidenotes
+sidequest
+sidestep
+sigil
+sigilium-email-signatures
+signal
+silentknight
+silo
+silverlight
+sim-daltonism
+simpholders
+simple-comic
+simplecap
+simplediagrams
+simplefloatingclock
+simplenote
+simplesynth
+simplistic
+simply-fortran
+simsim
+singularity
+sip
+sirimote
+sitebulb
+sixtyforce
+sizeup
+sizzy
+skala-preview
+sketch
+sketch-toolbox
+sketchbook
+sketchpacks
+sketchup
+sketchup-pro
+skim
+skitch
+skreenics
+skybox
+skyfonts
+skype
+skype-for-business
+skypewebplugin
+slack
+slate
+sleipnir
+slic3r
+slicer
+slik
+slimbatterymonitor
+slingplayer
+slite
+sloth
+smallpdf
+smart-converter-pro
+smartgit
+smartsvn
+smartsynchronize
+smcfancontrol
+smlnj
+smoothscroll
+smooze
+snagit
+snapndrag
+snappy
+sneek
+snes9x
+snip
+snipaste
+snowflake-snowsql
+snwe
+soapui
+socket-io-tester
+sococo
+soda-player
+soduto
+sofa-server
+softmaker-freeoffice
+softorino-youtube-converter
+softraid
+softu2f
+softube-central
+sogouinput
+solvespace
+sonarr
+sonarr-menu
+sonic-pi
+sonic-visualiser
+sonoair
+soqlxplorer
+soulseek
+soulver
+sound-control
+sound-siphon
+soundboosterlite
+soundcleod
+soundcloud-downloader
+soundflower
+soundflowerbed
+soundsource
+sourcenote
+sourcetrail
+sourcetree
+spacelauncher
+spaceradar
+spamsieve
+spark
+sparkle
+sparkleshare
+spatial
+spatterlight
+spechtlite
+spectacle
+spectacle-editor
+spectrum
+spectx
+speedcrunch
+speedify
+spek
+spideroak-share
+spideroakone
+spillo
+splashtop-business
+splashtop-personal
+splashtop-streamer
+splice
+splitshow
+spotifree
+spotify
+spotify-now-playing
+spotmenu
+spotspot
+springtoolsuite
+sql-power-architect-jdbc
+sql-tabs
+sqlectron
+sqleditor
+sqlexplorer
+sqlitemanager
+sqlitestudio
+sqlpro-for-mssql
+sqlpro-for-mysql
+sqlpro-for-postgres
+sqlpro-for-sqlite
+sqlpro-studio
+sqlworkbenchj
+squadanimatorgaa
+squadanimatorrugby
+squadanimatorsoccer
+squeak
+squidman
+squirrel
+squirrelsql
+srware-iron
+ssh-tunnel-manager
+ssokit
+stack
+stack-exchange-notifier
+stand
+standard-notes
+starcraft
+starleaf
+startninja
+startupizer
+staruml
+stationtv-link
+statusfy
+stay
+steam
+steamcmd
+steermouse
+stella
+stellarium
+stepmania
+steveschow-gfxcardstatus
+stoplight-studio
+storyboarder
+strange-flesh
+streamlink-twitch-gui
+stremio
+stretchly
+stringsfile
+stubbymanager
+studio-3t
+studiolinkstandalone
+subethaedit
+subgit
+subler
+sublercli
+sublime-merge
+sublime-text
+subnetcalc
+subsurface
+subtitle-master
+subtitles
+subtools
+suitcase-fusion
+sunlogincontrol
+sunsama
+sunvox
+superbeam
+supercollider
+superduper
+superhuman
+superproductivity
+supersync
+supertuxkart
+surfeasy-vpn
+surge
+surge-synthesizer
+suspicious-package
+svgcleaner
+svnx
+sweet-home3d
+swift
+swift-explorer
+swift-publisher
+swiftdefaultappsprefpane
+swiftformat-for-xcode
+swiftpm-catalog
+swiftstack-client
+swifty
+swiftybeaver
+swimat
+swinsian
+swish
+switch
+switchhosts
+switchkey
+switchresx
+symboliclinker
+synalyze-it-pro
+sync
+sync-my-l2p
+syncmate
+syncovery
+syncplay
+syncterm
+syncthing
+synergy
+synfigstudio
+synology-chat
+synology-note-station-client
+synthesia
+sysdig-inspect
+sysex-librarian
+table-tool
+tableau
+tableau-prep
+tableau-public
+tableau-reader
+tableflip
+tableplus
+tabula
+tad
+tag
+tagalicious
+tagger
+tagspaces
+tales-of-majeyal
+talon
+tandem
+taskade
+taskexplorer
+taskpaper
+taskwarrior-pomodoro
+tastyworks
+tau
+tbe
+tbs-studio
+tcl
+td-agent
+teacode
+teambition
+teamdrive
+teamspeak-client
+teamviewer
+teamviewer-host
+teamviewer-quickjoin
+teamviewer-quicksupport
+teamwire
+teensy
+teeworlds
+telavox-flow
+telegram
+telegram-desktop
+tempo
+tencent-lemon
+tenor
+termhere
+terminology
+terminus
+termius
+tex-live-utility
+texmacs
+texmaker
+texpad
+texshop
+texstudio
+textadept
+textbar
+textexpander
+textmate
+texts
+textual
+texturepacker
+texworks
+tg-pro
+th-makerx
+the-archive-browser
+the-battle-for-wesnoth
+the-cheat
+the-clock
+the-tagger
+the-unarchiver
+thebrain
+thedesk
+themeengine
+there
+therm
+thetube
+thingsmacsandboxhelper
+thinkorswim
+thonny
+thonny-xxl
+thought-train
+threads
+thumbsup
+thunder
+thunderbird
+thyme
+ti-connect-ce
+tibco-jaspersoft-studio
+tickeys
+ticktick
+tidal
+tiddly
+tidepool-uploader
+tifig
+tiger-trade
+tigervnc-viewer
+tigervpn
+tikz-editor
+tikzit
+tiled
+tiles
+time-lapse-assembler
+time-out
+time-sink
+time-tracker
+timecamp
+timely
+timemachineeditor
+timemator
+timer
+timestamp
+timeular
+timing
+timings
+tinderbox
+tiny-player
+tinymediamanager
+tinypng4mac
+tipp10
+tla-plus-toolbox
+tlv
+tn3270-x
+tnefs-enough
+today-scripts
+todometer
+todos
+todotxt
+todour
+tofu
+tomighty
+tongbu
+tonido
+toontown-rewritten
+topcat
+toptracker
+tor-browser
+torguard
+torrent-file-editor
+tortoisehg
+touch-bar-pong
+touch-bar-simulator
+touchbarserver
+touchdesigner
+touchosc-bridge
+touchosc-editor
+touchswitcher
+tower
+townwifi
+tracks-live
+trader-workstation
+trailer
+trainerroad
+tranquility
+transmission
+transmission-remote-gui
+transmit
+transmit-disk
+transocks
+transtype
+trash-it
+trayplay
+treesheets
+tresorit
+trezor-bridge
+tribler
+trilium-notes
+trim-enabler
+trinity
+triplecheese
+tripmode
+trolcommander
+tropy
+trufont
+ttscoff-mmd-quicklook
+tuck
+tuneinstructor
+tuneskit-m4v-converter
+tunnelbear
+tunnelblick
+tuntap
+tuple
+turbo-boost-switcher
+turbovnc-viewer
+turtl
+tusk
+tutanota
+tuxera-ntfs
+tuxguitar
+tv-browser
+tvrenamer
+tweet-tray
+tweetbot
+tweeten
+twine
+twist
+twitch
+twonkyserver
+tyke
+typeface
+typeit4me
+typinator
+typora
+tysimulator
+ubar
+ubersicht
+uc-one
+udeler
+udig
+ueli
+ui-browser
+ukelele
+ukrainian-unicode-layout
+ultimaker-cura
+ultimate
+ultimate-control
+ultrastardeluxe
+uncolored
+uncrustifyx
+understand
+unetbootin
+unicodechecker
+unified-remote
+uninstallpkg
+unison
+unite
+unity
+unity-android-support-for-editor
+unity-download-assistant
+unity-hub
+unity-ios-support-for-editor
+unity-lumin-support-for-editor
+unity-standard-assets
+unity-web-player
+unity-webgl-support-for-editor
+unity-windows-support-for-editor
+universal-media-server
+unlox
+unpkg
+unshaky
+upic
+upm
+upterm
+upwork
+usage
+usb-overdrive
+use-engine
+utc-menu-clock
+utools
+utox
+uu-booster
+uxprotect
+v2rayu
+v2rayx
+vagrant
+vagrant-manager
+vagrant-vmware-utility
+valentina-studio
+valley
+vanilla
+vapor
+vassal
+vcv-rack
+vectr
+vellum
+veonim
+veracrypt
+versions
+vesta
+veusz
+viber
+vidcutter
+videobox
+videostream
+vidrio
+vidyo
+vienna
+vimediamanager
+vimr
+vin047-abgx360
+vip-access
+virtual-ii
+virtualbox
+virtualbox-extension-pack
+virtualc64
+virtualgl
+virtualhere
+virtualhereserver
+virtualhostx
+virustotaluploader
+viscosity
+visicut
+visit
+visual
+visual-paradigm
+visual-paradigm-ce
+visual-studio
+visual-studio-code
+visualboyadvance-m
+visualvm
+vitalsource-bookshelf
+vitamin-r
+vivaldi
+vivi
+vk-messenger
+vlc
+vlc-webplugin
+vlcstreamer
+vmpk
+vmware-fusion
+vmware-horizon-client
+vnc-server
+vnc-viewer
+vnote
+voicemac
+voikkospellservice
+volt
+voodoopad
+vorta
+vox
+vox-preferences-pane
+voxql
+vpn-enabler
+vrep
+vscodium
+vsee
+vu
+vuescan
+vuze
+vv
+vyprvpn
+vysor
+wacom-inkspace
+wail
+wakeonlan
+wallpaper-wizard
+waltr
+wanna
+warsow
+wasabi-wallet
+watchguard-mobile-vpn-with-ssl
+waterfox-current
+wavebox
+waves-central
+wavesurfer
+wavtap
+web-sharing
+webarchiveextractor
+webcamoid
+webcatalog
+webex-meetings
+webex-nbr-player
+webex-teams
+webex-wrf-player
+webpack-dashboard
+webplotdigitizer
+webpquicklook
+webrecorder-player
+website-watchman
+webstorm
+webtorrent
+webviewscreensaver
+wechat
+wechatwebdevtools
+wechatwork
+weiyun
+weka
+welly
+wercker
+wercker-cli
+wewechat
+wey
+whale
+whalebird
+whatroute
+whatsapp
+whatsize
+whatsyoursign
+whichspace
+whoozle-android-file-transfer
+wickrme
+widelands
+wifi-explorer
+wifispoof
+window-switch
+windows95
+winds
+windscribe
+wine-stable
+wingpersonal
+wings3d
+wintertime
+winzip
+wire
+wireframe-sketcher
+wireshark
+wireshark-chmodbpf
+witch
+wiznote
+wjoy
+wkhtmltopdf
+wonderfultools-screensaver
+wondershare-filmora
+wordpresscom
+wordservice
+workbench
+workflowy
+workplace-chat
+wowmatrix
+wpsoffice
+wraparound
+wrike
+writefull
+writemapper
+writer
+wwdc
+wwdcsrt
+wxcrafter
+x-mirage
+x-moto
+x2goclient
+xact
+xamarin
+xamarin-android
+xamarin-ios
+xamarin-mac
+xamarin-profiler
+xamarin-studio
+xamarin-workbooks
+xampp
+xampp-vm
+xaos
+xbench
+xca
+xctu
+xdm
+xee
+xiami
+ximalaya
+xit
+xld
+xlplayer
+xmind
+xmind-zen
+xmplify
+xnconvert
+xnviewmp
+xoctave
+xonotic
+xpra
+xquartz
+xrg
+xscope
+xscreensaver
+xtorrent
+yacreader
+yakyak
+yam-display
+yammer
+yandex
+yandex-cloud-cli
+yandex-disk
+yandexradio
+yate
+yed
+yemuzip
+yep
+yinxiangbiji
+yo
+yoda
+yojimbo
+youdaodict
+youdaonote
+youku
+youll-never-take-me-alive
+youtrack-workflow
+youtube-to-mp3
+yt-music
+yu-writer
+yy
+yyets
+zalo
+zandronum
+zazu
+zdoom
+zeebe-modeler
+zenmap
+zenmate-vpn
+zeplin
+zerobranestudio
+zeronet
+zerotier-one
+zesarux
+zettelkasten
+zettlr
+zipcleaner
+zoc
+zoho-docs
+zoho-mail
+zoho-workdrive
+zoolz
+zoom
+zoomus
+zoomus-outlook-plugin
+zotero
+zterm
+zulip
+zulu
+zwift
+zxpinstaller
+==> Deleted Casks
+33-rpm
+alephone
+anka-flow
+appearin
+appshelf
+argouml
+baiduhi
+bforartists
+blue-jeans
+borgbackup
+box-edit
+brogue
+capture-one
+chicken
+cloudtv
+cocoscreator
+colorpicker-rcwebcolorpicker
+cube
+cutbox
+daemon-tools
+daily-english-listening
+dawnlabs-alchemy
+deploystudio
+desktop-presenter
+diptrace
+dradio
+dropbox-encore
+enolsoft-chm-view
+eve
+f-secure-anti-virus
+fastlane
+fdr
+feeder
+filemaker-pro-advanced
+font-cica
+ghost
+glip
+gog-downloader
+gpsdump
+grip
+hab
+hand-mirror
+haskell-for-mac
+hider
+hipchat
+hook
+hyperion-download-manager
+iconping
+imaging-edge
+imgur
+intelliscape-caffeine
+invisorql
+iphoney
+iringg
+java
+jing
+joshaven-winbox
+kindlegen
+liteswitch-x
+livechat
+logoist
+luminetmonitor
+lunchy
+madruby
+mammon
+manopen
+messenger
+miro-formerly-realtimeboard
+mongodb-compass-community
+moodo
+motion
+muzie
+myworkspace
+netsurf
+nimble
+obinslab-starter
+pdfinfo
+people-plus-content-ip
+phiewer
+podman
+qtum-qt
+raptor
+rcdefaultapp
+remembear
+ring
+riot
+roblox
+rumpus
+safaricookiecutter
+safarisort
+safe-exam-browser
+scope
+screentray
+shinhan-ezplus
+sleepyhead
+sopcast
+spectacularity
+spotify-notifications
+station
+strongvpn-client
+sus-inspector
+tap
+textricator
+tftpserver
+the-hit-list
+thorn-writing
+tiat
+toggl
+twelf
+uniconverter
+unity-linux-support-for-editor
+validator-sac
+waterfox
+webponize
+whatsapp-pocket
+wineskin-winery
+wko
+x48
+xmrouter
+yourkit-java-profiler
+==> java has been moved to Homebrew.
+To uninstall the cask run:
+  brew cask uninstall --force java
+==> Installing java...
+Error: openjdk 13.0.2+8_2 is already installed
+To upgrade to 14.0.1, run `brew upgrade openjdk`
+
+==> Downloading https://homebrew.bintray.com/bottles/git-lfs-2.12.0.mojave.bottle.tar.gz
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/a407e33c74000f21d71a3b4afdf874404e94c8f282eac7529e81a2da6ff29989?response-content-disposition=attachment%3Bfilename%3D%22git-lfs-2.12.0.mojave.bottle.tar.gz%22&Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHAqOi8vZDI5dnprNG93MDd3aTcuY2xvdWRmcm9udC5uZXQvYTQwN2UzM2M3NDAwMGYyMWQ3MWEzYjRhZmRmODc0NDA0ZTk0YzhmMjgyZWFjNzUyOWU4MWEyZGE2ZmYyOTk4OT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM0JmaWxlbmFtZSUzRCUyMmdpdC1sZnMtMi4xMi4wLm1vamF2ZS5ib3R0bGUudGFyLmd6JTIyIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjAyNTg4MDczfSwiSXBBZGRyZXNzIjp7IkFXUzpTb3VyY2VJcCI6IjAuMC4wLjAvMCJ9fX1dfQ__&Signature=RbVSqkC3FODb4lbBG9KnsfID0xmhSvvJTsOmFehIWUZVu2VuNwI49gUpc-NAsul23QrhfpWLrn~ehcONksLb07fR3DndXTLPdXy3S5duRmuPI1ZwQvb741Y5r8zmNWq6~67ZmPernRfmMGsefOnIMty2tesmzoQQz6jYc4O3gJG5EGoFaygqoAg38i~ykAhnWhja9-s1IJxQkuym82W4zbU43jwwKMI5WUSwb6dJm3OM47VMNoAqUfWVcGSPPxqIH4Iger4FhQ38eQw5qDvtIXKLxgAJjgrqCLfMVg~K0yQb8s3H3GliwzLs0NUQqQPFag2fjI7C-WcyKZ4ETj4OSA__&Key-Pair-Id=APKAIFKFWOMXM2UMTSFA
+==> Pouring git-lfs-2.12.0.mojave.bottle.tar.gz
+==> Caveats
+Update your git config to finish installation:
+
+  # Update global git config
+  $ git lfs install
+
+  # Update system git config
+  $ git lfs install --system
+==> Summary
+🍺  /usr/local/Cellar/git-lfs/2.12.0: 65 files, 11.7MB
+travis_time:end:085253a0:start=1602587258466578000,finish=1602587355828725000,duration=97362147000,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:21da5e00[0K$ python3 --version
+Python 3.7.7
+travis_time:end:21da5e00:start=1602587355837802000,finish=1602587355885986000,duration=48184000,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:2bf3dd30[0K$ git lfs install
+Updated git hooks.
+Git LFS initialized.
+travis_time:end:2bf3dd30:start=1602587355895000000,finish=1602587356017514000,duration=122514000,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:001a95ca[0K$ git lfs pull
+travis_time:end:001a95ca:start=1602587356026703000,finish=1602587357601802000,duration=1575099000,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:install.1[0Ktravis_time:start:016f66b1[0K$ $PYTHON -m pip install --upgrade pip
+Collecting pip
+  Downloading pip-20.2.3-py2.py3-none-any.whl (1.5 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.0.2
+    Uninstalling pip-20.0.2:
+      Successfully uninstalled pip-20.0.2
+Successfully installed pip-20.2.3
+travis_time:end:016f66b1:start=1602587357611593000,finish=1602587363347232000,duration=5735639000,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:0d6bb604[0K$ $PIP install -r requirements.txt
+WARNING: The directory '/Users/travis/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting pytest
+  Downloading pytest-6.1.1-py3-none-any.whl (272 kB)
+Collecting numpy==1.17.5
+  Downloading numpy-1.17.5-cp37-cp37m-macosx_10_9_x86_64.whl (15.1 MB)
+Collecting matplotlib==3.2.1
+  Downloading matplotlib-3.2.1-cp37-cp37m-macosx_10_9_x86_64.whl (12.4 MB)
+Collecting scipy==1.3.3
+  Downloading scipy-1.3.3-cp37-cp37m-macosx_10_6_intel.whl (27.7 MB)
+Collecting astropy==4.0.1
+  Downloading astropy-4.0.1-cp37-cp37m-macosx_10_9_x86_64.whl (6.5 MB)
+Collecting lightkurve>=1.7.0
+  Downloading lightkurve-1.11.3-py3-none-any.whl (515 kB)
+Collecting scikit-learn==0.23
+  Downloading scikit_learn-0.23.0-cp37-cp37m-macosx_10_9_x86_64.whl (7.4 MB)
+Collecting Bottleneck==1.3.2
+  Downloading Bottleneck-1.3.2.tar.gz (88 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting requests
+  Downloading requests-2.24.0-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (46.0.0)
+Collecting tensorflow==2.3.1
+  Downloading tensorflow-2.3.1-cp37-cp37m-macosx_10_9_x86_64.whl (165.1 MB)
+Collecting Pillow
+  Downloading Pillow-7.2.0-cp37-cp37m-macosx_10_10_x86_64.whl (2.2 MB)
+Collecting xgboost==0.90
+  Downloading xgboost-0.90.tar.gz (676 kB)
+Collecting tqdm
+  Downloading tqdm-4.50.2-py2.py3-none-any.whl (70 kB)
+Collecting pyentrp==0.6.0
+  Downloading pyentrp-0.6.0.tar.gz (4.5 kB)
+Collecting py>=1.8.2
+  Downloading py-1.9.0-py2.py3-none-any.whl (99 kB)
+Collecting packaging
+  Downloading packaging-20.4-py2.py3-none-any.whl (37 kB)
+Collecting attrs>=17.4.0
+  Downloading attrs-20.2.0-py2.py3-none-any.whl (48 kB)
+Collecting iniconfig
+  Downloading iniconfig-1.0.1-py3-none-any.whl (4.2 kB)
+Collecting importlib-metadata>=0.12; python_version < "3.8"
+  Downloading importlib_metadata-2.0.0-py2.py3-none-any.whl (31 kB)
+Collecting pluggy<1.0,>=0.12
+  Downloading pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+Collecting toml
+  Downloading toml-0.10.1-py2.py3-none-any.whl (19 kB)
+Collecting python-dateutil>=2.1
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting cycler>=0.10
+  Downloading cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.2.0-cp37-cp37m-macosx_10_9_x86_64.whl (60 kB)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting bs4
+  Downloading bs4-0.0.1.tar.gz (1.1 kB)
+Collecting uncertainties
+  Downloading uncertainties-3.1.4-py2.py3-none-any.whl (246 kB)
+Collecting astroquery>=0.3.9
+  Downloading astroquery-0.4.1.tar.gz (6.5 MB)
+Collecting oktopus
+  Downloading oktopus-0.1.2.tar.gz (10 kB)
+Collecting patsy>=0.5.1
+  Downloading patsy-0.5.1-py2.py3-none-any.whl (231 kB)
+Collecting pandas
+  Downloading pandas-1.1.3-cp37-cp37m-macosx_10_9_x86_64.whl (9.9 MB)
+Collecting fbpca>=1.0
+  Downloading fbpca-1.0.tar.gz (11 kB)
+Collecting joblib>=0.11
+  Downloading joblib-0.17.0-py3-none-any.whl (301 kB)
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+Collecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2020.6.20-py2.py3-none-any.whl (156 kB)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+  Downloading urllib3-1.25.10-py2.py3-none-any.whl (127 kB)
+Collecting termcolor>=1.1.0
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+Collecting astunparse==1.6.3
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting gast==0.3.3
+  Downloading gast-0.3.3-py2.py3-none-any.whl (9.7 kB)
+Collecting tensorboard<3,>=2.3.0
+  Downloading tensorboard-2.3.0-py3-none-any.whl (6.8 MB)
+Collecting h5py<2.11.0,>=2.10.0
+  Downloading h5py-2.10.0-cp37-cp37m-macosx_10_6_intel.whl (3.0 MB)
+Requirement already satisfied: six>=1.12.0 in /usr/local/Cellar/protobuf/3.11.4/libexec/lib/python3.7/site-packages (from tensorflow==2.3.1->-r requirements.txt (line 11)) (1.14.0)
+Collecting grpcio>=1.8.6
+  Downloading grpcio-1.32.0-cp37-cp37m-macosx_10_9_x86_64.whl (3.3 MB)
+Collecting absl-py>=0.7.0
+  Downloading absl_py-0.10.0-py3-none-any.whl (127 kB)
+Collecting wrapt>=1.11.1
+  Downloading wrapt-1.12.1.tar.gz (27 kB)
+Requirement already satisfied: protobuf>=3.9.2 in /usr/local/Cellar/protobuf/3.11.4/libexec/lib/python3.7/site-packages (from tensorflow==2.3.1->-r requirements.txt (line 11)) (3.11.4)
+Collecting opt-einsum>=2.3.2
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+Collecting google-pasta>=0.1.8
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Collecting tensorflow-estimator<2.4.0,>=2.3.0
+  Downloading tensorflow_estimator-2.3.0-py2.py3-none-any.whl (459 kB)
+Collecting keras-preprocessing<1.2,>=1.1.1
+  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+Requirement already satisfied: wheel>=0.26 in /usr/local/lib/python3.7/site-packages (from tensorflow==2.3.1->-r requirements.txt (line 11)) (0.34.2)
+Collecting zipp>=0.5
+  Downloading zipp-3.3.0-py3-none-any.whl (5.3 kB)
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.9.3-py3-none-any.whl (115 kB)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+Collecting keyring>=4.0
+  Downloading keyring-21.4.0-py3-none-any.whl (31 kB)
+Collecting html5lib>=0.999
+  Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+Collecting autograd
+  Downloading autograd-1.3.tar.gz (38 kB)
+Collecting pytz>=2017.2
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+Collecting google-auth-oauthlib<0.5,>=0.4.1
+  Downloading google_auth_oauthlib-0.4.1-py2.py3-none-any.whl (18 kB)
+Collecting werkzeug>=0.11.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+Collecting markdown>=2.6.8
+  Downloading Markdown-3.3.1-py3-none-any.whl (95 kB)
+Collecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.7.0-py3-none-any.whl (779 kB)
+Collecting google-auth<2,>=1.6.3
+  Downloading google_auth-1.22.1-py2.py3-none-any.whl (114 kB)
+Collecting soupsieve>1.2; python_version >= "3.0"
+  Downloading soupsieve-2.0.1-py3-none-any.whl (32 kB)
+Collecting webencodings
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting requests-oauthlib>=0.7.0
+  Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+Collecting rsa<5,>=3.1.4; python_version >= "3.5"
+  Downloading rsa-4.6-py3-none-any.whl (47 kB)
+Collecting cachetools<5.0,>=2.0.0
+  Downloading cachetools-4.1.1-py3-none-any.whl (10 kB)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.1.0-py2.py3-none-any.whl (147 kB)
+Collecting pyasn1>=0.1.3
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+Building wheels for collected packages: Bottleneck, xgboost, pyentrp, bs4, astroquery, oktopus, fbpca, termcolor, wrapt, future, autograd
+  Building wheel for Bottleneck (PEP 517): started
+  Building wheel for Bottleneck (PEP 517): finished with status 'done'
+  Created wheel for Bottleneck: filename=Bottleneck-1.3.2-cp37-cp37m-macosx_10_14_x86_64.whl size=108100 sha256=ec387698822323ea646e365948243c2dcd9bea71085266561cae9ff1f91443d6
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/87/85/9c/a325c89ff0498660ef8a335fb4b3912939c273ea4f094af29f
+  Building wheel for xgboost (setup.py): started
+  Building wheel for xgboost (setup.py): still running...
+  Building wheel for xgboost (setup.py): finished with status 'done'
+  Created wheel for xgboost: filename=xgboost-0.90-cp37-cp37m-macosx_10_14_x86_64.whl size=1710139 sha256=3234258a21d96b86987f1667cb37a0564ad2bdcf73f1490e249791620ae135a4
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/66/5a/1f/f1d545c72a3d2303225d4eee7bfb5df1edb5054b14658980fd
+  Building wheel for pyentrp (setup.py): started
+  Building wheel for pyentrp (setup.py): finished with status 'done'
+  Created wheel for pyentrp: filename=pyentrp-0.6.0-py2.py3-none-any.whl size=5040 sha256=ca2f7fb49c07d01e0bbeeb010373700a66b5137e02c13d549b072c51e8088388
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/74/87/62/e61a7ae7fcbc8fd2864c663c1bd3edd63ddd574bbbdb6cccb2
+  Building wheel for bs4 (setup.py): started
+  Building wheel for bs4 (setup.py): finished with status 'done'
+  Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=d7930cc99d7247b42282867392d0eccf634cb600de4e5c0cec0a98a466ca2ac1
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/0a/9e/ba/20e5bbc1afef3a491f0b3bb74d508f99403aabe76eda2167ca
+  Building wheel for astroquery (setup.py): started
+  Building wheel for astroquery (setup.py): finished with status 'done'
+  Created wheel for astroquery: filename=astroquery-0.4.1-py3-none-any.whl size=3831872 sha256=21cc7a07e0af389d01fb7a07eef277ca348c03bf0dcdbcbcc83eef080f179964
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/59/74/e3/a457b9b06b2cf6a0126f316459030ee535cfaa95a69bbcc36f
+  Building wheel for oktopus (setup.py): started
+  Building wheel for oktopus (setup.py): finished with status 'done'
+  Created wheel for oktopus: filename=oktopus-0.1.2-py3-none-any.whl size=12778 sha256=b7e133a2178fa725d9739ca46f6c5098dd64c70262e9f2c3ef0401f6d6329c33
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/19/22/e3/6d224a32d6f94f28113d6d26c8bef81d7e05978d0efed29517
+  Building wheel for fbpca (setup.py): started
+  Building wheel for fbpca (setup.py): finished with status 'done'
+  Created wheel for fbpca: filename=fbpca-1.0-py3-none-any.whl size=11375 sha256=afc3486d92fd3edce93d8a991fd5b41496e77b2ddd3928591dc07eb64e9e8503
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/93/08/0c/1b9866c35c8d3f136d100dfe88036a32e0795437daca089f70
+  Building wheel for termcolor (setup.py): started
+  Building wheel for termcolor (setup.py): finished with status 'done'
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=0557a504f06c6609eea3589e1352a7cd150b7c7ea2c5f1d0059bf225b3cb09db
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/3f/e3/ec/8a8336ff196023622fbcb36de0c5a5c218cbb24111d1d4c7f2
+  Building wheel for wrapt (setup.py): started
+  Building wheel for wrapt (setup.py): finished with status 'done'
+  Created wheel for wrapt: filename=wrapt-1.12.1-cp37-cp37m-macosx_10_14_x86_64.whl size=32376 sha256=4e6efe52f5b39e52af5a71148bd868f2bacfd38728152d14bd6026b3d28c5cfe
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/62/76/4c/aa25851149f3f6d9785f6c869387ad82b3fd37582fa8147ac6
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=6e4447a2cf2870a208ce79a28417db9fa50b03481ac2560b3ef81a4d281864c9
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/56/b0/fe/4410d17b32f1f0c3cf54cdfb2bc04d7b4b8f4ae377e2229ba0
+  Building wheel for autograd (setup.py): started
+  Building wheel for autograd (setup.py): finished with status 'done'
+  Created wheel for autograd: filename=autograd-1.3-py3-none-any.whl size=47990 sha256=a0adda142bf9c5960c621e3d15dcd587a52c6724130bdcd3cf84026449c49f05
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-bvkvf9_y/wheels/ef/32/31/0e87227cd0ca1d99ad51fbe4b54c6fa02afccf7e483d045e04
+Successfully built Bottleneck xgboost pyentrp bs4 astroquery oktopus fbpca termcolor wrapt future autograd
+Installing collected packages: py, pyparsing, packaging, attrs, iniconfig, zipp, importlib-metadata, pluggy, toml, pytest, numpy, python-dateutil, cycler, kiwisolver, matplotlib, scipy, astropy, idna, chardet, certifi, urllib3, requests, soupsieve, beautifulsoup4, bs4, tqdm, future, uncertainties, keyring, webencodings, html5lib, astroquery, autograd, oktopus, patsy, pytz, pandas, fbpca, lightkurve, joblib, threadpoolctl, scikit-learn, Bottleneck, termcolor, astunparse, gast, oauthlib, requests-oauthlib, pyasn1, rsa, cachetools, pyasn1-modules, google-auth, google-auth-oauthlib, werkzeug, grpcio, absl-py, markdown, tensorboard-plugin-wit, tensorboard, h5py, wrapt, opt-einsum, google-pasta, tensorflow-estimator, keras-preprocessing, tensorflow, Pillow, xgboost, pyentrp
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.18.1
+    Uninstalling numpy-1.18.1:
+      Successfully uninstalled numpy-1.18.1
+Successfully installed Bottleneck-1.3.2 Pillow-7.2.0 absl-py-0.10.0 astropy-4.0.1 astroquery-0.4.1 astunparse-1.6.3 attrs-20.2.0 autograd-1.3 beautifulsoup4-4.9.3 bs4-0.0.1 cachetools-4.1.1 certifi-2020.6.20 chardet-3.0.4 cycler-0.10.0 fbpca-1.0 future-0.18.2 gast-0.3.3 google-auth-1.22.1 google-auth-oauthlib-0.4.1 google-pasta-0.2.0 grpcio-1.32.0 h5py-2.10.0 html5lib-1.1 idna-2.10 importlib-metadata-2.0.0 iniconfig-1.0.1 joblib-0.17.0 keras-preprocessing-1.1.2 keyring-21.4.0 kiwisolver-1.2.0 lightkurve-1.11.3 markdown-3.3.1 matplotlib-3.2.1 numpy-1.17.5 oauthlib-3.1.0 oktopus-0.1.2 opt-einsum-3.3.0 packaging-20.4 pandas-1.1.3 patsy-0.5.1 pluggy-0.13.1 py-1.9.0 pyasn1-0.4.8 pyasn1-modules-0.2.8 pyentrp-0.6.0 pyparsing-2.4.7 pytest-6.1.1 python-dateutil-2.8.1 pytz-2020.1 requests-2.24.0 requests-oauthlib-1.3.0 rsa-4.6 scikit-learn-0.23.0 scipy-1.3.3 soupsieve-2.0.1 tensorboard-2.3.0 tensorboard-plugin-wit-1.7.0 tensorflow-2.3.1 tensorflow-estimator-2.3.0 termcolor-1.1.0 threadpoolctl-2.1.0 toml-0.10.1 tqdm-4.50.2 uncertainties-3.1.4 urllib3-1.25.10 webencodings-0.5.1 werkzeug-1.0.1 wrapt-1.12.1 xgboost-0.90 zipp-3.3.0
+travis_time:end:0d6bb604:start=1602587363356133000,finish=1602587717589497000,duration=354233364000,event=install[0Ktravis_fold:end:install.2[0Ktravis_fold:start:install.3[0Ktravis_time:start:08c62e86[0K$ $PIP install codecov pytest-cov
+WARNING: The directory '/Users/travis/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting codecov
+  Downloading codecov-2.1.10-py2.py3-none-any.whl (16 kB)
+Collecting pytest-cov
+  Downloading pytest_cov-2.10.1-py2.py3-none-any.whl (19 kB)
+Collecting coverage
+  Downloading coverage-5.3-cp37-cp37m-macosx_10_13_x86_64.whl (205 kB)
+Requirement already satisfied: requests>=2.7.9 in /usr/local/lib/python3.7/site-packages (from codecov) (2.24.0)
+Requirement already satisfied: pytest>=4.6 in /usr/local/lib/python3.7/site-packages (from pytest-cov) (6.1.1)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/site-packages (from requests>=2.7.9->codecov) (1.25.10)
+Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/site-packages (from requests>=2.7.9->codecov) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.7/site-packages (from requests>=2.7.9->codecov) (2020.6.20)
+Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.7/site-packages (from requests>=2.7.9->codecov) (2.10)
+Requirement already satisfied: packaging in /usr/local/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (20.4)
+Requirement already satisfied: py>=1.8.2 in /usr/local/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (1.9.0)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (2.0.0)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /usr/local/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (0.13.1)
+Requirement already satisfied: iniconfig in /usr/local/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (1.0.1)
+Requirement already satisfied: toml in /usr/local/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (0.10.1)
+Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (20.2.0)
+Requirement already satisfied: six in /usr/local/Cellar/protobuf/3.11.4/libexec/lib/python3.7/site-packages (from packaging->pytest>=4.6->pytest-cov) (1.14.0)
+Requirement already satisfied: pyparsing>=2.0.2 in /usr/local/lib/python3.7/site-packages (from packaging->pytest>=4.6->pytest-cov) (2.4.7)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest>=4.6->pytest-cov) (3.3.0)
+Installing collected packages: coverage, codecov, pytest-cov
+Successfully installed codecov-2.1.10 coverage-5.3 pytest-cov-2.10.1
+travis_time:end:08c62e86:start=1602587717600354000,finish=1602587721602575000,duration=4002221000,event=install[0Ktravis_fold:end:install.3[0Ktravis_fold:start:install.4[0Ktravis_time:start:008f5bfc[0K$ travis_wait $PYTHON run_download_cache.py -q
+
+
+Still running (1 of 20): python3 run_download_cache.py -qStill running (2 of 20): python3 run_download_cache.py -qStill running (3 of 20): python3 run_download_cache.py -q
+[31;1mThe command python3 run_download_cache.py -q exited with 1.[0m
+
+[32;1mLog:[0m
+
+Unable to revert mtime: /Library/Fonts
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/response.py", line 436, in _error_catcher
+    yield
+  File "/usr/local/lib/python3.7/site-packages/urllib3/response.py", line 518, in read
+    data = self._fp.read(amt) if not fp_closed else b""
+  File "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 457, in read
+    n = self.readinto(b)
+  File "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 501, in readinto
+    n = self.fp.readinto(b)
+  File "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1071, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 929, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 751, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/response.py", line 575, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/response.py", line 540, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/response.py", line 454, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run_download_cache.py", line 35, in <module>
+    starclass.download_cache()
+  File "/Users/travis/build/tasoc/starclass/starclass/download_cache.py", line 42, in download_cache
+    tset()
+  File "/Users/travis/build/tasoc/starclass/starclass/training_sets/keplerq9v2.py", line 34, in __init__
+    self.input_folder = self.tset_datadir('https://tasoc.dk/pipeline/starclass_trainingsets/keplerq9v2.zip')
+  File "/Users/travis/build/tasoc/starclass/starclass/training_sets/training_set.py", line 164, in tset_datadir
+    for data in res.iter_content(block_size):
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 754, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))
+/Users/travis/.travis/functions: line 607:  6003 Terminated: 15          travis_jigger "${!}" "${timeout}" "${cmd[@]}"
+travis_time:end:008f5bfc:start=1602587721613170000,finish=1602587891777610000,duration=170164440000,event=install[0K[31;1mThe command "travis_wait $PYTHON run_download_cache.py -q" failed and exited with 1 during .[0m
+
+Your build has been stopped.

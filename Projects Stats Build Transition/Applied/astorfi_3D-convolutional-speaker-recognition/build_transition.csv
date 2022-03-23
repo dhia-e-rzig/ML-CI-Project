@@ -1,0 +1,17 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+490719354,78e00e2976ebbd47d5f0cb4154c2c03f60b6e68c,ErroredToPassed,errored,504,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/bb8747b12d63...46124bc96a6a
+478601044,46124bc96a6ad8558d7a66f44a974337baa43d93,ErroredToPassed,passed,352,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/bb8747b12d63...46124bc96a6a
+478600041,bb8747b12d63e51ec8e6abbcb3788e0b185cd450,PassedToFailed,passed,489,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/86f1abcac3e5...f0a27f7830ca
+478599256,f0a27f7830ca739e783c406807dbe2db6994f1a2,PassedToFailed,failed,415,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/86f1abcac3e5...f0a27f7830ca
+477018174,7ac14347e4d0b1cae6cfe304c5e7108cf90c42dd,FailedToPassed,failed,334,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/7ac14347e4d0...86f1abcac3e5
+478596560,86f1abcac3e52a9e111234c40639908a7ba5dff8,FailedToPassed,passed,409,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/7ac14347e4d0...86f1abcac3e5
+478596560,86f1abcac3e52a9e111234c40639908a7ba5dff8,PassedToFailed,passed,409,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/a92de4df3b3b...2b3839584254
+472238956,2b383958425401ff2f74894a83a6b85e7f731ff0,PassedToFailed,failed,332,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/a92de4df3b3b...2b3839584254
+472238956,2b383958425401ff2f74894a83a6b85e7f731ff0,FailedToPassed,failed,332,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/1c30e327b844...a92de4df3b3b
+392027487,a92de4df3b3b1dfcc7591d7215128ffc8ad4896d,FailedToPassed,passed,452,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/1c30e327b844...a92de4df3b3b
+253763912,fe5bdf6560a65662ac2480292afb55b8f9d1bdea,PassedToFailed,passed,399,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/cf356187f70f...3cb8bac4d4bf
+253760954,3cb8bac4d4bf58428c8be8ceda3f9fc8d8981210,PassedToFailed,failed,275,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/cf356187f70f...3cb8bac4d4bf
+253760954,3cb8bac4d4bf58428c8be8ceda3f9fc8d8981210,FailedToPassed,failed,275,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/3cb8bac4d4bf...99b10b32bc83
+253761440,99b10b32bc831c8792c7da8d4e2d5fc47597a82c,FailedToPassed,passed,464,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/3cb8bac4d4bf...99b10b32bc83
+253761440,99b10b32bc831c8792c7da8d4e2d5fc47597a82c,PassedToFailed,passed,464,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/9eb23942f0d4...01fce82e109f
+253744975,01fce82e109f8dfad7de91dfc2afec439d36866c,PassedToFailed,failed,229,https://github.com/astorfi/3D-convolutional-speaker-recognition/compare/9eb23942f0d4...01fce82e109f

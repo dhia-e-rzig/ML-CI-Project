@@ -1,0 +1,3 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+394308985,fbb875f02cee6c001ba8c746398da6eb77444807,PassedToFailed,passed,98,https://github.com/joergfranke/ADNC/compare/355c965ffc79...ad771b38f18f
+394306668,ad771b38f18f5e01eff7f9e5fbbfbbe0b75458e0,PassedToFailed,failed,141,https://github.com/joergfranke/ADNC/compare/355c965ffc79...ad771b38f18f

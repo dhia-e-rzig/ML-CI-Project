@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+491985002,06ceb0c3fde4b186950d2c83c598e880cd0272dd,PassedToErrored,passed,91,https://github.com/yasufumy/pipelib/pull/44
+491984984,c8b963a270ac1c4073bda78e3e2637e2438029d9,PassedToErrored,errored,63,https://github.com/yasufumy/pipelib/pull/44
+491984984,c8b963a270ac1c4073bda78e3e2637e2438029d9,ErroredToPassed,errored,63,https://github.com/yasufumy/pipelib/compare/2544d0e2da1b...e66e7eaf88af
+491984601,e66e7eaf88afd43258d5214f913f9c921e0044dc,ErroredToPassed,passed,104,https://github.com/yasufumy/pipelib/compare/2544d0e2da1b...e66e7eaf88af
+491184298,fe670d0aaa4c3e5ff78f4e7acdb2e18dafbe9d83,PassedToFailed,passed,91,https://github.com/yasufumy/pipelib/compare/f0ee100b005f^...ec9ff8447265
+490893480,ec9ff8447265d007c04bea801d4b97d9b64efc2d,PassedToFailed,failed,54,https://github.com/yasufumy/pipelib/compare/f0ee100b005f^...ec9ff8447265
+490893480,ec9ff8447265d007c04bea801d4b97d9b64efc2d,FailedToPassed,failed,54,https://github.com/yasufumy/pipelib/compare/0e57202c37e8...420b654c3f29
+489937328,420b654c3f29d92e4ceb5071fa68764b67184b6b,FailedToPassed,passed,101,https://github.com/yasufumy/pipelib/compare/0e57202c37e8...420b654c3f29
+472237752,d88a558286959e9ce1c6c4dbe70b069ee63f553a,PassedToFailed,passed,66,https://github.com/yasufumy/pipelib/commit/6ab4a80d0295
+472237145,6ab4a80d0295ba8bb1bcb00cf8f78b34aaf2124b,PassedToFailed,failed,109,https://github.com/yasufumy/pipelib/commit/6ab4a80d0295

@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+620273895,43553e77e44a4fa6eec2019f5771eb0b3560fa82,PassedToFailed,passed,127,https://github.com/alvations/pywsd/pull/53
+620269185,ca00deab1759c3912f2fb298b563f563de317dfa,PassedToFailed,failed,127,https://github.com/alvations/pywsd/pull/53
+620269178,58723aca09dbaff1f61ceaaaef54288b782858a9,FailedToPassed,failed,133,https://github.com/alvations/pywsd/pull/53
+579410885,aa40a7cccd636b959a073ded1e85b939cb58be57,FailedToPassed,passed,114,https://github.com/alvations/pywsd/pull/53
+523876301,b04f9a5708e21d601a4448e195e975421b7f2c35,PassedToFailed,passed,154,https://github.com/alvations/pywsd/pull/52
+523875761,4bd208a4e6d1f34f0763ce805370424030480cca,PassedToFailed,failed,281,https://github.com/alvations/pywsd/pull/52
+373862498,6c9760a925883a0a8d78bb247bd86abe3a7d1553,FailedToPassed,failed,216,https://github.com/alvations/pywsd/commit/8d8b40105773
+373844255,8d8b401057739b5cecf692a0f0364f8ef6554ead,FailedToPassed,passed,217,https://github.com/alvations/pywsd/commit/8d8b40105773
+353260196,cbac0ad64e28a1740bc636eb90c03cbd824f981b,PassedToFailed,passed,258,https://github.com/alvations/pywsd/compare/ed287f7c7a6b...8a929080413c
+353259837,8a929080413c8a404cf6a4e65bf7cce5cb250cae,PassedToFailed,failed,225,https://github.com/alvations/pywsd/compare/ed287f7c7a6b...8a929080413c
+353257725,6d6d107636c0d816f7a6d15c7f6d39f0601a8bfb,FailedToPassed,failed,232,https://github.com/alvations/pywsd/compare/4197fff28e07...43a2b7387556
+353253510,43a2b7387556fe0ec8e97531df94176103818e1e,FailedToPassed,passed,222,https://github.com/alvations/pywsd/compare/4197fff28e07...43a2b7387556
+353253510,43a2b7387556fe0ec8e97531df94176103818e1e,PassedToFailed,passed,222,https://github.com/alvations/pywsd/compare/c923df5e3645...4197fff28e07
+353251601,4197fff28e077bb0521b9ff66648d21052a9f11b,PassedToFailed,failed,247,https://github.com/alvations/pywsd/compare/c923df5e3645...4197fff28e07

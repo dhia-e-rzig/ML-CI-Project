@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+634270317,0e1ab143d8172b082fbddf96addea83654554656,PassedToErrored,passed,72,https://github.com/braincreators/octconv/compare/0.2.0
+634267441,5839a55a1cdb4c43304090e6c86565aa5e372750,PassedToErrored,errored,122,https://github.com/braincreators/octconv/compare/0.2.0
+634267441,5839a55a1cdb4c43304090e6c86565aa5e372750,ErroredToPassed,errored,122,https://github.com/braincreators/octconv/compare/102f94cf6fba...5839a55a1cdb
+634264244,5839a55a1cdb4c43304090e6c86565aa5e372750,ErroredToPassed,passed,74,https://github.com/braincreators/octconv/compare/102f94cf6fba...5839a55a1cdb
+631940600,d96df4206e78482a5fb02d233310e9c77153e3a7,PassedToFailed,passed,96,https://github.com/braincreators/octconv/pull/3
+631939160,fedd0098dddda7e86d7e47b767f44d795880df28,PassedToFailed,failed,73,https://github.com/braincreators/octconv/pull/3
+629312097,1b3d465847ecc6d1e65fbced27dca2e76553ba82,FailedToPassed,failed,76,https://github.com/braincreators/octconv/pull/3
+629013347,a7010730e419c56e156266f303d45a3a7b53ee18,FailedToPassed,passed,75,https://github.com/braincreators/octconv/pull/3
+546608852,733b73cff2b0ff20a82085b3221c8fae1f5e623a,PassedToErrored,passed,91,https://github.com/braincreators/octconv/pull/2
+546608621,df4c10cb1a910a9c1c3274aa0df6e728cf857abd,PassedToErrored,errored,121,https://github.com/braincreators/octconv/pull/2
+546608621,df4c10cb1a910a9c1c3274aa0df6e728cf857abd,ErroredToPassed,errored,121,https://github.com/braincreators/octconv/compare/9c15005aa93a...aea4634c11a6
+546607485,aea4634c11a62c9a95ec6b7df78f531f8d6b3c77,ErroredToPassed,passed,96,https://github.com/braincreators/octconv/compare/9c15005aa93a...aea4634c11a6
+526853834,0f23a4c0a6479b878a446da36b96f4a3f55ee114,PassedToFailed,passed,77,https://github.com/braincreators/octconv/compare/40d0ca3e5cf67100d438e8e58b9154ce8e3e8fe1...6d4e9a264baf64dcafb77d8a68ce0c23ec2db3ca
+526852091,6d4e9a264baf64dcafb77d8a68ce0c23ec2db3ca,PassedToFailed,failed,101,https://github.com/braincreators/octconv/compare/40d0ca3e5cf67100d438e8e58b9154ce8e3e8fe1...6d4e9a264baf64dcafb77d8a68ce0c23ec2db3ca

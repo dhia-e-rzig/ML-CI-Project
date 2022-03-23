@@ -1,0 +1,621 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 7dfa9d7c-eea2-457e-8c68-b861c5b2620c@1.worker-com-559765c97b-8qp5n.gce-production-1
+version: v6.2.1 https://github.com/travis-ci/worker/tree/4e3246c044eb4915c2378ffacd0b3d3ed0136bba
+instance: travis-job-0a68c591-3673-4cfb-97ec-e12c0324a178 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.300463121s
+travis_fold:end:worker_info[0Ktravis_time:start:08f034ca[0Ktravis_time:end:08f034ca:start=1572042996232916007,finish=1572042996427521825,duration=194605818,event=no_world_writable_dirs[0Ktravis_time:start:15eb187c[0Ktravis_time:end:15eb187c:start=1572042996431614870,finish=1572042996440669019,duration=9054149,event=agent[0Ktravis_time:start:2137698c[0Ktravis_time:end:2137698c:start=1572042996444343213,finish=1572042996446995296,duration=2652083,event=check_unsupported[0Ktravis_time:start:0203eddc[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 133600941
+Job id: 249624998
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: a91ac50bd
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:0203eddc:start=1572042996450678351,finish=1572042996460236683,duration=9558332,event=show_system_info[0Ktravis_time:start:0007f2c9[0Ktravis_time:end:0007f2c9:start=1572042996464070058,finish=1572042996492142608,duration=28072550,event=rm_riak_source[0Ktravis_time:start:06167b3c[0Ktravis_time:end:06167b3c:start=1572042996496231218,finish=1572042996503782107,duration=7550889,event=fix_rwky_redis[0Ktravis_time:start:1acec2e4[0Ktravis_time:end:1acec2e4:start=1572042996507784547,finish=1572042996917253871,duration=409469324,event=wait_for_network[0Ktravis_time:start:14ee5184[0Ktravis_time:end:14ee5184:start=1572042996920794100,finish=1572042997971987467,duration=1051193367,event=update_apt_keys[0Ktravis_time:start:0ba2e4d8[0Ktravis_time:end:0ba2e4d8:start=1572042997975644071,finish=1572042999069643375,duration=1093999304,event=fix_hhvm_source[0Ktravis_time:start:00e47230[0Ktravis_time:end:00e47230:start=1572042999073302071,finish=1572042999083202553,duration=9900482,event=update_mongo_arch[0Ktravis_time:start:14c3e4a2[0Ktravis_time:end:14c3e4a2:start=1572042999086552153,finish=1572042999128840558,duration=42288405,event=fix_sudo_enabled_trusty[0Ktravis_time:start:09f85168[0Ktravis_time:end:09f85168:start=1572042999132479088,finish=1572042999134994203,duration=2515115,event=update_glibc[0Ktravis_time:start:0041d060[0Ktravis_time:end:0041d060:start=1572042999138434230,finish=1572042999146923564,duration=8489334,event=clean_up_path[0Ktravis_time:start:02279e92[0Ktravis_time:end:02279e92:start=1572042999149988904,finish=1572042999158991807,duration=9002903,event=fix_resolv_conf[0Ktravis_time:start:0543bd02[0Ktravis_time:end:0543bd02:start=1572042999162508914,finish=1572042999172747063,duration=10238149,event=fix_etc_hosts[0Ktravis_time:start:07ccd2b0[0Ktravis_time:end:07ccd2b0:start=1572042999176327967,finish=1572042999186241721,duration=9913754,event=fix_mvn_settings_xml[0Ktravis_time:start:08e52e98[0Ktravis_time:end:08e52e98:start=1572042999189581039,finish=1572042999200327319,duration=10746280,event=no_ipv6_localhost[0Ktravis_time:start:00f25d14[0Ktravis_time:end:00f25d14:start=1572042999203882276,finish=1572042999206522262,duration=2639986,event=fix_etc_mavenrc[0Ktravis_time:start:02944b24[0Ktravis_time:end:02944b24:start=1572042999209889777,finish=1572042999213154066,duration=3264289,event=fix_wwdr_certificate[0Ktravis_time:start:0930905c[0Ktravis_time:end:0930905c:start=1572042999216439112,finish=1572042999242066198,duration=25627086,event=put_localhost_first[0Ktravis_time:start:02798e57[0Ktravis_time:end:02798e57:start=1572042999245381450,finish=1572042999248743403,duration=3361953,event=home_paths[0Ktravis_time:start:18037ca2[0Ktravis_time:end:18037ca2:start=1572042999251861218,finish=1572042999263837450,duration=11976232,event=disable_initramfs[0Ktravis_time:start:18972278[0Ktravis_time:end:18972278:start=1572042999267087675,finish=1572042999539280250,duration=272192575,event=disable_ssh_roaming[0Ktravis_time:start:0229c90b[0Ktravis_time:end:0229c90b:start=1572042999543026019,finish=1572042999545710359,duration=2684340,event=debug_tools[0Ktravis_time:start:06291d76[0Ktravis_time:end:06291d76:start=1572042999549150826,finish=1572042999553286469,duration=4135643,event=uninstall_oclint[0Ktravis_time:start:32870100[0Ktravis_time:end:32870100:start=1572042999557022967,finish=1572042999560453415,duration=3430448,event=rvm_use[0Ktravis_time:start:08b2c4d8[0Ktravis_time:end:08b2c4d8:start=1572042999563811997,finish=1572042999572462067,duration=8650070,event=rm_etc_boto_cfg[0Ktravis_time:start:0057ab60[0Ktravis_time:end:0057ab60:start=1572042999576176858,finish=1572042999578774295,duration=2597437,event=rm_oraclejdk8_symlink[0Ktravis_time:start:15075c00[0Ktravis_time:end:15075c00:start=1572042999582138263,finish=1572042999637973122,duration=55834859,event=enable_i386[0Ktravis_time:start:25ba3ac2[0Ktravis_time:end:25ba3ac2:start=1572042999641881665,finish=1572042999646811398,duration=4929733,event=update_rubygems[0Ktravis_time:start:07846438[0Ktravis_time:end:07846438:start=1572042999650160631,finish=1572043000690777652,duration=1040617021,event=ensure_path_components[0Ktravis_time:start:000f5721[0Ktravis_time:end:000f5721:start=1572043000694378390,finish=1572043000696904586,duration=2526196,event=redefine_curl[0Ktravis_time:start:0de2e3e0[0Ktravis_time:end:0de2e3e0:start=1572043000700185746,finish=1572043000702538670,duration=2352924,event=nonblock_pipe[0Ktravis_time:start:0483d8bc[0Ktravis_time:end:0483d8bc:start=1572043000705762473,finish=1572043011832200184,duration=11126437711,event=apt_get_update[0Ktravis_time:start:1d7f5640[0Ktravis_time:end:1d7f5640:start=1572043011835558599,finish=1572043011837873920,duration=2315321,event=deprecate_xcode_64[0Ktravis_time:start:13471e64[0Ktravis_time:end:13471e64:start=1572043011841300050,finish=1572043016867407196,duration=5026107146,event=update_heroku[0Ktravis_time:start:001fa5e0[0Ktravis_time:end:001fa5e0:start=1572043016871044140,finish=1572043016873421593,duration=2377453,event=shell_session_update[0Ktravis_time:start:1e19fb0f[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 4660
+travis_fold:end:docker_mtu[0Ktravis_time:end:1e19fb0f:start=1572043016876573829,finish=1572043018068453172,duration=1191879343,event=set_docker_mtu[0Ktravis_time:start:093c7d55[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:093c7d55:start=1572043018072019347,finish=1572043018141351829,duration=69332482,event=resolvconf[0Ktravis_time:start:24507a99[0Ktravis_time:end:24507a99:start=1572043018145130785,finish=1572043018250249079,duration=105118294,event=maven_central_mirror[0Ktravis_fold:start:apt[0K[33;1mAdding APT Sources[0m
+travis_time:start:02d032c4[0K$ sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
+gpg: keyring `/tmp/tmpuid5kdyy/secring.gpg' created
+gpg: keyring `/tmp/tmpuid5kdyy/pubring.gpg' created
+gpg: requesting key BA9EF27F from hkp server keyserver.ubuntu.com
+gpg: /tmp/tmpuid5kdyy/trustdb.gpg: trustdb created
+gpg: key BA9EF27F: public key "Launchpad Toolchain builds" imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+OK
+travis_time:end:02d032c4:start=1572043018257438433,finish=1572043019831107262,duration=1573668829,event=prepare[0Ktravis_time:start:05269ba4[0K$ travis_apt_get_update
+travis_time:end:05269ba4:start=1572043019835161204,finish=1572043029620507540,duration=9785346336,event=prepare[0K[33;1mInstalling APT Packages[0m
+travis_time:start:003a5648[0K$ sudo -E apt-get -yq --no-install-suggests --no-install-recommends $(travis_apt_get_options) install gcc-5 g++-5 libstdc++6 python-setuptools libgif-dev vim-common libx11-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+vim-common is already the newest version (2:7.4.052-1ubuntu3.1).
+The following additional packages will be installed:
+  cpp-5 gcc-5-base gcc-7-base gcc-9-base libasan2 libatomic1 libcc1-0
+  libcilkrts5 libgcc-5-dev libgcc1 libgomp1 libisl15 libitm1 liblsan0 libmpfr4
+  libmpx0 libquadmath0 libstdc++-5-dev libtsan0 libubsan0 libx11-6
+Suggested packages:
+  gcc-5-locales g++-5-multilib gcc-5-doc libstdc++6-5-dbg gcc-5-multilib
+  libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan2-dbg
+  liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx0-dbg
+  libquadmath0-dbg libstdc++-5-doc
+Recommended packages:
+  libx11-doc
+The following NEW packages will be installed:
+  cpp-5 g++-5 gcc-5 gcc-5-base gcc-7-base gcc-9-base libasan2 libcc1-0
+  libcilkrts5 libgcc-5-dev libgif-dev libisl15 liblsan0 libmpx0
+  libstdc++-5-dev libubsan0 python-setuptools
+The following packages will be upgraded:
+  libatomic1 libgcc1 libgomp1 libitm1 libmpfr4 libquadmath0 libstdc++6
+  libtsan0 libx11-6 libx11-dev
+10 upgraded, 17 newly installed, 0 to remove and 298 not upgraded.
+Need to get 26.0 MB of archives.
+After this operation, 95.8 MB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 libx11-dev amd64 2:1.6.2-1ubuntu2.1 [632 kB]
+Get:2 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 gcc-9-base amd64 9.2.1-9ubuntu2~14.04 [19.2 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 libx11-6 amd64 2:1.6.2-1ubuntu2.1 [561 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/main amd64 libgif-dev amd64 4.1.6-11 [20.3 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 python-setuptools all 3.3-1ubuntu2 [230 kB]
+Get:6 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libgcc1 amd64 1:9.2.1-9ubuntu2~14.04 [40.5 kB]
+Get:7 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libstdc++6 amd64 9.2.1-9ubuntu2~14.04 [381 kB]
+Get:8 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 gcc-5-base amd64 5.5.0-12ubuntu1~14.04 [16.6 kB]
+Get:9 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libasan2 amd64 5.5.0-12ubuntu1~14.04 [261 kB]
+Get:10 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libatomic1 amd64 9.2.1-9ubuntu2~14.04 [9,150 B]
+Get:11 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libcc1-0 amd64 9.2.1-9ubuntu2~14.04 [38.7 kB]
+Get:12 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 gcc-7-base amd64 7.4.0-1ubuntu1~14.04~ppa1 [18.7 kB]
+Get:13 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libcilkrts5 amd64 7.4.0-1ubuntu1~14.04~ppa1 [42.3 kB]
+Get:14 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libgomp1 amd64 9.2.1-9ubuntu2~14.04 [88.7 kB]
+Get:15 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libisl15 amd64 0.15-3~14.04 [507 kB]
+Get:16 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libitm1 amd64 9.2.1-9ubuntu2~14.04 [27.7 kB]
+Get:17 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 liblsan0 amd64 9.2.1-9ubuntu2~14.04 [137 kB]
+Get:18 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libmpfr4 amd64 3.1.3-1~14.04 [178 kB]
+Get:19 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libmpx0 amd64 5.5.0-12ubuntu1~14.04 [9,878 B]
+Get:20 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libquadmath0 amd64 9.2.1-9ubuntu2~14.04 [145 kB]
+Get:21 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libtsan0 amd64 9.2.1-9ubuntu2~14.04 [297 kB]
+Get:22 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libubsan0 amd64 7.4.0-1ubuntu1~14.04~ppa1 [124 kB]
+Get:23 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 cpp-5 amd64 5.5.0-12ubuntu1~14.04 [5,847 kB]
+Get:24 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libgcc-5-dev amd64 5.5.0-12ubuntu1~14.04 [2,216 kB]
+Get:25 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 gcc-5 amd64 5.5.0-12ubuntu1~14.04 [6,652 kB]
+Get:26 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 libstdc++-5-dev amd64 5.5.0-12ubuntu1~14.04 [1,245 kB]
+Get:27 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty/main amd64 g++-5 amd64 5.5.0-12ubuntu1~14.04 [6,291 kB]
+Fetched 26.0 MB in 15s (1,734 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
+Preparing to unpack .../libx11-dev_2%3a1.6.2-1ubuntu2.1_amd64.deb ...
+Unpacking libx11-dev:amd64 (2:1.6.2-1ubuntu2.1) over (2:1.6.2-1ubuntu2) ...
+Preparing to unpack .../libx11-6_2%3a1.6.2-1ubuntu2.1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.2-1ubuntu2.1) over (2:1.6.2-1ubuntu2) ...
+Setting up libx11-6:amd64 (2:1.6.2-1ubuntu2.1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
+Selecting previously unselected package gcc-9-base:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
+Preparing to unpack .../gcc-9-base_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking gcc-9-base:amd64 (9.2.1-9ubuntu2~14.04) ...
+Processing triggers for ccache (3.1.9-1) ...
+Updating symlinks in /usr/lib/ccache ...
+Setting up gcc-9-base:amd64 (9.2.1-9ubuntu2~14.04) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93701 files and directories currently installed.)
+Preparing to unpack .../libgcc1_1%3a9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libgcc1:amd64 (1:9.2.1-9ubuntu2~14.04) over (1:4.9.3-0ubuntu4) ...
+Setting up libgcc1:amd64 (1:9.2.1-9ubuntu2~14.04) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93701 files and directories currently installed.)
+Preparing to unpack .../libstdc++6_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libstdc++6:amd64 (9.2.1-9ubuntu2~14.04) over (4.8.4-2ubuntu1~14.04.3) ...
+Setting up libstdc++6:amd64 (9.2.1-9ubuntu2~14.04) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
+Selecting previously unselected package gcc-5-base:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93702 files and directories currently installed.)
+Preparing to unpack .../gcc-5-base_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking gcc-5-base:amd64 (5.5.0-12ubuntu1~14.04) ...
+Selecting previously unselected package libasan2:amd64.
+Preparing to unpack .../libasan2_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking libasan2:amd64 (5.5.0-12ubuntu1~14.04) ...
+Preparing to unpack .../libatomic1_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libatomic1:amd64 (9.2.1-9ubuntu2~14.04) over (4.8.4-2ubuntu1~14.04.3) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../libcc1-0_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (9.2.1-9ubuntu2~14.04) ...
+Selecting previously unselected package gcc-7-base:amd64.
+Preparing to unpack .../gcc-7-base_7.4.0-1ubuntu1~14.04~ppa1_amd64.deb ...
+Unpacking gcc-7-base:amd64 (7.4.0-1ubuntu1~14.04~ppa1) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_7.4.0-1ubuntu1~14.04~ppa1_amd64.deb ...
+Unpacking libcilkrts5:amd64 (7.4.0-1ubuntu1~14.04~ppa1) ...
+Preparing to unpack .../libgomp1_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libgomp1:amd64 (9.2.1-9ubuntu2~14.04) over (4.8.4-2ubuntu1~14.04.3) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../libisl15_0.15-3~14.04_amd64.deb ...
+Unpacking libisl15:amd64 (0.15-3~14.04) ...
+Preparing to unpack .../libitm1_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libitm1:amd64 (9.2.1-9ubuntu2~14.04) over (4.8.4-2ubuntu1~14.04.3) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking liblsan0:amd64 (9.2.1-9ubuntu2~14.04) ...
+Preparing to unpack .../libmpfr4_3.1.3-1~14.04_amd64.deb ...
+Unpacking libmpfr4:amd64 (3.1.3-1~14.04) over (3.1.2-1) ...
+Selecting previously unselected package libmpx0:amd64.
+Preparing to unpack .../libmpx0_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking libmpx0:amd64 (5.5.0-12ubuntu1~14.04) ...
+Preparing to unpack .../libquadmath0_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (9.2.1-9ubuntu2~14.04) over (4.8.4-2ubuntu1~14.04.3) ...
+Preparing to unpack .../libtsan0_9.2.1-9ubuntu2~14.04_amd64.deb ...
+Unpacking libtsan0:amd64 (9.2.1-9ubuntu2~14.04) over (4.8.4-2ubuntu1~14.04.3) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_7.4.0-1ubuntu1~14.04~ppa1_amd64.deb ...
+Unpacking libubsan0:amd64 (7.4.0-1ubuntu1~14.04~ppa1) ...
+Selecting previously unselected package cpp-5.
+Preparing to unpack .../cpp-5_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking cpp-5 (5.5.0-12ubuntu1~14.04) ...
+Selecting previously unselected package libgcc-5-dev:amd64.
+Preparing to unpack .../libgcc-5-dev_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking libgcc-5-dev:amd64 (5.5.0-12ubuntu1~14.04) ...
+Selecting previously unselected package gcc-5.
+Preparing to unpack .../gcc-5_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking gcc-5 (5.5.0-12ubuntu1~14.04) ...
+Selecting previously unselected package libstdc++-5-dev:amd64.
+Preparing to unpack .../libstdc++-5-dev_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking libstdc++-5-dev:amd64 (5.5.0-12ubuntu1~14.04) ...
+Selecting previously unselected package g++-5.
+Preparing to unpack .../g++-5_5.5.0-12ubuntu1~14.04_amd64.deb ...
+Unpacking g++-5 (5.5.0-12ubuntu1~14.04) ...
+Selecting previously unselected package libgif-dev.
+Preparing to unpack .../libgif-dev_4.1.6-11_amd64.deb ...
+Unpacking libgif-dev (4.1.6-11) ...
+Selecting previously unselected package python-setuptools.
+Preparing to unpack .../python-setuptools_3.3-1ubuntu2_all.deb ...
+Unpacking python-setuptools (3.3-1ubuntu2) ...
+Processing triggers for ccache (3.1.9-1) ...
+Updating symlinks in /usr/lib/ccache ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up libx11-dev:amd64 (2:1.6.2-1ubuntu2.1) ...
+Setting up gcc-5-base:amd64 (5.5.0-12ubuntu1~14.04) ...
+Setting up libasan2:amd64 (5.5.0-12ubuntu1~14.04) ...
+Setting up libatomic1:amd64 (9.2.1-9ubuntu2~14.04) ...
+Setting up libcc1-0:amd64 (9.2.1-9ubuntu2~14.04) ...
+Setting up gcc-7-base:amd64 (7.4.0-1ubuntu1~14.04~ppa1) ...
+Setting up libcilkrts5:amd64 (7.4.0-1ubuntu1~14.04~ppa1) ...
+Setting up libgomp1:amd64 (9.2.1-9ubuntu2~14.04) ...
+Setting up libisl15:amd64 (0.15-3~14.04) ...
+Setting up libitm1:amd64 (9.2.1-9ubuntu2~14.04) ...
+Setting up liblsan0:amd64 (9.2.1-9ubuntu2~14.04) ...
+Setting up libmpfr4:amd64 (3.1.3-1~14.04) ...
+Setting up libmpx0:amd64 (5.5.0-12ubuntu1~14.04) ...
+Setting up libquadmath0:amd64 (9.2.1-9ubuntu2~14.04) ...
+Setting up libtsan0:amd64 (9.2.1-9ubuntu2~14.04) ...
+Setting up libubsan0:amd64 (7.4.0-1ubuntu1~14.04~ppa1) ...
+Setting up cpp-5 (5.5.0-12ubuntu1~14.04) ...
+Setting up libgcc-5-dev:amd64 (5.5.0-12ubuntu1~14.04) ...
+Setting up gcc-5 (5.5.0-12ubuntu1~14.04) ...
+Setting up libstdc++-5-dev:amd64 (5.5.0-12ubuntu1~14.04) ...
+Setting up g++-5 (5.5.0-12ubuntu1~14.04) ...
+Setting up libgif-dev (4.1.6-11) ...
+Setting up python-setuptools (3.3-1ubuntu2) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
+travis_time:end:003a5648:start=1572043029624730641,finish=1572043052060013318,duration=22435282677,event=prepare[0Ktravis_fold:end:apt[0Ktravis_time:start:18de5432[0Ktravis_time:end:18de5432:start=1572043052064064163,finish=1572043052066628612,duration=2564449,event=fix_ps4[0Ktravis_time:start:0513daa9[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0f69ac5c[0K$ git clone --depth=50 https://github.com/apple/turicreate.git apple/turicreate
+Cloning into 'apple/turicreate'...
+remote: Enumerating objects: 98175, done.[K
+remote: Counting objects:   0% (1/98175)[Kremote: Counting objects:   1% (982/98175)[Kremote: Counting objects:   2% (1964/98175)[Kremote: Counting objects:   3% (2946/98175)[Kremote: Counting objects:   4% (3927/98175)[Kremote: Counting objects:   5% (4909/98175)[Kremote: Counting objects:   6% (5891/98175)[Kremote: Counting objects:   7% (6873/98175)[Kremote: Counting objects:   8% (7854/98175)[Kremote: Counting objects:   9% (8836/98175)[Kremote: Counting objects:  10% (9818/98175)[Kremote: Counting objects:  11% (10800/98175)[Kremote: Counting objects:  12% (11781/98175)[Kremote: Counting objects:  13% (12763/98175)[Kremote: Counting objects:  14% (13745/98175)[Kremote: Counting objects:  15% (14727/98175)[Kremote: Counting objects:  16% (15708/98175)[Kremote: Counting objects:  17% (16690/98175)[Kremote: Counting objects:  18% (17672/98175)[Kremote: Counting objects:  19% (18654/98175)[Kremote: Counting objects:  20% (19635/98175)[Kremote: Counting objects:  21% (20617/98175)[Kremote: Counting objects:  22% (21599/98175)[Kremote: Counting objects:  23% (22581/98175)[Kremote: Counting objects:  24% (23562/98175)[Kremote: Counting objects:  25% (24544/98175)[Kremote: Counting objects:  26% (25526/98175)[Kremote: Counting objects:  27% (26508/98175)[Kremote: Counting objects:  28% (27489/98175)[Kremote: Counting objects:  29% (28471/98175)[Kremote: Counting objects:  30% (29453/98175)[Kremote: Counting objects:  31% (30435/98175)[Kremote: Counting objects:  32% (31416/98175)[Kremote: Counting objects:  33% (32398/98175)[Kremote: Counting objects:  34% (33380/98175)[Kremote: Counting objects:  35% (34362/98175)[Kremote: Counting objects:  36% (35343/98175)[Kremote: Counting objects:  37% (36325/98175)[Kremote: Counting objects:  38% (37307/98175)[Kremote: Counting objects:  39% (38289/98175)[Kremote: Counting objects:  40% (39270/98175)[Kremote: Counting objects:  41% (40252/98175)[Kremote: Counting objects:  42% (41234/98175)[Kremote: Counting objects:  43% (42216/98175)[Kremote: Counting objects:  44% (43197/98175)[Kremote: Counting objects:  45% (44179/98175)[Kremote: Counting objects:  46% (45161/98175)[Kremote: Counting objects:  47% (46143/98175)[Kremote: Counting objects:  48% (47124/98175)[Kremote: Counting objects:  49% (48106/98175)[Kremote: Counting objects:  50% (49088/98175)[Kremote: Counting objects:  51% (50070/98175)[Kremote: Counting objects:  52% (51051/98175)[Kremote: Counting objects:  53% (52033/98175)[Kremote: Counting objects:  54% (53015/98175)[Kremote: Counting objects:  55% (53997/98175)[Kremote: Counting objects:  56% (54978/98175)[Kremote: Counting objects:  57% (55960/98175)[Kremote: Counting objects:  58% (56942/98175)[Kremote: Counting objects:  59% (57924/98175)[Kremote: Counting objects:  60% (58905/98175)[Kremote: Counting objects:  61% (59887/98175)[Kremote: Counting objects:  62% (60869/98175)[Kremote: Counting objects:  63% (61851/98175)[Kremote: Counting objects:  64% (62832/98175)[Kremote: Counting objects:  65% (63814/98175)[Kremote: Counting objects:  66% (64796/98175)[Kremote: Counting objects:  67% (65778/98175)[Kremote: Counting objects:  68% (66759/98175)[Kremote: Counting objects:  69% (67741/98175)[Kremote: Counting objects:  70% (68723/98175)[Kremote: Counting objects:  71% (69705/98175)[Kremote: Counting objects:  72% (70686/98175)[Kremote: Counting objects:  73% (71668/98175)[Kremote: Counting objects:  74% (72650/98175)[Kremote: Counting objects:  75% (73632/98175)[Kremote: Counting objects:  76% (74613/98175)[Kremote: Counting objects:  77% (75595/98175)[Kremote: Counting objects:  78% (76577/98175)[Kremote: Counting objects:  79% (77559/98175)[Kremote: Counting objects:  80% (78540/98175)[Kremote: Counting objects:  81% (79522/98175)[Kremote: Counting objects:  82% (80504/98175)[Kremote: Counting objects:  83% (81486/98175)[Kremote: Counting objects:  84% (82467/98175)[Kremote: Counting objects:  85% (83449/98175)[Kremote: Counting objects:  86% (84431/98175)[Kremote: Counting objects:  87% (85413/98175)[Kremote: Counting objects:  88% (86394/98175)[Kremote: Counting objects:  89% (87376/98175)[Kremote: Counting objects:  90% (88358/98175)[Kremote: Counting objects:  91% (89340/98175)[Kremote: Counting objects:  92% (90321/98175)[Kremote: Counting objects:  93% (91303/98175)[Kremote: Counting objects:  94% (92285/98175)[Kremote: Counting objects:  95% (93267/98175)[Kremote: Counting objects:  96% (94248/98175)[Kremote: Counting objects:  97% (95230/98175)[Kremote: Counting objects:  98% (96212/98175)[Kremote: Counting objects:  99% (97194/98175)[Kremote: Counting objects: 100% (98175/98175)[Kremote: Counting objects: 100% (98175/98175), done.[K
+remote: Compressing objects:   0% (1/56899)[Kremote: Compressing objects:   1% (569/56899)[Kremote: Compressing objects:   2% (1138/56899)[Kremote: Compressing objects:   3% (1707/56899)[Kremote: Compressing objects:   4% (2276/56899)[Kremote: Compressing objects:   5% (2845/56899)[Kremote: Compressing objects:   6% (3414/56899)[Kremote: Compressing objects:   7% (3983/56899)[Kremote: Compressing objects:   8% (4552/56899)[Kremote: Compressing objects:   9% (5121/56899)[Kremote: Compressing objects:  10% (5690/56899)[Kremote: Compressing objects:  11% (6259/56899)[Kremote: Compressing objects:  12% (6828/56899)[Kremote: Compressing objects:  13% (7397/56899)[Kremote: Compressing objects:  14% (7966/56899)[Kremote: Compressing objects:  14% (8159/56899)[Kremote: Compressing objects:  15% (8535/56899)[Kremote: Compressing objects:  16% (9104/56899)[Kremote: Compressing objects:  17% (9673/56899)[Kremote: Compressing objects:  18% (10242/56899)[Kremote: Compressing objects:  19% (10811/56899)[Kremote: Compressing objects:  20% (11380/56899)[Kremote: Compressing objects:  21% (11949/56899)[Kremote: Compressing objects:  22% (12518/56899)[Kremote: Compressing objects:  23% (13087/56899)[Kremote: Compressing objects:  24% (13656/56899)[Kremote: Compressing objects:  25% (14225/56899)[Kremote: Compressing objects:  26% (14794/56899)[Kremote: Compressing objects:  27% (15363/56899)[Kremote: Compressing objects:  28% (15932/56899)[Kremote: Compressing objects:  28% (16167/56899)[Kremote: Compressing objects:  29% (16501/56899)[Kremote: Compressing objects:  30% (17070/56899)[Kremote: Compressing objects:  31% (17639/56899)[Kremote: Compressing objects:  32% (18208/56899)[Kremote: Compressing objects:  33% (18777/56899)[Kremote: Compressing objects:  34% (19346/56899)[Kremote: Compressing objects:  35% (19915/56899)[Kremote: Compressing objects:  36% (20484/56899)[Kremote: Compressing objects:  37% (21053/56899)[Kremote: Compressing objects:  38% (21622/56899)[Kremote: Compressing objects:  39% (22191/56899)[Kremote: Compressing objects:  40% (22760/56899)[Kremote: Compressing objects:  41% (23329/56899)[Kremote: Compressing objects:  42% (23898/56899)[Kremote: Compressing objects:  43% (24467/56899)[Kremote: Compressing objects:  44% (25036/56899)[Kremote: Compressing objects:  45% (25605/56899)[Kremote: Compressing objects:  46% (26174/56899)[Kremote: Compressing objects:  47% (26743/56899)[Kremote: Compressing objects:  48% (27312/56899)[Kremote: Compressing objects:  49% (27881/56899)[Kremote: Compressing objects:  50% (28450/56899)[Kremote: Compressing objects:  51% (29019/56899)[Kremote: Compressing objects:  52% (29588/56899)[Kremote: Compressing objects:  53% (30157/56899)[Kremote: Compressing objects:  54% (30726/56899)[Kremote: Compressing objects:  55% (31295/56899)[Kremote: Compressing objects:  56% (31864/56899)[Kremote: Compressing objects:  57% (32433/56899)[Kremote: Compressing objects:  58% (33002/56899)[Kremote: Compressing objects:  59% (33571/56899)[Kremote: Compressing objects:  60% (34140/56899)[Kremote: Compressing objects:  61% (34709/56899)[Kremote: Compressing objects:  62% (35278/56899)[Kremote: Compressing objects:  63% (35847/56899)[Kremote: Compressing objects:  64% (36416/56899)[Kremote: Compressing objects:  65% (36985/56899)[Kremote: Compressing objects:  66% (37554/56899)[Kremote: Compressing objects:  67% (38123/56899)[Kremote: Compressing objects:  68% (38692/56899)[Kremote: Compressing objects:  69% (39261/56899)[Kremote: Compressing objects:  70% (39830/56899)[Kremote: Compressing objects:  71% (40399/56899)[Kremote: Compressing objects:  71% (40412/56899)[Kremote: Compressing objects:  72% (40968/56899)[Kremote: Compressing objects:  73% (41537/56899)[Kremote: Compressing objects:  74% (42106/56899)[Kremote: Compressing objects:  75% (42675/56899)[Kremote: Compressing objects:  76% (43244/56899)[Kremote: Compressing objects:  77% (43813/56899)[Kremote: Compressing objects:  78% (44382/56899)[Kremote: Compressing objects:  79% (44951/56899)[Kremote: Compressing objects:  80% (45520/56899)[Kremote: Compressing objects:  81% (46089/56899)[Kremote: Compressing objects:  82% (46658/56899)[Kremote: Compressing objects:  83% (47227/56899)[Kremote: Compressing objects:  84% (47796/56899)[Kremote: Compressing objects:  85% (48365/56899)[Kremote: Compressing objects:  86% (48934/56899)[Kremote: Compressing objects:  87% (49503/56899)[Kremote: Compressing objects:  88% (50072/56899)[Kremote: Compressing objects:  89% (50641/56899)[Kremote: Compressing objects:  90% (51210/56899)[Kremote: Compressing objects:  91% (51779/56899)[Kremote: Compressing objects:  92% (52348/56899)[Kremote: Compressing objects:  93% (52917/56899)[Kremote: Compressing objects:  94% (53486/56899)[Kremote: Compressing objects:  95% (54055/56899)[Kremote: Compressing objects:  96% (54624/56899)[Kremote: Compressing objects:  97% (55193/56899)[Kremote: Compressing objects:  98% (55762/56899)[Kremote: Compressing objects:  99% (56331/56899)[Kremote: Compressing objects:  99% (56556/56899)[Kremote: Compressing objects: 100% (56899/56899)[Kremote: Compressing objects: 100% (56899/56899), done.[K
+Receiving objects:   0% (1/98175)   Receiving objects:   1% (982/98175)   Receiving objects:   2% (1964/98175)   Receiving objects:   3% (2946/98175)   Receiving objects:   4% (3927/98175)   Receiving objects:   5% (4909/98175)   Receiving objects:   6% (5891/98175)   Receiving objects:   7% (6873/98175)   Receiving objects:   8% (7854/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:   9% (8836/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:  10% (9818/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:  11% (10800/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:  12% (11781/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:  13% (12763/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:  14% (13745/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:  15% (14727/98175), 7.76 MiB | 15.51 MiB/s   Receiving objects:  15% (14814/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  16% (15708/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  17% (16690/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  18% (17672/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  19% (18654/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  20% (19635/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  21% (20617/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  22% (21599/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  23% (22581/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  24% (23562/98175), 16.95 MiB | 16.94 MiB/s   Receiving objects:  25% (24544/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  26% (25526/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  27% (26508/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  28% (27489/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  29% (28471/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  30% (29453/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  31% (30435/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  32% (31416/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  33% (32398/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  33% (33246/98175), 31.03 MiB | 20.68 MiB/s   Receiving objects:  34% (33380/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  35% (34362/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  36% (35343/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  37% (36325/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  38% (37307/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  39% (38289/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  40% (39270/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  41% (40252/98175), 43.32 MiB | 21.66 MiB/s   Receiving objects:  42% (41234/98175), 57.65 MiB | 23.06 MiB/s   Receiving objects:  43% (42216/98175), 57.65 MiB | 23.06 MiB/s   Receiving objects:  44% (43197/98175), 57.65 MiB | 23.06 MiB/s   Receiving objects:  45% (44179/98175), 57.65 MiB | 23.06 MiB/s   Receiving objects:  46% (45161/98175), 57.65 MiB | 23.06 MiB/s   Receiving objects:  46% (45931/98175), 74.61 MiB | 24.87 MiB/s   Receiving objects:  47% (46143/98175), 74.61 MiB | 24.87 MiB/s   Receiving objects:  48% (47124/98175), 74.61 MiB | 24.87 MiB/s   Receiving objects:  49% (48106/98175), 74.61 MiB | 24.87 MiB/s   Receiving objects:  50% (49088/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  51% (50070/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  52% (51051/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  53% (52033/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  54% (53015/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  55% (53997/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  56% (54978/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  57% (55960/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  57% (56437/98175), 86.90 MiB | 24.83 MiB/s   Receiving objects:  58% (56942/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  59% (57924/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  60% (58905/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  61% (59887/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  62% (60869/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  63% (61851/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  64% (62832/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  65% (63814/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  66% (64796/98175), 100.96 MiB | 25.24 MiB/s   Receiving objects:  67% (65778/98175), 113.13 MiB | 25.14 MiB/s   Receiving objects:  68% (66759/98175), 113.13 MiB | 25.14 MiB/s   Receiving objects:  69% (67741/98175), 113.13 MiB | 25.14 MiB/s   Receiving objects:  70% (68723/98175), 113.13 MiB | 25.14 MiB/s   Receiving objects:  71% (69705/98175), 113.13 MiB | 25.14 MiB/s   Receiving objects:  72% (70686/98175), 113.13 MiB | 25.14 MiB/s   Receiving objects:  72% (71225/98175), 124.04 MiB | 25.84 MiB/s   Receiving objects:  73% (71668/98175), 124.04 MiB | 25.84 MiB/s   Receiving objects:  74% (72650/98175), 124.04 MiB | 25.84 MiB/s   Receiving objects:  75% (73632/98175), 124.04 MiB | 25.84 MiB/s   Receiving objects:  76% (74613/98175), 124.04 MiB | 25.84 MiB/s   Receiving objects:  77% (75595/98175), 124.04 MiB | 25.84 MiB/s   Receiving objects:  78% (76577/98175), 124.04 MiB | 25.84 MiB/s   Receiving objects:  79% (77559/98175), 134.80 MiB | 26.19 MiB/s   Receiving objects:  80% (78540/98175), 134.80 MiB | 26.19 MiB/s   Receiving objects:  81% (79522/98175), 134.80 MiB | 26.19 MiB/s   Receiving objects:  82% (80504/98175), 134.80 MiB | 26.19 MiB/s   Receiving objects:  83% (81486/98175), 134.80 MiB | 26.19 MiB/s   Receiving objects:  83% (82057/98175), 134.80 MiB | 26.19 MiB/s   Receiving objects:  84% (82467/98175), 145.86 MiB | 25.52 MiB/s   Receiving objects:  85% (83449/98175), 145.86 MiB | 25.52 MiB/s   Receiving objects:  86% (84431/98175), 145.86 MiB | 25.52 MiB/s   Receiving objects:  87% (85413/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  88% (86394/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  89% (87376/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  90% (88358/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  91% (89340/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  92% (90321/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  93% (91303/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  94% (92285/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  94% (92310/98175), 156.10 MiB | 25.07 MiB/s   Receiving objects:  95% (93267/98175), 167.48 MiB | 24.41 MiB/s   Receiving objects:  96% (94248/98175), 167.48 MiB | 24.41 MiB/s   Receiving objects:  97% (95230/98175), 167.48 MiB | 24.41 MiB/s   Receiving objects:  98% (96212/98175), 167.48 MiB | 24.41 MiB/s   Receiving objects:  99% (97194/98175), 178.86 MiB | 23.17 MiB/s   Receiving objects:  99% (97660/98175), 196.14 MiB | 24.28 MiB/s   remote: Total 98175 (delta 39209), reused 87922 (delta 38584), pack-reused 0[K
+Receiving objects: 100% (98175/98175), 196.14 MiB | 24.28 MiB/s   Receiving objects: 100% (98175/98175), 211.77 MiB | 25.29 MiB/s, done.
+Resolving deltas:   0% (0/39209)   Resolving deltas:   1% (393/39209)   Resolving deltas:   2% (785/39209)   Resolving deltas:   3% (1178/39209)   Resolving deltas:   4% (1569/39209)   Resolving deltas:   5% (1961/39209)   Resolving deltas:   6% (2353/39209)   Resolving deltas:   7% (2753/39209)   Resolving deltas:   8% (3140/39209)   Resolving deltas:   9% (3543/39209)   Resolving deltas:  10% (3921/39209)   Resolving deltas:  11% (4314/39209)   Resolving deltas:  12% (4709/39209)   Resolving deltas:  13% (5101/39209)   Resolving deltas:  15% (5885/39209)   Resolving deltas:  17% (6984/39209)   Resolving deltas:  20% (7895/39209)   Resolving deltas:  21% (8303/39209)   Resolving deltas:  23% (9360/39209)   Resolving deltas:  24% (9584/39209)   Resolving deltas:  25% (9842/39209)   Resolving deltas:  26% (10255/39209)   Resolving deltas:  28% (11110/39209)   Resolving deltas:  29% (11566/39209)   Resolving deltas:  30% (11826/39209)   Resolving deltas:  31% (12409/39209)   Resolving deltas:  32% (12616/39209)   Resolving deltas:  33% (13016/39209)   Resolving deltas:  34% (13356/39209)   Resolving deltas:  35% (13905/39209)   Resolving deltas:  36% (14285/39209)   Resolving deltas:  37% (14510/39209)   Resolving deltas:  38% (15089/39209)   Resolving deltas:  40% (16050/39209)   Resolving deltas:  41% (16088/39209)   Resolving deltas:  42% (16633/39209)   Resolving deltas:  43% (16888/39209)   Resolving deltas:  44% (17302/39209)   Resolving deltas:  45% (17649/39209)   Resolving deltas:  46% (18038/39209)   Resolving deltas:  47% (18471/39209)   Resolving deltas:  48% (18824/39209)   Resolving deltas:  49% (19214/39209)   Resolving deltas:  50% (19624/39209)   Resolving deltas:  51% (20251/39209)   Resolving deltas:  52% (20452/39209)   Resolving deltas:  53% (20781/39209)   Resolving deltas:  54% (21175/39209)   Resolving deltas:  55% (21572/39209)   Resolving deltas:  56% (21958/39209)   Resolving deltas:  57% (22358/39209)   Resolving deltas:  58% (22745/39209)   Resolving deltas:  59% (23136/39209)   Resolving deltas:  60% (23526/39209)   Resolving deltas:  61% (24024/39209)   Resolving deltas:  62% (24313/39209)   Resolving deltas:  63% (24703/39209)   Resolving deltas:  64% (25096/39209)   Resolving deltas:  65% (25493/39209)   Resolving deltas:  66% (25893/39209)   Resolving deltas:  67% (26274/39209)   Resolving deltas:  68% (26663/39209)   Resolving deltas:  69% (27126/39209)   Resolving deltas:  70% (27447/39209)   Resolving deltas:  71% (27841/39209)   Resolving deltas:  72% (28235/39209)   Resolving deltas:  73% (28624/39209)   Resolving deltas:  74% (29044/39209)   Resolving deltas:  75% (29408/39209)   Resolving deltas:  76% (29800/39209)   Resolving deltas:  77% (30191/39209)   Resolving deltas:  78% (30586/39209)   Resolving deltas:  79% (30977/39209)   Resolving deltas:  80% (31371/39209)   Resolving deltas:  81% (31760/39209)   Resolving deltas:  82% (32153/39209)   Resolving deltas:  83% (32547/39209)   Resolving deltas:  84% (32937/39209)   Resolving deltas:  85% (33331/39209)   Resolving deltas:  86% (33723/39209)   Resolving deltas:  87% (34113/39209)   Resolving deltas:  88% (34506/39209)   Resolving deltas:  89% (34921/39209)   Resolving deltas:  90% (35289/39209)   Resolving deltas:  91% (35681/39209)   Resolving deltas:  92% (36073/39209)   Resolving deltas:  93% (36479/39209)   Resolving deltas:  94% (36857/39209)   Resolving deltas:  95% (37261/39209)   Resolving deltas:  96% (37642/39209)   Resolving deltas:  97% (38033/39209)   Resolving deltas:  98% (38425/39209)   Resolving deltas:  99% (38818/39209)   Resolving deltas: 100% (39209/39209)   Resolving deltas: 100% (39209/39209), done.
+travis_time:end:0f69ac5c:start=1572043052074276283,finish=1572043075321968170,duration=23247691887,event=checkout[0K$ cd apple/turicreate
+travis_time:start:0775d366[0K$ git fetch origin +refs/pull/2487/merge:
+fatal: Couldn't find remote ref refs/pull/2487/merge
+
+[31;1mThe command "eval git fetch origin +refs/pull/2487/merge: " failed. Retrying, 2 of 3.[0m
+
+fatal: Couldn't find remote ref refs/pull/2487/merge
+
+[31;1mThe command "eval git fetch origin +refs/pull/2487/merge: " failed. Retrying, 3 of 3.[0m
+
+fatal: Couldn't find remote ref refs/pull/2487/merge
+
+[31;1mThe command "eval git fetch origin +refs/pull/2487/merge: " failed 3 times.[0m
+
+travis_time:end:0775d366:start=1572043075326334332,finish=1572043079390570922,duration=4064236590,event=checkout[0K[31;1mThe command "git fetch origin +refs/pull/2487/merge:" failed and exited with 128 during .[0m
+
+Your build has been stopped.

@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+712266787,6241329df5ea7a0e0205054d0a738ed6e0cef866,PassedToFailed,passed,702,https://github.com/Kitware/SMQTK/pull/409
+708824162,216a1c14f7426c33687191587ac7dca7aa316471,PassedToFailed,failed,1448,https://github.com/Kitware/SMQTK/pull/409
+678345094,f8751400d8541443d5eb1b8a23546b59cba4b921,FailedToPassed,failed,432,https://github.com/Kitware/SMQTK/pull/407
+674889097,ea639d73f80df21984fbe6cf00a97709df5bd178,FailedToPassed,passed,631,https://github.com/Kitware/SMQTK/pull/407
+674886745,340bb910b9a795b6e11671e1397c6d3de29a62bf,PassedToFailed,passed,649,https://github.com/Kitware/SMQTK/pull/406
+659354240,48e633245e3ea8ca26af68c958810192c131b258,PassedToFailed,failed,636,https://github.com/Kitware/SMQTK/pull/406
+659339553,b0a281e70e529fb1305531adb92caad6be2d169b,FailedToPassed,failed,663,https://github.com/Kitware/SMQTK/pull/405
+613827018,be26dae6cbd2dbffe7ab4d42fff0cd4b4a33fb6e,FailedToPassed,passed,787,https://github.com/Kitware/SMQTK/pull/405
+609485698,dd20f53a1e94b0187dd2c132a28ad70a3152d9df,PassedToFailed,passed,845,https://github.com/Kitware/SMQTK/pull/402
+609452390,6b8608bde1154fcd950f78d274b470d4714974ce,PassedToFailed,failed,817,https://github.com/Kitware/SMQTK/pull/402

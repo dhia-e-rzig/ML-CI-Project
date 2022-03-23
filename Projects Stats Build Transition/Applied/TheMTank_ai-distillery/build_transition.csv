@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+485374085,c645b21ca0bf7933701cd6062383020d84235df4,PassedToErrored,passed,443,https://github.com/TheMTank/ai-distillery/pull/7
+485373153,b1721829a7d6c66de0ea9a76d865bf2163e8cb62,PassedToErrored,errored,166,https://github.com/TheMTank/ai-distillery/pull/7
+485171769,2017a617ed5e3c9dc0c09328e1c251881255b544,ErroredToPassed,errored,278,https://github.com/TheMTank/ai-distillery/compare/60307cb07efe...b4aa772d2bc4
+484571939,b4aa772d2bc445f7d65adb1ae4f64fe4d7c5ffa0,ErroredToPassed,passed,267,https://github.com/TheMTank/ai-distillery/compare/60307cb07efe...b4aa772d2bc4

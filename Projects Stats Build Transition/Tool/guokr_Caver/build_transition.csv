@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+479011256,150040c0bcab8cdfdde47546a84a480f0499f8dd,PassedToErrored,passed,141,https://github.com/guokr/Caver/compare/f03b10edf244...591d46c24cb3
+476239790,591d46c24cb3b77937b866c53682d54fca5e779d,PassedToErrored,errored,149,https://github.com/guokr/Caver/compare/f03b10edf244...591d46c24cb3
+472936584,f03b10edf24421b9a0e03f9a8c962f120d429ace,ErroredToPassed,errored,156,https://github.com/guokr/Caver/compare/92660f6a886e...2a15373249cf
+472266873,2a15373249cfb00824df65184d230cf532e67b51,ErroredToPassed,passed,146,https://github.com/guokr/Caver/compare/92660f6a886e...2a15373249cf
+471821615,6439f2bf162b59dbf320efe9bb6164a55cc989b3,PassedToFailed,passed,152,https://github.com/guokr/Caver/compare/c0069d7baece...afdebe38dc68
+471820000,afdebe38dc68aee2c6f1a3c5d767c72d7ecceaa8,PassedToFailed,failed,129,https://github.com/guokr/Caver/compare/c0069d7baece...afdebe38dc68
+471812653,c0069d7baecea43acf1bce71f356b0dadde43ba7,FailedToPassed,failed,116,https://github.com/guokr/Caver/compare/3127067887b3...8d2eeafb6823
+471784523,8d2eeafb68239f2d8ed5cec703f9aee14effb4da,FailedToPassed,passed,147,https://github.com/guokr/Caver/compare/3127067887b3...8d2eeafb6823
+407983267,5f625607d67a53d24880fc460556d56ee710524b,PassedToFailed,passed,195,https://github.com/guokr/Caver/compare/f7af76705506...795822a9177c
+407980253,795822a9177cff12b3773bc15661f382f8c3bda5,PassedToFailed,failed,140,https://github.com/guokr/Caver/compare/f7af76705506...795822a9177c

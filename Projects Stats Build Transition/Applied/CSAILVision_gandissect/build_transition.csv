@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+541856062,1cda684d7b3c837308dc976eaffc1e92feae12f7,ErroredToPassed,errored,29,https://github.com/CSAILVision/gandissect/compare/64238fb0bc52...aec8b44d20cc
+541386522,aec8b44d20cc73f9611227ae552e155db3625941,ErroredToPassed,passed,35,https://github.com/CSAILVision/gandissect/compare/64238fb0bc52...aec8b44d20cc
+538680547,19d7f3680427f645d0e5fe1e6376d4b10edbb019,PassedToErrored,passed,36,https://github.com/CSAILVision/gandissect/compare/7182c73a6199^...24e726c6d516
+538565930,24e726c6d51697324fe5227a38f85cc56edaa88f,PassedToErrored,errored,43,https://github.com/CSAILVision/gandissect/compare/7182c73a6199^...24e726c6d516

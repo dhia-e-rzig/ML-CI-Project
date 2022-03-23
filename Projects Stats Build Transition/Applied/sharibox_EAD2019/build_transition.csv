@@ -1,0 +1,7 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+480884113,12d8fb9ad79a2b6f9809f7c6c5b6087c9af912cd,PassedToFailed,passed,146,https://github.com/sharibox/EAD2019/compare/ddf0ba4580ef...e4eddef07deb
+480880674,e4eddef07deb8971b7d00b796ef55d8ba97ab9d6,PassedToFailed,failed,134,https://github.com/sharibox/EAD2019/compare/ddf0ba4580ef...e4eddef07deb
+480880674,e4eddef07deb8971b7d00b796ef55d8ba97ab9d6,FailedToPassed,failed,134,https://github.com/sharibox/EAD2019/compare/5b33203ad684...ddf0ba4580ef
+480866740,ddf0ba4580ef3922d52492aebc922f87828bd9b2,FailedToPassed,passed,116,https://github.com/sharibox/EAD2019/compare/5b33203ad684...ddf0ba4580ef
+480814300,5207ca59b6a07aff18f0a770668e559645a9d10e,PassedToFailed,passed,124,https://github.com/sharibox/EAD2019/compare/a918ac5617cf...da31948cb28c
+480813037,da31948cb28c2e557eccc39b3a1b207dd1e0379c,PassedToFailed,failed,94,https://github.com/sharibox/EAD2019/compare/a918ac5617cf...da31948cb28c

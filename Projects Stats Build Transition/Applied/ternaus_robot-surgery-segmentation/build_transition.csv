@@ -1,0 +1,9 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+111550154,de12469172239a32c0dfe7c39832ac5e52ee2baf,FailedToPassed,failed,79,https://github.com/ternaus/robot-surgery-segmentation/compare/eaa75ab2e3e3...c0308a80cae4
+86817668,c0308a80cae4871858add144ce29c53acd887d7e,FailedToPassed,passed,91,https://github.com/ternaus/robot-surgery-segmentation/compare/eaa75ab2e3e3...c0308a80cae4
+83607427,9d78691e2705ca8a28efe81c35d94ea788d5f77d,PassedToFailed,passed,93,https://github.com/ternaus/robot-surgery-segmentation/pull/19
+83607116,0b5b6e8af6c734011f7f3a0a8b89f07209738736,PassedToFailed,failed,117,https://github.com/ternaus/robot-surgery-segmentation/pull/19
+83607037,4dcd875415c9640a8d62d024b5b9e1c61b5914aa,FailedToPassed,failed,120,https://github.com/ternaus/robot-surgery-segmentation/compare/86c7a80c5678...a3fe30c422ba
+81702977,a3fe30c422bae7a11145f68853cfd4cc9db83f8d,FailedToPassed,passed,105,https://github.com/ternaus/robot-surgery-segmentation/compare/86c7a80c5678...a3fe30c422ba
+81611405,201a436f8c536c7f4c6fad5a4bb2a449585db6d0,PassedToFailed,passed,90,https://github.com/ternaus/robot-surgery-segmentation/pull/16
+81611344,2e011db4c31475e7c1f39e7e22a73caf462f93f3,PassedToFailed,failed,122,https://github.com/ternaus/robot-surgery-segmentation/pull/16

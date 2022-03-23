@@ -1,0 +1,237 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 59df4338-3715-4f39-af4f-0f2545982502@1.worker-org-659784bb45-hhrgx.gce-production-2
+version: v6.2.5 https://github.com/travis-ci/worker/tree/0bd72df572e7d08bf9338416c9db10866fed0617
+instance: travis-job-aa8b242d-2551-40cc-8800-87d2c195b5b5 travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
+startup: 6.544577403s
+travis_fold:end:worker_info[0Ktravis_time:start:15dde25d[0Ktravis_time:end:15dde25d:start=1575037675145877695,finish=1575037675325302093,duration=179424398,event=no_world_writable_dirs[0Ktravis_time:start:2ef054ba[0Ktravis_time:end:2ef054ba:start=1575037675329501911,finish=1575037675338050901,duration=8548990,event=agent[0Ktravis_time:start:36c13346[0Ktravis_time:end:36c13346:start=1575037675341469284,finish=1575037675344056511,duration=2587227,event=check_unsupported[0Ktravis_time:start:0381b462[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: xenial
+Build id: 618622823
+Job id: 618622824
+Runtime kernel version: 4.15.0-1028-gcp
+travis-build version: 2a7679d1b
+[34m[1mBuild image provisioning date and time[0m
+Mon Mar 25 16:43:24 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.22.7 linux-x64 node-v11.10.1
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2
+[34m[1mrvm version[0m
+rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.7
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.21
+9.5.16
+9.6.12
+[34m[1mRedis version[0m
+redis-server 5.0.4
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 4.10.2!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.0
+v8.12.0
+v8.15.1
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:0381b462:start=1575037675347939379,finish=1575037675356094091,duration=8154712,event=show_system_info[0Ktravis_time:start:05224c23[0Ktravis_time:end:05224c23:start=1575037675359759057,finish=1575037675375786276,duration=16027219,event=rm_riak_source[0Ktravis_time:start:01f8df8c[0Ktravis_time:end:01f8df8c:start=1575037675379807634,finish=1575037675388363287,duration=8555653,event=fix_rwky_redis[0Ktravis_time:start:00d49598[0Ktravis_time:end:00d49598:start=1575037675392087101,finish=1575037675772991996,duration=380904895,event=wait_for_network[0Ktravis_time:start:08fab580[0Ktravis_time:end:08fab580:start=1575037675776615492,finish=1575037676009045756,duration=232430264,event=update_apt_keys[0Ktravis_time:start:03473e80[0Ktravis_time:end:03473e80:start=1575037676012640085,finish=1575037676076004344,duration=63364259,event=fix_hhvm_source[0Ktravis_time:start:0041b542[0Ktravis_time:end:0041b542:start=1575037676079587218,finish=1575037676082536393,duration=2949175,event=update_mongo_arch[0Ktravis_time:start:01cf93fe[0Ktravis_time:end:01cf93fe:start=1575037676085746285,finish=1575037676132431142,duration=46684857,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0baaba1c[0Ktravis_time:end:0baaba1c:start=1575037676136163127,finish=1575037676138702781,duration=2539654,event=update_glibc[0Ktravis_time:start:276e6e86[0Ktravis_time:end:276e6e86:start=1575037676142003263,finish=1575037676151303820,duration=9300557,event=clean_up_path[0Ktravis_time:start:084fe01d[0Ktravis_time:end:084fe01d:start=1575037676154439128,finish=1575037676163753162,duration=9314034,event=fix_resolv_conf[0Ktravis_time:start:07c3b70c[0Ktravis_time:end:07c3b70c:start=1575037676167137137,finish=1575037676177939307,duration=10802170,event=fix_etc_hosts[0Ktravis_time:start:07392df2[0Ktravis_time:end:07392df2:start=1575037676181456394,finish=1575037676191254446,duration=9798052,event=fix_mvn_settings_xml[0Ktravis_time:start:2ef5381c[0Ktravis_time:end:2ef5381c:start=1575037676194604938,finish=1575037676205356537,duration=10751599,event=no_ipv6_localhost[0Ktravis_time:start:02024700[0Ktravis_time:end:02024700:start=1575037676208763737,finish=1575037676211348967,duration=2585230,event=fix_etc_mavenrc[0Ktravis_time:start:063eeea8[0Ktravis_time:end:063eeea8:start=1575037676214611875,finish=1575037676218110025,duration=3498150,event=fix_wwdr_certificate[0Ktravis_time:start:0a9130f3[0Ktravis_time:end:0a9130f3:start=1575037676221473826,finish=1575037676249169246,duration=27695420,event=put_localhost_first[0Ktravis_time:start:1f63c720[0Ktravis_time:end:1f63c720:start=1575037676252525053,finish=1575037676255804629,duration=3279576,event=home_paths[0Ktravis_time:start:1979d4b6[0Ktravis_time:end:1979d4b6:start=1575037676259243167,finish=1575037676272422445,duration=13179278,event=disable_initramfs[0Ktravis_time:start:16442d20[0Ktravis_time:end:16442d20:start=1575037676275747234,finish=1575037676651896549,duration=376149315,event=disable_ssh_roaming[0Ktravis_time:start:061efac2[0Ktravis_time:end:061efac2:start=1575037676655496459,finish=1575037676658008758,duration=2512299,event=debug_tools[0Ktravis_time:start:012bc5bd[0Ktravis_time:end:012bc5bd:start=1575037676661324347,finish=1575037676664770550,duration=3446203,event=uninstall_oclint[0Ktravis_time:start:07eaa388[0Ktravis_time:end:07eaa388:start=1575037676668082077,finish=1575037676671654422,duration=3572345,event=rvm_use[0Ktravis_time:start:0f31b4f5[0Ktravis_time:end:0f31b4f5:start=1575037676674997118,finish=1575037676683654935,duration=8657817,event=rm_etc_boto_cfg[0Ktravis_time:start:011e29a8[0Ktravis_time:end:011e29a8:start=1575037676686960817,finish=1575037676689814480,duration=2853663,event=rm_oraclejdk8_symlink[0Ktravis_time:start:13086f66[0Ktravis_time:end:13086f66:start=1575037676692984512,finish=1575037676808670691,duration=115686179,event=enable_i386[0Ktravis_time:start:09ceebc0[0Ktravis_time:end:09ceebc0:start=1575037676812373850,finish=1575037676820066625,duration=7692775,event=update_rubygems[0Ktravis_time:start:07cb276c[0Ktravis_time:end:07cb276c:start=1575037676823500689,finish=1575037677727143332,duration=903642643,event=ensure_path_components[0Ktravis_time:start:235b5cb6[0Ktravis_time:end:235b5cb6:start=1575037677731044881,finish=1575037677733669804,duration=2624923,event=redefine_curl[0Ktravis_time:start:0507be95[0Ktravis_time:end:0507be95:start=1575037677737096053,finish=1575037677739661709,duration=2565656,event=nonblock_pipe[0Ktravis_time:start:089b78c4[0Ktravis_time:end:089b78c4:start=1575037677743048643,finish=1575037680793882892,duration=3050834249,event=apt_get_update[0Ktravis_time:start:25c114f0[0Ktravis_time:end:25c114f0:start=1575037680797778414,finish=1575037680800413204,duration=2634790,event=deprecate_xcode_64[0Ktravis_time:start:10399ab2[0Ktravis_time:end:10399ab2:start=1575037680803902871,finish=1575037683528051077,duration=2724148206,event=update_heroku[0Ktravis_time:start:00eb7558[0Ktravis_time:end:00eb7558:start=1575037683531646035,finish=1575037683534124785,duration=2478750,event=shell_session_update[0Ktravis_time:start:09562da6[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:09562da6:start=1575037683537496620,finish=1575037685703754603,duration=2166257983,event=set_docker_mtu[0Ktravis_time:start:0b4cd98c[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0b4cd98c:start=1575037685707755238,finish=1575037685777466633,duration=69711395,event=resolvconf[0Ktravis_time:start:0d3a2103[0Ktravis_time:end:0d3a2103:start=1575037685783623762,finish=1575037685946233457,duration=162609695,event=maven_central_mirror[0Ktravis_fold:start:apt[0Ktravis_time:start:2519c9d0[0K$ travis_apt_get_update
+travis_time:end:2519c9d0:start=1575037685957863249,finish=1575037696162151130,duration=10204287881,event=prepare[0K[33;1mInstalling APT Packages[0m
+travis_time:start:157184d0[0K$ sudo -E apt-get -yq --no-install-suggests --no-install-recommends $(travis_apt_get_options) install libboost1.54-all-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package libboost1.54-all-dev
+E: Couldn't find any package by glob 'libboost1.54-all-dev'
+E: Couldn't find any package by regex 'libboost1.54-all-dev'
+travis_time:end:157184d0:start=1575037696166977124,finish=1575037696671482807,duration=504505683,event=prepare[0Ktravis_fold:start:apt-get.diagnostics[0K[31;1mapt-get install failed[0m
+$ cat ${TRAVIS_HOME}/apt-get-update.log
+Get:1 http://apt.postgresql.org/pub/repos/apt xenial-pgdg InRelease [56.4 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+Get:4 http://apt.postgresql.org/pub/repos/apt xenial-pgdg/main amd64 Packages [230 kB]
+Get:5 http://apt.postgresql.org/pub/repos/apt xenial-pgdg/main i386 Packages [229 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main Sources [1,103 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/restricted Sources [5,179 B]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe Sources [9,802 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse Sources [215 kB]
+Get:12 http://security.ubuntu.com/ubuntu xenial-security/main Sources [197 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1,558 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main i386 Packages [1,552 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main Translation-en [799 kB]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/restricted i386 Packages [14.5 kB]
+Get:18 http://security.ubuntu.com/ubuntu xenial-security/restricted Sources [2,243 B]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/restricted Translation-en [3,019 B]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9,827 kB]
+Get:21 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [141 kB]
+Get:22 http://security.ubuntu.com/ubuntu xenial-security/multiverse Sources [3,520 B]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe i386 Packages [9,804 kB]
+Get:24 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [1,005 kB]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe Translation-en [6,256 kB]
+Get:26 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [789 kB]
+Get:27 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [430 kB]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+Get:29 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages [172 kB]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse Translation-en [131 kB]
+Get:31 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.7 kB]
+Get:32 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main Sources [434 kB]
+Get:33 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted Sources [2,696 B]
+Get:34 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages [12.7 kB]
+Get:35 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe Sources [332 kB]
+Get:36 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse Sources [9,424 B]
+Get:37 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1,383 kB]
+Get:38 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en [2,204 B]
+Get:39 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [1,140 kB]
+Get:40 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [589 kB]
+Get:41 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [593 kB]
+Get:42 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]
+Get:43 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages [13.1 kB]
+Get:44 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en [2,337 B]
+Get:45 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [509 kB]
+Get:46 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [997 kB]
+Get:47 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [903 kB]
+Get:48 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [444 kB]
+Get:49 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [258 kB]
+Get:50 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [19.3 kB]
+Get:51 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [18.1 kB]
+Get:52 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [6,283 B]
+Get:53 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en [9,022 B]
+Get:54 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main Sources [5,073 B]
+Get:55 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe Sources [7,665 B]
+Get:56 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages [6,453 B]
+Get:57 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7,942 B]
+Get:58 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages [7,942 B]
+Get:59 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main Translation-en [4,571 B]
+Get:60 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8,807 B]
+Get:61 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages [8,450 B]
+Get:62 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en [4,428 B]
+Get:63 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [2,735 B]
+Fetched 52.9 MB in 4s (11.0 MB/s)
+Reading package lists...
+travis_fold:end:apt-get.diagnostics[0K[31;1mThe command "sudo -E apt-get -yq --no-install-suggests --no-install-recommends $(travis_apt_get_options) install libboost1.54-all-dev" failed and exited with 100 during .[0m
+
+Your build has been stopped.

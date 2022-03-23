@@ -1,0 +1,9 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+622147865,4313c26cc70cf2f7b716392933dd78562be27e31,PassedToErrored,passed,17,https://github.com/philgooch/abbreviation-extraction/pull/14
+503610972,22924f9e6d0a68a610ede55dd9d234e634aa12c6,PassedToErrored,errored,155,https://github.com/philgooch/abbreviation-extraction/pull/14
+503610972,22924f9e6d0a68a610ede55dd9d234e634aa12c6,ErroredToPassed,errored,155,https://github.com/philgooch/abbreviation-extraction/compare/v0.2.1
+503611711,f163bac79efdff52af7ba3f5ce47def56b0f5b43,ErroredToPassed,passed,91,https://github.com/philgooch/abbreviation-extraction/compare/v0.2.1
+503604204,bfa9f64b44c63aa7cf4ec526511d5ae47d0d5e81,PassedToErrored,passed,170,https://github.com/philgooch/abbreviation-extraction/pull/13
+503604061,132f399498e2ec1bbbab57ba80e658aae23c75f7,PassedToErrored,errored,163,https://github.com/philgooch/abbreviation-extraction/pull/13
+503604061,132f399498e2ec1bbbab57ba80e658aae23c75f7,ErroredToPassed,errored,163,https://github.com/philgooch/abbreviation-extraction/compare/b944e990b1f9...3417805f5f88
+503603191,3417805f5f880ddc34760ce36412b8d6f9cefcb5,ErroredToPassed,passed,52,https://github.com/philgooch/abbreviation-extraction/compare/b944e990b1f9...3417805f5f88

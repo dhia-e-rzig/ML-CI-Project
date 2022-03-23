@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+598900204,5cfdce7d60553a13f01394192372474a303ad4e0,PassedToErrored,passed,79,https://github.com/scikit-learn-contrib/mimic/compare/f63cebef53a1...1b32d133476d
+598897125,1b32d133476d8c1a54d3afc500f807c1ab75e119,PassedToErrored,errored,663,https://github.com/scikit-learn-contrib/mimic/compare/f63cebef53a1...1b32d133476d
+598897125,1b32d133476d8c1a54d3afc500f807c1ab75e119,ErroredToPassed,errored,663,https://github.com/scikit-learn-contrib/mimic/compare/6242a39217fb...f63cebef53a1
+598895917,f63cebef53a1cd9a578bbb6959dd0f0290c58659,ErroredToPassed,passed,76,https://github.com/scikit-learn-contrib/mimic/compare/6242a39217fb...f63cebef53a1
+592800078,619afd18e067ac65c0464ec18f0dea46e2c7d848,PassedToErrored,passed,76,https://github.com/scikit-learn-contrib/mimic/compare/82a0912f17ff...16d7f369cb8c
+592797470,16d7f369cb8cf2965fa29870e82b743934851874,PassedToErrored,errored,136,https://github.com/scikit-learn-contrib/mimic/compare/82a0912f17ff...16d7f369cb8c
+592785007,696cca5c0f17d94e090df10bcbdc78ccf2923dc6,ErroredToPassed,errored,415,https://github.com/scikit-learn-contrib/mimic/compare/559b41e6fcfd...e360f14ac151
+529751622,e360f14ac151f608d9849c8cd9df688d80a15916,ErroredToPassed,passed,675,https://github.com/scikit-learn-contrib/mimic/compare/559b41e6fcfd...e360f14ac151
+528277322,75abea4a3b30f6dd0a9a67d1e6ef02b014fad01a,PassedToFailed,passed,680,https://github.com/scikit-learn-contrib/mimic/compare/2eafe071a4f6...827372ab5378
+528275787,827372ab53781ec734a76212d4ff26409de76170,PassedToFailed,failed,696,https://github.com/scikit-learn-contrib/mimic/compare/2eafe071a4f6...827372ab5378
+528272380,2d68554523d4b370c9540d09a3ceda564da215aa,FailedToPassed,failed,667,https://github.com/scikit-learn-contrib/mimic/compare/73f9bb81318f...4f79f43325df
+519731577,4f79f43325dfc6340265e81d28138632b670fe8c,FailedToPassed,passed,811,https://github.com/scikit-learn-contrib/mimic/compare/73f9bb81318f...4f79f43325df
+514964087,e50a7cd144c742fb486735c9abe629a09a837953,PassedToFailed,passed,654,https://github.com/pinjutien/mimic/compare/8d878a5dab20...b36ce779a895
+514962985,b36ce779a8952200ff92accc2fcf50181bcf4465,PassedToFailed,failed,727,https://github.com/pinjutien/mimic/compare/8d878a5dab20...b36ce779a895

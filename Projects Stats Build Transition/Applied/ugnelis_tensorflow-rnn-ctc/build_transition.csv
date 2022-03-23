@@ -1,0 +1,3 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+283237874,18564f1bc6cf9a26a81ba778e56d2e986dc700c9,PassedToFailed,passed,32,https://github.com/ugnelis/tensorflow-rnn-ctc/compare/4342fd134993...88031518fd7b
+283211389,88031518fd7b3c6d1954393994d5d693aaac3157,PassedToFailed,failed,24,https://github.com/ugnelis/tensorflow-rnn-ctc/compare/4342fd134993...88031518fd7b

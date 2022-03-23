@@ -1,0 +1,3 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+223697125,ffb15cca095ace59c701cc07dd0154451d55f3a9,PassedToFailed,passed,207,https://github.com/vecto-ai/vecto/compare/603c17662c0e...4a54034c97d5
+218069292,4a54034c97d5a7c93dd4f63ef9ccb2d8995bfb41,PassedToFailed,failed,186,https://github.com/vecto-ai/vecto/compare/603c17662c0e...4a54034c97d5

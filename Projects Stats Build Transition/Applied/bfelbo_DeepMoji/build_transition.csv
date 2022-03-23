@@ -1,0 +1,17 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+380487026,9a7ec86d9e4b1ee1bf6decd67d8512f0febf96de,ErroredToPassed,errored,1352,https://github.com/bfelbo/DeepMoji/compare/52848fa8a7c3...3ca2563d3dfa
+358589090,3ca2563d3dfa44fd37fe7cabbfba6060d686aa75,ErroredToPassed,passed,2017,https://github.com/bfelbo/DeepMoji/compare/52848fa8a7c3...3ca2563d3dfa
+353628068,cb77ca6c1a91a4f08acaf6d15bb8e6c6684f66e8,PassedToErrored,passed,2122,https://github.com/bfelbo/DeepMoji/pull/24
+331333095,4499f63332ce54c10b5bd958041e8448e2e8ef03,PassedToErrored,errored,2147,https://github.com/bfelbo/DeepMoji/pull/24
+319602047,9be7d205f863d13cc7b318405bb7569f6ec1b16e,ErroredToPassed,errored,1952,https://github.com/bfelbo/DeepMoji/pull/18
+317570431,a5a7f3f7fed3753ba5fe33842fb0b9bac99e68cc,ErroredToPassed,passed,2782,https://github.com/bfelbo/DeepMoji/pull/18
+317570431,a5a7f3f7fed3753ba5fe33842fb0b9bac99e68cc,PassedToErrored,passed,2782,https://github.com/bfelbo/DeepMoji/pull/18
+317566409,e67a51f43392b8c0489348df7eb283f1bc0ea236,PassedToErrored,errored,1840,https://github.com/bfelbo/DeepMoji/pull/18
+317566409,e67a51f43392b8c0489348df7eb283f1bc0ea236,ErroredToPassed,errored,1840,https://github.com/bfelbo/DeepMoji/pull/18
+310387380,46d94f422098f1d40bf435ca9495f89f739edab4,ErroredToPassed,passed,2758,https://github.com/bfelbo/DeepMoji/pull/18
+310387380,46d94f422098f1d40bf435ca9495f89f739edab4,PassedToErrored,passed,2758,https://github.com/bfelbo/DeepMoji/pull/18
+310375337,71bf505b9ab6c3ac5fe7f1a72449d7700affabc4,PassedToErrored,errored,4031,https://github.com/bfelbo/DeepMoji/pull/18
+309861871,2700754f7e89d2bddfc8e53f4c806102a6a14d4a,ErroredToPassed,errored,1919,https://github.com/bfelbo/DeepMoji/compare/585fa348b2e5...264e62a980b0
+309810322,264e62a980b0ead06155199c686e522182da862a,ErroredToPassed,passed,870,https://github.com/bfelbo/DeepMoji/compare/585fa348b2e5...264e62a980b0
+309810322,264e62a980b0ead06155199c686e522182da862a,PassedToErrored,passed,870,https://github.com/bfelbo/DeepMoji/pull/19
+299439383,775a43eb44a4c4f86316b7a813d3ad8144d3fe0d,PassedToErrored,errored,2003,https://github.com/bfelbo/DeepMoji/pull/19

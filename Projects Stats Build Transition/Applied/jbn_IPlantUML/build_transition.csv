@@ -1,0 +1,7 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+480643723,4e736c34dcf15bec43b459db196129ea796be951,ErroredToPassed,errored,285,https://github.com/jbn/IPlantUML/compare/20db60391e9f...007bc57b5280
+358167280,007bc57b5280600d7c9e858a80241e36858df587,ErroredToPassed,passed,280,https://github.com/jbn/IPlantUML/compare/20db60391e9f...007bc57b5280
+231134351,6b78c9fe1f4a3a30e6174dda7b17263e982e620e,PassedToErrored,passed,254,https://github.com/jbn/IPlantUML/compare/bfffee6da1b9...6a7d2936fc0b
+231132107,6a7d2936fc0b57d45e23c38566600ec5ea600280,PassedToErrored,errored,330,https://github.com/jbn/IPlantUML/compare/bfffee6da1b9...6a7d2936fc0b
+231132107,6a7d2936fc0b57d45e23c38566600ec5ea600280,ErroredToPassed,errored,330,https://github.com/jbn/IPlantUML/compare/e7b899fc8bc6...bfffee6da1b9
+194995560,bfffee6da1b93d0aec74cab802163d1206f1c392,ErroredToPassed,passed,216,https://github.com/jbn/IPlantUML/compare/e7b899fc8bc6...bfffee6da1b9

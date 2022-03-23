@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+772057681,431be686d373c679a497b557026a2f4de8d2a84e,FailedToPassed,failed,56,https://github.com/polyrabbit/WeCron/compare/b1286473f1e0...11ad824f701b
+770656295,11ad824f701b35e8a485a0433617b3554cf45482,FailedToPassed,passed,78,https://github.com/polyrabbit/WeCron/compare/b1286473f1e0...11ad824f701b
+380623549,93728371b43edf5730f8141590282952390f29d3,PassedToFailed,passed,235,https://github.com/polyrabbit/WeCron/compare/b44c74e72ecb...d84b591f0fe2
+380620730,d84b591f0fe2713ca4fc6dbc98eb260b33d75f51,PassedToFailed,failed,138,https://github.com/polyrabbit/WeCron/compare/b44c74e72ecb...d84b591f0fe2
+319556848,b44c74e72ecb280d4c6ea56d56197bec32750737,ErroredToPassed,errored,43,https://github.com/polyrabbit/WeCron/compare/5ecb4b630a3c...2fdc97ed03ea
+286299204,2fdc97ed03ea28ed4c71d68ee863547ab12d4547,ErroredToPassed,passed,84,https://github.com/polyrabbit/WeCron/compare/5ecb4b630a3c...2fdc97ed03ea
+188786924,febd7df1362e9a91e12f2626ecf8057656178bda,PassedToErrored,passed,103,https://github.com/polyrabbit/WeCron/compare/0b04ce214b89...68459272a65b
+188784434,68459272a65b828cf39cf6332ee1c7bdd29ff096,PassedToErrored,errored,62,https://github.com/polyrabbit/WeCron/compare/0b04ce214b89...68459272a65b
+188784434,68459272a65b828cf39cf6332ee1c7bdd29ff096,ErroredToPassed,errored,62,https://github.com/polyrabbit/WeCron/compare/c408b87807ba...0b04ce214b89
+188752322,0b04ce214b89edf8a142ee93ec22b10af9e2ddeb,ErroredToPassed,passed,69,https://github.com/polyrabbit/WeCron/compare/c408b87807ba...0b04ce214b89
+188575370,c408b87807bafc433b277deff794eba93e0d6e00,PassedToFailed,passed,70,https://github.com/polyrabbit/WeCron/compare/7e14108ce1e4...18778dcdcdc3
+188268332,18778dcdcdc3dcd12116210d80bc72476a73a8d5,PassedToFailed,failed,65,https://github.com/polyrabbit/WeCron/compare/7e14108ce1e4...18778dcdcdc3
+188050956,7e14108ce1e44e40efd0811551343789f3394948,FailedToPassed,failed,62,https://github.com/polyrabbit/WeCron/compare/ae3727bb73e7...140531148447
+186527335,140531148447ab9ec98dc9de46390873c8a8f26a,FailedToPassed,passed,61,https://github.com/polyrabbit/WeCron/compare/ae3727bb73e7...140531148447

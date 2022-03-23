@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+222986293,8c0d878bb69a720369db5f60a856da8607b0797a,PassedToErrored,passed,207,https://github.com/IBM/MAX-Text-Sentiment-Classifier/pull/49
+222350342,52c8d1a908ffd7f260dd10a064f00fe51293d4de,PassedToErrored,errored,23,https://github.com/IBM/MAX-Text-Sentiment-Classifier/pull/49
+222350342,52c8d1a908ffd7f260dd10a064f00fe51293d4de,ErroredToPassed,errored,23,https://github.com/IBM/MAX-Text-Sentiment-Classifier/compare/eb9a020403f4797fefeab8c2a9e81dd6ce08e170...8c0d878bb69a720369db5f60a856da8607b0797a
+222329066,8c0d878bb69a720369db5f60a856da8607b0797a,ErroredToPassed,passed,223,https://github.com/IBM/MAX-Text-Sentiment-Classifier/compare/eb9a020403f4797fefeab8c2a9e81dd6ce08e170...8c0d878bb69a720369db5f60a856da8607b0797a

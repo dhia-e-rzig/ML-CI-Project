@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+85001198,b70c235d2643621c6fe4dc2780a327d72de50e3c,PassedToFailed,passed,491,https://github.com/CrowdTruth/CrowdTruth-core/compare/69501d959950...7a830853299b
+84436930,7a830853299b65d50d6024b65dfa9be9a84acc70,PassedToFailed,failed,995,https://github.com/CrowdTruth/CrowdTruth-core/compare/69501d959950...7a830853299b
+84436516,69501d9599502e61167f890b009661fb01d6cb13,FailedToPassed,failed,541,https://github.com/CrowdTruth/CrowdTruth-core/compare/e54cc8236173...4adba449f1da
+84436287,4adba449f1daba04555175925a7b9d3d4c5cc186,FailedToPassed,passed,975,https://github.com/CrowdTruth/CrowdTruth-core/compare/e54cc8236173...4adba449f1da
+84411229,fb18d4cee770a64579fe9e670ce1838bfc8f58e5,PassedToFailed,passed,1064,https://github.com/CrowdTruth/CrowdTruth-core/compare/3c785ae1d398...82be8402d28b
+84409591,82be8402d28bc34d99db1fb7d316165c18355a82,PassedToFailed,failed,1031,https://github.com/CrowdTruth/CrowdTruth-core/compare/3c785ae1d398...82be8402d28b
+84409591,82be8402d28bc34d99db1fb7d316165c18355a82,FailedToPassed,failed,1031,https://github.com/CrowdTruth/CrowdTruth-core/compare/e0d561525e8d...3c785ae1d398
+84408520,3c785ae1d398e24cb3ff6516d3e4e3bfa38840f5,FailedToPassed,passed,761,https://github.com/CrowdTruth/CrowdTruth-core/compare/e0d561525e8d...3c785ae1d398
+82157627,07325f9ba793377476cd4608e8e1043e0e348681,PassedToFailed,passed,524,https://github.com/CrowdTruth/CrowdTruth-core/compare/c83738e2428f...fbc546e7066f
+82155753,fbc546e7066fe3bf54bc741acd11197b5719b7d8,PassedToFailed,failed,206,https://github.com/CrowdTruth/CrowdTruth-core/compare/c83738e2428f...fbc546e7066f
+82155753,fbc546e7066fe3bf54bc741acd11197b5719b7d8,FailedToPassed,failed,206,https://github.com/CrowdTruth/CrowdTruth-core/compare/f0fb7b2a4124...c83738e2428f
+82148248,c83738e2428f88911f9212bc82901b229d3fa4e3,FailedToPassed,passed,321,https://github.com/CrowdTruth/CrowdTruth-core/compare/f0fb7b2a4124...c83738e2428f
+81762301,ecfb8febf9b8e06afdf19237bb9fa8df1bdb015d,PassedToFailed,passed,159,https://github.com/CrowdTruth/CrowdTruth-core/compare/99efdb5ca5fd...91fd90eb2db3
+81757293,91fd90eb2db3af4cb3ae79cd42f4f1a097edef40,PassedToFailed,failed,205,https://github.com/CrowdTruth/CrowdTruth-core/compare/99efdb5ca5fd...91fd90eb2db3

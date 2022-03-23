@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+647756127,41bf067b16bf071583962413460d58c847e5415a,PassedToErrored,passed,31,https://github.com/vzhong/embeddings/pull/6
+644178003,a0aeb281343391940efb40ccd0337dd2e1645cb1,PassedToErrored,errored,29,https://github.com/vzhong/embeddings/pull/6
+644178003,a0aeb281343391940efb40ccd0337dd2e1645cb1,ErroredToPassed,errored,29,https://github.com/vzhong/embeddings/compare/aa36d67ecce1...9e15e5f40e26
+582686192,9e15e5f40e263fbfb9c1d86cc1472ebf67247e9a,ErroredToPassed,passed,30,https://github.com/vzhong/embeddings/compare/aa36d67ecce1...9e15e5f40e26
+287229901,d21c9bf4dc9444e208382b817a4feb7a7e29910b,PassedToFailed,passed,20,https://github.com/vzhong/embeddings/compare/5711e461e2a5...908e3c39852a
+287213353,908e3c39852a9d24d2a27ac76708176b600f752c,PassedToFailed,failed,37,https://github.com/vzhong/embeddings/compare/5711e461e2a5...908e3c39852a
+287213353,908e3c39852a9d24d2a27ac76708176b600f752c,FailedToPassed,failed,37,https://github.com/vzhong/embeddings/compare/1a74d0d708d8...5711e461e2a5
+244006896,5711e461e2a54dcea5c8d69080f75c830c0d2e38,FailedToPassed,passed,88,https://github.com/vzhong/embeddings/compare/1a74d0d708d8...5711e461e2a5
+236185984,eead431ad6e129c5b1908fb33c272f7b2cb90d3d,PassedToFailed,passed,58,https://github.com/vzhong/embeddings/compare/03a5481bec51...9f1b4832349c
+236185189,9f1b4832349cbc347707fb0467f7c178159ceca5,PassedToFailed,failed,50,https://github.com/vzhong/embeddings/compare/03a5481bec51...9f1b4832349c

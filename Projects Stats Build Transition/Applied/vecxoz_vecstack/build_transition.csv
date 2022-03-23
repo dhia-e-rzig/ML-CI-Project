@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+719349659,fbd65e5be39c79b048223e6726745d608bb670a0,FailedToPassed,failed,533,https://github.com/vecxoz/vecstack/compare/4dd056668d9d...1698f7bd2565
+604873914,1698f7bd25655e6ffd43ddeb5a09547f9ec256d7,FailedToPassed,passed,632,https://github.com/vecxoz/vecstack/compare/4dd056668d9d...1698f7bd2565
+549397182,25de6f3842f035fbddb406aafc69761a58cdacff,PassedToFailed,passed,634,https://github.com/vecxoz/vecstack/compare/d41c4afb599e...564d272cc43a
+548727644,564d272cc43a2ff80cd034e43b787eb4433a5897,PassedToFailed,failed,692,https://github.com/vecxoz/vecstack/compare/d41c4afb599e...564d272cc43a
+548696323,cd7f6ef1fea2c473eb920c40659c2c20563e5d81,FailedToPassed,failed,615,https://github.com/vecxoz/vecstack/pull/28
+525014139,d5400d7a8c6e28d71eefee01a0a74955c2752e86,FailedToPassed,passed,681,https://github.com/vecxoz/vecstack/pull/28
+472345063,8520414ea340f3708b108585a73b585d6047dbb4,PassedToFailed,passed,697,https://github.com/vecxoz/vecstack/compare/e3e079f67512...65dc4371c35f
+472343144,65dc4371c35ff83559a75d1ef0f55110d9ac3cf5,PassedToFailed,failed,782,https://github.com/vecxoz/vecstack/compare/e3e079f67512...65dc4371c35f
+472335177,e3e079f675128870fe985867d6f0fd58bd4b7c18,FailedToPassed,failed,664,https://github.com/vecxoz/vecstack/compare/da01513a1a52...ad4d5bf7c7ba
+363095471,ad4d5bf7c7ba8339bcd7cd3e5af36496453918a4,FailedToPassed,passed,949,https://github.com/vecxoz/vecstack/compare/da01513a1a52...ad4d5bf7c7ba

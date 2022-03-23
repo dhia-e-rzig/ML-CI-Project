@@ -1,0 +1,8 @@
+repoUrl,failCommit,passCommit,mainProblem,allProblems,problemBuildState,RepoType
+git://github.com/5hirish/adam_qas.git,d0a72e1e3872645bcac21e21180d23d351de0ea9,45036b6aa683fd9b40a40fff05ccbc000e7ed358,BuildDependencyError,['BuildDependencyError'; 'BuildDependencyError'],errored,Applied
+git://github.com/abdullahselek/koolsla.git,79827ec8e7f90ce79536741e100dd0553c4ceee4,2dcf29842046d0f7547433b5742eb729040fcacd,BuildDependencyError,['BuildDependencyError'; 'BuildDependencyError'; 'BuildDependencyError'; 'BuildDependencyError'; 'BuildDependencyError'],errored,Applied
+git://github.com/abdullahselek/spampy.git,71220282a7ee90fb266c73c433587dcc1cd69496,b2e2a20f65116b5355aff1afec04d09ff7637450,BuildDependencyError,['BuildDependencyError'; 'BuildDependencyError'],errored,Applied
+git://github.com/akoumjian/datefinder.git,9067c12a9f0f5472168daf20dbed34c408a8e775,250be3f595ab1aaa4527059def1b6d95874afaad,TestFail,['TestFail'; 'TestFail'; 'TestFail'; 'TestFail'],failed,Tool
+git://github.com/albarji/proxTV.git,1ff48294836477166080b0c76b1586b01db09a84,4812160a7b25042ba2e07e27c6cfc9c7eb8b0d12,TestError,[ 'TestFail';  'TestFail';  'TestFail'; 'TestError'],failed,Applied
+git://github.com/albarji/proxTV.git,5e5bc9995424c57e05a718dcc34187a202451a3f,7c458c0daa9afda4e1eb62c9da1c95b101b28ec2,TestFail,['TestFail'],failed,Applied
+git://github.com/albarji/proxTV.git,91c4f18346e411d481f08b44b9f5c111fb110b87,e35d4446c3f27de264ccdf3d767197eab42f481b,TestFail,['TestFail'],failed,Applied

@@ -1,0 +1,15 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+493319352,4207296ae76b40c1cbd801f062113bd00990f9fb,ErroredToPassed,errored,121,https://github.com/bamos/block/compare/v0.0.5
+221169017,67289bef55fafe5cfc01a5340c980dc58f469b6c,ErroredToPassed,passed,237,https://github.com/bamos/block/compare/v0.0.5
+221168907,67289bef55fafe5cfc01a5340c980dc58f469b6c,PassedToFailed,passed,198,https://github.com/bamos/block/compare/v0.0.5
+221167593,5d415a2705977ff3ed4a56b9efe3d4927e0e744f,PassedToFailed,failed,208,https://github.com/bamos/block/compare/v0.0.5
+221077321,287c1cfd7e9801881f3cd3fe18f6abd3825cbc87,FailedToPassed,failed,213,https://github.com/bamos/block/compare/63a377fdbee2...0fc5d5a42af1
+219787379,0fc5d5a42af13131d8efb28a9126b19326674f5a,FailedToPassed,passed,207,https://github.com/bamos/block/compare/63a377fdbee2...0fc5d5a42af1
+219727802,49f5a9cf59c113f281ceedf018f2582b45e82c52,PassedToErrored,passed,148,https://github.com/bamos/block/pull/8
+219727420,1f19609c5902e8bac80ecf2e84b3e2d09fb29197,PassedToErrored,errored,31,https://github.com/bamos/block/pull/8
+219727420,1f19609c5902e8bac80ecf2e84b3e2d09fb29197,ErroredToPassed,errored,31,https://github.com/bamos/block/compare/d488a886a350...d49298aa2013
+219723479,d49298aa201339ecec05955c5f64a69fae939d11,ErroredToPassed,passed,152,https://github.com/bamos/block/compare/d488a886a350...d49298aa2013
+219723479,d49298aa201339ecec05955c5f64a69fae939d11,PassedToErrored,passed,152,https://github.com/bamos/block/pull/7
+219723294,0de32437cc9a935aa2160d6143a9b15a6bcb3481,PassedToErrored,errored,32,https://github.com/bamos/block/pull/7
+219723294,0de32437cc9a935aa2160d6143a9b15a6bcb3481,ErroredToPassed,errored,32,https://github.com/bamos/block/pull/7
+219720025,121e081a8f7cc5b43448e670fdbaaefadbd63013,ErroredToPassed,passed,158,https://github.com/bamos/block/pull/7

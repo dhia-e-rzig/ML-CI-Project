@@ -1,0 +1,9 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+770049918,12b3fde2a0ba9355ee66876338029c80749484c6,PassedToErrored,passed,128,https://github.com/kermitt2/delft/compare/48e284f27f05...feccee88480b
+770047314,feccee88480b0c6840b791b91af871d82a61ef61,PassedToErrored,errored,106,https://github.com/kermitt2/delft/compare/48e284f27f05...feccee88480b
+770047314,feccee88480b0c6840b791b91af871d82a61ef61,ErroredToPassed,errored,106,https://github.com/kermitt2/delft/compare/66b3e5d9e148...48e284f27f05
+770036177,48e284f27f055959f9bcb94f0209e7d0f3995786,ErroredToPassed,passed,126,https://github.com/kermitt2/delft/compare/66b3e5d9e148...48e284f27f05
+751148517,d88804a98e9de37cff74e6b42de46acac0c4c1ec,PassedToErrored,passed,199,https://github.com/kermitt2/delft/compare/2a393e738368...fca862ef218d
+751145013,fca862ef218d16bc73b79a518d714b40b24cb0e5,PassedToErrored,errored,145,https://github.com/kermitt2/delft/compare/2a393e738368...fca862ef218d
+751145013,fca862ef218d16bc73b79a518d714b40b24cb0e5,ErroredToPassed,errored,145,https://github.com/kermitt2/delft/compare/eaa70aa862a0...2a393e738368
+750781548,2a393e738368a68adcf350765d818a076d7218ba,ErroredToPassed,passed,189,https://github.com/kermitt2/delft/compare/eaa70aa862a0...2a393e738368

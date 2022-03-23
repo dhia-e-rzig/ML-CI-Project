@@ -1,0 +1,517 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 29798b1b-6329-40c0-bb2b-ae655aeaf928@1.production-3-worker-org-b-1-gce
+version: v3.6.0 https://github.com/travis-ci/worker/tree/170b2a0bb43234479fd1911ba9e4dbcc36dadfad
+instance: travis-job-76eb53c7-1ae5-4b01-962f-93461e90bb67 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 26.590195785s
+travis_fold:end:worker_info[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 379630082
+Job id: 379630085
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 09fe88fee
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+[32;1mNetwork availability confirmed.[0m
+
+[33;1mRunning apt-get update by default has been disabled.[0m
+You can opt into running apt-get update by setting this in your .travis.yml file:
+
+  addons:
+    apt:
+      update: true
+[33;1m3.3 is not installed; attempting download[0m
+[33;1mDownloading archive: https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.3.tar.bz2[0m
+$ curl -sSf -o python-3.3.tar.bz2 ${archive_url}
+$ sudo tar xjf python-3.3.tar.bz2 --directory /
+
+travis_fold:start:git.checkout[0Ktravis_time:start:1d8f4c64[0K$ git clone --depth=50 --branch=master https://github.com/koshort/pyeunjeon.git koshort/pyeunjeon
+Cloning into 'koshort/pyeunjeon'...
+remote: Counting objects: 176, done.[K
+remote: Compressing objects:   0% (1/118)   [Kremote: Compressing objects:   1% (2/118)   [Kremote: Compressing objects:   2% (3/118)   [Kremote: Compressing objects:   3% (4/118)   [Kremote: Compressing objects:   4% (5/118)   [Kremote: Compressing objects:   5% (6/118)   [Kremote: Compressing objects:   6% (8/118)   [Kremote: Compressing objects:   7% (9/118)   [Kremote: Compressing objects:   8% (10/118)   [Kremote: Compressing objects:   9% (11/118)   [Kremote: Compressing objects:  10% (12/118)   [Kremote: Compressing objects:  11% (13/118)   [Kremote: Compressing objects:  12% (15/118)   [Kremote: Compressing objects:  13% (16/118)   [Kremote: Compressing objects:  14% (17/118)   [Kremote: Compressing objects:  15% (18/118)   [Kremote: Compressing objects:  16% (19/118)   [Kremote: Compressing objects:  17% (21/118)   [Kremote: Compressing objects:  18% (22/118)   [Kremote: Compressing objects:  19% (23/118)   [Kremote: Compressing objects:  20% (24/118)   [Kremote: Compressing objects:  21% (25/118)   [Kremote: Compressing objects:  22% (26/118)   [Kremote: Compressing objects:  23% (28/118)   [Kremote: Compressing objects:  24% (29/118)   [Kremote: Compressing objects:  25% (30/118)   [Kremote: Compressing objects:  26% (31/118)   [Kremote: Compressing objects:  27% (32/118)   [Kremote: Compressing objects:  28% (34/118)   [Kremote: Compressing objects:  29% (35/118)   [Kremote: Compressing objects:  30% (36/118)   [Kremote: Compressing objects:  31% (37/118)   [Kremote: Compressing objects:  32% (38/118)   [Kremote: Compressing objects:  33% (39/118)   [Kremote: Compressing objects:  34% (41/118)   [Kremote: Compressing objects:  35% (42/118)   [Kremote: Compressing objects:  36% (43/118)   [Kremote: Compressing objects:  37% (44/118)   [Kremote: Compressing objects:  38% (45/118)   [Kremote: Compressing objects:  39% (47/118)   [Kremote: Compressing objects:  40% (48/118)   [Kremote: Compressing objects:  41% (49/118)   [Kremote: Compressing objects:  42% (50/118)   [Kremote: Compressing objects:  43% (51/118)   [Kremote: Compressing objects:  44% (52/118)   [Kremote: Compressing objects:  45% (54/118)   [Kremote: Compressing objects:  46% (55/118)   [Kremote: Compressing objects:  47% (56/118)   [Kremote: Compressing objects:  48% (57/118)   [Kremote: Compressing objects:  49% (58/118)   [Kremote: Compressing objects:  50% (59/118)   [Kremote: Compressing objects:  51% (61/118)   [Kremote: Compressing objects:  52% (62/118)   [Kremote: Compressing objects:  53% (63/118)   [Kremote: Compressing objects:  54% (64/118)   [Kremote: Compressing objects:  55% (65/118)   [Kremote: Compressing objects:  56% (67/118)   [Kremote: Compressing objects:  57% (68/118)   [Kremote: Compressing objects:  58% (69/118)   [Kremote: Compressing objects:  59% (70/118)   [Kremote: Compressing objects:  60% (71/118)   [Kremote: Compressing objects:  61% (72/118)   [Kremote: Compressing objects:  62% (74/118)   [Kremote: Compressing objects:  63% (75/118)   [Kremote: Compressing objects:  64% (76/118)   [Kremote: Compressing objects:  65% (77/118)   [Kremote: Compressing objects:  66% (78/118)   [Kremote: Compressing objects:  67% (80/118)   [Kremote: Compressing objects:  68% (81/118)   [Kremote: Compressing objects:  69% (82/118)   [Kremote: Compressing objects:  70% (83/118)   [Kremote: Compressing objects:  71% (84/118)   [Kremote: Compressing objects:  72% (85/118)   [Kremote: Compressing objects:  73% (87/118)   [Kremote: Compressing objects:  74% (88/118)   [Kremote: Compressing objects:  75% (89/118)   [Kremote: Compressing objects:  76% (90/118)   [Kremote: Compressing objects:  77% (91/118)   [Kremote: Compressing objects:  78% (93/118)   [Kremote: Compressing objects:  79% (94/118)   [Kremote: Compressing objects:  80% (95/118)   [Kremote: Compressing objects:  81% (96/118)   [Kremote: Compressing objects:  82% (97/118)   [Kremote: Compressing objects:  83% (98/118)   [Kremote: Compressing objects:  84% (100/118)   [Kremote: Compressing objects:  85% (101/118)   [Kremote: Compressing objects:  86% (102/118)   [Kremote: Compressing objects:  87% (103/118)   [Kremote: Compressing objects:  88% (104/118)   [Kremote: Compressing objects:  89% (106/118)   [Kremote: Compressing objects:  90% (107/118)   [Kremote: Compressing objects:  91% (108/118)   [Kremote: Compressing objects:  92% (109/118)   [Kremote: Compressing objects:  93% (110/118)   [Kremote: Compressing objects:  94% (111/118)   [Kremote: Compressing objects:  95% (113/118)   [Kremote: Compressing objects:  96% (114/118)   [Kremote: Compressing objects:  97% (115/118)   [Kremote: Compressing objects:  98% (116/118)   [Kremote: Compressing objects:  99% (117/118)   [Kremote: Compressing objects: 100% (118/118)   [Kremote: Compressing objects: 100% (118/118), done.[K
+Receiving objects:   0% (1/176)   Receiving objects:   1% (2/176)   Receiving objects:   2% (4/176)   Receiving objects:   3% (6/176)   Receiving objects:   4% (8/176)   Receiving objects:   5% (9/176)   Receiving objects:   6% (11/176)   Receiving objects:   7% (13/176)   Receiving objects:   8% (15/176)   Receiving objects:   9% (16/176)   Receiving objects:  10% (18/176)   Receiving objects:  11% (20/176)   Receiving objects:  12% (22/176)   Receiving objects:  13% (23/176)   Receiving objects:  14% (25/176)   Receiving objects:  15% (27/176)   Receiving objects:  16% (29/176)   Receiving objects:  17% (30/176)   Receiving objects:  18% (32/176)   Receiving objects:  19% (34/176)   Receiving objects:  20% (36/176)   Receiving objects:  21% (37/176)   Receiving objects:  22% (39/176)   Receiving objects:  23% (41/176)   Receiving objects:  24% (43/176)   Receiving objects:  25% (44/176)   Receiving objects:  26% (46/176)   Receiving objects:  27% (48/176)   Receiving objects:  28% (50/176)   Receiving objects:  29% (52/176)   Receiving objects:  30% (53/176)   Receiving objects:  31% (55/176)   Receiving objects:  32% (57/176)   Receiving objects:  33% (59/176)   Receiving objects:  34% (60/176)   Receiving objects:  35% (62/176)   Receiving objects:  36% (64/176)   Receiving objects:  37% (66/176)   Receiving objects:  38% (67/176)   Receiving objects:  39% (69/176)   Receiving objects:  40% (71/176)   Receiving objects:  41% (73/176)   Receiving objects:  42% (74/176)   Receiving objects:  43% (76/176)   Receiving objects:  44% (78/176)   Receiving objects:  45% (80/176)   Receiving objects:  46% (81/176)   Receiving objects:  47% (83/176)   Receiving objects:  48% (85/176)   Receiving objects:  49% (87/176)   Receiving objects:  50% (88/176)   Receiving objects:  51% (90/176)   Receiving objects:  52% (92/176)   Receiving objects:  53% (94/176)   Receiving objects:  54% (96/176)   Receiving objects:  55% (97/176), 2.04 MiB | 4.05 MiB/s   Receiving objects:  56% (99/176), 2.04 MiB | 4.05 MiB/s   Receiving objects:  57% (101/176), 2.04 MiB | 4.05 MiB/s   Receiving objects:  58% (103/176), 2.04 MiB | 4.05 MiB/s   Receiving objects:  59% (104/176), 2.04 MiB | 4.05 MiB/s   Receiving objects:  60% (106/176), 2.04 MiB | 4.05 MiB/s   Receiving objects:  61% (108/176), 2.04 MiB | 4.05 MiB/s   Receiving objects:  61% (108/176), 5.88 MiB | 5.85 MiB/s   Receiving objects:  62% (110/176), 10.05 MiB | 6.68 MiB/s   Receiving objects:  63% (111/176), 10.05 MiB | 6.68 MiB/s   Receiving objects:  63% (112/176), 14.47 MiB | 7.21 MiB/s   Receiving objects:  63% (112/176), 24.21 MiB | 8.03 MiB/s   Receiving objects:  63% (112/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  64% (113/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  65% (115/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  66% (117/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  67% (118/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  68% (120/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  69% (122/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  70% (124/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  71% (125/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  72% (127/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  73% (129/176), 32.39 MiB | 6.04 MiB/s   remote: Total 176 (delta 90), reused 121 (delta 48), pack-reused 0[K
+Receiving objects:  74% (131/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  75% (132/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  76% (134/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  77% (136/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  78% (138/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  79% (140/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  80% (141/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  81% (143/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  82% (145/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  83% (147/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  84% (148/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  85% (150/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  86% (152/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  87% (154/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  88% (155/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  89% (157/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  90% (159/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  91% (161/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  92% (162/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  93% (164/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  94% (166/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  95% (168/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  96% (169/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  97% (171/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  98% (173/176), 32.39 MiB | 6.04 MiB/s   Receiving objects:  99% (175/176), 32.39 MiB | 6.04 MiB/s   Receiving objects: 100% (176/176), 32.39 MiB | 6.04 MiB/s   Receiving objects: 100% (176/176), 35.86 MiB | 6.32 MiB/s, done.
+Resolving deltas:   0% (0/90)   Resolving deltas:  41% (37/90)   Resolving deltas:  43% (39/90)   Resolving deltas:  44% (40/90)   Resolving deltas:  54% (49/90)   Resolving deltas:  56% (51/90)   Resolving deltas:  64% (58/90)   Resolving deltas:  65% (59/90)   Resolving deltas:  67% (61/90)   Resolving deltas:  74% (67/90)   Resolving deltas:  75% (68/90)   Resolving deltas:  76% (69/90)   Resolving deltas:  81% (73/90)   Resolving deltas:  87% (79/90)   Resolving deltas:  91% (82/90)   Resolving deltas:  97% (88/90)   Resolving deltas:  98% (89/90)   Resolving deltas: 100% (90/90)   Resolving deltas: 100% (90/90), done.
+
+travis_time:end:1d8f4c64:start=1526463292071610390,finish=1526463303461680526,duration=11390070136[0K$ cd koshort/pyeunjeon
+$ git checkout -qf 53c6f8d6329f5636ba23283a590c939813a1b4eb
+travis_fold:end:git.checkout[0Ktravis_time:start:04c103c0[0K$ source ~/virtualenv/python3.3/bin/activate
+
+travis_time:end:04c103c0:start=1526463303927998789,finish=1526463303936290709,duration=8291920[0K$ python --version
+Python 3.3.6
+$ pip --version
+pip 8.1.2 from /home/travis/virtualenv/python3.3.6/lib/python3.3/site-packages (python 3.3)
+travis_fold:start:before_install.1[0Ktravis_time:start:0b7829bc[0K$ if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then pip install -r requirements.txt; fi
+
+travis_time:end:0b7829bc:start=1526463304256779963,finish=1526463304260985739,duration=4205776[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:0d67c6a6[0K$ if [[ $TRAVIS_PYTHON_VERSION == 3* ]]; then pip install -r requirements.txt; fi
+[33mYou must give at least one requirement to install (see "pip help install")[0m
+
+travis_time:end:0d67c6a6:start=1526463304265976008,finish=1526463304585902730,duration=319926722[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:2e5dd850[0K$ pip install coveralls
+Collecting coveralls
+  Downloading https://files.pythonhosted.org/packages/6f/c0/cd0b33454c0192cdd63360f8ac2a96a6132f01b34fa70524220c06fd4743/coveralls-1.3.0-py2.py3-none-any.whl
+Collecting requests>=1.0.0 (from coveralls)
+  Downloading https://files.pythonhosted.org/packages/49/df/50aa1999ab9bde74656c2919d9c0c085fd2b3775fd3eca826012bef76d8c/requests-2.18.4-py2.py3-none-any.whl (88kB)
+[?25l[K    11% |███▊                            | 10kB 13.2MB/s eta 0:00:01[K    23% |███████▍                        | 20kB 1.7MB/s eta 0:00:01[K    34% |███████████                     | 30kB 2.5MB/s eta 0:00:01[K    46% |██████████████▊                 | 40kB 3.1MB/s eta 0:00:01[K    57% |██████████████████▌             | 51kB 3.3MB/s eta 0:00:01[K    69% |██████████████████████▏         | 61kB 3.9MB/s eta 0:00:01[K    80% |█████████████████████████▉      | 71kB 3.2MB/s eta 0:00:01[K    92% |█████████████████████████████▌  | 81kB 3.6MB/s eta 0:00:01[K    100% |████████████████████████████████| 92kB 3.0MB/s 
+[?25hCollecting docopt>=0.6.1 (from coveralls)
+  Downloading https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz
+Collecting coverage>=3.6 (from coveralls)
+  Downloading https://files.pythonhosted.org/packages/ce/e5/7d0c5440de5ba0075b304478d6309b16cb4681063050b192d8d9398aa7f0/coverage-4.5.1-cp33-cp33m-manylinux1_x86_64.whl (200kB)
+[?25l[K    5% |█▋                              | 10kB 36.9MB/s eta 0:00:01[K    10% |███▎                            | 20kB 23.8MB/s eta 0:00:01[K    15% |█████                           | 30kB 26.8MB/s eta 0:00:01[K    20% |██████▌                         | 40kB 10.1MB/s eta 0:00:01[K    25% |████████▏                       | 51kB 5.8MB/s eta 0:00:01[K    30% |█████████▉                      | 61kB 6.6MB/s eta 0:00:01[K    35% |███████████▌                    | 71kB 6.2MB/s eta 0:00:01[K    40% |█████████████                   | 81kB 5.8MB/s eta 0:00:01[K    45% |██████████████▊                 | 92kB 6.4MB/s eta 0:00:01[K    51% |████████████████▍               | 102kB 5.8MB/s eta 0:00:01[K    56% |██████████████████              | 112kB 5.7MB/s eta 0:00:01[K    61% |███████████████████▋            | 122kB 5.2MB/s eta 0:00:01[K    66% |█████████████████████▎          | 133kB 4.6MB/s eta 0:00:01[K    71% |███████████████████████         | 143kB 5.2MB/s eta 0:00:01[K    76% |████████████████████████▌       | 153kB 5.7MB/s eta 0:00:01[K    81% |██████████████████████████▏     | 163kB 4.9MB/s eta 0:00:01[K    86% |███████████████████████████▉    | 174kB 5.4MB/s eta 0:00:01[K    91% |█████████████████████████████▍  | 184kB 5.6MB/s eta 0:00:01[K    97% |███████████████████████████████ | 194kB 5.7MB/s eta 0:00:01[K    100% |████████████████████████████████| 204kB 3.4MB/s 
+[?25hCollecting urllib3<1.23,>=1.21.1 (from requests>=1.0.0->coveralls)
+  Downloading https://files.pythonhosted.org/packages/63/cb/6965947c13a94236f6d4b8223e21beb4d576dc72e8130bd7880f600839b8/urllib3-1.22-py2.py3-none-any.whl (132kB)
+[?25l[K    7% |██▌                             | 10kB 30.0MB/s eta 0:00:01[K    15% |█████                           | 20kB 24.2MB/s eta 0:00:01[K    23% |███████▍                        | 30kB 28.0MB/s eta 0:00:01[K    30% |██████████                      | 40kB 12.8MB/s eta 0:00:01[K    38% |████████████▍                   | 51kB 6.8MB/s eta 0:00:01[K    46% |██████████████▉                 | 61kB 7.8MB/s eta 0:00:01[K    54% |█████████████████▍              | 71kB 7.2MB/s eta 0:00:01[K    61% |███████████████████▉            | 81kB 6.4MB/s eta 0:00:01[K    69% |██████████████████████▎         | 92kB 7.1MB/s eta 0:00:01[K    77% |████████████████████████▊       | 102kB 7.2MB/s eta 0:00:01[K    85% |███████████████████████████▎    | 112kB 7.2MB/s eta 0:00:01[K    92% |█████████████████████████████▊  | 122kB 5.9MB/s eta 0:00:01[K    100% |████████████████████████████████| 133kB 3.6MB/s 
+[?25hCollecting chardet<3.1.0,>=3.0.2 (from requests>=1.0.0->coveralls)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+[?25l[K    7% |██▌                             | 10kB 40.0MB/s eta 0:00:01[K    15% |█████                           | 20kB 31.5MB/s eta 0:00:01[K    23% |███████▍                        | 30kB 30.6MB/s eta 0:00:01[K    30% |█████████▉                      | 40kB 19.4MB/s eta 0:00:01[K    38% |████████████▎                   | 51kB 10.7MB/s eta 0:00:01[K    46% |██████████████▊                 | 61kB 12.1MB/s eta 0:00:01[K    53% |█████████████████▏              | 71kB 9.3MB/s eta 0:00:01[K    61% |███████████████████▋            | 81kB 7.4MB/s eta 0:00:01[K    69% |██���███████████████████▏         | 92kB 8.1MB/s eta 0:00:01[K    76% |████████████████████████▋       | 102kB 7.7MB/s eta 0:00:01[K    84% |███████████████████████████     | 112kB 7.7MB/s eta 0:00:01[K    92% |█████████████████████████████▌  | 122kB 7.0MB/s eta 0:00:01[K    99% |████████████████████████████████| 133kB 7.1MB/s eta 0:00:01[K    100% |████████████████████████████████| 143kB 4.3MB/s 
+[?25hCollecting certifi>=2017.4.17 (from requests>=1.0.0->coveralls)
+  Downloading https://files.pythonhosted.org/packages/7c/e6/92ad559b7192d846975fc916b65f667c7b8c3a32bea7372340bfe9a15fa5/certifi-2018.4.16-py2.py3-none-any.whl (150kB)
+[?25l[K    6% |██▏                             | 10kB 31.5MB/s eta 0:00:01[K    13% |████▍                           | 20kB 10.9MB/s eta 0:00:01[K    20% |██████▌                         | 30kB 13.1MB/s eta 0:00:01[K    27% |████████▊                       | 40kB 11.6MB/s eta 0:00:01[K    34% |███████████                     | 51kB 8.2MB/s eta 0:00:01[K    40% |█████████████                   | 61kB 9.4MB/s eta 0:00:01[K    47% |███████████████▎                | 71kB 7.7MB/s eta 0:00:01[K    54% |█████████████████▍              | 81kB 8.4MB/s eta 0:00:01[K    61% |███████████████████▋            | 92kB 8.2MB/s eta 0:00:01[K    68% |█████████████████████▉          | 102kB 7.1MB/s eta 0:00:01[K    74% |████████████████████████        | 112kB 7.0MB/s eta 0:00:01[K    81% |██████████████████████████▏     | 122kB 7.5MB/s eta 0:00:01[K    88% |████████████████████████████▎   | 133kB 6.8MB/s eta 0:00:01[K    95% |██████████████████���███████████▌ | 143kB 7.2MB/s eta 0:00:01[K    100% |████████████████████████████████| 153kB 4.0MB/s 
+[?25hCollecting idna<2.7,>=2.5 (from requests>=1.0.0->coveralls)
+  Downloading https://files.pythonhosted.org/packages/27/cc/6dd9a3869f15c2edfab863b992838277279ce92663d334df9ecf5106f5c6/idna-2.6-py2.py3-none-any.whl (56kB)
+[?25l[K    18% |█████▉                          | 10kB 36.1MB/s eta 0:00:01[K    36% |███████████▋                    | 20kB 32.9MB/s eta 0:00:01[K    54% |█████████████████▍              | 30kB 34.9MB/s eta 0:00:01[K    72% |███████████████████████▏        | 40kB 16.3MB/s eta 0:00:01[K    90% |█████████████████████████████   | 51kB 14.7MB/s eta 0:00:01[K    100% |████████████████████████████████| 61kB 7.1MB/s 
+[?25hBuilding wheels for collected packages: docopt
+  Running setup.py bdist_wheel for docopt ... [?25l- done
+[?25h  Stored in directory: /home/travis/.cache/pip/wheels/9b/04/dd/7daf4150b6d9b12949298737de9431a324d4b797ffd63f526e
+Successfully built docopt
+Installing collected packages: urllib3, chardet, certifi, idna, requests, docopt, coverage, coveralls
+Successfully installed certifi-2018.4.16 chardet-3.0.4 coverage-4.5.1 coveralls-1.3.0 docopt-0.6.2 idna-2.6 requests-2.18.4 urllib3-1.22
+
+travis_time:end:2e5dd850:start=1526463304598414045,finish=1526463307844208332,duration=3245794287[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:13df014f[0K$ pip install pytest-cov
+Collecting pytest-cov
+  Downloading https://files.pythonhosted.org/packages/30/7d/7f6a78ae44a1248ee28cc777586c18b28a1df903470e5d34a6e25712b8aa/pytest_cov-2.5.1-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): pytest>=2.6.0 in /home/travis/virtualenv/python3.3.6/lib/python3.3/site-packages (from pytest-cov)
+Requirement already satisfied (use --upgrade to upgrade): coverage>=3.7.1 in /home/travis/virtualenv/python3.3.6/lib/python3.3/site-packages (from pytest-cov)
+Requirement already satisfied (use --upgrade to upgrade): py>=1.4.29 in /home/travis/virtualenv/python3.3.6/lib/python3.3/site-packages (from pytest>=2.6.0->pytest-cov)
+Installing collected packages: pytest-cov
+Successfully installed pytest-cov-2.5.1
+
+travis_time:end:13df014f:start=1526463307849857893,finish=1526463308586259493,duration=736401600[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:install.1[0Ktravis_time:start:082015e0[0K$ bash ./scripts/mecab.sh
+Installing MeCab-ko
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0   282    0     0   1056      0 --:--:-- --:--:-- --:--:--  1056
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+./scripts/mecab.sh: line 34: cd: mecab-0.996-ko-0.9.2: No such file or directory
+./scripts/mecab.sh: line 35: ./configure: No such file or directory
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target `check'.  Stop.
+make: *** No rule to make target `install'.  Stop.
+
+travis_time:end:082015e0:start=1526463308592257932,finish=1526463308939881479,duration=347623547[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:0c00dfb6[0K$ python setup.py -q install
+/bin/sh: 1: mecab-config: not found
+Traceback (most recent call last):
+  File "setup.py", line 63, in <module>
+    include_dirs=cmd2("mecab-config --inc-dir"),
+  File "setup.py", line 55, in cmd2
+    return cmd1(strings).split()
+  File "setup.py", line 51, in cmd1
+    return os.popen(strings).readlines()[0][:-1]
+IndexError: list index out of range
+
+travis_time:end:0c00dfb6:start=1526463308945519005,finish=1526463309127369980,duration=181850975[0K
+[31;1mThe command "python setup.py -q install" failed and exited with 1 during .[0m
+
+Your build has been stopped.

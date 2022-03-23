@@ -1,0 +1,5 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+555865444,5f1ed015693bff34e11e7a2d489c4ca85112adf6,PassedToErrored,passed,323,https://github.com/ErikGartner/hyperdock/compare/0.19.0
+555853319,f9c66a5d735994c4b60ebeff7dacb52a8522c79a,PassedToErrored,errored,339,https://github.com/ErikGartner/hyperdock/compare/0.19.0
+555853319,f9c66a5d735994c4b60ebeff7dacb52a8522c79a,ErroredToPassed,errored,339,https://github.com/ErikGartner/hyperdock/compare/f9c66a5d7359...55ec072cc1f9
+555854131,55ec072cc1f9b926df4df32a8425a9d517674d22,ErroredToPassed,passed,446,https://github.com/ErikGartner/hyperdock/compare/f9c66a5d7359...55ec072cc1f9

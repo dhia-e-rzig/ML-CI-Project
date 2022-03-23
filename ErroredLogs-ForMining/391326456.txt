@@ -1,0 +1,906 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 5074b6e9-0d96-4375-a4d0-262dccabc99a@1.worker-com-oss-7fc4c777c9-n8w8k.gce-production-3
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-84558ee7-e10a-4923-8519-bd517f4b6b4f travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.18027699s
+travis_fold:end:worker_info[0Ktravis_time:start:036121b0[0Ktravis_time:end:036121b0:start=1601139772011195367,finish=1601139772166628106,duration=155432739,event=no_world_writable_dirs[0Ktravis_time:start:22a34596[0Ktravis_time:end:22a34596:start=1601139772169684111,finish=1601139772177247460,duration=7563349,event=agent[0Ktravis_time:start:01eae2d6[0Ktravis_time:end:01eae2d6:start=1601139772179777691,finish=1601139772181599175,duration=1821484,event=check_unsupported[0Ktravis_time:start:0e65ff56[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: trusty
+Build id: 186825973
+Job id: 391326456
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 445df621
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:0e65ff56:start=1601139772184292556,finish=1601139772191878013,duration=7585457,event=show_system_info[0Ktravis_time:start:269cc84c[0Ktravis_time:end:269cc84c:start=1601139772194794373,finish=1601139772219458710,duration=24664337,event=rm_riak_source[0Ktravis_time:start:0ade0b98[0Ktravis_time:end:0ade0b98:start=1601139772222557120,finish=1601139772227817052,duration=5259932,event=fix_rwky_redis[0Ktravis_time:start:02b4ea00[0Ktravis_time:end:02b4ea00:start=1601139772231641301,finish=1601139772730645561,duration=499004260,event=wait_for_network[0Ktravis_time:start:0b4b3aae[0Ktravis_time:end:0b4b3aae:start=1601139772733672498,finish=1601139773557656218,duration=823983720,event=update_apt_keys[0Ktravis_time:start:0b64d4a0[0Ktravis_time:end:0b64d4a0:start=1601139773560450777,finish=1601139774486451975,duration=926001198,event=fix_hhvm_source[0Ktravis_time:start:1eceff46[0Ktravis_time:end:1eceff46:start=1601139774489557733,finish=1601139774497443019,duration=7885286,event=update_mongo_arch[0Ktravis_time:start:09406abe[0Ktravis_time:end:09406abe:start=1601139774500014149,finish=1601139774533201557,duration=33187408,event=fix_sudo_enabled_trusty[0Ktravis_time:start:07724550[0Ktravis_time:end:07724550:start=1601139774535939571,finish=1601139774537833224,duration=1893653,event=update_glibc[0Ktravis_time:start:195d41ac[0Ktravis_time:end:195d41ac:start=1601139774540345286,finish=1601139774546943548,duration=6598262,event=clean_up_path[0Ktravis_time:start:0373316a[0Ktravis_time:end:0373316a:start=1601139774549412540,finish=1601139774556151541,duration=6739001,event=fix_resolv_conf[0Ktravis_time:start:1e7d92d0[0Ktravis_time:end:1e7d92d0:start=1601139774558705404,finish=1601139774566186822,duration=7481418,event=fix_etc_hosts[0Ktravis_time:start:03b1aa88[0Ktravis_time:end:03b1aa88:start=1601139774568793977,finish=1601139774576028934,duration=7234957,event=fix_mvn_settings_xml[0Ktravis_time:start:018be1f7[0Ktravis_time:end:018be1f7:start=1601139774578548672,finish=1601139774586285363,duration=7736691,event=no_ipv6_localhost[0Ktravis_time:start:03174f3a[0Ktravis_time:end:03174f3a:start=1601139774588910650,finish=1601139774590846466,duration=1935816,event=fix_etc_mavenrc[0Ktravis_time:start:02da42f5[0Ktravis_time:end:02da42f5:start=1601139774593363525,finish=1601139774595898238,duration=2534713,event=fix_wwdr_certificate[0Ktravis_time:start:0515f3c2[0Ktravis_time:end:0515f3c2:start=1601139774598401310,finish=1601139774617320321,duration=18919011,event=put_localhost_first[0Ktravis_time:start:20557e7f[0Ktravis_time:end:20557e7f:start=1601139774620185262,finish=1601139774622625195,duration=2439933,event=home_paths[0Ktravis_time:start:015cf86a[0Ktravis_time:end:015cf86a:start=1601139774625295049,finish=1601139774635465393,duration=10170344,event=disable_initramfs[0Ktravis_time:start:04c68c12[0Ktravis_time:end:04c68c12:start=1601139774638003120,finish=1601139774898225844,duration=260222724,event=disable_ssh_roaming[0Ktravis_time:start:1bcd6098[0Ktravis_time:end:1bcd6098:start=1601139774901016337,finish=1601139774902996722,duration=1980385,event=debug_tools[0Ktravis_time:start:01813c64[0Ktravis_time:end:01813c64:start=1601139774905688852,finish=1601139774908360344,duration=2671492,event=uninstall_oclint[0Ktravis_time:start:01152f1b[0Ktravis_time:end:01152f1b:start=1601139774911044709,finish=1601139774913691915,duration=2647206,event=rvm_use[0Ktravis_time:start:15e3253e[0Ktravis_time:end:15e3253e:start=1601139774916332191,finish=1601139774922958544,duration=6626353,event=rm_etc_boto_cfg[0Ktravis_time:start:12831bb5[0Ktravis_time:end:12831bb5:start=1601139774925583588,finish=1601139774927461373,duration=1877785,event=rm_oraclejdk8_symlink[0Ktravis_time:start:1b4d2f4a[0Ktravis_time:end:1b4d2f4a:start=1601139774929974406,finish=1601139774976333403,duration=46358997,event=enable_i386[0Ktravis_time:start:10370509[0Ktravis_time:end:10370509:start=1601139774979508807,finish=1601139774983794621,duration=4285814,event=update_rubygems[0Ktravis_time:start:0922e0c0[0Ktravis_time:end:0922e0c0:start=1601139774986840985,finish=1601139775848885895,duration=862044910,event=ensure_path_components[0Ktravis_time:start:09dcc068[0Ktravis_time:end:09dcc068:start=1601139775852097850,finish=1601139775854225494,duration=2127644,event=redefine_curl[0Ktravis_time:start:033b1b39[0Ktravis_time:end:033b1b39:start=1601139775857110871,finish=1601139775859138141,duration=2027270,event=nonblock_pipe[0Ktravis_time:start:2bb76ddc[0Ktravis_time:end:2bb76ddc:start=1601139775861797279,finish=1601139781887170755,duration=6025373476,event=apt_get_update[0Ktravis_time:start:26a37860[0Ktravis_time:end:26a37860:start=1601139781890214218,finish=1601139781892220342,duration=2006124,event=deprecate_xcode_64[0Ktravis_time:start:11e7cffa[0Ktravis_time:end:11e7cffa:start=1601139781894913458,finish=1601139786041939868,duration=4147026410,event=update_heroku[0Ktravis_time:start:01fee9cc[0Ktravis_time:end:01fee9cc:start=1601139786044953898,finish=1601139786047056446,duration=2102548,event=shell_session_update[0Ktravis_time:start:17681f1c[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3851
+travis_fold:end:docker_mtu[0Ktravis_time:end:17681f1c:start=1601139786049756775,finish=1601139787225131334,duration=1175374559,event=set_docker_mtu[0Ktravis_time:start:03ea7970[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:03ea7970:start=1601139787227973381,finish=1601139787279352027,duration=51378646,event=resolvconf[0Ktravis_time:start:1105d26c[0Ktravis_time:end:1105d26c:start=1601139787281969304,finish=1601139787363574585,duration=81605281,event=maven_central_mirror[0Ktravis_time:start:0a753b90[0Ktravis_time:end:0a753b90:start=1601139787366335569,finish=1601139787427213080,duration=60877511,event=maven_https[0Ktravis_time:start:2f8adf00[0Ktravis_time:end:2f8adf00:start=1601139787432490425,finish=1601139787434486731,duration=1996306,event=fix_ps4[0Ktravis_time:start:032b4cce[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:08b3feb4[0K$ git clone --depth=50 --branch=rampwf_test https://github.com/paris-saclay-cds/ramp-board.git paris-saclay-cds/ramp-board
+Cloning into 'paris-saclay-cds/ramp-board'...
+remote: Enumerating objects: 1399, done.[K
+remote: Counting objects:   0% (1/1399)[Kremote: Counting objects:   1% (14/1399)[Kremote: Counting objects:   2% (28/1399)[Kremote: Counting objects:   3% (42/1399)[Kremote: Counting objects:   4% (56/1399)[Kremote: Counting objects:   5% (70/1399)[Kremote: Counting objects:   6% (84/1399)[Kremote: Counting objects:   7% (98/1399)[Kremote: Counting objects:   8% (112/1399)[Kremote: Counting objects:   9% (126/1399)[Kremote: Counting objects:  10% (140/1399)[Kremote: Counting objects:  11% (154/1399)[Kremote: Counting objects:  12% (168/1399)[Kremote: Counting objects:  13% (182/1399)[Kremote: Counting objects:  14% (196/1399)[Kremote: Counting objects:  15% (210/1399)[Kremote: Counting objects:  16% (224/1399)[Kremote: Counting objects:  17% (238/1399)[Kremote: Counting objects:  18% (252/1399)[Kremote: Counting objects:  19% (266/1399)[Kremote: Counting objects:  20% (280/1399)[Kremote: Counting objects:  21% (294/1399)[Kremote: Counting objects:  22% (308/1399)[Kremote: Counting objects:  23% (322/1399)[Kremote: Counting objects:  24% (336/1399)[Kremote: Counting objects:  25% (350/1399)[Kremote: Counting objects:  26% (364/1399)[Kremote: Counting objects:  27% (378/1399)[Kremote: Counting objects:  28% (392/1399)[Kremote: Counting objects:  29% (406/1399)[Kremote: Counting objects:  30% (420/1399)[Kremote: Counting objects:  31% (434/1399)[Kremote: Counting objects:  32% (448/1399)[Kremote: Counting objects:  33% (462/1399)[Kremote: Counting objects:  34% (476/1399)[Kremote: Counting objects:  35% (490/1399)[Kremote: Counting objects:  36% (504/1399)[Kremote: Counting objects:  37% (518/1399)[Kremote: Counting objects:  38% (532/1399)[Kremote: Counting objects:  39% (546/1399)[Kremote: Counting objects:  40% (560/1399)[Kremote: Counting objects:  41% (574/1399)[Kremote: Counting objects:  42% (588/1399)[Kremote: Counting objects:  43% (602/1399)[Kremote: Counting objects:  44% (616/1399)[Kremote: Counting objects:  45% (630/1399)[Kremote: Counting objects:  46% (644/1399)[Kremote: Counting objects:  47% (658/1399)[Kremote: Counting objects:  48% (672/1399)[Kremote: Counting objects:  49% (686/1399)[Kremote: Counting objects:  50% (700/1399)[Kremote: Counting objects:  51% (714/1399)[Kremote: Counting objects:  52% (728/1399)[Kremote: Counting objects:  53% (742/1399)[Kremote: Counting objects:  54% (756/1399)[Kremote: Counting objects:  55% (770/1399)[Kremote: Counting objects:  56% (784/1399)[Kremote: Counting objects:  57% (798/1399)[Kremote: Counting objects:  58% (812/1399)[Kremote: Counting objects:  59% (826/1399)[Kremote: Counting objects:  60% (840/1399)[Kremote: Counting objects:  61% (854/1399)[Kremote: Counting objects:  62% (868/1399)[Kremote: Counting objects:  63% (882/1399)[Kremote: Counting objects:  64% (896/1399)[Kremote: Counting objects:  65% (910/1399)[Kremote: Counting objects:  66% (924/1399)[Kremote: Counting objects:  67% (938/1399)[Kremote: Counting objects:  68% (952/1399)[Kremote: Counting objects:  69% (966/1399)[Kremote: Counting objects:  70% (980/1399)[Kremote: Counting objects:  71% (994/1399)[Kremote: Counting objects:  72% (1008/1399)[Kremote: Counting objects:  73% (1022/1399)[Kremote: Counting objects:  74% (1036/1399)[Kremote: Counting objects:  75% (1050/1399)[Kremote: Counting objects:  76% (1064/1399)[Kremote: Counting objects:  77% (1078/1399)[Kremote: Counting objects:  78% (1092/1399)[Kremote: Counting objects:  79% (1106/1399)[Kremote: Counting objects:  80% (1120/1399)[Kremote: Counting objects:  81% (1134/1399)[Kremote: Counting objects:  82% (1148/1399)[Kremote: Counting objects:  83% (1162/1399)[Kremote: Counting objects:  84% (1176/1399)[Kremote: Counting objects:  85% (1190/1399)[Kremote: Counting objects:  86% (1204/1399)[Kremote: Counting objects:  87% (1218/1399)[Kremote: Counting objects:  88% (1232/1399)[Kremote: Counting objects:  89% (1246/1399)[Kremote: Counting objects:  90% (1260/1399)[Kremote: Counting objects:  91% (1274/1399)[Kremote: Counting objects:  92% (1288/1399)[Kremote: Counting objects:  93% (1302/1399)[Kremote: Counting objects:  94% (1316/1399)[Kremote: Counting objects:  95% (1330/1399)[Kremote: Counting objects:  96% (1344/1399)[Kremote: Counting objects:  97% (1358/1399)[Kremote: Counting objects:  98% (1372/1399)[Kremote: Counting objects:  99% (1386/1399)[Kremote: Counting objects: 100% (1399/1399)[Kremote: Counting objects: 100% (1399/1399), done.[K
+remote: Compressing objects:   0% (1/777)[Kremote: Compressing objects:   1% (8/777)[Kremote: Compressing objects:   2% (16/777)[Kremote: Compressing objects:   3% (24/777)[Kremote: Compressing objects:   4% (32/777)[Kremote: Compressing objects:   5% (39/777)[Kremote: Compressing objects:   6% (47/777)[Kremote: Compressing objects:   7% (55/777)[Kremote: Compressing objects:   8% (63/777)[Kremote: Compressing objects:   9% (70/777)[Kremote: Compressing objects:  10% (78/777)[Kremote: Compressing objects:  11% (86/777)[Kremote: Compressing objects:  12% (94/777)[Kremote: Compressing objects:  13% (102/777)[Kremote: Compressing objects:  14% (109/777)[Kremote: Compressing objects:  15% (117/777)[Kremote: Compressing objects:  16% (125/777)[Kremote: Compressing objects:  17% (133/777)[Kremote: Compressing objects:  18% (140/777)[Kremote: Compressing objects:  19% (148/777)[Kremote: Compressing objects:  20% (156/777)[Kremote: Compressing objects:  21% (164/777)[Kremote: Compressing objects:  22% (171/777)[Kremote: Compressing objects:  23% (179/777)[Kremote: Compressing objects:  24% (187/777)[Kremote: Compressing objects:  25% (195/777)[Kremote: Compressing objects:  26% (203/777)[Kremote: Compressing objects:  27% (210/777)[Kremote: Compressing objects:  28% (218/777)[Kremote: Compressing objects:  29% (226/777)[Kremote: Compressing objects:  30% (234/777)[Kremote: Compressing objects:  31% (241/777)[Kremote: Compressing objects:  32% (249/777)[Kremote: Compressing objects:  33% (257/777)[Kremote: Compressing objects:  34% (265/777)[Kremote: Compressing objects:  35% (272/777)[Kremote: Compressing objects:  36% (280/777)[Kremote: Compressing objects:  37% (288/777)[Kremote: Compressing objects:  38% (296/777)[Kremote: Compressing objects:  39% (304/777)[Kremote: Compressing objects:  40% (311/777)[Kremote: Compressing objects:  41% (319/777)[Kremote: Compressing objects:  42% (327/777)[Kremote: Compressing objects:  43% (335/777)[Kremote: Compressing objects:  44% (342/777)[Kremote: Compressing objects:  45% (350/777)[Kremote: Compressing objects:  46% (358/777)[Kremote: Compressing objects:  47% (366/777)[Kremote: Compressing objects:  48% (373/777)[Kremote: Compressing objects:  49% (381/777)[Kremote: Compressing objects:  50% (389/777)[Kremote: Compressing objects:  51% (397/777)[Kremote: Compressing objects:  52% (405/777)[Kremote: Compressing objects:  53% (412/777)[Kremote: Compressing objects:  54% (420/777)[Kremote: Compressing objects:  55% (428/777)[Kremote: Compressing objects:  56% (436/777)[Kremote: Compressing objects:  57% (443/777)[Kremote: Compressing objects:  58% (451/777)[Kremote: Compressing objects:  59% (459/777)[Kremote: Compressing objects:  60% (467/777)[Kremote: Compressing objects:  61% (474/777)[Kremote: Compressing objects:  62% (482/777)[Kremote: Compressing objects:  63% (490/777)[Kremote: Compressing objects:  64% (498/777)[Kremote: Compressing objects:  65% (506/777)[Kremote: Compressing objects:  66% (513/777)[Kremote: Compressing objects:  67% (521/777)[Kremote: Compressing objects:  68% (529/777)[Kremote: Compressing objects:  69% (537/777)[Kremote: Compressing objects:  70% (544/777)[Kremote: Compressing objects:  71% (552/777)[Kremote: Compressing objects:  72% (560/777)[Kremote: Compressing objects:  73% (568/777)[Kremote: Compressing objects:  74% (575/777)[Kremote: Compressing objects:  75% (583/777)[Kremote: Compressing objects:  76% (591/777)[Kremote: Compressing objects:  77% (599/777)[Kremote: Compressing objects:  78% (607/777)[Kremote: Compressing objects:  79% (614/777)[Kremote: Compressing objects:  80% (622/777)[Kremote: Compressing objects:  81% (630/777)[Kremote: Compressing objects:  82% (638/777)[Kremote: Compressing objects:  83% (645/777)[Kremote: Compressing objects:  84% (653/777)[Kremote: Compressing objects:  85% (661/777)[Kremote: Compressing objects:  86% (669/777)[Kremote: Compressing objects:  87% (676/777)[Kremote: Compressing objects:  88% (684/777)[Kremote: Compressing objects:  89% (692/777)[Kremote: Compressing objects:  90% (700/777)[Kremote: Compressing objects:  91% (708/777)[Kremote: Compressing objects:  92% (715/777)[Kremote: Compressing objects:  93% (723/777)[Kremote: Compressing objects:  94% (731/777)[Kremote: Compressing objects:  95% (739/777)[Kremote: Compressing objects:  96% (746/777)[Kremote: Compressing objects:  97% (754/777)[Kremote: Compressing objects:  98% (762/777)[Kremote: Compressing objects:  99% (770/777)[Kremote: Compressing objects: 100% (777/777)[Kremote: Compressing objects: 100% (777/777), done.[K
+Receiving objects:   0% (1/1399)   Receiving objects:   1% (14/1399)   Receiving objects:   2% (28/1399)   Receiving objects:   3% (42/1399)   Receiving objects:   4% (56/1399)   Receiving objects:   5% (70/1399)   Receiving objects:   6% (84/1399)   Receiving objects:   7% (98/1399)   Receiving objects:   8% (112/1399)   Receiving objects:   9% (126/1399)   Receiving objects:  10% (140/1399)   Receiving objects:  11% (154/1399)   Receiving objects:  12% (168/1399)   Receiving objects:  13% (182/1399)   Receiving objects:  14% (196/1399)   Receiving objects:  15% (210/1399)   Receiving objects:  16% (224/1399)   Receiving objects:  17% (238/1399)   Receiving objects:  18% (252/1399)   Receiving objects:  19% (266/1399)   Receiving objects:  20% (280/1399)   Receiving objects:  21% (294/1399)   Receiving objects:  22% (308/1399)   Receiving objects:  23% (322/1399)   Receiving objects:  24% (336/1399)   Receiving objects:  25% (350/1399)   Receiving objects:  26% (364/1399)   Receiving objects:  27% (378/1399)   Receiving objects:  28% (392/1399)   Receiving objects:  29% (406/1399)   Receiving objects:  30% (420/1399)   Receiving objects:  31% (434/1399)   Receiving objects:  32% (448/1399)   Receiving objects:  33% (462/1399)   Receiving objects:  34% (476/1399)   Receiving objects:  35% (490/1399)   Receiving objects:  36% (504/1399)   Receiving objects:  37% (518/1399)   Receiving objects:  38% (532/1399)   Receiving objects:  39% (546/1399)   Receiving objects:  40% (560/1399)   Receiving objects:  41% (574/1399)   Receiving objects:  42% (588/1399)   Receiving objects:  43% (602/1399)   Receiving objects:  44% (616/1399)   Receiving objects:  45% (630/1399)   Receiving objects:  46% (644/1399)   Receiving objects:  47% (658/1399)   Receiving objects:  48% (672/1399)   Receiving objects:  49% (686/1399)   Receiving objects:  50% (700/1399)   Receiving objects:  51% (714/1399)   Receiving objects:  52% (728/1399)   Receiving objects:  53% (742/1399)   Receiving objects:  54% (756/1399)   Receiving objects:  55% (770/1399)   Receiving objects:  56% (784/1399)   Receiving objects:  57% (798/1399)   Receiving objects:  58% (812/1399)   Receiving objects:  59% (826/1399)   Receiving objects:  60% (840/1399)   Receiving objects:  61% (854/1399)   Receiving objects:  62% (868/1399)   Receiving objects:  63% (882/1399)   Receiving objects:  64% (896/1399)   Receiving objects:  65% (910/1399)   Receiving objects:  66% (924/1399)   Receiving objects:  67% (938/1399)   Receiving objects:  68% (952/1399)   Receiving objects:  69% (966/1399)   Receiving objects:  70% (980/1399)   Receiving objects:  71% (994/1399)   Receiving objects:  72% (1008/1399)   Receiving objects:  73% (1022/1399)   Receiving objects:  74% (1036/1399)   Receiving objects:  75% (1050/1399)   Receiving objects:  76% (1064/1399)   Receiving objects:  77% (1078/1399)   Receiving objects:  78% (1092/1399)   Receiving objects:  79% (1106/1399)   Receiving objects:  80% (1120/1399)   Receiving objects:  81% (1134/1399)   Receiving objects:  82% (1148/1399)   Receiving objects:  83% (1162/1399)   Receiving objects:  84% (1176/1399)   Receiving objects:  85% (1190/1399)   Receiving objects:  86% (1204/1399)   Receiving objects:  87% (1218/1399)   Receiving objects:  88% (1232/1399)   Receiving objects:  89% (1246/1399)   Receiving objects:  90% (1260/1399)   Receiving objects:  91% (1274/1399)   Receiving objects:  92% (1288/1399)   Receiving objects:  93% (1302/1399)   Receiving objects:  94% (1316/1399)   Receiving objects:  95% (1330/1399)   Receiving objects:  96% (1344/1399)   Receiving objects:  97% (1358/1399)   Receiving objects:  98% (1372/1399)   Receiving objects:  99% (1386/1399)   remote: Total 1399 (delta 846), reused 970 (delta 587), pack-reused 0[K
+Receiving objects: 100% (1399/1399)   Receiving objects: 100% (1399/1399), 7.53 MiB | 25.89 MiB/s, done.
+Resolving deltas:   0% (0/846)   Resolving deltas:  11% (94/846)   Resolving deltas:  13% (111/846)   Resolving deltas:  14% (121/846)   Resolving deltas:  17% (145/846)   Resolving deltas:  19% (164/846)   Resolving deltas:  20% (173/846)   Resolving deltas:  25% (212/846)   Resolving deltas:  26% (224/846)   Resolving deltas:  27% (229/846)   Resolving deltas:  28% (237/846)   Resolving deltas:  30% (257/846)   Resolving deltas:  31% (264/846)   Resolving deltas:  32% (273/846)   Resolving deltas:  33% (285/846)   Resolving deltas:  34% (290/846)   Resolving deltas:  35% (298/846)   Resolving deltas:  36% (310/846)   Resolving deltas:  37% (314/846)   Resolving deltas:  38% (325/846)   Resolving deltas:  39% (334/846)   Resolving deltas:  43% (368/846)   Resolving deltas:  44% (375/846)   Resolving deltas:  46% (395/846)   Resolving deltas:  47% (400/846)   Resolving deltas:  48% (408/846)   Resolving deltas:  49% (416/846)   Resolving deltas:  50% (423/846)   Resolving deltas:  51% (436/846)   Resolving deltas:  52% (445/846)   Resolving deltas:  53% (449/846)   Resolving deltas:  54% (463/846)   Resolving deltas:  55% (466/846)   Resolving deltas:  56% (477/846)   Resolving deltas:  57% (484/846)   Resolving deltas:  58% (499/846)   Resolving deltas:  59% (501/846)   Resolving deltas:  60% (509/846)   Resolving deltas:  61% (517/846)   Resolving deltas:  62% (529/846)   Resolving deltas:  66% (563/846)   Resolving deltas:  67% (570/846)   Resolving deltas:  69% (584/846)   Resolving deltas:  70% (597/846)   Resolving deltas:  71% (603/846)   Resolving deltas:  72% (610/846)   Resolving deltas:  73% (619/846)   Resolving deltas:  74% (627/846)   Resolving deltas:  75% (639/846)   Resolving deltas:  76% (643/846)   Resolving deltas:  77% (657/846)   Resolving deltas:  78% (660/846)   Resolving deltas:  80% (677/846)   Resolving deltas:  81% (687/846)   Resolving deltas:  82% (695/846)   Resolving deltas:  83% (703/846)   Resolving deltas:  84% (712/846)   Resolving deltas:  85% (721/846)   Resolving deltas:  86% (728/846)   Resolving deltas:  87% (740/846)   Resolving deltas:  88% (746/846)   Resolving deltas:  89% (755/846)   Resolving deltas:  90% (766/846)   Resolving deltas:  91% (770/846)   Resolving deltas:  93% (789/846)   Resolving deltas:  94% (797/846)   Resolving deltas:  95% (805/846)   Resolving deltas:  96% (813/846)   Resolving deltas:  97% (821/846)   Resolving deltas:  98% (830/846)   Resolving deltas:  99% (841/846)   Resolving deltas: 100% (846/846)   Resolving deltas: 100% (846/846), done.
+travis_time:end:08b3feb4:start=1601139787440360767,finish=1601139788520496441,duration=1080135674,event=checkout[0K$ cd paris-saclay-cds/ramp-board
+$ git checkout -qf 87a15a9888032c896cab8cd05422497cd5083559
+travis_fold:end:git.checkout[0K
+travis_time:end:08b3feb4:start=1601139787440360767,finish=1601139788572886034,duration=1132525267,event=checkout[0Ktravis_time:start:0a2c9c5c[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export PYTHON_VERSION=3.7
+
+travis_time:end:0a2c9c5c:start=1601139788575962212,finish=1601139788581727504,duration=5765292,event=env[0Ktravis_time:start:007c3738[0K$ source ~/virtualenv/python3.6/bin/activate
+travis_time:end:007c3738:start=1601139788584930210,finish=1601139788589987649,duration=5057439,event=[0K$ python --version
+Python 3.6.3
+$ pip --version
+pip 9.0.1 from /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (python 3.6)
+travis_fold:start:before_install.1[0Ktravis_time:start:1dcfb678[0K$ wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+travis_time:end:1dcfb678:start=1601139789352632325,finish=1601139790090866258,duration=738233933,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:07dcab78[0K$ chmod +x miniconda.sh
+travis_time:end:07dcab78:start=1601139790094465317,finish=1601139790097522103,duration=3056786,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:024ba2e2[0K$ ./miniconda.sh -b -p /home/travis/miniconda
+PREFIX=/home/travis/miniconda
+Unpacking payload ...
+  0%|                                                    | 0/35 [00:00<?, ?it/s]Extracting : idna-2.9-py_1.conda:   0%|                  | 0/35 [00:00<?, ?it/s]Extracting : idna-2.9-py_1.conda:   3%|▎         | 1/35 [00:00<00:03,  8.75it/s]Extracting : readline-8.0-h7b6447c_0.conda:   3%| | 1/35 [00:00<00:03,  8.75it/sExtracting : sqlite-3.31.1-h62c20be_1.conda:   6%| | 2/35 [00:00<00:03,  8.75it/Extracting : sqlite-3.31.1-h62c20be_1.conda:   9%| | 3/35 [00:00<00:03, 10.20it/Extracting : openssl-1.1.1g-h7b6447c_0.conda:   9%| | 3/35 [00:00<00:03, 10.20itExtracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  11%| | 4/35 [00:00<00:03, 10.Extracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  14%|▏| 5/35 [00:00<00:02, 11.Extracting : tqdm-4.46.0-py_0.conda:  14%|█      | 5/35 [00:00<00:02, 11.21it/s]Extracting : zlib-1.2.11-h7b6447c_3.conda:  17%|▏| 6/35 [00:00<00:02, 11.21it/s]Extracting : pycosat-0.6.3-py38h7b6447c_1.conda:  20%|▏| 7/35 [00:00<00:02, 11.2Extracting : yaml-0.1.7-had09818_2.conda:  23%|▍ | 8/35 [00:00<00:02, 11.21it/s]Extracting : yaml-0.1.7-had09818_2.conda:  26%|▌ | 9/35 [00:00<00:01, 13.32it/s]Extracting : requests-2.23.0-py38_0.conda:  26%|▎| 9/35 [00:00<00:01, 13.32it/s]Extracting : conda-package-handling-1.6.1-py38h7b6447c_0.conda:  29%|▎| 10/35 [0Extracting : libedit-3.1.20181209-hc058e9b_0.conda:  31%|▎| 11/35 [00:00<00:01, Extracting : libedit-3.1.20181209-hc058e9b_0.conda:  34%|▎| 12/35 [00:00<00:01, Extracting : urllib3-1.25.8-py38_0.conda:  34%|▎| 12/35 [00:00<00:01, 15.76it/s]Extracting : libffi-3.3-he6710b0_1.conda:  37%|▎| 13/35 [00:00<00:01, 15.76it/s]Extracting : setuptools-46.4.0-py38_0.conda:  40%|▍| 14/35 [00:00<00:01, 15.76itExtracting : setuptools-46.4.0-py38_0.conda:  43%|▍| 15/35 [00:00<00:01, 15.72itExtracting : ruamel_yaml-0.15.87-py38h7b6447c_0.conda:  43%|▍| 15/35 [00:00<00:0Extracting : pycparser-2.20-py_0.conda:  46%|█▎ | 16/35 [00:01<00:01, 15.72it/s]Extracting : pycparser-2.20-py_0.conda:  49%|█▍ | 17/35 [00:01<00:01, 14.23it/s]Extracting : certifi-2020.4.5.1-py38_0.conda:  49%|▍| 17/35 [00:01<00:01, 14.23iExtracting : ncurses-6.2-he6710b0_1.conda:  51%|▌| 18/35 [00:01<00:01, 14.23it/sExtracting : wheel-0.34.2-py38_0.conda:  54%|█▋ | 19/35 [00:01<00:01, 14.23it/s]Extracting : chardet-3.0.4-py38_1003.conda:  57%|▌| 20/35 [00:01<00:01, 14.23it/Extracting : chardet-3.0.4-py38_1003.conda:  60%|▌| 21/35 [00:01<00:00, 16.10it/Extracting : ld_impl_linux-64-2.33.1-h53a641e_7.conda:  60%|▌| 21/35 [00:01<00:0Extracting : libgcc-ng-9.1.0-hdf63c60_0.conda:  63%|▋| 22/35 [00:01<00:00, 16.10Extracting : libgcc-ng-9.1.0-hdf63c60_0.conda:  66%|▋| 23/35 [00:01<00:00, 13.91Extracting : cryptography-2.9.2-py38h1ba5d50_0.conda:  66%|▋| 23/35 [00:01<00:00Extracting : tk-8.6.8-hbc83047_0.conda:  69%|██ | 24/35 [00:01<00:00, 13.91it/s]Extracting : python-3.8.3-hcff3b4d_0.conda:  71%|▋| 25/35 [00:01<00:00, 13.91it/Extracting : python-3.8.3-hcff3b4d_0.conda:  74%|▋| 26/35 [00:01<00:00,  9.15it/Extracting : pip-20.0.2-py38_3.conda:  74%|███▋ | 26/35 [00:01<00:00,  9.15it/s]Extracting : pyopenssl-19.1.0-py38_0.conda:  77%|▊| 27/35 [00:01<00:00,  9.15it/Extracting : xz-5.2.5-h7b6447c_0.conda:  80%|██▍| 28/35 [00:01<00:00,  9.15it/s]Extracting : pysocks-1.7.1-py38_0.conda:  83%|█▋| 29/35 [00:01<00:00,  9.15it/s]Extracting : _libgcc_mutex-0.1-main.conda:  86%|▊| 30/35 [00:02<00:00,  9.15it/sExtracting : cffi-1.14.0-py38he30daa8_1.conda:  89%|▉| 31/35 [00:02<00:00,  9.15Extracting : six-1.14.0-py38_0.conda:  91%|████▌| 32/35 [00:02<00:00,  9.15it/s]Extracting : six-1.14.0-py38_0.conda:  94%|████▋| 33/35 [00:02<00:00, 12.08it/s]Extracting : ca-certificates-2020.1.1-0.conda:  94%|▉| 33/35 [00:02<00:00, 12.08Extracting : conda-4.8.3-py38_0.tar.bz2:  97%|█▉| 34/35 [00:02<00:00, 12.08it/s]                                                                                Collecting package metadata (current_repodata.json): - done
+Solving environment: | / done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda
+
+  added / updated specs:
+    - _libgcc_mutex==0.1=main
+    - ca-certificates==2020.1.1=0
+    - certifi==2020.4.5.1=py38_0
+    - cffi==1.14.0=py38he30daa8_1
+    - chardet==3.0.4=py38_1003
+    - conda-package-handling==1.6.1=py38h7b6447c_0
+    - conda==4.8.3=py38_0
+    - cryptography==2.9.2=py38h1ba5d50_0
+    - idna==2.9=py_1
+    - ld_impl_linux-64==2.33.1=h53a641e_7
+    - libedit==3.1.20181209=hc058e9b_0
+    - libffi==3.3=he6710b0_1
+    - libgcc-ng==9.1.0=hdf63c60_0
+    - libstdcxx-ng==9.1.0=hdf63c60_0
+    - ncurses==6.2=he6710b0_1
+    - openssl==1.1.1g=h7b6447c_0
+    - pip==20.0.2=py38_3
+    - pycosat==0.6.3=py38h7b6447c_1
+    - pycparser==2.20=py_0
+    - pyopenssl==19.1.0=py38_0
+    - pysocks==1.7.1=py38_0
+    - python==3.8.3=hcff3b4d_0
+    - readline==8.0=h7b6447c_0
+    - requests==2.23.0=py38_0
+    - ruamel_yaml==0.15.87=py38h7b6447c_0
+    - setuptools==46.4.0=py38_0
+    - six==1.14.0=py38_0
+    - sqlite==3.31.1=h62c20be_1
+    - tk==8.6.8=hbc83047_0
+    - tqdm==4.46.0=py_0
+    - urllib3==1.25.8=py38_0
+    - wheel==0.34.2=py38_0
+    - xz==5.2.5=h7b6447c_0
+    - yaml==0.1.7=had09818_2
+    - zlib==1.2.11=h7b6447c_3
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2020.1.1-0
+  certifi            pkgs/main/linux-64::certifi-2020.4.5.1-py38_0
+  cffi               pkgs/main/linux-64::cffi-1.14.0-py38he30daa8_1
+  chardet            pkgs/main/linux-64::chardet-3.0.4-py38_1003
+  conda              pkgs/main/linux-64::conda-4.8.3-py38_0
+  conda-package-han~ pkgs/main/linux-64::conda-package-handling-1.6.1-py38h7b6447c_0
+  cryptography       pkgs/main/linux-64::cryptography-2.9.2-py38h1ba5d50_0
+  idna               pkgs/main/noarch::idna-2.9-py_1
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_1
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1g-h7b6447c_0
+  pip                pkgs/main/linux-64::pip-20.0.2-py38_3
+  pycosat            pkgs/main/linux-64::pycosat-0.6.3-py38h7b6447c_1
+  pycparser          pkgs/main/noarch::pycparser-2.20-py_0
+  pyopenssl          pkgs/main/linux-64::pyopenssl-19.1.0-py38_0
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py38_0
+  python             pkgs/main/linux-64::python-3.8.3-hcff3b4d_0
+  readline           pkgs/main/linux-64::readline-8.0-h7b6447c_0
+  requests           pkgs/main/linux-64::requests-2.23.0-py38_0
+  ruamel_yaml        pkgs/main/linux-64::ruamel_yaml-0.15.87-py38h7b6447c_0
+  setuptools         pkgs/main/linux-64::setuptools-46.4.0-py38_0
+  six                pkgs/main/linux-64::six-1.14.0-py38_0
+  sqlite             pkgs/main/linux-64::sqlite-3.31.1-h62c20be_1
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  tqdm               pkgs/main/noarch::tqdm-4.46.0-py_0
+  urllib3            pkgs/main/linux-64::urllib3-1.25.8-py38_0
+  wheel              pkgs/main/linux-64::wheel-0.34.2-py38_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7b6447c_0
+  yaml               pkgs/main/linux-64::yaml-0.1.7-had09818_2
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Preparing transaction: \ | / done
+Executing transaction: \ | / - \ | / done
+installation finished.
+travis_time:end:024ba2e2:start=1601139790100718046,finish=1601139801800044078,duration=11699326032,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:28b09ac8[0K$ export PATH=/home/travis/miniconda/bin:$PATH
+travis_time:end:28b09ac8:start=1601139801803956657,finish=1601139801806204297,duration=2247640,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:0e769edc[0K$ conda update --yes --quiet conda
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    brotlipy-0.7.0             |py38h7b6447c_1000         322 KB
+    ca-certificates-2020.7.22  |                0         125 KB
+    certifi-2020.6.20          |           py38_0         156 KB
+    cffi-1.14.3                |   py38he30daa8_0         225 KB
+    conda-4.8.5                |           py38_0         2.9 MB
+    cryptography-3.1.1         |   py38h1ba5d50_0         557 KB
+    idna-2.10                  |             py_0          50 KB
+    libedit-3.1.20191231       |       h14c3975_1         116 KB
+    libffi-3.3                 |       he6710b0_2          50 KB
+    openssl-1.1.1h             |       h7b6447c_0         2.5 MB
+    pip-20.2.2                 |           py38_0         1.7 MB
+    pycparser-2.20             |             py_2          94 KB
+    pyopenssl-19.1.0           |             py_1          48 KB
+    requests-2.24.0            |             py_0          56 KB
+    ruamel_yaml-0.15.87        |   py38h7b6447c_1         249 KB
+    setuptools-49.6.0          |           py38_0         748 KB
+    six-1.15.0                 |             py_0          13 KB
+    sqlite-3.33.0              |       h62c20be_0         1.1 MB
+    tk-8.6.10                  |       hbc83047_0         3.0 MB
+    tqdm-4.49.0                |             py_0          55 KB
+    urllib3-1.25.10            |             py_0          98 KB
+    wheel-0.35.1               |             py_0          37 KB
+    yaml-0.2.5                 |       h7b6447c_0          75 KB
+    ------------------------------------------------------------
+                                           Total:        14.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  brotlipy           pkgs/main/linux-64::brotlipy-0.7.0-py38h7b6447c_1000
+
+The following packages will be UPDATED:
+
+  ca-certificates                                2020.1.1-0 --> 2020.7.22-0
+  certifi                                 2020.4.5.1-py38_0 --> 2020.6.20-py38_0
+  cffi                                1.14.0-py38he30daa8_1 --> 1.14.3-py38he30daa8_0
+  conda                                        4.8.3-py38_0 --> 4.8.5-py38_0
+  cryptography                         2.9.2-py38h1ba5d50_0 --> 3.1.1-py38h1ba5d50_0
+  idna                                             2.9-py_1 --> 2.10-py_0
+  libedit                           3.1.20181209-hc058e9b_0 --> 3.1.20191231-h14c3975_1
+  libffi                                     3.3-he6710b0_1 --> 3.3-he6710b0_2
+  openssl                                 1.1.1g-h7b6447c_0 --> 1.1.1h-h7b6447c_0
+  pip                                         20.0.2-py38_3 --> 20.2.2-py38_0
+  pycparser                                       2.20-py_0 --> 2.20-py_2
+  pyopenssl          pkgs/main/linux-64::pyopenssl-19.1.0-~ --> pkgs/main/noarch::pyopenssl-19.1.0-py_1
+  requests           pkgs/main/linux-64::requests-2.23.0-p~ --> pkgs/main/noarch::requests-2.24.0-py_0
+  ruamel_yaml                        0.15.87-py38h7b6447c_0 --> 0.15.87-py38h7b6447c_1
+  setuptools                                  46.4.0-py38_0 --> 49.6.0-py38_0
+  six                 pkgs/main/linux-64::six-1.14.0-py38_0 --> pkgs/main/noarch::six-1.15.0-py_0
+  sqlite                                  3.31.1-h62c20be_1 --> 3.33.0-h62c20be_0
+  tk                                       8.6.8-hbc83047_0 --> 8.6.10-hbc83047_0
+  tqdm                                          4.46.0-py_0 --> 4.49.0-py_0
+  urllib3            pkgs/main/linux-64::urllib3-1.25.8-py~ --> pkgs/main/noarch::urllib3-1.25.10-py_0
+  wheel              pkgs/main/linux-64::wheel-0.34.2-py38~ --> pkgs/main/noarch::wheel-0.35.1-py_0
+  yaml                                     0.1.7-had09818_2 --> 0.2.5-h7b6447c_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+travis_time:end:0e769edc:start=1601139801809544212,finish=1601139808842803120,duration=7033258908,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:install.1[0Ktravis_time:start:124bc900[0K$ conda create --yes -n testenv python=$PYTHON_VERSION
+Collecting package metadata (current_repodata.json): - \ done
+Solving environment: / done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda/envs/testenv
+
+  added / updated specs:
+    - python=3.7
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2020.6.20          |           py37_0         156 KB
+    pip-20.2.2                 |           py37_0         1.8 MB
+    python-3.7.9               |       h7579374_0        45.3 MB
+    setuptools-49.6.0          |           py37_0         754 KB
+    ------------------------------------------------------------
+                                           Total:        48.0 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2020.7.22-0
+  certifi            pkgs/main/linux-64::certifi-2020.6.20-py37_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
+  libedit            pkgs/main/linux-64::libedit-3.1.20191231-h14c3975_1
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1h-h7b6447c_0
+  pip                pkgs/main/linux-64::pip-20.2.2-py37_0
+  python             pkgs/main/linux-64::python-3.7.9-h7579374_0
+  readline           pkgs/main/linux-64::readline-8.0-h7b6447c_0
+  setuptools         pkgs/main/linux-64::setuptools-49.6.0-py37_0
+  sqlite             pkgs/main/linux-64::sqlite-3.33.0-h62c20be_0
+  tk                 pkgs/main/linux-64::tk-8.6.10-hbc83047_0
+  wheel              pkgs/main/noarch::wheel-0.35.1-py_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7b6447c_0
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+
+Downloading and Extracting Packages
+setuptools-49.6.0    | 754 KB    |                                       |   0% setuptools-49.6.0    | 754 KB    | 7                                     |   2% setuptools-49.6.0    | 754 KB    | ##################################### | 100% setuptools-49.6.0    | 754 KB    | ##################################### | 100% 
+pip-20.2.2           | 1.8 MB    |                                       |   0% pip-20.2.2           | 1.8 MB    | ##################################### | 100% pip-20.2.2           | 1.8 MB    | ##################################### | 100% 
+certifi-2020.6.20    | 156 KB    |                                       |   0% certifi-2020.6.20    | 156 KB    | ##################################### | 100% certifi-2020.6.20    | 156 KB    | ##################################### | 100% 
+python-3.7.9         | 45.3 MB   |                                       |   0% python-3.7.9         | 45.3 MB   | #####9                                |  16% python-3.7.9         | 45.3 MB   | ##################1                   |  49% python-3.7.9         | 45.3 MB   | ###########################7          |  75% python-3.7.9         | 45.3 MB   | ##################################### | 100% python-3.7.9         | 45.3 MB   | ##################################### | 100% 
+Preparing transaction: \ | done
+Verifying transaction: - \ | / - \ | / done
+Executing transaction: \ | / - \ | / - \ done
+#
+# To activate this environment, use
+#
+#     $ conda activate testenv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+travis_time:end:124bc900:start=1601139808846547031,finish=1601139813244188988,duration=4397641957,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:026a4f66[0K$ conda env update -n testenv -f environment.yml
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+
+Downloading and Extracting Packages
+icu-58.2             | 10.5 MB   |                                       |   0% icu-58.2             | 10.5 MB   |                                       |   0% icu-58.2             | 10.5 MB   | ########9                             |  24% icu-58.2             | 10.5 MB   | ##################################### | 100% icu-58.2             | 10.5 MB   | ##################################### | 100% 
+pytz-2020.1          | 184 KB    |                                       |   0% pytz-2020.1          | 184 KB    | ##################################### | 100% pytz-2020.1          | 184 KB    | ##################################### | 100% 
+pyflakes-2.2.0       | 61 KB     |                                       |   0% pyflakes-2.2.0       | 61 KB     | ##################################### | 100% pyflakes-2.2.0       | 61 KB     | ##################################### | 100% 
+markupsafe-1.1.1     | 26 KB     |                                       |   0% markupsafe-1.1.1     | 26 KB     | ##################################### | 100% markupsafe-1.1.1     | 26 KB     | ##################################### | 100% 
+ipython_genutils-0.2 | 39 KB     |                                       |   0% ipython_genutils-0.2 | 39 KB     | ##################################### | 100% ipython_genutils-0.2 | 39 KB     | ##################################### | 100% 
+pandocfilters-1.4.2  | 13 KB     |                                       |   0% pandocfilters-1.4.2  | 13 KB     | ##################################### | 100% pandocfilters-1.4.2  | 13 KB     | ##################################### | 100% 
+pycodestyle-2.6.0    | 43 KB     |                                       |   0% pycodestyle-2.6.0    | 43 KB     | ##################################### | 100% pycodestyle-2.6.0    | 43 KB     | ##################################### | 100% 
+mkl_random-1.1.1     | 322 KB    |                                       |   0% mkl_random-1.1.1     | 322 KB    | ##################################### | 100% mkl_random-1.1.1     | 322 KB    | ##################################### | 100% 
+coverage-5.3         | 248 KB    |                                       |   0% coverage-5.3         | 248 KB    | ##################################### | 100% coverage-5.3         | 248 KB    | ##################################### | 100% 
+smmap-3.0.4          | 23 KB     |                                       |   0% smmap-3.0.4          | 23 KB     | ##################################### | 100% smmap-3.0.4          | 23 KB     | ##################################### | 100% 
+libxcb-1.14          | 505 KB    |                                       |   0% libxcb-1.14          | 505 KB    | ##################################### | 100% libxcb-1.14          | 505 KB    | ##################################### | 100% 
+pywavelets-1.1.1     | 3.5 MB    |                                       |   0% pywavelets-1.1.1     | 3.5 MB    | ##################################### | 100% pywavelets-1.1.1     | 3.5 MB    | ##################################### | 100% 
+mkl-service-2.3.0    | 218 KB    |                                       |   0% mkl-service-2.3.0    | 218 KB    | ##################################### | 100% mkl-service-2.3.0    | 218 KB    | ##################################### | 100% 
+pygments-2.7.1       | 671 KB    |                                       |   0% pygments-2.7.1       | 671 KB    | ##################################### | 100% pygments-2.7.1       | 671 KB    | ##################################### | 100% 
+entrypoints-0.3      | 12 KB     |                                       |   0% entrypoints-0.3      | 12 KB     | ##################################### | 100% entrypoints-0.3      | 12 KB     | ##################################### | 100% 
+python-dateutil-2.8. | 215 KB    |                                       |   0% python-dateutil-2.8. | 215 KB    | ##################################### | 100% python-dateutil-2.8. | 215 KB    | ##################################### | 100% 
+networkx-2.5         | 1.1 MB    |                                       |   0% networkx-2.5         | 1.1 MB    | ##################################### | 100% networkx-2.5         | 1.1 MB    | ##################################### | 100% 
+blas-1.0             | 6 KB      |                                       |   0% blas-1.0             | 6 KB      | ##################################### | 100% blas-1.0             | 6 KB      | ##################################### | 100% 
+zipp-3.1.0           | 13 KB     |                                       |   0% zipp-3.1.0           | 13 KB     | ##################################### | 100% zipp-3.1.0           | 13 KB     | ##################################### | 100% 
+pyparsing-2.4.7      | 65 KB     |                                       |   0% pyparsing-2.4.7      | 65 KB     | ##################################### | 100% pyparsing-2.4.7      | 65 KB     | ##################################### | 100% 
+jupyterlab_pygments- | 9 KB      |                                       |   0% jupyterlab_pygments- | 9 KB      | ##################################### | 100% jupyterlab_pygments- | 9 KB      | ##################################### | 100% 
+libuuid-1.0.3        | 15 KB     |                                       |   0% libuuid-1.0.3        | 15 KB     | ##################################### | 100% libuuid-1.0.3        | 15 KB     | ##################################### | 100% 
+kiwisolver-1.2.0     | 84 KB     |                                       |   0% kiwisolver-1.2.0     | 84 KB     | ##################################### | 100% kiwisolver-1.2.0     | 84 KB     | ##################################### | 100% 
+jsonschema-3.2.0     | 91 KB     |                                       |   0% jsonschema-3.2.0     | 91 KB     | ##################################### | 100% jsonschema-3.2.0     | 91 KB     | ##################################### | 100% 
+pyyaml-5.3.1         | 180 KB    |                                       |   0% pyyaml-5.3.1         | 180 KB    | ##################################### | 100% pyyaml-5.3.1         | 180 KB    | ##################################### | 100% 
+webencodings-0.5.1   | 19 KB     |                                       |   0% webencodings-0.5.1   | 19 KB     | ##################################### | 100% webencodings-0.5.1   | 19 KB     | ##################################### | 100% 
+py-1.9.0             | 79 KB     |                                       |   0% py-1.9.0             | 79 KB     | ##################################### | 100% py-1.9.0             | 79 KB     | ##################################### | 100% 
+traitlets-5.0.4      | 82 KB     |                                       |   0% traitlets-5.0.4      | 82 KB     | ##################################### | 100% traitlets-5.0.4      | 82 KB     | ##################################### | 100% 
+intel-openmp-2020.2  | 786 KB    |                                       |   0% intel-openmp-2020.2  | 786 KB    | ##################################### | 100% intel-openmp-2020.2  | 786 KB    | ##################################### | 100% 
+scikit-image-0.16.2  | 23.1 MB   |                                       |   0% scikit-image-0.16.2  | 23.1 MB   | ####################1                 |  54% scikit-image-0.16.2  | 23.1 MB   | ##################################### | 100% scikit-image-0.16.2  | 23.1 MB   | ##################################### | 100% 
+bcrypt-3.2.0         | 43 KB     |                                       |   0% bcrypt-3.2.0         | 43 KB     | ##################################### | 100% bcrypt-3.2.0         | 43 KB     | ##################################### | 100% 
+jupyter_core-4.6.3   | 71 KB     |                                       |   0% jupyter_core-4.6.3   | 71 KB     | ##################################### | 100% jupyter_core-4.6.3   | 71 KB     | ##################################### | 100% 
+pyzmq-19.0.2         | 438 KB    |                                       |   0% pyzmq-19.0.2         | 438 KB    | ##################################### | 100% pyzmq-19.0.2         | 438 KB    | ##################################### | 100% 
+sip-4.19.8           | 274 KB    |                                       |   0% sip-4.19.8           | 274 KB    | ##################################### | 100% sip-4.19.8           | 274 KB    | ##################################### | 100% 
+jpeg-9b              | 214 KB    |                                       |   0% jpeg-9b              | 214 KB    | ##################################### | 100% jpeg-9b              | 214 KB    | ##################################### | 100% 
+matplotlib-base-3.3. | 5.0 MB    |                                       |   0% matplotlib-base-3.3. | 5.0 MB    | ##################################### | 100% matplotlib-base-3.3. | 5.0 MB    | ##################################### | 100% 
+gstreamer-1.14.0     | 3.1 MB    |                                       |   0% gstreamer-1.14.0     | 3.1 MB    | ##################################### | 100% gstreamer-1.14.0     | 3.1 MB    | ##################################### | 100% 
+imageio-2.9.0        | 3.0 MB    |                                       |   0% imageio-2.9.0        | 3.0 MB    | ##################################### | 100% imageio-2.9.0        | 3.0 MB    | ##################################### | 100% 
+testpath-0.4.4       | 82 KB     |                                       |   0% testpath-0.4.4       | 82 KB     | ##################################### | 100% testpath-0.4.4       | 82 KB     | ##################################### | 100% 
+pyrsistent-0.17.3    | 89 KB     |                                       |   0% pyrsistent-0.17.3    | 89 KB     | ##################################### | 100% pyrsistent-0.17.3    | 89 KB     | ##################################### | 100% 
+flask-sqlalchemy-2.4 | 19 KB     |                                       |   0% flask-sqlalchemy-2.4 | 19 KB     | ##################################### | 100% flask-sqlalchemy-2.4 | 19 KB     | ##################################### | 100% 
+botocore-1.18.5      | 3.2 MB    |                                       |   0% botocore-1.18.5      | 3.2 MB    | ##################################### | 100% botocore-1.18.5      | 3.2 MB    | ##################################### | 100% 
+decorator-4.4.2      | 14 KB     |                                       |   0% decorator-4.4.2      | 14 KB     | ##################################### | 100% decorator-4.4.2      | 14 KB     | ##################################### | 100% 
+glib-2.65.0          | 2.9 MB    |                                       |   0% glib-2.65.0          | 2.9 MB    | ##################################### | 100% glib-2.65.0          | 2.9 MB    | ##################################### | 100% 
+nbclient-0.5.0       | 58 KB     |                                       |   0% nbclient-0.5.0       | 58 KB     | ##################################### | 100% nbclient-0.5.0       | 58 KB     | ##################################### | 100% 
+pluggy-0.13.1        | 33 KB     |                                       |   0% pluggy-0.13.1        | 33 KB     | ##################################### | 100% pluggy-0.13.1        | 33 KB     | ##################################### | 100% 
+dbus-1.13.16         | 501 KB    |                                       |   0% dbus-1.13.16         | 501 KB    | ##################################### | 100% dbus-1.13.16         | 501 KB    | ##################################### | 100% 
+docutils-0.15.2      | 660 KB    |                                       |   0% docutils-0.15.2      | 660 KB    | ##################################### | 100% docutils-0.15.2      | 660 KB    | ##################################### | 100% 
+nbconvert-6.0.6      | 483 KB    |                                       |   0% nbconvert-6.0.6      | 483 KB    | ##################################### | 100% nbconvert-6.0.6      | 483 KB    | ##################################### | 100% 
+lcms2-2.11           | 307 KB    |                                       |   0% lcms2-2.11           | 307 KB    | ##################################### | 100% lcms2-2.11           | 307 KB    | ##################################### | 100% 
+fontconfig-2.13.0    | 227 KB    |                                       |   0% fontconfig-2.13.0    | 227 KB    | ##################################### | 100% fontconfig-2.13.0    | 227 KB    | ##################################### | 100% 
+bokeh-2.2.1          | 5.4 MB    |                                       |   0% bokeh-2.2.1          | 5.4 MB    | ##################################### | 100% bokeh-2.2.1          | 5.4 MB    | ##################################### | 100% 
+libpng-1.6.37        | 278 KB    |                                       |   0% libpng-1.6.37        | 278 KB    | ##################################### | 100% libpng-1.6.37        | 278 KB    | ##################################### | 100% 
+packaging-20.4       | 36 KB     |                                       |   0% packaging-20.4       | 36 KB     | ##################################### | 100% packaging-20.4       | 36 KB     | ##################################### | 100% 
+pysocks-1.7.1        | 27 KB     |                                       |   0% pysocks-1.7.1        | 27 KB     | ##################################### | 100% pysocks-1.7.1        | 27 KB     | ##################################### | 100% 
+gitdb-4.0.5          | 52 KB     |                                       |   0% gitdb-4.0.5          | 52 KB     | ##################################### | 100% gitdb-4.0.5          | 52 KB     | ##################################### | 100% 
+expat-2.2.9          | 156 KB    |                                       |   0% expat-2.2.9          | 156 KB    | ##################################### | 100% expat-2.2.9          | 156 KB    | ##################################### | 100% 
+nbformat-5.0.7       | 89 KB     |                                       |   0% nbformat-5.0.7       | 89 KB     | ##################################### | 100% nbformat-5.0.7       | 89 KB     | ##################################### | 100% 
+cryptography-3.1.1   | 554 KB    |                                       |   0% cryptography-3.1.1   | 554 KB    | ##################################### | 100% cryptography-3.1.1   | 554 KB    | ##################################### | 100% 
+importlib_metadata-1 | 11 KB     |                                       |   0% importlib_metadata-1 | 11 KB     | ##################################### | 100% importlib_metadata-1 | 11 KB     | ##################################### | 100% 
+mkl-2020.2           | 138.3 MB  |                                       |   0% mkl-2020.2           | 138.3 MB  | ###2                                  |   9% mkl-2020.2           | 138.3 MB  | #####9                                |  16% mkl-2020.2           | 138.3 MB  | ##########2                           |  28% mkl-2020.2           | 138.3 MB  | ##############5                       |  39% mkl-2020.2           | 138.3 MB  | ###################                   |  52% mkl-2020.2           | 138.3 MB  | #######################5              |  64% mkl-2020.2           | 138.3 MB  | ###########################7          |  75% mkl-2020.2           | 138.3 MB  | ###############################4      |  85% mkl-2020.2           | 138.3 MB  | ###################################7  |  97% mkl-2020.2           | 138.3 MB  | ##################################### | 100% 
+brotlipy-0.7.0       | 322 KB    |                                       |   0% brotlipy-0.7.0       | 322 KB    | ##################################### | 100% brotlipy-0.7.0       | 322 KB    | ##################################### | 100% 
+libtiff-4.1.0        | 449 KB    |                                       |   0% libtiff-4.1.0        | 449 KB    | ##################################### | 100% libtiff-4.1.0        | 449 KB    | ##################################### | 100% 
+async_generator-1.10 | 39 KB     |                                       |   0% async_generator-1.10 | 39 KB     | ##################################### | 100% async_generator-1.10 | 39 KB     | ##################################### | 100% 
+pillow-7.2.0         | 617 KB    |                                       |   0% pillow-7.2.0         | 617 KB    | ##################################### | 100% pillow-7.2.0         | 617 KB    | ##################################### | 100% 
+zstd-1.4.5           | 619 KB    |                                       |   0% zstd-1.4.5           | 619 KB    | ##################################### | 100% zstd-1.4.5           | 619 KB    | ##################################### | 100% 
+freetype-2.10.2      | 608 KB    |                                       |   0% freetype-2.10.2      | 608 KB    | ##################################### | 100% freetype-2.10.2      | 608 KB    | ##################################### | 100% 
+tornado-6.0.4        | 611 KB    |                                       |   0% tornado-6.0.4        | 611 KB    | ##################################### | 100% tornado-6.0.4        | 611 KB    | ##################################### | 100% 
+mkl_fft-1.2.0        | 148 KB    |                                       |   0% mkl_fft-1.2.0        | 148 KB    | ##################################### | 100% mkl_fft-1.2.0        | 148 KB    | ##################################### | 100% 
+cycler-0.10.0        | 13 KB     |                                       |   0% cycler-0.10.0        | 13 KB     | ##################################### | 100% cycler-0.10.0        | 13 KB     | ##################################### | 100% 
+pyqt-5.9.2           | 4.5 MB    |                                       |   0% pyqt-5.9.2           | 4.5 MB    | ##################################### | 100% pyqt-5.9.2           | 4.5 MB    | ##################################### | 100% 
+libxml2-2.9.10       | 1.2 MB    |                                       |   0% libxml2-2.9.10       | 1.2 MB    | ##################################### | 100% libxml2-2.9.10       | 1.2 MB    | ##################################### | 100% 
+libgfortran-ng-7.3.0 | 1006 KB   |                                       |   0% libgfortran-ng-7.3.0 | 1006 KB   | ##################################### | 100% libgfortran-ng-7.3.0 | 1006 KB   | ##################################### | 100% 
+zeromq-4.3.2         | 511 KB    |                                       |   0% zeromq-4.3.2         | 511 KB    | ##################################### | 100% zeromq-4.3.2         | 511 KB    | ##################################### | 100% 
+mistune-0.8.4        | 54 KB     |                                       |   0% mistune-0.8.4        | 54 KB     | ##################################### | 100% mistune-0.8.4        | 54 KB     | ##################################### | 100% 
+cffi-1.14.3          | 223 KB    |                                       |   0% cffi-1.14.3          | 223 KB    | ##################################### | 100% cffi-1.14.3          | 223 KB    | ##################################### | 100% 
+lz4-c-1.9.2          | 190 KB    |                                       |   0% lz4-c-1.9.2          | 190 KB    | ##################################### | 100% lz4-c-1.9.2          | 190 KB    | ##################################### | 100% 
+flask-login-0.5.0    | 18 KB     |                                       |   0% flask-login-0.5.0    | 18 KB     | ################################8     |  89% flask-login-0.5.0    | 18 KB     | ##################################### | 100% flask-login-0.5.0    | 18 KB     | ##################################### | 100% 
+itsdangerous-1.1.0   | 28 KB     |                                       |   0% itsdangerous-1.1.0   | 28 KB     | ##################################### | 100% itsdangerous-1.1.0   | 28 KB     | ##################################### | 100% 
+matplotlib-3.3.1     | 24 KB     |                                       |   0% matplotlib-3.3.1     | 24 KB     | ##################################### | 100% matplotlib-3.3.1     | 24 KB     | ##################################### | 100% 
+sqlalchemy-1.3.19    | 1.5 MB    |                                       |   0% sqlalchemy-1.3.19    | 1.5 MB    | ##################################### | 100% sqlalchemy-1.3.19    | 1.5 MB    | ##################################### | 100% 
+cloudpickle-1.6.0    | 30 KB     |                                       |   0% cloudpickle-1.6.0    | 30 KB     | ##################################### | 100% cloudpickle-1.6.0    | 30 KB     | ##################################### | 100% 
+gst-plugins-base-1.1 | 4.8 MB    |                                       |   0% gst-plugins-base-1.1 | 4.8 MB    | ##################################### | 100% gst-plugins-base-1.1 | 4.8 MB    | ##################################### | 100% 
+bleach-3.2.1         | 112 KB    |                                       |   0% bleach-3.2.1         | 112 KB    | ##################################### | 100% bleach-3.2.1         | 112 KB    | ##################################### | 100% 
+flask-1.1.2          | 78 KB     |                                       |   0% flask-1.1.2          | 78 KB     | ##################################### | 100% flask-1.1.2          | 78 KB     | ##################################### | 100% 
+gitpython-3.1.8      | 120 KB    |                                       |   0% gitpython-3.1.8      | 120 KB    | ##################################### | 100% gitpython-3.1.8      | 120 KB    | ##################################### | 100% 
+pandas-1.1.1         | 8.2 MB    |                                       |   0% pandas-1.1.1         | 8.2 MB    | ##################################### | 100% pandas-1.1.1         | 8.2 MB    | ##################################### | 100% 
+click-7.1.2          | 71 KB     |                                       |   0% click-7.1.2          | 71 KB     | ##################################### | 100% click-7.1.2          | 71 KB     | ##################################### | 100% 
+importlib-metadata-1 | 51 KB     |                                       |   0% importlib-metadata-1 | 51 KB     | ##################################### | 100% importlib-metadata-1 | 51 KB     | ##################################### | 100% 
+olefile-0.46         | 50 KB     |                                       |   0% olefile-0.46         | 50 KB     | ##################################### | 100% olefile-0.46         | 50 KB     | ##################################### | 100% 
+more-itertools-8.5.0 | 43 KB     |                                       |   0% more-itertools-8.5.0 | 43 KB     | ##################################### | 100% more-itertools-8.5.0 | 43 KB     | ##################################### | 100% 
+numpy-1.19.1         | 21 KB     |                                       |   0% numpy-1.19.1         | 21 KB     | ###########################9          |  76% numpy-1.19.1         | 21 KB     | ##################################### | 100% numpy-1.19.1         | 21 KB     | ##################################### | 100% 
+attrs-20.2.0         | 42 KB     |                                       |   0% attrs-20.2.0         | 42 KB     | ##################################### | 100% attrs-20.2.0         | 42 KB     | ##################################### | 100% 
+toolz-0.11.1         | 48 KB     |                                       |   0% toolz-0.11.1         | 48 KB     | ##################################### | 100% toolz-0.11.1         | 48 KB     | ##################################### | 100% 
+toml-0.10.1          | 20 KB     |                                       |   0% toml-0.10.1          | 20 KB     | ##################################### | 100% toml-0.10.1          | 20 KB     | ##################################### | 100% 
+jinja2-2.11.2        | 103 KB    |                                       |   0% jinja2-2.11.2        | 103 KB    | ##################################### | 100% jinja2-2.11.2        | 103 KB    | ##################################### | 100% 
+libsodium-1.0.18     | 244 KB    |                                       |   0% libsodium-1.0.18     | 244 KB    | ##################################### | 100% libsodium-1.0.18     | 244 KB    | ##################################### | 100% 
+nest-asyncio-1.4.0   | 12 KB     |                                       |   0% nest-asyncio-1.4.0   | 12 KB     | ##################################### | 100% nest-asyncio-1.4.0   | 12 KB     | ##################################### | 100% 
+flake8-3.8.3         | 134 KB    |                                       |   0% flake8-3.8.3         | 134 KB    | ##################################### | 100% flake8-3.8.3         | 134 KB    | ##################################### | 100% 
+pytest-cov-2.10.1    | 20 KB     |                                       |   0% pytest-cov-2.10.1    | 20 KB     | ##################################### | 100% pytest-cov-2.10.1    | 20 KB     | ##################################### | 100% 
+iniconfig-1.0.1      | 8 KB      |                                       |   0% iniconfig-1.0.1      | 8 KB      | ##################################### | 100% iniconfig-1.0.1      | 8 KB      | ##################################### | 100% 
+jmespath-0.10.0      | 23 KB     |                                       |   0% jmespath-0.10.0      | 23 KB     | ##################################### | 100% jmespath-0.10.0      | 23 KB     | ##################################### | 100% 
+cytoolz-0.11.0       | 328 KB    |                                       |   0% cytoolz-0.11.0       | 328 KB    | ##################################### | 100% cytoolz-0.11.0       | 328 KB    | ##################################### | 100% 
+mccabe-0.6.1         | 14 KB     |                                       |   0% mccabe-0.6.1         | 14 KB     | ##################################### | 100% mccabe-0.6.1         | 14 KB     | ##################################### | 100% 
+s3transfer-0.3.3     | 92 KB     |                                       |   0% s3transfer-0.3.3     | 92 KB     | ##################################### | 100% s3transfer-0.3.3     | 92 KB     | ##################################### | 100% 
+dask-core-2.27.0     | 602 KB    |                                       |   0% dask-core-2.27.0     | 602 KB    | 9                                     |   3% dask-core-2.27.0     | 602 KB    | ##################################### | 100% dask-core-2.27.0     | 602 KB    | ##################################### | 100% 
+numpy-base-1.19.1    | 4.1 MB    |                                       |   0% numpy-base-1.19.1    | 4.1 MB    | ##################################### | 100% numpy-base-1.19.1    | 4.1 MB    | ##################################### | 100% 
+defusedxml-0.6.0     | 23 KB     |                                       |   0% defusedxml-0.6.0     | 23 KB     | ##################################### | 100% defusedxml-0.6.0     | 23 KB     | ##################################### | 100% 
+scipy-1.5.2          | 14.3 MB   |                                       |   0% scipy-1.5.2          | 14.3 MB   | ###############################9      |  86% scipy-1.5.2          | 14.3 MB   | ##################################### | 100% 
+pcre-8.44            | 212 KB    |                                       |   0% pcre-8.44            | 212 KB    | ##################################### | 100% pcre-8.44            | 212 KB    | ##################################### | 100% 
+jupyter_client-6.1.6 | 84 KB     |                                       |   0% jupyter_client-6.1.6 | 84 KB     | ##################################### | 100% jupyter_client-6.1.6 | 84 KB     | ##################################### | 100% 
+boto3-1.15.5         | 70 KB     |                                       |   0% boto3-1.15.5         | 70 KB     | ##################################### | 100% boto3-1.15.5         | 70 KB     | ##################################### | 100% 
+pandoc-2.10.1        | 12.7 MB   |                                       |   0% pandoc-2.10.1        | 12.7 MB   | ####################3                 |  55% pandoc-2.10.1        | 12.7 MB   | ##################################### | 100% pandoc-2.10.1        | 12.7 MB   | ##################################### | 100% 
+qt-5.9.7             | 68.5 MB   |                                       |   0% qt-5.9.7             | 68.5 MB   | ###8                                  |  10% qt-5.9.7             | 68.5 MB   | #########2                            |  25% qt-5.9.7             | 68.5 MB   | #################1                    |  46% qt-5.9.7             | 68.5 MB   | ########################4             |  66% qt-5.9.7             | 68.5 MB   | ################################1     |  87% qt-5.9.7             | 68.5 MB   | ##################################### | 100% 
+typing_extensions-3. | 28 KB     |                                       |   0% typing_extensions-3. | 28 KB     | ##################################### | 100% typing_extensions-3. | 28 KB     | ##################################### | 100% 
+werkzeug-1.0.1       | 240 KB    |                                       |   0% werkzeug-1.0.1       | 240 KB    | ##################################### | 100% werkzeug-1.0.1       | 240 KB    | ##################################### | 100% 
+pytest-6.0.2         | 407 KB    |                                       |   0% pytest-6.0.2         | 407 KB    | ##################################### | 100% pytest-6.0.2         | 407 KB    | ##################################### | 100% 
+Preparing transaction: | / - \ | / - \ | done
+Verifying transaction: - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+Executing transaction: / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+Installing pip dependencies: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - Ran pip subprocess with arguments:
+['/home/travis/miniconda/envs/testenv/bin/python', '-m', 'pip', 'install', '-U', '-r', '/home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt']
+Pip subprocess output:
+Collecting git+https://github.com/paris-saclay-cds/ramp-workflow@leaderboard (from -r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2))
+  Cloning https://github.com/paris-saclay-cds/ramp-workflow (to revision leaderboard) to /tmp/pip-req-build-dczwl9xb
+Collecting codecov
+  Downloading codecov-2.1.9-py2.py3-none-any.whl (16 kB)
+Collecting psycopg2-binary
+  Downloading psycopg2_binary-2.8.6-cp37-cp37m-manylinux1_x86_64.whl (3.0 MB)
+Collecting Flask-Mail
+  Downloading Flask-Mail-0.9.1.tar.gz (45 kB)
+Collecting Flask-Wtf
+  Downloading Flask_WTF-0.14.3-py2.py3-none-any.whl (13 kB)
+Collecting wtforms[email]
+  Downloading WTForms-2.3.3-py2.py3-none-any.whl (169 kB)
+Requirement already satisfied, skipping upgrade: numpy in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (1.19.1)
+Requirement already satisfied, skipping upgrade: scipy in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (1.5.2)
+Requirement already satisfied, skipping upgrade: pandas in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (1.1.1)
+Collecting scikit-learn>=0.22
+  Downloading scikit_learn-0.23.2-cp37-cp37m-manylinux1_x86_64.whl (6.8 MB)
+Collecting joblib
+  Downloading joblib-0.16.0-py3-none-any.whl (300 kB)
+Requirement already satisfied, skipping upgrade: cloudpickle in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (1.6.0)
+Requirement already satisfied, skipping upgrade: click in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (7.1.2)
+Requirement already satisfied, skipping upgrade: coverage in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from codecov->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 1)) (5.3)
+Collecting requests>=2.7.9
+  Downloading requests-2.24.0-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied, skipping upgrade: Flask in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from Flask-Mail->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 4)) (1.1.2)
+Collecting blinker
+  Downloading blinker-1.4.tar.gz (111 kB)
+Requirement already satisfied, skipping upgrade: itsdangerous in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from Flask-Wtf->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 5)) (1.1.0)
+Requirement already satisfied, skipping upgrade: MarkupSafe in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from wtforms[email]->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 6)) (1.1.1)
+Collecting email-validator; extra == "email"
+  Downloading email_validator-1.1.1-py2.py3-none-any.whl (17 kB)
+Requirement already satisfied, skipping upgrade: python-dateutil>=2.7.3 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from pandas->ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (2.8.1)
+Requirement already satisfied, skipping upgrade: pytz>=2017.2 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from pandas->ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (2020.1)
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from requests>=2.7.9->codecov->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 1)) (2020.6.20)
+Collecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Requirement already satisfied, skipping upgrade: idna<3,>=2.5 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from requests>=2.7.9->codecov->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 1)) (2.10)
+Requirement already satisfied, skipping upgrade: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from requests>=2.7.9->codecov->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 1)) (1.25.10)
+Requirement already satisfied, skipping upgrade: Werkzeug>=0.15 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from Flask->Flask-Mail->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 4)) (1.0.1)
+Requirement already satisfied, skipping upgrade: Jinja2>=2.10.1 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from Flask->Flask-Mail->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 4)) (2.11.2)
+Collecting dnspython>=1.15.0
+  Downloading dnspython-2.0.0-py3-none-any.whl (208 kB)
+Requirement already satisfied, skipping upgrade: six>=1.5 in /home/travis/miniconda/envs/testenv/lib/python3.7/site-packages (from python-dateutil>=2.7.3->pandas->ramp-workflow==0.4.0.dev0->-r /home/travis/build/paris-saclay-cds/ramp-board/condaenv.5srpe_ev.requirements.txt (line 2)) (1.15.0)
+Building wheels for collected packages: Flask-Mail, ramp-workflow, blinker
+  Building wheel for Flask-Mail (setup.py): started
+  Building wheel for Flask-Mail (setup.py): finished with status 'done'
+  Created wheel for Flask-Mail: filename=Flask_Mail-0.9.1-py3-none-any.whl size=7568 sha256=f2cbfdba95dbb9dc6d4b2e8c3274f2bde03cadd5afcdd6fccf598634c67bef4c
+  Stored in directory: /home/travis/.cache/pip/wheels/c3/46/1d/34849a40eb7e4b84d8c794ef49bce76c7d9e968cf0400f2e5c
+  Building wheel for ramp-workflow (setup.py): started
+  Building wheel for ramp-workflow (setup.py): finished with status 'done'
+  Created wheel for ramp-workflow: filename=ramp_workflow-0.4.0.dev0-py3-none-any.whl size=123670 sha256=e9cf004700647f1e91ef2dd08414d1b52c1efeb0cd294a0226c6ec78db78779f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-mlm8e1ca/wheels/00/16/5c/a9195b82927c3d67f27724ad3b3364fefc7345d6822f987e22
+  Building wheel for blinker (setup.py): started
+  Building wheel for blinker (setup.py): finished with status 'done'
+  Created wheel for blinker: filename=blinker-1.4-py3-none-any.whl size=13452 sha256=32b840826c765fab0aef2a502cab0ad045dad007abebc478760b230a493a5e3a
+  Stored in directory: /home/travis/.cache/pip/wheels/22/f5/18/df711b66eb25b21325c132757d4314db9ac5e8dabeaf196eab
+Successfully built Flask-Mail ramp-workflow blinker
+Installing collected packages: chardet, requests, codecov, psycopg2-binary, blinker, Flask-Mail, dnspython, email-validator, wtforms, Flask-Wtf, joblib, threadpoolctl, scikit-learn, ramp-workflow
+Successfully installed Flask-Mail-0.9.1 Flask-Wtf-0.14.3 blinker-1.4 chardet-3.0.4 codecov-2.1.9 dnspython-2.0.0 email-validator-1.1.1 joblib-0.16.0 psycopg2-binary-2.8.6 ramp-workflow-0.4.0.dev0 requests-2.24.0 scikit-learn-0.23.2 threadpoolctl-2.1.0 wtforms-2.3.3
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate testenv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+travis_time:end:026a4f66:start=1601139813247758308,finish=1601139880646138309,duration=67398380001,event=install[0Ktravis_fold:end:install.2[0Ktravis_fold:start:install.3[0Ktravis_time:start:044459e8[0K$ conda env create -f ci_tools/environment_iris_kit.yml
+Warning: you have pip-installed dependencies in your environment file, but you do not list pip itself as one of your conda dependencies.  Conda may not use the correct pip to install your packages, and they may end up in the wrong place.  Please add an explicit pip dependency.  I'm adding one for you, but still nagging you.
+Collecting package metadata (repodata.json): - \ | / - \ | done
+Solving environment: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+
+Downloading and Extracting Packages
+joblib-0.16.0        | 210 KB    |                                       |   0% joblib-0.16.0        | 210 KB    | ########4                             |  23% joblib-0.16.0        | 210 KB    | ##################################### | 100% joblib-0.16.0        | 210 KB    | ##################################### | 100% 
+python-3.8.5         | 49.3 MB   |                                       |   0% python-3.8.5         | 49.3 MB   | ##6                                   |   7% python-3.8.5         | 49.3 MB   | ###############1                      |  41% python-3.8.5         | 49.3 MB   | ###########################1          |  73% python-3.8.5         | 49.3 MB   | ##################################### | 100% python-3.8.5         | 49.3 MB   | ##################################### | 100% 
+mkl_fft-1.2.0        | 157 KB    |                                       |   0% mkl_fft-1.2.0        | 157 KB    | ##################################### | 100% mkl_fft-1.2.0        | 157 KB    | ##################################### | 100% 
+threadpoolctl-2.1.0  | 17 KB     |                                       |   0% threadpoolctl-2.1.0  | 17 KB     | ##################################### | 100% threadpoolctl-2.1.0  | 17 KB     | ##################################### | 100% 
+numpy-1.19.1         | 21 KB     |                                       |   0% numpy-1.19.1         | 21 KB     | ##################################### | 100% numpy-1.19.1         | 21 KB     | ##################################### | 100% 
+mkl-service-2.3.0    | 62 KB     |                                       |   0% mkl-service-2.3.0    | 62 KB     | ##################################### | 100% mkl-service-2.3.0    | 62 KB     | ##################################### | 100% 
+scikit-learn-0.23.2  | 5.2 MB    |                                       |   0% scikit-learn-0.23.2  | 5.2 MB    | ##################################### | 100% scikit-learn-0.23.2  | 5.2 MB    | ##################################### | 100% 
+scipy-1.5.2          | 14.5 MB   |                                       |   0% scipy-1.5.2          | 14.5 MB   | ###########################1          |  73% scipy-1.5.2          | 14.5 MB   | ##################################### | 100% scipy-1.5.2          | 14.5 MB   | ##################################### | 100% 
+numpy-base-1.19.1    | 4.2 MB    |                                       |   0% numpy-base-1.19.1    | 4.2 MB    | ##################################### | 100% numpy-base-1.19.1    | 4.2 MB    | ##################################### | 100% 
+mkl_random-1.1.1     | 341 KB    |                                       |   0% mkl_random-1.1.1     | 341 KB    | ##################################### | 100% mkl_random-1.1.1     | 341 KB    | ##################################### | 100% 
+pandas-1.1.1         | 8.4 MB    |                                       |   0% pandas-1.1.1         | 8.4 MB    | ##################################### | 100% pandas-1.1.1         | 8.4 MB    | ##################################### | 100% 
+Preparing transaction: \ | / - done
+Verifying transaction: | / - \ | / - \ | / - done
+Executing transaction: | / - \ | / - \ | / - \ done
+Installing pip dependencies: / - \ | / - \ | / - \ | / - \ Ran pip subprocess with arguments:
+['/home/travis/miniconda/envs/ramp-iris/bin/python', '-m', 'pip', 'install', '-U', '-r', '/home/travis/build/paris-saclay-cds/ramp-board/ci_tools/condaenv.n5dlh0kh.requirements.txt']
+Pip subprocess output:
+Collecting git+https://github.com/kegl/ramp-workflow@leaderboard (from -r /home/travis/build/paris-saclay-cds/ramp-board/ci_tools/condaenv.n5dlh0kh.requirements.txt (line 1))
+  Cloning https://github.com/kegl/ramp-workflow (to revision leaderboard) to /tmp/pip-req-build-xbtx0nfa
+
+Pip subprocess error:
+  WARNING: Did not find branch or tag 'leaderboard', assuming revision or ref.
+ERROR: Command errored out with exit status 1: git checkout -q leaderboard Check the logs for full command output.
+
+failed
+
+CondaEnvException: Pip failed
+
+travis_time:end:044459e8:start=1601139880650079840,finish=1601139894912426571,duration=14262346731,event=install[0K[31;1mThe command "conda env create -f ci_tools/environment_iris_kit.yml" failed and exited with 1 during .[0m
+
+Your build has been stopped.

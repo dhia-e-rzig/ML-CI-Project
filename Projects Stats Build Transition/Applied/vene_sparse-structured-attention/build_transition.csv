@@ -1,0 +1,13 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+491905134,cd7266d716001f195a08e53c1ed5ec3e0ac11c55,PassedToFailed,passed,720,https://github.com/vene/sparse-structured-attention/pull/6
+491903316,c68e16408616667952a90f6c4cc40d5d81885b20,PassedToFailed,failed,679,https://github.com/vene/sparse-structured-attention/pull/6
+491900365,9debf6bec61fb6e09d4602e1999bce0bd6150547,ErroredToPassed,errored,623,https://github.com/vene/sparse-structured-attention/pull/6
+491896820,4d0237b8faabfee243e63263dac30d9698799450,ErroredToPassed,passed,713,https://github.com/vene/sparse-structured-attention/pull/6
+491881020,fdb3b57b07f796d4a7527b3dd558a02619a6ada0,FailedToPassed,failed,1695,https://github.com/vene/sparse-structured-attention/compare/42ff385ebbcf...b8bd9e5d5162
+491855921,b8bd9e5d5162c18c5a48c391b28faa79a5f5ca67,FailedToPassed,passed,401,https://github.com/vene/sparse-structured-attention/compare/42ff385ebbcf...b8bd9e5d5162
+491855921,b8bd9e5d5162c18c5a48c391b28faa79a5f5ca67,PassedToFailed,passed,401,https://github.com/vene/sparse-structured-attention/compare/845ca1fae121...42ff385ebbcf
+491849985,42ff385ebbcf62d5c808e8cdc0587eb8d2dac590,PassedToFailed,failed,1278,https://github.com/vene/sparse-structured-attention/compare/845ca1fae121...42ff385ebbcf
+476361777,1c13a5228985316e21ce64783fbc8255b32d022a,FailedToPassed,failed,926,https://github.com/vene/sparse-structured-attention/compare/c439ccfb23c7...468b4da711cd
+298315724,468b4da711cdcc245178223e498ca45d939b3b52,FailedToPassed,passed,822,https://github.com/vene/sparse-structured-attention/compare/c439ccfb23c7...468b4da711cd
+297314741,5644774c1dff9f604ea425367e9a538c02b19a73,PassedToFailed,passed,336,https://github.com/vene/sparseattn/compare/1a42301bcaa1...160b72c0cbba
+297313110,160b72c0cbba4b3cfff866d0a5aa1caff88cdc26,PassedToFailed,failed,225,https://github.com/vene/sparseattn/compare/1a42301bcaa1...160b72c0cbba

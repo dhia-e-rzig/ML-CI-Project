@@ -1,0 +1,451 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 83eafd19-2206-4850-9160-9c7d084a693d@1.worker-org-676f4fdd9b-w7mlb.gce-production-2
+version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
+instance: travis-job-c3ddb8c0-99f2-4d66-bc0c-147d62fc4d6a travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
+startup: 6.424850403s
+travis_fold:end:worker_info[0Ktravis_time:start:002a793c[0Ktravis_time:end:002a793c:start=1587759624750815426,finish=1587759624883441986,duration=132626560,event=no_world_writable_dirs[0Ktravis_time:start:03c8e5a8[0Ktravis_time:end:03c8e5a8:start=1587759624885997570,finish=1587759624888547333,duration=2549763,event=setup_filter[0Ktravis_time:start:0651b028[0Ktravis_time:end:0651b028:start=1587759624892217782,finish=1587759624899539216,duration=7321434,event=agent[0Ktravis_time:start:00b49551[0Ktravis_time:end:00b49551:start=1587759624902346367,finish=1587759624904488750,duration=2142383,event=check_unsupported[0Ktravis_time:start:16456605[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 679191078
+Job id: 679191080
+Runtime kernel version: 4.15.0-1028-gcp
+travis-build version: 99f83c6b
+[34m[1mBuild image provisioning date and time[0m
+Mon Mar 25 16:43:24 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.22.7 linux-x64 node-v11.10.1
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2
+[34m[1mrvm version[0m
+rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.7
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.21
+9.5.16
+9.6.12
+[34m[1mRedis version[0m
+redis-server 5.0.4
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 4.10.2!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.0
+v8.12.0
+v8.15.1
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:16456605:start=1587759624907334316,finish=1587759624912969700,duration=5635384,event=show_system_info[0Ktravis_time:start:0992d020[0Ktravis_time:end:0992d020:start=1587759624915896578,finish=1587759624942753645,duration=26857067,event=rm_riak_source[0Ktravis_time:start:12bf3fe8[0Ktravis_time:end:12bf3fe8:start=1587759624948243057,finish=1587759624963388416,duration=15145359,event=fix_rwky_redis[0Ktravis_time:start:06ba9bb7[0Ktravis_time:end:06ba9bb7:start=1587759624966251975,finish=1587759625541340853,duration=575088878,event=wait_for_network[0Ktravis_time:start:03b60947[0Ktravis_time:end:03b60947:start=1587759625545325985,finish=1587759625755050249,duration=209724264,event=update_apt_keys[0Ktravis_time:start:2b4d557c[0Ktravis_time:end:2b4d557c:start=1587759625759424446,finish=1587759625811381473,duration=51957027,event=fix_hhvm_source[0Ktravis_time:start:0dbeb391[0Ktravis_time:end:0dbeb391:start=1587759625815566070,finish=1587759625818143012,duration=2576942,event=update_mongo_arch[0Ktravis_time:start:0a806ed8[0Ktravis_time:end:0a806ed8:start=1587759625821919852,finish=1587759625861952746,duration=40032894,event=fix_sudo_enabled_trusty[0Ktravis_time:start:02399744[0Ktravis_time:end:02399744:start=1587759625866063345,finish=1587759625868058489,duration=1995144,event=update_glibc[0Ktravis_time:start:08965d88[0Ktravis_time:end:08965d88:start=1587759625871595859,finish=1587759625879237123,duration=7641264,event=clean_up_path[0Ktravis_time:start:06356060[0Ktravis_time:end:06356060:start=1587759625886333640,finish=1587759625894714223,duration=8380583,event=fix_resolv_conf[0Ktravis_time:start:0704ea2e[0Ktravis_time:end:0704ea2e:start=1587759625897874247,finish=1587759625906759994,duration=8885747,event=fix_etc_hosts[0Ktravis_time:start:0729dd76[0Ktravis_time:end:0729dd76:start=1587759625911621147,finish=1587759625921305670,duration=9684523,event=fix_mvn_settings_xml[0Ktravis_time:start:15e0effd[0Ktravis_time:end:15e0effd:start=1587759625924828947,finish=1587759625933563750,duration=8734803,event=no_ipv6_localhost[0Ktravis_time:start:073ff548[0Ktravis_time:end:073ff548:start=1587759625939206319,finish=1587759625942282570,duration=3076251,event=fix_etc_mavenrc[0Ktravis_time:start:0030e910[0Ktravis_time:end:0030e910:start=1587759625948029317,finish=1587759625951492754,duration=3463437,event=fix_wwdr_certificate[0Ktravis_time:start:325841ac[0Ktravis_time:end:325841ac:start=1587759625956582504,finish=1587759625978601210,duration=22018706,event=put_localhost_first[0Ktravis_time:start:0e0c92a4[0Ktravis_time:end:0e0c92a4:start=1587759625984352400,finish=1587759625988677621,duration=4325221,event=home_paths[0Ktravis_time:start:02ee70f0[0Ktravis_time:end:02ee70f0:start=1587759625993559195,finish=1587759626005098083,duration=11538888,event=disable_initramfs[0Ktravis_time:start:0145bab3[0Ktravis_time:end:0145bab3:start=1587759626010742189,finish=1587759626288402288,duration=277660099,event=disable_ssh_roaming[0Ktravis_time:start:0530c96a[0Ktravis_time:end:0530c96a:start=1587759626292212394,finish=1587759626294749110,duration=2536716,event=debug_tools[0Ktravis_time:start:036d30c2[0Ktravis_time:end:036d30c2:start=1587759626300380078,finish=1587759626303271221,duration=2891143,event=uninstall_oclint[0Ktravis_time:start:10ebe280[0Ktravis_time:end:10ebe280:start=1587759626306626069,finish=1587759626310156487,duration=3530418,event=rvm_use[0Ktravis_time:start:0c851430[0Ktravis_time:end:0c851430:start=1587759626314333359,finish=1587759626321648654,duration=7315295,event=rm_etc_boto_cfg[0Ktravis_time:start:1e8bde90[0Ktravis_time:end:1e8bde90:start=1587759626326167111,finish=1587759626328919431,duration=2752320,event=rm_oraclejdk8_symlink[0Ktravis_time:start:315d4172[0Ktravis_time:end:315d4172:start=1587759626333220125,finish=1587759626431147242,duration=97927117,event=enable_i386[0Ktravis_time:start:09250f86[0Ktravis_time:end:09250f86:start=1587759626435137703,finish=1587759626440984553,duration=5846850,event=update_rubygems[0Ktravis_time:start:0c8fca3c[0Ktravis_time:end:0c8fca3c:start=1587759626445764005,finish=1587759627230355932,duration=784591927,event=ensure_path_components[0Ktravis_time:start:04cafc52[0Ktravis_time:end:04cafc52:start=1587759627235032493,finish=1587759627236979432,duration=1946939,event=redefine_curl[0Ktravis_time:start:13c8cd64[0Ktravis_time:end:13c8cd64:start=1587759627240535414,finish=1587759627348771095,duration=108235681,event=nonblock_pipe[0Ktravis_time:start:0cc0c558[0Ktravis_time:end:0cc0c558:start=1587759627352945312,finish=1587759633379873607,duration=6026928295,event=apt_get_update[0Ktravis_time:start:2ec19232[0Ktravis_time:end:2ec19232:start=1587759633383961726,finish=1587759633386146856,duration=2185130,event=deprecate_xcode_64[0Ktravis_time:start:357a0fb6[0Ktravis_time:end:357a0fb6:start=1587759633389894937,finish=1587759635795762432,duration=2405867495,event=update_heroku[0Ktravis_time:start:097eb7af[0Ktravis_time:end:097eb7af:start=1587759635799539295,finish=1587759635802390775,duration=2851480,event=shell_session_update[0Ktravis_time:start:187cefa8[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:187cefa8:start=1587759635806148492,finish=1587759637976382315,duration=2170233823,event=set_docker_mtu[0Ktravis_time:start:1e7c8ba3[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:1e7c8ba3:start=1587759637980629181,finish=1587759638037819578,duration=57190397,event=resolvconf[0Ktravis_time:start:015012c9[0Ktravis_time:end:015012c9:start=1587759638045788694,finish=1587759638186949246,duration=141160552,event=maven_central_mirror[0Ktravis_time:start:04b934c8[0Ktravis_time:end:04b934c8:start=1587759638191439144,finish=1587759638291273925,duration=99834781,event=maven_https[0Ktravis_time:start:0f20a2fa[0Ktravis_time:end:0f20a2fa:start=1587759638302193766,finish=1587759638304884030,duration=2690264,event=fix_ps4[0Ktravis_time:start:043dc910[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0fd18544[0K$ git clone --depth=50 --branch=proc_fitters https://github.com/pycroscopy/pycroscopy.git pycroscopy/pycroscopy
+Cloning into 'pycroscopy/pycroscopy'...
+travis_time:end:0fd18544:start=1587759638313886543,finish=1587759642104103150,duration=3790216607,event=checkout[0K$ cd pycroscopy/pycroscopy
+$ git checkout -qf a217a3ace9a187f3e97b04ff5cb7dc501d1d1d05
+travis_fold:end:git.checkout[0K
+travis_time:end:0fd18544:start=1587759638313886543,finish=1587759642296292049,duration=3982405506,event=checkout[0Ktravis_time:start:07bfc7f5[0Ktravis_time:end:07bfc7f5:start=1587759642300792377,finish=1587759642306638452,duration=5846075,event=env[0Ktravis_time:start:0f8adb03[0K$ source ~/virtualenv/python2.7/bin/activate
+travis_time:end:0f8adb03:start=1587759642310835130,finish=1587759642315555678,duration=4720548,event=[0K$ python --version
+Python 2.7.15
+$ pip --version
+pip 19.0.3 from /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/pip (python 2.7)
+travis_fold:start:before_install[0Ktravis_time:start:1907d690[0K$ sudo apt-get update -qq
+travis_time:end:1907d690:start=1587759643211754761,finish=1587759654138611280,duration=10926856519,event=before_install[0Ktravis_fold:end:before_install[0Ktravis_fold:start:install[0Ktravis_time:start:00e09448[0K$ pip install .
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+Processing /home/travis/build/pycroscopy/pycroscopy
+Requirement already satisfied: numpy>=1.13.0 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pycroscopy==0.60.5) (1.16.2)
+Collecting h5py>=2.6.0 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/12/90/3216b8f6d69905a320352a9ca6802a8e39fdb1cd93133c3d4163db8d5f19/h5py-2.10.0-cp27-cp27mu-manylinux1_x86_64.whl (2.8MB)
+Collecting scipy>=0.17.1 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/24/40/11b12af7f322c1e20446c037c47344d89bab4922b8859419d82cf56d796d/scipy-1.2.3-cp27-cp27mu-manylinux1_x86_64.whl (24.8MB)
+Collecting scikit-image>=0.12.3 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/bb/7f/d27fadff2c2b8cd45fffe44330b3f26014e94e856d4b61e5bfd2701b1ccb/scikit_image-0.14.5-cp27-cp27mu-manylinux1_x86_64.whl (25.5MB)
+Collecting scikit-learn>=0.17.1 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/31/9f/042db462417451e81035c3d43b722e88450c628a33dfda69777a801b0d40/scikit_learn-0.20.4-cp27-cp27mu-manylinux1_x86_64.whl (5.5MB)
+Collecting matplotlib>=2.0.0 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/9d/40/5ba7d4a3f80d39d409f21899972596bf62c8606f1406a825029649eaa439/matplotlib-2.2.5-cp27-cp27mu-manylinux1_x86_64.whl (12.8MB)
+Collecting psutil (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/c4/b8/3512f0e93e0db23a71d82485ba256071ebef99b227351f0f5540f744af41/psutil-5.7.0.tar.gz (449kB)
+Requirement already satisfied: six in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pycroscopy==0.60.5) (1.11.0)
+Collecting pillow (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/12/ad/61f8dfba88c4e56196bf6d056cdbba64dc9c5dfdfbc97d02e6472feed913/Pillow-6.2.2-cp27-cp27mu-manylinux1_x86_64.whl (2.1MB)
+Collecting joblib>=0.11.0 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)
+Collecting ipywidgets>=5.2.2 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/56/a0/dbcf5881bb2f51e8db678211907f16ea0a182b232c591a6d6f276985ca95/ipywidgets-7.5.1-py2.py3-none-any.whl (121kB)
+Collecting numpy_groupies==0.9.7 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/4c/18/e5c4c6d12ef8740106d29ea78bad2c1d218e61caa735513d3491a3a1d837/numpy_groupies-0.9.7.tar.gz
+Collecting numba (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/83/f2/938d6b0e6b0be158d7beb7cc6067243783d219e8e0a7474bbe69d0fb5472/numba-0.47.0-cp27-cp27mu-manylinux1_x86_64.whl (3.6MB)
+Collecting pyUSID>=0.0.8 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/9d/5e/24176ac8b29b0d840d78b8e3fe864d3a1a61fa4f069f381fc9744905ee64/pyUSID-0.0.8.1.tar.gz (148kB)
+Collecting xlrd>=1.0.0 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/b0/16/63576a1a001752e34bf8ea62e367997530dc553b689356b9879339cf45a4/xlrd-1.2.0-py2.py3-none-any.whl (103kB)
+Collecting igor (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/be/f2/ad4b0027e58c78958b40d9da54e5674a9e851207a9b61e5edd4112f154ec/igor-0.3.tar.gz (51kB)
+Collecting gwyfile (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/28/a8/7e1f5105cbf8200705f130545c9ad54592c52c34717609f87570e5a5e2af/gwyfile-0.2.0-py2.py3-none-any.whl
+Collecting unittest2 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/72/20/7f0f433060a962200b7272b8c12ba90ef5b903e218174301d0abfd523813/unittest2-1.1.0-py2.py3-none-any.whl (96kB)
+Collecting ipython<6,>=5.1.0 (from pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/99/53/b4e4a384101fe29b0ab8c5bb3ea5ac49d5d9dfee6347ab59ca5e3a353785/ipython-5.9.0-py2-none-any.whl (760kB)
+Collecting PyWavelets>=0.4.0 (from scikit-image>=0.12.3->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/fa/f1/81d3ba0b461699a5e0dbd1a1c2c98c0b5a2e1757b7a54d49246e0a557aea/PyWavelets-1.0.3-cp27-cp27mu-manylinux1_x86_64.whl (4.4MB)
+Collecting networkx>=1.8 (from scikit-image>=0.12.3->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/f3/f4/7e20ef40b118478191cec0b58c3192f822cace858c19505c7670961b76b2/networkx-2.2.zip (1.7MB)
+Collecting cloudpickle>=0.2.1 (from scikit-image>=0.12.3->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/ea/0b/189cd3c19faf362ff2df5f301456c6cf8571ef6684644cfdfdbff293825c/cloudpickle-1.3.0-py2.py3-none-any.whl
+Collecting cycler>=0.10 (from matplotlib>=2.0.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/f7/d2/e07d3ebb2bd7af696440ce7e754c59dd546ffe1bbe732c8ab68b9c834e61/cycler-0.10.0-py2.py3-none-any.whl
+Collecting backports.functools-lru-cache (from matplotlib>=2.0.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/da/d1/080d2bb13773803648281a49e3918f65b31b7beebf009887a529357fd44a/backports.functools_lru_cache-1.6.1-py2.py3-none-any.whl
+Collecting subprocess32 (from matplotlib>=2.0.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/32/c8/564be4d12629b912ea431f1a50eb8b3b9d00f1a0b1ceff17f266be190007/subprocess32-3.5.4.tar.gz (97kB)
+Collecting kiwisolver>=1.0.1 (from matplotlib>=2.0.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/3d/78/cb9248b2289ec31e301137cedbe4ca503a74ca87f88cdbfd2f8be52323bf/kiwisolver-1.1.0-cp27-cp27mu-manylinux1_x86_64.whl (93kB)
+Collecting python-dateutil>=2.1 (from matplotlib>=2.0.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl (227kB)
+Collecting pytz (from matplotlib>=2.0.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/e7/f9/f0b53f88060247251bf481fa6ea62cd0d25bf1b11a87888e53ce5b7c8ad2/pytz-2019.3-py2.py3-none-any.whl (509kB)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib>=2.0.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl (67kB)
+Collecting nbformat>=4.2.0 (from ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/da/27/9a654d2b6cc1eaa517d1c5a4405166c7f6d72f04f6e7eea41855fe808a46/nbformat-4.4.0-py2.py3-none-any.whl (155kB)
+Collecting ipykernel>=4.5.1 (from ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/59/9e/e16335ee2d645ee48f082e4207d4fad9bdce09cc1537e76320c341d8d75c/ipykernel-4.10.1-py2-none-any.whl (109kB)
+Collecting widgetsnbextension~=3.5.0 (from ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/6c/7b/7ac231c20d2d33c445eaacf8a433f4e22c60677eb9776c7c5262d7ddee2d/widgetsnbextension-3.5.1-py2.py3-none-any.whl (2.2MB)
+Collecting traitlets>=4.3.1 (from ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/ca/ab/872a23e29cec3cf2594af7e857f18b687ad21039c1f9b922fac5b9b142d5/traitlets-4.3.3-py2.py3-none-any.whl (75kB)
+Requirement already satisfied: setuptools in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from numba->pycroscopy==0.60.5) (40.8.0)
+Collecting llvmlite>=0.31.0dev0 (from numba->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/dc/8f/5c6d0e8be1585247c4fd33b84dc66d1fa6449b77d27f42a51d45242307c9/llvmlite-0.32.0.tar.gz (103kB)
+Requirement already satisfied: funcsigs; python_version < "3.3" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from numba->pycroscopy==0.60.5) (1.0.2)
+Collecting singledispatch; python_version < "3.4" (from numba->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/c5/10/369f50bcd4621b263927b0a1519987a04383d4a98fb10438042ad410cf88/singledispatch-3.4.0.3-py2.py3-none-any.whl
+Requirement already satisfied: enum34; python_version < "3.4" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from numba->pycroscopy==0.60.5) (1.1.6)
+Collecting toolz (from pyUSID>=0.0.8->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/22/8e/037b9ba5c6a5739ef0dcde60578c64d49f45f64c5e5e886531bfbc39157f/toolz-0.10.0.tar.gz (49kB)
+Collecting cytoolz (from pyUSID>=0.0.8->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/62/b1/7f16703fe4a497879b1b457adf1e472fad2d4f030477698b16d2febf38bb/cytoolz-0.10.1.tar.gz (475kB)
+Collecting dask>=0.10 (from pyUSID>=0.0.8->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/58/80/6059587dcf80821fbccdc1f06b6d3fd29b64c9b38fbf1ea42889460de3de/dask-1.2.2-py2.py3-none-any.whl (717kB)
+Collecting argparse (from unittest2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/f2/94/3af39d34be01a24a6e65433d19e107099374224905f1e0cc6bbe1fd22a2f/argparse-1.4.0-py2.py3-none-any.whl
+Collecting traceback2 (from unittest2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/17/0a/6ac05a3723017a967193456a2efa0aa9ac4b51456891af1e2353bb9de21e/traceback2-1.4.0-py2.py3-none-any.whl
+Collecting simplegeneric>0.8 (from ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/3d/57/4d9c9e3ae9a255cd4e1106bb57e24056d3d0709fc01b2e3e345898e49d5b/simplegeneric-0.8.1.zip
+Collecting pickleshare (from ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/9a/41/220f49aaea88bc6fa6cba8d05ecf24676326156c23b991e80b3f2fc24c77/pickleshare-0.7.5-py2.py3-none-any.whl
+Collecting backports.shutil-get-terminal-size; python_version == "2.7" (from ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/7d/cd/1750d6c35fe86d35f8562091737907f234b78fdffab42b29c72b1dd861f4/backports.shutil_get_terminal_size-1.0.0-py2.py3-none-any.whl
+Collecting decorator (from ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/ed/1b/72a1821152d07cf1d8b6fce298aeb06a7eb90f4d6d41acec9861e7cc6df0/decorator-4.4.2-py2.py3-none-any.whl
+Collecting pexpect; sys_platform != "win32" (from ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/39/7b/88dbb785881c28a102619d46423cb853b46dbccc70d3ac362d99773a78ce/pexpect-4.8.0-py2.py3-none-any.whl (59kB)
+Requirement already satisfied: pathlib2; python_version == "2.7" or python_version == "3.3" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from ipython<6,>=5.1.0->pycroscopy==0.60.5) (2.3.2)
+Collecting pygments (from ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/be/39/32da3184734730c0e4d3fa3b2b5872104668ad6dc1b5a73d8e477e5fe967/Pygments-2.5.2-py2.py3-none-any.whl (896kB)
+Collecting prompt-toolkit<2.0.0,>=1.0.4 (from ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/9d/d2/2f099b5cd62dab819ce7a9f1431c09a9032fbfbb6474f442722e88935376/prompt_toolkit-1.0.18-py2-none-any.whl (245kB)
+Collecting jsonschema!=2.5.0,>=2.4 (from nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/c5/8f/51e89ce52a085483359217bc72cdbf6e75ee595d5b1d4b5ade40c7e018b8/jsonschema-3.2.0-py2.py3-none-any.whl (56kB)
+Collecting ipython-genutils (from nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Collecting jupyter-core (from nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/63/0d/df2d17cdf389cea83e2efa9a4d32f7d527ba78667e0153a8e676e957b2f7/jupyter_core-4.6.3-py2.py3-none-any.whl (83kB)
+Collecting tornado>=4.0 (from ipykernel>=4.5.1->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/e6/78/6e7b5af12c12bdf38ca9bfe863fcaf53dc10430a312d0324e76c1e5ca426/tornado-5.1.1.tar.gz (516kB)
+Collecting jupyter-client (from ipykernel>=4.5.1->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/13/81/fe0eee1bcf949851a120254b1f530ae1e01bdde2d3ab9710c6ff81525061/jupyter_client-5.3.4-py2.py3-none-any.whl (92kB)
+Collecting notebook>=4.4.1 (from widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/f6/36/89ebfffc9dd8c8dbd81c1ffb53e3d4233ee666414c143959477cb07cc5f5/notebook-5.7.8-py2.py3-none-any.whl (9.0MB)
+Collecting linecache2 (from traceback2->unittest2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/c7/a3/c5da2a44c85bfbb6eebcfc1dde24933f8704441b98fdde6528f4831757a6/linecache2-1.0.0-py2.py3-none-any.whl
+Collecting ptyprocess>=0.5 (from pexpect; sys_platform != "win32"->ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/d1/29/605c2cc68a9992d18dada28206eeada56ea4bd07a239669da41674648b6f/ptyprocess-0.6.0-py2.py3-none-any.whl
+Requirement already satisfied: scandir; python_version < "3.5" in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from pathlib2; python_version == "2.7" or python_version == "3.3"->ipython<6,>=5.1.0->pycroscopy==0.60.5) (1.9.0)
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.4->ipython<6,>=5.1.0->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/f6/d5/1ecdac957e3ea12c1b319fcdee8b6917ffaff8b4644d673c4d72d2f20b49/wcwidth-0.1.9-py2.py3-none-any.whl
+Collecting importlib-metadata; python_version < "3.8" (from jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/ad/e4/891bfcaf868ccabc619942f27940c77a8a4b45fd8367098955bb7e152fb1/importlib_metadata-1.6.0-py2.py3-none-any.whl
+Requirement already satisfied: attrs>=17.4.0 in /home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5) (18.2.0)
+Collecting functools32; python_version < "3" (from jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/c5/60/6ac26ad05857c601308d8fb9e87fa36d0ebf889423f47c3502ef034365db/functools32-3.2.3-2.tar.gz
+Collecting pyrsistent>=0.14.0 (from jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/9f/0d/cbca4d0bbc5671822a59f270e4ce3f2195f8a899c97d0d5abb81b191efb5/pyrsistent-0.16.0.tar.gz (108kB)
+Collecting futures (from tornado>=4.0->ipykernel>=4.5.1->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/d8/a6/f46ae3f1da0cd4361c344888f59ec2f5785e69c872e175a748ef6071cdb5/futures-3.3.0-py2-none-any.whl
+Collecting backports_abc>=0.4 (from tornado>=4.0->ipykernel>=4.5.1->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/7d/56/6f3ac1b816d0cd8994e83d0c4e55bc64567532f7dc543378bd87f81cebc7/backports_abc-0.5-py2.py3-none-any.whl
+Collecting pyzmq>=13 (from jupyter-client->ipykernel>=4.5.1->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/67/3b/64c48e659e223578bb9a5ef83e2ea111028acecf31bc4afb15a70e36c2a4/pyzmq-19.0.0-cp27-cp27mu-manylinux1_x86_64.whl (1.0MB)
+Collecting prometheus-client (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/b3/23/41a5a24b502d35a4ad50a5bb7202a5e1d9a0364d0c12f56db3dbf7aca76d/prometheus_client-0.7.1.tar.gz
+Collecting nbconvert (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/79/6c/05a569e9f703d18aacb89b7ad6075b404e8a4afde2c26b73ca77bb644b14/nbconvert-5.6.1-py2.py3-none-any.whl (455kB)
+Collecting jinja2 (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl (125kB)
+Collecting terminado>=0.8.1 (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/ff/96/1d9a2c23990aea8f8e0b5c3b6627d03196a73771a17a2d9860bbe9823ab6/terminado-0.8.3-py2.py3-none-any.whl
+Collecting Send2Trash (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/13/2e/ea40de0304bb1dc4eb309de90aeec39871b9b7c4bd30f1a3cdcb3496f5c0/Send2Trash-1.5.0.tar.gz
+Collecting ipaddress; python_version == "2.7" (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/c2/f8/49697181b1651d8347d24c095ce46c7346c37335ddc7d255833e7cde674d/ipaddress-1.0.23-py2.py3-none-any.whl
+Collecting configparser>=3.5; python_version < "3" (from importlib-metadata; python_version < "3.8"->jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/7a/2a/95ed0501cf5d8709490b1d3a3f9b5cf340da6c433f896bbe9ce08dbe6785/configparser-4.0.2-py2.py3-none-any.whl
+Collecting zipp>=0.5 (from importlib-metadata; python_version < "3.8"->jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/96/0a/67556e9b7782df7118c1f49bdc494da5e5e429c93aa77965f33e81287c8c/zipp-1.2.0-py2.py3-none-any.whl
+Collecting contextlib2; python_version < "3" (from importlib-metadata; python_version < "3.8"->jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/85/60/370352f7ef6aa96c52fb001831622f50f923c1d575427d021b8ab3311236/contextlib2-0.6.0.post1-py2.py3-none-any.whl
+Collecting testpath (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/1b/9e/1a170feaa54f22aeb5a5d16c9015e82234275a3c8ab630b552493f9cb8a9/testpath-0.4.4-py2.py3-none-any.whl (163kB)
+Collecting bleach (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/c7/bc/9c2bbd8bff5f393e3373687109117a061db4c8ccdf6b5c70b1f8834bd67a/bleach-3.1.4-py2.py3-none-any.whl (151kB)
+Collecting entrypoints>=0.2.2 (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/ac/c6/44694103f8c221443ee6b0041f69e2740d89a25641e62fb4f2ee568f2f9c/entrypoints-0.3-py2.py3-none-any.whl
+Collecting mistune<2,>=0.8.1 (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/09/ec/4b43dae793655b7d8a25f76119624350b4d65eb663459eb9603d7f1f0345/mistune-0.8.4-py2.py3-none-any.whl
+Collecting defusedxml (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/06/74/9b387472866358ebc08732de3da6dc48e44b0aacd2ddaa5cb85ab7e986a2/defusedxml-0.6.0-py2.py3-none-any.whl
+Collecting pandocfilters>=1.4.1 (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/4c/ea/236e2584af67bb6df960832731a6e5325fd4441de001767da328c33368ce/pandocfilters-1.4.2.tar.gz
+Collecting MarkupSafe>=0.23 (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/fb/40/f3adb7cf24a8012813c5edb20329eb22d5d8e2a0ecf73d21d6b85865da11/MarkupSafe-1.1.1-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting webencodings (from bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=5.2.2->pycroscopy==0.60.5)
+  Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
+Building wheels for collected packages: pycroscopy, psutil, numpy-groupies, pyUSID, igor, networkx, subprocess32, llvmlite, toolz, cytoolz, simplegeneric, tornado, functools32, pyrsistent, prometheus-client, Send2Trash, pandocfilters
+  Building wheel for pycroscopy (setup.py): started
+  Building wheel for pycroscopy (setup.py): finished with status 'done'
+  Stored in directory: /tmp/pip-ephem-wheel-cache-AR1fkf/wheels/c0/1c/65/27e33895caebbe52524273083300a4b74228a7273df8060661
+  Building wheel for psutil (setup.py): started
+  Building wheel for psutil (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/d7/69/b4/3200b95828d1f0ddb3cb5699083717f4fdbd9b4223d0644c57
+  Building wheel for numpy-groupies (setup.py): started
+  Building wheel for numpy-groupies (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/9e/19/02/30e0a1918ddc498ccdd5dab91b3bfce6100bfd0d416db622c9
+  Building wheel for pyUSID (setup.py): started
+  Building wheel for pyUSID (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/f7/51/7c/3e99c3a4e8d73ad9015c1aa0238c9c715d6bdfa5e5e0252413
+  Building wheel for igor (setup.py): started
+  Building wheel for igor (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/ff/a8/3f/95f6abe6d9e85627b7504d0fde2f9270a33d82b19885493e51
+  Building wheel for networkx (setup.py): started
+  Building wheel for networkx (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/68/f8/29/b53346a112a07d30a5a84d53f19aeadaa1a474897c0423af91
+  Building wheel for subprocess32 (setup.py): started
+  Building wheel for subprocess32 (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/68/39/1a/5e402bdfdf004af1786c8b853fd92f8c4a04f22aad179654d1
+  Building wheel for llvmlite (setup.py): started
+  Building wheel for llvmlite (setup.py): finished with status 'error'
+  Complete output from command /home/travis/virtualenv/python2.7.15/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-qju3l7/llvmlite/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/pip-wheel-bJMfzr --python-tag cp27:
+  running bdist_wheel
+  /home/travis/virtualenv/python2.7.15/bin/python /tmp/pip-install-qju3l7/llvmlite/ffi/build.py
+  LLVM version... # static-libstdc++ avoids runtime dependencies on a
+  # particular libstdc++ version.
+  g++  -shared   -fPIC -I/usr/local/clang-7.0.0/include -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -fno-rtti -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fno-rtti -g -flto assembly.cpp bitcode.cpp core.cpp initfini.cpp module.cpp value.cpp executionengine.cpp transforms.cpp passmanagers.cpp targets.cpp dylib.cpp linker.cpp object_file.cpp -o libllvmlite.so  -L/usr/local/clang-7.0.0/lib -flto -Wl,--exclude-libs=ALL -lLLVMLTO -lLLVMPasses -lLLVMObjCARCOpts -lLLVMSymbolize -lLLVMDebugInfoPDB -lLLVMDebugInfoDWARF -lLLVMMIRParser -lLLVMFuzzMutate -lLLVMCoverage -lLLVMTableGen -lLLVMDlltoolDriver -lLLVMOrcJIT -lLLVMXCoreDisassembler -lLLVMXCoreCodeGen -lLLVMXCoreDesc -lLLVMXCoreInfo -lLLVMXCoreAsmPrinter -lLLVMSystemZDisassembler -lLLVMSystemZCodeGen -lLLVMSystemZAsmParser -lLLVMSystemZDesc -lLLVMSystemZInfo -lLLVMSystemZAsmPrinter -lLLVMSparcDisassembler -lLLVMSparcCodeGen -lLLVMSparcAsmParser -lLLVMSparcDesc -lLLVMSparcInfo -lLLVMSparcAsmPrinter -lLLVMPowerPCDisassembler -lLLVMPowerPCCodeGen -lLLVMPowerPCAsmParser -lLLVMPowerPCDesc -lLLVMPowerPCInfo -lLLVMPowerPCAsmPrinter -lLLVMNVPTXCodeGen -lLLVMNVPTXDesc -lLLVMNVPTXInfo -lLLVMNVPTXAsmPrinter -lLLVMMSP430CodeGen -lLLVMMSP430Desc -lLLVMMSP430Info -lLLVMMSP430AsmPrinter -lLLVMMipsDisassembler -lLLVMMipsCodeGen -lLLVMMipsAsmParser -lLLVMMipsDesc -lLLVMMipsInfo -lLLVMMipsAsmPrinter -lLLVMLanaiDisassembler -lLLVMLanaiCodeGen -lLLVMLanaiAsmParser -lLLVMLanaiDesc -lLLVMLanaiAsmPrinter -lLLVMLanaiInfo -lLLVMHexagonDisassembler -lLLVMHexagonCodeGen -lLLVMHexagonAsmParser -lLLVMHexagonDesc -lLLVMHexagonInfo -lLLVMBPFDisassembler -lLLVMBPFCodeGen -lLLVMBPFAsmParser -lLLVMBPFDesc -lLLVMBPFInfo -lLLVMBPFAsmPrinter -lLLVMARMDisassembler -lLLVMARMCodeGen -lLLVMARMAsmParser -lLLVMARMDesc -lLLVMARMInfo -lLLVMARMAsmPrinter -lLLVMARMUtils -lLLVMAMDGPUDisassembler -lLLVMAMDGPUCodeGen -lLLVMAMDGPUAsmParser -lLLVMAMDGPUDesc -lLLVMAMDGPUInfo -lLLVMAMDGPUAsmPrinter -lLLVMAMDGPUUtils -lLLVMAArch64Disassembler -lLLVMAArch64CodeGen -lLLVMAArch64AsmParser -lLLVMAArch64Desc -lLLVMAArch64Info -lLLVMAArch64AsmPrinter -lLLVMAArch64Utils -lLLVMObjectYAML -lLLVMLibDriver -lLLVMOption -lLLVMWindowsManifest -lLLVMX86Disassembler -lLLVMX86AsmParser -lLLVMX86CodeGen -lLLVMGlobalISel -lLLVMSelectionDAG -lLLVMAsmPrinter -lLLVMX86Desc -lLLVMMCDisassembler -lLLVMX86Info -lLLVMX86AsmPrinter -lLLVMX86Utils -lLLVMMCJIT -lLLVMLineEditor -lLLVMInterpreter -lLLVMExecutionEngine -lLLVMRuntimeDyld -lLLVMCodeGen -lLLVMTarget -lLLVMCoroutines -lLLVMipo -lLLVMInstrumentation -lLLVMVectorize -lLLVMScalarOpts -lLLVMLinker -lLLVMIRReader -lLLVMAsmParser -lLLVMInstCombine -lLLVMBitWriter -lLLVMAggressiveInstCombine -lLLVMTransformUtils -lLLVMAnalysis -lLLVMProfileData -lLLVMObject -lLLVMMCParser -lLLVMMC -lLLVMDebugInfoCodeView -lLLVMDebugInfoMSF -lLLVMBitReader -lLLVMCore -lLLVMBinaryFormat -lLLVMSupport -lLLVMDemangle -lrt -ldl -lpthread -lm
+  g++: error: unrecognized command line option ‘-Wcovered-switch-default’
+  g++: error: unrecognized command line option ‘-Wstring-conversion’
+  Makefile.linux:20: recipe for target 'libllvmlite.so' failed
+  make: *** [libllvmlite.so] Error 1
+  7.0.0
+  
+  SVML not detected
+  Traceback (most recent call last):
+    File "/tmp/pip-install-qju3l7/llvmlite/ffi/build.py", line 168, in <module>
+      main()
+    File "/tmp/pip-install-qju3l7/llvmlite/ffi/build.py", line 158, in main
+      main_posix('linux', '.so')
+    File "/tmp/pip-install-qju3l7/llvmlite/ffi/build.py", line 150, in main_posix
+      subprocess.check_call(['make', '-f', makefile])
+    File "/opt/python/2.7.15/lib/python2.7/subprocess.py", line 190, in check_call
+      raise CalledProcessError(retcode, cmd)
+  subprocess.CalledProcessError: Command '['make', '-f', 'Makefile.linux']' returned non-zero exit status 2
+  error: command '/home/travis/virtualenv/python2.7.15/bin/python' failed with exit status 1
+  
+  ----------------------------------------
+  Failed building wheel for llvmlite
+  Running setup.py clean for llvmlite
+  Building wheel for toolz (setup.py): started
+  Building wheel for toolz (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/e1/8b/65/3294e5b727440250bda09e8c0153b7ba19d328f661605cb151
+  Building wheel for cytoolz (setup.py): started
+  Building wheel for cytoolz (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/64/2a/18/d962b614e055577e7d9a3e4813e0742f822ca9c8800cc3783a
+  Building wheel for simplegeneric (setup.py): started
+  Building wheel for simplegeneric (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/a9/28/53/f24776b4c5bcbe91aaf1f1e247bd6fadd17191aa12fac63902
+  Building wheel for tornado (setup.py): started
+  Building wheel for tornado (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/6d/e1/ce/f4ee2fa420cc6b940123c64992b81047816d0a9fad6b879325
+  Building wheel for functools32 (setup.py): started
+  Building wheel for functools32 (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/b5/18/32/77a1030457155606ba5e3ec3a8a57132b1a04b1c4f765177b2
+  Building wheel for pyrsistent (setup.py): started
+  Building wheel for pyrsistent (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/c2/85/ad/bc6d41e2c4b35c9fdfed48f0fcd411ffc4164e67755ddf9ebb
+  Building wheel for prometheus-client (setup.py): started
+  Building wheel for prometheus-client (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/1c/54/34/fd47cd9b308826cc4292b54449c1899a30251ef3b506bc91ea
+  Building wheel for Send2Trash (setup.py): started
+  Building wheel for Send2Trash (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/f1/ca/e5/bdd5eae705cf50a483257e6ff9dd34911dda3570f0e1340dda
+  Building wheel for pandocfilters (setup.py): started
+  Building wheel for pandocfilters (setup.py): finished with status 'done'
+  Stored in directory: /home/travis/.cache/pip/wheels/39/01/56/f1b08a6275acc59e846fa4c1e1b65dbc1919f20157d9e66c20
+Successfully built pycroscopy psutil numpy-groupies pyUSID igor networkx subprocess32 toolz cytoolz simplegeneric tornado functools32 pyrsistent prometheus-client Send2Trash pandocfilters
+Failed to build llvmlite
+Installing collected packages: h5py, scipy, PyWavelets, pillow, decorator, networkx, cloudpickle, cycler, backports.functools-lru-cache, subprocess32, kiwisolver, python-dateutil, pytz, pyparsing, matplotlib, scikit-image, scikit-learn, psutil, joblib, simplegeneric, pickleshare, backports.shutil-get-terminal-size, ptyprocess, pexpect, ipython-genutils, traitlets, pygments, wcwidth, prompt-toolkit, ipython, configparser, contextlib2, zipp, importlib-metadata, functools32, pyrsistent, jsonschema, jupyter-core, nbformat, futures, singledispatch, backports-abc, tornado, pyzmq, jupyter-client, ipykernel, prometheus-client, testpath, webencodings, bleach, entrypoints, mistune, defusedxml, MarkupSafe, jinja2, pandocfilters, nbconvert, terminado, Send2Trash, ipaddress, notebook, widgetsnbextension, ipywidgets, numpy-groupies, llvmlite, numba, toolz, cytoolz, dask, pyUSID, xlrd, igor, gwyfile, argparse, linecache2, traceback2, unittest2, pycroscopy
+  Running setup.py install for llvmlite: started
+    Running setup.py install for llvmlite: finished with status 'error'
+    Complete output from command /home/travis/virtualenv/python2.7.15/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-qju3l7/llvmlite/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-l7ol4O/install-record.txt --single-version-externally-managed --compile --install-headers /home/travis/virtualenv/python2.7.15/include/site/python2.7/llvmlite:
+    running install
+    running build
+    got version from file /tmp/pip-install-qju3l7/llvmlite/llvmlite/_version.py {'version': '0.32.0', 'full': '26059d238f4ba23dff74703dd27168591d889edd'}
+    running build_ext
+    /home/travis/virtualenv/python2.7.15/bin/python /tmp/pip-install-qju3l7/llvmlite/ffi/build.py
+    LLVM version... # static-libstdc++ avoids runtime dependencies on a
+    # particular libstdc++ version.
+    g++  -shared   -I/usr/local/clang-7.0.0/include -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -fno-rtti -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fno-rtti -g -flto assembly.cpp bitcode.cpp core.cpp initfini.cpp module.cpp value.cpp executionengine.cpp transforms.cpp passmanagers.cpp targets.cpp dylib.cpp linker.cpp object_file.cpp -o libllvmlite.so  -L/usr/local/clang-7.0.0/lib -flto -Wl,--exclude-libs=ALL -lLLVMLTO -lLLVMPasses -lLLVMObjCARCOpts -lLLVMSymbolize -lLLVMDebugInfoPDB -lLLVMDebugInfoDWARF -lLLVMMIRParser -lLLVMFuzzMutate -lLLVMCoverage -lLLVMTableGen -lLLVMDlltoolDriver -lLLVMOrcJIT -lLLVMXCoreDisassembler -lLLVMXCoreCodeGen -lLLVMXCoreDesc -lLLVMXCoreInfo -lLLVMXCoreAsmPrinter -lLLVMSystemZDisassembler -lLLVMSystemZCodeGen -lLLVMSystemZAsmParser -lLLVMSystemZDesc -lLLVMSystemZInfo -lLLVMSystemZAsmPrinter -lLLVMSparcDisassembler -lLLVMSparcCodeGen -lLLVMSparcAsmParser -lLLVMSparcDesc -lLLVMSparcInfo -lLLVMSparcAsmPrinter -lLLVMPowerPCDisassembler -lLLVMPowerPCCodeGen -lLLVMPowerPCAsmParser -lLLVMPowerPCDesc -lLLVMPowerPCInfo -lLLVMPowerPCAsmPrinter -lLLVMNVPTXCodeGen -lLLVMNVPTXDesc -lLLVMNVPTXInfo -lLLVMNVPTXAsmPrinter -lLLVMMSP430CodeGen -lLLVMMSP430Desc -lLLVMMSP430Info -lLLVMMSP430AsmPrinter -lLLVMMipsDisassembler -lLLVMMipsCodeGen -lLLVMMipsAsmParser -lLLVMMipsDesc -lLLVMMipsInfo -lLLVMMipsAsmPrinter -lLLVMLanaiDisassembler -lLLVMLanaiCodeGen -lLLVMLanaiAsmParser -lLLVMLanaiDesc -lLLVMLanaiAsmPrinter -lLLVMLanaiInfo -lLLVMHexagonDisassembler -lLLVMHexagonCodeGen -lLLVMHexagonAsmParser -lLLVMHexagonDesc -lLLVMHexagonInfo -lLLVMBPFDisassembler -lLLVMBPFCodeGen -lLLVMBPFAsmParser -lLLVMBPFDesc -lLLVMBPFInfo -lLLVMBPFAsmPrinter -lLLVMARMDisassembler -lLLVMARMCodeGen -lLLVMARMAsmParser -lLLVMARMDesc -lLLVMARMInfo -lLLVMARMAsmPrinter -lLLVMARMUtils -lLLVMAMDGPUDisassembler -lLLVMAMDGPUCodeGen -lLLVMAMDGPUAsmParser -lLLVMAMDGPUDesc -lLLVMAMDGPUInfo -lLLVMAMDGPUAsmPrinter -lLLVMAMDGPUUtils -lLLVMAArch64Disassembler -lLLVMAArch64CodeGen -lLLVMAArch64AsmParser -lLLVMAArch64Desc -lLLVMAArch64Info -lLLVMAArch64AsmPrinter -lLLVMAArch64Utils -lLLVMObjectYAML -lLLVMLibDriver -lLLVMOption -lLLVMWindowsManifest -lLLVMX86Disassembler -lLLVMX86AsmParser -lLLVMX86CodeGen -lLLVMGlobalISel -lLLVMSelectionDAG -lLLVMAsmPrinter -lLLVMX86Desc -lLLVMMCDisassembler -lLLVMX86Info -lLLVMX86AsmPrinter -lLLVMX86Utils -lLLVMMCJIT -lLLVMLineEditor -lLLVMInterpreter -lLLVMExecutionEngine -lLLVMRuntimeDyld -lLLVMCodeGen -lLLVMTarget -lLLVMCoroutines -lLLVMipo -lLLVMInstrumentation -lLLVMVectorize -lLLVMScalarOpts -lLLVMLinker -lLLVMIRReader -lLLVMAsmParser -lLLVMInstCombine -lLLVMBitWriter -lLLVMAggressiveInstCombine -lLLVMTransformUtils -lLLVMAnalysis -lLLVMProfileData -lLLVMObject -lLLVMMCParser -lLLVMMC -lLLVMDebugInfoCodeView -lLLVMDebugInfoMSF -lLLVMBitReader -lLLVMCore -lLLVMBinaryFormat -lLLVMSupport -lLLVMDemangle -lrt -ldl -lpthread -lm
+    g++: error: unrecognized command line option ‘-Wcovered-switch-default’
+    g++: error: unrecognized command line option ‘-Wstring-conversion’
+    Makefile.linux:20: recipe for target 'libllvmlite.so' failed
+    make: *** [libllvmlite.so] Error 1
+    7.0.0
+    
+    SVML not detected
+    Traceback (most recent call last):
+      File "/tmp/pip-install-qju3l7/llvmlite/ffi/build.py", line 168, in <module>
+        main()
+      File "/tmp/pip-install-qju3l7/llvmlite/ffi/build.py", line 158, in main
+        main_posix('linux', '.so')
+      File "/tmp/pip-install-qju3l7/llvmlite/ffi/build.py", line 150, in main_posix
+        subprocess.check_call(['make', '-f', makefile])
+      File "/opt/python/2.7.15/lib/python2.7/subprocess.py", line 190, in check_call
+        raise CalledProcessError(retcode, cmd)
+    subprocess.CalledProcessError: Command '['make', '-f', 'Makefile.linux']' returned non-zero exit status 2
+    error: command '/home/travis/virtualenv/python2.7.15/bin/python' failed with exit status 1
+    
+    ----------------------------------------
+Command "/home/travis/virtualenv/python2.7.15/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-qju3l7/llvmlite/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-l7ol4O/install-record.txt --single-version-externally-managed --compile --install-headers /home/travis/virtualenv/python2.7.15/include/site/python2.7/llvmlite" failed with error code 1 in /tmp/pip-install-qju3l7/llvmlite/
+travis_time:end:00e09448:start=1587759654143701847,finish=1587759698788122547,duration=44644420700,event=install[0K[31;1mThe command "pip install ." failed and exited with 1 during .[0m
+
+Your build has been stopped.

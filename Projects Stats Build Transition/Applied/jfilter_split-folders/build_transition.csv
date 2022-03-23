@@ -1,0 +1,7 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+121302856,9cd3b5a053e70c7a2e5c19409bbbf63ed703e1fc,PassedToFailed,passed,90,https://github.com/jfilter/split-folders/compare/15b97cc6356b...9b43d0ca15da
+121302647,9b43d0ca15daa17890cd736f43ed804c902df69e,PassedToFailed,failed,92,https://github.com/jfilter/split-folders/compare/15b97cc6356b...9b43d0ca15da
+121299700,c692037620701ceeef933b99edd810d7f5964170,FailedToPassed,failed,42,https://github.com/jfilter/split-folders/compare/a02368cd4cd5...38c3c47bb86b
+121292671,38c3c47bb86bd0864e4becc0eb8658a3659b65a7,FailedToPassed,passed,42,https://github.com/jfilter/split-folders/compare/a02368cd4cd5...38c3c47bb86b
+86943695,ac65cd30eaf2126aa16714bfb73100fc3829caf8,PassedToFailed,passed,67,https://github.com/jfilter/split-folders/compare/dd5151c1e412...62861f12dc65
+86943393,62861f12dc65693d2e2f84576f15db9a65aa93de,PassedToFailed,failed,109,https://github.com/jfilter/split-folders/compare/dd5151c1e412...62861f12dc65

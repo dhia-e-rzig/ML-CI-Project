@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+756611070,5a82b9bc53dc8d9abbc6900226c95f166900736b,PassedToErrored,passed,53,https://github.com/vkuznet/MLaaS4HEP/pull/27
+756610427,1b4889cee2b5c19d64f7544e5917691ba40a1f45,PassedToErrored,errored,44,https://github.com/vkuznet/MLaaS4HEP/pull/27
+756610427,1b4889cee2b5c19d64f7544e5917691ba40a1f45,ErroredToPassed,errored,44,https://github.com/vkuznet/MLaaS4HEP/pull/27
+702632796,ddb9fc5ecdde808d8ce9f8dbfdfcf11f71f99ff6,ErroredToPassed,passed,120,https://github.com/vkuznet/MLaaS4HEP/pull/27
+607165613,17d1fac352cdbd310eee5e0eaf6b848f890828a6,PassedToErrored,passed,56,https://github.com/vkuznet/MLaaS4HEP/pull/3
+607163451,14d6dafdf63dec09e44fd6f09dac988664c37934,PassedToErrored,errored,41,https://github.com/vkuznet/MLaaS4HEP/pull/3
+607163451,14d6dafdf63dec09e44fd6f09dac988664c37934,ErroredToPassed,errored,41,https://github.com/vkuznet/MLaaS4HEP/compare/c8b230bb5549...19b4ba29bee9
+607151241,19b4ba29bee9493fb404146c0e1a8e6dfac918c4,ErroredToPassed,passed,56,https://github.com/vkuznet/MLaaS4HEP/compare/c8b230bb5549...19b4ba29bee9
+544358979,9ffabd9c84ca07b7f1db5df1ae7eafc1c73dd461,PassedToErrored,passed,58,https://github.com/vkuznet/MLaaS4HEP/compare/8bab8e492f97...5615dce30c73
+544357980,5615dce30c73dde75905ce40c1eb11756925e3b1,PassedToErrored,errored,60,https://github.com/vkuznet/MLaaS4HEP/compare/8bab8e492f97...5615dce30c73

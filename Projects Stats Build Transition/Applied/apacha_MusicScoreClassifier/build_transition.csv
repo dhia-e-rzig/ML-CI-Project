@@ -1,0 +1,9 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+488965452,203edfed510a753ac952eb326679a5b2bc03935e,PassedToErrored,passed,849,https://github.com/apacha/MusicScoreClassifier/compare/6089dc23c315...eea72e85cafe
+488951120,eea72e85cafe401fc7a6ffdc69b77ad7cfa7023d,PassedToErrored,errored,261,https://github.com/apacha/MusicScoreClassifier/compare/6089dc23c315...eea72e85cafe
+488951120,eea72e85cafe401fc7a6ffdc69b77ad7cfa7023d,ErroredToPassed,errored,261,https://github.com/apacha/MusicScoreClassifier/compare/71f1823b3c3d...6089dc23c315
+488949104,6089dc23c3157e587f64b46729ad349083a82401,ErroredToPassed,passed,614,https://github.com/apacha/MusicScoreClassifier/compare/71f1823b3c3d...6089dc23c315
+487462925,a12358317676cd97045354d11ec6387719735c1d,PassedToErrored,passed,1800,https://github.com/apacha/MusicScoreClassifier/compare/120df3c9a6bc...334ebbce607b
+487442531,334ebbce607bd3808cdeaac1702cea8121399788,PassedToErrored,errored,868,https://github.com/apacha/MusicScoreClassifier/compare/120df3c9a6bc...334ebbce607b
+484446637,e0b05f862bdd8f9643baf97d1abd286c9d09a869,ErroredToPassed,errored,278,https://github.com/apacha/MusicScoreClassifier/compare/ee7f4d96fe25...f4faaf408cdd
+437660094,f4faaf408cddb759bf3c230b07dba585c4577d38,ErroredToPassed,passed,185,https://github.com/apacha/MusicScoreClassifier/compare/ee7f4d96fe25...f4faaf408cdd

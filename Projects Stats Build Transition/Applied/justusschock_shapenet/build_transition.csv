@@ -1,0 +1,11 @@
+BuildID,CommitID,TransitionType,BuildState,BuildDuration,ComparisonURL
+147553696,2fb554a348601b7837970a8b60f487af85578728,FailedToPassed,failed,249,https://github.com/justusschock/shapenet/compare/a4345d073f36...98012a664227
+124259984,98012a6642275f77863d2827f64f4d897f62dd94,FailedToPassed,passed,482,https://github.com/justusschock/shapenet/compare/a4345d073f36...98012a664227
+124259984,98012a6642275f77863d2827f64f4d897f62dd94,PassedToFailed,passed,482,https://github.com/justusschock/shapenet/compare/86371f9a98c2...a4345d073f36
+124259890,a4345d073f362dc04200ca3b0315197e133d3af9,PassedToFailed,failed,361,https://github.com/justusschock/shapenet/compare/86371f9a98c2...a4345d073f36
+121945982,0b3367c068ab48d68f25e1ebc286af01c853cbd5,ErroredToPassed,errored,637,https://github.com/justusschock/shapenet/compare/13ec44bf5465...0b3367c068ab
+121238591,0b3367c068ab48d68f25e1ebc286af01c853cbd5,ErroredToPassed,passed,523,https://github.com/justusschock/shapenet/compare/13ec44bf5465...0b3367c068ab
+121238591,0b3367c068ab48d68f25e1ebc286af01c853cbd5,PassedToFailed,passed,523,https://github.com/justusschock/shapenet/compare/7194c9d8bb31...13ec44bf5465
+121237826,13ec44bf5465b51fe009141ee1bb54e1d8159651,PassedToFailed,failed,199,https://github.com/justusschock/shapenet/compare/7194c9d8bb31...13ec44bf5465
+121237826,13ec44bf5465b51fe009141ee1bb54e1d8159651,FailedToPassed,failed,199,https://github.com/justusschock/shapenet/compare/210e4a28396f...2879e698fc34
+120023372,2879e698fc34b96127107cbfa285c8c55bd8deab,FailedToPassed,passed,521,https://github.com/justusschock/shapenet/compare/210e4a28396f...2879e698fc34
