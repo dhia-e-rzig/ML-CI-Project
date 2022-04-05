@@ -25,7 +25,7 @@ def time_limit(seconds, msg=''):
     finally:
         timer.cancel()
 
-regexes_csv=pd.read_csv('../../CSV Inputs/regex_failure.csv')
+regexes_csv=pd.read_csv('../../../CSV Archives/CSV Inputs/regex_failure.csv')
 
 regexes_testfail_list=regexes_csv.loc[regexes_csv['Failure Type'] == 'Test Fail']['Regex'].to_list()
 # print(len(regexes_testfail_list))

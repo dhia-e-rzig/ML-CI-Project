@@ -6,7 +6,7 @@ import _thread
 import threading
 from contextlib import contextmanager
 from glob import glob
-from failure_extractor import collect_lines
+from PythonScripts.TravisCI_BuildBreak_Log_Analysis.line_extractor.failure_extractor import collect_lines
 
 class TimeoutException(Exception):
     def __init__(self, msg=''):
@@ -25,7 +25,7 @@ def time_limit(seconds, msg=''):
         timer.cancel()
 
 
-regexes_csv = pd.read_csv('../../CSV Inputs/regex_failure.csv')
+regexes_csv = pd.read_csv('../../../CSV Input - New/regex_failure_v2.csv')
 regexes_testfail_list = regexes_csv.loc[regexes_csv['Failure Type'] == 'Test Fail'][['Regex','SubType']].values.tolist()
 regexes_buildfail_list = regexes_csv.loc[regexes_csv['Failure Type'] == 'Build Error'][['Regex','SubType']].values.tolist()
 regexes_testerror_list = regexes_csv.loc[regexes_csv['Failure Type'] == 'Test Error'][['Regex','SubType']].values.tolist()
@@ -50,9 +50,14 @@ regexes_testerror_addition_list = regexes_csv.loc[regexes_csv['Notes'].str.conta
 
 
 def get_first_non_general_subtype(subtype_list):
+    General_subtypes=[]
     for sub_type in subtype_list:
-        if 'General' not in sub_type:
+        if 'general' not in str(sub_type).lower():
             return sub_type
+        General_subtypes.append(sub_type)
+    if len(subtype_list) ==0:
+        return None
+    return General_subtypes[0]
 
 
 class Log_failure_classifier():
@@ -72,6 +77,7 @@ class Log_failure_classifier():
         TestError = False
         CodeAnalysisError = False
         DeploymentError = False
+        slow_mode = True
         TravisError = True  # testing for incomplete files
         print('processing ' + file_name)
         file = open(file_name, encoding='utf-8')  # os.path.join('../../FailedLogs-ForAccuracyTesting2',
@@ -112,6 +118,7 @@ class Log_failure_classifier():
                     #     IgnoreMode=False
                     # if IgnoreMode:
                     #    continue
+
                     if TestFail and len(list_test_fail_regexes_found) == 1 and list_test_fail_regexes_found[
                         0] == "=+ FAILURES =+" and "FLAKE8" in line:
                         # print("FLAKEREM")
@@ -130,9 +137,9 @@ class Log_failure_classifier():
                             CodeAnalysisError) + ',' + str(TravisError) + ',' + str(DeploymentError) + ',' + str(
                             NoFailDetected) + ',' + str(
                             TimeExceeded) + ',' + str(NotPythonLang)) + ',' + str(LogNotFound),
-                                str(str(file_name) + ';' + str(test_fail_subtype_list) + ',' + str(
+                                str(str(file_name) + ';' + str(test_fail_subtype_list) + ';' + str(
                                     build_error_subtype_list) + ';' + str(test_error_subtype_list)
-                                    + ';' + str(ca_fail_subtype_list) + ',' + str(
+                                    + ';' + str(ca_fail_subtype_list) + ';' + str(
                                     travis_fail_subtype_list) + ';' + str(deployment_error_subtype_list)),
                                 str(str(file_name) + ';' + str(
                                     get_first_non_general_subtype(test_fail_subtype_list)) + ';' + str(
@@ -200,7 +207,7 @@ class Log_failure_classifier():
                         TestScanningMode = False
                     if ("The command " in line) or ("travis_time:end:" in line):
                         CAScanningMode = False
-                    if not TestFail:
+                    if  slow_mode or not TestFail:
                         for tup in regexes_testfail_list:
                             str_regex=tup[0]
                             sub_type =tup[1]
@@ -231,7 +238,7 @@ class Log_failure_classifier():
                                     list_test_fail_lines_found.append(collect_lines(i, lines))
                                     break
 
-                    if not BuildError:
+                    if  slow_mode or not BuildError:
                         regex_list = regexes_buildfail_list
                         if TestScanningMode or CAScanningMode:
                             regex_list = []  # [i for i in regexes_buildfail_list if i not in regexes_testfail_addition_list]
@@ -249,7 +256,7 @@ class Log_failure_classifier():
                                 list_build_error_lines_found.append(collect_lines(i, lines))
                                 break
 
-                    if not TestError:
+                    if  slow_mode or not TestError:
                         for tup in regexes_testerror_list:
                             str_regex = tup[0]
                             sub_type = tup[1]
@@ -278,7 +285,7 @@ class Log_failure_classifier():
                                     list_test_error_lines_found.append(collect_lines(i, lines))
                                     break
 
-                    if not CodeAnalysisError:
+                    if  slow_mode or not CodeAnalysisError:
                         for tup in regexes_cafail_list:
                             str_regex = tup[0]
                             sub_type = tup[1]
@@ -356,7 +363,7 @@ class Log_failure_classifier():
                             list_travis_fail_lines_found.append(collect_lines(i, lines))
                             break
 
-                    if not DeploymentError:
+                    if  slow_mode or not DeploymentError:
                         for tup in regexes_deploymenterror_list:
                             str_regex = tup[0]
                             sub_type = tup[1]
@@ -412,10 +419,14 @@ def worker(arg):
 
 if __name__ == "__main__":
     start_time_all = time.perf_counter()
-    all_job_logs = [y for x in os.walk('../../Project Stats Year/NonML/') for y in
+    all_job_logs = [y for x in os.walk('../../../Project Stats Year/NonML/') for y in
                     glob(os.path.join(x[0], '*.txt'))]
-    all_job_csv = [y for x in os.walk('../../Project Stats Year/NonML/') for y in
+    all_job_csv = [y for x in os.walk('../../../Project Stats Year/NonML/') for y in
                    glob(os.path.join(x[0], 'job_detailed_info.csv'))]
+
+    # print(all_job_logs[:5])
+    # print(all_job_csv[:5])
+    # exit(1)
     # repeat_project_list_a=pd.read_csv('repeat_stats.csv')['RepoName'].to_list()
     # repeat_project_list=[str(x).replace('/','_') for x in repeat_project_list_a]
     # repeat_job_logs=[y for y in all_job_logs if str(y).split('\\')[7] in repeat_project_list]
@@ -434,6 +445,7 @@ if __name__ == "__main__":
     # print(list_jobs_failed[:10])
     # exit()
     job_failed_logs = [x for x in all_job_logs if str(x).split('/')[-1] in list_jobs_failed]
+
     # print(job_failed_logs)
     # exit()
     # df_csv = pd.read_csv('../../unclassified4.csv')
@@ -444,7 +456,7 @@ if __name__ == "__main__":
     pool.close()
     pool.join()
 
-    csv_res = open('../../CSV Output - New/classification_nonoml_fail_03_17_2022_v1.csv', 'w+')
+    csv_res = open('../../../CSV Output - New/classification_nonml_fail_03_29_2022_v3.csv', 'w+')
     csv_res.write(
         'file_name,TestFail,BuildError,TestError,CodeAnalysisError,TravisError,DeploymentError,NoFailDetected,TimeExceeded,NotPythonLang,LogNotFound')
     csv_res.write('\n')
@@ -452,7 +464,7 @@ if __name__ == "__main__":
         line = line[0]
         csv_res.write(line)
         csv_res.write('\n')
-    csv_subtype = open('../../CSV Outputs/classification_all_fail_08_17_2021_subtypes.csv', 'w+')
+    csv_subtype = open('../../../CSV Output - New/classification_nonml_fail_03_29_2022_v3_subtypes.csv', 'w+')
     csv_subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_subtype.write('\n')
@@ -461,7 +473,7 @@ if __name__ == "__main__":
         csv_subtype.write(line)
         csv_subtype.write('\n')
 
-    csv_1subtype = open('../../CSV Outputs/classification_all_fail_08_17_2021_first_subtype.csv', 'w+')
+    csv_1subtype = open('../../../CSV Output - New/classification_nonml_fail_03_29_2022_v3_first_subtype.csv', 'w+')
     csv_1subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_1subtype.write('\n')
@@ -469,82 +481,229 @@ if __name__ == "__main__":
         line = line[2]
         csv_1subtype.write(line)
         csv_1subtype.write('\n')
-    # csv_res_testfail = open('../../CSV Outputs/3liners_08_04_2021_testfail.txt', 'w+', encoding='utf-8')
-    # csv_res_scripterror = open('../../CSV Outputs/3liners_08_04_2021_scripterror.txt', 'w+', encoding='utf-8')
-    # csv_res_testerror = open('../../CSV Outputs/3liners_08_04_2021_testerror.txt', 'w+', encoding='utf-8')
-    # csv_res_caerror = open('../../CSV Outputs/3liners_08_04_2021_caerror.txt', 'w+', encoding='utf-8')
-    # csv_res_deploymenterror = open('../../CSV Outputs/3liners_08_04_2021_deploymenterror.txt', 'w+', encoding='utf-8')
-    # csv_res_traviserror = open('../../CSV Outputs/3liners_08_04_2021_traviserror_USETHISONE.txt', 'w+', encoding='utf-8')
+    # # csv_res_testfail = open('../../CSV Outputs/3liners_08_04_2021_testfail.txt', 'w+', encoding='utf-8')
+    # # csv_res_scripterror = open('../../CSV Outputs/3liners_08_04_2021_scripterror.txt', 'w+', encoding='utf-8')
+    # # csv_res_testerror = open('../../CSV Outputs/3liners_08_04_2021_testerror.txt', 'w+', encoding='utf-8')
+    # # csv_res_caerror = open('../../CSV Outputs/3liners_08_04_2021_caerror.txt', 'w+', encoding='utf-8')
+    # # csv_res_deploymenterror = open('../../CSV Outputs/3liners_08_04_2021_deploymenterror.txt', 'w+', encoding='utf-8')
+    # # csv_res_traviserror = open('../../CSV Outputs/3liners_08_04_2021_traviserror_USETHISONE.txt', 'w+', encoding='utf-8')
+    # # for line in list_of_results:
+    # #     res_line=line[3]
+    # #     # print(res_line)
+    # #     # exit()
+    # #     file_name=res_line[0]
+    # #     test_fails=res_line[1]
+    # #     build_error=res_line[2]
+    # #     test_errors=res_line[3]
+    # #     ca_fails=res_line[4]
+    # #     travis_errors=res_line[5]
+    # #     deploy_fails=res_line[6]
+    # #     if(len(test_fails) > 0):
+    # #         csv_res_testfail.write("==============="+str(file_name)+"================")
+    # #         csv_res_testfail.write('\n')
+    # #         for tup in test_fails:
+    # #             for line in tup:
+    # #                 try:
+    # #                     csv_res_testfail.write(str(line))
+    # #                     csv_res_testfail.write('\n')
+    # #                 except:
+    # #                     continue
+    # #     if (len(build_error) > 0):
+    # #         csv_res_scripterror.write("===============" + str(file_name) + "================")
+    # #         csv_res_scripterror.write('\n')
+    # #         for tup in build_error:
+    # #             for line in tup:
+    # #                 try:
+    # #                     csv_res_scripterror.write(str(line))
+    # #                     csv_res_scripterror.write('\n')
+    # #                 except:
+    # #                     continue
+    # #     if (len(test_errors) > 0):
+    # #         csv_res_testerror.write("===============" + str(file_name) + "================")
+    # #         csv_res_testerror.write('\n')
+    # #         for tup in test_errors:
+    # #             for line in tup:
+    # #                 try:
+    # #                     csv_res_testerror.write(str(line))
+    # #                     csv_res_testerror.write('\n')
+    # #                 except:
+    # #                     continue
+    # #     if (len(ca_fails) > 0):
+    # #         csv_res_caerror.write("===============" + str(file_name) + "================")
+    # #         csv_res_caerror.write('\n')
+    # #         for tup in ca_fails:
+    # #             for  line in tup:
+    # #                 try:
+    # #                     csv_res_caerror.write(str(line))
+    # #                     csv_res_caerror.write('\n')
+    # #                 except:
+    # #                     continue
+    # #     if (len(deploy_fails) > 0):
+    # #         csv_res_deploymenterror.write("===============" + str(file_name) + "================")
+    # #         csv_res_deploymenterror.write('\n')
+    # #         for tup in deploy_fails:
+    # #             for  line in tup:
+    # #                 try:
+    # #                     csv_res_deploymenterror.write(str(line))
+    # #                     csv_res_deploymenterror.write('\n')
+    # #                 except:
+    # #                     continue
+    # #     if (len(travis_errors) > 0):
+    # #         csv_res_traviserror.write("===============" + str(file_name) + "================")
+    # #         csv_res_traviserror.write('\n')
+    # #         for tup in travis_errors:
+    # #             for line in tup:
+    # #                 try:
+    # #                     csv_res_traviserror.write(str(line))
+    # #                     csv_res_traviserror.write('\n')
+    # #                 except:
+    # #                     continue
+    # end_time_all = time.perf_counter()
+    # print(f"Execution Time : {end_time_all - start_time_all:0.6f}")
+
+
+    #
+    # df_redo_repos=pd.read_csv('../../../CSV Input - New/reanalysis-projects-ml-actual.csv')
+    # list_projects=df_redo_repos['repo'].tolist()
+    # start_time_all = time.perf_counter()
+    # all_job_logs_raw = [y for x in os.walk('../../../Project Stats Year/Applied/') for y in
+    #                 glob(os.path.join(x[0], '*.txt'))]
+    #
+    # all_job_csv_raw = [y for x in os.walk('../../../Project Stats Year/Applied/') for y in
+    #                glob(os.path.join(x[0], 'job_detailed_info.csv'))]
+    # all_job_logs = []
+    # all_job_csv = []
+    # for proj in list_projects:
+    #     temp_logs=[l for l in all_job_logs_raw if str(proj).lower() in str(l).lower()]
+    #     temp_csv=[l for l in all_job_csv_raw if str(proj).lower() in str(l).lower()]
+    #     all_job_logs.extend(temp_logs)
+    #     all_job_csv.extend(temp_csv)
+    #
+    # # repeat_project_list_a=pd.read_csv('repeat_stats.csv')['RepoName'].to_list()
+    # # repeat_project_list=[str(x).replace('/','_') for x in repeat_project_list_a]
+    # # repeat_job_logs=[y for y in all_job_logs if str(y).split('\\')[7] in repeat_project_list]
+    # # repeat_job_csv=[y for y in all_job_csv if str(y).split('\\')[7] in repeat_project_list]
+    # # print(all_job_csv[:10])
+    # # print(all_job_logs[:10])
+    # list_jobs_failed = []
+    # for job_csv in all_job_csv:
+    #     try:
+    #         df_csv = pd.read_csv(job_csv)
+    #         failed_jobs = df_csv[df_csv['JobState'] == 'failed']['JobID'].to_list()
+    #         failed_jobs = [str(x) + '.txt' for x in failed_jobs]
+    #         list_jobs_failed.extend(failed_jobs)
+    #     except:
+    #         continue
+    # # print(list_jobs_failed[:10])
+    # # exit()
+    # job_failed_logs = [x for x in all_job_logs if str(x).split('/')[-1] in list_jobs_failed]
+    #
+    # # print(job_failed_logs)
+    # # exit()
+    # # df_csv = pd.read_csv('../../unclassified4.csv')
+    # # job_failed_logs=df_csv['Path'].to_list()
+    # list_of_objects = [Log_failure_classifier(i) for i in job_failed_logs]
+    # pool = mp.Pool(NUM_CORE)
+    # list_of_results = pool.map(worker, ((obj) for obj in list_of_objects))
+    # pool.close()
+    # pool.join()
+    #
+    # csv_res = open('../../../CSV Output - New/classification_applied_fail_redo_projs_03_29_2022_v3_redo.csv', 'w+')
+    # csv_res.write(
+    #     'file_name,TestFail,BuildError,TestError,CodeAnalysisError,TravisError,DeploymentError,NoFailDetected,TimeExceeded,NotPythonLang,LogNotFound')
+    # csv_res.write('\n')
     # for line in list_of_results:
-    #     res_line=line[3]
-    #     # print(res_line)
-    #     # exit()
-    #     file_name=res_line[0]
-    #     test_fails=res_line[1]
-    #     build_error=res_line[2]
-    #     test_errors=res_line[3]
-    #     ca_fails=res_line[4]
-    #     travis_errors=res_line[5]
-    #     deploy_fails=res_line[6]
-    #     if(len(test_fails) > 0):
-    #         csv_res_testfail.write("==============="+str(file_name)+"================")
-    #         csv_res_testfail.write('\n')
-    #         for tup in test_fails:
-    #             for line in tup:
-    #                 try:
-    #                     csv_res_testfail.write(str(line))
-    #                     csv_res_testfail.write('\n')
-    #                 except:
-    #                     continue
-    #     if (len(build_error) > 0):
-    #         csv_res_scripterror.write("===============" + str(file_name) + "================")
-    #         csv_res_scripterror.write('\n')
-    #         for tup in build_error:
-    #             for line in tup:
-    #                 try:
-    #                     csv_res_scripterror.write(str(line))
-    #                     csv_res_scripterror.write('\n')
-    #                 except:
-    #                     continue
-    #     if (len(test_errors) > 0):
-    #         csv_res_testerror.write("===============" + str(file_name) + "================")
-    #         csv_res_testerror.write('\n')
-    #         for tup in test_errors:
-    #             for line in tup:
-    #                 try:
-    #                     csv_res_testerror.write(str(line))
-    #                     csv_res_testerror.write('\n')
-    #                 except:
-    #                     continue
-    #     if (len(ca_fails) > 0):
-    #         csv_res_caerror.write("===============" + str(file_name) + "================")
-    #         csv_res_caerror.write('\n')
-    #         for tup in ca_fails:
-    #             for  line in tup:
-    #                 try:
-    #                     csv_res_caerror.write(str(line))
-    #                     csv_res_caerror.write('\n')
-    #                 except:
-    #                     continue
-    #     if (len(deploy_fails) > 0):
-    #         csv_res_deploymenterror.write("===============" + str(file_name) + "================")
-    #         csv_res_deploymenterror.write('\n')
-    #         for tup in deploy_fails:
-    #             for  line in tup:
-    #                 try:
-    #                     csv_res_deploymenterror.write(str(line))
-    #                     csv_res_deploymenterror.write('\n')
-    #                 except:
-    #                     continue
-    #     if (len(travis_errors) > 0):
-    #         csv_res_traviserror.write("===============" + str(file_name) + "================")
-    #         csv_res_traviserror.write('\n')
-    #         for tup in travis_errors:
-    #             for line in tup:
-    #                 try:
-    #                     csv_res_traviserror.write(str(line))
-    #                     csv_res_traviserror.write('\n')
-    #                 except:
-    #                     continue
-    end_time_all = time.perf_counter()
-    print(f"Execution Time : {end_time_all - start_time_all:0.6f}")
+    #     line = line[0]
+    #     csv_res.write(line)
+    #     csv_res.write('\n')
+    # csv_subtype = open('../../../CSV Output - New/classification_applied_fail_redo_projs_03_29_2022_v3_subtypes_redo.csv', 'w+')
+    # csv_subtype.write(
+    #     'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
+    # csv_subtype.write('\n')
+    # for line in list_of_results:
+    #     line = line[1]
+    #     csv_subtype.write(line)
+    #     csv_subtype.write('\n')
+    #
+    # csv_1subtype = open('../../../CSV Output - New/classification_applied_fail_redo_projs_03_29_2022_v3_first_subtype_redo.csv', 'w+')
+    # csv_1subtype.write(
+    #     'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
+    # csv_1subtype.write('\n')
+    # for line in list_of_results:
+    #     line = line[2]
+    #     csv_1subtype.write(line)
+    #     csv_1subtype.write('\n')
+    # end_time_all = time.perf_counter()
+    #
+    # list_projects = df_redo_repos['repo'].tolist()
+    # start_time_all = time.perf_counter()
+    # all_job_logs_raw = [y for x in os.walk('../../../Project Stats Year/Tool/') for y in
+    #                     glob(os.path.join(x[0], '*.txt'))]
+    #
+    # all_job_csv_raw = [y for x in os.walk('../../../Project Stats Year/Tool/') for y in
+    #                    glob(os.path.join(x[0], 'job_detailed_info.csv'))]
+    # all_job_logs = []
+    # all_job_csv = []
+    # for proj in list_projects:
+    #     temp_logs = [l for l in all_job_logs_raw if str(proj).lower() in str(l).lower()]
+    #     temp_csv = [l for l in all_job_csv_raw if str(proj).lower() in str(l).lower()]
+    #     all_job_logs.extend(temp_logs)
+    #     all_job_csv.extend(temp_csv)
+    #
+    # # repeat_project_list_a=pd.read_csv('repeat_stats.csv')['RepoName'].to_list()
+    # # repeat_project_list=[str(x).replace('/','_') for x in repeat_project_list_a]
+    # # repeat_job_logs=[y for y in all_job_logs if str(y).split('\\')[7] in repeat_project_list]
+    # # repeat_job_csv=[y for y in all_job_csv if str(y).split('\\')[7] in repeat_project_list]
+    # # print(all_job_csv[:10])
+    # # print(all_job_logs[:10])
+    # list_jobs_failed = []
+    # for job_csv in all_job_csv:
+    #     try:
+    #         df_csv = pd.read_csv(job_csv)
+    #         failed_jobs = df_csv[df_csv['JobState'] == 'failed']['JobID'].to_list()
+    #         failed_jobs = [str(x) + '.txt' for x in failed_jobs]
+    #         list_jobs_failed.extend(failed_jobs)
+    #     except:
+    #         continue
+    # # print(list_jobs_failed[:10])
+    # # exit()
+    # job_failed_logs = [x for x in all_job_logs if str(x).split('/')[-1] in list_jobs_failed]
+    #
+    # # print(job_failed_logs)
+    # # exit()
+    # # df_csv = pd.read_csv('../../unclassified4.csv')
+    # # job_failed_logs=df_csv['Path'].to_list()
+    # list_of_objects = [Log_failure_classifier(i) for i in job_failed_logs]
+    # pool = mp.Pool(NUM_CORE)
+    # list_of_results = pool.map(worker, ((obj) for obj in list_of_objects))
+    # pool.close()
+    # pool.join()
+    #
+    # csv_res = open('../../../CSV Output - New/classification_tool_fail_redo_projs_03_29_2022_v3_redo.csv', 'w+')
+    # csv_res.write(
+    #     'file_name,TestFail,BuildError,TestError,CodeAnalysisError,TravisError,DeploymentError,NoFailDetected,TimeExceeded,NotPythonLang,LogNotFound')
+    # csv_res.write('\n')
+    # for line in list_of_results:
+    #     line = line[0]
+    #     csv_res.write(line)
+    #     csv_res.write('\n')
+    # csv_subtype = open('../../../CSV Output - New/classification_tool_fail_redo_projs_03_29_2022_v3_subtypes_redo.csv', 'w+')
+    # csv_subtype.write(
+    #     'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
+    # csv_subtype.write('\n')
+    # for line in list_of_results:
+    #     line = line[1]
+    #     csv_subtype.write(line)
+    #     csv_subtype.write('\n')
+    #
+    # csv_1subtype = open('../../../CSV Output - New/classification_tool_fail_redo_projs_03_29_2022_v3_first_subtype_redo.csv',
+    #                     'w+')
+    # csv_1subtype.write(
+    #     'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
+    # csv_1subtype.write('\n')
+    # for line in list_of_results:
+    #     line = line[2]
+    #     csv_1subtype.write(line)
+    #     csv_1subtype.write('\n')
+    # end_time_all = time.perf_counter()
+    # print(f"Execution Time : {end_time_all - start_time_all:0.6f}")

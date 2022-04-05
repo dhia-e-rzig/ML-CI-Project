@@ -6,7 +6,8 @@ import _thread
 import threading
 from contextlib import contextmanager
 from glob import glob
-from failure_extractor import collect_lines
+from PythonScripts.TravisCI_BuildBreak_Log_Analysis.line_extractor.failure_extractor import collect_lines
+
 
 class TimeoutException(Exception):
     def __init__(self, msg=''):
@@ -25,7 +26,7 @@ def time_limit(seconds, msg=''):
         timer.cancel()
 
 
-regexes_csv = pd.read_csv('../../CSV Inputs/regex_failure.csv')
+regexes_csv = pd.read_csv('../../../CSV Archives/CSV Inputs/regex_failure.csv')
 
 regexes_testfail_list = regexes_csv.loc[regexes_csv['Failure Type'] == 'Test Fail'][['Regex','SubType']].values.tolist()
 regexes_buildfail_list = regexes_csv.loc[regexes_csv['Failure Type'] == 'Build Error'][['Regex','SubType']].values.tolist()
@@ -38,7 +39,7 @@ regexes_testfail_addition_list = regexes_csv.loc[regexes_csv['Notes'].str.contai
 regexes_testerror_addition_list = regexes_csv.loc[regexes_csv['Notes'].str.contains('can be test error')][['Regex','SubType']].values.tolist()
 
 
-ml_regexes_csv=pd.read_csv('../../CSV Inputs/ML_subtypes_regex.csv')
+ml_regexes_csv=pd.read_csv('../../../CSV Archives/CSV Inputs/ML_subtypes_regex.csv')
 ml_regexes_testfail_list = ml_regexes_csv.loc[ml_regexes_csv['JobFailType'] == 'TestFail'][['Regex','MLFail_Subtype']].values.tolist()
 ml_regexes_buildfail_list = ml_regexes_csv.loc[ml_regexes_csv['JobFailType'] == 'BuildError'][['Regex','MLFail_Subtype']].values.tolist()
 ml_regexes_testerror_list = ml_regexes_csv.loc[ml_regexes_csv['JobFailType'] == 'TestError'][['Regex','MLFail_Subtype']].values.tolist()
@@ -762,7 +763,7 @@ class Log_failure_classifier():
                 ]
 import multiprocessing as mp
 
-NUM_CORE = 8
+NUM_CORE = mp.cpu_count()
 
 
 def worker(arg):
@@ -774,15 +775,25 @@ if __name__ == "__main__":
     start_time_all = time.perf_counter()
     # all_job_logs = [y for x in os.walk('C:\\Users\\dhiarzig\\PycharmProjects\\ML-CI\\Project Stats Year') for y in
     #                 glob(os.path.join(x[0], '*.txt'))]
-    df_csv = pd.read_csv('../../CSV Outputs/classification_all_fail_08_17_2021_additional_projects.csv')
+    df_csv = pd.read_csv('../../../CSV Output - New/classification_applied_fail_redo_projs_03_29_2022_v3_redo.csv')
     test_failed_jobs = df_csv.loc[df_csv['TestFail'] == True]['file_name'].to_list()
-    list_of_objects = [Log_failure_classifier(i,"test_fail") for i in test_failed_jobs]
+    list_of_objects_1 = [Log_failure_classifier(i,"test_error") for i in test_failed_jobs]
+    df_csv = pd.read_csv('../../../CSV Output - New/classification_tool_fail_redo_projs_03_29_2022_v3_redo.csv')
+    test_failed_jobs = df_csv.loc[df_csv['TestFail'] == True]['file_name'].to_list()
+    list_of_objects_2 = [Log_failure_classifier(i,"test_error") for i in test_failed_jobs]
+
+    list_of_objects=list_of_objects_1+list_of_objects_2
+
     pool = mp.Pool(NUM_CORE)
     list_of_results = pool.map(worker, ((obj) for obj in list_of_objects))
     pool.close()
     pool.join()
 
-    csv_subtype = open('../../CSV Outputs/classification_additional_testfail_only_ml_subtype_08_17_2021_subtypes_v3.csv', 'w+')
+    df_redo_repos = pd.read_csv('../../../CSV Input - New/reanalysis-projects-ml-actual.csv')
+    list_projects=df_redo_repos['repo'].tolist()
+    #
+    #
+    csv_subtype = open('../../../CSV Output - New/classification_additional_testfail_only_ml_subtype_03_30_2022_subtypes_redo.csv', 'w+')
     csv_subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_subtype.write('\n')
@@ -791,7 +802,7 @@ if __name__ == "__main__":
         csv_subtype.write(line)
         csv_subtype.write('\n')
 
-    csv_1subtype = open('../../CSV Outputs/classification_additional_testfail_only_ml_subtype_08_17_2021_first_subtype_v3.csv', 'w+')
+    csv_1subtype = open('../../../CSV Output - New/classification_additional_testfail_only_ml_subtype_03_30_2022_first_subtypes_redo.csv', 'w+')
     csv_1subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_1subtype.write('\n')
@@ -807,7 +818,7 @@ if __name__ == "__main__":
     pool.close()
     pool.join()
  #v3 is scanning whole file with patterns
-    csv_subtype = open('../../CSV Outputs/classification_additional_testerror_only_ml_subtype_08_17_202_subtypes_v3.csv', 'w+')
+    csv_subtype = open('../../../CSV Output - New/classification_additional_testerror_only_ml_subtype_03_30_2022_subtypes_redo.csv', 'w+')
     csv_subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_subtype.write('\n')
@@ -816,7 +827,7 @@ if __name__ == "__main__":
         csv_subtype.write(line)
         csv_subtype.write('\n')
 
-    csv_1subtype = open('../../CSV Outputs/classification_additional_testerror_only_ml_subtype_08_17_2020_first_subtype_v3.csv', 'w+')
+    csv_1subtype = open('../../../CSV Output - New/classification_additional_testerror_only_ml_subtype_03_30_2022_first_subtype_redo.csv', 'w+')
     csv_1subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_1subtype.write('\n')
@@ -832,7 +843,7 @@ if __name__ == "__main__":
     pool.close()
     pool.join()
 
-    csv_subtype = open('../../CSV Outputs/classification_additional_builderror_only_ml_subtype_08_17_2020_subtypes_v3.csv', 'w+')
+    csv_subtype = open('../../../CSV Output - New/classification_additional_builderror_only_ml_subtype_03_30_2022_subtypes_redo.csv', 'w+')
     csv_subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_subtype.write('\n')
@@ -841,7 +852,7 @@ if __name__ == "__main__":
         csv_subtype.write(line)
         csv_subtype.write('\n')
 
-    csv_1subtype = open('../../CSV Outputs/classification_additional_builderror_only_ml_subtype_08_17_2020_first_subtype_v3.csv', 'w+')
+    csv_1subtype = open('../../../CSV Output - New/classification_additional_builderror_only_ml_subtype_03_30_2022_first_subtype_redos.csv', 'w+')
     csv_1subtype.write(
         'file_name;TestFail;BuildError;TestError;CodeAnalysisError;TravisError;DeploymentError')
     csv_1subtype.write('\n')

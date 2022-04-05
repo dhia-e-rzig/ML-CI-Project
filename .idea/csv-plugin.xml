@@ -73,6 +73,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/CSV Archives/CSV Inputs/regex_error.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/CSV Inputs/regex_failure.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Archives/CSV Inputs/regex_failure_for_err.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/CSV Archives/CSV Inputs/regex_ml.csv">
           <value>
             <Attribute>
@@ -178,7 +199,168 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/CSV Input - New/reanalysis-projects-ml-2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Input - New/reanalysis-projects-ml-actual.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Input - New/reanalysis-projects-ml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Input - New/regex_failure_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/All_transition_with_problem_NEW.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/PrimaryLanguageCount-all_new.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_additional_builderror_only_ml_subtype_03_30_2022_first_subtype_redos.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_applied_fail_redo_projs_03_25_2022_v1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_applied_fail_redo_projs_03_25_2022_v1_first_subtype.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_applied_fail_redo_projs_03_29_2022_v3_redo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_applied_fail_redo_projs_03_29_2022_v3_subtypes_redo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_nonml_fail_03_25_2022_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_nonml_fail_03_29_2022_v3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_tool_fail_redo_projs_03_28_2022_v1_add.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_tool_fail_redo_projs_03_29_2022_v3_first_subtype_redo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_tool_fail_redo_projs_03_29_2022_v3_redo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/classification_tool_fail_redo_projs_03_29_2022_v3_subtypes_redo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/error_classification_applied_redo_03_25_2022_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/error_classification_nonml_03_25_2022_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/CSV Output - New/error_classification_tool_redo_03_28_2022_v2_add.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/New Lists/RQ2_new_classification.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Summary/projects-stats-year-variable_ml_v5.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Summary/projects-stats-year-variable_ml_v6.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Summary/projects-stats-year-variable_ml_v7.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -192,7 +374,91 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Project Stats Summary/projects-stats-year-variable_nonml_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Summary/projects-stats-year-variable_nonml_v3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Summary/projects-stats-year-variable_v4_08_20_2021.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Applied/gbolmier_funk-svd/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Applied/gbolmier_funk-svd/dates.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Applied/jfilter_split-folders/dates.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Applied/undertheseanlp_languageflow/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Applied/undertheseanlp_languageflow/dates.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Applied/undertheseanlp_languageflow/job_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Project Stats Year/NonML/AugurProject_augur-core/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/AugurProject_augur-core/dates.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/AugurProject_augur-core/job_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/aergoio_litetree/dates.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -206,70 +472,175 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2018-08-12.csv">
+        <entry key="/Project Stats Year/NonML/flyimg_flyimg/job_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2019-08-12.csv">
+        <entry key="/Project Stats Year/NonML/jacksu_utils4s/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2020-08-12.csv">
+        <entry key="/Project Stats Year/NonML/khamidou_kite/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_ml_investig2021-08-12.csv">
+        <entry key="/Project Stats Year/NonML/khamidou_kite/dates.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2018-08-12.csv">
+        <entry key="/Project Stats Year/NonML/khamidou_kite/job_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2019-08-12.csv">
+        <entry key="/Project Stats Year/NonML/mpld3_mpld3/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2020-08-12.csv">
+        <entry key="/Project Stats Year/NonML/mwrlabs_needle/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2021-08-12.csv">
+        <entry key="/Project Stats Year/NonML/mwrlabs_needle/dates.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/RQ2_new_classification.csv">
+        <entry key="/Project Stats Year/NonML/mwrlabs_needle/job_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/PythonScripts/RQ3-RQ4-new-projects.csv">
+        <entry key="/Project Stats Year/NonML/oclint_oclint/job_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/scanmem_scanmem/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/scoder_lupa/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/scoder_lupa/dates.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/scoder_lupa/job_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/wisk_medusa/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/alan-turing-institute_sktime/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/alan-turing-institute_sktime/dates.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/geomstats_geomstats/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/geomstats_geomstats/job_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/undertheseanlp_underthesea/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/undertheseanlp_underthesea/dates.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/undertheseanlp_underthesea/job_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/usnistgov_jarvis/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Tool/usnistgov_jarvis/job_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2021-12-31.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -620,20 +991,6 @@
           </value>
         </entry>
         <entry key="\Project Stats Summary\projects-stats-year-variable_v4_08_20_2021.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\PythonScripts\RQ2_new_classification.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\PythonScripts\RQ3-RQ4-new-projects.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

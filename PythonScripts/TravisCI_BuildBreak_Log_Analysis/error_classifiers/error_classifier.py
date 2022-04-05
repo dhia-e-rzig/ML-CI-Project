@@ -26,8 +26,8 @@ def time_limit(seconds, msg=''):
     finally:
         timer.cancel()
 
-regexes_fail_csv=pd.read_csv('../../CSV Inputs/regex_failure_for_err.csv')
-regexes_error_csv=pd.read_csv('../../CSV Inputs/regex_error.csv')
+regexes_fail_csv=pd.read_csv('../../../CSV Archives/CSV Inputs/regex_failure_for_err.csv')
+regexes_error_csv=pd.read_csv('../../../CSV Archives/CSV Inputs/regex_error.csv')
 
 regexes_testfail_list=regexes_fail_csv.loc[regexes_fail_csv['Failure Type'] == 'Test Fail']['Regex'].to_list()
 regexes_buildfail_list=regexes_fail_csv.loc[regexes_fail_csv['Failure Type'] == 'Build Error']['Regex'].to_list()
@@ -453,10 +453,63 @@ if __name__ == "__main__":
     # df_csv = pd.read_csv('../../unclassified_err2_.csv')
     # job_failed_logs = df_csv['Path'].to_list()
     # print(pd_errors_logs_set1.columns)
-    all_job_logs = [y for x in os.walk('../../Project Stats Year/NonML/') for y in
+    # all_job_logs = [y for x in os.walk('../../../Project Stats Year/NonML/') for y in
+    #                 glob(os.path.join(x[0], '*.txt'))]
+    # all_job_csv = [y for x in os.walk('../../../Project Stats Year/NonML/') for y in
+    #                glob(os.path.join(x[0], 'job_detailed_info.csv'))]
+    # list_jobs_errored = []
+    # for job_csv in all_job_csv:
+    #     try:
+    #         df_csv = pd.read_csv(job_csv)
+    #         failed_jobs = df_csv[df_csv['JobState'] == 'errored']['JobID'].to_list()
+    #         failed_jobs = [str(x) + '.txt' for x in failed_jobs]
+    #         list_jobs_errored.extend(failed_jobs)
+    #     except:
+    #         continue
+    # job_errored_logs = [x for x in all_job_logs if str(x).split('/')[-1] in list_jobs_errored]
+    # # print(pd_errors_logs_set2.columns)
+    # # job_errored_logs=pd_errors_logs_set1[pd_errors_logs_set1['BuildDepError']==True]['file_name'].to_list()+pd_errors_logs_set2[pd_errors_logs_set2['BuildDepError']==True]['file_name'].to_list()
+    # list_of_objects = [Log_failure_classifier(i) for i in job_errored_logs]
+    # pool = mp.Pool(NUM_CORE)
+    # list_of_results = pool.map(worker, ((obj) for obj in list_of_objects))
+    # pool.close()
+    # pool.join()
+
+    # csv_res = open('../../CSV Outputs/error_classification_all_08_04_2021.csv', 'w+')
+    # csv_res.write('file_name,FailureClassedAsError,ScriptError,BuildDepError,TravisError,TimeExceeded,NotPythonLang,LogNotFound')
+    # csv_res.write('\n')
+    # for line in list_of_results:
+    #     line=line[0]
+    #     csv_res.write(line)
+    #     csv_res.write('\n')
+    # csv_out = open('../../../CSV Output - New/error_classification_nonml_03_25_2022_v2.csv', 'w+')
+    # #hen we tested each of these detection scripts on sets of manually labeled 100 errored logs and 100 failed logs, different from the remaining sets of files, and which achieved an average (precision,recall,  F-1) on each of the Job failure and Job error sub-types.
+    # csv_out.write('file_name,FailureClassedAsError,ScriptError,BuildDepError,TravisError,TimeExceeded,NotPythonLang,LogNotFound')
+    # csv_out.write('\n')
+    # for line_t in list_of_results:
+    #     if line_t is None:
+    #         continue
+    #     line = line_t[0]
+    #     csv_out.write(line)
+    #     csv_out.write('\n')
+    # end_time_all = time.perf_counter()
+    # print(f"Execution Time : {end_time_all - start_time_all:0.6f}")
+
+    all_job_logs_raw = [y for x in os.walk('../../../Project Stats Year/Applied/') for y in
                     glob(os.path.join(x[0], '*.txt'))]
-    all_job_csv = [y for x in os.walk('../../Project Stats Year/NonML/') for y in
+    all_job_csv_raw = [y for x in os.walk('../../../Project Stats Year/Applied/') for y in
                    glob(os.path.join(x[0], 'job_detailed_info.csv'))]
+    df_redo_repos = pd.read_csv('../../../CSV Input - New/reanalysis-projects-ml-actual.csv')
+    list_projects = df_redo_repos['repo'].tolist()
+
+    all_job_logs = []
+    all_job_csv = []
+    for proj in list_projects:
+        temp_logs = [l for l in all_job_logs_raw if str(proj).lower() in str(l).lower()]
+        temp_csv = [l for l in all_job_csv_raw if str(proj).lower() in str(l).lower()]
+        all_job_logs.extend(temp_logs)
+        all_job_csv.extend(temp_csv)
+
     list_jobs_errored = []
     for job_csv in all_job_csv:
         try:
@@ -482,9 +535,10 @@ if __name__ == "__main__":
     #     line=line[0]
     #     csv_res.write(line)
     #     csv_res.write('\n')
-    csv_out = open('../../CSV Outputs/error_classification_nonml_03_18_2022_v1.csv', 'w+')
-    #hen we tested each of these detection scripts on sets of manually labeled 100 errored logs and 100 failed logs, different from the remaining sets of files, and which achieved an average (precision,recall,  F-1) on each of the Job failure and Job error sub-types.
-    csv_out.write('file_name,FailureClassedAsError,ScriptError,BuildDepError,TravisError,TimeExceeded,NotPythonLang,LogNotFound')
+    csv_out = open('../../../CSV Output - New/error_classification_applied_redo_03_30_2022_v3_redo.csv', 'w+')
+    # hen we tested each of these detection scripts on sets of manually labeled 100 errored logs and 100 failed logs, different from the remaining sets of files, and which achieved an average (precision,recall,  F-1) on each of the Job failure and Job error sub-types.
+    csv_out.write(
+        'file_name,FailureClassedAsError,ScriptError,BuildDepError,TravisError,TimeExceeded,NotPythonLang,LogNotFound')
     csv_out.write('\n')
     for line_t in list_of_results:
         if line_t is None:
@@ -495,4 +549,56 @@ if __name__ == "__main__":
     end_time_all = time.perf_counter()
     print(f"Execution Time : {end_time_all - start_time_all:0.6f}")
 
+    all_job_logs_raw = [y for x in os.walk('../../../Project Stats Year/Tool/') for y in
+                        glob(os.path.join(x[0], '*.txt'))]
+    all_job_csv_raw = [y for x in os.walk('../../../Project Stats Year/Tool/') for y in
+                       glob(os.path.join(x[0], 'job_detailed_info.csv'))]
+
+
+    all_job_logs = []
+    all_job_csv = []
+    for proj in list_projects:
+        temp_logs = [l for l in all_job_logs_raw if str(proj).lower() in str(l).lower()]
+        temp_csv = [l for l in all_job_csv_raw if str(proj).lower() in str(l).lower()]
+        all_job_logs.extend(temp_logs)
+        all_job_csv.extend(temp_csv)
+
+    list_jobs_errored = []
+    for job_csv in all_job_csv:
+        try:
+            df_csv = pd.read_csv(job_csv)
+            failed_jobs = df_csv[df_csv['JobState'] == 'errored']['JobID'].to_list()
+            failed_jobs = [str(x) + '.txt' for x in failed_jobs]
+            list_jobs_errored.extend(failed_jobs)
+        except:
+            continue
+    job_errored_logs = [x for x in all_job_logs if str(x).split('/')[-1] in list_jobs_errored]
+    # print(pd_errors_logs_set2.columns)
+    # job_errored_logs=pd_errors_logs_set1[pd_errors_logs_set1['BuildDepError']==True]['file_name'].to_list()+pd_errors_logs_set2[pd_errors_logs_set2['BuildDepError']==True]['file_name'].to_list()
+    list_of_objects = [Log_failure_classifier(i) for i in job_errored_logs]
+    pool = mp.Pool(NUM_CORE)
+    list_of_results = pool.map(worker, ((obj) for obj in list_of_objects))
+    pool.close()
+    pool.join()
+
+    # csv_res = open('../../CSV Outputs/error_classification_all_08_04_2021.csv', 'w+')
+    # csv_res.write('file_name,FailureClassedAsError,ScriptError,BuildDepError,TravisError,TimeExceeded,NotPythonLang,LogNotFound')
+    # csv_res.write('\n')
+    # for line in list_of_results:
+    #     line=line[0]
+    #     csv_res.write(line)
+    #     csv_res.write('\n')
+    csv_out = open('../../../CSV Output - New/error_classification_tool_redo_03_30_2022_v3_redo.csv', 'w+')
+    # hen we tested each of these detection scripts on sets of manually labeled 100 errored logs and 100 failed logs, different from the remaining sets of files, and which achieved an average (precision,recall,  F-1) on each of the Job failure and Job error sub-types.
+    csv_out.write(
+        'file_name,FailureClassedAsError,ScriptError,BuildDepError,TravisError,TimeExceeded,NotPythonLang,LogNotFound')
+    csv_out.write('\n')
+    for line_t in list_of_results:
+        if line_t is None:
+            continue
+        line = line_t[0]
+        csv_out.write(line)
+        csv_out.write('\n')
+    end_time_all = time.perf_counter()
+    print(f"Execution Time : {end_time_all - start_time_all:0.6f}")
 

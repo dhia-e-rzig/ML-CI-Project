@@ -34,18 +34,18 @@ def get_travis_repo(repo_name,verboseMode=False):
             list_of_builds = travis_repo.get_builds().builds
             if list_of_builds is None or len(list_of_builds) == 0:
                 raise Exception
-        except Exception as e:
+        except Exception as e1:
             try:
                 travis_repo = get_travis_com_access().get_repository(repo_name)
                 list_of_builds = travis_repo.get_builds().builds
                 if list_of_builds is None or len(list_of_builds) == 0:
                     raise Exception
 
-            except Exception as e:
+            except Exception as e2:
                 if(verboseMode):
                     print('find exception')
-                    print(str(e))
-                raise e
+                    print(str(e2))
+                raise e2
         return travis_repo
 
 

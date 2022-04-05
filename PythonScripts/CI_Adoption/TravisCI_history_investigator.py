@@ -12,22 +12,24 @@ import multiprocessing as mp
 from dateutil import parser
 from datetime import  date, timedelta
 
-nonml_travis_projects_df=pd.read_csv('../../CSV Input - New/RQ3_4_NonML.csv')
-ml_travis_projects_df=pd.read_csv('../../CSV Input - New/RQ3-RQ4-new.csv')
-cutoff_list = [date(2021, 8, 12),date(2020, 8, 12),date(2019, 8, 12), date(2018, 8, 12)]
+nonml_travis_projects_df=pd.read_csv('../../CSV Input - New/RQ3-RQ4-new.csv')
+cutoff_list = [date(2021, 8, 12)] #,date(2020, 8, 12),date(2019, 8, 12), date(2018, 8, 12)
 
 class travis_repo_finder():
     def __init__(self, full_name,category):
         self.full_name = full_name
         self.category=category
     def find_travis(self):
-        print('processing '+self.full_name)
+
         return_dict= {}
         for cutoff in cutoff_list:
             try:
-                job_fail_count=0
-                job_error_count=0
-
+                build_total_count=0
+                build_fail_count=0
+                build_error_count=0
+                build_pass_count=0
+                build_canceled_count=0
+                print('processsing '+self.full_name+'--'+self.category)
                 travis_repo=get_travis_repo(self.full_name)
                 build_page = travis_repo.get_builds()
                 if (build_page is None) or build_page.builds is None:
@@ -50,7 +52,7 @@ class travis_repo_finder():
                         break
                 if(last_build.started_at.date() > cutoff):
                     return_dict[
-                        cutoff] =  self.full_name + ',' + self.category + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "0,0,"+"0"+ ',' +"0"
+                        cutoff] =  self.full_name + ',' + self.category + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "0,0"+"0"+ ',' +"0"+ ',' + "0" + ',' + "0" + ',' + "0"
                     continue
                 date_end = last_build.started_at.date() + timedelta(days=1)
 
@@ -89,7 +91,8 @@ class travis_repo_finder():
                         break
 
                     for build in build_page.builds:
-                        # print(self.full_name+'--buildid--'+build.id.__str__())
+                        # print(build)
+                        build_total_count+=1
                         try:
                             if (build.started_at is None):
                                 continue
@@ -97,20 +100,19 @@ class travis_repo_finder():
                                 continue
                             if (build.started_at.date() < date_beg):
                                 break
-                            if build.is_failed(sync=True) or build.is_errored(sync=True):
-                                job_page = build.get_jobs()
-                                bool_job_next_page = True
-                                while (bool_job_next_page):
-                                    bool_job_next_page = job_page.has_next_page()
-                                    for job in job_page.jobs:
-                                        if (job.is_failed(sync=True)):
-                                            job_fail_count+=1
-                                        elif (job.is_errored(sync=True)):
-                                            job_error_count+=1
-                                    if bool_job_next_page:
-                                        job_page = job_page.next_page()
+                            if build.is_failed():
+                                build_fail_count+=1
+                            elif build.is_errored():
+                                build_error_count+=1
+                            elif build.is_canceled():
+                                build_canceled_count+=1
+                            elif build.is_passed():
+                                build_pass_count+=1
                             else:
-                               continue
+                                msg_temp="Error build status unkown--"+self.full_name+"--"+self.category+"--"+build.id.__str__()
+                                print(msg_temp)
+                                with open("travis_investigator.txt", "a+") as error:
+                                    error.write(msg_temp)
                         except Exception as e:
                             raise e
                     if build_page is None:
@@ -147,13 +149,18 @@ class travis_repo_finder():
                 start_date = first_build.started_at
                 delta_diff=end_date-start_date
                 days = int(delta_diff.days)
-                return_dict[cutoff] = self.full_name + ',' + self.category + ',' + date_beg.__str__() + ',' + date_end.__str__() + ',' + str(total_run_count) + ',' + str(days)+','+str(job_fail_count)+','+str(job_error_count)
+                return_dict[cutoff] = self.full_name + ',' + self.category + ',' + date_beg.__str__() + ',' + date_end.__str__() + ',' + str(total_run_count) + ',' + str(days)+','+str(build_total_count)+','+str(build_fail_count)+','+str(build_error_count)+','+str(build_canceled_count)+','+str(build_pass_count)
             except Exception as e:
-                return_dict[cutoff] = self.full_name + ',' + self.category + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "0,0,"+"0"+ ',' +"0"
+                return_dict[cutoff] = self.full_name + ',' + self.category + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "NoneFound" + ',' + "0,0,"+"0"+ ',' +"0"+ ',' + "0" + ',' + "0" + ',' + "0"
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
                 print('EXCEPTION: ' + self.full_name)
                 print(exc_type, fname, exc_tb.tb_lineno)
+                return_dict_2 = {}
+                return_dict_2['repeat'] = True
+                return_dict_2['name'] = self.full_name
+                return_dict_2['category'] = self.category
+                return return_dict_2
 
         return return_dict
 
@@ -167,41 +174,44 @@ def worker_1(arg):
 
 if __name__ == "__main__":
     start_time_all = time.perf_counter()
-    print('start time for nonml'+start_time_all.__str__())
     # applied=pd.read_csv('Applied_transition_with_problem.csv')
     list_of_objects = [travis_repo_finder(row['RepoName'],row['RepoType']) for index,row in nonml_travis_projects_df.iterrows()]
     pool = mp.Pool(NUM_CORE)
     list_of_results = pool.map(worker_1, ((obj) for obj in list_of_objects))
     pool.close()
     pool.join()
-
+    repeat_list = []
     for cutoff in cutoff_list:
-        f_travis_history_stats = open('Travisci_history_stats_nonml_investig'+cutoff.__str__()+'.csv', 'w+')
-        f_travis_history_stats.write('ProjectName,ProjectType,StartDate,EndDate,TotalRuns,DaysOfCIActivity,JobFailCount,JobErrorCount\n')
+        f_travis_history_stats = open('Travisci_history_stats_investig_ml_1_year_builds'+cutoff.__str__()+'.csv', 'w+')
+        f_travis_history_stats.write('ProjectName,ProjectType,StartDate,EndDate,TotalRuns,DaysOfCIActivity,BuildTotalCount,BuildFailCount,BuildErrorCount,BuildCanceledCount,BuildPassedCount\n')
         for res in list_of_results:
             if cutoff in list(res.keys()):
                 str_out=res[cutoff]
                 f_travis_history_stats.write(str_out+ '\n')
+            else:
+                repeat_list.append((res['name'], res['category']))
+                continue
     end_time_all = time.perf_counter()
-    print(f"Execution Time for nonml : {end_time_all - start_time_all:0.6f}")
+    print(f"Execution Time for all : {end_time_all - start_time_all:0.6f}")
 
-    start_time_all = time.perf_counter()
-    print('start time for ml'+start_time_all.__str__())
-    # applied=pd.read_csv('Applied_transition_with_problem.csv')
-    list_of_objects = [travis_repo_finder(row['RepoName'], row['RepoType']) for index, row in
-                       ml_travis_projects_df.iterrows()]
-    pool = mp.Pool(NUM_CORE)
+
+    print('running repeat')
+    list_of_objects = [travis_repo_finder(x[0], x[1]) for x in repeat_list]
+    pool = mp.Pool(2)
     list_of_results = pool.map(worker_1, ((obj) for obj in list_of_objects))
     pool.close()
     pool.join()
-
+    repeat_list = []
     for cutoff in cutoff_list:
-        f_travis_history_stats = open('Travisci_history_stats_ml_investig' + cutoff.__str__() + '.csv', 'w+')
-        f_travis_history_stats.write(
-            'ProjectName,ProjectType,StartDate,EndDate,TotalRuns,DaysOfCIActivity,JobFailCount,JobErrorCount\n')
+        f_travis_history_stats = open('Travisci_history_stats_investig_ml_1_year_builds' + cutoff.__str__() + '.csv', 'a+')
+        # f_travis_history_stats.write(
+        #     'ProjectName,ProjectType,StartDate,EndDate,TotalRuns,DaysOfCIActivity,JobFailCount,JobErrorCount\n')
         for res in list_of_results:
             if cutoff in list(res.keys()):
                 str_out = res[cutoff]
                 f_travis_history_stats.write(str_out + '\n')
+            else:
+                print('error')
+                print(res['name'] + '--' + res['category'])
     end_time_all = time.perf_counter()
-    print(f"Execution Time for ml : {end_time_all - start_time_all:0.6f}")
+    print(f"Execution Time for nonml : {end_time_all - start_time_all:0.6f}")
