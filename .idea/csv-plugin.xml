@@ -346,6 +346,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Project Stats REM/Cloud-CV_evalai-cli/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Project Stats Summary/projects-stats-year-variable_ml_v5.csv">
           <value>
             <Attribute>
@@ -361,6 +368,13 @@
           </value>
         </entry>
         <entry key="/Project Stats Summary/projects-stats-year-variable_ml_v7.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Summary/projects-stats-year-variable_ml_v8.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -389,6 +403,13 @@
           </value>
         </entry>
         <entry key="/Project Stats Summary/projects-stats-year-variable_v4_08_20_2021.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/Applied/aldro61_mmit/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -458,6 +479,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Project Stats Year/NonML/aaronjanse_asciidots/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Project Stats Year/NonML/aergoio_litetree/dates.csv">
           <value>
             <Attribute>
@@ -466,6 +494,13 @@
           </value>
         </entry>
         <entry key="/Project Stats Year/NonML/ansible_ansible-container/build_detailed_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project Stats Year/NonML/aploium_zmirror/build_detailed_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -641,6 +676,76 @@
           </value>
         </entry>
         <entry key="/PythonScripts/CI_Adoption/Travisci_history_stats_nonml_investig2021-12-31.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/error_ids_to_filter_ml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/error_ids_to_filter_nonml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/error_job_ids_to_filter_ml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/error_job_ids_to_filter_nonml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/fail_ids_to_filter_ml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/fail_ids_to_filter_nonml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/fail_job_ids_to_filter_ml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/fail_job_ids_to_filter_nonml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/pass_ids_to_filter_ml.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/pass_ids_to_filter_nonml.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -4,6 +4,13 @@ from os import path
 
 import time
 
+fail_ml_df=pd.read_csv('../../TravisCI_Builds_propertiesPerProjects/fail_ids_to_filter_ml.csv')
+fail_nonml_df=pd.read_csv('../../TravisCI_Builds_propertiesPerProjects/fail_ids_to_filter_nonml.csv')
+error_ml_df=pd.read_csv('../../TravisCI_Builds_propertiesPerProjects/error_ids_to_filter_ml.csv')
+error_nonml_df=pd.read_csv('../../TravisCI_Builds_propertiesPerProjects/error_ids_to_filter_nonml.csv')
+
+ids_to_ignore=fail_ml_df['id'].tolist()+fail_nonml_df['id'].tolist()+error_ml_df['id'].tolist()+error_nonml_df['id'].tolist()
+
 class Project_stats_gen():
     def __init__(self, project,type):
         self.project = project
@@ -25,7 +32,8 @@ class Project_stats_gen():
             print('Exception')
             print(str(e))
             return str(self.project+','+self.type+',0,0,0,0,0')
-        builds_states=project_csv['BuildState'].to_list()
+        df=project_csv[~project_csv['BuildID'].isin(ids_to_ignore)]
+        builds_states=df['BuildState'].to_list()
         total_number_of_builds=len(builds_states)
         if total_number_of_builds == 0:
             print('no builds during period')
@@ -59,7 +67,7 @@ if __name__ == "__main__":
     pool.close()
     pool.join()
 
-    csv_res = open('../../../Project Stats Summary/projects-stats-year-variable_ml_v7.csv', 'w+')
+    csv_res = open('../../../Project Stats Summary/projects-stats-year-variable_ml_v8.csv', 'w+')
     csv_res.write('ProjectName,ProjectType,TotalNumberOfBuilds,TotalPassedBuilds,TotalFailedBuilds,TotalErroredBuilds,TotalCanceledBuilds')
     csv_res.write('\n')
     for line in list_of_results:
@@ -76,7 +84,7 @@ if __name__ == "__main__":
     pool.close()
     pool.join()
 
-    csv_res = open('../../../Project Stats Summary/projects-stats-year-variable_nonml_v3.csv', 'w+')
+    csv_res = open('../../../Project Stats Summary/projects-stats-year-variable_nonml_v4.csv', 'w+')
     csv_res.write('ProjectName,ProjectType,TotalNumberOfBuilds,TotalPassedBuilds,TotalFailedBuilds,TotalErroredBuilds,TotalCanceledBuilds')
     csv_res.write('\n')
     for line in list_of_results:

@@ -563,21 +563,7 @@ if __name__ == "__main__":
 
 
     #
-    # df_redo_repos=pd.read_csv('../../../CSV Input - New/reanalysis-projects-ml-actual.csv')
-    # list_projects=df_redo_repos['repo'].tolist()
-    # start_time_all = time.perf_counter()
-    # all_job_logs_raw = [y for x in os.walk('../../../Project Stats Year/Applied/') for y in
-    #                 glob(os.path.join(x[0], '*.txt'))]
-    #
-    # all_job_csv_raw = [y for x in os.walk('../../../Project Stats Year/Applied/') for y in
-    #                glob(os.path.join(x[0], 'job_detailed_info.csv'))]
-    # all_job_logs = []
-    # all_job_csv = []
-    # for proj in list_projects:
-    #     temp_logs=[l for l in all_job_logs_raw if str(proj).lower() in str(l).lower()]
-    #     temp_csv=[l for l in all_job_csv_raw if str(proj).lower() in str(l).lower()]
-    #     all_job_logs.extend(temp_logs)
-    #     all_job_csv.extend(temp_csv)
+    #.
     #
     # # repeat_project_list_a=pd.read_csv('repeat_stats.csv')['RepoName'].to_list()
     # # repeat_project_list=[str(x).replace('/','_') for x in repeat_project_list_a]
