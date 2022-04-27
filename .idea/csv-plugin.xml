@@ -682,6 +682,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/PythonScripts/Misc/non-ml_repos_langs-03-29-22-13-14-43.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/PythonScripts/TravisCI_Builds_propertiesPerProjects/error_ids_to_filter_ml.csv">
           <value>
             <Attribute>
